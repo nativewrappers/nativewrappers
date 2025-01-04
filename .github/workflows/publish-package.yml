@@ -43,6 +43,6 @@ jobs:
           for dir in ./lib/*; do
             if [ -f "$dir/package.json" ]; then
               echo "Publishing $dir..."
-              pnpm publish --no-git-checks "$dir"
+              pnpm publish --no-git-checks --access public "$dir"
             fi
           done
