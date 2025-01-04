@@ -35,7 +35,7 @@
 	],
 	"scripts": {
 		"delete": "rm -rf lib",
-		"build": "pnpm run delete && tsc --build && tsc-alias && node postbuild.js",
+		"build": "pnpm run delete && tsc --build && tsc-alias && cp README.md lib/README.md && node postbuild.js",
 		"watch": "tsc --watch",
 		"ci": "pnpm run check && pnpm run build && pnpm typedoc",
 		"check": "pnpm biome format",
@@ -43,14 +43,14 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
-		"@citizenfx/client": "^2.0.7604-1",
+		"@citizenfx/client": "2.0.7604-1",
 		"@citizenfx/server": "2.0.10673-1",
-		"@types/node": "^16.18.103",
+		"@types/node": "^16.18.123",
 		"buffer": "^6.0.3",
 		"tsc-alias": "^1.8.10",
-		"typedoc": "^0.26.10",
+		"typedoc": "^0.27.6",
 		"typedoc-fivemjs-theme": "^0.2.7",
-		"typedoc-plugin-markdown": "^4.2.1",
-		"typescript": "^5.6.3"
+		"typedoc-plugin-markdown": "^4.4.1",
+		"typescript": "^5.7.2"
 	}
 }
