@@ -2,6 +2,8 @@
 
 # Class: NetworkedMap\<K, V\>
 
+Defined in: [src/common/net/NetworkedMap.ts:30](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/net/NetworkedMap.ts#L30)
+
 not ready to be used just thoughts right now
 
 ## Extends
@@ -23,12 +25,14 @@ not ready to be used just thoughts right now
 new NetworkedMap<K, V>(syncName, initialValue?): NetworkedMap<K, V>
 ```
 
+Defined in: [src/common/net/NetworkedMap.ts:36](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/net/NetworkedMap.ts#L36)
+
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `syncName` | `string` |
-| `initialValue`? | [`K`, `V`][] |
+| `initialValue`? | \[`K`, `V`\][] |
 
 #### Returns
 
@@ -36,38 +40,38 @@ new NetworkedMap<K, V>(syncName, initialValue?): NetworkedMap<K, V>
 
 #### Overrides
 
-`Map<K, V>.constructor`
-
-#### Defined in
-
-[src/common/net/NetworkedMap.ts:36](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/net/NetworkedMap.ts#L36)
+```ts
+Map<K, V>.constructor
+```
 
 ## Properties
 
-| Property | Modifier | Type | Description | Inherited from | Defined in |
-| ------ | ------ | ------ | ------ | ------ | ------ |
-| `size` | `readonly` | `number` |  | `Map.size` | node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.collection.d.ts:45 |
-| `[species]` | `readonly` | `MapConstructor` | - | `Map.[species]` | node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:319 |
+| Property | Modifier | Type | Inherited from | Defined in |
+| ------ | ------ | ------ | ------ | ------ |
+| <a id="size"></a> `size` | `readonly` | `number` | `Map.size` | node\_modules/.pnpm/typescript@5.7.2/node\_modules/typescript/lib/lib.es2015.collection.d.ts:45 |
+| <a id="species"></a> `[species]` | `readonly` | `MapConstructor` | `Map.[species]` | node\_modules/.pnpm/typescript@5.7.2/node\_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:319 |
 
 ## Accessors
 
 ### \[toStringTag\]
 
+#### Get Signature
+
 ```ts
 get toStringTag: string
 ```
 
-#### Returns
+Defined in: [src/common/net/NetworkedMap.ts:226](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/net/NetworkedMap.ts#L226)
+
+##### Returns
 
 `string`
 
 #### Overrides
 
-`Map.[toStringTag]`
-
-#### Defined in
-
-[src/common/net/NetworkedMap.ts:226](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/net/NetworkedMap.ts#L226)
+```ts
+Map.[toStringTag]
+```
 
 ## Methods
 
@@ -77,13 +81,11 @@ get toStringTag: string
 dispose: void
 ```
 
+Defined in: [src/common/net/NetworkedMap.ts:213](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/net/NetworkedMap.ts#L213)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/common/net/NetworkedMap.ts:213](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/net/NetworkedMap.ts#L213)
 
 ***
 
@@ -93,19 +95,19 @@ dispose: void
 iterator: MapIterator<[K, V]>
 ```
 
+Defined in: node\_modules/.pnpm/typescript@5.7.2/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:143
+
 Returns an iterable of entries in the map.
 
 #### Returns
 
-`MapIterator`\<[`K`, `V`]\>
+`MapIterator`\<\[`K`, `V`\]\>
 
 #### Inherited from
 
-`Map.[iterator]`
-
-#### Defined in
-
-node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:143
+```ts
+Map.[iterator]
+```
 
 ***
 
@@ -114,6 +116,8 @@ node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.ite
 ```ts
 addSubscriber(sub): void
 ```
+
+Defined in: [src/common/net/NetworkedMap.ts:72](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/net/NetworkedMap.ts#L72)
 
 #### Parameters
 
@@ -125,10 +129,6 @@ addSubscriber(sub): void
 
 `void`
 
-#### Defined in
-
-[src/common/net/NetworkedMap.ts:72](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/net/NetworkedMap.ts#L72)
-
 ***
 
 ### clear()
@@ -137,17 +137,17 @@ addSubscriber(sub): void
 clear(): void
 ```
 
+Defined in: [src/common/net/NetworkedMap.ts:191](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/net/NetworkedMap.ts#L191)
+
 #### Returns
 
 `void`
 
 #### Overrides
 
-`Map.clear`
-
-#### Defined in
-
-[src/common/net/NetworkedMap.ts:191](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/net/NetworkedMap.ts#L191)
+```ts
+Map.clear
+```
 
 ***
 
@@ -156,6 +156,8 @@ clear(): void
 ```ts
 delete(key): boolean
 ```
+
+Defined in: [src/common/net/NetworkedMap.ts:200](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/net/NetworkedMap.ts#L200)
 
 #### Parameters
 
@@ -171,11 +173,9 @@ true if an element in the Map existed and has been removed, or false if the elem
 
 #### Overrides
 
-`Map.delete`
-
-#### Defined in
-
-[src/common/net/NetworkedMap.ts:200](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/net/NetworkedMap.ts#L200)
+```ts
+Map.delete
+```
 
 ***
 
@@ -185,15 +185,13 @@ true if an element in the Map existed and has been removed, or false if the elem
 dispose(): void
 ```
 
+Defined in: [src/common/net/NetworkedMap.ts:222](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/net/NetworkedMap.ts#L222)
+
 Unregisters from the tick handler and removes the event listener
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/common/net/NetworkedMap.ts:222](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/net/NetworkedMap.ts#L222)
 
 ***
 
@@ -203,19 +201,19 @@ Unregisters from the tick handler and removes the event listener
 entries(): MapIterator<[K, V]>
 ```
 
+Defined in: node\_modules/.pnpm/typescript@5.7.2/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:148
+
 Returns an iterable of key, value pairs for every entry in the map.
 
 #### Returns
 
-`MapIterator`\<[`K`, `V`]\>
+`MapIterator`\<\[`K`, `V`\]\>
 
 #### Inherited from
 
-`Map.entries`
-
-#### Defined in
-
-node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:148
+```ts
+Map.entries
+```
 
 ***
 
@@ -224,6 +222,8 @@ node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.ite
 ```ts
 forEach(callbackfn, thisArg?): void
 ```
+
+Defined in: node\_modules/.pnpm/typescript@5.7.2/node\_modules/typescript/lib/lib.es2015.collection.d.ts:28
 
 Executes a provided function once per each key/value pair in the Map, in insertion order.
 
@@ -240,11 +240,9 @@ Executes a provided function once per each key/value pair in the Map, in inserti
 
 #### Inherited from
 
-`Map.forEach`
-
-#### Defined in
-
-node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.collection.d.ts:28
+```ts
+Map.forEach
+```
 
 ***
 
@@ -253,6 +251,8 @@ node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.col
 ```ts
 get(key): undefined | V
 ```
+
+Defined in: node\_modules/.pnpm/typescript@5.7.2/node\_modules/typescript/lib/lib.es2015.collection.d.ts:33
 
 Returns a specified element from the Map object. If the value that is associated to the provided key is an object, then you will get a reference to that object and any change made to that object will effectively modify it inside the Map.
 
@@ -270,11 +270,9 @@ Returns the element associated with the specified key. If no element is associat
 
 #### Inherited from
 
-`Map.get`
-
-#### Defined in
-
-node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.collection.d.ts:33
+```ts
+Map.get
+```
 
 ***
 
@@ -283,6 +281,8 @@ node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.col
 ```ts
 has(key): boolean
 ```
+
+Defined in: node\_modules/.pnpm/typescript@5.7.2/node\_modules/typescript/lib/lib.es2015.collection.d.ts:37
 
 #### Parameters
 
@@ -298,11 +298,9 @@ boolean indicating whether an element with the specified key exists or not.
 
 #### Inherited from
 
-`Map.has`
-
-#### Defined in
-
-node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.collection.d.ts:37
+```ts
+Map.has
+```
 
 ***
 
@@ -312,6 +310,8 @@ node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.col
 keys(): MapIterator<K>
 ```
 
+Defined in: node\_modules/.pnpm/typescript@5.7.2/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:153
+
 Returns an iterable of keys in the map
 
 #### Returns
@@ -320,11 +320,9 @@ Returns an iterable of keys in the map
 
 #### Inherited from
 
-`Map.keys`
-
-#### Defined in
-
-node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:153
+```ts
+Map.keys
+```
 
 ***
 
@@ -333,6 +331,8 @@ node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.ite
 ```ts
 listenForChange(key, fn): void
 ```
+
+Defined in: [src/common/net/NetworkedMap.ts:123](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/net/NetworkedMap.ts#L123)
 
 #### Parameters
 
@@ -345,10 +345,6 @@ listenForChange(key, fn): void
 
 `void`
 
-#### Defined in
-
-[src/common/net/NetworkedMap.ts:123](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/net/NetworkedMap.ts#L123)
-
 ***
 
 ### networkTick()
@@ -357,13 +353,11 @@ listenForChange(key, fn): void
 networkTick(): void
 ```
 
+Defined in: [src/common/net/NetworkedMap.ts:206](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/net/NetworkedMap.ts#L206)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/common/net/NetworkedMap.ts:206](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/net/NetworkedMap.ts#L206)
 
 ***
 
@@ -372,6 +366,8 @@ networkTick(): void
 ```ts
 removeSubscriber(sub): boolean
 ```
+
+Defined in: [src/common/net/NetworkedMap.ts:83](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/net/NetworkedMap.ts#L83)
 
 #### Parameters
 
@@ -383,10 +379,6 @@ removeSubscriber(sub): boolean
 
 `boolean`
 
-#### Defined in
-
-[src/common/net/NetworkedMap.ts:83](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/net/NetworkedMap.ts#L83)
-
 ***
 
 ### set()
@@ -394,6 +386,8 @@ removeSubscriber(sub): boolean
 ```ts
 set(key, value): this
 ```
+
+Defined in: [src/common/net/NetworkedMap.ts:148](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/net/NetworkedMap.ts#L148)
 
 Adds a new element with a specified key and value to the Map. If an element with the same key already exists, the element will be updated.
 
@@ -410,11 +404,9 @@ Adds a new element with a specified key and value to the Map. If an element with
 
 #### Overrides
 
-`Map.set`
-
-#### Defined in
-
-[src/common/net/NetworkedMap.ts:148](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/net/NetworkedMap.ts#L148)
+```ts
+Map.set
+```
 
 ***
 
@@ -424,6 +416,8 @@ Adds a new element with a specified key and value to the Map. If an element with
 values(): MapIterator<V>
 ```
 
+Defined in: node\_modules/.pnpm/typescript@5.7.2/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:158
+
 Returns an iterable of values in the map
 
 #### Returns
@@ -432,8 +426,6 @@ Returns an iterable of values in the map
 
 #### Inherited from
 
-`Map.values`
-
-#### Defined in
-
-node\_modules/.pnpm/typescript@5.6.3/node\_modules/typescript/lib/lib.es2015.iterable.d.ts:158
+```ts
+Map.values
+```

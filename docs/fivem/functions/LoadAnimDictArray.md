@@ -6,6 +6,10 @@
 function LoadAnimDictArray(animDict, waitTime): Promise<[boolean, null | string[]]>
 ```
 
+Defined in: [src/fivem/utils/Animations.ts:33](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/Animations.ts#L33)
+
+A utility to load multiple animation dictionary, anything that loads an animation should RemoveAnimDict after its finish being used.
+
 ## Parameters
 
 | Parameter | Type | Default value | Description |
@@ -15,10 +19,6 @@ function LoadAnimDictArray(animDict, waitTime): Promise<[boolean, null | string[
 
 ## Returns
 
-`Promise`\<[`boolean`, `null` \| `string`[]]\>
+`Promise`\<\[`boolean`, `null` \| `string`[]\]\>
 
 if the animation successfully loaded, if the animation failed to load it will return an array of animations that failed to load
-
-## Defined in
-
-[src/fivem/utils/Animations.ts:33](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/utils/Animations.ts#L33)

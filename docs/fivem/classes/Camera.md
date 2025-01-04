@@ -2,6 +2,8 @@
 
 # Class: Camera
 
+Defined in: [src/fivem/Camera.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L7)
+
 ## Constructors
 
 ### new Camera()
@@ -9,6 +11,8 @@
 ```ts
 new Camera(handle): Camera
 ```
+
+Defined in: [src/fivem/Camera.ts:24](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L24)
 
 #### Parameters
 
@@ -20,361 +24,437 @@ new Camera(handle): Camera
 
 [`Camera`](Camera.md)
 
-#### Defined in
-
-[src/fivem/Camera.ts:24](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L24)
-
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `shakeNames` | `readonly` | `string`[] | [src/fivem/Camera.ts:8](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L8) |
+| <a id="shakenames"></a> `shakeNames` | `readonly` | `string`[] | [src/fivem/Camera.ts:8](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L8) |
 
 ## Accessors
 
 ### DepthOfFieldStrength
 
+#### Set Signature
+
 ```ts
 set DepthOfFieldStrength(strength): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Camera.ts:142](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L142)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `strength` | `number` |
 
-#### Defined in
+##### Returns
 
-[src/fivem/Camera.ts:142](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L142)
+`void`
 
 ***
 
 ### Direction
 
+#### Get Signature
+
 ```ts
 get Direction(): Vector3
 ```
 
+Defined in: [src/fivem/Camera.ts:61](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L61)
+
 Gets the direction the camera is facing. Same as ForwardVector
+
+##### Returns
+
+[`Vector3`](Vector3.md)
+
+#### Set Signature
 
 ```ts
 set Direction(direction): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Camera.ts:65](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L65)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `direction` | [`Vector3`](Vector3.md) |
 
-#### Returns
+##### Returns
 
-[`Vector3`](Vector3.md)
-
-#### Defined in
-
-[src/fivem/Camera.ts:61](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L61)
+`void`
 
 ***
 
 ### FarClip
 
+#### Get Signature
+
 ```ts
 get FarClip(): number
 ```
+
+Defined in: [src/fivem/Camera.ts:122](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L122)
+
+##### Returns
+
+`number`
+
+#### Set Signature
 
 ```ts
 set FarClip(farClip): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Camera.ts:126](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L126)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `farClip` | `number` |
 
-#### Returns
+##### Returns
 
-`number`
-
-#### Defined in
-
-[src/fivem/Camera.ts:122](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L122)
+`void`
 
 ***
 
 ### FarDepthOfField
 
+#### Get Signature
+
 ```ts
 get FarDepthOfField(): number
 ```
+
+Defined in: [src/fivem/Camera.ts:134](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L134)
+
+##### Returns
+
+`number`
+
+#### Set Signature
 
 ```ts
 set FarDepthOfField(farDepthOfField): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Camera.ts:138](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L138)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `farDepthOfField` | `number` |
 
-#### Returns
+##### Returns
 
-`number`
-
-#### Defined in
-
-[src/fivem/Camera.ts:134](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L134)
+`void`
 
 ***
 
 ### FieldOfView
 
+#### Get Signature
+
 ```ts
 get FieldOfView(): number
 ```
+
+Defined in: [src/fivem/Camera.ts:106](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L106)
+
+##### Returns
+
+`number`
+
+#### Set Signature
 
 ```ts
 set FieldOfView(fieldOfView): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Camera.ts:110](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L110)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `fieldOfView` | `number` |
 
-#### Returns
+##### Returns
 
-`number`
-
-#### Defined in
-
-[src/fivem/Camera.ts:106](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L106)
+`void`
 
 ***
 
 ### ForwardVector
 
+#### Get Signature
+
 ```ts
 get ForwardVector(): Vector3
 ```
 
-#### Returns
+Defined in: [src/fivem/Camera.ts:83](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L83)
+
+##### Returns
 
 [`Vector3`](Vector3.md)
-
-#### Defined in
-
-[src/fivem/Camera.ts:83](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L83)
 
 ***
 
 ### Handle
 
+#### Get Signature
+
 ```ts
 get Handle(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/Camera.ts:28](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L28)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/Camera.ts:28](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L28)
 
 ***
 
 ### IsActive
 
+#### Get Signature
+
 ```ts
 get IsActive(): boolean
 ```
+
+Defined in: [src/fivem/Camera.ts:32](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L32)
+
+##### Returns
+
+`boolean`
+
+#### Set Signature
 
 ```ts
 set IsActive(active): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Camera.ts:36](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L36)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `active` | `boolean` |
 
-#### Returns
+##### Returns
 
-`boolean`
-
-#### Defined in
-
-[src/fivem/Camera.ts:32](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L32)
+`void`
 
 ***
 
 ### IsInterpolating
 
+#### Get Signature
+
 ```ts
 get IsInterpolating(): boolean
 ```
 
-#### Returns
+Defined in: [src/fivem/Camera.ts:236](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L236)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/Camera.ts:236](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L236)
 
 ***
 
 ### IsShaking
 
+#### Get Signature
+
 ```ts
 get IsShaking(): boolean
 ```
 
-#### Returns
+Defined in: [src/fivem/Camera.ts:158](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L158)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/Camera.ts:158](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L158)
 
 ***
 
 ### MotionBlurStrength
 
+#### Set Signature
+
 ```ts
 set MotionBlurStrength(strength): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Camera.ts:146](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L146)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `strength` | `number` |
 
-#### Defined in
+##### Returns
 
-[src/fivem/Camera.ts:146](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L146)
+`void`
 
 ***
 
 ### NearClip
 
+#### Get Signature
+
 ```ts
 get NearClip(): number
 ```
+
+Defined in: [src/fivem/Camera.ts:114](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L114)
+
+##### Returns
+
+`number`
+
+#### Set Signature
 
 ```ts
 set NearClip(nearClip): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Camera.ts:118](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L118)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `nearClip` | `number` |
 
-#### Returns
+##### Returns
 
-`number`
-
-#### Defined in
-
-[src/fivem/Camera.ts:114](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L114)
+`void`
 
 ***
 
 ### NearDepthOfField
 
+#### Set Signature
+
 ```ts
 set NearDepthOfField(nearDepthOfField): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Camera.ts:130](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L130)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `nearDepthOfField` | `number` |
 
-#### Defined in
+##### Returns
 
-[src/fivem/Camera.ts:130](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L130)
+`void`
 
 ***
 
 ### Position
 
+#### Get Signature
+
 ```ts
 get Position(): Vector3
 ```
+
+Defined in: [src/fivem/Camera.ts:40](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L40)
+
+##### Returns
+
+[`Vector3`](Vector3.md)
+
+#### Set Signature
 
 ```ts
 set Position(position): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Camera.ts:44](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L44)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `position` | [`Vector3`](Vector3.md) |
 
-#### Returns
+##### Returns
 
-[`Vector3`](Vector3.md)
-
-#### Defined in
-
-[src/fivem/Camera.ts:40](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L40)
+`void`
 
 ***
 
 ### Rotation
 
+#### Get Signature
+
 ```ts
 get Rotation(): Vector3
 ```
+
+Defined in: [src/fivem/Camera.ts:48](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L48)
+
+##### Returns
+
+[`Vector3`](Vector3.md)
+
+#### Set Signature
 
 ```ts
 set Rotation(rotation): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Camera.ts:52](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L52)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `rotation` | [`Vector3`](Vector3.md) |
 
-#### Returns
+##### Returns
 
-[`Vector3`](Vector3.md)
-
-#### Defined in
-
-[src/fivem/Camera.ts:48](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L48)
+`void`
 
 ***
 
 ### ShakeAmplitude
 
+#### Set Signature
+
 ```ts
 set ShakeAmplitude(amplitude): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Camera.ts:162](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L162)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `amplitude` | `number` |
 
-#### Defined in
+##### Returns
 
-[src/fivem/Camera.ts:162](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L162)
+`void`
 
 ## Methods
 
@@ -383,6 +463,8 @@ set ShakeAmplitude(amplitude): void
 ```ts
 attachTo(object, offset): void
 ```
+
+Defined in: [src/fivem/Camera.ts:240](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L240)
 
 #### Parameters
 
@@ -395,10 +477,6 @@ attachTo(object, offset): void
 
 `void`
 
-#### Defined in
-
-[src/fivem/Camera.ts:240](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L240)
-
 ***
 
 ### delete()
@@ -407,13 +485,11 @@ attachTo(object, offset): void
 delete(): void
 ```
 
+Defined in: [src/fivem/Camera.ts:267](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L267)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/Camera.ts:267](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L267)
 
 ***
 
@@ -423,13 +499,11 @@ delete(): void
 detach(): void
 ```
 
+Defined in: [src/fivem/Camera.ts:263](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L263)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/Camera.ts:263](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L263)
 
 ***
 
@@ -439,13 +513,11 @@ detach(): void
 exists(): boolean
 ```
 
+Defined in: [src/fivem/Camera.ts:271](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L271)
+
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/Camera.ts:271](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L271)
 
 ***
 
@@ -458,6 +530,8 @@ interpTo(
    easePosition, 
    easeRotation): void
 ```
+
+Defined in: [src/fivem/Camera.ts:221](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L221)
 
 #### Parameters
 
@@ -472,10 +546,6 @@ interpTo(
 
 `void`
 
-#### Defined in
-
-[src/fivem/Camera.ts:221](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L221)
-
 ***
 
 ### playAnim()
@@ -487,6 +557,8 @@ playAnim(
    position, 
 rotation): Promise<void>
 ```
+
+Defined in: [src/fivem/Camera.ts:166](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L166)
 
 #### Parameters
 
@@ -501,10 +573,6 @@ rotation): Promise<void>
 
 `Promise`\<`void`\>
 
-#### Defined in
-
-[src/fivem/Camera.ts:166](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L166)
-
 ***
 
 ### pointAt()
@@ -513,20 +581,18 @@ rotation): Promise<void>
 pointAt(target, offset): void
 ```
 
+Defined in: [src/fivem/Camera.ts:189](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L189)
+
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `target` | [`BaseEntity`](BaseEntity.md) \| [`Vector3`](Vector3.md) \| [`PedBone`](PedBone.md) |
+| `target` | \| [`BaseEntity`](BaseEntity.md) \| [`Vector3`](Vector3.md) \| [`PedBone`](PedBone.md) |
 | `offset` | [`Vector3`](Vector3.md) |
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/Camera.ts:189](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L189)
 
 ***
 
@@ -535,6 +601,8 @@ pointAt(target, offset): void
 ```ts
 shake(shakeType, amplitude): void
 ```
+
+Defined in: [src/fivem/Camera.ts:150](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L150)
 
 #### Parameters
 
@@ -547,10 +615,6 @@ shake(shakeType, amplitude): void
 
 `void`
 
-#### Defined in
-
-[src/fivem/Camera.ts:150](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L150)
-
 ***
 
 ### stopPointing()
@@ -559,13 +623,11 @@ shake(shakeType, amplitude): void
 stopPointing(): void
 ```
 
+Defined in: [src/fivem/Camera.ts:217](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L217)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/Camera.ts:217](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L217)
 
 ***
 
@@ -575,10 +637,8 @@ stopPointing(): void
 stopShaking(): void
 ```
 
+Defined in: [src/fivem/Camera.ts:154](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Camera.ts#L154)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/Camera.ts:154](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Camera.ts#L154)

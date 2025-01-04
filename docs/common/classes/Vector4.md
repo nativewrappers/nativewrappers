@@ -2,6 +2,8 @@
 
 # Class: Vector4
 
+Defined in: [src/common/utils/Vector.ts:780](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L780)
+
 Represents a 4-dimensional vector.
 
 ## Extends
@@ -20,6 +22,8 @@ new Vector4(
    w): Vector4
 ```
 
+Defined in: [src/common/utils/Vector.ts:796](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L796)
+
 Constructs a new 4D vector.
 
 #### Parameters
@@ -37,35 +41,37 @@ Constructs a new 4D vector.
 
 #### Overrides
 
-`Vector.constructor`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:796](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L796)
+```ts
+Vector.constructor
+```
 
 ## Properties
 
 | Property | Modifier | Type | Default value | Description | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| `size` | `public` | `number` | `undefined` | The size of the vector (number of components). | - | `Vector.size` | [src/common/utils/Vector.ts:553](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L553) |
-| `type` | `public` | `ClassTypes` | `ClassTypes.Vector4` | - | `Vector.type` | - | [src/common/utils/Vector.ts:783](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L783) |
-| `w` | `public` | `number` | `undefined` | - | `Vector.w` | - | [src/common/utils/Vector.ts:785](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L785) |
-| `x` | `public` | `number` | `0` | The x-component of the vector. | - | `Vector.x` | [src/common/utils/Vector.ts:554](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L554) |
-| `y` | `public` | `number` | `x` | The y-component of the vector (optional, defaults to x). | - | `Vector.y` | [src/common/utils/Vector.ts:555](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L555) |
-| `z` | `public` | `number` | `undefined` | - | `Vector.z` | - | [src/common/utils/Vector.ts:784](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L784) |
-| `Zero` | `readonly` | [`Vector4`](Vector4.md) | `undefined` | - | - | - | [src/common/utils/Vector.ts:787](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L787) |
+| <a id="size"></a> `size` | `public` | `number` | `undefined` | The size of the vector (number of components). | - | `Vector.size` | [src/common/utils/Vector.ts:553](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L553) |
+| <a id="type"></a> `type` | `public` | `ClassTypes` | `ClassTypes.Vector4` | - | `Vector.type` | - | [src/common/utils/Vector.ts:783](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L783) |
+| <a id="w-1"></a> `w` | `public` | `number` | `undefined` | - | `Vector.w` | - | [src/common/utils/Vector.ts:785](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L785) |
+| <a id="x-1"></a> `x` | `public` | `number` | `0` | The x-component of the vector. | - | `Vector.x` | [src/common/utils/Vector.ts:554](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L554) |
+| <a id="y-1"></a> `y` | `public` | `number` | `x` | The y-component of the vector (optional, defaults to x). | - | `Vector.y` | [src/common/utils/Vector.ts:555](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L555) |
+| <a id="z-1"></a> `z` | `public` | `number` | `undefined` | - | `Vector.z` | - | [src/common/utils/Vector.ts:784](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L784) |
+| <a id="zero"></a> `Zero` | `readonly` | [`Vector4`](Vector4.md) | `undefined` | - | - | - | [src/common/utils/Vector.ts:787](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L787) |
 
 ## Accessors
 
 ### Length
 
+#### Get Signature
+
 ```ts
 get Length(): number
 ```
 
+Defined in: [src/common/utils/Vector.ts:705](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L705)
+
 Calculates the length (magnitude) of a vector.
 
-#### Returns
+##### Returns
 
 `number`
 
@@ -73,31 +79,29 @@ The magnitude of the vector.
 
 #### Inherited from
 
-`Vector.Length`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:705](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L705)
+```ts
+Vector.Length
+```
 
 ## Methods
 
 ### \[iterator\]()
 
 ```ts
-iterator: Iterator<number, any, any>
+iterator: Iterator<number>
 ```
+
+Defined in: [src/common/utils/Vector.ts:560](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L560)
 
 #### Returns
 
-`Iterator`\<`number`, `any`, `any`\>
+`Iterator`\<`number`\>
 
 #### Inherited from
 
-`Vector.[iterator]`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:560](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L560)
+```ts
+Vector.[iterator]
+```
 
 ***
 
@@ -106,6 +110,8 @@ iterator: Iterator<number, any, any>
 ```ts
 add(v): Vector4
 ```
+
+Defined in: [src/common/utils/Vector.ts:617](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L617)
 
 #### Parameters
 
@@ -123,11 +129,9 @@ Vector.add
 
 #### Inherited from
 
-`Vector.add`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:617](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L617)
+```ts
+Vector.add
+```
 
 ***
 
@@ -136,6 +140,8 @@ Vector.add
 ```ts
 addAbsolute(v): Vector4
 ```
+
+Defined in: [src/common/utils/Vector.ts:659](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L659)
 
 #### Parameters
 
@@ -153,11 +159,9 @@ Vector.addAbsolute
 
 #### Inherited from
 
-`Vector.addAbsolute`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:659](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L659)
+```ts
+Vector.addAbsolute
+```
 
 ***
 
@@ -166,6 +170,8 @@ Vector.addAbsolute
 ```ts
 addW(w): Vector4
 ```
+
+Defined in: [src/common/utils/Vector.ts:812](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L812)
 
 #### Parameters
 
@@ -181,10 +187,6 @@ addW(w): Vector4
 
 Vector.addW
 
-#### Defined in
-
-[src/common/utils/Vector.ts:812](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L812)
-
 ***
 
 ### addX()
@@ -192,6 +194,8 @@ Vector.addW
 ```ts
 addX(x): Vector4
 ```
+
+Defined in: [src/common/utils/Vector.ts:624](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L624)
 
 #### Parameters
 
@@ -209,11 +213,9 @@ Vector.addX
 
 #### Inherited from
 
-`Vector.addX`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:624](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L624)
+```ts
+Vector.addX
+```
 
 ***
 
@@ -222,6 +224,8 @@ Vector.addX
 ```ts
 addY(y): Vector4
 ```
+
+Defined in: [src/common/utils/Vector.ts:631](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L631)
 
 #### Parameters
 
@@ -239,11 +243,9 @@ Vector.addY
 
 #### Inherited from
 
-`Vector.addY`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:631](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L631)
+```ts
+Vector.addY
+```
 
 ***
 
@@ -252,6 +254,8 @@ Vector.addY
 ```ts
 addZ(z): Vector4
 ```
+
+Defined in: [src/common/utils/Vector.ts:805](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L805)
 
 #### Parameters
 
@@ -267,10 +271,6 @@ addZ(z): Vector4
 
 Vector.addZ
 
-#### Defined in
-
-[src/common/utils/Vector.ts:805](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L805)
-
 ***
 
 ### clone()
@@ -278,6 +278,8 @@ Vector.addZ
 ```ts
 clone(): Vector4
 ```
+
+Defined in: [src/common/utils/Vector.ts:575](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L575)
 
 #### Returns
 
@@ -289,11 +291,9 @@ Vector.clone
 
 #### Inherited from
 
-`Vector.clone`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:575](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L575)
+```ts
+Vector.clone
+```
 
 ***
 
@@ -302,6 +302,8 @@ Vector.clone
 ```ts
 crossProduct(v): Vec3 | Vec4
 ```
+
+Defined in: [src/common/utils/Vector.ts:819](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L819)
 
 #### Parameters
 
@@ -317,10 +319,6 @@ crossProduct(v): Vec3 | Vec4
 
 Vector.crossProduct
 
-#### Defined in
-
-[src/common/utils/Vector.ts:819](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L819)
-
 ***
 
 ### distance()
@@ -328,6 +326,8 @@ Vector.crossProduct
 ```ts
 distance(v): number
 ```
+
+Defined in: [src/common/utils/Vector.ts:596](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L596)
 
 The distance between two Vectors.
 
@@ -345,11 +345,9 @@ Distance between this and another vector.
 
 #### Inherited from
 
-`Vector.distance`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:596](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L596)
+```ts
+Vector.distance
+```
 
 ***
 
@@ -358,6 +356,8 @@ Distance between this and another vector.
 ```ts
 distanceSquared(v): number
 ```
+
+Defined in: [src/common/utils/Vector.ts:585](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L585)
 
 The product of the Euclidean magnitudes of this and another Vector.
 
@@ -375,11 +375,9 @@ Euclidean magnitude with another vector.
 
 #### Inherited from
 
-`Vector.distanceSquared`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:585](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L585)
+```ts
+Vector.distanceSquared
+```
 
 ***
 
@@ -389,6 +387,8 @@ Euclidean magnitude with another vector.
 divide(v): Vector4
 ```
 
+Defined in: [src/common/utils/Vector.ts:652](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L652)
+
 #### Parameters
 
 | Parameter | Type |
@@ -405,11 +405,9 @@ Vector.divide
 
 #### Inherited from
 
-`Vector.divide`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:652](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L652)
+```ts
+Vector.divide
+```
 
 ***
 
@@ -419,6 +417,8 @@ Vector.divide
 divideAbsolute(v): Vector4
 ```
 
+Defined in: [src/common/utils/Vector.ts:680](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L680)
+
 #### Parameters
 
 | Parameter | Type |
@@ -435,11 +435,9 @@ Vector.divide
 
 #### Inherited from
 
-`Vector.divideAbsolute`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:680](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L680)
+```ts
+Vector.divideAbsolute
+```
 
 ***
 
@@ -448,6 +446,8 @@ Vector.divide
 ```ts
 dotProduct(v): number
 ```
+
+Defined in: [src/common/utils/Vector.ts:610](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L610)
 
 #### Parameters
 
@@ -465,11 +465,9 @@ Vector.dotProduct
 
 #### Inherited from
 
-`Vector.dotProduct`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:610](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L610)
+```ts
+Vector.dotProduct
+```
 
 ***
 
@@ -479,6 +477,8 @@ Vector.dotProduct
 multiply(v): Vector4
 ```
 
+Defined in: [src/common/utils/Vector.ts:645](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L645)
+
 #### Parameters
 
 | Parameter | Type |
@@ -495,11 +495,9 @@ Vector.multiply
 
 #### Inherited from
 
-`Vector.multiply`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:645](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L645)
+```ts
+Vector.multiply
+```
 
 ***
 
@@ -509,6 +507,8 @@ Vector.multiply
 multiplyAbsolute(v): Vector4
 ```
 
+Defined in: [src/common/utils/Vector.ts:673](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L673)
+
 #### Parameters
 
 | Parameter | Type |
@@ -525,11 +525,9 @@ Vector.multiply
 
 #### Inherited from
 
-`Vector.multiplyAbsolute`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:673](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L673)
+```ts
+Vector.multiplyAbsolute
+```
 
 ***
 
@@ -538,6 +536,8 @@ Vector.multiply
 ```ts
 normalize(): Vector4
 ```
+
+Defined in: [src/common/utils/Vector.ts:603](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L603)
 
 #### Returns
 
@@ -549,11 +549,9 @@ Vector.normalize
 
 #### Inherited from
 
-`Vector.normalize`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:603](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L603)
+```ts
+Vector.normalize
+```
 
 ***
 
@@ -562,6 +560,8 @@ Vector.normalize
 ```ts
 replace<T>(v): void
 ```
+
+Defined in: [src/common/utils/Vector.ts:695](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L695)
 
 Replaces the components of the vector with the components of another vector object.
 
@@ -583,11 +583,9 @@ Replaces the components of the vector with the components of another vector obje
 
 #### Inherited from
 
-`Vector.replace`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:695](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L695)
+```ts
+Vector.replace
+```
 
 ***
 
@@ -596,6 +594,8 @@ Replaces the components of the vector with the components of another vector obje
 ```ts
 subtract(v): Vector4
 ```
+
+Defined in: [src/common/utils/Vector.ts:638](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L638)
 
 #### Parameters
 
@@ -613,11 +613,9 @@ Vector.subtract
 
 #### Inherited from
 
-`Vector.subtract`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:638](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L638)
+```ts
+Vector.subtract
+```
 
 ***
 
@@ -626,6 +624,8 @@ Vector.subtract
 ```ts
 subtractAbsolute(v): Vector4
 ```
+
+Defined in: [src/common/utils/Vector.ts:666](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L666)
 
 #### Parameters
 
@@ -643,11 +643,9 @@ Vector.subtractAbsolute
 
 #### Inherited from
 
-`Vector.subtractAbsolute`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:666](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L666)
+```ts
+Vector.subtractAbsolute
+```
 
 ***
 
@@ -656,6 +654,8 @@ Vector.subtractAbsolute
 ```ts
 toArray<T>(): VectorArray<T>
 ```
+
+Defined in: [src/common/utils/Vector.ts:687](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L687)
 
 Converts the vector to an array of its components.
 
@@ -671,11 +671,9 @@ Converts the vector to an array of its components.
 
 #### Inherited from
 
-`Vector.toArray`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:687](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L687)
+```ts
+Vector.toArray
+```
 
 ***
 
@@ -685,17 +683,17 @@ Converts the vector to an array of its components.
 toString(): string
 ```
 
+Defined in: [src/common/utils/Vector.ts:568](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L568)
+
 #### Returns
 
 `string`
 
 #### Inherited from
 
-`Vector.toString`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:568](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L568)
+```ts
+Vector.toString
+```
 
 ***
 
@@ -705,15 +703,13 @@ toString(): string
 toVec2(): Vector2
 ```
 
+Defined in: [src/common/utils/Vector.ts:826](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L826)
+
 #### Returns
 
 [`Vector2`](Vector2.md)
 
 the x and y values as Vec2
-
-#### Defined in
-
-[src/common/utils/Vector.ts:826](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L826)
 
 ***
 
@@ -723,15 +719,13 @@ the x and y values as Vec2
 toVec3(): Vector3
 ```
 
+Defined in: [src/common/utils/Vector.ts:833](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L833)
+
 #### Returns
 
 [`Vector3`](Vector3.md)
 
 the x and y values as Vec3
-
-#### Defined in
-
-[src/common/utils/Vector.ts:833](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L833)
 
 ***
 
@@ -744,6 +738,8 @@ static add<T, U>(
    b): U
 ```
 
+Defined in: [src/common/utils/Vector.ts:209](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L209)
+
 Adds two vectors or a scalar value to a vector.
 
 #### Type Parameters
@@ -769,11 +765,9 @@ A new vector with incremented components.
 
 #### Inherited from
 
-`Vector.add`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:209](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L209)
+```ts
+Vector.add
+```
 
 ***
 
@@ -786,6 +780,8 @@ static addAbsolute<T, U>(
    b): U
 ```
 
+Defined in: [src/common/utils/Vector.ts:360](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L360)
+
 Adds two vectors or a scalar value to a vector.
 
 #### Type Parameters
@@ -811,11 +807,9 @@ A new vector with incremented components.
 
 #### Inherited from
 
-`Vector.addAbsolute`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:360](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L360)
+```ts
+Vector.addAbsolute
+```
 
 ***
 
@@ -827,6 +821,8 @@ static addW<T, U>(
    obj, 
 w): InferVector<U>
 ```
+
+Defined in: [src/common/utils/Vector.ts:274](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L274)
 
 Adds a scalar value to the w-component of a vector.
 
@@ -853,11 +849,9 @@ A new vector with the w-component incremented.
 
 #### Inherited from
 
-`Vector.addW`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:274](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L274)
+```ts
+Vector.addW
+```
 
 ***
 
@@ -869,6 +863,8 @@ static addX<T, U>(
    obj, 
 x): InferVector<U>
 ```
+
+Defined in: [src/common/utils/Vector.ts:223](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L223)
 
 Adds a scalar value to the x-component of a vector.
 
@@ -895,11 +891,9 @@ A new vector with the x-component incremented.
 
 #### Inherited from
 
-`Vector.addX`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:223](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L223)
+```ts
+Vector.addX
+```
 
 ***
 
@@ -911,6 +905,8 @@ static addY<T, U>(
    obj, 
 y): InferVector<U>
 ```
+
+Defined in: [src/common/utils/Vector.ts:240](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L240)
 
 Adds a scalar value to the y-component of a vector.
 
@@ -937,11 +933,9 @@ A new vector with the y-component incremented.
 
 #### Inherited from
 
-`Vector.addY`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:240](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L240)
+```ts
+Vector.addY
+```
 
 ***
 
@@ -953,6 +947,8 @@ static addZ<T, U>(
    obj, 
 z): InferVector<U>
 ```
+
+Defined in: [src/common/utils/Vector.ts:257](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L257)
 
 Adds a scalar value to the z-component of a vector.
 
@@ -979,11 +975,9 @@ A new vector with the z-component incremented.
 
 #### Inherited from
 
-`Vector.addZ`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:257](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L257)
+```ts
+Vector.addZ
+```
 
 ***
 
@@ -992,6 +986,8 @@ A new vector with the z-component incremented.
 ```ts
 static clone<T, U>(this, obj): InferVector<U>
 ```
+
+Defined in: [src/common/utils/Vector.ts:171](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L171)
 
 Creates a deep copy of the provided vector.
 
@@ -1017,11 +1013,9 @@ A new vector instance that is a copy of the provided vector.
 
 #### Inherited from
 
-`Vector.clone`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:171](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L171)
+```ts
+Vector.clone
+```
 
 ***
 
@@ -1045,13 +1039,13 @@ The z-component of the vector (optional, defaults to the value of y).
 
 The w-component of the vector (optional, defaults to the value of z).
 
-#### create(x, y)
+#### Call Signature
 
 ```ts
 protected static create(x, y?): Vector2
 ```
 
-Creates a new vector based on the provided parameters.
+Defined in: [src/common/utils/Vector.ts:96](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L96)
 
 ##### Parameters
 
@@ -1064,31 +1058,13 @@ Creates a new vector based on the provided parameters.
 
 [`Vector2`](Vector2.md)
 
-##### Param
-
-The x-component of the vector.
-
-##### Param
-
-The y-component of the vector (optional, defaults to the value of x).
-
-##### Param
-
-The z-component of the vector (optional, defaults to the value of y).
-
-##### Param
-
-The w-component of the vector (optional, defaults to the value of z).
-
 ##### Inherited from
 
-`Vector.create`
+```ts
+Vector.create
+```
 
-##### Defined in
-
-[src/common/utils/Vector.ts:96](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L96)
-
-#### create(x, y, z)
+#### Call Signature
 
 ```ts
 protected static create(
@@ -1097,7 +1073,7 @@ protected static create(
    z?): Vector3
 ```
 
-Creates a new vector based on the provided parameters.
+Defined in: [src/common/utils/Vector.ts:97](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L97)
 
 ##### Parameters
 
@@ -1111,31 +1087,13 @@ Creates a new vector based on the provided parameters.
 
 [`Vector3`](Vector3.md)
 
-##### Param
-
-The x-component of the vector.
-
-##### Param
-
-The y-component of the vector (optional, defaults to the value of x).
-
-##### Param
-
-The z-component of the vector (optional, defaults to the value of y).
-
-##### Param
-
-The w-component of the vector (optional, defaults to the value of z).
-
 ##### Inherited from
 
-`Vector.create`
+```ts
+Vector.create
+```
 
-##### Defined in
-
-[src/common/utils/Vector.ts:97](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L97)
-
-#### create(x, y, z, w)
+#### Call Signature
 
 ```ts
 protected static create(
@@ -1145,7 +1103,7 @@ protected static create(
    w?): Vector4
 ```
 
-Creates a new vector based on the provided parameters.
+Defined in: [src/common/utils/Vector.ts:98](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L98)
 
 ##### Parameters
 
@@ -1160,35 +1118,19 @@ Creates a new vector based on the provided parameters.
 
 [`Vector4`](Vector4.md)
 
-##### Param
-
-The x-component of the vector.
-
-##### Param
-
-The y-component of the vector (optional, defaults to the value of x).
-
-##### Param
-
-The z-component of the vector (optional, defaults to the value of y).
-
-##### Param
-
-The w-component of the vector (optional, defaults to the value of z).
-
 ##### Inherited from
 
-`Vector.create`
+```ts
+Vector.create
+```
 
-##### Defined in
-
-[src/common/utils/Vector.ts:98](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L98)
-
-#### create(this, obj)
+#### Call Signature
 
 ```ts
 protected static create<T, U>(this, obj): InferVector<U>
 ```
+
+Defined in: [src/common/utils/Vector.ts:109](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L109)
 
 Creates a new vector based on the provided vector-like object.
 
@@ -1212,13 +1154,29 @@ Creates a new vector based on the provided vector-like object.
 
 A new vector instance.
 
+A new vector instance.
+
+##### Param
+
+The x-component of the vector.
+
+##### Param
+
+The y-component of the vector (optional, defaults to the value of x).
+
+##### Param
+
+The z-component of the vector (optional, defaults to the value of y).
+
+##### Param
+
+The w-component of the vector (optional, defaults to the value of z).
+
 ##### Inherited from
 
-`Vector.create`
-
-##### Defined in
-
-[src/common/utils/Vector.ts:109](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L109)
+```ts
+Vector.create
+```
 
 ***
 
@@ -1230,6 +1188,8 @@ static crossProduct<T, U>(
    a, 
    b): U
 ```
+
+Defined in: [src/common/utils/Vector.ts:441](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L441)
 
 Calculates the cross product of two vectors in three-dimensional space.
 
@@ -1256,11 +1216,9 @@ A new vector perpendicular to both input vectors.
 
 #### Inherited from
 
-`Vector.crossProduct`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:441](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L441)
+```ts
+Vector.crossProduct
+```
 
 ***
 
@@ -1272,6 +1230,8 @@ static divide<T, U>(
    a, 
    b): U
 ```
+
+Defined in: [src/common/utils/Vector.ts:319](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L319)
 
 Divides two vectors by their components, or divides a vector by a scalar value.
 
@@ -1298,11 +1258,9 @@ A new vector with divided components.
 
 #### Inherited from
 
-`Vector.divide`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:319](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L319)
+```ts
+Vector.divide
+```
 
 ***
 
@@ -1314,6 +1272,8 @@ static divideAbsolute<T, U>(
    a, 
    b): U
 ```
+
+Defined in: [src/common/utils/Vector.ts:402](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L402)
 
 Divides two vectors by their components, or divides a vector by a scalar value
 
@@ -1340,11 +1300,9 @@ A new vector with divided components.
 
 #### Inherited from
 
-`Vector.divideAbsolute`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:402](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L402)
+```ts
+Vector.divideAbsolute
+```
 
 ***
 
@@ -1356,6 +1314,8 @@ static dotProduct<T, U>(
    a, 
    b): number
 ```
+
+Defined in: [src/common/utils/Vector.ts:416](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L416)
 
 Calculates the dot product of two vectors.
 
@@ -1382,11 +1342,9 @@ A scalar value representing the degree of alignment between the input vectors.
 
 #### Inherited from
 
-`Vector.dotProduct`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:416](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L416)
+```ts
+Vector.dotProduct
+```
 
 ***
 
@@ -1395,6 +1353,8 @@ A scalar value representing the degree of alignment between the input vectors.
 ```ts
 static fromArray<T, U>(this, primitive): InstanceType<T>
 ```
+
+Defined in: [src/common/utils/Vector.ts:486](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L486)
 
 Creates a vector from an array of numbers.
 
@@ -1418,11 +1378,9 @@ Creates a vector from an array of numbers.
 
 #### Inherited from
 
-`Vector.fromArray`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:486](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L486)
+```ts
+Vector.fromArray
+```
 
 ***
 
@@ -1431,6 +1389,8 @@ Creates a vector from an array of numbers.
 ```ts
 static fromArrays<T, U>(this, primitives): InstanceType<T>[]
 ```
+
+Defined in: [src/common/utils/Vector.ts:516](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L516)
 
 Creates an array of vectors from an array of number arrays
 
@@ -1454,11 +1414,9 @@ Creates an array of vectors from an array of number arrays
 
 #### Inherited from
 
-`Vector.fromArrays`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:516](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L516)
+```ts
+Vector.fromArrays
+```
 
 ***
 
@@ -1467,6 +1425,8 @@ Creates an array of vectors from an array of number arrays
 ```ts
 static fromBuffer<T>(this, __namedParameters): InstanceType<T>
 ```
+
+Defined in: [src/common/utils/Vector.ts:153](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L153)
 
 Creates a vector from binary data in a MsgpackBuffer.
 
@@ -1491,11 +1451,9 @@ A new vector instance.
 
 #### Inherited from
 
-`Vector.fromBuffer`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:153](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L153)
+```ts
+Vector.fromBuffer
+```
 
 ***
 
@@ -1504,6 +1462,8 @@ A new vector instance.
 ```ts
 static fromObject<T, U>(this, primitive): InstanceType<T>
 ```
+
+Defined in: [src/common/utils/Vector.ts:498](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L498)
 
 Creates a vector from an array or object containing vector components.
 
@@ -1527,11 +1487,9 @@ Creates a vector from an array or object containing vector components.
 
 #### Inherited from
 
-`Vector.fromObject`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:498](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L498)
+```ts
+Vector.fromObject
+```
 
 ***
 
@@ -1540,6 +1498,8 @@ Creates a vector from an array or object containing vector components.
 ```ts
 static Length<T, U>(this, obj): number
 ```
+
+Defined in: [src/common/utils/Vector.ts:528](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L528)
 
 Calculates the length (magnitude) of a vector.
 
@@ -1565,11 +1525,9 @@ The magnitude of the vector.
 
 #### Inherited from
 
-`Vector.Length`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:528](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L528)
+```ts
+Vector.Length
+```
 
 ***
 
@@ -1582,6 +1540,8 @@ static multiply<T, U>(
    b): U
 ```
 
+Defined in: [src/common/utils/Vector.ts:305](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L305)
+
 Multiplies two vectors by their components, or multiplies a vector by a scalar value.
 
 #### Type Parameters
@@ -1607,11 +1567,9 @@ A new vector with multiplied components.
 
 #### Inherited from
 
-`Vector.multiply`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:305](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L305)
+```ts
+Vector.multiply
+```
 
 ***
 
@@ -1624,6 +1582,8 @@ static multiplyAbsolute<T, U>(
    b): U
 ```
 
+Defined in: [src/common/utils/Vector.ts:388](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L388)
+
 Multiplies two vectors by their components, or multiplies a vector by a scalar value.
 
 #### Type Parameters
@@ -1649,11 +1609,9 @@ A new vector with multiplied components.
 
 #### Inherited from
 
-`Vector.multiplyAbsolute`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:388](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L388)
+```ts
+Vector.multiplyAbsolute
+```
 
 ***
 
@@ -1662,6 +1620,8 @@ A new vector with multiplied components.
 ```ts
 static normalize<T, U>(this, a): U
 ```
+
+Defined in: [src/common/utils/Vector.ts:474](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L474)
 
 Normalizes a vector, producing a new vector with the same direction but with a magnitude of 1.
 
@@ -1687,11 +1647,9 @@ The new normalized vector.
 
 #### Inherited from
 
-`Vector.normalize`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:474](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L474)
+```ts
+Vector.normalize
+```
 
 ***
 
@@ -1704,6 +1662,8 @@ static subtract<T, U>(
    b): U
 ```
 
+Defined in: [src/common/utils/Vector.ts:291](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L291)
+
 Subtracts one vector from another or subtracts a scalar value from a vector.
 
 #### Type Parameters
@@ -1729,11 +1689,9 @@ A new vector with subtracted components.
 
 #### Inherited from
 
-`Vector.subtract`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:291](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L291)
+```ts
+Vector.subtract
+```
 
 ***
 
@@ -1746,6 +1704,8 @@ static subtractAbsolute<T, U>(
    b): U
 ```
 
+Defined in: [src/common/utils/Vector.ts:374](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Vector.ts#L374)
+
 Subtracts one vector from another or subtracts a scalar value from a vector.
 
 #### Type Parameters
@@ -1771,8 +1731,6 @@ A new vector with subtracted components.
 
 #### Inherited from
 
-`Vector.subtractAbsolute`
-
-#### Defined in
-
-[src/common/utils/Vector.ts:374](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Vector.ts#L374)
+```ts
+Vector.subtractAbsolute
+```

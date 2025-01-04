@@ -2,9 +2,7 @@
 
 # redm
 
-## Index
-
-### Enumerations
+## Enumerations
 
 | Enumeration | Description |
 | ------ | ------ |
@@ -17,7 +15,7 @@
 | [TamingState](enumerations/TamingState.md) | - |
 | [VehicleSeat](enumerations/VehicleSeat.md) | - |
 
-### Classes
+## Classes
 
 | Class | Description |
 | ------ | ------ |
@@ -31,7 +29,7 @@
 | [Vehicle](classes/Vehicle.md) | - |
 | [Volume](classes/Volume.md) | - |
 
-### Type Aliases
+## Type Aliases
 
 | Type alias | Description |
 | ------ | ------ |

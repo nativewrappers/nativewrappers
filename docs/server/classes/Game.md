@@ -2,6 +2,8 @@
 
 # Class: `abstract` Game
 
+Defined in: [src/server/Game.ts:3](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Game.ts#L3)
+
 ## Constructors
 
 ### new Game()
@@ -18,61 +20,63 @@ new Game(): Game
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `hashCache` | `static` | `Map`\<`string`, `number`\> | [src/server/Game.ts:5](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/Game.ts#L5) |
+| <a id="hashcache"></a> `hashCache` | `static` | `Map`\<`string`, `number`\> | [src/server/Game.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Game.ts#L5) |
 
 ## Accessors
 
 ### GameBuild
 
+#### Get Signature
+
 ```ts
 get static GameBuild(): number
 ```
 
-#### Returns
+Defined in: [src/server/Game.ts:30](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Game.ts#L30)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/server/Game.ts:30](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/Game.ts#L30)
 
 ***
 
 ### GameName
 
+#### Get Signature
+
 ```ts
 get static GameName(): string
 ```
 
-#### Returns
+Defined in: [src/server/Game.ts:34](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Game.ts#L34)
+
+##### Returns
 
 `string`
-
-#### Defined in
-
-[src/server/Game.ts:34](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/Game.ts#L34)
 
 ***
 
 ### GameTime
 
+#### Get Signature
+
 ```ts
 get static GameTime(): number
 ```
 
+Defined in: [src/server/Game.ts:26](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Game.ts#L26)
+
 Gets how many milliseconds the game has been open this session
 
-#### Returns
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/server/Game.ts:26](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/Game.ts#L26)
 
 ***
 
 ### RegisteredCommands
+
+#### Get Signature
 
 ```ts
 get static RegisteredCommands(): [{
@@ -80,15 +84,13 @@ get static RegisteredCommands(): [{
  }]
 ```
 
-#### Returns
+Defined in: [src/server/Game.ts:56](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Game.ts#L56)
 
-[\{
+##### Returns
+
+\[\{
   `name`: `string`;
- \}]
-
-#### Defined in
-
-[src/server/Game.ts:56](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/Game.ts#L56)
+ \}\]
 
 ## Methods
 
@@ -97,6 +99,8 @@ get static RegisteredCommands(): [{
 ```ts
 static generateHash(input): number
 ```
+
+Defined in: [src/server/Game.ts:11](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Game.ts#L11)
 
 Calculate the Jenkins One At A Time (joaat) has from the given string.
 
@@ -110,29 +114,23 @@ Calculate the Jenkins One At A Time (joaat) has from the given string.
 
 `number`
 
-#### Defined in
-
-[src/server/Game.ts:11](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/Game.ts#L11)
-
 ***
 
 ### PlayerList()
 
 ```ts
-static PlayerList(): IterableIterator<Player, any, any>
+static PlayerList(): IterableIterator<Player>
 ```
+
+Defined in: [src/server/Game.ts:64](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Game.ts#L64)
 
 Get an iterable list of players currently on the server.
 
 #### Returns
 
-`IterableIterator`\<[`Player`](Player.md), `any`, `any`\>
+`IterableIterator`\<[`Player`](Player.md)\>
 
 Iterable list of Player objects.
-
-#### Defined in
-
-[src/server/Game.ts:64](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/Game.ts#L64)
 
 ***
 
@@ -145,6 +143,8 @@ static registerCommand(
    restricted): void
 ```
 
+Defined in: [src/server/Game.ts:38](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Game.ts#L38)
+
 #### Parameters
 
 | Parameter | Type | Default value |
@@ -156,7 +156,3 @@ static registerCommand(
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/server/Game.ts:38](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/Game.ts#L38)

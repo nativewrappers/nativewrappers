@@ -2,6 +2,8 @@
 
 # Class: Volume
 
+Defined in: [src/redm/Volume.ts:3](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Volume.ts#L3)
+
 ## Constructors
 
 ### new Volume()
@@ -13,6 +15,8 @@ new Volume(
    scale, 
    customName?): Volume
 ```
+
+Defined in: [src/redm/Volume.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Volume.ts#L5)
 
 #### Parameters
 
@@ -27,22 +31,18 @@ new Volume(
 
 [`Volume`](Volume.md)
 
-#### Defined in
-
-[src/redm/Volume.ts:5](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Volume.ts#L5)
-
 ## Accessors
 
 ### Handle
+
+#### Get Signature
 
 ```ts
 get Handle(): number
 ```
 
-#### Returns
+Defined in: [src/redm/Volume.ts:40](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Volume.ts#L40)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/redm/Volume.ts:40](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Volume.ts#L40)

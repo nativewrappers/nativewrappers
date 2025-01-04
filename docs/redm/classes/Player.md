@@ -2,6 +2,8 @@
 
 # Class: Player
 
+Defined in: [src/redm/entities/Player.ts:20](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Player.ts#L20)
+
 ## Constructors
 
 ### new Player()
@@ -9,6 +11,8 @@
 ```ts
 new Player(handle): Player
 ```
+
+Defined in: [src/redm/entities/Player.ts:34](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Player.ts#L34)
 
 #### Parameters
 
@@ -20,25 +24,21 @@ new Player(handle): Player
 
 [`Player`](Player.md)
 
-#### Defined in
-
-[src/redm/entities/Player.ts:34](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Player.ts#L34)
-
 ## Accessors
 
 ### Handle
+
+#### Get Signature
 
 ```ts
 get Handle(): number
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Player.ts:38](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Player.ts#L38)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/redm/entities/Player.ts:38](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Player.ts#L38)
 
 ## Methods
 
@@ -47,6 +47,8 @@ get Handle(): number
 ```ts
 addDeadeyeUpgrade(amount): void
 ```
+
+Defined in: [src/redm/entities/Player.ts:58](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Player.ts#L58)
 
 Doesn't seem to work :*
 
@@ -60,10 +62,6 @@ Doesn't seem to work :*
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Player.ts:58](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Player.ts#L58)
-
 ***
 
 ### addHealthUpgrade()
@@ -71,6 +69,8 @@ Doesn't seem to work :*
 ```ts
 addHealthUpgrade(amount): void
 ```
+
+Defined in: [src/redm/entities/Player.ts:50](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Player.ts#L50)
 
 #### Parameters
 
@@ -82,10 +82,6 @@ addHealthUpgrade(amount): void
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Player.ts:50](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Player.ts#L50)
-
 ***
 
 ### addStaminaUpgrade()
@@ -93,6 +89,8 @@ addHealthUpgrade(amount): void
 ```ts
 addStaminaUpgrade(amount): void
 ```
+
+Defined in: [src/redm/entities/Player.ts:46](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Player.ts#L46)
 
 Adds the amount of stamina player has on the hud
 
@@ -106,10 +104,6 @@ Adds the amount of stamina player has on the hud
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Player.ts:46](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Player.ts#L46)
-
 ***
 
 ### fromPedHandle()
@@ -117,6 +111,8 @@ Adds the amount of stamina player has on the hud
 ```ts
 static fromPedHandle(handle): Player
 ```
+
+Defined in: [src/redm/entities/Player.ts:23](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Player.ts#L23)
 
 #### Parameters
 
@@ -128,10 +124,6 @@ static fromPedHandle(handle): Player
 
 [`Player`](Player.md)
 
-#### Defined in
-
-[src/redm/entities/Player.ts:23](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Player.ts#L23)
-
 ***
 
 ### fromServerId()
@@ -139,6 +131,8 @@ static fromPedHandle(handle): Player
 ```ts
 static fromServerId(serverId): Player
 ```
+
+Defined in: [src/redm/entities/Player.ts:27](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Player.ts#L27)
 
 #### Parameters
 
@@ -149,7 +143,3 @@ static fromServerId(serverId): Player
 #### Returns
 
 [`Player`](Player.md)
-
-#### Defined in
-
-[src/redm/entities/Player.ts:27](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Player.ts#L27)

@@ -2,6 +2,8 @@
 
 # Class: Quaternion
 
+Defined in: [src/common/utils/Quaternion.ts:3](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Quaternion.ts#L3)
+
 ## Constructors
 
 ### new Quaternion()
@@ -9,6 +11,8 @@
 ```ts
 new Quaternion(value): Quaternion
 ```
+
+Defined in: [src/common/utils/Quaternion.ts:9](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Quaternion.ts#L9)
 
 #### Parameters
 
@@ -20,15 +24,13 @@ new Quaternion(value): Quaternion
 
 [`Quaternion`](Quaternion.md)
 
-#### Defined in
-
-[src/common/utils/Quaternion.ts:9](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Quaternion.ts#L9)
-
 ### new Quaternion()
 
 ```ts
 new Quaternion(vector, w): Quaternion
 ```
+
+Defined in: [src/common/utils/Quaternion.ts:10](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Quaternion.ts#L10)
 
 #### Parameters
 
@@ -41,10 +43,6 @@ new Quaternion(vector, w): Quaternion
 
 [`Quaternion`](Quaternion.md)
 
-#### Defined in
-
-[src/common/utils/Quaternion.ts:10](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Quaternion.ts#L10)
-
 ### new Quaternion()
 
 ```ts
@@ -54,6 +52,8 @@ new Quaternion(
    z, 
    w): Quaternion
 ```
+
+Defined in: [src/common/utils/Quaternion.ts:11](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Quaternion.ts#L11)
 
 #### Parameters
 
@@ -68,15 +68,11 @@ new Quaternion(
 
 [`Quaternion`](Quaternion.md)
 
-#### Defined in
-
-[src/common/utils/Quaternion.ts:11](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Quaternion.ts#L11)
-
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `w` | `public` | `number` | [src/common/utils/Quaternion.ts:7](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Quaternion.ts#L7) |
-| `x` | `public` | `number` | [src/common/utils/Quaternion.ts:4](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Quaternion.ts#L4) |
-| `y` | `public` | `number` | [src/common/utils/Quaternion.ts:5](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Quaternion.ts#L5) |
-| `z` | `public` | `number` | [src/common/utils/Quaternion.ts:6](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Quaternion.ts#L6) |
+| <a id="w-2"></a> `w` | `public` | `number` | [src/common/utils/Quaternion.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Quaternion.ts#L7) |
+| <a id="x-1"></a> `x` | `public` | `number` | [src/common/utils/Quaternion.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Quaternion.ts#L4) |
+| <a id="y-1"></a> `y` | `public` | `number` | [src/common/utils/Quaternion.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Quaternion.ts#L5) |
+| <a id="z-1"></a> `z` | `public` | `number` | [src/common/utils/Quaternion.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Quaternion.ts#L6) |

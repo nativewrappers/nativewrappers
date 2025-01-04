@@ -2,13 +2,15 @@
 
 # Enumeration: LicensePlateStyle
 
+Defined in: [src/fivem/enums/Vehicle.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L6)
+
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `BlueOnWhite1` | `3` | [src/fivem/enums/Vehicle.ts:7](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L7) |
-| `BlueOnWhite2` | `0` | [src/fivem/enums/Vehicle.ts:8](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L8) |
-| `BlueOnWhite3` | `4` | [src/fivem/enums/Vehicle.ts:9](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L9) |
-| `NorthYankton` | `5` | [src/fivem/enums/Vehicle.ts:12](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L12) |
-| `YellowOnBlack` | `1` | [src/fivem/enums/Vehicle.ts:10](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L10) |
-| `YellowOnBlue` | `2` | [src/fivem/enums/Vehicle.ts:11](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L11) |
+| <a id="blueonwhite1"></a> `BlueOnWhite1` | `3` | [src/fivem/enums/Vehicle.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L7) |
+| <a id="blueonwhite2"></a> `BlueOnWhite2` | `0` | [src/fivem/enums/Vehicle.ts:8](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L8) |
+| <a id="blueonwhite3"></a> `BlueOnWhite3` | `4` | [src/fivem/enums/Vehicle.ts:9](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L9) |
+| <a id="northyankton"></a> `NorthYankton` | `5` | [src/fivem/enums/Vehicle.ts:12](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L12) |
+| <a id="yellowonblack"></a> `YellowOnBlack` | `1` | [src/fivem/enums/Vehicle.ts:10](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L10) |
+| <a id="yellowonblue"></a> `YellowOnBlue` | `2` | [src/fivem/enums/Vehicle.ts:11](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L11) |

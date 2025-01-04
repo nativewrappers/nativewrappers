@@ -2,6 +2,8 @@
 
 # Class: Convar
 
+Defined in: lib/common/Convar.d.ts:1
+
 ## Constructors
 
 ### new Convar()
@@ -22,15 +24,13 @@ new Convar(): Convar
 buffer(): string
 ```
 
+Defined in: lib/common/Convar.d.ts:5
+
 #### Returns
 
 `string`
 
 the current console buffer
-
-#### Defined in
-
-lib/common/Convar.d.ts:5
 
 ***
 
@@ -39,6 +39,8 @@ lib/common/Convar.d.ts:5
 ```ts
 get(variable, defaultVar): string
 ```
+
+Defined in: lib/common/Convar.d.ts:6
 
 #### Parameters
 
@@ -51,10 +53,6 @@ get(variable, defaultVar): string
 
 `string`
 
-#### Defined in
-
-lib/common/Convar.d.ts:6
-
 ***
 
 ### getBool()
@@ -62,6 +60,8 @@ lib/common/Convar.d.ts:6
 ```ts
 getBool(varName, defaultVar): boolean
 ```
+
+Defined in: lib/common/Convar.d.ts:9
 
 #### Parameters
 
@@ -74,10 +74,6 @@ getBool(varName, defaultVar): boolean
 
 `boolean`
 
-#### Defined in
-
-lib/common/Convar.d.ts:9
-
 ***
 
 ### getFloat()
@@ -85,6 +81,8 @@ lib/common/Convar.d.ts:9
 ```ts
 getFloat(varName, defaultVar): number
 ```
+
+Defined in: lib/common/Convar.d.ts:8
 
 #### Parameters
 
@@ -97,10 +95,6 @@ getFloat(varName, defaultVar): number
 
 `number`
 
-#### Defined in
-
-lib/common/Convar.d.ts:8
-
 ***
 
 ### getInt()
@@ -108,6 +102,8 @@ lib/common/Convar.d.ts:8
 ```ts
 getInt(variable, defaultVar): number
 ```
+
+Defined in: lib/common/Convar.d.ts:7
 
 #### Parameters
 
@@ -120,10 +116,6 @@ getInt(variable, defaultVar): number
 
 `number`
 
-#### Defined in
-
-lib/common/Convar.d.ts:7
-
 ***
 
 ### set()
@@ -131,6 +123,8 @@ lib/common/Convar.d.ts:7
 ```ts
 set(variable, value): void
 ```
+
+Defined in: lib/common/Convar.d.ts:10
 
 #### Parameters
 
@@ -142,10 +136,6 @@ set(variable, value): void
 #### Returns
 
 `void`
-
-#### Defined in
-
-lib/common/Convar.d.ts:10
 
 ***
 
@@ -155,6 +145,8 @@ lib/common/Convar.d.ts:10
 setReplicated(variable, value): void
 ```
 
+Defined in: lib/common/Convar.d.ts:11
+
 #### Parameters
 
 | Parameter | Type |
@@ -165,10 +157,6 @@ setReplicated(variable, value): void
 #### Returns
 
 `void`
-
-#### Defined in
-
-lib/common/Convar.d.ts:11
 
 ***
 
@@ -178,6 +166,8 @@ lib/common/Convar.d.ts:11
 setServerInfo(variable, value): void
 ```
 
+Defined in: lib/common/Convar.d.ts:12
+
 #### Parameters
 
 | Parameter | Type |
@@ -188,7 +178,3 @@ setServerInfo(variable, value): void
 #### Returns
 
 `void`
-
-#### Defined in
-
-lib/common/Convar.d.ts:12

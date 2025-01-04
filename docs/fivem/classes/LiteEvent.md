@@ -2,6 +2,8 @@
 
 # Class: LiteEvent
 
+Defined in: [src/fivem/utils/LiteEvent.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/LiteEvent.ts#L4)
+
 ## Implements
 
 - [`LiteEvent`](LiteEvent.md)
@@ -26,6 +28,8 @@ new LiteEvent(): LiteEvent
 emit(...args): void
 ```
 
+Defined in: [src/fivem/utils/LiteEvent.ts:20](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/LiteEvent.ts#L20)
+
 #### Parameters
 
 | Parameter | Type |
@@ -36,10 +40,6 @@ emit(...args): void
 
 `void`
 
-#### Defined in
-
-[src/fivem/utils/LiteEvent.ts:20](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/utils/LiteEvent.ts#L20)
-
 ***
 
 ### expose()
@@ -48,23 +48,23 @@ emit(...args): void
 expose(): LiteEvent
 ```
 
+Defined in: [src/fivem/utils/LiteEvent.ts:26](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/LiteEvent.ts#L26)
+
 #### Returns
 
 [`LiteEvent`](LiteEvent.md)
-
-#### Defined in
-
-[src/fivem/utils/LiteEvent.ts:26](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/utils/LiteEvent.ts#L26)
 
 ***
 
 ### off()
 
-#### off(handler)
+#### Call Signature
 
 ```ts
 off(handler): void
 ```
+
+Defined in: [src/fivem/utils/LiteEvent.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/LiteEvent.ts#L6)
 
 ##### Parameters
 
@@ -76,15 +76,13 @@ off(handler): void
 
 `void`
 
-##### Defined in
-
-[src/fivem/utils/LiteEvent.ts:6](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/utils/LiteEvent.ts#L6)
-
-#### off(handler)
+#### Call Signature
 
 ```ts
 off(handler): void
 ```
+
+Defined in: [src/fivem/utils/LiteEvent.ts:16](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/LiteEvent.ts#L16)
 
 ##### Parameters
 
@@ -95,20 +93,18 @@ off(handler): void
 ##### Returns
 
 `void`
-
-##### Defined in
-
-[src/fivem/utils/LiteEvent.ts:16](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/utils/LiteEvent.ts#L16)
 
 ***
 
 ### on()
 
-#### on(handler)
+#### Call Signature
 
 ```ts
 on(handler): void
 ```
+
+Defined in: [src/fivem/utils/LiteEvent.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/LiteEvent.ts#L5)
 
 ##### Parameters
 
@@ -120,15 +116,13 @@ on(handler): void
 
 `void`
 
-##### Defined in
-
-[src/fivem/utils/LiteEvent.ts:5](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/utils/LiteEvent.ts#L5)
-
-#### on(handler)
+#### Call Signature
 
 ```ts
 on(handler): void
 ```
+
+Defined in: [src/fivem/utils/LiteEvent.ts:12](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/LiteEvent.ts#L12)
 
 ##### Parameters
 
@@ -139,7 +133,3 @@ on(handler): void
 ##### Returns
 
 `void`
-
-##### Defined in
-
-[src/fivem/utils/LiteEvent.ts:12](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/utils/LiteEvent.ts#L12)

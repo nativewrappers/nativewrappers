@@ -2,6 +2,8 @@
 
 # Class: Quaternion
 
+Defined in: lib/common/utils/Quaternion.d.ts:2
+
 ## Constructors
 
 ### new Quaternion()
@@ -9,6 +11,8 @@
 ```ts
 new Quaternion(value): Quaternion
 ```
+
+Defined in: lib/common/utils/Quaternion.d.ts:7
 
 #### Parameters
 
@@ -20,15 +24,13 @@ new Quaternion(value): Quaternion
 
 [`Quaternion`](Quaternion.md)
 
-#### Defined in
-
-lib/common/utils/Quaternion.d.ts:7
-
 ### new Quaternion()
 
 ```ts
 new Quaternion(vector, w): Quaternion
 ```
+
+Defined in: lib/common/utils/Quaternion.d.ts:8
 
 #### Parameters
 
@@ -41,10 +43,6 @@ new Quaternion(vector, w): Quaternion
 
 [`Quaternion`](Quaternion.md)
 
-#### Defined in
-
-lib/common/utils/Quaternion.d.ts:8
-
 ### new Quaternion()
 
 ```ts
@@ -54,6 +52,8 @@ new Quaternion(
    z, 
    w): Quaternion
 ```
+
+Defined in: lib/common/utils/Quaternion.d.ts:9
 
 #### Parameters
 
@@ -68,15 +68,11 @@ new Quaternion(
 
 [`Quaternion`](Quaternion.md)
 
-#### Defined in
-
-lib/common/utils/Quaternion.d.ts:9
-
 ## Properties
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| `w` | `number` | lib/common/utils/Quaternion.d.ts:6 |
-| `x` | `number` | lib/common/utils/Quaternion.d.ts:3 |
-| `y` | `number` | lib/common/utils/Quaternion.d.ts:4 |
-| `z` | `number` | lib/common/utils/Quaternion.d.ts:5 |
+| <a id="w-2"></a> `w` | `number` | lib/common/utils/Quaternion.d.ts:6 |
+| <a id="x-1"></a> `x` | `number` | lib/common/utils/Quaternion.d.ts:3 |
+| <a id="y-1"></a> `y` | `number` | lib/common/utils/Quaternion.d.ts:4 |
+| <a id="z-1"></a> `z` | `number` | lib/common/utils/Quaternion.d.ts:5 |

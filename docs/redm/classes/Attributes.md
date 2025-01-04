@@ -2,6 +2,8 @@
 
 # Class: Attributes
 
+Defined in: [src/redm/Attribute.ts:146](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L146)
+
 ## Constructors
 
 ### new Attributes()
@@ -9,6 +11,8 @@
 ```ts
 new Attributes(ped): Attributes
 ```
+
+Defined in: [src/redm/Attribute.ts:149](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L149)
 
 #### Parameters
 
@@ -20,45 +24,49 @@ new Attributes(ped): Attributes
 
 [`Attributes`](Attributes.md)
 
-#### Defined in
-
-[src/redm/Attribute.ts:149](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L149)
-
 ## Accessors
 
 ### CoreIcon
+
+#### Set Signature
 
 ```ts
 set CoreIcon(status): void
 ```
 
-#### Parameters
+Defined in: [src/redm/Attribute.ts:176](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L176)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `status` | [`eHudStatusEffect`](../enumerations/eHudStatusEffect.md) |
 
-#### Defined in
+##### Returns
 
-[src/redm/Attribute.ts:176](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L176)
+`void`
 
 ***
 
 ### PeriodicIcon
 
+#### Set Signature
+
 ```ts
 set PeriodicIcon(status): void
 ```
 
-#### Parameters
+Defined in: [src/redm/Attribute.ts:184](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L184)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `status` | [`eHudStatusEffect`](../enumerations/eHudStatusEffect.md) |
 
-#### Defined in
+##### Returns
 
-[src/redm/Attribute.ts:184](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L184)
+`void`
 
 ## Methods
 
@@ -67,6 +75,8 @@ set PeriodicIcon(status): void
 ```ts
 get(attribute): PedAttribute
 ```
+
+Defined in: [src/redm/Attribute.ts:168](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L168)
 
 #### Parameters
 
@@ -78,10 +88,6 @@ get(attribute): PedAttribute
 
 [`PedAttribute`](PedAttribute.md)
 
-#### Defined in
-
-[src/redm/Attribute.ts:168](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L168)
-
 ***
 
 ### getCore()
@@ -89,6 +95,8 @@ get(attribute): PedAttribute
 ```ts
 getCore(attribute): CoreAttribute
 ```
+
+Defined in: [src/redm/Attribute.ts:159](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L159)
 
 #### Parameters
 
@@ -99,7 +107,3 @@ getCore(attribute): CoreAttribute
 #### Returns
 
 [`CoreAttribute`](CoreAttribute.md)
-
-#### Defined in
-
-[src/redm/Attribute.ts:159](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L159)

@@ -2,6 +2,8 @@
 
 # Class: `abstract` Audio
 
+Defined in: [src/fivem/Audio.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Audio.ts#L5)
+
 ## Constructors
 
 ### new Audio()
@@ -18,7 +20,7 @@ new Audio(): Audio
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `cachedMusicFile` | `static` | `string` | [src/fivem/Audio.ts:91](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Audio.ts#L91) |
+| <a id="cachedmusicfile"></a> `cachedMusicFile` | `static` | `string` | [src/fivem/Audio.ts:91](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Audio.ts#L91) |
 
 ## Methods
 
@@ -27,6 +29,8 @@ new Audio(): Audio
 ```ts
 static hasSoundFinished(soundId): boolean
 ```
+
+Defined in: [src/fivem/Audio.ts:56](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Audio.ts#L56)
 
 #### Parameters
 
@@ -38,10 +42,6 @@ static hasSoundFinished(soundId): boolean
 
 `boolean`
 
-#### Defined in
-
-[src/fivem/Audio.ts:56](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Audio.ts#L56)
-
 ***
 
 ### playMusic()
@@ -49,6 +49,8 @@ static hasSoundFinished(soundId): boolean
 ```ts
 static playMusic(musicFile): void
 ```
+
+Defined in: [src/fivem/Audio.ts:72](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Audio.ts#L72)
 
 #### Parameters
 
@@ -60,10 +62,6 @@ static playMusic(musicFile): void
 
 `void`
 
-#### Defined in
-
-[src/fivem/Audio.ts:72](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Audio.ts#L72)
-
 ***
 
 ### playSound()
@@ -71,6 +69,8 @@ static playMusic(musicFile): void
 ```ts
 static playSound(soundFile, soundSet): void
 ```
+
+Defined in: [src/fivem/Audio.ts:68](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Audio.ts#L68)
 
 #### Parameters
 
@@ -83,10 +83,6 @@ static playSound(soundFile, soundSet): void
 
 `void`
 
-#### Defined in
-
-[src/fivem/Audio.ts:68](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Audio.ts#L68)
-
 ***
 
 ### playSoundAt()
@@ -98,6 +94,8 @@ static playSoundAt(
    set?, 
    generateSoundId?): number
 ```
+
+Defined in: [src/fivem/Audio.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Audio.ts#L6)
 
 #### Parameters
 
@@ -112,10 +110,6 @@ static playSoundAt(
 
 `number`
 
-#### Defined in
-
-[src/fivem/Audio.ts:6](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Audio.ts#L6)
-
 ***
 
 ### playSoundFromEntity()
@@ -127,6 +121,8 @@ static playSoundFromEntity(
    set?, 
    generateSoundId?): number
 ```
+
+Defined in: [src/fivem/Audio.ts:27](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Audio.ts#L27)
 
 #### Parameters
 
@@ -141,10 +137,6 @@ static playSoundFromEntity(
 
 `number`
 
-#### Defined in
-
-[src/fivem/Audio.ts:27](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Audio.ts#L27)
-
 ***
 
 ### playSoundFrontEnd()
@@ -155,6 +147,8 @@ static playSoundFrontEnd(
    set?, 
    generateSoundId?): number
 ```
+
+Defined in: [src/fivem/Audio.ts:38](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Audio.ts#L38)
 
 #### Parameters
 
@@ -168,10 +162,6 @@ static playSoundFrontEnd(
 
 `number`
 
-#### Defined in
-
-[src/fivem/Audio.ts:38](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Audio.ts#L38)
-
 ***
 
 ### releaseSound()
@@ -179,6 +169,8 @@ static playSoundFrontEnd(
 ```ts
 static releaseSound(soundId): void
 ```
+
+Defined in: [src/fivem/Audio.ts:52](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Audio.ts#L52)
 
 #### Parameters
 
@@ -190,10 +182,6 @@ static releaseSound(soundId): void
 
 `void`
 
-#### Defined in
-
-[src/fivem/Audio.ts:52](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Audio.ts#L52)
-
 ***
 
 ### setAudioFlag()
@@ -201,6 +189,8 @@ static releaseSound(soundId): void
 ```ts
 static setAudioFlag(flag, toggle): void
 ```
+
+Defined in: [src/fivem/Audio.ts:60](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Audio.ts#L60)
 
 #### Parameters
 
@@ -213,10 +203,6 @@ static setAudioFlag(flag, toggle): void
 
 `void`
 
-#### Defined in
-
-[src/fivem/Audio.ts:60](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Audio.ts#L60)
-
 ***
 
 ### stopMusic()
@@ -224,6 +210,8 @@ static setAudioFlag(flag, toggle): void
 ```ts
 static stopMusic(musicFile?): void
 ```
+
+Defined in: [src/fivem/Audio.ts:80](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Audio.ts#L80)
 
 #### Parameters
 
@@ -235,10 +223,6 @@ static stopMusic(musicFile?): void
 
 `void`
 
-#### Defined in
-
-[src/fivem/Audio.ts:80](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Audio.ts#L80)
-
 ***
 
 ### stopSound()
@@ -246,6 +230,8 @@ static stopMusic(musicFile?): void
 ```ts
 static stopSound(soundId): void
 ```
+
+Defined in: [src/fivem/Audio.ts:48](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Audio.ts#L48)
 
 #### Parameters
 
@@ -256,7 +242,3 @@ static stopSound(soundId): void
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/Audio.ts:48](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Audio.ts#L48)

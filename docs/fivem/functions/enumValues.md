@@ -2,11 +2,13 @@
 
 # Function: enumValues()
 
-## enumValues(enumObj)
+## Call Signature
 
 ```ts
 function enumValues<T>(enumObj): IterableIterator<T>
 ```
+
+Defined in: lib/common/utils/enumValues.d.ts:7
 
 EnumValues - iterate over enum values
 Just copy&paste from https://github.com/microsoft/TypeScript/issues/4753#issuecomment-694557208
@@ -21,21 +23,22 @@ Just copy&paste from https://github.com/microsoft/TypeScript/issues/4753#issueco
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
-| `enumObj` | `object` |  |
+| `enumObj` | \{\} |  |
 
 ### Returns
 
 `IterableIterator`\<`T`\>
 
-### Defined in
-
-lib/common/utils/enumValues.d.ts:7
-
-## enumValues(enumObj)
+## Call Signature
 
 ```ts
 function enumValues<T>(enumObj): IterableIterator<Exclude<T, string>>
 ```
+
+Defined in: lib/common/utils/enumValues.d.ts:10
+
+EnumValues - iterate over enum values
+Just copy&paste from https://github.com/microsoft/TypeScript/issues/4753#issuecomment-694557208
 
 ### Type Parameters
 
@@ -45,14 +48,10 @@ function enumValues<T>(enumObj): IterableIterator<Exclude<T, string>>
 
 ### Parameters
 
-| Parameter | Type |
-| ------ | ------ |
-| `enumObj` | `object` |
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `enumObj` | \{\} |  |
 
 ### Returns
 
 `IterableIterator`\<`Exclude`\<`T`, `string`\>\>
-
-### Defined in
-
-lib/common/utils/enumValues.d.ts:10

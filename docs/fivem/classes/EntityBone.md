@@ -2,6 +2,8 @@
 
 # Class: EntityBone
 
+Defined in: [src/fivem/models/EntityBone.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/EntityBone.ts#L4)
+
 ## Extended by
 
 - [`PedBone`](PedBone.md)
@@ -17,6 +19,8 @@ new EntityBone(
    boneName?): EntityBone
 ```
 
+Defined in: [src/fivem/models/EntityBone.ts:32](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/EntityBone.ts#L32)
+
 #### Parameters
 
 | Parameter | Type |
@@ -29,93 +33,89 @@ new EntityBone(
 
 [`EntityBone`](EntityBone.md)
 
-#### Defined in
-
-[src/fivem/models/EntityBone.ts:32](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/EntityBone.ts#L32)
-
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `index` | `readonly` | `number` | [src/fivem/models/EntityBone.ts:30](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/EntityBone.ts#L30) |
-| `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [src/fivem/models/EntityBone.ts:29](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/EntityBone.ts#L29) |
+| <a id="index"></a> `index` | `readonly` | `number` | [src/fivem/models/EntityBone.ts:30](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/EntityBone.ts#L30) |
+| <a id="owner-1"></a> `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [src/fivem/models/EntityBone.ts:29](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/EntityBone.ts#L29) |
 
 ## Accessors
 
 ### Index
 
+#### Get Signature
+
 ```ts
 get Index(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/models/EntityBone.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/EntityBone.ts#L5)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/models/EntityBone.ts:5](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/EntityBone.ts#L5)
 
 ***
 
 ### IsValid
 
+#### Get Signature
+
 ```ts
 get IsValid(): boolean
 ```
 
-#### Returns
+Defined in: [src/fivem/models/EntityBone.ts:25](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/EntityBone.ts#L25)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/models/EntityBone.ts:25](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/EntityBone.ts#L25)
 
 ***
 
 ### Owner
 
+#### Get Signature
+
 ```ts
 get Owner(): BaseEntity
 ```
 
-#### Returns
+Defined in: [src/fivem/models/EntityBone.ts:9](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/EntityBone.ts#L9)
+
+##### Returns
 
 [`BaseEntity`](BaseEntity.md)
-
-#### Defined in
-
-[src/fivem/models/EntityBone.ts:9](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/EntityBone.ts#L9)
 
 ***
 
 ### Position
 
+#### Get Signature
+
 ```ts
 get Position(): Vector3
 ```
 
-#### Returns
+Defined in: [src/fivem/models/EntityBone.ts:13](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/EntityBone.ts#L13)
+
+##### Returns
 
 [`Vector3`](Vector3.md)
-
-#### Defined in
-
-[src/fivem/models/EntityBone.ts:13](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/EntityBone.ts#L13)
 
 ***
 
 ### Rotation
 
+#### Get Signature
+
 ```ts
 get Rotation(): Vector3
 ```
 
-#### Returns
+Defined in: [src/fivem/models/EntityBone.ts:19](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/EntityBone.ts#L19)
+
+##### Returns
 
 [`Vector3`](Vector3.md)
-
-#### Defined in
-
-[src/fivem/models/EntityBone.ts:19](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/EntityBone.ts#L19)

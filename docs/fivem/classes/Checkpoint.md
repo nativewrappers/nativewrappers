@@ -2,6 +2,8 @@
 
 # Class: Checkpoint
 
+Defined in: [src/fivem/Checkpoint.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Checkpoint.ts#L4)
+
 ## Constructors
 
 ### new Checkpoint()
@@ -9,6 +11,8 @@
 ```ts
 new Checkpoint(handle): Checkpoint
 ```
+
+Defined in: [src/fivem/Checkpoint.ts:11](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Checkpoint.ts#L11)
 
 #### Parameters
 
@@ -20,110 +24,138 @@ new Checkpoint(handle): Checkpoint
 
 [`Checkpoint`](Checkpoint.md)
 
-#### Defined in
-
-[src/fivem/Checkpoint.ts:11](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Checkpoint.ts#L11)
-
 ## Accessors
 
 ### Icon
+
+#### Get Signature
 
 ```ts
 get Icon(): CheckpointIcon
 ```
 
+Defined in: [src/fivem/Checkpoint.ts:31](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Checkpoint.ts#L31)
+
+##### Returns
+
+[`CheckpointIcon`](../enumerations/CheckpointIcon.md)
+
+#### Set Signature
+
 ```ts
 set Icon(icon): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Checkpoint.ts:35](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Checkpoint.ts#L35)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `icon` | [`CheckpointIcon`](../enumerations/CheckpointIcon.md) |
 
-#### Returns
+##### Returns
 
-[`CheckpointIcon`](../enumerations/CheckpointIcon.md)
-
-#### Defined in
-
-[src/fivem/Checkpoint.ts:31](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Checkpoint.ts#L31)
+`void`
 
 ***
 
 ### Position
 
+#### Get Signature
+
 ```ts
 get Position(): Vector3
 ```
+
+Defined in: [src/fivem/Checkpoint.ts:15](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Checkpoint.ts#L15)
+
+##### Returns
+
+[`Vector3`](Vector3.md)
+
+#### Set Signature
 
 ```ts
 set Position(position): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Checkpoint.ts:19](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Checkpoint.ts#L19)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `position` | [`Vector3`](Vector3.md) |
 
-#### Returns
+##### Returns
 
-[`Vector3`](Vector3.md)
-
-#### Defined in
-
-[src/fivem/Checkpoint.ts:15](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Checkpoint.ts#L15)
+`void`
 
 ***
 
 ### Radius
 
+#### Get Signature
+
 ```ts
 get Radius(): number
 ```
+
+Defined in: [src/fivem/Checkpoint.ts:48](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Checkpoint.ts#L48)
+
+##### Returns
+
+`number`
+
+#### Set Signature
 
 ```ts
 set Radius(radius): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Checkpoint.ts:52](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Checkpoint.ts#L52)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `radius` | `number` |
 
-#### Returns
+##### Returns
 
-`number`
-
-#### Defined in
-
-[src/fivem/Checkpoint.ts:48](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Checkpoint.ts#L48)
+`void`
 
 ***
 
 ### TargetPosition
 
+#### Get Signature
+
 ```ts
 get TargetPosition(): Vector3
 ```
+
+Defined in: [src/fivem/Checkpoint.ts:23](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Checkpoint.ts#L23)
+
+##### Returns
+
+[`Vector3`](Vector3.md)
+
+#### Set Signature
 
 ```ts
 set TargetPosition(targetPosition): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/Checkpoint.ts:27](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Checkpoint.ts#L27)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `targetPosition` | [`Vector3`](Vector3.md) |
 
-#### Returns
+##### Returns
 
-[`Vector3`](Vector3.md)
-
-#### Defined in
-
-[src/fivem/Checkpoint.ts:23](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Checkpoint.ts#L23)
+`void`

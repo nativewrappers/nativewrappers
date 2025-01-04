@@ -3,9 +3,7 @@
 # Type Alias: OptionalPed
 
 ```ts
-type OptionalPed: Ped | null;
+type OptionalPed = Ped | null;
 ```
 
-## Defined in
-
-[src/redm/entities/Ped.ts:9](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L9)
+Defined in: [src/redm/entities/Ped.ts:9](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L9)

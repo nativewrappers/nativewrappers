@@ -2,6 +2,8 @@
 
 # Class: Weapon
 
+Defined in: [src/fivem/weapon/Weapon.ts:21](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L21)
+
 ped weapon
 
 ## Constructors
@@ -11,6 +13,8 @@ ped weapon
 ```ts
 new Weapon(owner, hash): Weapon
 ```
+
+Defined in: [src/fivem/weapon/Weapon.ts:26](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L26)
 
 #### Parameters
 
@@ -23,379 +27,399 @@ new Weapon(owner, hash): Weapon
 
 [`Weapon`](Weapon.md)
 
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:26](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L26)
-
 ## Accessors
 
 ### Ammo
+
+#### Get Signature
 
 ```ts
 get Ammo(): number
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:141](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L141)
+
 get weapon ammo count
+
+##### Returns
+
+`number`
+
+#### Set Signature
 
 ```ts
 set Ammo(count): void
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:159](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L159)
+
 set weapon ammo count
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
 | `count` | `number` |  |
 
-#### Returns
+##### Returns
 
-`number`
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:141](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L141)
+`void`
 
 ***
 
 ### AmmoType
 
+#### Get Signature
+
 ```ts
 get AmmoType(): AmmoType
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:132](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L132)
+
 get weapon ammo type
 
-#### Returns
+##### Returns
 
 [`AmmoType`](../enumerations/AmmoType.md)
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:132](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L132)
 
 ***
 
 ### CanUseOnParachute
 
+#### Get Signature
+
 ```ts
 get CanUseOnParachute(): boolean
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:250](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L250)
+
 check weapon can use on parachute
 
-#### Returns
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:250](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L250)
 
 ***
 
 ### Components
 
+#### Get Signature
+
 ```ts
 get Components(): WeaponComponentCollection
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:37](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L37)
+
 weapon components
 
-#### Returns
+##### Returns
 
 `WeaponComponentCollection`
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:37](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L37)
 
 ***
 
 ### DefaultClipSize
 
+#### Get Signature
+
 ```ts
 get DefaultClipSize(): number
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:217](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L217)
+
 get weapon default clip size
 
-#### Returns
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:217](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L217)
 
 ***
 
 ### DisplayName
 
+#### Get Signature
+
 ```ts
 get DisplayName(): string
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:77](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L77)
+
 get weapon display name / label
 
-#### Returns
+##### Returns
 
 `string`
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:77](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L77)
 
 ***
 
 ### Group
 
+#### Get Signature
+
 ```ts
 get Group(): WeaponGroup
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:123](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L123)
+
 get weapon group
 
-#### Returns
+##### Returns
 
 [`WeaponGroup`](../enumerations/WeaponGroup.md)
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:123](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L123)
 
 ***
 
 ### Hash
 
+#### Get Signature
+
 ```ts
 get Hash(): WeaponHash
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:46](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L46)
+
 weapon hash
 
-#### Returns
+##### Returns
 
 [`WeaponHash`](../enumerations/WeaponHash.md)
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:46](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L46)
 
 ***
 
 ### HudStats
 
+#### Get Signature
+
 ```ts
 get HudStats(): undefined | WeaponHudStats
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:302](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L302)
+
 get weapon hud stats
 
-#### Returns
+##### Returns
 
 `undefined` \| [`WeaponHudStats`](../interfaces/WeaponHudStats.md)
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:302](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L302)
 
 ***
 
 ### InfiniteAmmo
 
+#### Set Signature
+
 ```ts
 set InfiniteAmmo(toggle): void
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:227](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L227)
+
 toggle weapon infinite ammo
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
 | `toggle` | `boolean` |  |
 
-#### Defined in
+##### Returns
 
-[src/fivem/weapon/Weapon.ts:227](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L227)
+`void`
 
 ***
 
 ### InfiniteAmmoClip
 
+#### Set Signature
+
 ```ts
 set InfiniteAmmoClip(toggle): void
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:241](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L241)
+
 toggle ped infinite ammo clip on all weapons
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
 | `toggle` | `boolean` |  |
 
-#### Defined in
+##### Returns
 
-[src/fivem/weapon/Weapon.ts:241](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L241)
+`void`
 
 ***
 
 ### IsMk2
 
+#### Get Signature
+
 ```ts
 get IsMk2(): boolean
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:259](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L259)
+
 Check weapon is Mk2 or not
 
-#### Returns
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:259](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L259)
 
 ***
 
 ### IsPresent
 
+#### Get Signature
+
 ```ts
 get IsPresent(): boolean
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:64](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L64)
+
 Check if the ped has the current weapon.
 
-#### Returns
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:64](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L64)
 
 ***
 
 ### IsUnarmed
 
+#### Get Signature
+
 ```ts
 get IsUnarmed(): boolean
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:55](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L55)
+
 check ped is unarmed or not
 
-#### Returns
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:55](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L55)
 
 ***
 
 ### LocalizedName
 
+#### Get Signature
+
 ```ts
 get LocalizedName(): string
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:86](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L86)
+
 get weapon localized name
 
-#### Returns
+##### Returns
 
 `string`
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:86](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L86)
 
 ***
 
 ### MaxAmmo
 
+#### Get Signature
+
 ```ts
 get MaxAmmo(): number
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:176](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L176)
+
 get weapon max ammo
 
-#### Returns
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:176](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L176)
 
 ***
 
 ### MaxAmmoInClip
 
+#### Get Signature
+
 ```ts
 get MaxAmmoInClip(): number
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:200](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L200)
+
 get weapon max ammo in clip
 
-#### Returns
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:200](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L200)
 
 ***
 
 ### Model
 
+#### Get Signature
+
 ```ts
 get Model(): Model
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:95](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L95)
+
 get weapon model
 
-#### Returns
+##### Returns
 
 [`Model`](Model.md)
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:95](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L95)
 
 ***
 
 ### Tint
 
+#### Get Signature
+
 ```ts
 get Tint(): WeaponTint
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:104](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L104)
+
 get weapon tint
+
+##### Returns
+
+[`WeaponTint`](../enumerations/WeaponTint.md)
+
+#### Set Signature
 
 ```ts
 set Tint(tint): void
 ```
 
+Defined in: [src/fivem/weapon/Weapon.ts:114](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L114)
+
 set weapon tint
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
 | `tint` | [`WeaponTint`](../enumerations/WeaponTint.md) |  |
 
-#### Returns
+##### Returns
 
-[`WeaponTint`](../enumerations/WeaponTint.md)
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:104](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L104)
+`void`
 
 ## Methods
 
@@ -404,6 +428,8 @@ set weapon tint
 ```ts
 setLivery(liveryId, colorId): void
 ```
+
+Defined in: [src/fivem/weapon/Weapon.ts:271](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L271)
 
 set weapon livery, only work for Mk2 weapon
 
@@ -418,10 +444,6 @@ set weapon livery, only work for Mk2 weapon
 
 `void`
 
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:271](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L271)
-
 ***
 
 ### getDisplayNameFromHash()
@@ -429,6 +451,8 @@ set weapon livery, only work for Mk2 weapon
 ```ts
 static getDisplayNameFromHash(hash): string
 ```
+
+Defined in: [src/fivem/weapon/Weapon.ts:311](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L311)
 
 get weapon display name / label by hash
 
@@ -442,10 +466,6 @@ get weapon display name / label by hash
 
 `string`
 
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:311](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L311)
-
 ***
 
 ### getWeaponComponentHashes()
@@ -453,6 +473,8 @@ get weapon display name / label by hash
 ```ts
 static getWeaponComponentHashes(hash): WeaponComponentHash[]
 ```
+
+Defined in: [src/fivem/weapon/Weapon.ts:324](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weapon/Weapon.ts#L324)
 
 get component hashes belongs to weapon
 
@@ -465,7 +487,3 @@ get component hashes belongs to weapon
 #### Returns
 
 [`WeaponComponentHash`](../enumerations/WeaponComponentHash.md)[]
-
-#### Defined in
-
-[src/fivem/weapon/Weapon.ts:324](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weapon/Weapon.ts#L324)

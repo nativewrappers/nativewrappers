@@ -2,6 +2,8 @@
 
 # Class: PedAttribute
 
+Defined in: [src/redm/Attribute.ts:62](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L62)
+
 ## Constructors
 
 ### new PedAttribute()
@@ -9,6 +11,8 @@
 ```ts
 new PedAttribute(ped, attribute): PedAttribute
 ```
+
+Defined in: [src/redm/Attribute.ts:65](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L65)
 
 #### Parameters
 
@@ -21,137 +25,157 @@ new PedAttribute(ped, attribute): PedAttribute
 
 [`PedAttribute`](PedAttribute.md)
 
-#### Defined in
-
-[src/redm/Attribute.ts:65](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L65)
-
 ## Accessors
 
 ### BaseRank
+
+#### Get Signature
 
 ```ts
 get BaseRank(): number
 ```
 
+Defined in: [src/redm/Attribute.ts:114](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L114)
+
+##### Returns
+
+`number`
+
+#### Set Signature
+
 ```ts
 set BaseRank(amount): void
 ```
 
-#### Parameters
+Defined in: [src/redm/Attribute.ts:110](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L110)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `amount` | `number` |
 
-#### Returns
+##### Returns
 
-`number`
-
-#### Defined in
-
-[src/redm/Attribute.ts:114](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L114)
+`void`
 
 ***
 
 ### BonusRank
 
+#### Get Signature
+
 ```ts
 get BonusRank(): number
 ```
+
+Defined in: [src/redm/Attribute.ts:122](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L122)
+
+##### Returns
+
+`number`
+
+#### Set Signature
 
 ```ts
 set BonusRank(amount): void
 ```
 
-#### Parameters
+Defined in: [src/redm/Attribute.ts:118](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L118)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `amount` | `number` |
 
-#### Returns
+##### Returns
 
-`number`
-
-#### Defined in
-
-[src/redm/Attribute.ts:122](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L122)
+`void`
 
 ***
 
 ### MaxRank
 
+#### Get Signature
+
 ```ts
 get MaxRank(): number
 ```
 
-#### Returns
+Defined in: [src/redm/Attribute.ts:126](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L126)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/redm/Attribute.ts:126](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L126)
 
 ***
 
 ### Overpowered
 
+#### Get Signature
+
 ```ts
 get Overpowered(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/Attribute.ts:135](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L135)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/Attribute.ts:135](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L135)
 
 ***
 
 ### Points
 
+#### Get Signature
+
 ```ts
 get Points(): number
 ```
 
+Defined in: [src/redm/Attribute.ts:98](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L98)
+
 Gets the amount of attribute points the ped has
+
+##### Returns
+
+`number`
+
+#### Set Signature
 
 ```ts
 set Points(amount): void
 ```
 
-#### Parameters
+Defined in: [src/redm/Attribute.ts:102](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L102)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `amount` | `number` |
 
-#### Returns
+##### Returns
 
-`number`
-
-#### Defined in
-
-[src/redm/Attribute.ts:98](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L98)
+`void`
 
 ***
 
 ### Rank
 
+#### Get Signature
+
 ```ts
 get Rank(): number
 ```
 
-#### Returns
+Defined in: [src/redm/Attribute.ts:106](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L106)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/redm/Attribute.ts:106](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L106)
 
 ## Methods
 
@@ -160,6 +184,8 @@ get Rank(): number
 ```ts
 addPoints(amount): void
 ```
+
+Defined in: [src/redm/Attribute.ts:74](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L74)
 
 #### Parameters
 
@@ -171,10 +197,6 @@ addPoints(amount): void
 
 `void`
 
-#### Defined in
-
-[src/redm/Attribute.ts:74](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L74)
-
 ***
 
 ### disableOverpower()
@@ -183,15 +205,13 @@ addPoints(amount): void
 disableOverpower(): void
 ```
 
+Defined in: [src/redm/Attribute.ts:81](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L81)
+
 Disables the overpower state on this attribute, see [enableOverpower](PedAttribute.md#enableoverpower) on how to enable
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/redm/Attribute.ts:81](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L81)
 
 ***
 
@@ -200,6 +220,8 @@ Disables the overpower state on this attribute, see [enableOverpower](PedAttribu
 ```ts
 enableOverpower(amount, makeSound): void
 ```
+
+Defined in: [src/redm/Attribute.ts:90](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/Attribute.ts#L90)
 
 #### Parameters
 
@@ -211,7 +233,3 @@ enableOverpower(amount, makeSound): void
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/redm/Attribute.ts:90](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/Attribute.ts#L90)

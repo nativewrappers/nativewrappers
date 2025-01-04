@@ -2,13 +2,15 @@
 
 # Enumeration: ForceType
 
+Defined in: [src/fivem/enums/ForceType.ts:1](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/ForceType.ts#L1)
+
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `ForceNoRot` | `4` | [src/fivem/enums/ForceType.ts:6](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ForceType.ts#L6) |
-| `ForceRotPlusForce` | `5` | [src/fivem/enums/ForceType.ts:7](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ForceType.ts#L7) |
-| `MaxForceRot` | `1` | [src/fivem/enums/ForceType.ts:3](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ForceType.ts#L3) |
-| `MaxForceRot2` | `3` | [src/fivem/enums/ForceType.ts:5](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ForceType.ts#L5) |
-| `MinForce` | `0` | [src/fivem/enums/ForceType.ts:2](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ForceType.ts#L2) |
-| `MinForce2` | `2` | [src/fivem/enums/ForceType.ts:4](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ForceType.ts#L4) |
+| <a id="forcenorot"></a> `ForceNoRot` | `4` | [src/fivem/enums/ForceType.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/ForceType.ts#L6) |
+| <a id="forcerotplusforce"></a> `ForceRotPlusForce` | `5` | [src/fivem/enums/ForceType.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/ForceType.ts#L7) |
+| <a id="maxforcerot"></a> `MaxForceRot` | `1` | [src/fivem/enums/ForceType.ts:3](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/ForceType.ts#L3) |
+| <a id="maxforcerot2"></a> `MaxForceRot2` | `3` | [src/fivem/enums/ForceType.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/ForceType.ts#L5) |
+| <a id="minforce"></a> `MinForce` | `0` | [src/fivem/enums/ForceType.ts:2](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/ForceType.ts#L2) |
+| <a id="minforce2"></a> `MinForce2` | `2` | [src/fivem/enums/ForceType.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/ForceType.ts#L4) |

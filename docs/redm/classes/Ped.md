@@ -2,6 +2,8 @@
 
 # Class: Ped
 
+Defined in: [src/redm/entities/Ped.ts:11](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L11)
+
 ## Extends
 
 - `BaseEntity`
@@ -13,6 +15,8 @@
 ```ts
 new Ped(handle): Ped
 ```
+
+Defined in: [src/redm/entities/Ped.ts:14](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L14)
 
 #### Parameters
 
@@ -26,871 +30,941 @@ new Ped(handle): Ped
 
 #### Overrides
 
-`BaseEntity.constructor`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:14](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L14)
+```ts
+BaseEntity.constructor
+```
 
 ## Accessors
 
 ### Accuracy
 
+#### Get Signature
+
 ```ts
 get Accuracy(): number
 ```
+
+Defined in: [src/redm/entities/Ped.ts:102](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L102)
+
+##### Returns
+
+`number`
+
+#### Set Signature
 
 ```ts
 set Accuracy(accuracy): void
 ```
 
-#### Parameters
+Defined in: [src/redm/entities/Ped.ts:106](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L106)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `accuracy` | `number` |
 
-#### Returns
+##### Returns
 
-`number`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:102](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L102)
+`void`
 
 ***
 
 ### Attributes
 
+#### Get Signature
+
 ```ts
 get Attributes(): Attributes
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:68](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L68)
+
+##### Returns
 
 [`Attributes`](Attributes.md)
 
 the [Attributes](Attributes.md) for the current ped
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:68](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L68)
-
 ***
 
 ### CanBeKnockedOffVehicle
+
+#### Get Signature
 
 ```ts
 get CanBeKnockedOffVehicle(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:110](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L110)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:110](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L110)
 
 ***
 
 ### CanBeTargeted
 
+#### Set Signature
+
 ```ts
 set CanBeTargeted(toggle): void
 ```
 
-#### Parameters
+Defined in: [src/redm/entities/Ped.ts:324](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L324)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `toggle` | `boolean` |
 
-#### Defined in
+##### Returns
 
-[src/redm/entities/Ped.ts:324](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L324)
+`void`
 
 ***
 
 ### CrouchMovement
 
+#### Get Signature
+
 ```ts
 get CrouchMovement(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:285](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L285)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:285](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L285)
 
 ***
 
 ### DamageCleanliness
 
+#### Get Signature
+
 ```ts
 get DamageCleanliness(): eDamageCleanliness
 ```
+
+Defined in: [src/redm/entities/Ped.ts:308](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L308)
+
+##### Returns
+
+[`eDamageCleanliness`](../enumerations/eDamageCleanliness.md)
+
+#### Set Signature
 
 ```ts
 set DamageCleanliness(cleanliness): void
 ```
 
-#### Parameters
+Defined in: [src/redm/entities/Ped.ts:316](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L316)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `cleanliness` | [`eDamageCleanliness`](../enumerations/eDamageCleanliness.md) |
 
-#### Returns
+##### Returns
 
-[`eDamageCleanliness`](../enumerations/eDamageCleanliness.md)
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:308](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L308)
+`void`
 
 ***
 
 ### DefenseModifier
 
+#### Set Signature
+
 ```ts
 set DefenseModifier(amount): void
 ```
 
-#### Parameters
+Defined in: [src/redm/entities/Ped.ts:320](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L320)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `amount` | `number` |
 
-#### Defined in
+##### Returns
 
-[src/redm/entities/Ped.ts:320](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L320)
+`void`
 
 ***
 
 ### Handle
 
+#### Get Signature
+
 ```ts
 get Handle(): number
 ```
 
-#### Returns
+Defined in: [src/redm/entities/BaseEntity.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/BaseEntity.ts#L7)
+
+##### Returns
 
 `number`
 
 #### Inherited from
 
-`BaseEntity.Handle`
-
-#### Defined in
-
-[src/redm/entities/BaseEntity.ts:7](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/BaseEntity.ts#L7)
+```ts
+BaseEntity.Handle
+```
 
 ***
 
 ### Heading
 
+#### Get Signature
+
 ```ts
 get Heading(): number
 ```
+
+Defined in: [src/redm/entities/Ped.ts:90](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L90)
+
+##### Returns
+
+`number`
+
+#### Set Signature
 
 ```ts
 set Heading(heading): void
 ```
 
-#### Parameters
+Defined in: [src/redm/entities/Ped.ts:94](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L94)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `heading` | `number` |
 
-#### Returns
+##### Returns
 
-`number`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:90](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L90)
+`void`
 
 ***
 
 ### Health
 
+#### Get Signature
+
 ```ts
 get Health(): number
 ```
+
+Defined in: [src/redm/entities/BaseEntity.ts:15](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/BaseEntity.ts#L15)
+
+##### Returns
+
+`number`
+
+#### Set Signature
 
 ```ts
 set Health(amount): void
 ```
 
-#### Parameters
+Defined in: [src/redm/entities/BaseEntity.ts:11](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/BaseEntity.ts#L11)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `amount` | `number` |
 
-#### Returns
+##### Returns
 
-`number`
+`void`
 
 #### Inherited from
 
-`BaseEntity.Health`
-
-#### Defined in
-
-[src/redm/entities/BaseEntity.ts:15](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/BaseEntity.ts#L15)
+```ts
+BaseEntity.Health
+```
 
 ***
 
 ### HearingRange
 
+#### Set Signature
+
 ```ts
 set HearingRange(value): void
 ```
 
-#### Parameters
+Defined in: [src/redm/entities/Ped.ts:257](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L257)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `value` | `number` |
 
-#### Defined in
+##### Returns
 
-[src/redm/entities/Ped.ts:257](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L257)
+`void`
 
 ***
 
 ### InVehicle
 
+#### Get Signature
+
 ```ts
 get InVehicle(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:74](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L74)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:74](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L74)
 
 ***
 
 ### IsBeingJacked
 
+#### Get Signature
+
 ```ts
 get IsBeingJacked(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:273](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L273)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:273](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L273)
 
 ***
 
 ### IsClimbing
 
+#### Get Signature
+
 ```ts
 get IsClimbing(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:228](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L228)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:228](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L228)
 
 ***
 
 ### IsClimbingLadder
 
+#### Get Signature
+
 ```ts
 get IsClimbingLadder(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:232](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L232)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:232](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L232)
 
 ***
 
 ### IsDamaged
 
+#### Get Signature
+
 ```ts
 get IsDamaged(): boolean
 ```
 
-returns true if [DamageCleanliness](Ped.md#damagecleanliness) was ever lower than [eDamageCleanliness.Good](../enumerations/eDamageCleanliness.md)
+Defined in: [src/redm/entities/Ped.ts:296](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L296)
+
+returns true if [DamageCleanliness](Ped.md#damagecleanliness) was ever lower than [eDamageCleanliness.Good](../enumerations/eDamageCleanliness.md#good)
+
+##### Returns
+
+`boolean`
+
+#### Set Signature
 
 ```ts
 set IsDamaged(damaged): void
 ```
 
-#### Parameters
+Defined in: [src/redm/entities/Ped.ts:304](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L304)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `damaged` | `boolean` |
 
-#### Returns
+##### Returns
 
-`boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:296](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L296)
+`void`
 
 ***
 
 ### IsDiving
 
+#### Get Signature
+
 ```ts
 get IsDiving(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:245](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L245)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:245](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L245)
 
 ***
 
 ### IsFalling
 
+#### Get Signature
+
 ```ts
 get IsFalling(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:211](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L211)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:211](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L211)
 
 ***
 
 ### IsFatallyInjured
 
+#### Get Signature
+
 ```ts
 get IsFatallyInjured(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:82](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L82)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:82](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L82)
 
 ***
 
 ### IsHuman
 
+#### Get Signature
+
 ```ts
 get IsHuman(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:118](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L118)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:118](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L118)
 
 ***
 
 ### IsInAnyBoat
 
+#### Get Signature
+
 ```ts
 get IsInAnyBoat(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:195](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L195)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:195](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L195)
 
 ***
 
 ### IsInAnyHeli
 
+#### Get Signature
+
 ```ts
 get IsInAnyHeli(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:199](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L199)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:199](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L199)
 
 ***
 
 ### IsInAnyPlane
 
+#### Get Signature
+
 ```ts
 get IsInAnyPlane(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:203](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L203)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:203](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L203)
 
 ***
 
 ### IsInCombatRoll
 
+#### Get Signature
+
 ```ts
 get IsInCombatRoll(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:277](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L277)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:277](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L277)
 
 ***
 
 ### IsInFlyingVehicle
 
+#### Get Signature
+
 ```ts
 get IsInFlyingVehicle(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:207](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L207)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:207](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L207)
 
 ***
 
 ### IsInjured
 
+#### Get Signature
+
 ```ts
 get IsInjured(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:78](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L78)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:78](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L78)
 
 ***
 
 ### IsInteractingWithAnimal
 
+#### Get Signature
+
 ```ts
 get IsInteractingWithAnimal(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:178](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L178)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:178](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L178)
 
 ***
 
 ### IsJacking
 
+#### Get Signature
+
 ```ts
 get IsJacking(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:265](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L265)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:265](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L265)
 
 ***
 
 ### IsJumping
 
+#### Get Signature
+
 ```ts
 get IsJumping(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:224](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L224)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:224](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L224)
 
 ***
 
 ### IsMale
 
+#### Get Signature
+
 ```ts
 get IsMale(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:114](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L114)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:114](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L114)
 
 ***
 
 ### IsOnTopOfVehicle
 
+#### Get Signature
+
 ```ts
 get IsOnTopOfVehicle(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:122](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L122)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:122](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L122)
 
 ***
 
 ### IsOpeningADoor
 
+#### Get Signature
+
 ```ts
 get IsOpeningADoor(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:249](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L249)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:249](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L249)
 
 ***
 
 ### IsPlantingBomb
 
+#### Get Signature
+
 ```ts
 get IsPlantingBomb(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:191](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L191)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:191](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L191)
 
 ***
 
 ### IsPlayer
 
+#### Get Signature
+
 ```ts
 get IsPlayer(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:86](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L86)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:86](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L86)
 
 ***
 
 ### IsShooting
 
+#### Get Signature
+
 ```ts
 get IsShooting(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:98](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L98)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:98](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L98)
 
 ***
 
 ### IsSittingInAnyVehicle
 
+#### Get Signature
+
 ```ts
 get IsSittingInAnyVehicle(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:187](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L187)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:187](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L187)
 
 ***
 
 ### IsSliding
 
+#### Get Signature
+
 ```ts
 get IsSliding(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:215](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L215)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:215](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L215)
 
 ***
 
 ### IsStealthed
 
+#### Get Signature
+
 ```ts
 get IsStealthed(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:261](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L261)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:261](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L261)
 
 ***
 
 ### IsStunned
 
+#### Get Signature
+
 ```ts
 get IsStunned(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:269](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L269)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:269](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L269)
 
 ***
 
 ### IsVaulting
 
+#### Get Signature
+
 ```ts
 get IsVaulting(): boolean
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:241](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L241)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:241](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L241)
 
 ***
 
 ### LeadingHorse
 
+#### Get Signature
+
 ```ts
 get LeadingHorse(): OptionalPed
 ```
 
+Defined in: [src/redm/entities/Ped.ts:146](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L146)
+
 returns the horse that this ped is leading
 
-#### Returns
+##### Returns
 
 [`OptionalPed`](../type-aliases/OptionalPed.md)
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:146](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L146)
 
 ***
 
 ### MaxHealth
 
+#### Get Signature
+
 ```ts
 get MaxHealth(): number
 ```
 
-```ts
-set MaxHealth(amount): void
-```
+Defined in: [src/redm/entities/Ped.ts:61](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L61)
 
-While this increases the peds max health, if used on a player it wont increase the max core value on the hud
-
-#### Parameters
-
-| Parameter | Type |
-| ------ | ------ |
-| `amount` | `number` |
-
-#### Returns
+##### Returns
 
 `number`
 
 the maximum health of the ped
 
-#### Defined in
+#### Set Signature
 
-[src/redm/entities/Ped.ts:61](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L61)
+```ts
+set MaxHealth(amount): void
+```
+
+Defined in: [src/redm/entities/Ped.ts:54](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L54)
+
+While this increases the peds max health, if used on a player it wont increase the max core value on the hud
+
+##### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `amount` | `number` |
+
+##### Returns
+
+`void`
 
 ***
 
 ### Mount
 
+#### Get Signature
+
 ```ts
 get Mount(): OptionalPed
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:133](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L133)
+
+##### Returns
 
 [`OptionalPed`](../type-aliases/OptionalPed.md)
 
 the last mount that this ped was on, or null if it doesn't exist
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:133](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L133)
-
 ***
 
 ### Owner
+
+#### Get Signature
 
 ```ts
 get Owner(): OptionalPed
 ```
 
+Defined in: [src/redm/entities/Ped.ts:159](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L159)
+
 returns the owner of the current animal
 
-#### Returns
+##### Returns
 
 [`OptionalPed`](../type-aliases/OptionalPed.md)
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:159](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L159)
 
 ***
 
 ### OwnsAnimal
 
+#### Set Signature
+
 ```ts
 set OwnsAnimal(animal): void
 ```
 
-#### Parameters
+Defined in: [src/redm/entities/Ped.ts:352](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L352)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `animal` | [`Ped`](Ped.md) |
 
-#### Defined in
+##### Returns
 
-[src/redm/entities/Ped.ts:352](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L352)
+`void`
 
 ***
 
 ### SeeingRange
 
+#### Set Signature
+
 ```ts
 set SeeingRange(value): void
 ```
 
-#### Parameters
+Defined in: [src/redm/entities/Ped.ts:253](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L253)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `value` | `number` |
 
-#### Defined in
+##### Returns
 
-[src/redm/entities/Ped.ts:253](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L253)
+`void`
 
 ***
 
 ### TamingState
 
+#### Get Signature
+
 ```ts
 get TamingState(): TamingState
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:169](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L169)
+
+##### Returns
 
 [`TamingState`](../enumerations/TamingState.md)
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:169](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L169)
 
 ***
 
 ### Vehicle
 
+#### Get Signature
+
 ```ts
 get Vehicle(): Vehicle
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Ped.ts:126](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L126)
+
+##### Returns
 
 [`Vehicle`](Vehicle.md)
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:126](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L126)
 
 ## Methods
 
@@ -899,6 +973,8 @@ get Vehicle(): Vehicle
 ```ts
 addArmour(amount): void
 ```
+
+Defined in: [src/redm/entities/Ped.ts:480](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L480)
 
 #### Parameters
 
@@ -910,10 +986,6 @@ addArmour(amount): void
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:480](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L480)
-
 ***
 
 ### applyDamage()
@@ -924,6 +996,8 @@ applyDamage(
    boneId, 
    pedKiller): void
 ```
+
+Defined in: [src/redm/entities/Ped.ts:484](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L484)
 
 #### Parameters
 
@@ -937,10 +1011,6 @@ applyDamage(
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:484](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L484)
-
 ***
 
 ### applyDamagePack()
@@ -951,6 +1021,8 @@ applyDamagePack(
    damage, 
    mult): void
 ```
+
+Defined in: [src/redm/entities/Ped.ts:503](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L503)
 
 #### Parameters
 
@@ -964,10 +1036,6 @@ applyDamagePack(
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:503](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L503)
-
 ***
 
 ### canBeTargetedByPlayer()
@@ -975,6 +1043,8 @@ applyDamagePack(
 ```ts
 canBeTargetedByPlayer(player, toggle): void
 ```
+
+Defined in: [src/redm/entities/Ped.ts:344](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L344)
 
 #### Parameters
 
@@ -987,10 +1057,6 @@ canBeTargetedByPlayer(player, toggle): void
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:344](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L344)
-
 ***
 
 ### clearLastBoneDamage()
@@ -999,13 +1065,11 @@ canBeTargetedByPlayer(player, toggle): void
 clearLastBoneDamage(): void
 ```
 
+Defined in: [src/redm/entities/Ped.ts:348](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L348)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:348](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L348)
 
 ***
 
@@ -1017,6 +1081,8 @@ clone(
    bScriptHostPed, 
    copyHeadBlend): Ped
 ```
+
+Defined in: [src/redm/entities/Ped.ts:459](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L459)
 
 creates a clone of the ped
 
@@ -1034,10 +1100,6 @@ creates a clone of the ped
 
 the cloned ped
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:459](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L459)
-
 ***
 
 ### cloneTo()
@@ -1045,6 +1107,8 @@ the cloned ped
 ```ts
 cloneTo(targetPed): void
 ```
+
+Defined in: [src/redm/entities/Ped.ts:473](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L473)
 
 clones the ped onto the target ped
 
@@ -1058,10 +1122,6 @@ clones the ped onto the target ped
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:473](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L473)
-
 ***
 
 ### damage()
@@ -1072,6 +1132,8 @@ damage(
    boneId, 
    killer?): void
 ```
+
+Defined in: [src/redm/entities/Ped.ts:426](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L426)
 
 #### Parameters
 
@@ -1085,10 +1147,6 @@ damage(
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:426](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L426)
-
 ***
 
 ### delete()
@@ -1097,15 +1155,13 @@ damage(
 delete(): void
 ```
 
+Defined in: [src/redm/entities/Ped.ts:447](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L447)
+
 Removes the specified ped if its not a player entity
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:447](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L447)
 
 ***
 
@@ -1115,15 +1171,13 @@ Removes the specified ped if its not a player entity
 getJacker(): Ped
 ```
 
+Defined in: [src/redm/entities/Ped.ts:335](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L335)
+
 returns the ped who jacked this ped
 
 #### Returns
 
 [`Ped`](Ped.md)
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:335](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L335)
 
 ***
 
@@ -1132,6 +1186,8 @@ returns the ped who jacked this ped
 ```ts
 isInteractionPossible(animal): boolean
 ```
+
+Defined in: [src/redm/entities/Ped.ts:357](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L357)
 
 #### Parameters
 
@@ -1143,10 +1199,6 @@ isInteractionPossible(animal): boolean
 
 `boolean`
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:357](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L357)
-
 ***
 
 ### isOnVehicle()
@@ -1154,6 +1206,8 @@ isInteractionPossible(animal): boolean
 ```ts
 isOnVehicle(vehicle): boolean
 ```
+
+Defined in: [src/redm/entities/Ped.ts:367](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L367)
 
 #### Parameters
 
@@ -1165,10 +1219,6 @@ isOnVehicle(vehicle): boolean
 
 `boolean`
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:367](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L367)
-
 ***
 
 ### isSeatFree()
@@ -1176,6 +1226,8 @@ isOnVehicle(vehicle): boolean
 ```ts
 isSeatFree(seatIndex): boolean
 ```
+
+Defined in: [src/redm/entities/Ped.ts:400](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L400)
 
 #### Parameters
 
@@ -1189,10 +1241,6 @@ isSeatFree(seatIndex): boolean
 
 true of the specified seat is free on the mount
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:400](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L400)
-
 ***
 
 ### isSittingInVehicle()
@@ -1200,6 +1248,8 @@ true of the specified seat is free on the mount
 ```ts
 isSittingInVehicle(vehicle): boolean
 ```
+
+Defined in: [src/redm/entities/Ped.ts:371](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L371)
 
 #### Parameters
 
@@ -1211,10 +1261,6 @@ isSittingInVehicle(vehicle): boolean
 
 `boolean`
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:371](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L371)
-
 ***
 
 ### killPed()
@@ -1222,6 +1268,8 @@ isSittingInVehicle(vehicle): boolean
 ```ts
 killPed(killer?): void
 ```
+
+Defined in: [src/redm/entities/Ped.ts:422](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L422)
 
 kills the ped and optionally sets the killer
 
@@ -1235,10 +1283,6 @@ kills the ped and optionally sets the killer
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:422](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L422)
-
 ***
 
 ### removeFromMount()
@@ -1247,13 +1291,11 @@ kills the ped and optionally sets the killer
 removeFromMount(): void
 ```
 
+Defined in: [src/redm/entities/Ped.ts:390](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L390)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:390](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L390)
 
 ***
 
@@ -1262,6 +1304,8 @@ removeFromMount(): void
 ```ts
 setCanBeKnockedOffVehicle(state): void
 ```
+
+Defined in: [src/redm/entities/Ped.ts:440](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L440)
 
 this returns a different type then the getter so we can't use set, maybe ts will fix soon (tm)
 
@@ -1275,10 +1319,6 @@ this returns a different type then the getter so we can't use set, maybe ts will
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:440](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L440)
-
 ***
 
 ### setCrouchMovement()
@@ -1286,6 +1326,8 @@ this returns a different type then the getter so we can't use set, maybe ts will
 ```ts
 setCrouchMovement(state, immediately): void
 ```
+
+Defined in: [src/redm/entities/Ped.ts:339](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L339)
 
 #### Parameters
 
@@ -1298,10 +1340,6 @@ setCrouchMovement(state, immediately): void
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:339](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L339)
-
 ***
 
 ### setIntoVehicle()
@@ -1309,6 +1347,8 @@ setCrouchMovement(state, immediately): void
 ```ts
 setIntoVehicle(vehicle, seatIndex): void
 ```
+
+Defined in: [src/redm/entities/Ped.ts:414](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L414)
 
 Sets the ped into the specified vehicle
 
@@ -1323,10 +1363,6 @@ Sets the ped into the specified vehicle
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:414](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L414)
-
 ***
 
 ### setOntoMount()
@@ -1334,6 +1370,8 @@ Sets the ped into the specified vehicle
 ```ts
 setOntoMount(targetPed, seatIndex): void
 ```
+
+Defined in: [src/redm/entities/Ped.ts:385](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L385)
 
 puts the ped onto the specified mount
 
@@ -1348,10 +1386,6 @@ puts the ped onto the specified mount
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:385](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L385)
-
 ***
 
 ### warpOutOfVehicle()
@@ -1360,13 +1394,11 @@ puts the ped onto the specified mount
 warpOutOfVehicle(): void
 ```
 
+Defined in: [src/redm/entities/Ped.ts:375](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L375)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:375](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L375)
 
 ***
 
@@ -1378,6 +1410,8 @@ static blockScenariosInArea(
    vec2, 
    blockingFlags): number
 ```
+
+Defined in: [src/redm/entities/Ped.ts:26](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L26)
 
 Blocks scenarios inbetween the specified vectors
 
@@ -1399,10 +1433,6 @@ the scenarioId that can be used in [removeScenarioBlock](Ped.md#removescenariobl
 
 Move to Game
 
-#### Defined in
-
-[src/redm/entities/Ped.ts:26](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L26)
-
 ***
 
 ### removeScenarioBlock()
@@ -1410,6 +1440,8 @@ Move to Game
 ```ts
 static removeScenarioBlock(scenarioId): void
 ```
+
+Defined in: [src/redm/entities/Ped.ts:47](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L47)
 
 Removes the blocking of scenarios in the specified area
 
@@ -1422,7 +1454,3 @@ Removes the blocking of scenarios in the specified area
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/redm/entities/Ped.ts:47](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Ped.ts#L47)

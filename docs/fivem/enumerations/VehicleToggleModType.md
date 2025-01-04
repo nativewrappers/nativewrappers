@@ -2,10 +2,12 @@
 
 # Enumeration: VehicleToggleModType
 
+Defined in: [src/fivem/enums/Vehicle.ts:329](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L329)
+
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `TireSmoke` | `20` | [src/fivem/enums/Vehicle.ts:331](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L331) |
-| `Turbo` | `18` | [src/fivem/enums/Vehicle.ts:330](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L330) |
-| `XenonHeadlights` | `22` | [src/fivem/enums/Vehicle.ts:332](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L332) |
+| <a id="tiresmoke"></a> `TireSmoke` | `20` | [src/fivem/enums/Vehicle.ts:331](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L331) |
+| <a id="turbo"></a> `Turbo` | `18` | [src/fivem/enums/Vehicle.ts:330](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L330) |
+| <a id="xenonheadlights"></a> `XenonHeadlights` | `22` | [src/fivem/enums/Vehicle.ts:332](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L332) |

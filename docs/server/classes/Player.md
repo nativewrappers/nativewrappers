@@ -2,6 +2,8 @@
 
 # Class: Player
 
+Defined in: [src/server/entities/Player.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L7)
+
 ## Constructors
 
 ### new Player()
@@ -9,6 +11,8 @@
 ```ts
 new Player(source): Player
 ```
+
+Defined in: [src/server/entities/Player.ts:9](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L9)
 
 #### Parameters
 
@@ -20,451 +24,455 @@ new Player(source): Player
 
 [`Player`](Player.md)
 
-#### Defined in
-
-[src/server/entities/Player.ts:9](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L9)
-
 ## Properties
 
 | Property | Modifier | Type | Default value | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| `type` | `protected` | `ClassTypes` | `ClassTypes.Player` | [src/server/entities/Player.ts:8](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L8) |
+| <a id="type"></a> `type` | `protected` | `ClassTypes` | `ClassTypes.Player` | [src/server/entities/Player.ts:8](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L8) |
 
 ## Accessors
 
 ### AirDragMultiplier
 
+#### Get Signature
+
 ```ts
 get AirDragMultiplier(): number
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:136](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L136)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/server/entities/Player.ts:136](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L136)
 
 ***
 
 ### CamerRotation
 
+#### Get Signature
+
 ```ts
 get CamerRotation(): Vector3
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:57](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L57)
+
+##### Returns
 
 [`Vector3`](../../fivem/classes/Vector3.md)
-
-#### Defined in
-
-[src/server/entities/Player.ts:57](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L57)
 
 ***
 
 ### Endpoint
 
+#### Get Signature
+
 ```ts
 get Endpoint(): string
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:53](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L53)
+
+##### Returns
 
 `string`
-
-#### Defined in
-
-[src/server/entities/Player.ts:53](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L53)
 
 ***
 
 ### Exists
 
+#### Get Signature
+
 ```ts
 get Exists(): boolean
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:22](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L22)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/server/entities/Player.ts:22](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L22)
 
 ***
 
 ### Identifiers
 
+#### Get Signature
+
 ```ts
 get Identifiers(): string[]
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:49](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L49)
+
+##### Returns
 
 `string`[]
-
-#### Defined in
-
-[src/server/entities/Player.ts:49](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L49)
 
 ***
 
 ### IsEvadingWanted
 
+#### Get Signature
+
 ```ts
 get IsEvadingWanted(): boolean
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:120](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L120)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/server/entities/Player.ts:120](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L120)
 
 ***
 
 ### IsMuted
 
+#### Get Signature
+
 ```ts
 get IsMuted(): boolean
 ```
+
+Defined in: [src/server/entities/Player.ts:144](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L144)
+
+##### Returns
+
+`boolean`
+
+#### Set Signature
 
 ```ts
 set IsMuted(isMuted): void
 ```
 
-#### Parameters
+Defined in: [src/server/entities/Player.ts:148](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L148)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `isMuted` | `boolean` |
 
-#### Returns
+##### Returns
 
-`boolean`
-
-#### Defined in
-
-[src/server/entities/Player.ts:144](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L144)
+`void`
 
 ***
 
 ### IsUsingSuperJump
 
+#### Get Signature
+
 ```ts
 get IsUsingSuperJump(): boolean
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:140](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L140)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/server/entities/Player.ts:140](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L140)
 
 ***
 
 ### LastMessage
 
+#### Get Signature
+
 ```ts
 get LastMessage(): number
 ```
 
+Defined in: [src/server/entities/Player.ts:64](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L64)
+
 Returns the time since the last player UDP message
 
-#### Returns
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/server/entities/Player.ts:64](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L64)
 
 ***
 
 ### MaxArmour
 
+#### Get Signature
+
 ```ts
 get MaxArmour(): number
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:68](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L68)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/server/entities/Player.ts:68](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L68)
 
 ***
 
 ### MaxHealth
 
+#### Get Signature
+
 ```ts
 get MaxHealth(): number
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:72](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L72)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/server/entities/Player.ts:72](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L72)
 
 ***
 
 ### MeleeModifier
 
+#### Get Signature
+
 ```ts
 get MeleeModifier(): number
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:76](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L76)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/server/entities/Player.ts:76](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L76)
 
 ***
 
 ### Name
 
+#### Get Signature
+
 ```ts
 get Name(): string
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:83](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L83)
+
+##### Returns
 
 `string`
 
 the players name
 
-#### Defined in
-
-[src/server/entities/Player.ts:83](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L83)
-
 ***
 
 ### Ped
+
+#### Get Signature
 
 ```ts
 get Ped(): Ped
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:41](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L41)
+
+##### Returns
 
 [`Ped`](Ped.md)
-
-#### Defined in
-
-[src/server/entities/Player.ts:41](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L41)
 
 ***
 
 ### Ping
 
+#### Get Signature
+
 ```ts
 get Ping(): number
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:97](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L97)
+
+##### Returns
 
 `number`
 
 the players round trip ping
 
-#### Defined in
-
-[src/server/entities/Player.ts:97](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L97)
-
 ***
 
 ### RoutingBucket
+
+#### Get Signature
 
 ```ts
 get RoutingBucket(): number
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:104](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L104)
+
+##### Returns
 
 `number`
 
 the current routhing bucket the player is in, default is 0
 
-#### Defined in
-
-[src/server/entities/Player.ts:104](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L104)
-
 ***
 
 ### Source
+
+#### Get Signature
 
 ```ts
 get Source(): number
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:26](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L26)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/server/entities/Player.ts:26](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L26)
 
 ***
 
 ### Src
 
+#### Get Signature
+
 ```ts
 get Src(): string
 ```
 
+Defined in: [src/server/entities/Player.ts:37](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L37)
+
 Returns the player source casted as a string
 
-#### Returns
+##### Returns
 
 `string`
-
-#### Defined in
-
-[src/server/entities/Player.ts:37](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L37)
 
 ***
 
 ### State
 
+#### Get Signature
+
 ```ts
 get State(): StateBagInterface
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:30](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L30)
+
+##### Returns
 
 `StateBagInterface`
-
-#### Defined in
-
-[src/server/entities/Player.ts:30](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L30)
 
 ***
 
 ### Team
 
+#### Get Signature
+
 ```ts
 get Team(): number
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:108](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L108)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/server/entities/Player.ts:108](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L108)
 
 ***
 
 ### Tokens
 
+#### Get Signature
+
 ```ts
 get Tokens(): string[]
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:45](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L45)
+
+##### Returns
 
 `string`[]
-
-#### Defined in
-
-[src/server/entities/Player.ts:45](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L45)
 
 ***
 
 ### WantedLevel
 
+#### Get Signature
+
 ```ts
 get WantedLevel(): number
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:116](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L116)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/server/entities/Player.ts:116](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L116)
 
 ***
 
 ### WantedPosition
 
+#### Get Signature
+
 ```ts
 get WantedPosition(): Vector3
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:112](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L112)
+
+##### Returns
 
 [`Vector3`](../../fivem/classes/Vector3.md)
-
-#### Defined in
-
-[src/server/entities/Player.ts:112](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L112)
 
 ***
 
 ### WeaponDamageModifier
 
+#### Get Signature
+
 ```ts
 get WeaponDamageModifier(): number
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:124](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L124)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/server/entities/Player.ts:124](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L124)
 
 ***
 
 ### WeaponDefenseModifier
 
+#### Get Signature
+
 ```ts
 get WeaponDefenseModifier(): number
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:128](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L128)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/server/entities/Player.ts:128](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L128)
 
 ***
 
 ### WeaponDefenseModifier2
 
+#### Get Signature
+
 ```ts
 get WeaponDefenseModifier2(): number
 ```
 
-#### Returns
+Defined in: [src/server/entities/Player.ts:132](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L132)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/server/entities/Player.ts:132](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L132)
 
 ## Methods
 
@@ -473,6 +481,8 @@ get WeaponDefenseModifier2(): number
 ```ts
 drop(reason): void
 ```
+
+Defined in: [src/server/entities/Player.ts:160](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L160)
 
 #### Parameters
 
@@ -484,10 +494,6 @@ drop(reason): void
 
 `void`
 
-#### Defined in
-
-[src/server/entities/Player.ts:160](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L160)
-
 ***
 
 ### emit()
@@ -495,6 +501,8 @@ drop(reason): void
 ```ts
 emit(eventName, ...args): void
 ```
+
+Defined in: [src/server/entities/Player.ts:164](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L164)
 
 #### Parameters
 
@@ -507,10 +515,6 @@ emit(eventName, ...args): void
 
 `void`
 
-#### Defined in
-
-[src/server/entities/Player.ts:164](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L164)
-
 ***
 
 ### filteredName()
@@ -519,15 +523,13 @@ emit(eventName, ...args): void
 filteredName(): string
 ```
 
+Defined in: [src/server/entities/Player.ts:90](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L90)
+
 #### Returns
 
 `string`
 
 the players name with any color code unicode, etc removed, this can lead to there being no name at all
-
-#### Defined in
-
-[src/server/entities/Player.ts:90](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L90)
 
 ***
 
@@ -536,6 +538,8 @@ the players name with any color code unicode, etc removed, this can lead to ther
 ```ts
 isAceAllowed(object): boolean
 ```
+
+Defined in: [src/server/entities/Player.ts:152](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L152)
 
 #### Parameters
 
@@ -547,10 +551,6 @@ isAceAllowed(object): boolean
 
 `boolean`
 
-#### Defined in
-
-[src/server/entities/Player.ts:152](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L152)
-
 ***
 
 ### timeInPersuit()
@@ -558,6 +558,8 @@ isAceAllowed(object): boolean
 ```ts
 timeInPersuit(lastPursuit): number
 ```
+
+Defined in: [src/server/entities/Player.ts:156](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L156)
 
 #### Parameters
 
@@ -569,26 +571,20 @@ timeInPersuit(lastPursuit): number
 
 `number`
 
-#### Defined in
-
-[src/server/entities/Player.ts:156](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L156)
-
 ***
 
 ### AllPlayers()
 
 ```ts
-static AllPlayers(): IterableIterator<Player, any, any>
+static AllPlayers(): IterableIterator<Player>
 ```
+
+Defined in: [src/server/entities/Player.ts:15](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/entities/Player.ts#L15)
 
 Get an interable list of players currently on the server
 
 #### Returns
 
-`IterableIterator`\<[`Player`](Player.md), `any`, `any`\>
+`IterableIterator`\<[`Player`](Player.md)\>
 
 Iterable list of Players.
-
-#### Defined in
-
-[src/server/entities/Player.ts:15](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Player.ts#L15)

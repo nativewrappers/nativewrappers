@@ -2,6 +2,8 @@
 
 # Class: Color
 
+Defined in: [src/common/utils/Color.ts:1](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Color.ts#L1)
+
 ## Constructors
 
 ### new Color()
@@ -13,6 +15,8 @@ new Color(
    b, 
    a): Color
 ```
+
+Defined in: [src/common/utils/Color.ts:26](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Color.ts#L26)
 
 #### Parameters
 
@@ -27,22 +31,18 @@ new Color(
 
 [`Color`](Color.md)
 
-#### Defined in
-
-[src/common/utils/Color.ts:26](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Color.ts#L26)
-
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `a` | `public` | `number` | [src/common/utils/Color.ts:21](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Color.ts#L21) |
-| `b` | `public` | `number` | [src/common/utils/Color.ts:24](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Color.ts#L24) |
-| `g` | `public` | `number` | [src/common/utils/Color.ts:23](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Color.ts#L23) |
-| `r` | `public` | `number` | [src/common/utils/Color.ts:22](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Color.ts#L22) |
-| `Black` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:3](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Color.ts#L3) |
-| `Transparent` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:2](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Color.ts#L2) |
-| `White` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:4](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Color.ts#L4) |
-| `WhiteSmoke` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:5](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Color.ts#L5) |
+| <a id="a-1"></a> `a` | `public` | `number` | [src/common/utils/Color.ts:21](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Color.ts#L21) |
+| <a id="b-1"></a> `b` | `public` | `number` | [src/common/utils/Color.ts:24](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Color.ts#L24) |
+| <a id="g-1"></a> `g` | `public` | `number` | [src/common/utils/Color.ts:23](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Color.ts#L23) |
+| <a id="r-1"></a> `r` | `public` | `number` | [src/common/utils/Color.ts:22](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Color.ts#L22) |
+| <a id="black"></a> `Black` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:3](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Color.ts#L3) |
+| <a id="transparent"></a> `Transparent` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:2](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Color.ts#L2) |
+| <a id="white"></a> `White` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Color.ts#L4) |
+| <a id="whitesmoke"></a> `WhiteSmoke` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Color.ts#L5) |
 
 ## Methods
 
@@ -55,6 +55,8 @@ static fromArgb(
    g, 
    b): Color
 ```
+
+Defined in: [src/common/utils/Color.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Color.ts#L7)
 
 #### Parameters
 
@@ -69,10 +71,6 @@ static fromArgb(
 
 [`Color`](Color.md)
 
-#### Defined in
-
-[src/common/utils/Color.ts:7](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Color.ts#L7)
-
 ***
 
 ### fromArray()
@@ -81,19 +79,17 @@ static fromArgb(
 static fromArray(primitive): Color
 ```
 
+Defined in: [src/common/utils/Color.ts:15](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Color.ts#L15)
+
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `primitive` | [`number`, `number`, `number`] \| `number`[] |
+| `primitive` | \[`number`, `number`, `number`\] \| `number`[] |
 
 #### Returns
 
 [`Color`](Color.md)
-
-#### Defined in
-
-[src/common/utils/Color.ts:15](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Color.ts#L15)
 
 ***
 
@@ -106,6 +102,8 @@ static fromRgb(
    b): Color
 ```
 
+Defined in: [src/common/utils/Color.ts:11](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Color.ts#L11)
+
 #### Parameters
 
 | Parameter | Type |
@@ -117,7 +115,3 @@ static fromRgb(
 #### Returns
 
 [`Color`](Color.md)
-
-#### Defined in
-
-[src/common/utils/Color.ts:11](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Color.ts#L11)

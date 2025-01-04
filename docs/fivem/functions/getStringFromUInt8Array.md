@@ -9,6 +9,8 @@ function getStringFromUInt8Array(
    end): string
 ```
 
+Defined in: lib/common/utils/getStringFromUInt8Array.d.ts:8
+
 get string from uint8 array
 
 ## Parameters
@@ -22,7 +24,3 @@ get string from uint8 array
 ## Returns
 
 `string`
-
-## Defined in
-
-lib/common/utils/getStringFromUInt8Array.d.ts:8

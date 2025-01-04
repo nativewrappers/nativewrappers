@@ -2,13 +2,15 @@
 
 # Enumeration: VehiclePaintType
 
+Defined in: [src/fivem/enums/Vehicle.ts:335](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L335)
+
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `Chrome` | `5` | [src/fivem/enums/Vehicle.ts:341](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L341) |
-| `Matte` | `3` | [src/fivem/enums/Vehicle.ts:339](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L339) |
-| `Metal` | `4` | [src/fivem/enums/Vehicle.ts:340](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L340) |
-| `Metallic` | `1` | [src/fivem/enums/Vehicle.ts:337](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L337) |
-| `Normal` | `0` | [src/fivem/enums/Vehicle.ts:336](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L336) |
-| `Pearl` | `2` | [src/fivem/enums/Vehicle.ts:338](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L338) |
+| <a id="chrome"></a> `Chrome` | `5` | [src/fivem/enums/Vehicle.ts:341](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L341) |
+| <a id="matte"></a> `Matte` | `3` | [src/fivem/enums/Vehicle.ts:339](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L339) |
+| <a id="metal"></a> `Metal` | `4` | [src/fivem/enums/Vehicle.ts:340](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L340) |
+| <a id="metallic"></a> `Metallic` | `1` | [src/fivem/enums/Vehicle.ts:337](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L337) |
+| <a id="normal"></a> `Normal` | `0` | [src/fivem/enums/Vehicle.ts:336](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L336) |
+| <a id="pearl"></a> `Pearl` | `2` | [src/fivem/enums/Vehicle.ts:338](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L338) |

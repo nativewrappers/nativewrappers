@@ -2,6 +2,8 @@
 
 # Class: `abstract` Screen
 
+Defined in: [src/fivem/ui/Screen.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Screen.ts#L6)
+
 ## Constructors
 
 ### new Screen()
@@ -18,97 +20,97 @@ new Screen(): Screen
 
 ### AspectRatio
 
+#### Get Signature
+
 ```ts
 get static AspectRatio(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/ui/Screen.ts:29](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Screen.ts#L29)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/ui/Screen.ts:29](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Screen.ts#L29)
 
 ***
 
 ### Height
 
+#### Get Signature
+
 ```ts
 get static Height(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/ui/Screen.ts:25](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Screen.ts#L25)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/ui/Screen.ts:25](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Screen.ts#L25)
 
 ***
 
 ### Resolution
 
+#### Get Signature
+
 ```ts
 get static Resolution(): Size
 ```
 
-#### Returns
+Defined in: [src/fivem/ui/Screen.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Screen.ts#L7)
+
+##### Returns
 
 [`Size`](Size.md)
-
-#### Defined in
-
-[src/fivem/ui/Screen.ts:7](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Screen.ts#L7)
 
 ***
 
 ### ScaledResolution
 
+#### Get Signature
+
 ```ts
 get static ScaledResolution(): Size
 ```
 
-#### Returns
+Defined in: [src/fivem/ui/Screen.ts:12](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Screen.ts#L12)
+
+##### Returns
 
 [`Size`](Size.md)
-
-#### Defined in
-
-[src/fivem/ui/Screen.ts:12](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Screen.ts#L12)
 
 ***
 
 ### ScaledWidth
 
+#### Get Signature
+
 ```ts
 get static ScaledWidth(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/ui/Screen.ts:21](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Screen.ts#L21)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/ui/Screen.ts:21](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Screen.ts#L21)
 
 ***
 
 ### Width
 
+#### Get Signature
+
 ```ts
 get static Width(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/ui/Screen.ts:17](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Screen.ts#L17)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/ui/Screen.ts:17](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Screen.ts#L17)
 
 ## Methods
 
@@ -117,6 +119,8 @@ get static Width(): number
 ```ts
 static displayHelpTextThisFrame(message): void
 ```
+
+Defined in: [src/fivem/ui/Screen.ts:45](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Screen.ts#L45)
 
 #### Parameters
 
@@ -127,10 +131,6 @@ static displayHelpTextThisFrame(message): void
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/ui/Screen.ts:45](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Screen.ts#L45)
 
 ***
 
@@ -150,6 +150,8 @@ static showAdvancedNotification(
    showInBrief, 
    sound): Notification
 ```
+
+Defined in: [src/fivem/ui/Screen.ts:72](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Screen.ts#L72)
 
 #### Parameters
 
@@ -171,10 +173,6 @@ static showAdvancedNotification(
 
 [`Notification`](Notification.md)
 
-#### Defined in
-
-[src/fivem/ui/Screen.ts:72](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Screen.ts#L72)
-
 ***
 
 ### showNotification()
@@ -182,6 +180,8 @@ static showAdvancedNotification(
 ```ts
 static showNotification(message, blinking): Notification
 ```
+
+Defined in: [src/fivem/ui/Screen.ts:57](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Screen.ts#L57)
 
 #### Parameters
 
@@ -194,10 +194,6 @@ static showNotification(message, blinking): Notification
 
 [`Notification`](Notification.md)
 
-#### Defined in
-
-[src/fivem/ui/Screen.ts:57](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Screen.ts#L57)
-
 ***
 
 ### showSubtitle()
@@ -205,6 +201,8 @@ static showNotification(message, blinking): Notification
 ```ts
 static showSubtitle(message, duration): void
 ```
+
+Defined in: [src/fivem/ui/Screen.ts:33](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Screen.ts#L33)
 
 #### Parameters
 
@@ -217,10 +215,6 @@ static showSubtitle(message, duration): void
 
 `void`
 
-#### Defined in
-
-[src/fivem/ui/Screen.ts:33](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Screen.ts#L33)
-
 ***
 
 ### worldToScreen()
@@ -228,6 +222,8 @@ static showSubtitle(message, duration): void
 ```ts
 static worldToScreen(position, scaleWidth): Size
 ```
+
+Defined in: [src/fivem/ui/Screen.ts:114](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Screen.ts#L114)
 
 #### Parameters
 
@@ -239,7 +235,3 @@ static worldToScreen(position, scaleWidth): Size
 #### Returns
 
 [`Size`](Size.md)
-
-#### Defined in
-
-[src/fivem/ui/Screen.ts:114](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Screen.ts#L114)

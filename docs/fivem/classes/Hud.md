@@ -2,6 +2,8 @@
 
 # Class: `abstract` Hud
 
+Defined in: [src/fivem/ui/Hud.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Hud.ts#L4)
+
 ## Constructors
 
 ### new Hud()
@@ -18,115 +20,147 @@ new Hud(): Hud
 
 ### CursorPosition
 
+#### Set Signature
+
 ```ts
 set static CursorPosition(position): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/ui/Hud.ts:21](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Hud.ts#L21)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `position` | [`Point`](Point.md) |
 
-#### Defined in
+##### Returns
 
-[src/fivem/ui/Hud.ts:21](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Hud.ts#L21)
+`void`
 
 ***
 
 ### CursorSprite
 
+#### Get Signature
+
 ```ts
 get static CursorSprite(): CursorSprite
 ```
+
+Defined in: [src/fivem/ui/Hud.ts:25](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Hud.ts#L25)
+
+##### Returns
+
+[`CursorSprite`](../enumerations/CursorSprite.md)
+
+#### Set Signature
 
 ```ts
 set static CursorSprite(sprite): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/ui/Hud.ts:29](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Hud.ts#L29)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `sprite` | [`CursorSprite`](../enumerations/CursorSprite.md) |
 
-#### Returns
+##### Returns
 
-[`CursorSprite`](../enumerations/CursorSprite.md)
-
-#### Defined in
-
-[src/fivem/ui/Hud.ts:25](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Hud.ts#L25)
+`void`
 
 ***
 
 ### IsRadarVisible
 
+#### Get Signature
+
 ```ts
 get static IsRadarVisible(): boolean
 ```
+
+Defined in: [src/fivem/ui/Hud.ts:41](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Hud.ts#L41)
+
+##### Returns
+
+`boolean`
+
+#### Set Signature
 
 ```ts
 set static IsRadarVisible(toggle): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/ui/Hud.ts:45](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Hud.ts#L45)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `toggle` | `boolean` |
 
-#### Returns
+##### Returns
 
-`boolean`
-
-#### Defined in
-
-[src/fivem/ui/Hud.ts:41](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Hud.ts#L41)
+`void`
 
 ***
 
 ### IsVisible
 
+#### Get Signature
+
 ```ts
 get static IsVisible(): boolean
 ```
+
+Defined in: [src/fivem/ui/Hud.ts:33](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Hud.ts#L33)
+
+##### Returns
+
+`boolean`
+
+#### Set Signature
 
 ```ts
 set static IsVisible(toggle): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/ui/Hud.ts:37](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Hud.ts#L37)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `toggle` | `boolean` |
 
-#### Returns
+##### Returns
 
-`boolean`
-
-#### Defined in
-
-[src/fivem/ui/Hud.ts:33](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Hud.ts#L33)
+`void`
 
 ***
 
 ### RadarZoom
 
+#### Set Signature
+
 ```ts
 set static RadarZoom(zoomLevel): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/ui/Hud.ts:49](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Hud.ts#L49)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `zoomLevel` | `number` |
 
-#### Defined in
+##### Returns
 
-[src/fivem/ui/Hud.ts:49](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Hud.ts#L49)
+`void`
 
 ## Methods
 
@@ -136,6 +170,8 @@ set static RadarZoom(zoomLevel): void
 static hideComponentThisFrame(component): void
 ```
 
+Defined in: [src/fivem/ui/Hud.ts:13](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Hud.ts#L13)
+
 #### Parameters
 
 | Parameter | Type |
@@ -146,10 +182,6 @@ static hideComponentThisFrame(component): void
 
 `void`
 
-#### Defined in
-
-[src/fivem/ui/Hud.ts:13](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Hud.ts#L13)
-
 ***
 
 ### isComponentActive()
@@ -157,6 +189,8 @@ static hideComponentThisFrame(component): void
 ```ts
 static isComponentActive(component): boolean
 ```
+
+Defined in: [src/fivem/ui/Hud.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Hud.ts#L5)
 
 #### Parameters
 
@@ -168,10 +202,6 @@ static isComponentActive(component): boolean
 
 `boolean`
 
-#### Defined in
-
-[src/fivem/ui/Hud.ts:5](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Hud.ts#L5)
-
 ***
 
 ### showComponentThisFrame()
@@ -179,6 +209,8 @@ static isComponentActive(component): boolean
 ```ts
 static showComponentThisFrame(component): void
 ```
+
+Defined in: [src/fivem/ui/Hud.ts:9](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Hud.ts#L9)
 
 #### Parameters
 
@@ -190,10 +222,6 @@ static showComponentThisFrame(component): void
 
 `void`
 
-#### Defined in
-
-[src/fivem/ui/Hud.ts:9](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Hud.ts#L9)
-
 ***
 
 ### showCursorThisFrame()
@@ -202,10 +230,8 @@ static showComponentThisFrame(component): void
 static showCursorThisFrame(): void
 ```
 
+Defined in: [src/fivem/ui/Hud.ts:17](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Hud.ts#L17)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/ui/Hud.ts:17](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Hud.ts#L17)

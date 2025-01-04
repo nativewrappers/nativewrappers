@@ -2,6 +2,8 @@
 
 # Class: ListItem
 
+Defined in: [src/fivem/ui/menu/modules/ListItem.ts:3](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/modules/ListItem.ts#L3)
+
 ## Constructors
 
 ### new ListItem()
@@ -9,6 +11,8 @@
 ```ts
 new ListItem(name, value): ListItem
 ```
+
+Defined in: [src/fivem/ui/menu/modules/ListItem.ts:9](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/modules/ListItem.ts#L9)
 
 #### Parameters
 
@@ -21,14 +25,10 @@ new ListItem(name, value): ListItem
 
 [`ListItem`](ListItem.md)
 
-#### Defined in
-
-[src/fivem/ui/menu/modules/ListItem.ts:9](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/menu/modules/ListItem.ts#L9)
-
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `id` | `readonly` | `string` | [src/fivem/ui/menu/modules/ListItem.ts:4](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/menu/modules/ListItem.ts#L4) |
-| `name` | `public` | `string` | [src/fivem/ui/menu/modules/ListItem.ts:6](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/menu/modules/ListItem.ts#L6) |
-| `value` | `public` | `unknown` | [src/fivem/ui/menu/modules/ListItem.ts:7](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/menu/modules/ListItem.ts#L7) |
+| <a id="id"></a> `id` | `readonly` | `string` | [src/fivem/ui/menu/modules/ListItem.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/modules/ListItem.ts#L4) |
+| <a id="name-1"></a> `name` | `public` | `string` | [src/fivem/ui/menu/modules/ListItem.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/modules/ListItem.ts#L6) |
+| <a id="value-1"></a> `value` | `public` | `unknown` | [src/fivem/ui/menu/modules/ListItem.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/modules/ListItem.ts#L7) |

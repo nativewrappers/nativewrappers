@@ -2,6 +2,8 @@
 
 # Class: Events
 
+Defined in: [src/server/Events.ts:58](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Events.ts#L58)
+
 ## Constructors
 
 ### new Events()
@@ -18,17 +20,17 @@ new Events(): Events
 
 ### InvokingResource
 
+#### Get Signature
+
 ```ts
 get static InvokingResource(): string
 ```
 
-#### Returns
+Defined in: [src/server/Events.ts:67](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Events.ts#L67)
+
+##### Returns
 
 `string`
-
-#### Defined in
-
-[src/server/Events.ts:67](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/Events.ts#L67)
 
 ## Methods
 
@@ -38,13 +40,11 @@ get static InvokingResource(): string
 static cancel(): void
 ```
 
+Defined in: [src/server/Events.ts:59](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Events.ts#L59)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/server/Events.ts:59](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/Events.ts#L59)
 
 ***
 
@@ -53,6 +53,8 @@ static cancel(): void
 ```ts
 static on(eventName, event): void
 ```
+
+Defined in: [src/server/Events.ts:85](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Events.ts#L85)
 
 An on wrapper that properly converts the classes
 
@@ -67,10 +69,6 @@ An on wrapper that properly converts the classes
 
 `void`
 
-#### Defined in
-
-[src/server/Events.ts:85](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/Events.ts#L85)
-
 ***
 
 ### onNet()
@@ -78,6 +76,8 @@ An on wrapper that properly converts the classes
 ```ts
 static onNet(eventName, event): void
 ```
+
+Defined in: [src/server/Events.ts:74](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Events.ts#L74)
 
 An onNet wrapper that properly converts the type into the correct type
 
@@ -92,10 +92,6 @@ An onNet wrapper that properly converts the type into the correct type
 
 `void`
 
-#### Defined in
-
-[src/server/Events.ts:74](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/Events.ts#L74)
-
 ***
 
 ### wasCanceled()
@@ -104,10 +100,8 @@ An onNet wrapper that properly converts the type into the correct type
 static wasCanceled(): boolean
 ```
 
+Defined in: [src/server/Events.ts:63](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Events.ts#L63)
+
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/server/Events.ts:63](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/Events.ts#L63)

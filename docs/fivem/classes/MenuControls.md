@@ -2,6 +2,8 @@
 
 # Class: MenuControls
 
+Defined in: [src/fivem/ui/menu/MenuControls.ts:3](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/MenuControls.ts#L3)
+
 ## Constructors
 
 ### new MenuControls()
@@ -18,9 +20,9 @@ new MenuControls(): MenuControls
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `back` | `public` | [`MenuControl`](MenuControl.md) | [src/fivem/ui/menu/MenuControls.ts:4](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/menu/MenuControls.ts#L4) |
-| `down` | `public` | [`MenuControl`](MenuControl.md) | [src/fivem/ui/menu/MenuControls.ts:9](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/menu/MenuControls.ts#L9) |
-| `left` | `public` | [`MenuControl`](MenuControl.md) | [src/fivem/ui/menu/MenuControls.ts:6](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/menu/MenuControls.ts#L6) |
-| `right` | `public` | [`MenuControl`](MenuControl.md) | [src/fivem/ui/menu/MenuControls.ts:7](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/menu/MenuControls.ts#L7) |
-| `select` | `public` | [`MenuControl`](MenuControl.md) | [src/fivem/ui/menu/MenuControls.ts:5](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/menu/MenuControls.ts#L5) |
-| `up` | `public` | [`MenuControl`](MenuControl.md) | [src/fivem/ui/menu/MenuControls.ts:8](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/menu/MenuControls.ts#L8) |
+| <a id="back"></a> `back` | `public` | [`MenuControl`](MenuControl.md) | [src/fivem/ui/menu/MenuControls.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/MenuControls.ts#L4) |
+| <a id="down"></a> `down` | `public` | [`MenuControl`](MenuControl.md) | [src/fivem/ui/menu/MenuControls.ts:9](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/MenuControls.ts#L9) |
+| <a id="left"></a> `left` | `public` | [`MenuControl`](MenuControl.md) | [src/fivem/ui/menu/MenuControls.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/MenuControls.ts#L6) |
+| <a id="right"></a> `right` | `public` | [`MenuControl`](MenuControl.md) | [src/fivem/ui/menu/MenuControls.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/MenuControls.ts#L7) |
+| <a id="select"></a> `select` | `public` | [`MenuControl`](MenuControl.md) | [src/fivem/ui/menu/MenuControls.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/MenuControls.ts#L5) |
+| <a id="up"></a> `up` | `public` | [`MenuControl`](MenuControl.md) | [src/fivem/ui/menu/MenuControls.ts:8](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/MenuControls.ts#L8) |

@@ -2,6 +2,8 @@
 
 # Class: `abstract` Fading
 
+Defined in: [src/fivem/ui/Fading.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Fading.ts#L4)
+
 Static class for screen fading
 
 ## Constructors
@@ -20,81 +22,81 @@ new Fading(): Fading
 
 ### IsFadedIn
 
+#### Get Signature
+
 ```ts
 get static IsFadedIn(): boolean
 ```
 
+Defined in: [src/fivem/ui/Fading.ts:10](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Fading.ts#L10)
+
 Gets whether the screen is faded in
 
-#### Returns
+##### Returns
 
 `boolean`
 
 True or false
-
-#### Defined in
-
-[src/fivem/ui/Fading.ts:10](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Fading.ts#L10)
 
 ***
 
 ### IsFadedOut
 
+#### Get Signature
+
 ```ts
 get static IsFadedOut(): boolean
 ```
 
+Defined in: [src/fivem/ui/Fading.ts:19](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Fading.ts#L19)
+
 Gets whether the screen is faded out
 
-#### Returns
+##### Returns
 
 `boolean`
 
 True or false
-
-#### Defined in
-
-[src/fivem/ui/Fading.ts:19](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Fading.ts#L19)
 
 ***
 
 ### IsFadingIn
 
+#### Get Signature
+
 ```ts
 get static IsFadingIn(): boolean
 ```
 
+Defined in: [src/fivem/ui/Fading.ts:28](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Fading.ts#L28)
+
 Gets whether the screen is currently fading in
 
-#### Returns
+##### Returns
 
 `boolean`
 
 True or false
-
-#### Defined in
-
-[src/fivem/ui/Fading.ts:28](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Fading.ts#L28)
 
 ***
 
 ### IsFadingOut
 
+#### Get Signature
+
 ```ts
 get static IsFadingOut(): boolean
 ```
 
+Defined in: [src/fivem/ui/Fading.ts:37](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Fading.ts#L37)
+
 Gets whether the screen is currently fading out
 
-#### Returns
+##### Returns
 
 `boolean`
 
 True or false
-
-#### Defined in
-
-[src/fivem/ui/Fading.ts:37](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Fading.ts#L37)
 
 ## Methods
 
@@ -103,6 +105,8 @@ True or false
 ```ts
 static fadeIn(duration): Promise<void>
 ```
+
+Defined in: [src/fivem/ui/Fading.ts:46](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Fading.ts#L46)
 
 Fade in the screen for a certain duration.
 
@@ -116,10 +120,6 @@ Fade in the screen for a certain duration.
 
 `Promise`\<`void`\>
 
-#### Defined in
-
-[src/fivem/ui/Fading.ts:46](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Fading.ts#L46)
-
 ***
 
 ### fadeOut()
@@ -127,6 +127,8 @@ Fade in the screen for a certain duration.
 ```ts
 static fadeOut(duration): Promise<void>
 ```
+
+Defined in: [src/fivem/ui/Fading.ts:64](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Fading.ts#L64)
 
 Fade out the screen for a certain duration.
 
@@ -139,7 +141,3 @@ Fade out the screen for a certain duration.
 #### Returns
 
 `Promise`\<`void`\>
-
-#### Defined in
-
-[src/fivem/ui/Fading.ts:64](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Fading.ts#L64)

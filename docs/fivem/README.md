@@ -2,9 +2,7 @@
 
 # fivem
 
-## Index
-
-### Enumerations
+## Enumerations
 
 | Enumeration | Description |
 | ------ | ------ |
@@ -86,7 +84,7 @@
 | [WeatherTypeHash](enumerations/WeatherTypeHash.md) | Same list as Weather enum, but as hashes. |
 | [ZoneID](enumerations/ZoneID.md) | List of Zones. Useful for using world zone related natives. |
 
-### Classes
+## Classes
 
 | Class | Description |
 | ------ | ------ |
@@ -171,7 +169,7 @@
 | [WeaponAsset](classes/WeaponAsset.md) | weapon asset |
 | [World](classes/World.md) | Class with common world manipulations. |
 
-### Interfaces
+## Interfaces
 
 | Interface | Description |
 | ------ | ------ |
@@ -183,7 +181,7 @@
 | [WeaponComponentHudStats](interfaces/WeaponComponentHudStats.md) | WeaponComponentHudStats refer: https://github.com/citizenfx/fivem/blob/master/code/client/clrcore/External/Game.cs#L976 [StructLayout(LayoutKind.Explicit, Size = 0x28)] [SecuritySafeCritical] internal struct UnsafeWeaponComponentHudStats { 			[FieldOffset(0x00)] private int hudDamage; 			[FieldOffset(0x08)] private int hudSpeed; 			[FieldOffset(0x10)] private int hudCapacity; 			[FieldOffset(0x18)] private int hudAccuracy; 			[FieldOffset(0x20)] private int hudRange; |
 | [WeaponHudStats](interfaces/WeaponHudStats.md) | WeaponHudStats refer1: https://github.com/citizenfx/fivem/blob/master/code/client/clrcore/External/Game.cs#L900 refer2: https://docs.fivem.net/natives/?_0xD92C739EE34C9EBA // members should be aligned to 8 bytes by default but it's best to use alignas here, just to be sure struct WeaponHudStatsData { 	alignas(8) uint8_t hudDamage; // 0x0000 	alignas(8) uint8_t hudSpeed; // 0x0008 	alignas(8) uint8_t hudCapacity; // 0x0010 	alignas(8) uint8_t hudAccuracy; // 0x0018 	alignas(8) uint8_t hudRange; // 0x0020 }; |
 
-### Variables
+## Variables
 
 | Variable | Description |
 | ------ | ------ |
@@ -193,15 +191,15 @@
 | [WeaponComponentHudStats](variables/WeaponComponentHudStats.md) | Mapping of WeaponComponentHash -> WeaponComponentHudStats |
 | [WeaponHudStats](variables/WeaponHudStats.md) | Mapping of WeaponHash -> WeaponHudStats |
 
-### Functions
+## Functions
 
 | Function | Description |
 | ------ | ------ |
 | [Delay](functions/Delay.md) | - |
 | [enumValues](functions/enumValues.md) | EnumValues - iterate over enum values Just copy&paste from https://github.com/microsoft/TypeScript/issues/4753#issuecomment-694557208 |
-| [getStringFromUInt8Array](functions/getStringFromUInt8Array.md) | - |
-| [getUInt32FromUint8Array](functions/getUInt32FromUint8Array.md) | - |
-| [LoadAnimDict](functions/LoadAnimDict.md) | - |
-| [LoadAnimDictArray](functions/LoadAnimDictArray.md) | - |
-| [RemoveAnimDictArray](functions/RemoveAnimDictArray.md) | - |
+| [getStringFromUInt8Array](functions/getStringFromUInt8Array.md) | get string from uint8 array |
+| [getUInt32FromUint8Array](functions/getUInt32FromUint8Array.md) | get uint32 from uint8 array |
+| [LoadAnimDict](functions/LoadAnimDict.md) | A utility to load an animation dictionary, anything that loads an animation should RemoveAnimDict after its finish being used. |
+| [LoadAnimDictArray](functions/LoadAnimDictArray.md) | A utility to load multiple animation dictionary, anything that loads an animation should RemoveAnimDict after its finish being used. |
+| [RemoveAnimDictArray](functions/RemoveAnimDictArray.md) | A utility to unload multiple animation dictionary |
 | [Wait](functions/Wait.md) | - |

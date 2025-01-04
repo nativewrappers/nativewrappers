@@ -2,10 +2,12 @@
 
 # Enumeration: RopeType
 
+Defined in: [src/fivem/enums/RopeType.ts:1](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/RopeType.ts#L1)
+
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `ThickRope` | `1` | [src/fivem/enums/RopeType.ts:2](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/RopeType.ts#L2) |
-| `ThickRope2` | `4` | [src/fivem/enums/RopeType.ts:3](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/RopeType.ts#L3) |
-| `ThinMetalWire` | `5` | [src/fivem/enums/RopeType.ts:4](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/RopeType.ts#L4) |
+| <a id="thickrope"></a> `ThickRope` | `1` | [src/fivem/enums/RopeType.ts:2](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/RopeType.ts#L2) |
+| <a id="thickrope2"></a> `ThickRope2` | `4` | [src/fivem/enums/RopeType.ts:3](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/RopeType.ts#L3) |
+| <a id="thinmetalwire"></a> `ThinMetalWire` | `5` | [src/fivem/enums/RopeType.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/RopeType.ts#L4) |

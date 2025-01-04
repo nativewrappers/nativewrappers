@@ -6,6 +6,8 @@
 function Delay(milliseconds): Promise<void>
 ```
 
+Defined in: lib/common/utils/index.d.ts:9
+
 ## Parameters
 
 | Parameter | Type |
@@ -15,7 +17,3 @@ function Delay(milliseconds): Promise<void>
 ## Returns
 
 `Promise`\<`void`\>
-
-## Defined in
-
-lib/common/utils/index.d.ts:9

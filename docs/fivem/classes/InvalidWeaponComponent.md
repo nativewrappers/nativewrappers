@@ -2,6 +2,8 @@
 
 # Class: InvalidWeaponComponent
 
+Defined in: [src/fivem/weaponComponent/InvalidWeaponComponent.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/InvalidWeaponComponent.ts#L7)
+
 ## Extends
 
 - `WeaponComponent`
@@ -14,191 +16,213 @@
 new InvalidWeaponComponent(): InvalidWeaponComponent
 ```
 
+Defined in: [src/fivem/weaponComponent/InvalidWeaponComponent.ts:8](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/InvalidWeaponComponent.ts#L8)
+
 #### Returns
 
 [`InvalidWeaponComponent`](InvalidWeaponComponent.md)
 
 #### Overrides
 
-`WeaponComponent.constructor`
-
-#### Defined in
-
-[src/fivem/weaponComponent/InvalidWeaponComponent.ts:8](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weaponComponent/InvalidWeaponComponent.ts#L8)
+```ts
+WeaponComponent.constructor
+```
 
 ## Properties
 
 | Property | Modifier | Type | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| `componentHash` | `readonly` | [`WeaponComponentHash`](../enumerations/WeaponComponentHash.md) | `WeaponComponent.componentHash` | [src/fivem/weaponComponent/WeaponComponent.ts:19](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weaponComponent/WeaponComponent.ts#L19) |
-| `owner` | `readonly` | [`Ped`](Ped.md) | `WeaponComponent.owner` | [src/fivem/weaponComponent/WeaponComponent.ts:17](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weaponComponent/WeaponComponent.ts#L17) |
-| `weapon` | `readonly` | [`Weapon`](Weapon.md) | `WeaponComponent.weapon` | [src/fivem/weaponComponent/WeaponComponent.ts:18](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weaponComponent/WeaponComponent.ts#L18) |
+| <a id="componenthash"></a> `componentHash` | `readonly` | [`WeaponComponentHash`](../enumerations/WeaponComponentHash.md) | `WeaponComponent.componentHash` | [src/fivem/weaponComponent/WeaponComponent.ts:19](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/WeaponComponent.ts#L19) |
+| <a id="owner"></a> `owner` | `readonly` | [`Ped`](Ped.md) | `WeaponComponent.owner` | [src/fivem/weaponComponent/WeaponComponent.ts:17](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/WeaponComponent.ts#L17) |
+| <a id="weapon"></a> `weapon` | `readonly` | [`Weapon`](Weapon.md) | `WeaponComponent.weapon` | [src/fivem/weaponComponent/WeaponComponent.ts:18](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/WeaponComponent.ts#L18) |
 
 ## Accessors
 
 ### Active
 
+#### Get Signature
+
 ```ts
 get Active(): boolean
 ```
 
+Defined in: [src/fivem/weaponComponent/InvalidWeaponComponent.ts:13](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/InvalidWeaponComponent.ts#L13)
+
 check ped has weapon component
+
+##### Returns
+
+`boolean`
+
+#### Set Signature
 
 ```ts
 set Active(value): void
 ```
 
+Defined in: [src/fivem/weaponComponent/InvalidWeaponComponent.ts:18](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/InvalidWeaponComponent.ts#L18)
+
 check ped has weapon component
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `value` | `boolean` |
 
-#### Returns
+##### Returns
 
-`boolean`
+`void`
 
 #### Overrides
 
-`WeaponComponent.Active`
-
-#### Defined in
-
-[src/fivem/weaponComponent/InvalidWeaponComponent.ts:13](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weaponComponent/InvalidWeaponComponent.ts#L13)
+```ts
+WeaponComponent.Active
+```
 
 ***
 
 ### AttachmentPoint
 
+#### Get Signature
+
 ```ts
 get AttachmentPoint(): ComponentAttachmentPoint
 ```
 
+Defined in: [src/fivem/weaponComponent/WeaponComponent.ts:110](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/WeaponComponent.ts#L110)
+
 get component attachment point
 
-#### Returns
+##### Returns
 
 [`ComponentAttachmentPoint`](../enumerations/ComponentAttachmentPoint.md)
 
 #### Inherited from
 
-`WeaponComponent.AttachmentPoint`
-
-#### Defined in
-
-[src/fivem/weaponComponent/WeaponComponent.ts:110](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weaponComponent/WeaponComponent.ts#L110)
+```ts
+WeaponComponent.AttachmentPoint
+```
 
 ***
 
 ### ComponentHash
 
+#### Get Signature
+
 ```ts
 get ComponentHash(): WeaponComponentHash
 ```
 
+Defined in: [src/fivem/weaponComponent/WeaponComponent.ts:45](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/WeaponComponent.ts#L45)
+
 get component hash
 
-#### Returns
+##### Returns
 
 [`WeaponComponentHash`](../enumerations/WeaponComponentHash.md)
 
 #### Inherited from
 
-`WeaponComponent.ComponentHash`
-
-#### Defined in
-
-[src/fivem/weaponComponent/WeaponComponent.ts:45](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weaponComponent/WeaponComponent.ts#L45)
+```ts
+WeaponComponent.ComponentHash
+```
 
 ***
 
 ### DisplayName
 
+#### Get Signature
+
 ```ts
 get DisplayName(): string
 ```
 
+Defined in: [src/fivem/weaponComponent/InvalidWeaponComponent.ts:20](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/InvalidWeaponComponent.ts#L20)
+
 get component display name / label
 
-#### Returns
+##### Returns
 
 `string`
 
 #### Overrides
 
-`WeaponComponent.DisplayName`
-
-#### Defined in
-
-[src/fivem/weaponComponent/InvalidWeaponComponent.ts:20](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weaponComponent/InvalidWeaponComponent.ts#L20)
+```ts
+WeaponComponent.DisplayName
+```
 
 ***
 
 ### HudStats
 
+#### Get Signature
+
 ```ts
 get HudStats(): WeaponComponentHudStats
 ```
 
+Defined in: [src/fivem/weaponComponent/WeaponComponent.ts:122](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/WeaponComponent.ts#L122)
+
 get component hud stats
 
-#### Returns
+##### Returns
 
 [`WeaponComponentHudStats`](../interfaces/WeaponComponentHudStats.md)
 
 #### Inherited from
 
-`WeaponComponent.HudStats`
-
-#### Defined in
-
-[src/fivem/weaponComponent/WeaponComponent.ts:122](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weaponComponent/WeaponComponent.ts#L122)
+```ts
+WeaponComponent.HudStats
+```
 
 ***
 
 ### IsInvalid
 
+#### Get Signature
+
 ```ts
 get IsInvalid(): boolean
 ```
 
+Defined in: [src/fivem/weaponComponent/WeaponComponent.ts:36](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/WeaponComponent.ts#L36)
+
 Check WeaponComponent is invalid or not
 
-#### Returns
+##### Returns
 
 `boolean`
 
 #### Inherited from
 
-`WeaponComponent.IsInvalid`
-
-#### Defined in
-
-[src/fivem/weaponComponent/WeaponComponent.ts:36](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weaponComponent/WeaponComponent.ts#L36)
+```ts
+WeaponComponent.IsInvalid
+```
 
 ***
 
 ### LocalizedName
 
+#### Get Signature
+
 ```ts
 get LocalizedName(): string
 ```
 
+Defined in: [src/fivem/weaponComponent/InvalidWeaponComponent.ts:24](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/InvalidWeaponComponent.ts#L24)
+
 get component localized name
 
-#### Returns
+##### Returns
 
 `string`
 
 #### Overrides
 
-`WeaponComponent.LocalizedName`
-
-#### Defined in
-
-[src/fivem/weaponComponent/InvalidWeaponComponent.ts:24](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weaponComponent/InvalidWeaponComponent.ts#L24)
+```ts
+WeaponComponent.LocalizedName
+```
 
 ## Methods
 
@@ -207,6 +231,8 @@ get component localized name
 ```ts
 static getAttachmentPoint(hash, componentHash): ComponentAttachmentPoint
 ```
+
+Defined in: [src/fivem/weaponComponent/InvalidWeaponComponent.ts:28](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/InvalidWeaponComponent.ts#L28)
 
 get component attachment point by WeaponHash and WeaponComponentHash
 
@@ -223,11 +249,9 @@ get component attachment point by WeaponHash and WeaponComponentHash
 
 #### Overrides
 
-`WeaponComponent.getAttachmentPoint`
-
-#### Defined in
-
-[src/fivem/weaponComponent/InvalidWeaponComponent.ts:28](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weaponComponent/InvalidWeaponComponent.ts#L28)
+```ts
+WeaponComponent.getAttachmentPoint
+```
 
 ***
 
@@ -236,6 +260,8 @@ get component attachment point by WeaponHash and WeaponComponentHash
 ```ts
 static getComponentDisplayNameFromHash(hash, componentHash): string
 ```
+
+Defined in: [src/fivem/weaponComponent/WeaponComponent.ts:134](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/WeaponComponent.ts#L134)
 
 get component display name / label by hash
 
@@ -252,8 +278,6 @@ get component display name / label by hash
 
 #### Inherited from
 
-`WeaponComponent.getComponentDisplayNameFromHash`
-
-#### Defined in
-
-[src/fivem/weaponComponent/WeaponComponent.ts:134](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/weaponComponent/WeaponComponent.ts#L134)
+```ts
+WeaponComponent.getComponentDisplayNameFromHash
+```

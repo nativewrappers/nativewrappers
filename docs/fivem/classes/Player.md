@@ -2,6 +2,8 @@
 
 # Class: Player
 
+Defined in: [src/fivem/models/Player.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L6)
+
 ## Constructors
 
 ### new Player()
@@ -9,6 +11,8 @@
 ```ts
 new Player(handle): Player
 ```
+
+Defined in: [src/fivem/models/Player.ts:25](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L25)
 
 #### Parameters
 
@@ -20,491 +24,503 @@ new Player(handle): Player
 
 [`Player`](Player.md)
 
-#### Defined in
-
-[src/fivem/models/Player.ts:25](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L25)
-
 ## Accessors
 
 ### Character
+
+#### Get Signature
 
 ```ts
 get Character(): Ped
 ```
 
+Defined in: [src/fivem/models/Player.ts:40](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L40)
+
 This is here for compatibility with older versions.
 
-#### Returns
+##### Returns
 
 [`Ped`](Ped.md)
-
-#### Defined in
-
-[src/fivem/models/Player.ts:40](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L40)
 
 ***
 
 ### DisableFiring
 
+#### Set Signature
+
 ```ts
 set DisableFiring(value): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/models/Player.ts:125](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L125)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `value` | `boolean` |
 
-#### Defined in
+##### Returns
 
-[src/fivem/models/Player.ts:125](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L125)
+`void`
 
 ***
 
 ### EntityPlayerIsAimingAt
 
+#### Get Signature
+
 ```ts
 get EntityPlayerIsAimingAt(): null | BaseEntity
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:139](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L139)
+
+##### Returns
 
 `null` \| [`BaseEntity`](BaseEntity.md)
-
-#### Defined in
-
-[src/fivem/models/Player.ts:139](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L139)
 
 ***
 
 ### FakeWantedLevel
 
+#### Get Signature
+
 ```ts
 get FakeWantedLevel(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:151](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L151)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:151](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L151)
 
 ***
 
 ### Ghosted
 
+#### Set Signature
+
 ```ts
 set Ghosted(isGhosted): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/models/Player.ts:129](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L129)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `isGhosted` | `boolean` |
 
-#### Defined in
+##### Returns
 
-[src/fivem/models/Player.ts:129](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L129)
+`void`
 
 ***
 
 ### Handle
 
+#### Get Signature
+
 ```ts
 get Handle(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:33](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L33)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:33](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L33)
 
 ***
 
 ### HasReserveParachute
 
+#### Get Signature
+
 ```ts
 get HasReserveParachute(): boolean
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:159](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L159)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:159](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L159)
 
 ***
 
 ### HealthRechargeLimit
 
+#### Get Signature
+
 ```ts
 get HealthRechargeLimit(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:163](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L163)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:163](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L163)
 
 ***
 
 ### IsDead
 
+#### Get Signature
+
 ```ts
 get IsDead(): boolean
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:121](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L121)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:121](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L121)
 
 ***
 
 ### IsInvincible
 
+#### Get Signature
+
 ```ts
 get IsInvincible(): boolean
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:167](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L167)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:167](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L167)
 
 ***
 
 ### MaxArmor
 
+#### Get Signature
+
 ```ts
 get MaxArmor(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:175](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L175)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:175](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L175)
 
 ***
 
 ### Name
 
+#### Get Signature
+
 ```ts
 get Name(): string
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:107](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L107)
+
+##### Returns
 
 `string`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:107](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L107)
 
 ***
 
 ### ParachuteColorTrailColor
 
+#### Get Signature
+
 ```ts
 get ParachuteColorTrailColor(): Color
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:191](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L191)
+
+##### Returns
 
 [`Color`](Color.md)
-
-#### Defined in
-
-[src/fivem/models/Player.ts:191](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L191)
 
 ***
 
 ### ParachuteModelOverride
 
+#### Get Signature
+
 ```ts
 get ParachuteModelOverride(): Model
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:179](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L179)
+
+##### Returns
 
 [`Model`](Model.md)
-
-#### Defined in
-
-[src/fivem/models/Player.ts:179](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L179)
 
 ***
 
 ### ParachutePackTintIndex
 
+#### Get Signature
+
 ```ts
 get ParachutePackTintIndex(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:183](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L183)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:183](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L183)
 
 ***
 
 ### ParachuteTintIndex
 
+#### Get Signature
+
 ```ts
 get ParachuteTintIndex(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:187](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L187)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:187](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L187)
 
 ***
 
 ### Ped
 
+#### Get Signature
+
 ```ts
 get Ped(): Ped
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:44](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L44)
+
+##### Returns
 
 [`Ped`](Ped.md)
-
-#### Defined in
-
-[src/fivem/models/Player.ts:44](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L44)
 
 ***
 
 ### PlayerGroup
 
+#### Get Signature
+
 ```ts
 get PlayerGroup(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:155](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L155)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:155](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L155)
 
 ***
 
 ### PlayerRgbColour
 
+#### Get Signature
+
 ```ts
 get PlayerRgbColour(): Color
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:203](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L203)
+
+##### Returns
 
 [`Color`](Color.md)
-
-#### Defined in
-
-[src/fivem/models/Player.ts:203](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L203)
 
 ***
 
 ### PvPEnabled
 
+#### Get Signature
+
 ```ts
 get PvPEnabled(): boolean
 ```
+
+Defined in: [src/fivem/models/Player.ts:111](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L111)
+
+##### Returns
+
+`boolean`
+
+#### Set Signature
 
 ```ts
 set PvPEnabled(value): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/models/Player.ts:115](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L115)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `value` | `boolean` |
 
-#### Returns
+##### Returns
 
-`boolean`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:111](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L111)
+`void`
 
 ***
 
 ### ReserveParachuteModelOverride
 
+#### Get Signature
+
 ```ts
 get ReserveParachuteModelOverride(): Model
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:195](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L195)
+
+##### Returns
 
 [`Model`](Model.md)
-
-#### Defined in
-
-[src/fivem/models/Player.ts:195](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L195)
 
 ***
 
 ### ReserveParachuteTintIndex
 
+#### Get Signature
+
 ```ts
 get ReserveParachuteTintIndex(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:199](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L199)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:199](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L199)
 
 ***
 
 ### ServerId
 
+#### Get Signature
+
 ```ts
 get ServerId(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:54](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L54)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:54](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L54)
 
 ***
 
 ### SprintTimeRemaining
 
+#### Get Signature
+
 ```ts
 get SprintTimeRemaining(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:211](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L211)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:211](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L211)
 
 ***
 
 ### Stamina
 
+#### Get Signature
+
 ```ts
 get Stamina(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:207](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L207)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:207](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L207)
 
 ***
 
 ### State
 
+#### Get Signature
+
 ```ts
 get State(): StateBagInterface
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:61](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L61)
+
+##### Returns
 
 `StateBagInterface`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:61](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L61)
 
 ***
 
 ### StealthNoise
 
+#### Get Signature
+
 ```ts
 get StealthNoise(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:147](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L147)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:147](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L147)
 
 ***
 
 ### TargetEntity
 
+#### Get Signature
+
 ```ts
 get TargetEntity(): null | BaseEntity
 ```
 
+Defined in: [src/fivem/models/Player.ts:218](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L218)
+
 The players melee target?
 
-#### Returns
+##### Returns
 
 `null` \| [`BaseEntity`](BaseEntity.md)
-
-#### Defined in
-
-[src/fivem/models/Player.ts:218](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L218)
 
 ***
 
 ### Team
 
+#### Get Signature
+
 ```ts
 get Team(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/models/Player.ts:227](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L227)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:227](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L227)
 
 ## Methods
 
@@ -513,6 +529,8 @@ get Team(): number
 ```ts
 AddStateBagChangeHandler(keyFilter, handler): number
 ```
+
+Defined in: [src/fivem/models/Player.ts:65](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L65)
 
 #### Parameters
 
@@ -525,10 +543,6 @@ AddStateBagChangeHandler(keyFilter, handler): number
 
 `number`
 
-#### Defined in
-
-[src/fivem/models/Player.ts:65](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L65)
-
 ***
 
 ### CanPedHearPlayer()
@@ -536,6 +550,8 @@ AddStateBagChangeHandler(keyFilter, handler): number
 ```ts
 CanPedHearPlayer(ped): boolean
 ```
+
+Defined in: [src/fivem/models/Player.ts:233](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L233)
 
 #### Parameters
 
@@ -547,10 +563,6 @@ CanPedHearPlayer(ped): boolean
 
 `boolean`
 
-#### Defined in
-
-[src/fivem/models/Player.ts:233](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L233)
-
 ***
 
 ### listenForStateChange()
@@ -558,6 +570,8 @@ CanPedHearPlayer(ped): boolean
 ```ts
 listenForStateChange(keyFilter, handler): number
 ```
+
+Defined in: [src/fivem/models/Player.ts:86](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L86)
 
 A short hand function for AddStateBagChangeHandler, this gets automatically cleaned up on entity deletion.
 
@@ -574,10 +588,6 @@ A short hand function for AddStateBagChangeHandler, this gets automatically clea
 
 a cookie to be used in RemoveStateBagChangeHandler
 
-#### Defined in
-
-[src/fivem/models/Player.ts:86](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L86)
-
 ***
 
 ### removeAllStateListeners()
@@ -586,13 +596,11 @@ a cookie to be used in RemoveStateBagChangeHandler
 removeAllStateListeners(): void
 ```
 
+Defined in: [src/fivem/models/Player.ts:101](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L101)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/models/Player.ts:101](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L101)
 
 ***
 
@@ -601,6 +609,8 @@ removeAllStateListeners(): void
 ```ts
 removeStateListener(tgtCookie): void
 ```
+
+Defined in: [src/fivem/models/Player.ts:93](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L93)
 
 #### Parameters
 
@@ -612,10 +622,6 @@ removeStateListener(tgtCookie): void
 
 `void`
 
-#### Defined in
-
-[src/fivem/models/Player.ts:93](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L93)
-
 ***
 
 ### fromPedHandle()
@@ -623,6 +629,8 @@ removeStateListener(tgtCookie): void
 ```ts
 static fromPedHandle(handle): Player
 ```
+
+Defined in: [src/fivem/models/Player.ts:14](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L14)
 
 #### Parameters
 
@@ -634,10 +642,6 @@ static fromPedHandle(handle): Player
 
 [`Player`](Player.md)
 
-#### Defined in
-
-[src/fivem/models/Player.ts:14](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L14)
-
 ***
 
 ### fromServerId()
@@ -645,6 +649,8 @@ static fromPedHandle(handle): Player
 ```ts
 static fromServerId(serverId): Player
 ```
+
+Defined in: [src/fivem/models/Player.ts:18](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/Player.ts#L18)
 
 #### Parameters
 
@@ -655,7 +661,3 @@ static fromServerId(serverId): Player
 #### Returns
 
 [`Player`](Player.md)
-
-#### Defined in
-
-[src/fivem/models/Player.ts:18](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/Player.ts#L18)

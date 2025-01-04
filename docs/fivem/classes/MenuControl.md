@@ -2,6 +2,8 @@
 
 # Class: MenuControl
 
+Defined in: [src/fivem/ui/menu/MenuControl.ts:1](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/MenuControl.ts#L1)
+
 ## Constructors
 
 ### new MenuControl()
@@ -9,6 +11,8 @@
 ```ts
 new MenuControl(enabled): MenuControl
 ```
+
+Defined in: [src/fivem/ui/menu/MenuControl.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/MenuControl.ts#L4)
 
 #### Parameters
 
@@ -20,32 +24,36 @@ new MenuControl(enabled): MenuControl
 
 [`MenuControl`](MenuControl.md)
 
-#### Defined in
-
-[src/fivem/ui/menu/MenuControl.ts:4](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/menu/MenuControl.ts#L4)
-
 ## Accessors
 
 ### Enabled
+
+#### Get Signature
 
 ```ts
 get Enabled(): boolean
 ```
 
+Defined in: [src/fivem/ui/menu/MenuControl.ts:8](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/MenuControl.ts#L8)
+
+##### Returns
+
+`boolean`
+
+#### Set Signature
+
 ```ts
 set Enabled(value): void
 ```
 
-#### Parameters
+Defined in: [src/fivem/ui/menu/MenuControl.ts:12](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/menu/MenuControl.ts#L12)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `value` | `boolean` |
 
-#### Returns
+##### Returns
 
-`boolean`
-
-#### Defined in
-
-[src/fivem/ui/menu/MenuControl.ts:8](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/menu/MenuControl.ts#L8)
+`void`

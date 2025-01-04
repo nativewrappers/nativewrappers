@@ -9,6 +9,8 @@ function getUInt32FromUint8Array(
    end): number
 ```
 
+Defined in: lib/common/utils/getUInt32FromUint8Array.d.ts:8
+
 get uint32 from uint8 array
 
 ## Parameters
@@ -22,7 +24,3 @@ get uint32 from uint8 array
 ## Returns
 
 `number`
-
-## Defined in
-
-lib/common/utils/getUInt32FromUint8Array.d.ts:8

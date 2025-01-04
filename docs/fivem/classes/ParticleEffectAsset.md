@@ -2,6 +2,8 @@
 
 # Class: ParticleEffectAsset
 
+Defined in: [src/fivem/ParticleEffectAsset.ts:8](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ParticleEffectAsset.ts#L8)
+
 UNFINISHED! Class that represents a particle effect asset.
 
 ## Constructors
@@ -11,6 +13,8 @@ UNFINISHED! Class that represents a particle effect asset.
 ```ts
 new ParticleEffectAsset(assetName): ParticleEffectAsset
 ```
+
+Defined in: [src/fivem/ParticleEffectAsset.ts:18](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ParticleEffectAsset.ts#L18)
 
 #### Parameters
 
@@ -22,63 +26,59 @@ new ParticleEffectAsset(assetName): ParticleEffectAsset
 
 [`ParticleEffectAsset`](ParticleEffectAsset.md)
 
-#### Defined in
-
-[src/fivem/ParticleEffectAsset.ts:18](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ParticleEffectAsset.ts#L18)
-
 ## Accessors
 
 ### Asset
+
+#### Get Signature
 
 ```ts
 get Asset(): string
 ```
 
+Defined in: [src/fivem/ParticleEffectAsset.ts:12](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ParticleEffectAsset.ts#L12)
+
 Returns the name of the asset. Same as AssetName.
 
-#### Returns
+##### Returns
 
 `string`
-
-#### Defined in
-
-[src/fivem/ParticleEffectAsset.ts:12](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ParticleEffectAsset.ts#L12)
 
 ***
 
 ### AssetName
 
+#### Get Signature
+
 ```ts
 get AssetName(): string
 ```
 
+Defined in: [src/fivem/ParticleEffectAsset.ts:25](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ParticleEffectAsset.ts#L25)
+
 Get the name of the particle effect.
 
-#### Returns
+##### Returns
 
 `string`
-
-#### Defined in
-
-[src/fivem/ParticleEffectAsset.ts:25](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ParticleEffectAsset.ts#L25)
 
 ***
 
 ### IsLoaded
 
+#### Get Signature
+
 ```ts
 get IsLoaded(): boolean
 ```
 
+Defined in: [src/fivem/ParticleEffectAsset.ts:32](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ParticleEffectAsset.ts#L32)
+
 Get whether the particle effect has loaded into game memory.
 
-#### Returns
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/ParticleEffectAsset.ts:32](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ParticleEffectAsset.ts#L32)
 
 ## Methods
 
@@ -88,15 +88,13 @@ Get whether the particle effect has loaded into game memory.
 markAsNoLongerNeeded(): void
 ```
 
+Defined in: [src/fivem/ParticleEffectAsset.ts:139](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ParticleEffectAsset.ts#L139)
+
 Allow game engine to safely unload particle effect model from memory.
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/ParticleEffectAsset.ts:139](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ParticleEffectAsset.ts#L139)
 
 ***
 
@@ -105,6 +103,8 @@ Allow game engine to safely unload particle effect model from memory.
 ```ts
 request(timeout): Promise<boolean>
 ```
+
+Defined in: [src/fivem/ParticleEffectAsset.ts:119](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ParticleEffectAsset.ts#L119)
 
 Load a particle effect into the game memory.
 
@@ -118,10 +118,6 @@ Load a particle effect into the game memory.
 
 `Promise`\<`boolean`\>
 
-#### Defined in
-
-[src/fivem/ParticleEffectAsset.ts:119](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ParticleEffectAsset.ts#L119)
-
 ***
 
 ### startNonLoopedAtCoord()
@@ -134,6 +130,8 @@ startNonLoopedAtCoord(
    scale, 
    invertAxis): boolean
 ```
+
+Defined in: [src/fivem/ParticleEffectAsset.ts:44](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ParticleEffectAsset.ts#L44)
 
 Start a particle effect at a world position.
 
@@ -151,10 +149,6 @@ Start a particle effect at a world position.
 
 `boolean`
 
-#### Defined in
-
-[src/fivem/ParticleEffectAsset.ts:44](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ParticleEffectAsset.ts#L44)
-
 ***
 
 ### startNonLoopedOnEntity()
@@ -168,6 +162,8 @@ startNonLoopedOnEntity(
    scale, 
    invertAxis): boolean
 ```
+
+Defined in: [src/fivem/ParticleEffectAsset.ts:84](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ParticleEffectAsset.ts#L84)
 
 Start a particle effect on an entity
 
@@ -186,10 +182,6 @@ Start a particle effect on an entity
 
 `boolean`
 
-#### Defined in
-
-[src/fivem/ParticleEffectAsset.ts:84](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ParticleEffectAsset.ts#L84)
-
 ***
 
 ### toString()
@@ -198,10 +190,8 @@ Start a particle effect on an entity
 toString(): string
 ```
 
+Defined in: [src/fivem/ParticleEffectAsset.ts:143](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ParticleEffectAsset.ts#L143)
+
 #### Returns
 
 `string`
-
-#### Defined in
-
-[src/fivem/ParticleEffectAsset.ts:143](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ParticleEffectAsset.ts#L143)

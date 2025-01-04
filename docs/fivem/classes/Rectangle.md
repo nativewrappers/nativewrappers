@@ -2,6 +2,8 @@
 
 # Class: Rectangle
 
+Defined in: [src/fivem/ui/Rectangle.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Rectangle.ts#L4)
+
 ## Implements
 
 - [`IDrawable`](../interfaces/IDrawable.md)
@@ -17,6 +19,8 @@ new Rectangle(
    color): Rectangle
 ```
 
+Defined in: [src/fivem/ui/Rectangle.ts:9](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Rectangle.ts#L9)
+
 #### Parameters
 
 | Parameter | Type |
@@ -29,27 +33,25 @@ new Rectangle(
 
 [`Rectangle`](Rectangle.md)
 
-#### Defined in
-
-[src/fivem/ui/Rectangle.ts:9](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Rectangle.ts#L9)
-
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `color` | `public` | [`Color`](Color.md) | [src/fivem/ui/Rectangle.ts:7](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Rectangle.ts#L7) |
-| `pos` | `public` | [`Point`](Point.md) | [src/fivem/ui/Rectangle.ts:5](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Rectangle.ts#L5) |
-| `size` | `public` | [`Size`](Size.md) | [src/fivem/ui/Rectangle.ts:6](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Rectangle.ts#L6) |
+| <a id="color-1"></a> `color` | `public` | [`Color`](Color.md) | [src/fivem/ui/Rectangle.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Rectangle.ts#L7) |
+| <a id="pos-1"></a> `pos` | `public` | [`Point`](Point.md) | [src/fivem/ui/Rectangle.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Rectangle.ts#L5) |
+| <a id="size-1"></a> `size` | `public` | [`Size`](Size.md) | [src/fivem/ui/Rectangle.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Rectangle.ts#L6) |
 
 ## Methods
 
 ### draw()
 
-#### draw(offset, resolution)
+#### Call Signature
 
 ```ts
 draw(offset?, resolution?): void
 ```
+
+Defined in: [src/fivem/ui/Rectangle.ts:15](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Rectangle.ts#L15)
 
 ##### Parameters
 
@@ -66,11 +68,7 @@ draw(offset?, resolution?): void
 
 [`IDrawable`](../interfaces/IDrawable.md).[`draw`](../interfaces/IDrawable.md#draw)
 
-##### Defined in
-
-[src/fivem/ui/Rectangle.ts:15](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Rectangle.ts#L15)
-
-#### draw(pos, size, color, resolution)
+#### Call Signature
 
 ```ts
 draw(
@@ -79,6 +77,8 @@ draw(
    color, 
    resolution?): void
 ```
+
+Defined in: [src/fivem/ui/Rectangle.ts:16](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Rectangle.ts#L16)
 
 ##### Parameters
 
@@ -95,8 +95,6 @@ draw(
 
 ##### Implementation of
 
-`IDrawable.draw`
-
-##### Defined in
-
-[src/fivem/ui/Rectangle.ts:16](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/ui/Rectangle.ts#L16)
+```ts
+IDrawable.draw
+```

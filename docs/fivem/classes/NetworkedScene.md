@@ -2,6 +2,8 @@
 
 # Class: NetworkedScene
 
+Defined in: [src/fivem/NetworkedScene.ts:3](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/NetworkedScene.ts#L3)
+
 ## Constructors
 
 ### new NetworkedScene()
@@ -17,6 +19,8 @@ new NetworkedScene(
    animTime, 
    animSpeed): NetworkedScene
 ```
+
+Defined in: [src/fivem/NetworkedScene.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/NetworkedScene.ts#L5)
 
 #### Parameters
 
@@ -35,10 +39,6 @@ new NetworkedScene(
 
 [`NetworkedScene`](NetworkedScene.md)
 
-#### Defined in
-
-[src/fivem/NetworkedScene.ts:5](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/NetworkedScene.ts#L5)
-
 ## Methods
 
 ### addEntity()
@@ -52,6 +52,8 @@ addEntity(
    speedMultiplier, 
    flag): void
 ```
+
+Defined in: [src/fivem/NetworkedScene.ts:56](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/NetworkedScene.ts#L56)
 
 #### Parameters
 
@@ -67,10 +69,6 @@ addEntity(
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/NetworkedScene.ts:56](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/NetworkedScene.ts#L56)
 
 ***
 
@@ -88,6 +86,8 @@ addPed(
    playbackRate, 
    p9): void
 ```
+
+Defined in: [src/fivem/NetworkedScene.ts:31](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/NetworkedScene.ts#L31)
 
 #### Parameters
 
@@ -107,10 +107,6 @@ addPed(
 
 `void`
 
-#### Defined in
-
-[src/fivem/NetworkedScene.ts:31](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/NetworkedScene.ts#L31)
-
 ***
 
 ### start()
@@ -119,13 +115,11 @@ addPed(
 start(): void
 ```
 
+Defined in: [src/fivem/NetworkedScene.ts:75](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/NetworkedScene.ts#L75)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/NetworkedScene.ts:75](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/NetworkedScene.ts#L75)
 
 ***
 
@@ -135,10 +129,8 @@ start(): void
 stop(): void
 ```
 
+Defined in: [src/fivem/NetworkedScene.ts:79](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/NetworkedScene.ts#L79)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/NetworkedScene.ts:79](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/NetworkedScene.ts#L79)

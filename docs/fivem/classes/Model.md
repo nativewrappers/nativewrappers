@@ -2,6 +2,8 @@
 
 # Class: Model
 
+Defined in: [src/fivem/Model.ts:9](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L9)
+
 Class to create and manage entity models.
 
 ## Implements
@@ -16,6 +18,8 @@ Class to create and manage entity models.
 new Model(hash): Model
 ```
 
+Defined in: [src/fivem/Model.ts:21](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L21)
+
 Creates a model object based on the hash key or model string.
 
 #### Parameters
@@ -28,369 +32,365 @@ Creates a model object based on the hash key or model string.
 
 [`Model`](Model.md)
 
-#### Defined in
-
-[src/fivem/Model.ts:21](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L21)
-
 ## Accessors
 
 ### Dimensions
+
+#### Get Signature
 
 ```ts
 get Dimensions(): Dimensions
 ```
 
+Defined in: [src/fivem/Model.ts:203](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L203)
+
 Gets the model dimensions.
 
-#### Returns
+##### Returns
 
 `Dimensions`
 
 This model min & max dimensions.
 
-#### Defined in
-
-[src/fivem/Model.ts:203](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L203)
-
 ***
 
 ### Hash
+
+#### Get Signature
 
 ```ts
 get Hash(): number
 ```
 
+Defined in: [src/fivem/Model.ts:40](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L40)
+
 Gets the hash of the model.
 
-#### Returns
+##### Returns
 
 `number`
 
 The hash key.
 
-#### Defined in
-
-[src/fivem/Model.ts:40](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L40)
-
 ***
 
 ### IsBicycle
+
+#### Get Signature
 
 ```ts
 get IsBicycle(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:85](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L85)
+
 Gets if the model is a bicycle or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is a bicycle.
 
-#### Defined in
-
-[src/fivem/Model.ts:85](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L85)
-
 ***
 
 ### IsBike
+
+#### Get Signature
 
 ```ts
 get IsBike(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:94](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L94)
+
 Gets if the model is a motorbike or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is a motorbike.
 
-#### Defined in
-
-[src/fivem/Model.ts:94](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L94)
-
 ***
 
 ### IsBoat
+
+#### Get Signature
 
 ```ts
 get IsBoat(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:103](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L103)
+
 Gets if the model is a boat or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is a boat.
 
-#### Defined in
-
-[src/fivem/Model.ts:103](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L103)
-
 ***
 
 ### IsCar
+
+#### Get Signature
 
 ```ts
 get IsCar(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:112](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L112)
+
 Gets if the model is a car or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is a car.
 
-#### Defined in
-
-[src/fivem/Model.ts:112](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L112)
-
 ***
 
 ### IsCargobob
+
+#### Get Signature
 
 ```ts
 get IsCargobob(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:121](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L121)
+
 Gets if the model is a cargobob or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is a cargobob.
 
-#### Defined in
-
-[src/fivem/Model.ts:121](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L121)
-
 ***
 
 ### IsCollisionLoaded
+
+#### Get Signature
 
 ```ts
 get IsCollisionLoaded(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:76](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L76)
+
 Gets if the model collision is loaded or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model collision is loaded.
 
-#### Defined in
-
-[src/fivem/Model.ts:76](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L76)
-
 ***
 
 ### IsHelicopter
+
+#### Get Signature
 
 ```ts
 get IsHelicopter(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:135](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L135)
+
 Gets if the model is a helicopter or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is a helicopter.
 
-#### Defined in
-
-[src/fivem/Model.ts:135](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L135)
-
 ***
 
 ### IsInCdImage
+
+#### Get Signature
 
 ```ts
 get IsInCdImage(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:58](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L58)
+
 Gets if the model is in cd image or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is in cd image.
 
-#### Defined in
-
-[src/fivem/Model.ts:58](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L58)
-
 ***
 
 ### IsLoaded
+
+#### Get Signature
 
 ```ts
 get IsLoaded(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:67](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L67)
+
 Gets if the model is loaded or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is loaded.
 
-#### Defined in
-
-[src/fivem/Model.ts:67](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L67)
-
 ***
 
 ### IsPed
+
+#### Get Signature
 
 ```ts
 get IsPed(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:144](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L144)
+
 Gets if the model is a Ped or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is a Ped.
 
-#### Defined in
-
-[src/fivem/Model.ts:144](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L144)
-
 ***
 
 ### IsPlane
+
+#### Get Signature
 
 ```ts
 get IsPlane(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:153](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L153)
+
 Gets if the model is a plane or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is a plane.
 
-#### Defined in
-
-[src/fivem/Model.ts:153](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L153)
-
 ***
 
 ### IsProp
+
+#### Get Signature
 
 ```ts
 get IsProp(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:162](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L162)
+
 Gets if the model is a prop or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is a prop.
 
-#### Defined in
-
-[src/fivem/Model.ts:162](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L162)
-
 ***
 
 ### IsQuadbike
+
+#### Get Signature
 
 ```ts
 get IsQuadbike(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:176](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L176)
+
 Gets if the model is a quadbike or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is a quadbike.
 
-#### Defined in
-
-[src/fivem/Model.ts:176](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L176)
-
 ***
 
 ### IsTrain
+
+#### Get Signature
 
 ```ts
 get IsTrain(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:185](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L185)
+
 Gets if the model is a train or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is a train.
 
-#### Defined in
-
-[src/fivem/Model.ts:185](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L185)
-
 ***
 
 ### IsValid
+
+#### Get Signature
 
 ```ts
 get IsValid(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:49](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L49)
+
 Gets if the model is valid or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is valid.
 
-#### Defined in
-
-[src/fivem/Model.ts:49](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L49)
-
 ***
 
 ### IsVehicle
+
+#### Get Signature
 
 ```ts
 get IsVehicle(): boolean
 ```
 
+Defined in: [src/fivem/Model.ts:194](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L194)
+
 Gets if the model is a Vehicle or not.
 
-#### Returns
+##### Returns
 
 `boolean`
 
 Whether this model is a Vehicle.
-
-#### Defined in
-
-[src/fivem/Model.ts:194](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L194)
 
 ## Methods
 
@@ -400,17 +400,17 @@ Whether this model is a Vehicle.
 dispose: void
 ```
 
+Defined in: [src/fivem/Model.ts:29](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L29)
+
 #### Returns
 
 `void`
 
 #### Implementation of
 
-`Disposable.[dispose]`
-
-#### Defined in
-
-[src/fivem/Model.ts:29](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L29)
+```ts
+Disposable.[dispose]
+```
 
 ***
 
@@ -420,15 +420,13 @@ dispose: void
 markAsNoLongerNeeded(): void
 ```
 
+Defined in: [src/fivem/Model.ts:238](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L238)
+
 Sets the model as no longer needed allowing the game engine to free memory.
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/Model.ts:238](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L238)
 
 ***
 
@@ -437,6 +435,8 @@ Sets the model as no longer needed allowing the game engine to free memory.
 ```ts
 request(timeoutMs): Promise<boolean>
 ```
+
+Defined in: [src/fivem/Model.ts:217](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Model.ts#L217)
 
 Request and load the model with a specified timeout. Default timeout is 1000 (recommended).
 This function will not automatically set the model as no longer needed when
@@ -451,7 +451,3 @@ done.
 #### Returns
 
 `Promise`\<`boolean`\>
-
-#### Defined in
-
-[src/fivem/Model.ts:217](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Model.ts#L217)

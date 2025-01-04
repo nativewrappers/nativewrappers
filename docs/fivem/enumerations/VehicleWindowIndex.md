@@ -2,15 +2,17 @@
 
 # Enumeration: VehicleWindowIndex
 
+Defined in: [src/fivem/enums/Vehicle.ts:273](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L273)
+
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `BackLeftWindow` | `2` | [src/fivem/enums/Vehicle.ts:277](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L277) |
-| `BackRightWindow` | `3` | [src/fivem/enums/Vehicle.ts:276](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L276) |
-| `ExtraWindow1` | `4` | [src/fivem/enums/Vehicle.ts:278](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L278) |
-| `ExtraWindow2` | `5` | [src/fivem/enums/Vehicle.ts:279](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L279) |
-| `ExtraWindow3` | `6` | [src/fivem/enums/Vehicle.ts:280](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L280) |
-| `ExtraWindow4` | `7` | [src/fivem/enums/Vehicle.ts:281](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L281) |
-| `FrontLeftWindow` | `0` | [src/fivem/enums/Vehicle.ts:275](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L275) |
-| `FrontRightWindow` | `1` | [src/fivem/enums/Vehicle.ts:274](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L274) |
+| <a id="backleftwindow"></a> `BackLeftWindow` | `2` | [src/fivem/enums/Vehicle.ts:277](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L277) |
+| <a id="backrightwindow"></a> `BackRightWindow` | `3` | [src/fivem/enums/Vehicle.ts:276](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L276) |
+| <a id="extrawindow1"></a> `ExtraWindow1` | `4` | [src/fivem/enums/Vehicle.ts:278](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L278) |
+| <a id="extrawindow2"></a> `ExtraWindow2` | `5` | [src/fivem/enums/Vehicle.ts:279](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L279) |
+| <a id="extrawindow3"></a> `ExtraWindow3` | `6` | [src/fivem/enums/Vehicle.ts:280](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L280) |
+| <a id="extrawindow4"></a> `ExtraWindow4` | `7` | [src/fivem/enums/Vehicle.ts:281](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L281) |
+| <a id="frontleftwindow"></a> `FrontLeftWindow` | `0` | [src/fivem/enums/Vehicle.ts:275](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L275) |
+| <a id="frontrightwindow"></a> `FrontRightWindow` | `1` | [src/fivem/enums/Vehicle.ts:274](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L274) |

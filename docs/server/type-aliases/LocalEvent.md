@@ -3,8 +3,10 @@
 # Type Alias: LocalEvent()
 
 ```ts
-type LocalEvent: (...args) => void;
+type LocalEvent = (...args) => void;
 ```
+
+Defined in: [src/server/Events.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/Events.ts#L7)
 
 ## Parameters
 
@@ -15,7 +17,3 @@ type LocalEvent: (...args) => void;
 ## Returns
 
 `void`
-
-## Defined in
-
-[src/server/Events.ts:7](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/Events.ts#L7)

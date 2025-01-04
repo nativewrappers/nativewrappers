@@ -2,6 +2,8 @@
 
 # Class: Rope
 
+Defined in: [src/fivem/Rope.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L7)
+
 Class to manage invisible ropes between entities.
 
 ## Constructors
@@ -11,6 +13,8 @@ Class to manage invisible ropes between entities.
 ```ts
 new Rope(handle): Rope
 ```
+
+Defined in: [src/fivem/Rope.ts:18](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L18)
 
 Create a rope object based on an existing rope in the world.
 
@@ -24,77 +28,81 @@ Create a rope object based on an existing rope in the world.
 
 [`Rope`](Rope.md)
 
-#### Defined in
-
-[src/fivem/Rope.ts:18](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Rope.ts#L18)
-
 ## Accessors
 
 ### Handle
+
+#### Get Signature
 
 ```ts
 get Handle(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/Rope.ts:22](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L22)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/Rope.ts:22](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Rope.ts#L22)
 
 ***
 
 ### Length
 
+#### Get Signature
+
 ```ts
 get Length(): number
 ```
 
+Defined in: [src/fivem/Rope.ts:30](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L30)
+
 Get the length of the rope.
 
-```ts
-set Length(length): void
-```
-
-Sets the length of the rope.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `length` | `number` | Desired new length of rope. |
-
-#### Returns
+##### Returns
 
 `number`
 
 The rope length.
 
-#### Defined in
+#### Set Signature
 
-[src/fivem/Rope.ts:30](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Rope.ts#L30)
+```ts
+set Length(length): void
+```
+
+Defined in: [src/fivem/Rope.ts:39](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L39)
+
+Sets the length of the rope.
+
+##### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `length` | `number` | Desired new length of rope. |
+
+##### Returns
+
+`void`
 
 ***
 
 ### VertexCount
 
+#### Get Signature
+
 ```ts
 get VertexCount(): number
 ```
 
+Defined in: [src/fivem/Rope.ts:48](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L48)
+
 Get the number of vertices on the rope.
 
-#### Returns
+##### Returns
 
 `number`
 
 Returns the number of vertices.
-
-#### Defined in
-
-[src/fivem/Rope.ts:48](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Rope.ts#L48)
 
 ## Methods
 
@@ -104,15 +112,13 @@ Returns the number of vertices.
 activatePhysics(): void
 ```
 
+Defined in: [src/fivem/Rope.ts:64](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L64)
+
 Activates world physics on the rope object.
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/Rope.ts:64](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Rope.ts#L64)
 
 ***
 
@@ -126,6 +132,8 @@ attachEntities(
    positionTwo, 
    length): void
 ```
+
+Defined in: [src/fivem/Rope.ts:94](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L94)
 
 Attach the rope between two entities at given locations on the entities.
 
@@ -143,10 +151,6 @@ Attach the rope between two entities at given locations on the entities.
 
 `void`
 
-#### Defined in
-
-[src/fivem/Rope.ts:94](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Rope.ts#L94)
-
 ***
 
 ### attachEntity()
@@ -154,6 +158,8 @@ Attach the rope between two entities at given locations on the entities.
 ```ts
 attachEntity(entity, position): void
 ```
+
+Defined in: [src/fivem/Rope.ts:74](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L74)
 
 Attach the rope to an entity.
 
@@ -168,10 +174,6 @@ Attach the rope to an entity.
 
 `void`
 
-#### Defined in
-
-[src/fivem/Rope.ts:74](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Rope.ts#L74)
-
 ***
 
 ### delete()
@@ -180,15 +182,13 @@ Attach the rope to an entity.
 delete(): void
 ```
 
+Defined in: [src/fivem/Rope.ts:160](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L160)
+
 Delete the rope from the world. This does not delete the rope object.
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/Rope.ts:160](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Rope.ts#L160)
 
 ***
 
@@ -197,6 +197,8 @@ Delete the rope from the world. This does not delete the rope object.
 ```ts
 detachEntity(entity): void
 ```
+
+Defined in: [src/fivem/Rope.ts:124](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L124)
 
 Detach the rope from an entity.
 
@@ -210,10 +212,6 @@ Detach the rope from an entity.
 
 `void`
 
-#### Defined in
-
-[src/fivem/Rope.ts:124](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Rope.ts#L124)
-
 ***
 
 ### exists()
@@ -221,6 +219,8 @@ Detach the rope from an entity.
 ```ts
 exists(): boolean
 ```
+
+Defined in: [src/fivem/Rope.ts:169](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L169)
 
 Check if the rope still exists in the world based on it's handle.
 
@@ -230,10 +230,6 @@ Check if the rope still exists in the world based on it's handle.
 
 Whether the rope exists or not.
 
-#### Defined in
-
-[src/fivem/Rope.ts:169](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Rope.ts#L169)
-
 ***
 
 ### getVertexCoord()
@@ -241,6 +237,8 @@ Whether the rope exists or not.
 ```ts
 getVertexCoord(vertex): Vector3
 ```
+
+Defined in: [src/fivem/Rope.ts:153](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L153)
 
 Return the world location of a specified vertex on the rope.
 
@@ -256,10 +254,6 @@ Return the world location of a specified vertex on the rope.
 
 The vector location of the vertex.
 
-#### Defined in
-
-[src/fivem/Rope.ts:153](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Rope.ts#L153)
-
 ***
 
 ### pinVertex()
@@ -267,6 +261,8 @@ The vector location of the vertex.
 ```ts
 pinVertex(vertex, position): void
 ```
+
+Defined in: [src/fivem/Rope.ts:134](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L134)
 
 Pin a vertex of the rope to a certain location.
 
@@ -281,10 +277,6 @@ Pin a vertex of the rope to a certain location.
 
 `void`
 
-#### Defined in
-
-[src/fivem/Rope.ts:134](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Rope.ts#L134)
-
 ***
 
 ### resetLength()
@@ -292,6 +284,8 @@ Pin a vertex of the rope to a certain location.
 ```ts
 resetLength(reset): void
 ```
+
+Defined in: [src/fivem/Rope.ts:57](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L57)
 
 Resets the length of the rope to it's length upon object creation or a length of 1.
 
@@ -305,10 +299,6 @@ Resets the length of the rope to it's length upon object creation or a length of
 
 `void`
 
-#### Defined in
-
-[src/fivem/Rope.ts:57](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Rope.ts#L57)
-
 ***
 
 ### unpinVertex()
@@ -316,6 +306,8 @@ Resets the length of the rope to it's length upon object creation or a length of
 ```ts
 unpinVertex(vertex): void
 ```
+
+Defined in: [src/fivem/Rope.ts:143](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Rope.ts#L143)
 
 Unpin a specified vertex from it's current pinned location (if any).
 
@@ -328,7 +320,3 @@ Unpin a specified vertex from it's current pinned location (if any).
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/Rope.ts:143](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Rope.ts#L143)

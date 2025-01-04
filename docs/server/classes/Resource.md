@@ -2,6 +2,8 @@
 
 # Class: Resource
 
+Defined in: lib/common/Resource.d.ts:1
+
 ## Constructors
 
 ### new Resource()
@@ -9,6 +11,8 @@
 ```ts
 new Resource(name): Resource
 ```
+
+Defined in: lib/common/Resource.d.ts:3
 
 #### Parameters
 
@@ -20,15 +24,11 @@ new Resource(name): Resource
 
 [`Resource`](Resource.md)
 
-#### Defined in
-
-lib/common/Resource.d.ts:3
-
 ## Properties
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| `name` | `string` | lib/common/Resource.d.ts:2 |
+| <a id="name-1"></a> `name` | `string` | lib/common/Resource.d.ts:2 |
 
 ## Methods
 
@@ -37,6 +37,8 @@ lib/common/Resource.d.ts:3
 ```ts
 getMetadata(metadataKey, index): string
 ```
+
+Defined in: lib/common/Resource.d.ts:4
 
 #### Parameters
 
@@ -49,10 +51,6 @@ getMetadata(metadataKey, index): string
 
 `string`
 
-#### Defined in
-
-lib/common/Resource.d.ts:4
-
 ***
 
 ### getPath()
@@ -61,13 +59,11 @@ lib/common/Resource.d.ts:4
 getPath(): string
 ```
 
+Defined in: lib/common/Resource.d.ts:5
+
 #### Returns
 
 `string`
-
-#### Defined in
-
-lib/common/Resource.d.ts:5
 
 ***
 
@@ -76,6 +72,8 @@ lib/common/Resource.d.ts:5
 ```ts
 loadFile(fileName): string
 ```
+
+Defined in: lib/common/Resource.d.ts:6
 
 #### Parameters
 
@@ -87,10 +85,6 @@ loadFile(fileName): string
 
 `string`
 
-#### Defined in
-
-lib/common/Resource.d.ts:6
-
 ***
 
 ### saveFile()
@@ -101,6 +95,8 @@ saveFile(
    data, 
    length): boolean
 ```
+
+Defined in: lib/common/Resource.d.ts:7
 
 #### Parameters
 
@@ -114,10 +110,6 @@ saveFile(
 
 `boolean`
 
-#### Defined in
-
-lib/common/Resource.d.ts:7
-
 ***
 
 ### scheduleTick()
@@ -126,13 +118,11 @@ lib/common/Resource.d.ts:7
 scheduleTick(): void
 ```
 
+Defined in: lib/common/Resource.d.ts:8
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-lib/common/Resource.d.ts:8
 
 ***
 
@@ -142,13 +132,11 @@ lib/common/Resource.d.ts:8
 start(): void
 ```
 
+Defined in: lib/common/Resource.d.ts:9
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-lib/common/Resource.d.ts:9
 
 ***
 
@@ -158,13 +146,11 @@ lib/common/Resource.d.ts:9
 stop(): void
 ```
 
+Defined in: lib/common/Resource.d.ts:10
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-lib/common/Resource.d.ts:10
 
 ***
 
@@ -174,13 +160,11 @@ lib/common/Resource.d.ts:10
 static resourceCount(): number
 ```
 
+Defined in: lib/common/Resource.d.ts:13
+
 #### Returns
 
 `number`
-
-#### Defined in
-
-lib/common/Resource.d.ts:13
 
 ***
 
@@ -190,6 +174,8 @@ lib/common/Resource.d.ts:13
 static startResource(name): void
 ```
 
+Defined in: lib/common/Resource.d.ts:11
+
 #### Parameters
 
 | Parameter | Type |
@@ -199,10 +185,6 @@ static startResource(name): void
 #### Returns
 
 `void`
-
-#### Defined in
-
-lib/common/Resource.d.ts:11
 
 ***
 
@@ -212,6 +194,8 @@ lib/common/Resource.d.ts:11
 static stopResource(name): void
 ```
 
+Defined in: lib/common/Resource.d.ts:12
+
 #### Parameters
 
 | Parameter | Type |
@@ -221,7 +205,3 @@ static stopResource(name): void
 #### Returns
 
 `void`
-
-#### Defined in
-
-lib/common/Resource.d.ts:12

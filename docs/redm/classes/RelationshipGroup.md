@@ -2,6 +2,8 @@
 
 # Class: RelationshipGroup
 
+Defined in: [src/redm/RelationshipGroup.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/RelationshipGroup.ts#L6)
+
 Class to create and manage a relationship group. Useful to manage behavior between Peds.
 
 ## Constructors
@@ -11,6 +13,8 @@ Class to create and manage a relationship group. Useful to manage behavior betwe
 ```ts
 new RelationshipGroup(name): RelationshipGroup
 ```
+
+Defined in: [src/redm/RelationshipGroup.ts:17](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/RelationshipGroup.ts#L17)
 
 Create a relationship group. Optionally pass a group hash.
 
@@ -24,29 +28,25 @@ Create a relationship group. Optionally pass a group hash.
 
 [`RelationshipGroup`](RelationshipGroup.md)
 
-#### Defined in
-
-[src/redm/RelationshipGroup.ts:17](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/RelationshipGroup.ts#L17)
-
 ## Accessors
 
 ### Hash
+
+#### Get Signature
 
 ```ts
 get Hash(): number
 ```
 
+Defined in: [src/redm/RelationshipGroup.ts:27](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/RelationshipGroup.ts#L27)
+
 Gets the hash of the relationship group.
 
-#### Returns
+##### Returns
 
 `number`
 
 The hash of this object.
-
-#### Defined in
-
-[src/redm/RelationshipGroup.ts:27](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/RelationshipGroup.ts#L27)
 
 ## Methods
 
@@ -58,6 +58,8 @@ clearRelationshipBetweenGroups(
    relationship, 
    biDirectionally): void
 ```
+
+Defined in: [src/redm/RelationshipGroup.ts:77](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/RelationshipGroup.ts#L77)
 
 Clear the relationship between this relationship group and another.
 
@@ -73,10 +75,6 @@ Clear the relationship between this relationship group and another.
 
 `void`
 
-#### Defined in
-
-[src/redm/RelationshipGroup.ts:77](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/RelationshipGroup.ts#L77)
-
 ***
 
 ### getRelationshipBetweenGroups()
@@ -84,6 +82,8 @@ Clear the relationship between this relationship group and another.
 ```ts
 getRelationshipBetweenGroups(targetGroup): Relationship
 ```
+
+Defined in: [src/redm/RelationshipGroup.ts:37](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/RelationshipGroup.ts#L37)
 
 Get the relationship between two relationship groups.
 
@@ -99,10 +99,6 @@ Get the relationship between two relationship groups.
 
 The relationship
 
-#### Defined in
-
-[src/redm/RelationshipGroup.ts:37](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/RelationshipGroup.ts#L37)
-
 ***
 
 ### remove()
@@ -111,15 +107,13 @@ The relationship
 remove(): void
 ```
 
+Defined in: [src/redm/RelationshipGroup.ts:100](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/RelationshipGroup.ts#L100)
+
 Remove this relationship group from the game. This will not delete this object.
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/redm/RelationshipGroup.ts:100](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/RelationshipGroup.ts#L100)
 
 ***
 
@@ -131,6 +125,8 @@ setRelationshipBetweenGroups(
    relationship, 
    biDirectionally): void
 ```
+
+Defined in: [src/redm/RelationshipGroup.ts:50](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/RelationshipGroup.ts#L50)
 
 Set the relationship group between this relationship group and another one.
 
@@ -145,7 +141,3 @@ Set the relationship group between this relationship group and another one.
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/redm/RelationshipGroup.ts:50](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/RelationshipGroup.ts#L50)

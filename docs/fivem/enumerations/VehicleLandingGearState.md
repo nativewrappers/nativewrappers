@@ -2,11 +2,13 @@
 
 # Enumeration: VehicleLandingGearState
 
+Defined in: [src/fivem/enums/Vehicle.ts:208](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L208)
+
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| `Closing` | `1` | [src/fivem/enums/Vehicle.ts:210](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L210) |
-| `Deployed` | `0` | [src/fivem/enums/Vehicle.ts:209](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L209) |
-| `Opening` | `2` | [src/fivem/enums/Vehicle.ts:211](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L211) |
-| `Retracted` | `3` | [src/fivem/enums/Vehicle.ts:212](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/Vehicle.ts#L212) |
+| <a id="closing"></a> `Closing` | `1` | [src/fivem/enums/Vehicle.ts:210](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L210) |
+| <a id="deployed"></a> `Deployed` | `0` | [src/fivem/enums/Vehicle.ts:209](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L209) |
+| <a id="opening"></a> `Opening` | `2` | [src/fivem/enums/Vehicle.ts:211](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L211) |
+| <a id="retracted"></a> `Retracted` | `3` | [src/fivem/enums/Vehicle.ts:212](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L212) |

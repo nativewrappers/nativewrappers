@@ -2,6 +2,8 @@
 
 # Class: Color
 
+Defined in: lib/common/utils/Color.d.ts:1
+
 ## Constructors
 
 ### new Color()
@@ -13,6 +15,8 @@ new Color(
    b, 
    a?): Color
 ```
+
+Defined in: lib/common/utils/Color.d.ts:13
 
 #### Parameters
 
@@ -27,22 +31,18 @@ new Color(
 
 [`Color`](Color.md)
 
-#### Defined in
-
-lib/common/utils/Color.d.ts:13
-
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `a` | `public` | `number` | lib/common/utils/Color.d.ts:9 |
-| `b` | `public` | `number` | lib/common/utils/Color.d.ts:12 |
-| `g` | `public` | `number` | lib/common/utils/Color.d.ts:11 |
-| `r` | `public` | `number` | lib/common/utils/Color.d.ts:10 |
-| `Black` | `static` | [`Color`](Color.md) | lib/common/utils/Color.d.ts:3 |
-| `Transparent` | `static` | [`Color`](Color.md) | lib/common/utils/Color.d.ts:2 |
-| `White` | `static` | [`Color`](Color.md) | lib/common/utils/Color.d.ts:4 |
-| `WhiteSmoke` | `static` | [`Color`](Color.md) | lib/common/utils/Color.d.ts:5 |
+| <a id="a-1"></a> `a` | `public` | `number` | lib/common/utils/Color.d.ts:9 |
+| <a id="b-1"></a> `b` | `public` | `number` | lib/common/utils/Color.d.ts:12 |
+| <a id="g-1"></a> `g` | `public` | `number` | lib/common/utils/Color.d.ts:11 |
+| <a id="r-1"></a> `r` | `public` | `number` | lib/common/utils/Color.d.ts:10 |
+| <a id="black"></a> `Black` | `static` | [`Color`](Color.md) | lib/common/utils/Color.d.ts:3 |
+| <a id="transparent"></a> `Transparent` | `static` | [`Color`](Color.md) | lib/common/utils/Color.d.ts:2 |
+| <a id="white"></a> `White` | `static` | [`Color`](Color.md) | lib/common/utils/Color.d.ts:4 |
+| <a id="whitesmoke"></a> `WhiteSmoke` | `static` | [`Color`](Color.md) | lib/common/utils/Color.d.ts:5 |
 
 ## Methods
 
@@ -55,6 +55,8 @@ static fromArgb(
    g, 
    b): Color
 ```
+
+Defined in: lib/common/utils/Color.d.ts:6
 
 #### Parameters
 
@@ -69,10 +71,6 @@ static fromArgb(
 
 [`Color`](Color.md)
 
-#### Defined in
-
-lib/common/utils/Color.d.ts:6
-
 ***
 
 ### fromArray()
@@ -81,19 +79,17 @@ lib/common/utils/Color.d.ts:6
 static fromArray(primitive): Color
 ```
 
+Defined in: lib/common/utils/Color.d.ts:8
+
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `primitive` | `number`[] \| [`number`, `number`, `number`] |
+| `primitive` | `number`[] \| \[`number`, `number`, `number`\] |
 
 #### Returns
 
 [`Color`](Color.md)
-
-#### Defined in
-
-lib/common/utils/Color.d.ts:8
 
 ***
 
@@ -106,6 +102,8 @@ static fromRgb(
    b): Color
 ```
 
+Defined in: lib/common/utils/Color.d.ts:7
+
 #### Parameters
 
 | Parameter | Type |
@@ -117,7 +115,3 @@ static fromRgb(
 #### Returns
 
 [`Color`](Color.md)
-
-#### Defined in
-
-lib/common/utils/Color.d.ts:7

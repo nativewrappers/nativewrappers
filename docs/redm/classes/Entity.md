@@ -2,6 +2,8 @@
 
 # Class: Entity
 
+Defined in: [src/redm/entities/Entity.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Entity.ts#L6)
+
 ## Extends
 
 - `BaseEntity`
@@ -13,6 +15,8 @@
 ```ts
 new Entity(handle): Entity
 ```
+
+Defined in: [src/redm/entities/Entity.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Entity.ts#L7)
 
 #### Parameters
 
@@ -26,77 +30,87 @@ new Entity(handle): Entity
 
 #### Overrides
 
-`BaseEntity.constructor`
-
-#### Defined in
-
-[src/redm/entities/Entity.ts:7](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Entity.ts#L7)
+```ts
+BaseEntity.constructor
+```
 
 ## Accessors
 
 ### EntityType
 
+#### Get Signature
+
 ```ts
 get EntityType(): EntityType
 ```
 
-#### Returns
+Defined in: [src/redm/entities/Entity.ts:16](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Entity.ts#L16)
+
+##### Returns
 
 `EntityType`
-
-#### Defined in
-
-[src/redm/entities/Entity.ts:16](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Entity.ts#L16)
 
 ***
 
 ### Handle
 
+#### Get Signature
+
 ```ts
 get Handle(): number
 ```
 
-#### Returns
+Defined in: [src/redm/entities/BaseEntity.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/BaseEntity.ts#L7)
+
+##### Returns
 
 `number`
 
 #### Inherited from
 
-`BaseEntity.Handle`
-
-#### Defined in
-
-[src/redm/entities/BaseEntity.ts:7](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/BaseEntity.ts#L7)
+```ts
+BaseEntity.Handle
+```
 
 ***
 
 ### Health
 
+#### Get Signature
+
 ```ts
 get Health(): number
 ```
+
+Defined in: [src/redm/entities/BaseEntity.ts:15](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/BaseEntity.ts#L15)
+
+##### Returns
+
+`number`
+
+#### Set Signature
 
 ```ts
 set Health(amount): void
 ```
 
-#### Parameters
+Defined in: [src/redm/entities/BaseEntity.ts:11](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/BaseEntity.ts#L11)
+
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `amount` | `number` |
 
-#### Returns
+##### Returns
 
-`number`
+`void`
 
 #### Inherited from
 
-`BaseEntity.Health`
-
-#### Defined in
-
-[src/redm/entities/BaseEntity.ts:15](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/BaseEntity.ts#L15)
+```ts
+BaseEntity.Health
+```
 
 ## Methods
 
@@ -106,13 +120,11 @@ set Health(amount): void
 addTrackingTrails(): void
 ```
 
+Defined in: [src/redm/entities/Entity.ts:11](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Entity.ts#L11)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/redm/entities/Entity.ts:11](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Entity.ts#L11)
 
 ***
 
@@ -128,6 +140,8 @@ applyForce(
    ignoreUpVec, 
    isForceRel): void
 ```
+
+Defined in: [src/redm/entities/Entity.ts:29](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Entity.ts#L29)
 
 #### Parameters
 
@@ -145,10 +159,6 @@ applyForce(
 
 `void`
 
-#### Defined in
-
-[src/redm/entities/Entity.ts:29](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Entity.ts#L29)
-
 ***
 
 ### applyForceToCenter()
@@ -160,6 +170,8 @@ applyForceToCenter(
    isDirectional, 
    isForceRel): void
 ```
+
+Defined in: [src/redm/entities/Entity.ts:64](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Entity.ts#L64)
 
 #### Parameters
 
@@ -173,10 +185,6 @@ applyForceToCenter(
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/redm/entities/Entity.ts:64](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Entity.ts#L64)
 
 ***
 
@@ -193,6 +201,8 @@ attachTo(
    vertexIndex, 
    fixedRot): void
 ```
+
+Defined in: [src/redm/entities/Entity.ts:95](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Entity.ts#L95)
 
 #### Parameters
 
@@ -214,7 +224,3 @@ attachTo(
 #### Throws
 
 Error if tgtEntity and {@Entity } are the same entity
-
-#### Defined in
-
-[src/redm/entities/Entity.ts:95](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/redm/entities/Entity.ts#L95)

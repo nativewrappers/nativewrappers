@@ -2,6 +2,8 @@
 
 # Class: `abstract` World
 
+Defined in: [src/fivem/World.ts:32](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L32)
+
 Class with common world manipulations.
 
 This class includes methods for creating entities and common world rendering.
@@ -24,163 +26,213 @@ new World(): World
 
 ### Blackout
 
+#### Set Signature
+
 ```ts
 set static Blackout(value): void
 ```
 
+Defined in: [src/fivem/World.ts:106](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L106)
+
 Disables all emissive textures, street/building/vehicle lights. "EMP" effect.
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
 | `value` | `boolean` | On or off. |
 
-#### Defined in
+##### Returns
 
-[src/fivem/World.ts:106](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L106)
+`void`
 
 ***
 
 ### CloudHat
 
+#### Get Signature
+
 ```ts
 get static CloudHat(): CloudHat
 ```
 
+Defined in: [src/fivem/World.ts:115](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L115)
+
 Get the current cloud hat.
 
-```ts
-set static CloudHat(value): void
-```
-
-Set the current cloud hat.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `value` | [`CloudHat`](../enumerations/CloudHat.md) | The type of cloud hat. |
-
-#### Returns
+##### Returns
 
 [`CloudHat`](../enumerations/CloudHat.md)
 
 The current cloud hat type.
 
-#### Defined in
+#### Set Signature
 
-[src/fivem/World.ts:115](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L115)
+```ts
+set static CloudHat(value): void
+```
+
+Defined in: [src/fivem/World.ts:124](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L124)
+
+Set the current cloud hat.
+
+##### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `value` | [`CloudHat`](../enumerations/CloudHat.md) | The type of cloud hat. |
+
+##### Returns
+
+`void`
 
 ***
 
 ### CloudHatOpacity
 
+#### Get Signature
+
 ```ts
 get static CloudHatOpacity(): number
 ```
 
+Defined in: [src/fivem/World.ts:140](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L140)
+
 Get the opacity of current cloud hat. Value is between 0-1.
 
-```ts
-set static CloudHatOpacity(value): void
-```
-
-Set opacity of current cloud hat between 0-1.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `value` | `number` | Opacity between 0.0 and 1.0 |
-
-#### Returns
+##### Returns
 
 `number`
 
 The current cloud opacity between 0.0 and 1.0
 
-#### Defined in
+#### Set Signature
 
-[src/fivem/World.ts:140](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L140)
+```ts
+set static CloudHatOpacity(value): void
+```
+
+Defined in: [src/fivem/World.ts:149](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L149)
+
+Set opacity of current cloud hat between 0-1.
+
+##### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `value` | `number` | Opacity between 0.0 and 1.0 |
+
+##### Returns
+
+`void`
 
 ***
 
 ### CurrentDate
 
+#### Get Signature
+
 ```ts
 get static CurrentDate(): Date
 ```
 
+Defined in: [src/fivem/World.ts:78](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L78)
+
 Get the current date in the world.
 
-```ts
-set static CurrentDate(date): void
-```
-
-Set the current date of the world.
-
-#### Parameters
-
-| Parameter | Type |
-| ------ | ------ |
-| `date` | `Date` |
-
-#### Returns
+##### Returns
 
 `Date`
 
 The current date.
 
-#### Defined in
+#### Set Signature
 
-[src/fivem/World.ts:78](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L78)
+```ts
+set static CurrentDate(date): void
+```
+
+Defined in: [src/fivem/World.ts:92](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L92)
+
+Set the current date of the world.
+
+##### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `date` | `Date` |
+
+##### Returns
+
+`void`
 
 ***
 
 ### NextWeather
 
+#### Get Signature
+
 ```ts
 get static NextWeather(): Weather
 ```
 
+Defined in: [src/fivem/World.ts:215](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L215)
+
 Get the next weather type.
 
-```ts
-set static NextWeather(value): void
-```
-
-Set weather type instantly. Similar to World.transitionToWeather with duration 0.
-
-#### Parameters
-
-| Parameter | Type |
-| ------ | ------ |
-| `value` | [`Weather`](../enumerations/Weather.md) |
-
-#### Returns
+##### Returns
 
 [`Weather`](../enumerations/Weather.md)
 
 The Weather type
 
-#### Defined in
+#### Set Signature
 
-[src/fivem/World.ts:215](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L215)
+```ts
+set static NextWeather(value): void
+```
+
+Defined in: [src/fivem/World.ts:255](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L255)
+
+Set weather type instantly. Similar to World.transitionToWeather with duration 0.
+
+##### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `value` | [`Weather`](../enumerations/Weather.md) |
+
+##### Returns
+
+`void`
 
 ***
 
 ### RenderingCamera
 
+#### Get Signature
+
 ```ts
 get static RenderingCamera(): Camera
 ```
 
+Defined in: [src/fivem/World.ts:38](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L38)
+
 Get the current camera that's rendering.
+
+##### Returns
+
+[`Camera`](Camera.md)
+
+The camera that's currently used.
+
+#### Set Signature
 
 ```ts
 set static RenderingCamera(value): void
 ```
+
+Defined in: [src/fivem/World.ts:56](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L56)
 
 Set the rendering camera. World.RenderingCamera = null to reset.
 
@@ -193,104 +245,118 @@ World.RenderingCamera = myCamera;
 World.RenderingCamera = null;
 ```
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
 | `value` | `null` \| [`Camera`](Camera.md) | The camera to render. |
 
-#### Returns
+##### Returns
 
-[`Camera`](Camera.md)
-
-The camera that's currently used.
-
-#### Defined in
-
-[src/fivem/World.ts:38](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L38)
+`void`
 
 ***
 
 ### RopesCreateNetworkWorldState
 
+#### Set Signature
+
 ```ts
 set static RopesCreateNetworkWorldState(value): void
 ```
 
+Defined in: [src/fivem/World.ts:69](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L69)
+
 Whether to create a network world state for Ropes
 This currently does nothing
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
 | `value` | `boolean` |
 
-#### Defined in
+##### Returns
 
-[src/fivem/World.ts:69](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L69)
+`void`
 
 ***
 
 ### Weather
 
+#### Get Signature
+
 ```ts
 get static Weather(): Weather
 ```
 
+Defined in: [src/fivem/World.ts:158](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L158)
+
 Get the current weather type.
 
-```ts
-set static Weather(value): void
-```
-
-Set the current weather.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `value` | [`Weather`](../enumerations/Weather.md) | Type of weather to set. |
-
-#### Returns
+##### Returns
 
 [`Weather`](../enumerations/Weather.md)
 
 The current type of weather.
 
-#### Defined in
+#### Set Signature
 
-[src/fivem/World.ts:158](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L158)
+```ts
+set static Weather(value): void
+```
+
+Defined in: [src/fivem/World.ts:200](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L200)
+
+Set the current weather.
+
+##### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `value` | [`Weather`](../enumerations/Weather.md) | Type of weather to set. |
+
+##### Returns
+
+`void`
 
 ***
 
 ### WeatherTransition
 
+#### Get Signature
+
 ```ts
 get static WeatherTransition(): [string | Weather, string | Weather, number]
 ```
 
+Defined in: [src/fivem/World.ts:265](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L265)
+
 Doesn't work
+
+##### Returns
+
+\[`string` \| [`Weather`](../enumerations/Weather.md), `string` \| [`Weather`](../enumerations/Weather.md), `number`\]
+
+#### Set Signature
 
 ```ts
 set static WeatherTransition(transition): void
 ```
 
+Defined in: [src/fivem/World.ts:281](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L281)
+
 Doesn't work
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `transition` | [`string` \| [`Weather`](../enumerations/Weather.md), `string` \| [`Weather`](../enumerations/Weather.md), `number`] |
+| `transition` | \[`string` \| [`Weather`](../enumerations/Weather.md), `string` \| [`Weather`](../enumerations/Weather.md), `number`\] |
 
-#### Returns
+##### Returns
 
-[`string` \| [`Weather`](../enumerations/Weather.md), `string` \| [`Weather`](../enumerations/Weather.md), `number`]
-
-#### Defined in
-
-[src/fivem/World.ts:265](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L265)
+`void`
 
 ## Methods
 
@@ -303,6 +369,8 @@ static createAmbientPickup(
    model, 
 value): Promise<null | Prop>
 ```
+
+Defined in: [src/fivem/World.ts:693](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L693)
 
 Creates an ambient pickup.
 
@@ -321,10 +389,6 @@ Creates an ambient pickup.
 
 The pickup in form of a Prop.
 
-#### Defined in
-
-[src/fivem/World.ts:693](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L693)
-
 ***
 
 ### createBlip()
@@ -332,6 +396,8 @@ The pickup in form of a Prop.
 ```ts
 static createBlip(position, radius?): Blip
 ```
+
+Defined in: [src/fivem/World.ts:321](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L321)
 
 Creates a blip at a given position and optionally radius.
 
@@ -354,10 +420,6 @@ myStoreBlip.Sprite = BlipSprite.Store;
 
 Blip object.
 
-#### Defined in
-
-[src/fivem/World.ts:321](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L321)
-
 ***
 
 ### createCamera()
@@ -366,7 +428,9 @@ Blip object.
 static createCamera(cameraType, active): Camera
 ```
 
-Creates a cam that defaults to [CameraTypes.Scripted](../enumerations/CameraTypes.md)
+Defined in: [src/fivem/World.ts:340](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L340)
+
+Creates a cam that defaults to [CameraTypes.Scripted](../enumerations/CameraTypes.md#scripted)
 
 ```ts
 const cam = World.createCamera(CameraTypes.Spline, true);
@@ -383,10 +447,6 @@ const cam = World.createCamera(CameraTypes.Spline, true);
 
 [`Camera`](Camera.md)
 
-#### Defined in
-
-[src/fivem/World.ts:340](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L340)
-
 ***
 
 ### createCameraWithParams()
@@ -398,6 +458,8 @@ static createCameraWithParams(
    rotation, 
    fieldOfView): Camera
 ```
+
+Defined in: [src/fivem/World.ts:360](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L360)
 
 Creates a camera using 'DEFAULT_SCRIPTED_CAMERA'.
 
@@ -421,10 +483,6 @@ const myCamera = World.createCameraWithParams(position, new Vector3(0,0,0), 180)
 
 Camera object.
 
-#### Defined in
-
-[src/fivem/World.ts:360](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L360)
-
 ***
 
 ### createPed()
@@ -437,6 +495,8 @@ static createPed(
    isNetwork, 
 pinToScript): Promise<null | Ped>
 ```
+
+Defined in: [src/fivem/World.ts:397](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L397)
 
 Create a ped at a desired location.
 
@@ -462,10 +522,6 @@ const myPed = await World.createPed(model, position);
 
 Ped object.
 
-#### Defined in
-
-[src/fivem/World.ts:397](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L397)
-
 ***
 
 ### createPickup()
@@ -478,6 +534,8 @@ static createPickup(
    value, 
 rotation?): Promise<null | Pickup>
 ```
+
+Defined in: [src/fivem/World.ts:635](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L635)
 
 Create a pickup in a specific position in the world with a specified type and value.
 
@@ -497,10 +555,6 @@ Create a pickup in a specific position in the world with a specified type and va
 
 Pickup object.
 
-#### Defined in
-
-[src/fivem/World.ts:635](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L635)
-
 ***
 
 ### createProp()
@@ -514,6 +568,8 @@ static createProp(
    pinToScript, 
 forceToBeObject): Promise<null | Prop>
 ```
+
+Defined in: [src/fivem/World.ts:588](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L588)
 
 Spawns a [[`Prop`]] at the given position.
 
@@ -540,10 +596,6 @@ const myBarrelProp = await World.createProp(model, position, false, true);
 
 Prop object.
 
-#### Defined in
-
-[src/fivem/World.ts:588](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L588)
-
 ***
 
 ### createRandomPed()
@@ -551,6 +603,8 @@ Prop object.
 ```ts
 static createRandomPed(position): Ped
 ```
+
+Defined in: [src/fivem/World.ts:439](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L439)
 
 Creates a [[`Ped`]] with a random model.
 
@@ -571,10 +625,6 @@ const randomPed = World.createRandomPed(position);
 
 Ped object.
 
-#### Defined in
-
-[src/fivem/World.ts:439](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L439)
-
 ***
 
 ### createRandomVehicle()
@@ -585,6 +635,8 @@ static createRandomVehicle(
    heading, 
 isNetwork): Promise<null | Vehicle>
 ```
+
+Defined in: [src/fivem/World.ts:499](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L499)
 
 Create a random vehicle at a desired location.
 
@@ -607,10 +659,6 @@ const randomVehicle = await World.createRandomVehicle(position);
 
 Vehicle object.
 
-#### Defined in
-
-[src/fivem/World.ts:499](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L499)
-
 ***
 
 ### createRope()
@@ -631,6 +679,8 @@ static createRope(
    breakable, 
 shouldLoadTextures): Promise<Rope>
 ```
+
+Defined in: [src/fivem/World.ts:525](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L525)
 
 #### Parameters
 
@@ -654,10 +704,6 @@ shouldLoadTextures): Promise<Rope>
 
 `Promise`\<[`Rope`](Rope.md)\>
 
-#### Defined in
-
-[src/fivem/World.ts:525](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L525)
-
 ***
 
 ### createVehicle()
@@ -670,6 +716,8 @@ static createVehicle(
    isNetwork, 
 pinToScript): Promise<null | Vehicle>
 ```
+
+Defined in: [src/fivem/World.ts:458](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L458)
 
 Create a vehicle at a desired location.
 
@@ -695,10 +743,6 @@ const myVehicle = await World.createVehicle(model, position);
 
 Vehicle object.
 
-#### Defined in
-
-[src/fivem/World.ts:458](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L458)
-
 ***
 
 ### destroyAllCameras()
@@ -707,15 +751,13 @@ Vehicle object.
 static destroyAllCameras(): void
 ```
 
+Defined in: [src/fivem/World.ts:304](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L304)
+
 Destroys all existing cameras and sets your rendering camera back to GameplayCam.
 
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/World.ts:304](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L304)
 
 ***
 
@@ -728,6 +770,8 @@ static drawLightWithRange(
    range, 
    intensity): void
 ```
+
+Defined in: [src/fivem/World.ts:799](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L799)
 
 Creates a light in the world with a certain length (range).
 
@@ -744,10 +788,6 @@ Creates a light in the world with a certain length (range).
 
 `void`
 
-#### Defined in
-
-[src/fivem/World.ts:799](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L799)
-
 ***
 
 ### drawLine()
@@ -758,6 +798,8 @@ static drawLine(
    end, 
    color): void
 ```
+
+Defined in: [src/fivem/World.ts:905](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L905)
 
 Draws a line in the world. It's not possible to change thickness.
 
@@ -772,10 +814,6 @@ Draws a line in the world. It's not possible to change thickness.
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/World.ts:905](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L905)
 
 ***
 
@@ -796,6 +834,8 @@ static drawMarker(
    textureName, 
    drawOnEntity): void
 ```
+
+Defined in: [src/fivem/World.ts:749](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L749)
 
 Draw a marker at a desired location. Careful! Must be drawn every tick.
 
@@ -829,10 +869,6 @@ setTick(() => {
 
 `void`
 
-#### Defined in
-
-[src/fivem/World.ts:749](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L749)
-
 ***
 
 ### drawPoly()
@@ -844,6 +880,8 @@ static drawPoly(
    vertexC, 
    color): void
 ```
+
+Defined in: [src/fivem/World.ts:928](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L928)
 
 Draw polygon in the world.
 
@@ -860,10 +898,6 @@ Draw polygon in the world.
 
 `void`
 
-#### Defined in
-
-[src/fivem/World.ts:928](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L928)
-
 ***
 
 ### drawSpotLight()
@@ -879,6 +913,8 @@ static drawSpotLight(
    radius, 
    fadeOut): void
 ```
+
+Defined in: [src/fivem/World.ts:829](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L829)
 
 Creates a light in the world. More configurable than World.drawLightWithRange.
 
@@ -899,10 +935,6 @@ Creates a light in the world. More configurable than World.drawLightWithRange.
 
 `void`
 
-#### Defined in
-
-[src/fivem/World.ts:829](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L829)
-
 ***
 
 ### drawSpotLightWithShadow()
@@ -918,6 +950,8 @@ static drawSpotLightWithShadow(
    radius, 
    fadeOut): void
 ```
+
+Defined in: [src/fivem/World.ts:869](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L869)
 
 Creates a light in the world. Same as World.drawSpotlight, but also draws shadows.
 
@@ -938,10 +972,6 @@ Creates a light in the world. Same as World.drawSpotlight, but also draws shadow
 
 `void`
 
-#### Defined in
-
-[src/fivem/World.ts:869](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L869)
-
 ***
 
 ### expensiveRaycast()
@@ -954,6 +984,8 @@ static expensiveRaycast(
    shapeTestOptions, 
    ignoreEntity?): SynchronousRaycastResult
 ```
+
+Defined in: [src/fivem/World.ts:963](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L963)
 
 Cast a ray from {@param start} to {@param end}.
 
@@ -973,10 +1005,6 @@ Cast a ray from {@param start} to {@param end}.
 
 {@see SynchronousRaycastResult} object.
 
-#### Defined in
-
-[src/fivem/World.ts:963](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L963)
-
 ***
 
 ### getAllPeds()
@@ -984,6 +1012,8 @@ Cast a ray from {@param start} to {@param end}.
 ```ts
 static getAllPeds(): Ped[]
 ```
+
+Defined in: [src/fivem/World.ts:1172](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L1172)
 
 Get all [[`Ped`]] entities in your own scope.
 
@@ -993,10 +1023,6 @@ Get all [[`Ped`]] entities in your own scope.
 
 Array of Peds.
 
-#### Defined in
-
-[src/fivem/World.ts:1172](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L1172)
-
 ***
 
 ### getAllPickups()
@@ -1004,6 +1030,8 @@ Array of Peds.
 ```ts
 static getAllPickups(): Pickup[]
 ```
+
+Defined in: [src/fivem/World.ts:1223](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L1223)
 
 Get all [[`Pickup`]] entities using the GetGamePool.
 
@@ -1013,10 +1041,6 @@ Get all [[`Pickup`]] entities using the GetGamePool.
 
 Array of Pickups.
 
-#### Defined in
-
-[src/fivem/World.ts:1223](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L1223)
-
 ***
 
 ### getAllProps()
@@ -1024,6 +1048,8 @@ Array of Pickups.
 ```ts
 static getAllProps(): Prop[]
 ```
+
+Defined in: [src/fivem/World.ts:1144](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L1144)
 
 Get all [[`Prop`]] entities in your own scope.
 
@@ -1033,10 +1059,6 @@ Get all [[`Prop`]] entities in your own scope.
 
 Array of Props.
 
-#### Defined in
-
-[src/fivem/World.ts:1144](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L1144)
-
 ***
 
 ### getAllRopes()
@@ -1044,6 +1066,8 @@ Array of Props.
 ```ts
 static getAllRopes(): Rope[]
 ```
+
+Defined in: [src/fivem/World.ts:1158](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L1158)
 
 Get all [[`Rope`]] entities in your own scope.
 
@@ -1053,10 +1077,6 @@ Get all [[`Rope`]] entities in your own scope.
 
 Array of Ropes.
 
-#### Defined in
-
-[src/fivem/World.ts:1158](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L1158)
-
 ***
 
 ### getAllVehicles()
@@ -1065,6 +1085,8 @@ Array of Ropes.
 static getAllVehicles(): Vehicle[]
 ```
 
+Defined in: [src/fivem/World.ts:1186](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L1186)
+
 Get all [[`Vehicle`]] entities in your own scope.
 
 #### Returns
@@ -1072,10 +1094,6 @@ Get all [[`Vehicle`]] entities in your own scope.
 [`Vehicle`](Vehicle.md)[]
 
 Array of Vehicles.
-
-#### Defined in
-
-[src/fivem/World.ts:1186](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L1186)
 
 ***
 
@@ -1088,6 +1106,8 @@ static getClosestObject(
    radius, 
    isMission): null | Prop
 ```
+
+Defined in: [src/fivem/World.ts:1117](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L1117)
 
 Gets the closest object of this model
 
@@ -1104,10 +1124,6 @@ Gets the closest object of this model
 
 `null` \| [`Prop`](Prop.md)
 
-#### Defined in
-
-[src/fivem/World.ts:1117](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L1117)
-
 ***
 
 ### getClosestVehicle()
@@ -1115,6 +1131,8 @@ Gets the closest object of this model
 ```ts
 static getClosestVehicle(coords): null | Vehicle
 ```
+
+Defined in: [src/fivem/World.ts:1199](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L1199)
 
 Gets the cloest [[`Vehicle`]] to the current coords, or null if none are found
 
@@ -1130,10 +1148,6 @@ Gets the cloest [[`Vehicle`]] to the current coords, or null if none are found
 
 the closest vehicle or null
 
-#### Defined in
-
-[src/fivem/World.ts:1199](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L1199)
-
 ***
 
 ### raycast()
@@ -1146,6 +1160,8 @@ static raycast(
    shapeTestOptions, 
    ignoreEntity?): AsynchronousRaycastResult
 ```
+
+Defined in: [src/fivem/World.ts:996](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L996)
 
 Cast a ray from {@param start} to {@param end} and returns the first hit
 entity or coordinate .
@@ -1166,15 +1182,11 @@ entity or coordinate .
 
 {@see AsynchronousRaycastResult} object that must be awaited to get its results.
 
-#### Defined in
-
-[src/fivem/World.ts:996](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L996)
-
 ***
 
 ### raycastDirection()
 
-#### raycastDirection(useExpensiveRaycast, source, direction, maxDistance, losFlags, shapeTestOptions, ignoreEntity)
+#### Call Signature
 
 ```ts
 static raycastDirection(
@@ -1186,6 +1198,8 @@ static raycastDirection(
    shapeTestOptions?, 
    ignoreEntity?): SynchronousRaycastResult
 ```
+
+Defined in: [src/fivem/World.ts:1018](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L1018)
 
 ##### Parameters
 
@@ -1203,11 +1217,7 @@ static raycastDirection(
 
 [`SynchronousRaycastResult`](SynchronousRaycastResult.md)
 
-##### Defined in
-
-[src/fivem/World.ts:1018](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L1018)
-
-#### raycastDirection(useExpensiveRaycast, source, direction, maxDistance, losFlags, shapeTestOptions, ignoreEntity)
+#### Call Signature
 
 ```ts
 static raycastDirection(
@@ -1219,6 +1229,8 @@ static raycastDirection(
    shapeTestOptions?, 
    ignoreEntity?): AsynchronousRaycastResult
 ```
+
+Defined in: [src/fivem/World.ts:1028](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L1028)
 
 ##### Parameters
 
@@ -1236,10 +1248,6 @@ static raycastDirection(
 
 [`AsynchronousRaycastResult`](AsynchronousRaycastResult.md)
 
-##### Defined in
-
-[src/fivem/World.ts:1028](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L1028)
-
 ***
 
 ### raycastPlayerCamera()
@@ -1247,6 +1255,8 @@ static raycastDirection(
 ```ts
 static raycastPlayerCamera(maxDistance, flags): SynchronousRaycastResult
 ```
+
+Defined in: [src/fivem/World.ts:1090](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L1090)
 
 Cast a ray from the local players camera until it hits an entity
 
@@ -1263,10 +1273,6 @@ Cast a ray from the local players camera until it hits an entity
 
 SynchronousRaycast object.
 
-#### Defined in
-
-[src/fivem/World.ts:1090](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L1090)
-
 ***
 
 ### transitionToWeather()
@@ -1274,6 +1280,8 @@ SynchronousRaycast object.
 ```ts
 static transitionToWeather(weather, duration): void
 ```
+
+Defined in: [src/fivem/World.ts:295](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/World.ts#L295)
 
 Transition to different weather type within a certain time.
 
@@ -1287,7 +1295,3 @@ Transition to different weather type within a certain time.
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/World.ts:295](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/World.ts#L295)

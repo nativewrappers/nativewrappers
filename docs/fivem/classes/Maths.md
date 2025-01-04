@@ -2,6 +2,8 @@
 
 # Class: `abstract` Maths
 
+Defined in: lib/common/utils/Maths.d.ts:1
+
 ## Constructors
 
 ### new Maths()
@@ -25,6 +27,8 @@ static clamp(
    max): number
 ```
 
+Defined in: lib/common/utils/Maths.d.ts:2
+
 #### Parameters
 
 | Parameter | Type |
@@ -37,10 +41,6 @@ static clamp(
 
 `number`
 
-#### Defined in
-
-lib/common/utils/Maths.d.ts:2
-
 ***
 
 ### getRandomInt()
@@ -48,6 +48,8 @@ lib/common/utils/Maths.d.ts:2
 ```ts
 static getRandomInt(min, max): number
 ```
+
+Defined in: lib/common/utils/Maths.d.ts:3
 
 #### Parameters
 
@@ -59,7 +61,3 @@ static getRandomInt(min, max): number
 #### Returns
 
 `number`
-
-#### Defined in
-
-lib/common/utils/Maths.d.ts:3

@@ -2,6 +2,8 @@
 
 # Class: Pickup
 
+Defined in: [src/fivem/Pickup.ts:3](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Pickup.ts#L3)
+
 ## Constructors
 
 ### new Pickup()
@@ -9,6 +11,8 @@
 ```ts
 new Pickup(handle): Pickup
 ```
+
+Defined in: [src/fivem/Pickup.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Pickup.ts#L6)
 
 #### Parameters
 
@@ -20,41 +24,37 @@ new Pickup(handle): Pickup
 
 [`Pickup`](Pickup.md)
 
-#### Defined in
-
-[src/fivem/Pickup.ts:6](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Pickup.ts#L6)
-
 ## Accessors
 
 ### IsCollected
+
+#### Get Signature
 
 ```ts
 get IsCollected(): boolean
 ```
 
-#### Returns
+Defined in: [src/fivem/Pickup.ts:14](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Pickup.ts#L14)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/Pickup.ts:14](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Pickup.ts#L14)
 
 ***
 
 ### Position
 
+#### Get Signature
+
 ```ts
 get Position(): Vector3
 ```
 
-#### Returns
+Defined in: [src/fivem/Pickup.ts:10](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Pickup.ts#L10)
+
+##### Returns
 
 [`Vector3`](Vector3.md)
-
-#### Defined in
-
-[src/fivem/Pickup.ts:10](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Pickup.ts#L10)
 
 ## Methods
 
@@ -64,13 +64,11 @@ get Position(): Vector3
 delete(): void
 ```
 
+Defined in: [src/fivem/Pickup.ts:18](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Pickup.ts#L18)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/Pickup.ts:18](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Pickup.ts#L18)
 
 ***
 
@@ -80,10 +78,8 @@ delete(): void
 exists(): boolean
 ```
 
+Defined in: [src/fivem/Pickup.ts:22](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/Pickup.ts#L22)
+
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/Pickup.ts:22](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/Pickup.ts#L22)

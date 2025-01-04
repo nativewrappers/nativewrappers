@@ -2,6 +2,8 @@
 
 # Class: TaskSequence
 
+Defined in: [src/fivem/TaskSequence.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/TaskSequence.ts#L4)
+
 ## Constructors
 
 ### new TaskSequence()
@@ -9,6 +11,8 @@
 ```ts
 new TaskSequence(handle?): TaskSequence
 ```
+
+Defined in: [src/fivem/TaskSequence.ts:10](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/TaskSequence.ts#L10)
 
 #### Parameters
 
@@ -20,73 +24,69 @@ new TaskSequence(handle?): TaskSequence
 
 [`TaskSequence`](TaskSequence.md)
 
-#### Defined in
-
-[src/fivem/TaskSequence.ts:10](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/TaskSequence.ts#L10)
-
 ## Accessors
 
 ### AddTask
+
+#### Get Signature
 
 ```ts
 get AddTask(): Tasks
 ```
 
-#### Returns
+Defined in: [src/fivem/TaskSequence.ts:45](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/TaskSequence.ts#L45)
+
+##### Returns
 
 [`Tasks`](Tasks.md)
-
-#### Defined in
-
-[src/fivem/TaskSequence.ts:45](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/TaskSequence.ts#L45)
 
 ***
 
 ### Count
 
+#### Get Signature
+
 ```ts
 get Count(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/TaskSequence.ts:58](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/TaskSequence.ts#L58)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/TaskSequence.ts:58](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/TaskSequence.ts#L58)
 
 ***
 
 ### Handle
 
+#### Get Signature
+
 ```ts
 get Handle(): number
 ```
 
-#### Returns
+Defined in: [src/fivem/TaskSequence.ts:41](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/TaskSequence.ts#L41)
+
+##### Returns
 
 `number`
-
-#### Defined in
-
-[src/fivem/TaskSequence.ts:41](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/TaskSequence.ts#L41)
 
 ***
 
 ### IsClosed
 
+#### Get Signature
+
 ```ts
 get IsClosed(): boolean
 ```
 
-#### Returns
+Defined in: [src/fivem/TaskSequence.ts:54](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/TaskSequence.ts#L54)
+
+##### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/TaskSequence.ts:54](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/TaskSequence.ts#L54)
 
 ## Methods
 
@@ -95,6 +95,8 @@ get IsClosed(): boolean
 ```ts
 close(repeat): void
 ```
+
+Defined in: [src/fivem/TaskSequence.ts:32](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/TaskSequence.ts#L32)
 
 #### Parameters
 
@@ -106,10 +108,6 @@ close(repeat): void
 
 `void`
 
-#### Defined in
-
-[src/fivem/TaskSequence.ts:32](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/TaskSequence.ts#L32)
-
 ***
 
 ### dispose()
@@ -118,10 +116,8 @@ close(repeat): void
 dispose(): void
 ```
 
+Defined in: [src/fivem/TaskSequence.ts:27](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/TaskSequence.ts#L27)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/TaskSequence.ts:27](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/TaskSequence.ts#L27)

@@ -2,6 +2,8 @@
 
 # Class: VehicleWheelCollection
 
+Defined in: [src/fivem/models/VehicleWheelCollection.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/VehicleWheelCollection.ts#L5)
+
 ## Constructors
 
 ### new VehicleWheelCollection()
@@ -9,6 +11,8 @@
 ```ts
 new VehicleWheelCollection(owner): VehicleWheelCollection
 ```
+
+Defined in: [src/fivem/models/VehicleWheelCollection.ts:12](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/VehicleWheelCollection.ts#L12)
 
 #### Parameters
 
@@ -20,10 +24,6 @@ new VehicleWheelCollection(owner): VehicleWheelCollection
 
 [`VehicleWheelCollection`](VehicleWheelCollection.md)
 
-#### Defined in
-
-[src/fivem/models/VehicleWheelCollection.ts:12](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/VehicleWheelCollection.ts#L12)
-
 ## Methods
 
 ### burstAllWheels()
@@ -32,13 +32,11 @@ new VehicleWheelCollection(owner): VehicleWheelCollection
 burstAllWheels(): void
 ```
 
+Defined in: [src/fivem/models/VehicleWheelCollection.ts:36](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/VehicleWheelCollection.ts#L36)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/models/VehicleWheelCollection.ts:36](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/VehicleWheelCollection.ts#L36)
 
 ***
 
@@ -48,13 +46,11 @@ burstAllWheels(): void
 fixAllWheels(): void
 ```
 
+Defined in: [src/fivem/models/VehicleWheelCollection.ts:42](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/VehicleWheelCollection.ts#L42)
+
 #### Returns
 
 `void`
-
-#### Defined in
-
-[src/fivem/models/VehicleWheelCollection.ts:42](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/VehicleWheelCollection.ts#L42)
 
 ***
 
@@ -64,13 +60,11 @@ fixAllWheels(): void
 getAllWheels(): (undefined | null | VehicleWheel)[]
 ```
 
+Defined in: [src/fivem/models/VehicleWheelCollection.ts:23](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/VehicleWheelCollection.ts#L23)
+
 #### Returns
 
 (`undefined` \| `null` \| [`VehicleWheel`](VehicleWheel.md))[]
-
-#### Defined in
-
-[src/fivem/models/VehicleWheelCollection.ts:23](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/VehicleWheelCollection.ts#L23)
 
 ***
 
@@ -79,6 +73,8 @@ getAllWheels(): (undefined | null | VehicleWheel)[]
 ```ts
 getWheel(index): undefined | VehicleWheel
 ```
+
+Defined in: [src/fivem/models/VehicleWheelCollection.ts:16](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/VehicleWheelCollection.ts#L16)
 
 #### Parameters
 
@@ -90,10 +86,6 @@ getWheel(index): undefined | VehicleWheel
 
 `undefined` \| [`VehicleWheel`](VehicleWheel.md)
 
-#### Defined in
-
-[src/fivem/models/VehicleWheelCollection.ts:16](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/VehicleWheelCollection.ts#L16)
-
 ***
 
 ### hasWheel()
@@ -101,6 +93,8 @@ getWheel(index): undefined | VehicleWheel
 ```ts
 hasWheel(wheel): boolean
 ```
+
+Defined in: [src/fivem/models/VehicleWheelCollection.ts:48](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/models/VehicleWheelCollection.ts#L48)
 
 #### Parameters
 
@@ -111,7 +105,3 @@ hasWheel(wheel): boolean
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-[src/fivem/models/VehicleWheelCollection.ts:48](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/models/VehicleWheelCollection.ts#L48)
