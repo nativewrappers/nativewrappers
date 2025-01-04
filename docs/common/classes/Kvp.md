@@ -36,7 +36,7 @@ Deletes the specified value for key, this is a blocking operation, if you're del
 
 #### Defined in
 
-[src/common/Kvp.ts:88](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/Kvp.ts#L88)
+[src/common/Kvp.ts:88](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/Kvp.ts#L88)
 
 ***
 
@@ -60,7 +60,7 @@ Deletes the specified resource keys value, this doesn't immediately write to dis
 
 #### Defined in
 
-[src/common/Kvp.ts:96](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/Kvp.ts#L96)
+[src/common/Kvp.ts:96](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/Kvp.ts#L96)
 
 ***
 
@@ -78,7 +78,7 @@ Ensures that any previous async call is flushed to disk
 
 #### Defined in
 
-[src/common/Kvp.ts:103](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/Kvp.ts#L103)
+[src/common/Kvp.ts:103](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/Kvp.ts#L103)
 
 ***
 
@@ -104,7 +104,7 @@ the value stored as a float, or 0.0 if there is no value
 
 #### Defined in
 
-[src/common/Kvp.ts:75](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/Kvp.ts#L75)
+[src/common/Kvp.ts:75](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/Kvp.ts#L75)
 
 ***
 
@@ -132,7 +132,7 @@ getKvpJson<T>(key): T
 
 #### Defined in
 
-[src/common/Kvp.ts:79](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/Kvp.ts#L79)
+[src/common/Kvp.ts:79](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/Kvp.ts#L79)
 
 ***
 
@@ -158,7 +158,97 @@ the value stored, as a number, or 0 if there is no value
 
 #### Defined in
 
-[src/common/Kvp.ts:66](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/Kvp.ts#L66)
+[src/common/Kvp.ts:66](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/Kvp.ts#L66)
+
+***
+
+### getKvpsAsFloat()
+
+```ts
+getKvpsAsFloat(prefix): IterableIterator<number, any, any>
+```
+
+enumerates over any kvp prefixed with the prefix
+
+```typescript
+for (const value of Kvp.getKvpsAsFloat("native:")) {
+		console.log(value);
+}
+```
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `prefix` | `string` | the prefix to search for |
+
+#### Returns
+
+`IterableIterator`\<`number`, `any`, `any`\>
+
+#### Defined in
+
+[src/common/Kvp.ts:169](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/Kvp.ts#L169)
+
+***
+
+### getKvpsAsNumber()
+
+```ts
+getKvpsAsNumber(prefix): IterableIterator<number, any, any>
+```
+
+enumerates over any kvp prefixed with the prefix
+
+```typescript
+for (const value of Kvp.getKvpsAsNumber("native:")) {
+		console.log(value);
+}
+```
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `prefix` | `string` | the prefix to search for |
+
+#### Returns
+
+`IterableIterator`\<`number`, `any`, `any`\>
+
+#### Defined in
+
+[src/common/Kvp.ts:154](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/Kvp.ts#L154)
+
+***
+
+### getKvpsAsString()
+
+```ts
+getKvpsAsString(prefix): IterableIterator<string, any, any>
+```
+
+enumerates over any kvp prefixed with the prefix
+
+```typescript
+for (const value of Kvp.getKvpsAsString("native:")) {
+		console.log(value);
+}
+```
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `prefix` | `string` | the prefix to search for |
+
+#### Returns
+
+`IterableIterator`\<`string`, `any`, `any`\>
+
+#### Defined in
+
+[src/common/Kvp.ts:139](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/Kvp.ts#L139)
 
 ***
 
@@ -184,97 +274,7 @@ a string, or null if there is no value
 
 #### Defined in
 
-[src/common/Kvp.ts:57](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/Kvp.ts#L57)
-
-***
-
-### getKvpsAsFloat()
-
-```ts
-getKvpsAsFloat(prefix): IterableIterator<number>
-```
-
-enumerates over any kvp prefixed with the prefix
-
-```typescript
-for (const value of Kvp.getKvpsAsFloat("native:")) {
-		console.log(value);
-}
-```
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `prefix` | `string` | the prefix to search for |
-
-#### Returns
-
-`IterableIterator`\<`number`\>
-
-#### Defined in
-
-[src/common/Kvp.ts:169](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/Kvp.ts#L169)
-
-***
-
-### getKvpsAsNumber()
-
-```ts
-getKvpsAsNumber(prefix): IterableIterator<number>
-```
-
-enumerates over any kvp prefixed with the prefix
-
-```typescript
-for (const value of Kvp.getKvpsAsNumber("native:")) {
-		console.log(value);
-}
-```
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `prefix` | `string` | the prefix to search for |
-
-#### Returns
-
-`IterableIterator`\<`number`\>
-
-#### Defined in
-
-[src/common/Kvp.ts:154](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/Kvp.ts#L154)
-
-***
-
-### getKvpsAsString()
-
-```ts
-getKvpsAsString(prefix): IterableIterator<string>
-```
-
-enumerates over any kvp prefixed with the prefix
-
-```typescript
-for (const value of Kvp.getKvpsAsString("native:")) {
-		console.log(value);
-}
-```
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `prefix` | `string` | the prefix to search for |
-
-#### Returns
-
-`IterableIterator`\<`string`\>
-
-#### Defined in
-
-[src/common/Kvp.ts:139](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/Kvp.ts#L139)
+[src/common/Kvp.ts:57](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/Kvp.ts#L57)
 
 ***
 
@@ -305,7 +305,7 @@ Sets the resource key to the specified value this is a blocking operation, if yo
 
 #### Defined in
 
-[src/common/Kvp.ts:10](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/Kvp.ts#L10)
+[src/common/Kvp.ts:10](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/Kvp.ts#L10)
 
 ***
 
@@ -336,7 +336,7 @@ Sets the resource key to the specified value, this doesn't immediately write to 
 
 #### Defined in
 
-[src/common/Kvp.ts:28](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/Kvp.ts#L28)
+[src/common/Kvp.ts:28](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/Kvp.ts#L28)
 
 ***
 
@@ -362,4 +362,4 @@ This can error if given an invalid object
 
 #### Defined in
 
-[src/common/Kvp.ts:47](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/Kvp.ts#L47)
+[src/common/Kvp.ts:47](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/Kvp.ts#L47)

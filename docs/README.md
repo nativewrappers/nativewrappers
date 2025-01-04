@@ -4,6 +4,7 @@
 
 | Module | Description |
 | ------ | ------ |
-| [client](client/README.md) | - |
 | [common](common/README.md) | - |
+| [fivem](fivem/README.md) | - |
+| [redm](redm/README.md) | - |
 | [server](server/README.md) | - |

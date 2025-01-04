@@ -30,14 +30,14 @@ new Vehicle(handle): Vehicle
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:10](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L10)
+[src/server/entities/Vehicle.ts:10](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L10)
 
 ## Properties
 
 | Property | Modifier | Type | Default value | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| `handle` | `protected` | `number` | `undefined` | - | `BaseEntity.handle` | [src/server/entities/BaseEntity.ts:11](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L11) |
-| `type` | `protected` | `ClassTypes` | `ClassTypes.Vehicle` | `BaseEntity.type` | - | [src/server/entities/Vehicle.ts:9](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L9) |
+| `handle` | `protected` | `number` | `undefined` | - | `BaseEntity.handle` | [src/server/entities/BaseEntity.ts:11](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L11) |
+| `type` | `protected` | `ClassTypes` | `ClassTypes.Vehicle` | `BaseEntity.type` | - | [src/server/entities/Vehicle.ts:9](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L9) |
 
 ## Accessors
 
@@ -60,7 +60,7 @@ there is none
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:49](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L49)
+[src/server/entities/BaseEntity.ts:49](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L49)
 
 ***
 
@@ -76,7 +76,7 @@ get BodyHealth(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:48](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L48)
+[src/server/entities/Vehicle.ts:48](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L48)
 
 ***
 
@@ -88,11 +88,11 @@ get CustomPrimaryColour(): Color
 
 #### Returns
 
-[`Color`](../../client/classes/Color.md)
+[`Color`](../../fivem/classes/Color.md)
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:56](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L56)
+[src/server/entities/Vehicle.ts:56](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L56)
 
 ***
 
@@ -104,11 +104,11 @@ get CustomSecondaryColour(): Color
 
 #### Returns
 
-[`Color`](../../client/classes/Color.md)
+[`Color`](../../fivem/classes/Color.md)
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:60](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L60)
+[src/server/entities/Vehicle.ts:60](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L60)
 
 ***
 
@@ -124,7 +124,7 @@ get DashboardColour(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:64](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L64)
+[src/server/entities/Vehicle.ts:64](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L64)
 
 ***
 
@@ -140,23 +140,7 @@ get DirtLevel(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:68](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L68)
-
-***
-
-### DoorStatus
-
-```ts
-get DoorStatus(): number
-```
-
-#### Returns
-
-`number`
-
-#### Defined in
-
-[src/server/entities/Vehicle.ts:76](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L76)
+[src/server/entities/Vehicle.ts:68](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L68)
 
 ***
 
@@ -172,7 +156,23 @@ get DoorsLockedForPlayer(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:80](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L80)
+[src/server/entities/Vehicle.ts:80](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L80)
+
+***
+
+### DoorStatus
+
+```ts
+get DoorStatus(): number
+```
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+[src/server/entities/Vehicle.ts:76](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L76)
 
 ***
 
@@ -188,7 +188,7 @@ get EngineHealth(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:84](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L84)
+[src/server/entities/Vehicle.ts:84](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L84)
 
 ***
 
@@ -208,7 +208,7 @@ get Exists(): boolean
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:41](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L41)
+[src/server/entities/BaseEntity.ts:41](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L41)
 
 ***
 
@@ -224,7 +224,7 @@ get ExtraColours(): [number, number]
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:88](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L88)
+[src/server/entities/Vehicle.ts:88](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L88)
 
 ***
 
@@ -244,7 +244,7 @@ get FirstOwner(): number
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:37](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L37)
+[src/server/entities/BaseEntity.ts:37](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L37)
 
 ***
 
@@ -260,7 +260,7 @@ get FlightNozzlePosition(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:92](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L92)
+[src/server/entities/Vehicle.ts:92](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L92)
 
 ***
 
@@ -276,7 +276,7 @@ get Handbrake(): boolean
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:96](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L96)
+[src/server/entities/Vehicle.ts:96](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L96)
 
 ***
 
@@ -296,7 +296,7 @@ get Handle(): number
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:29](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L29)
+[src/server/entities/BaseEntity.ts:29](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L29)
 
 ***
 
@@ -312,7 +312,7 @@ get HasBeenOwnedByPlayer(): boolean
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:169](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L169)
+[src/server/entities/Vehicle.ts:169](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L169)
 
 ***
 
@@ -332,7 +332,7 @@ get Heading(): number
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:59](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L59)
+[src/server/entities/BaseEntity.ts:59](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L59)
 
 ***
 
@@ -348,7 +348,7 @@ get HeadlightsColour(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:100](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L100)
+[src/server/entities/Vehicle.ts:100](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L100)
 
 ***
 
@@ -368,7 +368,7 @@ get Health(): number
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:67](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L67)
+[src/server/entities/BaseEntity.ts:70](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L70)
 
 ***
 
@@ -384,7 +384,7 @@ get HomingLockonState(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:104](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L104)
+[src/server/entities/Vehicle.ts:104](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L104)
 
 ***
 
@@ -400,7 +400,7 @@ get InteriorColour(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:108](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L108)
+[src/server/entities/Vehicle.ts:108](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L108)
 
 ***
 
@@ -416,7 +416,7 @@ get IsEngineRunning(): boolean
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:36](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L36)
+[src/server/entities/Vehicle.ts:36](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L36)
 
 ***
 
@@ -432,7 +432,7 @@ get IsEngineStarting(): boolean
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:173](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L173)
+[src/server/entities/Vehicle.ts:173](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L173)
 
 ***
 
@@ -452,7 +452,7 @@ get IsNoLongerNeeded(): boolean
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:125](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L125)
+[src/server/entities/BaseEntity.ts:128](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L128)
 
 ***
 
@@ -468,7 +468,7 @@ get IsPrimaryColourCustom(): boolean
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:40](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L40)
+[src/server/entities/Vehicle.ts:40](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L40)
 
 ***
 
@@ -484,7 +484,7 @@ get IsSecondaryColourCustom(): boolean
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:44](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L44)
+[src/server/entities/Vehicle.ts:44](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L44)
 
 ***
 
@@ -500,7 +500,7 @@ get IsSirenOn(): boolean
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:177](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L177)
+[src/server/entities/Vehicle.ts:177](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L177)
 
 ***
 
@@ -520,7 +520,7 @@ get IsVisible(): boolean
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:117](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L117)
+[src/server/entities/BaseEntity.ts:120](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L120)
 
 ***
 
@@ -536,7 +536,7 @@ get LightsState(): [boolean, boolean]
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:112](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L112)
+[src/server/entities/Vehicle.ts:112](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L112)
 
 ***
 
@@ -552,7 +552,7 @@ get Livery(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:117](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L117)
+[src/server/entities/Vehicle.ts:117](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L117)
 
 ***
 
@@ -568,7 +568,7 @@ get LockOnTarget(): Vehicle
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:121](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L121)
+[src/server/entities/Vehicle.ts:121](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L121)
 
 ***
 
@@ -584,7 +584,7 @@ get LockStatus(): VehicleLockStatus
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:72](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L72)
+[src/server/entities/Vehicle.ts:72](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L72)
 
 ***
 
@@ -600,7 +600,7 @@ get MainRotorHealth(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:193](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L193)
+[src/server/entities/Vehicle.ts:193](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L193)
 
 ***
 
@@ -620,7 +620,7 @@ get MaxHealth(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:181](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L181)
+[src/server/entities/Vehicle.ts:181](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L181)
 
 ***
 
@@ -640,7 +640,7 @@ get Model(): number
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:75](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L75)
+[src/server/entities/BaseEntity.ts:78](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L78)
 
 ***
 
@@ -660,7 +660,7 @@ get NetworkId(): number
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:121](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L121)
+[src/server/entities/BaseEntity.ts:124](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L124)
 
 ***
 
@@ -680,7 +680,7 @@ get Owner(): number
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:33](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L33)
+[src/server/entities/BaseEntity.ts:33](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L33)
 
 ***
 
@@ -696,7 +696,7 @@ get PetrolTankHealth(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:137](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L137)
+[src/server/entities/Vehicle.ts:137](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L137)
 
 ***
 
@@ -712,7 +712,7 @@ get Plate(): string
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:125](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L125)
+[src/server/entities/Vehicle.ts:125](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L125)
 
 ***
 
@@ -728,7 +728,7 @@ get PlateIndex(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:133](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L133)
+[src/server/entities/Vehicle.ts:133](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L133)
 
 ***
 
@@ -744,7 +744,7 @@ get PlateTrimmed(): string
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:129](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L129)
+[src/server/entities/Vehicle.ts:129](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L129)
 
 ***
 
@@ -764,7 +764,7 @@ get PopulationType(): PopulationType
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:79](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L79)
+[src/server/entities/BaseEntity.ts:82](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L82)
 
 ***
 
@@ -776,7 +776,7 @@ get Position(): Vector3
 
 #### Returns
 
-[`Vector3`](../../client/classes/Vector3.md)
+[`Vector3`](../../fivem/classes/Vector3.md)
 
 #### Inherited from
 
@@ -784,7 +784,7 @@ get Position(): Vector3
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:55](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L55)
+[src/server/entities/BaseEntity.ts:55](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L55)
 
 ***
 
@@ -796,7 +796,7 @@ get PositionAndHeading(): Vector4
 
 #### Returns
 
-[`Vector4`](../../client/classes/Vector4.md)
+[`Vector4`](../../fivem/classes/Vector4.md)
 
 #### Inherited from
 
@@ -804,7 +804,7 @@ get PositionAndHeading(): Vector4
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:63](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L63)
+[src/server/entities/BaseEntity.ts:63](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L63)
 
 ***
 
@@ -820,7 +820,7 @@ get RadioStation(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:141](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L141)
+[src/server/entities/Vehicle.ts:141](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L141)
 
 ***
 
@@ -836,7 +836,7 @@ get RoofLivery(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:145](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L145)
+[src/server/entities/Vehicle.ts:145](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L145)
 
 ***
 
@@ -848,7 +848,7 @@ get Rotation(): Vector3
 
 #### Returns
 
-[`Vector3`](../../client/classes/Vector3.md)
+[`Vector3`](../../fivem/classes/Vector3.md)
 
 #### Inherited from
 
@@ -856,7 +856,7 @@ get Rotation(): Vector3
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:83](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L83)
+[src/server/entities/BaseEntity.ts:86](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L86)
 
 ***
 
@@ -868,7 +868,7 @@ get RotationVelocity(): Vector3
 
 #### Returns
 
-[`Vector3`](../../client/classes/Vector3.md)
+[`Vector3`](../../fivem/classes/Vector3.md)
 
 #### Inherited from
 
@@ -876,7 +876,7 @@ get RotationVelocity(): Vector3
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:87](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L87)
+[src/server/entities/BaseEntity.ts:90](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L90)
 
 ***
 
@@ -896,7 +896,7 @@ get RoutingBucket(): number
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:91](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L91)
+[src/server/entities/BaseEntity.ts:94](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L94)
 
 ***
 
@@ -918,7 +918,7 @@ The script that made the entity
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:98](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L98)
+[src/server/entities/BaseEntity.ts:101](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L101)
 
 ***
 
@@ -934,7 +934,7 @@ get ScriptTaskCommand(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:185](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L185)
+[src/server/entities/Vehicle.ts:185](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L185)
 
 ***
 
@@ -950,7 +950,7 @@ get ScriptTaskStage(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:189](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L189)
+[src/server/entities/Vehicle.ts:189](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L189)
 
 ***
 
@@ -970,7 +970,7 @@ get Speed(): number
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:102](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L102)
+[src/server/entities/BaseEntity.ts:105](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L105)
 
 ***
 
@@ -990,7 +990,7 @@ get State(): StateBagInterface
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:25](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L25)
+[src/server/entities/BaseEntity.ts:25](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L25)
 
 ***
 
@@ -1006,7 +1006,7 @@ get SteeringAngle(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:149](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L149)
+[src/server/entities/Vehicle.ts:149](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L149)
 
 ***
 
@@ -1022,7 +1022,7 @@ get TailRotorHealth(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:197](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L197)
+[src/server/entities/Vehicle.ts:197](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L197)
 
 ***
 
@@ -1040,7 +1040,7 @@ This might supposed to be TrainEngineHealth?
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:204](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L204)
+[src/server/entities/Vehicle.ts:204](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L204)
 
 ***
 
@@ -1056,7 +1056,7 @@ get TrainCarriageIndex(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:208](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L208)
+[src/server/entities/Vehicle.ts:208](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L208)
 
 ***
 
@@ -1076,7 +1076,7 @@ get Type(): eEntityType
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:106](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L106)
+[src/server/entities/BaseEntity.ts:109](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L109)
 
 ***
 
@@ -1088,11 +1088,11 @@ get TyreSmokeColour(): Color
 
 #### Returns
 
-[`Color`](../../client/classes/Color.md)
+[`Color`](../../fivem/classes/Color.md)
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:157](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L157)
+[src/server/entities/Vehicle.ts:157](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L157)
 
 ***
 
@@ -1108,7 +1108,7 @@ get VehicleColours(): [number, number]
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:52](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L52)
+[src/server/entities/Vehicle.ts:52](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L52)
 
 ***
 
@@ -1124,7 +1124,7 @@ get VehicleType(): VehicleType
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:153](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L153)
+[src/server/entities/Vehicle.ts:153](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L153)
 
 ***
 
@@ -1136,7 +1136,7 @@ get Velocity(): Vector3
 
 #### Returns
 
-[`Vector3`](../../client/classes/Vector3.md)
+[`Vector3`](../../fivem/classes/Vector3.md)
 
 the entitys velocity, if the entity is a ped it will return Vector3(0, 0, 0)
 
@@ -1146,7 +1146,7 @@ the entitys velocity, if the entity is a ped it will return Vector3(0, 0, 0)
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:113](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L113)
+[src/server/entities/BaseEntity.ts:116](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L116)
 
 ***
 
@@ -1162,7 +1162,7 @@ get WheelType(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:161](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L161)
+[src/server/entities/Vehicle.ts:161](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L161)
 
 ***
 
@@ -1178,7 +1178,7 @@ get WindowTint(): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:165](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L165)
+[src/server/entities/Vehicle.ts:165](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L165)
 
 ## Methods
 
@@ -1198,7 +1198,7 @@ delete(): void
 
 #### Defined in
 
-[src/server/entities/BaseEntity.ts:129](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/BaseEntity.ts#L129)
+[src/server/entities/BaseEntity.ts:132](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/BaseEntity.ts#L132)
 
 ***
 
@@ -1220,7 +1220,7 @@ getLastPedInSeat(seatIndex): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:224](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L224)
+[src/server/entities/Vehicle.ts:224](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L224)
 
 ***
 
@@ -1242,7 +1242,7 @@ getPedInSeat(seatIndex): number
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:220](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L220)
+[src/server/entities/Vehicle.ts:220](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L220)
 
 ***
 
@@ -1264,7 +1264,7 @@ isExtraTurnedOn(extraId): boolean
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:216](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L216)
+[src/server/entities/Vehicle.ts:216](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L216)
 
 ***
 
@@ -1287,27 +1287,27 @@ isTyreBurst(wheelId, completely): boolean
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:212](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L212)
+[src/server/entities/Vehicle.ts:212](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L212)
 
 ***
 
 ### AllVehicles()
 
 ```ts
-static AllVehicles(): IterableIterator<Vehicle>
+static AllVehicles(): IterableIterator<Vehicle, any, any>
 ```
 
 Get an interable list of vehicles currently on the server
 
 #### Returns
 
-`IterableIterator`\<[`Vehicle`](Vehicle.md)\>
+`IterableIterator`\<[`Vehicle`](Vehicle.md), `any`, `any`\>
 
 Iterable list of Vehicles.
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:18](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L18)
+[src/server/entities/Vehicle.ts:18](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L18)
 
 ***
 
@@ -1333,7 +1333,7 @@ static fromNetworkId(networkId): null | Vehicle
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:24](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L24)
+[src/server/entities/Vehicle.ts:24](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L24)
 
 ***
 
@@ -1359,4 +1359,4 @@ static fromStateBagName(stateBageName): null | Vehicle
 
 #### Defined in
 
-[src/server/entities/Vehicle.ts:30](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/server/entities/Vehicle.ts#L30)
+[src/server/entities/Vehicle.ts:30](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/server/entities/Vehicle.ts#L30)

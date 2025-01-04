@@ -22,7 +22,7 @@ new Quaternion(value): Quaternion
 
 #### Defined in
 
-[src/common/utils/Quaternion.ts:9](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/utils/Quaternion.ts#L9)
+[src/common/utils/Quaternion.ts:9](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Quaternion.ts#L9)
 
 ### new Quaternion()
 
@@ -43,7 +43,7 @@ new Quaternion(vector, w): Quaternion
 
 #### Defined in
 
-[src/common/utils/Quaternion.ts:10](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/utils/Quaternion.ts#L10)
+[src/common/utils/Quaternion.ts:10](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Quaternion.ts#L10)
 
 ### new Quaternion()
 
@@ -70,13 +70,13 @@ new Quaternion(
 
 #### Defined in
 
-[src/common/utils/Quaternion.ts:11](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/utils/Quaternion.ts#L11)
+[src/common/utils/Quaternion.ts:11](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Quaternion.ts#L11)
 
 ## Properties
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| `w` | `public` | `number` | [src/common/utils/Quaternion.ts:7](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/utils/Quaternion.ts#L7) |
-| `x` | `public` | `number` | [src/common/utils/Quaternion.ts:4](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/utils/Quaternion.ts#L4) |
-| `y` | `public` | `number` | [src/common/utils/Quaternion.ts:5](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/utils/Quaternion.ts#L5) |
-| `z` | `public` | `number` | [src/common/utils/Quaternion.ts:6](https://github.com/nativewrappers/fivem/blob/23974f37709c3a4a6a2e52877548e496df556c3f/src/common/utils/Quaternion.ts#L6) |
+| `w` | `public` | `number` | [src/common/utils/Quaternion.ts:7](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Quaternion.ts#L7) |
+| `x` | `public` | `number` | [src/common/utils/Quaternion.ts:4](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Quaternion.ts#L4) |
+| `y` | `public` | `number` | [src/common/utils/Quaternion.ts:5](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Quaternion.ts#L5) |
+| `z` | `public` | `number` | [src/common/utils/Quaternion.ts:6](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/common/utils/Quaternion.ts#L6) |

@@ -162,6 +162,96 @@ lib/common/Kvp.d.ts:32
 
 ***
 
+### getKvpsAsFloat()
+
+```ts
+getKvpsAsFloat(prefix): IterableIterator<number, any, any>
+```
+
+enumerates over any kvp prefixed with the prefix
+
+```typescript
+for (const value of Kvp.getKvpsAsFloat("native:")) {
+		console.log(value);
+}
+```
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `prefix` | `string` | the prefix to search for |
+
+#### Returns
+
+`IterableIterator`\<`number`, `any`, `any`\>
+
+#### Defined in
+
+lib/common/Kvp.d.ts:90
+
+***
+
+### getKvpsAsNumber()
+
+```ts
+getKvpsAsNumber(prefix): IterableIterator<number, any, any>
+```
+
+enumerates over any kvp prefixed with the prefix
+
+```typescript
+for (const value of Kvp.getKvpsAsNumber("native:")) {
+		console.log(value);
+}
+```
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `prefix` | `string` | the prefix to search for |
+
+#### Returns
+
+`IterableIterator`\<`number`, `any`, `any`\>
+
+#### Defined in
+
+lib/common/Kvp.d.ts:78
+
+***
+
+### getKvpsAsString()
+
+```ts
+getKvpsAsString(prefix): IterableIterator<string, any, any>
+```
+
+enumerates over any kvp prefixed with the prefix
+
+```typescript
+for (const value of Kvp.getKvpsAsString("native:")) {
+		console.log(value);
+}
+```
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `prefix` | `string` | the prefix to search for |
+
+#### Returns
+
+`IterableIterator`\<`string`, `any`, `any`\>
+
+#### Defined in
+
+lib/common/Kvp.d.ts:66
+
+***
+
 ### getKvpString()
 
 ```ts
@@ -185,96 +275,6 @@ a string, or null if there is no value
 #### Defined in
 
 lib/common/Kvp.d.ts:26
-
-***
-
-### getKvpsAsFloat()
-
-```ts
-getKvpsAsFloat(prefix): IterableIterator<number>
-```
-
-enumerates over any kvp prefixed with the prefix
-
-```typescript
-for (const value of Kvp.getKvpsAsFloat("native:")) {
-		console.log(value);
-}
-```
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `prefix` | `string` | the prefix to search for |
-
-#### Returns
-
-`IterableIterator`\<`number`\>
-
-#### Defined in
-
-lib/common/Kvp.d.ts:90
-
-***
-
-### getKvpsAsNumber()
-
-```ts
-getKvpsAsNumber(prefix): IterableIterator<number>
-```
-
-enumerates over any kvp prefixed with the prefix
-
-```typescript
-for (const value of Kvp.getKvpsAsNumber("native:")) {
-		console.log(value);
-}
-```
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `prefix` | `string` | the prefix to search for |
-
-#### Returns
-
-`IterableIterator`\<`number`\>
-
-#### Defined in
-
-lib/common/Kvp.d.ts:78
-
-***
-
-### getKvpsAsString()
-
-```ts
-getKvpsAsString(prefix): IterableIterator<string>
-```
-
-enumerates over any kvp prefixed with the prefix
-
-```typescript
-for (const value of Kvp.getKvpsAsString("native:")) {
-		console.log(value);
-}
-```
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `prefix` | `string` | the prefix to search for |
-
-#### Returns
-
-`IterableIterator`\<`string`\>
-
-#### Defined in
-
-lib/common/Kvp.d.ts:66
 
 ***
 

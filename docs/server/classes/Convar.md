@@ -26,9 +26,11 @@ buffer(): string
 
 `string`
 
+the current console buffer
+
 #### Defined in
 
-lib/common/Convar.d.ts:2
+lib/common/Convar.d.ts:5
 
 ***
 
@@ -51,7 +53,53 @@ get(variable, defaultVar): string
 
 #### Defined in
 
-lib/common/Convar.d.ts:3
+lib/common/Convar.d.ts:6
+
+***
+
+### getBool()
+
+```ts
+getBool(varName, defaultVar): boolean
+```
+
+#### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `varName` | `string` |
+| `defaultVar` | `boolean` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+lib/common/Convar.d.ts:9
+
+***
+
+### getFloat()
+
+```ts
+getFloat(varName, defaultVar): number
+```
+
+#### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `varName` | `string` |
+| `defaultVar` | `number` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+lib/common/Convar.d.ts:8
 
 ***
 
@@ -74,7 +122,7 @@ getInt(variable, defaultVar): number
 
 #### Defined in
 
-lib/common/Convar.d.ts:4
+lib/common/Convar.d.ts:7
 
 ***
 
@@ -97,7 +145,7 @@ set(variable, value): void
 
 #### Defined in
 
-lib/common/Convar.d.ts:5
+lib/common/Convar.d.ts:10
 
 ***
 
@@ -120,7 +168,7 @@ setReplicated(variable, value): void
 
 #### Defined in
 
-lib/common/Convar.d.ts:6
+lib/common/Convar.d.ts:11
 
 ***
 
@@ -143,4 +191,4 @@ setServerInfo(variable, value): void
 
 #### Defined in
 
-lib/common/Convar.d.ts:7
+lib/common/Convar.d.ts:12

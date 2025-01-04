@@ -1,0 +1,99 @@
+[@nativewrappers/fivem](../../README.md) / [fivem](../README.md) / ZoneID
+
+# Enumeration: ZoneID
+
+List of Zones. Useful for using world zone related natives.
+
+## Enumeration Members
+
+| Enumeration Member | Value | Defined in |
+| ------ | ------ | ------ |
+| `AIRP` | `0` | [src/fivem/enums/ZoneID.ts:5](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L5) |
+| `ALAMO` | `1` | [src/fivem/enums/ZoneID.ts:6](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L6) |
+| `ALTA` | `2` | [src/fivem/enums/ZoneID.ts:7](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L7) |
+| `ARMYB` | `3` | [src/fivem/enums/ZoneID.ts:8](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L8) |
+| `BANHAMC` | `4` | [src/fivem/enums/ZoneID.ts:9](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L9) |
+| `BANNING` | `5` | [src/fivem/enums/ZoneID.ts:10](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L10) |
+| `BEACH` | `6` | [src/fivem/enums/ZoneID.ts:11](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L11) |
+| `BHAMCA` | `7` | [src/fivem/enums/ZoneID.ts:12](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L12) |
+| `BRADP` | `8` | [src/fivem/enums/ZoneID.ts:13](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L13) |
+| `BRADT` | `9` | [src/fivem/enums/ZoneID.ts:14](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L14) |
+| `BURTON` | `10` | [src/fivem/enums/ZoneID.ts:15](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L15) |
+| `CALAFB` | `11` | [src/fivem/enums/ZoneID.ts:16](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L16) |
+| `CANNY` | `12` | [src/fivem/enums/ZoneID.ts:17](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L17) |
+| `CCREAK` | `13` | [src/fivem/enums/ZoneID.ts:18](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L18) |
+| `CHAMH` | `14` | [src/fivem/enums/ZoneID.ts:19](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L19) |
+| `CHIL` | `15` | [src/fivem/enums/ZoneID.ts:20](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L20) |
+| `CHU` | `16` | [src/fivem/enums/ZoneID.ts:21](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L21) |
+| `CMSW` | `17` | [src/fivem/enums/ZoneID.ts:22](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L22) |
+| `CYPRE` | `18` | [src/fivem/enums/ZoneID.ts:23](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L23) |
+| `DAVIS` | `19` | [src/fivem/enums/ZoneID.ts:24](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L24) |
+| `DELBE` | `20` | [src/fivem/enums/ZoneID.ts:25](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L25) |
+| `DELPE` | `21` | [src/fivem/enums/ZoneID.ts:26](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L26) |
+| `DELSOL` | `22` | [src/fivem/enums/ZoneID.ts:27](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L27) |
+| `DESRT` | `23` | [src/fivem/enums/ZoneID.ts:28](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L28) |
+| `DOWNT` | `24` | [src/fivem/enums/ZoneID.ts:29](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L29) |
+| `DTVINE` | `25` | [src/fivem/enums/ZoneID.ts:30](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L30) |
+| `EAST_V` | `26` | [src/fivem/enums/ZoneID.ts:31](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L31) |
+| `EBURO` | `27` | [src/fivem/enums/ZoneID.ts:32](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L32) |
+| `ELGORL` | `28` | [src/fivem/enums/ZoneID.ts:33](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L33) |
+| `ELYSIAN` | `29` | [src/fivem/enums/ZoneID.ts:34](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L34) |
+| `GALFISH` | `30` | [src/fivem/enums/ZoneID.ts:35](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L35) |
+| `golf` | `31` | [src/fivem/enums/ZoneID.ts:36](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L36) |
+| `GRAPES` | `32` | [src/fivem/enums/ZoneID.ts:37](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L37) |
+| `GREATC` | `33` | [src/fivem/enums/ZoneID.ts:38](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L38) |
+| `HARMO` | `34` | [src/fivem/enums/ZoneID.ts:39](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L39) |
+| `HAWICK` | `35` | [src/fivem/enums/ZoneID.ts:40](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L40) |
+| `HORS` | `36` | [src/fivem/enums/ZoneID.ts:41](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L41) |
+| `HUMLAB` | `37` | [src/fivem/enums/ZoneID.ts:42](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L42) |
+| `JAIL` | `38` | [src/fivem/enums/ZoneID.ts:43](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L43) |
+| `KOREAT` | `39` | [src/fivem/enums/ZoneID.ts:44](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L44) |
+| `LACT` | `40` | [src/fivem/enums/ZoneID.ts:45](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L45) |
+| `LAGO` | `41` | [src/fivem/enums/ZoneID.ts:46](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L46) |
+| `LDAM` | `42` | [src/fivem/enums/ZoneID.ts:47](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L47) |
+| `LEGSQU` | `43` | [src/fivem/enums/ZoneID.ts:48](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L48) |
+| `LMESA` | `44` | [src/fivem/enums/ZoneID.ts:49](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L49) |
+| `LOSPUER` | `45` | [src/fivem/enums/ZoneID.ts:50](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L50) |
+| `MIRR` | `46` | [src/fivem/enums/ZoneID.ts:51](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L51) |
+| `MORN` | `47` | [src/fivem/enums/ZoneID.ts:52](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L52) |
+| `MOVIE` | `48` | [src/fivem/enums/ZoneID.ts:53](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L53) |
+| `MTCHIL` | `49` | [src/fivem/enums/ZoneID.ts:54](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L54) |
+| `MTGORDO` | `50` | [src/fivem/enums/ZoneID.ts:55](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L55) |
+| `MTJOSE` | `51` | [src/fivem/enums/ZoneID.ts:56](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L56) |
+| `MURRI` | `52` | [src/fivem/enums/ZoneID.ts:57](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L57) |
+| `NCHU` | `53` | [src/fivem/enums/ZoneID.ts:58](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L58) |
+| `NOOSE` | `54` | [src/fivem/enums/ZoneID.ts:59](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L59) |
+| `OCEANA` | `55` | [src/fivem/enums/ZoneID.ts:60](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L60) |
+| `PALCOV` | `56` | [src/fivem/enums/ZoneID.ts:61](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L61) |
+| `PALETO` | `57` | [src/fivem/enums/ZoneID.ts:62](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L62) |
+| `PALFOR` | `58` | [src/fivem/enums/ZoneID.ts:63](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L63) |
+| `PALHIGH` | `59` | [src/fivem/enums/ZoneID.ts:64](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L64) |
+| `PALMPOW` | `60` | [src/fivem/enums/ZoneID.ts:65](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L65) |
+| `PBLUFF` | `61` | [src/fivem/enums/ZoneID.ts:66](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L66) |
+| `PBOX` | `62` | [src/fivem/enums/ZoneID.ts:67](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L67) |
+| `PROCOB` | `63` | [src/fivem/enums/ZoneID.ts:68](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L68) |
+| `RANCHO` | `64` | [src/fivem/enums/ZoneID.ts:69](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L69) |
+| `RGLEN` | `65` | [src/fivem/enums/ZoneID.ts:70](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L70) |
+| `RICHM` | `66` | [src/fivem/enums/ZoneID.ts:71](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L71) |
+| `ROCKF` | `67` | [src/fivem/enums/ZoneID.ts:72](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L72) |
+| `RTRAK` | `68` | [src/fivem/enums/ZoneID.ts:73](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L73) |
+| `SanAnd` | `69` | [src/fivem/enums/ZoneID.ts:74](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L74) |
+| `SANCHIA` | `70` | [src/fivem/enums/ZoneID.ts:75](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L75) |
+| `SANDY` | `71` | [src/fivem/enums/ZoneID.ts:76](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L76) |
+| `SKID` | `72` | [src/fivem/enums/ZoneID.ts:77](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L77) |
+| `SLAB` | `73` | [src/fivem/enums/ZoneID.ts:78](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L78) |
+| `STAD` | `74` | [src/fivem/enums/ZoneID.ts:79](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L79) |
+| `STRAW` | `75` | [src/fivem/enums/ZoneID.ts:80](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L80) |
+| `TATAMO` | `76` | [src/fivem/enums/ZoneID.ts:81](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L81) |
+| `TERMINA` | `77` | [src/fivem/enums/ZoneID.ts:82](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L82) |
+| `TEXTI` | `78` | [src/fivem/enums/ZoneID.ts:83](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L83) |
+| `TONGVAH` | `79` | [src/fivem/enums/ZoneID.ts:84](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L84) |
+| `TONGVAV` | `80` | [src/fivem/enums/ZoneID.ts:85](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L85) |
+| `VCANA` | `81` | [src/fivem/enums/ZoneID.ts:86](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L86) |
+| `VESP` | `82` | [src/fivem/enums/ZoneID.ts:87](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L87) |
+| `VINE` | `83` | [src/fivem/enums/ZoneID.ts:88](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L88) |
+| `WINDF` | `84` | [src/fivem/enums/ZoneID.ts:89](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L89) |
+| `WVINE` | `85` | [src/fivem/enums/ZoneID.ts:90](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L90) |
+| `ZANCUDO` | `86` | [src/fivem/enums/ZoneID.ts:91](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L91) |
+| `ZP_ORT` | `87` | [src/fivem/enums/ZoneID.ts:92](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L92) |
+| `ZQ_UAR` | `88` | [src/fivem/enums/ZoneID.ts:93](https://github.com/nativewrappers/fivem/blob/2d4fa96d0a81695a673fe4c595d3abfefbf554a5/src/fivem/enums/ZoneID.ts#L93) |

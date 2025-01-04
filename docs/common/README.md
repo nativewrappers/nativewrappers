@@ -4,6 +4,12 @@
 
 ## Index
 
+### Enumerations
+
+| Enumeration | Description |
+| ------ | ------ |
+| [ConVarType](enumerations/ConVarType.md) | - |
+
 ### Classes
 
 | Class | Description |
@@ -12,6 +18,7 @@
 | [Convar](classes/Convar.md) | - |
 | [Kvp](classes/Kvp.md) | - |
 | [Maths](classes/Maths.md) | - |
+| [NetworkedMap](classes/NetworkedMap.md) | not ready to be used just thoughts right now |
 | [PointF](classes/PointF.md) | - |
 | [Quaternion](classes/Quaternion.md) | - |
 | [Resource](classes/Resource.md) | - |
@@ -23,8 +30,14 @@
 
 | Function | Description |
 | ------ | ------ |
-| [Delay](functions/Delay.md) | - |
 | [cleanPlayerName](functions/cleanPlayerName.md) | - |
+| [ConVar](functions/ConVar.md) | - |
+| [Delay](functions/Delay.md) | - |
 | [enumValues](functions/enumValues.md) | EnumValues - iterate over enum values Just copy&paste from https://github.com/microsoft/TypeScript/issues/4753#issuecomment-694557208 |
+| [Event](functions/Event.md) | - |
+| [Exports](functions/Exports.md) | - |
 | [getStringFromUInt8Array](functions/getStringFromUInt8Array.md) | - |
 | [getUInt32FromUint8Array](functions/getUInt32FromUint8Array.md) | - |
+| [NetEvent](functions/NetEvent.md) | - |
+| [NuiEvent](functions/NuiEvent.md) | - |
+| [SetTick](functions/SetTick.md) | - |
