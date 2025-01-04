@@ -2,15 +2,15 @@
 
 # Enumeration: VehicleDoorIndex
 
-Defined in: [src/fivem/enums/Vehicle.ts:344](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L344)
+Defined in: [src/fivem/enums/Vehicle.ts:344](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/enums/Vehicle.ts#L344)
 
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| <a id="backleftdoor"></a> `BackLeftDoor` | `2` | [src/fivem/enums/Vehicle.ts:348](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L348) |
-| <a id="backrightdoor"></a> `BackRightDoor` | `3` | [src/fivem/enums/Vehicle.ts:347](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L347) |
-| <a id="frontleftdoor"></a> `FrontLeftDoor` | `0` | [src/fivem/enums/Vehicle.ts:346](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L346) |
-| <a id="frontrightdoor"></a> `FrontRightDoor` | `1` | [src/fivem/enums/Vehicle.ts:345](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L345) |
-| <a id="hood"></a> `Hood` | `4` | [src/fivem/enums/Vehicle.ts:349](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L349) |
-| <a id="trunk"></a> `Trunk` | `5` | [src/fivem/enums/Vehicle.ts:350](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/enums/Vehicle.ts#L350) |
+| <a id="backleftdoor"></a> `BackLeftDoor` | `2` | [src/fivem/enums/Vehicle.ts:348](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/enums/Vehicle.ts#L348) |
+| <a id="backrightdoor"></a> `BackRightDoor` | `3` | [src/fivem/enums/Vehicle.ts:347](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/enums/Vehicle.ts#L347) |
+| <a id="frontleftdoor"></a> `FrontLeftDoor` | `0` | [src/fivem/enums/Vehicle.ts:346](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/enums/Vehicle.ts#L346) |
+| <a id="frontrightdoor"></a> `FrontRightDoor` | `1` | [src/fivem/enums/Vehicle.ts:345](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/enums/Vehicle.ts#L345) |
+| <a id="hood"></a> `Hood` | `4` | [src/fivem/enums/Vehicle.ts:349](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/enums/Vehicle.ts#L349) |
+| <a id="trunk"></a> `Trunk` | `5` | [src/fivem/enums/Vehicle.ts:350](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/enums/Vehicle.ts#L350) |

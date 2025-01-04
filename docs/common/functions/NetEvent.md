@@ -6,7 +6,7 @@
 function NetEvent(eventName, remoteOnly): (originalMethod, context) => void
 ```
 
-Defined in: [src/common/decors/Events.ts:59](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/decors/Events.ts#L59)
+Defined in: [src/common/decors/Events.ts:59](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/common/decors/Events.ts#L59)
 
 ## Parameters
 

@@ -2,7 +2,7 @@
 
 # Class: `abstract` Maths
 
-Defined in: [src/common/utils/Maths.ts:1](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Maths.ts#L1)
+Defined in: [src/common/utils/Maths.ts:1](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/common/utils/Maths.ts#L1)
 
 ## Constructors
 
@@ -27,7 +27,7 @@ static clamp(
    max): number
 ```
 
-Defined in: [src/common/utils/Maths.ts:2](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Maths.ts#L2)
+Defined in: [src/common/utils/Maths.ts:2](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/common/utils/Maths.ts#L2)
 
 #### Parameters
 
@@ -49,7 +49,7 @@ Defined in: [src/common/utils/Maths.ts:2](https://github.com/nativewrappers/five
 static getRandomInt(min, max): number
 ```
 
-Defined in: [src/common/utils/Maths.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/common/utils/Maths.ts#L6)
+Defined in: [src/common/utils/Maths.ts:6](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/common/utils/Maths.ts#L6)
 
 #### Parameters
 

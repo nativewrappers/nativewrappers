@@ -2,7 +2,7 @@
 
 # Class: PointF
 
-Defined in: [src/fivem/utils/PointF.ts:3](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/PointF.ts#L3)
+Defined in: [src/fivem/utils/PointF.ts:3](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/utils/PointF.ts#L3)
 
 ## Implements
 
@@ -19,7 +19,7 @@ new PointF(
    z): PointF
 ```
 
-Defined in: [src/fivem/utils/PointF.ts:13](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/PointF.ts#L13)
+Defined in: [src/fivem/utils/PointF.ts:13](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/utils/PointF.ts#L13)
 
 #### Parameters
 
@@ -37,9 +37,9 @@ Defined in: [src/fivem/utils/PointF.ts:13](https://github.com/nativewrappers/fiv
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="x-1"></a> `x` | `number` | [src/fivem/utils/PointF.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/PointF.ts#L4) |
-| <a id="y-1"></a> `y` | `number` | [src/fivem/utils/PointF.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/PointF.ts#L5) |
-| <a id="z-1"></a> `z` | `number` | [src/fivem/utils/PointF.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/PointF.ts#L6) |
+| <a id="x-1"></a> `x` | `number` | [src/fivem/utils/PointF.ts:4](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/utils/PointF.ts#L4) |
+| <a id="y-1"></a> `y` | `number` | [src/fivem/utils/PointF.ts:5](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/utils/PointF.ts#L5) |
+| <a id="z-1"></a> `z` | `number` | [src/fivem/utils/PointF.ts:6](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/utils/PointF.ts#L6) |
 
 ## Methods
 
@@ -49,7 +49,7 @@ Defined in: [src/fivem/utils/PointF.ts:13](https://github.com/nativewrappers/fiv
 static empty(): PointF
 ```
 
-Defined in: [src/fivem/utils/PointF.ts:10](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/PointF.ts#L10)
+Defined in: [src/fivem/utils/PointF.ts:10](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/utils/PointF.ts#L10)
 
 #### Returns
 

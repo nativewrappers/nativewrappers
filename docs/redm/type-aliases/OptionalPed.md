@@ -6,4 +6,4 @@
 type OptionalPed = Ped | null;
 ```
 
-Defined in: [src/redm/entities/Ped.ts:9](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/redm/entities/Ped.ts#L9)
+Defined in: [src/redm/entities/Ped.ts:9](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/redm/entities/Ped.ts#L9)

@@ -6,6 +6,6 @@
 DlcWeaponComponentData: Map<WeaponComponentHash, DlcWeaponComponentData>;
 ```
 
-Defined in: [src/fivem/weaponComponent/DlcWeaponComponentData.ts:28](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L28)
+Defined in: [src/fivem/weaponComponent/DlcWeaponComponentData.ts:28](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L28)
 
 DlcWeaponComponentData

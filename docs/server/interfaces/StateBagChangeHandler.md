@@ -2,7 +2,7 @@
 
 # Interface: StateBagChangeHandler()\<T\>
 
-Defined in: [src/server/cfx/StateBagChangeHandler.ts:1](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/cfx/StateBagChangeHandler.ts#L1)
+Defined in: [src/server/cfx/StateBagChangeHandler.ts:1](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/server/cfx/StateBagChangeHandler.ts#L1)
 
 ## Type Parameters
 
@@ -19,7 +19,7 @@ interface StateBagChangeHandler(
    replicated): void
 ```
 
-Defined in: [src/server/cfx/StateBagChangeHandler.ts:2](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/server/cfx/StateBagChangeHandler.ts#L2)
+Defined in: [src/server/cfx/StateBagChangeHandler.ts:2](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/server/cfx/StateBagChangeHandler.ts#L2)
 
 ## Parameters
 

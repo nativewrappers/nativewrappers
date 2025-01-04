@@ -2,7 +2,7 @@
 
 # Class: Sprite
 
-Defined in: [src/fivem/ui/Sprite.ts:4](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Sprite.ts#L4)
+Defined in: [src/fivem/ui/Sprite.ts:4](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Sprite.ts#L4)
 
 ## Constructors
 
@@ -18,7 +18,7 @@ new Sprite(
    color?): Sprite
 ```
 
-Defined in: [src/fivem/ui/Sprite.ts:14](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Sprite.ts#L14)
+Defined in: [src/fivem/ui/Sprite.ts:14](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Sprite.ts#L14)
 
 #### Parameters
 
@@ -39,12 +39,12 @@ Defined in: [src/fivem/ui/Sprite.ts:14](https://github.com/nativewrappers/fivem/
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="color-1"></a> `color` | `public` | [`Color`](Color.md) | [src/fivem/ui/Sprite.ts:9](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Sprite.ts#L9) |
-| <a id="heading-1"></a> `heading` | `public` | `number` | [src/fivem/ui/Sprite.ts:8](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Sprite.ts#L8) |
-| <a id="pos-1"></a> `pos` | `public` | [`Point`](Point.md) | [src/fivem/ui/Sprite.ts:6](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Sprite.ts#L6) |
-| <a id="size-1"></a> `size` | `public` | [`Size`](Size.md) | [src/fivem/ui/Sprite.ts:7](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Sprite.ts#L7) |
-| <a id="texturename-1"></a> `textureName` | `public` | `string` | [src/fivem/ui/Sprite.ts:5](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Sprite.ts#L5) |
-| <a id="visible"></a> `visible` | `public` | `boolean` | [src/fivem/ui/Sprite.ts:10](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Sprite.ts#L10) |
+| <a id="color-1"></a> `color` | `public` | [`Color`](Color.md) | [src/fivem/ui/Sprite.ts:9](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Sprite.ts#L9) |
+| <a id="heading-1"></a> `heading` | `public` | `number` | [src/fivem/ui/Sprite.ts:8](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Sprite.ts#L8) |
+| <a id="pos-1"></a> `pos` | `public` | [`Point`](Point.md) | [src/fivem/ui/Sprite.ts:6](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Sprite.ts#L6) |
+| <a id="size-1"></a> `size` | `public` | [`Size`](Size.md) | [src/fivem/ui/Sprite.ts:7](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Sprite.ts#L7) |
+| <a id="texturename-1"></a> `textureName` | `public` | `string` | [src/fivem/ui/Sprite.ts:5](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Sprite.ts#L5) |
+| <a id="visible"></a> `visible` | `public` | `boolean` | [src/fivem/ui/Sprite.ts:10](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Sprite.ts#L10) |
 
 ## Accessors
 
@@ -56,7 +56,7 @@ Defined in: [src/fivem/ui/Sprite.ts:14](https://github.com/nativewrappers/fivem/
 get IsTextureDictionaryLoaded(): boolean
 ```
 
-Defined in: [src/fivem/ui/Sprite.ts:51](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Sprite.ts#L51)
+Defined in: [src/fivem/ui/Sprite.ts:51](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Sprite.ts#L51)
 
 ##### Returns
 
@@ -72,7 +72,7 @@ Defined in: [src/fivem/ui/Sprite.ts:51](https://github.com/nativewrappers/fivem/
 get TextureDict(): string
 ```
 
-Defined in: [src/fivem/ui/Sprite.ts:47](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Sprite.ts#L47)
+Defined in: [src/fivem/ui/Sprite.ts:47](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Sprite.ts#L47)
 
 ##### Returns
 
@@ -84,7 +84,7 @@ Defined in: [src/fivem/ui/Sprite.ts:47](https://github.com/nativewrappers/fivem/
 set TextureDict(v): void
 ```
 
-Defined in: [src/fivem/ui/Sprite.ts:40](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Sprite.ts#L40)
+Defined in: [src/fivem/ui/Sprite.ts:40](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Sprite.ts#L40)
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ Defined in: [src/fivem/ui/Sprite.ts:40](https://github.com/nativewrappers/fivem/
 draw(resolution?): void
 ```
 
-Defined in: [src/fivem/ui/Sprite.ts:55](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Sprite.ts#L55)
+Defined in: [src/fivem/ui/Sprite.ts:55](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Sprite.ts#L55)
 
 ##### Parameters
 
@@ -132,7 +132,7 @@ draw(
    resolution?): void
 ```
 
-Defined in: [src/fivem/ui/Sprite.ts:56](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Sprite.ts#L56)
+Defined in: [src/fivem/ui/Sprite.ts:56](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Sprite.ts#L56)
 
 ##### Parameters
 
@@ -159,7 +159,7 @@ Defined in: [src/fivem/ui/Sprite.ts:56](https://github.com/nativewrappers/fivem/
 loadTextureDictionary(): void
 ```
 
-Defined in: [src/fivem/ui/Sprite.ts:31](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/ui/Sprite.ts#L31)
+Defined in: [src/fivem/ui/Sprite.ts:31](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Sprite.ts#L31)
 
 #### Returns
 

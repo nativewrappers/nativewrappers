@@ -2,7 +2,7 @@
 
 # Class: Point
 
-Defined in: [src/fivem/utils/Point.ts:1](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/Point.ts#L1)
+Defined in: [src/fivem/utils/Point.ts:1](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/utils/Point.ts#L1)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/fivem/utils/Point.ts:1](https://github.com/nativewrappers/fivem
 new Point(x, y): Point
 ```
 
-Defined in: [src/fivem/utils/Point.ts:28](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/Point.ts#L28)
+Defined in: [src/fivem/utils/Point.ts:28](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/utils/Point.ts#L28)
 
 #### Parameters
 
@@ -29,8 +29,8 @@ Defined in: [src/fivem/utils/Point.ts:28](https://github.com/nativewrappers/five
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="x-1"></a> `X` | `public` | `number` | [src/fivem/utils/Point.ts:25](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/Point.ts#L25) |
-| <a id="y-1"></a> `Y` | `public` | `number` | [src/fivem/utils/Point.ts:26](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/Point.ts#L26) |
+| <a id="x-1"></a> `X` | `public` | `number` | [src/fivem/utils/Point.ts:25](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/utils/Point.ts#L25) |
+| <a id="y-1"></a> `Y` | `public` | `number` | [src/fivem/utils/Point.ts:26](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/utils/Point.ts#L26) |
 
 ## Methods
 
@@ -40,7 +40,7 @@ Defined in: [src/fivem/utils/Point.ts:28](https://github.com/nativewrappers/five
 static parse(arg): Point
 ```
 
-Defined in: [src/fivem/utils/Point.ts:2](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/Point.ts#L2)
+Defined in: [src/fivem/utils/Point.ts:2](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/utils/Point.ts#L2)
 
 #### Parameters
 

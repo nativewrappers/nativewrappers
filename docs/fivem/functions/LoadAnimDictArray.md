@@ -6,7 +6,7 @@
 function LoadAnimDictArray(animDict, waitTime): Promise<[boolean, null | string[]]>
 ```
 
-Defined in: [src/fivem/utils/Animations.ts:33](https://github.com/nativewrappers/fivem/blob/b9a4f02a0f902a29cccc3c350b3c8379abeb4a1b/src/fivem/utils/Animations.ts#L33)
+Defined in: [src/fivem/utils/Animations.ts:33](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/utils/Animations.ts#L33)
 
 A utility to load multiple animation dictionary, anything that loads an animation should RemoveAnimDict after its finish being used.
 
