@@ -35,8 +35,7 @@
 	],
 	"scripts": {
 		"delete": "rm -rf lib",
-		"build": "pnpm run delete && tsc --build && tsc-alias && pnpm run copy-data",
-		"copy-data": "cp package.json lib/package.json && cp README.md lib/README.md",
+		"build": "pnpm run delete && tsc --build && tsc-alias && node postbuild.js",
 		"watch": "tsc --watch",
 		"ci": "pnpm run check && pnpm run build && pnpm typedoc",
 		"check": "pnpm biome format",

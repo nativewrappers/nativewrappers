@@ -35,6 +35,13 @@ jobs:
 
       # because we update the package version pnpm will get mad over an unclean branch
       # we don't want a bunch of version bump commits so just ignore the git checks
-      - run: pnpm publish --no-git-checks
+      - name: Publish packages
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        run: |
+          for dir in ./lib/*; do
+            if [ -f "$dir/package.json" ]; then
+              echo "Publishing $dir..."
+              pnpm publish --no-git-checks "$dir"
+            fi
+          done
