@@ -10,6 +10,29 @@ export class BaseEntity {
   protected type = ClassTypes.Entity;
   constructor(protected handle: number) {}
 
+  // Replaces the current handle for the entity used on, this hsould be used sparringly, mainly
+  // in situations where you're going to reuse an entity over and over and don't want to make a
+  // new entity every time.
+  //
+  // **WARNING**: This does no checks, if you provide it an invalid entity it will use it
+  //
+  // ```ts
+  // const REUSABLE_ENTITY = new Entity(entityHandle);
+  //
+  // onNet("entityHandler", (entNetId: number) => {
+  //  // if no net entity we should ignore
+  //  const entId = NetworkGetEntityFromNetworkId(entNetId);
+  //  if (entId === 0) return;
+  //
+  //  // Reuse our entity so we don't have to initialize a new one
+  //  REUSABLE_ENTITY.replaceHandle(entId);
+  //  // Do something with REUSABLE_ENTITY entity
+  // })
+  // ```
+  replaceHandle(newHandle: number) {
+    this.handle = newHandle;
+  }
+
   static fromNetworkId(networkId: number): BaseEntity | null {
     const ent = NetworkGetEntityFromNetworkId(networkId);
     if (ent === 0) return null;
