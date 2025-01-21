@@ -2,7 +2,7 @@
 
 # Class: Notification
 
-Defined in: [src/fivem/ui/Notification.ts:1](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Notification.ts#L1)
+Defined in: [src/fivem/ui/Notification.ts:1](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/ui/Notification.ts#L1)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/fivem/ui/Notification.ts:1](https://github.com/nativewrappers/f
 new Notification(handle): Notification
 ```
 
-Defined in: [src/fivem/ui/Notification.ts:4](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Notification.ts#L4)
+Defined in: [src/fivem/ui/Notification.ts:4](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/ui/Notification.ts#L4)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [src/fivem/ui/Notification.ts:4](https://github.com/nativewrappers/f
 hide(): void
 ```
 
-Defined in: [src/fivem/ui/Notification.ts:8](https://github.com/nativewrappers/fivem/blob/712f0bf92fff25cfcad1f759429c48668c195b4a/src/fivem/ui/Notification.ts#L8)
+Defined in: [src/fivem/ui/Notification.ts:8](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/ui/Notification.ts#L8)
 
 #### Returns
 
