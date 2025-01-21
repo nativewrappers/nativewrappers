@@ -213,6 +213,10 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   [Symbol.dispose]() {
     removeEventListener("playerDropped", this.onPlayerDropped);
 
+    this.#subscribers.clear();
+    this.#changeListeners.clear();
+    this.#queuedChanges = [];
+
     GlobalData.NetworkedTicks.filter((v) => v !== this);
   }
 
