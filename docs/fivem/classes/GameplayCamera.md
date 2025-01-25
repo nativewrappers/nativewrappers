@@ -2,7 +2,7 @@
 
 # Class: `abstract` GameplayCamera
 
-Defined in: [src/fivem/GameplayCamera.ts:8](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L8)
+Defined in: [src/fivem/GameplayCamera.ts:8](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L8)
 
 The current rendering gameplay camera
 
@@ -28,7 +28,7 @@ new GameplayCamera(): GameplayCamera
 get static FieldOfView(): number
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:95](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L95)
+Defined in: [src/fivem/GameplayCamera.ts:95](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L95)
 
 Gets field of view of the gameplay camera.
 
@@ -46,7 +46,7 @@ Gets field of view of the gameplay camera.
 get static ForwardVector(): Vector3
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:26](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L26)
+Defined in: [src/fivem/GameplayCamera.ts:26](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L26)
 
 Get the forward vector of gameplay camera.
 
@@ -64,7 +64,7 @@ Get the forward vector of gameplay camera.
 get static IsAimCamActive(): boolean
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:113](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L113)
+Defined in: [src/fivem/GameplayCamera.ts:113](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L113)
 
 Gets a value indicating whether the aiming camera is rendering.
 
@@ -84,7 +84,7 @@ true if the aiming camera is rendering; otherwise, false.
 get static IsFirstPersonAimCamActive(): boolean
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:122](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L122)
+Defined in: [src/fivem/GameplayCamera.ts:122](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L122)
 
 Gets a value indicating whether the first person aiming camera is rendering.
 
@@ -104,7 +104,7 @@ true if the first person aiming camera is rendering; otherwise, false.
 get static IsLookingBehind(): boolean
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:131](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L131)
+Defined in: [src/fivem/GameplayCamera.ts:131](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L131)
 
 Gets a value indicating whether the gameplay camera is looking behind.
 
@@ -124,7 +124,7 @@ true if the gameplay camera is looking behind; otherwise, false.
 get static IsRendering(): boolean
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:104](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L104)
+Defined in: [src/fivem/GameplayCamera.ts:104](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L104)
 
 Gets a value indicating whether the gameplay camera is rendering.
 
@@ -144,7 +144,7 @@ true if the gameplay camera is rendering; otherwise, false.
 get static IsShaking(): boolean
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:157](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L157)
+Defined in: [src/fivem/GameplayCamera.ts:157](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L157)
 
 Gets a value indicating whether the gameplay camera is shaking.
 
@@ -164,7 +164,7 @@ true if the gameplay camera is shaking; otherwise, false.
 get static Position(): Vector3
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:12](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L12)
+Defined in: [src/fivem/GameplayCamera.ts:12](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L12)
 
 Get the world position of gameplay camera.
 
@@ -182,7 +182,7 @@ Get the world position of gameplay camera.
 get static RelativeHeading(): number
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:54](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L54)
+Defined in: [src/fivem/GameplayCamera.ts:54](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L54)
 
 Get heading of gameplay camera.
 
@@ -196,7 +196,7 @@ Get heading of gameplay camera.
 set static RelativeHeading(heading): void
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:61](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L61)
+Defined in: [src/fivem/GameplayCamera.ts:61](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L61)
 
 Get heading of gameplay camera.
 
@@ -220,7 +220,7 @@ Get heading of gameplay camera.
 get static RelativePitch(): number
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:40](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L40)
+Defined in: [src/fivem/GameplayCamera.ts:40](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L40)
 
 Get the pitch of the gameplay camera relative to player.
 
@@ -234,7 +234,7 @@ Get the pitch of the gameplay camera relative to player.
 set static RelativePitch(pitch): void
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:47](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L47)
+Defined in: [src/fivem/GameplayCamera.ts:47](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L47)
 
 Set gameplay camera pitch relative to player.
 
@@ -258,7 +258,7 @@ Set gameplay camera pitch relative to player.
 get static Rotation(): Vector3
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:19](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L19)
+Defined in: [src/fivem/GameplayCamera.ts:19](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L19)
 
 Get the rotation of gameplay camera.
 
@@ -276,7 +276,7 @@ Get the rotation of gameplay camera.
 set static ShakeAmplitude(value): void
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:164](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L164)
+Defined in: [src/fivem/GameplayCamera.ts:164](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L164)
 
 Sets the shake amplitude for the gameplay camera.
 
@@ -300,7 +300,7 @@ Sets the shake amplitude for the gameplay camera.
 get static Zoom(): number
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:88](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L88)
+Defined in: [src/fivem/GameplayCamera.ts:88](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L88)
 
 Gets zoom of the gameplay camera.
 
@@ -316,7 +316,7 @@ Gets zoom of the gameplay camera.
 static clampPitch(min, max): void
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:81](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L81)
+Defined in: [src/fivem/GameplayCamera.ts:81](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L81)
 
 Clamps the pitch of the gameplay camera.
 
@@ -339,7 +339,7 @@ Clamps the pitch of the gameplay camera.
 static clampYaw(min, max): void
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:71](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L71)
+Defined in: [src/fivem/GameplayCamera.ts:71](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L71)
 
 Clamps the yaw of the gameplay camera.
 
@@ -362,7 +362,7 @@ Clamps the yaw of the gameplay camera.
 static shake(shakeType, amplitude): void
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:141](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L141)
+Defined in: [src/fivem/GameplayCamera.ts:141](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L141)
 
 Shakes the gameplay camera.
 
@@ -385,7 +385,7 @@ Shakes the gameplay camera.
 static stopShaking(): void
 ```
 
-Defined in: [src/fivem/GameplayCamera.ts:148](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/GameplayCamera.ts#L148)
+Defined in: [src/fivem/GameplayCamera.ts:148](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/GameplayCamera.ts#L148)
 
 Stops shaking the gameplay camera.
 

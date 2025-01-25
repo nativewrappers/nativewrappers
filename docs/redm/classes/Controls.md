@@ -2,7 +2,7 @@
 
 # Class: Controls
 
-Defined in: [src/redm/Controls.ts:3](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/redm/Controls.ts#L3)
+Defined in: [src/redm/Controls.ts:3](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/redm/Controls.ts#L3)
 
 ## Constructors
 
@@ -24,7 +24,7 @@ new Controls(): Controls
 static DisableControl(hash): void
 ```
 
-Defined in: [src/redm/Controls.ts:16](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/redm/Controls.ts#L16)
+Defined in: [src/redm/Controls.ts:16](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/redm/Controls.ts#L16)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [src/redm/Controls.ts:16](https://github.com/nativewrappers/nativewr
 static IsDisabledInputPressed(hash): boolean
 ```
 
-Defined in: [src/redm/Controls.ts:12](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/redm/Controls.ts#L12)
+Defined in: [src/redm/Controls.ts:12](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/redm/Controls.ts#L12)
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: [src/redm/Controls.ts:12](https://github.com/nativewrappers/nativewr
 static IsInputJustPressed(hash): boolean
 ```
 
-Defined in: [src/redm/Controls.ts:4](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/redm/Controls.ts#L4)
+Defined in: [src/redm/Controls.ts:4](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/redm/Controls.ts#L4)
 
 #### Parameters
 
@@ -84,7 +84,7 @@ Defined in: [src/redm/Controls.ts:4](https://github.com/nativewrappers/nativewra
 static IsInputPressed(hash): boolean
 ```
 
-Defined in: [src/redm/Controls.ts:8](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/redm/Controls.ts#L8)
+Defined in: [src/redm/Controls.ts:8](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/redm/Controls.ts#L8)
 
 #### Parameters
 

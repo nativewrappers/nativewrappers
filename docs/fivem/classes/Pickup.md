@@ -2,7 +2,7 @@
 
 # Class: Pickup
 
-Defined in: [src/fivem/Pickup.ts:3](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/Pickup.ts#L3)
+Defined in: [src/fivem/Pickup.ts:3](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/Pickup.ts#L3)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/fivem/Pickup.ts:3](https://github.com/nativewrappers/nativewrap
 new Pickup(handle): Pickup
 ```
 
-Defined in: [src/fivem/Pickup.ts:6](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/Pickup.ts#L6)
+Defined in: [src/fivem/Pickup.ts:6](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/Pickup.ts#L6)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [src/fivem/Pickup.ts:6](https://github.com/nativewrappers/nativewrap
 get IsCollected(): boolean
 ```
 
-Defined in: [src/fivem/Pickup.ts:14](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/Pickup.ts#L14)
+Defined in: [src/fivem/Pickup.ts:14](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/Pickup.ts#L14)
 
 ##### Returns
 
@@ -50,7 +50,7 @@ Defined in: [src/fivem/Pickup.ts:14](https://github.com/nativewrappers/nativewra
 get Position(): Vector3
 ```
 
-Defined in: [src/fivem/Pickup.ts:10](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/Pickup.ts#L10)
+Defined in: [src/fivem/Pickup.ts:10](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/Pickup.ts#L10)
 
 ##### Returns
 
@@ -64,7 +64,7 @@ Defined in: [src/fivem/Pickup.ts:10](https://github.com/nativewrappers/nativewra
 delete(): void
 ```
 
-Defined in: [src/fivem/Pickup.ts:18](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/Pickup.ts#L18)
+Defined in: [src/fivem/Pickup.ts:18](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/Pickup.ts#L18)
 
 #### Returns
 
@@ -78,7 +78,7 @@ Defined in: [src/fivem/Pickup.ts:18](https://github.com/nativewrappers/nativewra
 exists(): boolean
 ```
 
-Defined in: [src/fivem/Pickup.ts:22](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/Pickup.ts#L22)
+Defined in: [src/fivem/Pickup.ts:22](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/Pickup.ts#L22)
 
 #### Returns
 

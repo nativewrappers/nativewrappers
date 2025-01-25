@@ -24,6 +24,8 @@
 | [Controls](classes/Controls.md) | - |
 | [CoreAttribute](classes/CoreAttribute.md) | - |
 | [Entity](classes/Entity.md) | - |
+| [Game](classes/Game.md) | - |
+| [GameConstants](classes/GameConstants.md) | - |
 | [Ped](classes/Ped.md) | - |
 | [PedAttribute](classes/PedAttribute.md) | - |
 | [Player](classes/Player.md) | - |

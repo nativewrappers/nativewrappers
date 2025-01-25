@@ -2,13 +2,13 @@
 
 # Enumeration: LicensePlateType
 
-Defined in: [src/fivem/enums/Vehicle.ts:15](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/enums/Vehicle.ts#L15)
+Defined in: [src/fivem/enums/Vehicle.ts:15](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/enums/Vehicle.ts#L15)
 
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| <a id="frontandrearplates"></a> `FrontAndRearPlates` | `0` | [src/fivem/enums/Vehicle.ts:16](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/enums/Vehicle.ts#L16) |
-| <a id="frontplate"></a> `FrontPlate` | `1` | [src/fivem/enums/Vehicle.ts:17](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/enums/Vehicle.ts#L17) |
-| <a id="none"></a> `None` | `3` | [src/fivem/enums/Vehicle.ts:19](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/enums/Vehicle.ts#L19) |
-| <a id="rearplate"></a> `RearPlate` | `2` | [src/fivem/enums/Vehicle.ts:18](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/enums/Vehicle.ts#L18) |
+| <a id="frontandrearplates"></a> `FrontAndRearPlates` | `0` | [src/fivem/enums/Vehicle.ts:16](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/enums/Vehicle.ts#L16) |
+| <a id="frontplate"></a> `FrontPlate` | `1` | [src/fivem/enums/Vehicle.ts:17](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/enums/Vehicle.ts#L17) |
+| <a id="none"></a> `None` | `3` | [src/fivem/enums/Vehicle.ts:19](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/enums/Vehicle.ts#L19) |
+| <a id="rearplate"></a> `RearPlate` | `2` | [src/fivem/enums/Vehicle.ts:18](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/enums/Vehicle.ts#L18) |

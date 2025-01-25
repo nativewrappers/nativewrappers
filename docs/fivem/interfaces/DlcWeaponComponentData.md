@@ -2,7 +2,7 @@
 
 # Interface: DlcWeaponComponentData
 
-Defined in: [src/fivem/weaponComponent/DlcWeaponComponentData.ts:28](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L28)
+Defined in: [src/fivem/weaponComponent/DlcWeaponComponentData.ts:28](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L28)
 
 DlcWeaponComponentData
 refer1: https://github.com/citizenfx/fivem/blob/master/code/client/clrcore/External/DlcWeaponStructs.cs#L130
@@ -30,11 +30,11 @@ char descLabel[64];
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="attachbone"></a> `attachBone` | `number` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:29](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L29) |
-| <a id="bactivebydefault"></a> `bActiveByDefault` | `number` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:30](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L30) |
-| <a id="componentcost"></a> `componentCost` | `number` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:34](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L34) |
-| <a id="componenthash"></a> `componentHash` | `number` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:32](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L32) |
-| <a id="desc"></a> `desc` | `string` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:36](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L36) |
-| <a id="name"></a> `name` | `string` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:35](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L35) |
-| <a id="unk"></a> `unk` | `number` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:31](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L31) |
-| <a id="unk2"></a> `unk2` | `number` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:33](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L33) |
+| <a id="attachbone"></a> `attachBone` | `number` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:29](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L29) |
+| <a id="bactivebydefault"></a> `bActiveByDefault` | `number` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:30](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L30) |
+| <a id="componentcost"></a> `componentCost` | `number` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:34](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L34) |
+| <a id="componenthash"></a> `componentHash` | `number` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:32](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L32) |
+| <a id="desc"></a> `desc` | `string` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:36](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L36) |
+| <a id="name"></a> `name` | `string` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:35](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L35) |
+| <a id="unk"></a> `unk` | `number` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:31](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L31) |
+| <a id="unk2"></a> `unk2` | `number` | [src/fivem/weaponComponent/DlcWeaponComponentData.ts:33](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weaponComponent/DlcWeaponComponentData.ts#L33) |
