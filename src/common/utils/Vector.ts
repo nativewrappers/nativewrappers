@@ -742,6 +742,32 @@ export class Vector3 extends Vector implements Vec3 {
 
   public static readonly Zero: Vector3 = new Vector3(0, 0, 0);
 
+  public static readonly UnitX = new Vector3(1.0, 0.0, 0.0);
+
+  public static readonly UnitY = new Vector3(0.0, 1.0, 0.0);
+
+  public static readonly UnitZ = new Vector3(0.0, 0.0, 1.0);
+
+  public static readonly One = new Vector3(1.0, 1.0, 1.0);
+
+  public static readonly Up = new Vector3(0.0, 0.0, 1.0);
+
+  public static readonly Down = new Vector3(0.0, 0.0, -1.0);
+
+  public static readonly Left = new Vector3(-1.0, 0.0, 0.0);
+
+  public static readonly Right = new Vector3(1.0, 0.0, 0.0);
+
+  public static readonly ForwardRH = new Vector3(0.0, 1.0, 0.0);
+
+  public static readonly ForwardLH = new Vector3(0.0, -1.0, 0.0);
+
+  public static readonly BackwardRH = new Vector3(0.0, -1.0, 0.0);
+
+  public static readonly BackwardLH = new Vector3(0.0, 1.0, 0.0);
+
+  public static readonly Backward = Vector3.BackwardRH;
+
   /**
    * Constructs a new 3D vector.
    * @param x The x-component of the vector.
