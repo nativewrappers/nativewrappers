@@ -10,6 +10,7 @@
 | [eDamageCleanliness](enumerations/eDamageCleanliness.md) | - |
 | [eHudStatusEffect](enumerations/eHudStatusEffect.md) | - |
 | [ePedAttribute](enumerations/ePedAttribute.md) | - |
+| [KeyHash](enumerations/KeyHash.md) | - |
 | [KnockOffVehicle](enumerations/KnockOffVehicle.md) | - |
 | [Relationship](enumerations/Relationship.md) | - |
 | [TamingState](enumerations/TamingState.md) | - |
@@ -20,6 +21,7 @@
 | Class | Description |
 | ------ | ------ |
 | [Attributes](classes/Attributes.md) | - |
+| [Controls](classes/Controls.md) | - |
 | [CoreAttribute](classes/CoreAttribute.md) | - |
 | [Entity](classes/Entity.md) | - |
 | [Ped](classes/Ped.md) | - |

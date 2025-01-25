@@ -2,7 +2,7 @@
 
 # Class: VehicleMod
 
-Defined in: [src/fivem/models/VehicleMod.ts:4](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/models/VehicleMod.ts#L4)
+Defined in: [src/fivem/models/VehicleMod.ts:4](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/models/VehicleMod.ts#L4)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/fivem/models/VehicleMod.ts:4](https://github.com/nativewrappers
 new VehicleMod(owner, modType): VehicleMod
 ```
 
-Defined in: [src/fivem/models/VehicleMod.ts:8](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/models/VehicleMod.ts#L8)
+Defined in: [src/fivem/models/VehicleMod.ts:8](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/models/VehicleMod.ts#L8)
 
 #### Parameters
 
@@ -35,7 +35,7 @@ Defined in: [src/fivem/models/VehicleMod.ts:8](https://github.com/nativewrappers
 get Index(): number
 ```
 
-Defined in: [src/fivem/models/VehicleMod.ts:21](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/models/VehicleMod.ts#L21)
+Defined in: [src/fivem/models/VehicleMod.ts:21](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/models/VehicleMod.ts#L21)
 
 ##### Returns
 
@@ -47,7 +47,7 @@ Defined in: [src/fivem/models/VehicleMod.ts:21](https://github.com/nativewrapper
 set Index(value): void
 ```
 
-Defined in: [src/fivem/models/VehicleMod.ts:25](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/models/VehicleMod.ts#L25)
+Defined in: [src/fivem/models/VehicleMod.ts:25](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/models/VehicleMod.ts#L25)
 
 ##### Parameters
 
@@ -69,7 +69,7 @@ Defined in: [src/fivem/models/VehicleMod.ts:25](https://github.com/nativewrapper
 get ModCount(): number
 ```
 
-Defined in: [src/fivem/models/VehicleMod.ts:37](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/models/VehicleMod.ts#L37)
+Defined in: [src/fivem/models/VehicleMod.ts:37](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/models/VehicleMod.ts#L37)
 
 ##### Returns
 
@@ -85,7 +85,7 @@ Defined in: [src/fivem/models/VehicleMod.ts:37](https://github.com/nativewrapper
 get ModType(): VehicleModType
 ```
 
-Defined in: [src/fivem/models/VehicleMod.ts:13](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/models/VehicleMod.ts#L13)
+Defined in: [src/fivem/models/VehicleMod.ts:13](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/models/VehicleMod.ts#L13)
 
 ##### Returns
 
@@ -97,7 +97,7 @@ Defined in: [src/fivem/models/VehicleMod.ts:13](https://github.com/nativewrapper
 set ModType(modType): void
 ```
 
-Defined in: [src/fivem/models/VehicleMod.ts:17](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/models/VehicleMod.ts#L17)
+Defined in: [src/fivem/models/VehicleMod.ts:17](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/models/VehicleMod.ts#L17)
 
 ##### Parameters
 
@@ -119,7 +119,7 @@ Defined in: [src/fivem/models/VehicleMod.ts:17](https://github.com/nativewrapper
 get Variation(): boolean
 ```
 
-Defined in: [src/fivem/models/VehicleMod.ts:29](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/models/VehicleMod.ts#L29)
+Defined in: [src/fivem/models/VehicleMod.ts:29](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/models/VehicleMod.ts#L29)
 
 ##### Returns
 
@@ -131,7 +131,7 @@ Defined in: [src/fivem/models/VehicleMod.ts:29](https://github.com/nativewrapper
 set Variation(value): void
 ```
 
-Defined in: [src/fivem/models/VehicleMod.ts:33](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/models/VehicleMod.ts#L33)
+Defined in: [src/fivem/models/VehicleMod.ts:33](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/models/VehicleMod.ts#L33)
 
 ##### Parameters
 
@@ -153,7 +153,7 @@ Defined in: [src/fivem/models/VehicleMod.ts:33](https://github.com/nativewrapper
 get Vehicle(): Vehicle
 ```
 
-Defined in: [src/fivem/models/VehicleMod.ts:41](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/models/VehicleMod.ts#L41)
+Defined in: [src/fivem/models/VehicleMod.ts:41](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/models/VehicleMod.ts#L41)
 
 ##### Returns
 
@@ -167,7 +167,7 @@ Defined in: [src/fivem/models/VehicleMod.ts:41](https://github.com/nativewrapper
 remove(): void
 ```
 
-Defined in: [src/fivem/models/VehicleMod.ts:45](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/models/VehicleMod.ts#L45)
+Defined in: [src/fivem/models/VehicleMod.ts:45](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/models/VehicleMod.ts#L45)
 
 #### Returns
 

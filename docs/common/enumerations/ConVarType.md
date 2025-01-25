@@ -2,13 +2,13 @@
 
 # Enumeration: ConVarType
 
-Defined in: [src/common/decors/Events.ts:1](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/common/decors/Events.ts#L1)
+Defined in: [src/common/decors/Events.ts:1](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/common/decors/Events.ts#L1)
 
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| <a id="boolean"></a> `Boolean` | `3` | [src/common/decors/Events.ts:5](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/common/decors/Events.ts#L5) |
-| <a id="float"></a> `Float` | `2` | [src/common/decors/Events.ts:4](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/common/decors/Events.ts#L4) |
-| <a id="integer"></a> `Integer` | `1` | [src/common/decors/Events.ts:3](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/common/decors/Events.ts#L3) |
-| <a id="string"></a> `String` | `0` | [src/common/decors/Events.ts:2](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/common/decors/Events.ts#L2) |
+| <a id="boolean"></a> `Boolean` | `3` | [src/common/decors/Events.ts:5](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/common/decors/Events.ts#L5) |
+| <a id="float"></a> `Float` | `2` | [src/common/decors/Events.ts:4](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/common/decors/Events.ts#L4) |
+| <a id="integer"></a> `Integer` | `1` | [src/common/decors/Events.ts:3](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/common/decors/Events.ts#L3) |
+| <a id="string"></a> `String` | `0` | [src/common/decors/Events.ts:2](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/common/decors/Events.ts#L2) |

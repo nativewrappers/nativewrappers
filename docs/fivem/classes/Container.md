@@ -2,7 +2,7 @@
 
 # Class: Container
 
-Defined in: [src/fivem/ui/Container.ts:4](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/ui/Container.ts#L4)
+Defined in: [src/fivem/ui/Container.ts:4](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/ui/Container.ts#L4)
 
 ## Implements
 
@@ -19,7 +19,7 @@ new Container(
    color): Container
 ```
 
-Defined in: [src/fivem/ui/Container.ts:10](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/ui/Container.ts#L10)
+Defined in: [src/fivem/ui/Container.ts:10](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/ui/Container.ts#L10)
 
 #### Parameters
 
@@ -37,10 +37,10 @@ Defined in: [src/fivem/ui/Container.ts:10](https://github.com/nativewrappers/nat
 
 | Property | Modifier | Type | Default value | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| <a id="color-1"></a> `color` | `public` | [`Color`](Color.md) | `undefined` | [src/fivem/ui/Container.ts:7](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/ui/Container.ts#L7) |
-| <a id="items"></a> `items` | `public` | [`IDrawable`](../interfaces/IDrawable.md)[] | `[]` | [src/fivem/ui/Container.ts:8](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/ui/Container.ts#L8) |
-| <a id="pos-1"></a> `pos` | `public` | [`Point`](Point.md) | `undefined` | [src/fivem/ui/Container.ts:5](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/ui/Container.ts#L5) |
-| <a id="size-1"></a> `size` | `public` | [`Size`](Size.md) | `undefined` | [src/fivem/ui/Container.ts:6](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/ui/Container.ts#L6) |
+| <a id="color-1"></a> `color` | `public` | [`Color`](Color.md) | `undefined` | [src/fivem/ui/Container.ts:7](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/ui/Container.ts#L7) |
+| <a id="items"></a> `items` | `public` | [`IDrawable`](../interfaces/IDrawable.md)[] | `[]` | [src/fivem/ui/Container.ts:8](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/ui/Container.ts#L8) |
+| <a id="pos-1"></a> `pos` | `public` | [`Point`](Point.md) | `undefined` | [src/fivem/ui/Container.ts:5](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/ui/Container.ts#L5) |
+| <a id="size-1"></a> `size` | `public` | [`Size`](Size.md) | `undefined` | [src/fivem/ui/Container.ts:6](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/ui/Container.ts#L6) |
 
 ## Methods
 
@@ -50,7 +50,7 @@ Defined in: [src/fivem/ui/Container.ts:10](https://github.com/nativewrappers/nat
 addItem(items): void
 ```
 
-Defined in: [src/fivem/ui/Container.ts:16](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/ui/Container.ts#L16)
+Defined in: [src/fivem/ui/Container.ts:16](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/ui/Container.ts#L16)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [src/fivem/ui/Container.ts:16](https://github.com/nativewrappers/nat
 draw(offset?, resolution?): void
 ```
 
-Defined in: [src/fivem/ui/Container.ts:23](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/ui/Container.ts#L23)
+Defined in: [src/fivem/ui/Container.ts:23](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/ui/Container.ts#L23)
 
 #### Parameters
 

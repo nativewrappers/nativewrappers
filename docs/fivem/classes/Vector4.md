@@ -2,7 +2,7 @@
 
 # Class: Vector4
 
-Defined in: lib/common/utils/Vector.d.ts:356
+Defined in: lib/common/utils/Vector.d.ts:369
 
 Represents a 4-dimensional vector.
 
@@ -22,7 +22,7 @@ new Vector4(
    w?): Vector4
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:368
+Defined in: lib/common/utils/Vector.d.ts:381
 
 Constructs a new 4D vector.
 
@@ -50,12 +50,12 @@ Vector.constructor
 | Property | Modifier | Type | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | <a id="size"></a> `size` | `public` | `number` | - | `Vector.size` | lib/common/utils/Vector.d.ts:53 |
-| <a id="type"></a> `type` | `public` | `ClassTypes` | `Vector.type` | - | lib/common/utils/Vector.d.ts:357 |
-| <a id="w-1"></a> `w` | `public` | `number` | `Vector.w` | - | lib/common/utils/Vector.d.ts:359 |
+| <a id="type"></a> `type` | `public` | `ClassTypes` | `Vector.type` | - | lib/common/utils/Vector.d.ts:370 |
+| <a id="w-1"></a> `w` | `public` | `number` | `Vector.w` | - | lib/common/utils/Vector.d.ts:372 |
 | <a id="x-1"></a> `x` | `public` | `number` | - | `Vector.x` | lib/common/utils/Vector.d.ts:54 |
 | <a id="y-1"></a> `y` | `public` | `number` | - | `Vector.y` | lib/common/utils/Vector.d.ts:55 |
-| <a id="z-1"></a> `z` | `public` | `number` | `Vector.z` | - | lib/common/utils/Vector.d.ts:358 |
-| <a id="zero"></a> `Zero` | `readonly` | [`Vector4`](Vector4.md) | - | - | lib/common/utils/Vector.d.ts:360 |
+| <a id="z-1"></a> `z` | `public` | `number` | `Vector.z` | - | lib/common/utils/Vector.d.ts:371 |
+| <a id="zero"></a> `Zero` | `readonly` | [`Vector4`](Vector4.md) | - | - | lib/common/utils/Vector.d.ts:373 |
 
 ## Accessors
 
@@ -171,7 +171,7 @@ Vector.addAbsolute
 addW(w): Vector4
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:376
+Defined in: lib/common/utils/Vector.d.ts:389
 
 #### Parameters
 
@@ -255,7 +255,7 @@ Vector.addY
 addZ(z): Vector4
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:372
+Defined in: lib/common/utils/Vector.d.ts:385
 
 #### Parameters
 
@@ -303,7 +303,7 @@ Vector.clone
 crossProduct(v): Vec4 | Vec3
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:380
+Defined in: lib/common/utils/Vector.d.ts:393
 
 #### Parameters
 
@@ -703,7 +703,7 @@ Vector.toString
 toVec2(): Vector2
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:384
+Defined in: lib/common/utils/Vector.d.ts:397
 
 #### Returns
 
@@ -719,7 +719,7 @@ the x and y values as Vec2
 toVec3(): Vector3
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:388
+Defined in: lib/common/utils/Vector.d.ts:401
 
 #### Returns
 

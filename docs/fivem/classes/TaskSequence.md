@@ -2,7 +2,7 @@
 
 # Class: TaskSequence
 
-Defined in: [src/fivem/TaskSequence.ts:4](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/TaskSequence.ts#L4)
+Defined in: [src/fivem/TaskSequence.ts:4](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/TaskSequence.ts#L4)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/fivem/TaskSequence.ts:4](https://github.com/nativewrappers/nati
 new TaskSequence(handle?): TaskSequence
 ```
 
-Defined in: [src/fivem/TaskSequence.ts:10](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/TaskSequence.ts#L10)
+Defined in: [src/fivem/TaskSequence.ts:10](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/TaskSequence.ts#L10)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [src/fivem/TaskSequence.ts:10](https://github.com/nativewrappers/nat
 get AddTask(): Tasks
 ```
 
-Defined in: [src/fivem/TaskSequence.ts:45](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/TaskSequence.ts#L45)
+Defined in: [src/fivem/TaskSequence.ts:45](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/TaskSequence.ts#L45)
 
 ##### Returns
 
@@ -50,7 +50,7 @@ Defined in: [src/fivem/TaskSequence.ts:45](https://github.com/nativewrappers/nat
 get Count(): number
 ```
 
-Defined in: [src/fivem/TaskSequence.ts:58](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/TaskSequence.ts#L58)
+Defined in: [src/fivem/TaskSequence.ts:58](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/TaskSequence.ts#L58)
 
 ##### Returns
 
@@ -66,7 +66,7 @@ Defined in: [src/fivem/TaskSequence.ts:58](https://github.com/nativewrappers/nat
 get Handle(): number
 ```
 
-Defined in: [src/fivem/TaskSequence.ts:41](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/TaskSequence.ts#L41)
+Defined in: [src/fivem/TaskSequence.ts:41](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/TaskSequence.ts#L41)
 
 ##### Returns
 
@@ -82,7 +82,7 @@ Defined in: [src/fivem/TaskSequence.ts:41](https://github.com/nativewrappers/nat
 get IsClosed(): boolean
 ```
 
-Defined in: [src/fivem/TaskSequence.ts:54](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/TaskSequence.ts#L54)
+Defined in: [src/fivem/TaskSequence.ts:54](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/TaskSequence.ts#L54)
 
 ##### Returns
 
@@ -96,7 +96,7 @@ Defined in: [src/fivem/TaskSequence.ts:54](https://github.com/nativewrappers/nat
 close(repeat): void
 ```
 
-Defined in: [src/fivem/TaskSequence.ts:32](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/TaskSequence.ts#L32)
+Defined in: [src/fivem/TaskSequence.ts:32](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/TaskSequence.ts#L32)
 
 #### Parameters
 
@@ -116,7 +116,7 @@ Defined in: [src/fivem/TaskSequence.ts:32](https://github.com/nativewrappers/nat
 dispose(): void
 ```
 
-Defined in: [src/fivem/TaskSequence.ts:27](https://github.com/nativewrappers/nativewrappers/blob/91f5faba0ec3a416ffe852da10ae535e5abf14fa/src/fivem/TaskSequence.ts#L27)
+Defined in: [src/fivem/TaskSequence.ts:27](https://github.com/nativewrappers/nativewrappers/blob/c60977197fc03a84e577475a74a7b129c71770ca/src/fivem/TaskSequence.ts#L27)
 
 #### Returns
 

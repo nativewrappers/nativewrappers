@@ -25,7 +25,7 @@ new Vector3(
    z?): Vector3
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:339
+Defined in: lib/common/utils/Vector.d.ts:352
 
 Constructs a new 3D vector.
 
@@ -57,6 +57,19 @@ Vector.constructor
 | <a id="x-1"></a> `x` | `public` | `number` | - | `Vec3.x` `Vector.x` | lib/common/utils/Vector.d.ts:54 |
 | <a id="y-1"></a> `y` | `public` | `number` | - | `Vec3.y` `Vector.y` | lib/common/utils/Vector.d.ts:55 |
 | <a id="z-1"></a> `z` | `public` | `number` | `Vec3.z` `Vector.z` | - | lib/common/utils/Vector.d.ts:331 |
+| <a id="backward"></a> `Backward` | `readonly` | [`Vector3`](Vector3.md) | - | - | lib/common/utils/Vector.d.ts:345 |
+| <a id="backwardlh"></a> `BackwardLH` | `readonly` | [`Vector3`](Vector3.md) | - | - | lib/common/utils/Vector.d.ts:344 |
+| <a id="backwardrh"></a> `BackwardRH` | `readonly` | [`Vector3`](Vector3.md) | - | - | lib/common/utils/Vector.d.ts:343 |
+| <a id="down"></a> `Down` | `readonly` | [`Vector3`](Vector3.md) | - | - | lib/common/utils/Vector.d.ts:338 |
+| <a id="forwardlh"></a> `ForwardLH` | `readonly` | [`Vector3`](Vector3.md) | - | - | lib/common/utils/Vector.d.ts:342 |
+| <a id="forwardrh"></a> `ForwardRH` | `readonly` | [`Vector3`](Vector3.md) | - | - | lib/common/utils/Vector.d.ts:341 |
+| <a id="left"></a> `Left` | `readonly` | [`Vector3`](Vector3.md) | - | - | lib/common/utils/Vector.d.ts:339 |
+| <a id="one"></a> `One` | `readonly` | [`Vector3`](Vector3.md) | - | - | lib/common/utils/Vector.d.ts:336 |
+| <a id="right"></a> `Right` | `readonly` | [`Vector3`](Vector3.md) | - | - | lib/common/utils/Vector.d.ts:340 |
+| <a id="unitx"></a> `UnitX` | `readonly` | [`Vector3`](Vector3.md) | - | - | lib/common/utils/Vector.d.ts:333 |
+| <a id="unity"></a> `UnitY` | `readonly` | [`Vector3`](Vector3.md) | - | - | lib/common/utils/Vector.d.ts:334 |
+| <a id="unitz"></a> `UnitZ` | `readonly` | [`Vector3`](Vector3.md) | - | - | lib/common/utils/Vector.d.ts:335 |
+| <a id="up"></a> `Up` | `readonly` | [`Vector3`](Vector3.md) | - | - | lib/common/utils/Vector.d.ts:337 |
 | <a id="zero"></a> `Zero` | `readonly` | [`Vector3`](Vector3.md) | - | - | lib/common/utils/Vector.d.ts:332 |
 
 ## Accessors
@@ -233,7 +246,7 @@ Vector.addY
 addZ(z): Vector3
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:343
+Defined in: lib/common/utils/Vector.d.ts:356
 
 #### Parameters
 
@@ -281,7 +294,7 @@ Vector.clone
 crossProduct(v): Vec4 | Vec3
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:347
+Defined in: lib/common/utils/Vector.d.ts:360
 
 #### Parameters
 
@@ -681,7 +694,7 @@ Vector.toString
 toVec2(): Vector2
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:351
+Defined in: lib/common/utils/Vector.d.ts:364
 
 #### Returns
 
