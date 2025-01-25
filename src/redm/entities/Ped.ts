@@ -504,6 +504,12 @@ export class Ped extends BaseEntity {
     ApplyPedDamagePack(this.Handle, damagePack, damage, mult);
   }
 
+  get CurrentVehicle(): Vehicle | null {
+    const veh = GetVehiclePedIsIn(this.Handle, false);
+    if (veh === 0) return null;
+    return new Vehicle(veh);
+  }
+
   // No documentation
   // applyBloodSpecific() {
   // 	ApplyPedBloodSpecific
