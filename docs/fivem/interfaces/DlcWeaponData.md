@@ -2,7 +2,7 @@
 
 # Interface: DlcWeaponData
 
-Defined in: [src/fivem/weapon/DlcWeaponData.ts:30](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weapon/DlcWeaponData.ts#L30)
+Defined in: [src/fivem/weapon/DlcWeaponData.ts:30](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/weapon/DlcWeaponData.ts#L30)
 
 DlcWeaponData
 refer1: https://github.com/citizenfx/fivem/blob/master/code/client/clrcore/External/DlcWeaponStructs.cs#L10
@@ -31,14 +31,14 @@ char upperCaseNameLabel[64];
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="ammocost"></a> `ammoCost` | `number` | [src/fivem/weapon/DlcWeaponData.ts:35](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weapon/DlcWeaponData.ts#L35) |
-| <a id="ammotype"></a> `ammoType` | `number` | [src/fivem/weapon/DlcWeaponData.ts:36](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weapon/DlcWeaponData.ts#L36) |
-| <a id="defaultclipsize"></a> `defaultClipSize` | `number` | [src/fivem/weapon/DlcWeaponData.ts:37](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weapon/DlcWeaponData.ts#L37) |
-| <a id="desc"></a> `desc` | `string` | [src/fivem/weapon/DlcWeaponData.ts:39](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weapon/DlcWeaponData.ts#L39) |
-| <a id="name"></a> `name` | `string` | [src/fivem/weapon/DlcWeaponData.ts:38](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weapon/DlcWeaponData.ts#L38) |
-| <a id="simpledesc"></a> `simpleDesc` | `string` | [src/fivem/weapon/DlcWeaponData.ts:40](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weapon/DlcWeaponData.ts#L40) |
-| <a id="unk"></a> `unk` | `number` | [src/fivem/weapon/DlcWeaponData.ts:33](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weapon/DlcWeaponData.ts#L33) |
-| <a id="uppercasename"></a> `upperCaseName` | `string` | [src/fivem/weapon/DlcWeaponData.ts:41](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weapon/DlcWeaponData.ts#L41) |
-| <a id="validcheck"></a> `validCheck` | `number` | [src/fivem/weapon/DlcWeaponData.ts:31](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weapon/DlcWeaponData.ts#L31) |
-| <a id="weaponcost"></a> `weaponCost` | `number` | [src/fivem/weapon/DlcWeaponData.ts:34](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weapon/DlcWeaponData.ts#L34) |
-| <a id="weaponhash"></a> `weaponHash` | `number` | [src/fivem/weapon/DlcWeaponData.ts:32](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/weapon/DlcWeaponData.ts#L32) |
+| <a id="ammocost"></a> `ammoCost` | `number` | [src/fivem/weapon/DlcWeaponData.ts:35](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/weapon/DlcWeaponData.ts#L35) |
+| <a id="ammotype"></a> `ammoType` | `number` | [src/fivem/weapon/DlcWeaponData.ts:36](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/weapon/DlcWeaponData.ts#L36) |
+| <a id="defaultclipsize"></a> `defaultClipSize` | `number` | [src/fivem/weapon/DlcWeaponData.ts:37](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/weapon/DlcWeaponData.ts#L37) |
+| <a id="desc"></a> `desc` | `string` | [src/fivem/weapon/DlcWeaponData.ts:39](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/weapon/DlcWeaponData.ts#L39) |
+| <a id="name"></a> `name` | `string` | [src/fivem/weapon/DlcWeaponData.ts:38](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/weapon/DlcWeaponData.ts#L38) |
+| <a id="simpledesc"></a> `simpleDesc` | `string` | [src/fivem/weapon/DlcWeaponData.ts:40](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/weapon/DlcWeaponData.ts#L40) |
+| <a id="unk"></a> `unk` | `number` | [src/fivem/weapon/DlcWeaponData.ts:33](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/weapon/DlcWeaponData.ts#L33) |
+| <a id="uppercasename"></a> `upperCaseName` | `string` | [src/fivem/weapon/DlcWeaponData.ts:41](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/weapon/DlcWeaponData.ts#L41) |
+| <a id="validcheck"></a> `validCheck` | `number` | [src/fivem/weapon/DlcWeaponData.ts:31](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/weapon/DlcWeaponData.ts#L31) |
+| <a id="weaponcost"></a> `weaponCost` | `number` | [src/fivem/weapon/DlcWeaponData.ts:34](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/weapon/DlcWeaponData.ts#L34) |
+| <a id="weaponhash"></a> `weaponHash` | `number` | [src/fivem/weapon/DlcWeaponData.ts:32](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/weapon/DlcWeaponData.ts#L32) |

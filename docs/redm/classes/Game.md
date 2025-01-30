@@ -2,7 +2,7 @@
 
 # Class: Game
 
-Defined in: [src/redm/Game.ts:10](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/redm/Game.ts#L10)
+Defined in: [src/redm/Game.ts:10](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Game.ts#L10)
 
 ## Constructors
 
@@ -26,7 +26,7 @@ new Game(): Game
 get static Player(): Player
 ```
 
-Defined in: [src/redm/Game.ts:15](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/redm/Game.ts#L15)
+Defined in: [src/redm/Game.ts:15](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Game.ts#L15)
 
 ##### Returns
 
@@ -42,7 +42,7 @@ Defined in: [src/redm/Game.ts:15](https://github.com/nativewrappers/nativewrappe
 get static PlayerPed(): Ped
 ```
 
-Defined in: [src/redm/Game.ts:11](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/redm/Game.ts#L11)
+Defined in: [src/redm/Game.ts:11](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Game.ts#L11)
 
 ##### Returns
 

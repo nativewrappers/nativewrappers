@@ -2,7 +2,7 @@
 
 # Class: `abstract` Effects
 
-Defined in: [src/fivem/ui/Effects.ts:3](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Effects.ts#L3)
+Defined in: [src/fivem/ui/Effects.ts:3](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Effects.ts#L3)
 
 ## Constructors
 
@@ -24,7 +24,7 @@ new Effects(): Effects
 static isActive(screenEffect): boolean
 ```
 
-Defined in: [src/fivem/ui/Effects.ts:20](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Effects.ts#L20)
+Defined in: [src/fivem/ui/Effects.ts:20](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Effects.ts#L20)
 
 #### Parameters
 
@@ -47,7 +47,7 @@ static start(
    looped): void
 ```
 
-Defined in: [src/fivem/ui/Effects.ts:4](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Effects.ts#L4)
+Defined in: [src/fivem/ui/Effects.ts:4](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Effects.ts#L4)
 
 #### Parameters
 
@@ -69,7 +69,7 @@ Defined in: [src/fivem/ui/Effects.ts:4](https://github.com/nativewrappers/native
 static stop(screenEffect?): void
 ```
 
-Defined in: [src/fivem/ui/Effects.ts:12](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Effects.ts#L12)
+Defined in: [src/fivem/ui/Effects.ts:12](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Effects.ts#L12)
 
 #### Parameters
 

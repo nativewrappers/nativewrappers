@@ -2,7 +2,7 @@
 
 # Class: Timerbar
 
-Defined in: [src/fivem/ui/Timerbar.ts:79](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L79)
+Defined in: [src/fivem/ui/Timerbar.ts:79](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L79)
 
 Create a Timerbar. It's automatically added to the internal Timerbar array and drawn in a FIFO (first in, first out) way.
 
@@ -23,7 +23,7 @@ myTimerbar.Visible = false;
 new Timerbar(title, useProgressBar): Timerbar
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:91](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L91)
+Defined in: [src/fivem/ui/Timerbar.ts:91](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L91)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:91](https://github.com/nativewrappers/nati
 get PlayerStyle(): boolean
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:215](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L215)
+Defined in: [src/fivem/ui/Timerbar.ts:215](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L215)
 
 ##### Returns
 
@@ -58,7 +58,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:215](https://github.com/nativewrappers/nat
 set PlayerStyle(value): void
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:211](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L211)
+Defined in: [src/fivem/ui/Timerbar.ts:211](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L211)
 
 ##### Parameters
 
@@ -80,7 +80,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:211](https://github.com/nativewrappers/nat
 get Progress(): number
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:143](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L143)
+Defined in: [src/fivem/ui/Timerbar.ts:143](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L143)
 
 ##### Returns
 
@@ -92,7 +92,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:143](https://github.com/nativewrappers/nat
 set Progress(value): void
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:147](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L147)
+Defined in: [src/fivem/ui/Timerbar.ts:147](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L147)
 
 ##### Parameters
 
@@ -114,7 +114,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:147](https://github.com/nativewrappers/nat
 get ProgressbarBgColor(): number | number[]
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:185](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L185)
+Defined in: [src/fivem/ui/Timerbar.ts:185](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L185)
 
 ##### Returns
 
@@ -126,7 +126,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:185](https://github.com/nativewrappers/nat
 set ProgressbarBgColor(value): void
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:189](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L189)
+Defined in: [src/fivem/ui/Timerbar.ts:189](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L189)
 
 ##### Parameters
 
@@ -148,7 +148,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:189](https://github.com/nativewrappers/nat
 get ProgressbarFgColor(): number | number[]
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:198](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L198)
+Defined in: [src/fivem/ui/Timerbar.ts:198](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L198)
 
 ##### Returns
 
@@ -160,7 +160,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:198](https://github.com/nativewrappers/nat
 set ProgressbarFgColor(value): void
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:202](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L202)
+Defined in: [src/fivem/ui/Timerbar.ts:202](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L202)
 
 ##### Parameters
 
@@ -182,7 +182,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:202](https://github.com/nativewrappers/nat
 get Sprite(): null | Sprite
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:219](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L219)
+Defined in: [src/fivem/ui/Timerbar.ts:219](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L219)
 
 ##### Returns
 
@@ -198,7 +198,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:219](https://github.com/nativewrappers/nat
 get Text(): string
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:131](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L131)
+Defined in: [src/fivem/ui/Timerbar.ts:131](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L131)
 
 ##### Returns
 
@@ -210,7 +210,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:131](https://github.com/nativewrappers/nat
 set Text(value): void
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:135](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L135)
+Defined in: [src/fivem/ui/Timerbar.ts:135](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L135)
 
 ##### Parameters
 
@@ -232,7 +232,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:135](https://github.com/nativewrappers/nat
 get TextColor(): number | number[]
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:172](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L172)
+Defined in: [src/fivem/ui/Timerbar.ts:172](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L172)
 
 ##### Returns
 
@@ -244,7 +244,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:172](https://github.com/nativewrappers/nat
 set TextColor(value): void
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:176](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L176)
+Defined in: [src/fivem/ui/Timerbar.ts:176](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L176)
 
 ##### Parameters
 
@@ -266,7 +266,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:176](https://github.com/nativewrappers/nat
 get Title(): string
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:123](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L123)
+Defined in: [src/fivem/ui/Timerbar.ts:123](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L123)
 
 ##### Returns
 
@@ -278,7 +278,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:123](https://github.com/nativewrappers/nat
 set Title(value): void
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:127](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L127)
+Defined in: [src/fivem/ui/Timerbar.ts:127](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L127)
 
 ##### Parameters
 
@@ -300,7 +300,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:127](https://github.com/nativewrappers/nat
 get UseProgressBar(): boolean
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:139](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L139)
+Defined in: [src/fivem/ui/Timerbar.ts:139](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L139)
 
 ##### Returns
 
@@ -316,7 +316,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:139](https://github.com/nativewrappers/nat
 get Visible(): boolean
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:151](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L151)
+Defined in: [src/fivem/ui/Timerbar.ts:151](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L151)
 
 ##### Returns
 
@@ -328,7 +328,7 @@ Defined in: [src/fivem/ui/Timerbar.ts:151](https://github.com/nativewrappers/nat
 set Visible(value): void
 ```
 
-Defined in: [src/fivem/ui/Timerbar.ts:155](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/fivem/ui/Timerbar.ts#L155)
+Defined in: [src/fivem/ui/Timerbar.ts:155](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/fivem/ui/Timerbar.ts#L155)
 
 ##### Parameters
 

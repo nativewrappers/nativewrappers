@@ -2,7 +2,7 @@
 
 # Class: Vector4
 
-Defined in: [src/common/utils/Vector.ts:806](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L806)
+Defined in: [src/common/utils/Vector.ts:799](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L799)
 
 Represents a 4-dimensional vector.
 
@@ -22,7 +22,7 @@ new Vector4(
    w): Vector4
 ```
 
-Defined in: [src/common/utils/Vector.ts:822](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L822)
+Defined in: [src/common/utils/Vector.ts:815](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L815)
 
 Constructs a new 4D vector.
 
@@ -47,15 +47,15 @@ Vector.constructor
 
 ## Properties
 
-| Property | Modifier | Type | Default value | Description | Overrides | Inherited from | Defined in |
-| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| <a id="size"></a> `size` | `public` | `number` | `undefined` | The size of the vector (number of components). | - | `Vector.size` | [src/common/utils/Vector.ts:553](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L553) |
-| <a id="type"></a> `type` | `public` | `ClassTypes` | `ClassTypes.Vector4` | - | `Vector.type` | - | [src/common/utils/Vector.ts:809](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L809) |
-| <a id="w-1"></a> `w` | `public` | `number` | `undefined` | - | `Vector.w` | - | [src/common/utils/Vector.ts:811](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L811) |
-| <a id="x-1"></a> `x` | `public` | `number` | `0` | The x-component of the vector. | - | `Vector.x` | [src/common/utils/Vector.ts:554](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L554) |
-| <a id="y-1"></a> `y` | `public` | `number` | `x` | The y-component of the vector (optional, defaults to x). | - | `Vector.y` | [src/common/utils/Vector.ts:555](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L555) |
-| <a id="z-1"></a> `z` | `public` | `number` | `undefined` | - | `Vector.z` | - | [src/common/utils/Vector.ts:810](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L810) |
-| <a id="zero"></a> `Zero` | `readonly` | [`Vector4`](Vector4.md) | `undefined` | - | - | - | [src/common/utils/Vector.ts:813](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L813) |
+| Property | Modifier | Type | Default value | Overrides | Inherited from | Defined in |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| <a id="size"></a> `[size]` | `readonly` | `number` | `2` | - | `Vector.[size]` | [src/common/utils/Vector.ts:487](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L487) |
+| <a id="type"></a> `type` | `readonly` | `Vector4` | `ClassTypes.Vector4` | `Vector.type` | - | [src/common/utils/Vector.ts:802](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L802) |
+| <a id="w-1"></a> `w` | `public` | `number` | `0` | `Vector.w` | - | [src/common/utils/Vector.ts:804](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L804) |
+| <a id="x-1"></a> `x` | `public` | `number` | `0` | - | `Vector.x` | [src/common/utils/Vector.ts:488](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L488) |
+| <a id="y-1"></a> `y` | `public` | `number` | `0` | - | `Vector.y` | [src/common/utils/Vector.ts:489](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L489) |
+| <a id="z-1"></a> `z` | `public` | `number` | `0` | `Vector.z` | - | [src/common/utils/Vector.ts:803](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L803) |
+| <a id="zero"></a> `Zero` | `readonly` | [`Vector4`](Vector4.md) | `undefined` | - | - | [src/common/utils/Vector.ts:806](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L806) |
 
 ## Accessors
 
@@ -67,7 +67,7 @@ Vector.constructor
 get Length(): number
 ```
 
-Defined in: [src/common/utils/Vector.ts:705](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L705)
+Defined in: [src/common/utils/Vector.ts:674](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L674)
 
 Calculates the length (magnitude) of a vector.
 
@@ -83,6 +83,28 @@ The magnitude of the vector.
 Vector.Length
 ```
 
+***
+
+### size
+
+#### Get Signature
+
+```ts
+get size(): number
+```
+
+Defined in: [src/common/utils/Vector.ts:533](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L533)
+
+##### Returns
+
+`number`
+
+#### Inherited from
+
+```ts
+Vector.size
+```
+
 ## Methods
 
 ### \[iterator\]()
@@ -91,7 +113,7 @@ Vector.Length
 iterator: Iterator<number>
 ```
 
-Defined in: [src/common/utils/Vector.ts:560](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L560)
+Defined in: [src/common/utils/Vector.ts:525](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L525)
 
 #### Returns
 
@@ -111,7 +133,7 @@ Vector.[iterator]
 add(v): Vector4
 ```
 
-Defined in: [src/common/utils/Vector.ts:617](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L617)
+Defined in: [src/common/utils/Vector.ts:586](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L586)
 
 #### Parameters
 
@@ -141,7 +163,7 @@ Vector.add
 addAbsolute(v): Vector4
 ```
 
-Defined in: [src/common/utils/Vector.ts:659](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L659)
+Defined in: [src/common/utils/Vector.ts:628](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L628)
 
 #### Parameters
 
@@ -168,10 +190,10 @@ Vector.addAbsolute
 ### addW()
 
 ```ts
-addW(w): Vector4
+addW(w): Vector
 ```
 
-Defined in: [src/common/utils/Vector.ts:838](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L838)
+Defined in: [src/common/utils/Vector.ts:843](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L843)
 
 #### Parameters
 
@@ -181,7 +203,7 @@ Defined in: [src/common/utils/Vector.ts:838](https://github.com/nativewrappers/n
 
 #### Returns
 
-[`Vector4`](Vector4.md)
+`Vector`
 
 #### See
 
@@ -195,7 +217,7 @@ Vector.addW
 addX(x): Vector4
 ```
 
-Defined in: [src/common/utils/Vector.ts:624](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L624)
+Defined in: [src/common/utils/Vector.ts:593](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L593)
 
 #### Parameters
 
@@ -222,10 +244,10 @@ Vector.addX
 ### addY()
 
 ```ts
-addY(y): Vector4
+addY(y): Vector
 ```
 
-Defined in: [src/common/utils/Vector.ts:631](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L631)
+Defined in: [src/common/utils/Vector.ts:600](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L600)
 
 #### Parameters
 
@@ -235,7 +257,7 @@ Defined in: [src/common/utils/Vector.ts:631](https://github.com/nativewrappers/n
 
 #### Returns
 
-[`Vector4`](Vector4.md)
+`Vector`
 
 #### See
 
@@ -252,10 +274,10 @@ Vector.addY
 ### addZ()
 
 ```ts
-addZ(z): Vector4
+addZ(z): Vector
 ```
 
-Defined in: [src/common/utils/Vector.ts:831](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L831)
+Defined in: [src/common/utils/Vector.ts:836](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L836)
 
 #### Parameters
 
@@ -265,7 +287,7 @@ Defined in: [src/common/utils/Vector.ts:831](https://github.com/nativewrappers/n
 
 #### Returns
 
-[`Vector4`](Vector4.md)
+`Vector`
 
 #### See
 
@@ -276,14 +298,20 @@ Vector.addZ
 ### clone()
 
 ```ts
-clone(): Vector4
+clone<T>(): T
 ```
 
-Defined in: [src/common/utils/Vector.ts:575](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L575)
+Defined in: [src/common/utils/Vector.ts:544](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L544)
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `T` *extends* [`Vector4`](Vector4.md) |
 
 #### Returns
 
-[`Vector4`](Vector4.md)
+`T`
 
 #### See
 
@@ -303,7 +331,7 @@ Vector.clone
 crossProduct(v): Vec3 | Vec4
 ```
 
-Defined in: [src/common/utils/Vector.ts:845](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L845)
+Defined in: [src/common/utils/Vector.ts:850](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L850)
 
 #### Parameters
 
@@ -327,7 +355,7 @@ Vector.crossProduct
 distance(v): number
 ```
 
-Defined in: [src/common/utils/Vector.ts:596](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L596)
+Defined in: [src/common/utils/Vector.ts:565](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L565)
 
 The distance between two Vectors.
 
@@ -357,7 +385,7 @@ Vector.distance
 distanceSquared(v): number
 ```
 
-Defined in: [src/common/utils/Vector.ts:585](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L585)
+Defined in: [src/common/utils/Vector.ts:554](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L554)
 
 The product of the Euclidean magnitudes of this and another Vector.
 
@@ -387,7 +415,7 @@ Vector.distanceSquared
 divide(v): Vector4
 ```
 
-Defined in: [src/common/utils/Vector.ts:652](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L652)
+Defined in: [src/common/utils/Vector.ts:621](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L621)
 
 #### Parameters
 
@@ -417,7 +445,7 @@ Vector.divide
 divideAbsolute(v): Vector4
 ```
 
-Defined in: [src/common/utils/Vector.ts:680](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L680)
+Defined in: [src/common/utils/Vector.ts:649](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L649)
 
 #### Parameters
 
@@ -447,7 +475,7 @@ Vector.divideAbsolute
 dotProduct(v): number
 ```
 
-Defined in: [src/common/utils/Vector.ts:610](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L610)
+Defined in: [src/common/utils/Vector.ts:579](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L579)
 
 #### Parameters
 
@@ -477,7 +505,7 @@ Vector.dotProduct
 multiply(v): Vector4
 ```
 
-Defined in: [src/common/utils/Vector.ts:645](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L645)
+Defined in: [src/common/utils/Vector.ts:614](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L614)
 
 #### Parameters
 
@@ -507,7 +535,7 @@ Vector.multiply
 multiplyAbsolute(v): Vector4
 ```
 
-Defined in: [src/common/utils/Vector.ts:673](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L673)
+Defined in: [src/common/utils/Vector.ts:642](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L642)
 
 #### Parameters
 
@@ -537,7 +565,7 @@ Vector.multiplyAbsolute
 normalize(): Vector4
 ```
 
-Defined in: [src/common/utils/Vector.ts:603](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L603)
+Defined in: [src/common/utils/Vector.ts:572](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L572)
 
 #### Returns
 
@@ -561,7 +589,7 @@ Vector.normalize
 replace<T>(v): void
 ```
 
-Defined in: [src/common/utils/Vector.ts:695](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L695)
+Defined in: [src/common/utils/Vector.ts:664](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L664)
 
 Replaces the components of the vector with the components of another vector object.
 
@@ -595,7 +623,7 @@ Vector.replace
 subtract(v): Vector4
 ```
 
-Defined in: [src/common/utils/Vector.ts:638](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L638)
+Defined in: [src/common/utils/Vector.ts:607](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L607)
 
 #### Parameters
 
@@ -625,7 +653,7 @@ Vector.subtract
 subtractAbsolute(v): Vector4
 ```
 
-Defined in: [src/common/utils/Vector.ts:666](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L666)
+Defined in: [src/common/utils/Vector.ts:635](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L635)
 
 #### Parameters
 
@@ -655,7 +683,7 @@ Vector.subtractAbsolute
 toArray<T>(): VectorArray<T>
 ```
 
-Defined in: [src/common/utils/Vector.ts:687](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L687)
+Defined in: [src/common/utils/Vector.ts:656](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L656)
 
 Converts the vector to an array of its components.
 
@@ -683,7 +711,7 @@ Vector.toArray
 toString(): string
 ```
 
-Defined in: [src/common/utils/Vector.ts:568](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L568)
+Defined in: [src/common/utils/Vector.ts:537](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L537)
 
 #### Returns
 
@@ -703,7 +731,7 @@ Vector.toString
 toVec2(): Vector2
 ```
 
-Defined in: [src/common/utils/Vector.ts:852](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L852)
+Defined in: [src/common/utils/Vector.ts:857](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L857)
 
 #### Returns
 
@@ -719,7 +747,7 @@ the x and y values as Vec2
 toVec3(): Vector3
 ```
 
-Defined in: [src/common/utils/Vector.ts:859](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L859)
+Defined in: [src/common/utils/Vector.ts:864](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L864)
 
 #### Returns
 
@@ -738,7 +766,7 @@ static add<T, U>(
    b): U
 ```
 
-Defined in: [src/common/utils/Vector.ts:209](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L209)
+Defined in: [src/common/utils/Vector.ts:167](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L167)
 
 Adds two vectors or a scalar value to a vector.
 
@@ -780,7 +808,7 @@ static addAbsolute<T, U>(
    b): U
 ```
 
-Defined in: [src/common/utils/Vector.ts:360](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L360)
+Defined in: [src/common/utils/Vector.ts:302](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L302)
 
 Adds two vectors or a scalar value to a vector.
 
@@ -819,10 +847,10 @@ Vector.addAbsolute
 static addW<T, U>(
    this, 
    obj, 
-w): InferVector<U>
+   w): Vector
 ```
 
-Defined in: [src/common/utils/Vector.ts:274](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L274)
+Defined in: [src/common/utils/Vector.ts:219](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L219)
 
 Adds a scalar value to the w-component of a vector.
 
@@ -843,7 +871,7 @@ Adds a scalar value to the w-component of a vector.
 
 #### Returns
 
-`InferVector`\<`U`\>
+`Vector`
 
 A new vector with the w-component incremented.
 
@@ -858,13 +886,10 @@ Vector.addW
 ### addX()
 
 ```ts
-static addX<T, U>(
-   this, 
-   obj, 
-x): InferVector<U>
+static addX<U>(obj, x): U
 ```
 
-Defined in: [src/common/utils/Vector.ts:223](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L223)
+Defined in: [src/common/utils/Vector.ts:181](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L181)
 
 Adds a scalar value to the x-component of a vector.
 
@@ -872,20 +897,18 @@ Adds a scalar value to the x-component of a vector.
 
 | Type Parameter |
 | ------ |
-| `T` *extends* *typeof* `Vector` |
 | `U` *extends* `VectorLike` |
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
-| `this` | `T` | - |
 | `obj` | `U` | The vector. |
 | `x` | `number` | The value to add to the x-component. |
 
 #### Returns
 
-`InferVector`\<`U`\>
+`U`
 
 A new vector with the x-component incremented.
 
@@ -903,10 +926,10 @@ Vector.addX
 static addY<T, U>(
    this, 
    obj, 
-y): InferVector<U>
+   y): Vector
 ```
 
-Defined in: [src/common/utils/Vector.ts:240](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L240)
+Defined in: [src/common/utils/Vector.ts:191](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L191)
 
 Adds a scalar value to the y-component of a vector.
 
@@ -927,7 +950,7 @@ Adds a scalar value to the y-component of a vector.
 
 #### Returns
 
-`InferVector`\<`U`\>
+`Vector`
 
 A new vector with the y-component incremented.
 
@@ -945,10 +968,10 @@ Vector.addY
 static addZ<T, U>(
    this, 
    obj, 
-z): InferVector<U>
+   z): Vector
 ```
 
-Defined in: [src/common/utils/Vector.ts:257](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L257)
+Defined in: [src/common/utils/Vector.ts:205](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L205)
 
 Adds a scalar value to the z-component of a vector.
 
@@ -969,7 +992,7 @@ Adds a scalar value to the z-component of a vector.
 
 #### Returns
 
-`InferVector`\<`U`\>
+`Vector`
 
 A new vector with the z-component incremented.
 
@@ -984,10 +1007,10 @@ Vector.addZ
 ### clone()
 
 ```ts
-static clone<T, U>(this, obj): InferVector<U>
+static clone<T, U>(this, obj): InstanceType<T>
 ```
 
-Defined in: [src/common/utils/Vector.ts:171](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L171)
+Defined in: [src/common/utils/Vector.ts:129](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L129)
 
 Creates a deep copy of the provided vector.
 
@@ -1007,7 +1030,7 @@ Creates a deep copy of the provided vector.
 
 #### Returns
 
-`InferVector`\<`U`\>
+`InstanceType`\<`T`\>
 
 A new vector instance that is a copy of the provided vector.
 
@@ -1021,158 +1044,34 @@ Vector.clone
 
 ### create()
 
+```ts
+protected static create(
+   x, 
+   y, 
+   z, 
+   w): Vector4
+```
+
+Defined in: [src/common/utils/Vector.ts:827](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L827)
+
 Creates a new vector based on the provided parameters.
 
-#### Param
+#### Parameters
 
-The x-component of the vector.
+| Parameter | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| `x` | `number` \| `Vec` | `undefined` | The x-component of the vector. |
+| `y` | `number` | `...` | The y-component of the vector (optional, defaults to the value of x). |
+| `z` | `number` | `y` | The z-component of the vector (optional, defaults to the value of y). |
+| `w` | `number` | `z` | The w-component of the vector (optional, defaults to the value of z). |
 
-#### Param
-
-The y-component of the vector (optional, defaults to the value of x).
-
-#### Param
-
-The z-component of the vector (optional, defaults to the value of y).
-
-#### Param
-
-The w-component of the vector (optional, defaults to the value of z).
-
-#### Call Signature
-
-```ts
-protected static create(x, y?): Vector2
-```
-
-Defined in: [src/common/utils/Vector.ts:96](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L96)
-
-##### Parameters
-
-| Parameter | Type |
-| ------ | ------ |
-| `x` | `number` |
-| `y`? | `number` |
-
-##### Returns
-
-[`Vector2`](Vector2.md)
-
-##### Inherited from
-
-```ts
-Vector.create
-```
-
-#### Call Signature
-
-```ts
-protected static create(
-   x, 
-   y?, 
-   z?): Vector3
-```
-
-Defined in: [src/common/utils/Vector.ts:97](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L97)
-
-##### Parameters
-
-| Parameter | Type |
-| ------ | ------ |
-| `x` | `number` |
-| `y`? | `number` |
-| `z`? | `number` |
-
-##### Returns
-
-[`Vector3`](Vector3.md)
-
-##### Inherited from
-
-```ts
-Vector.create
-```
-
-#### Call Signature
-
-```ts
-protected static create(
-   x, 
-   y?, 
-   z?, 
-   w?): Vector4
-```
-
-Defined in: [src/common/utils/Vector.ts:98](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L98)
-
-##### Parameters
-
-| Parameter | Type |
-| ------ | ------ |
-| `x` | `number` |
-| `y`? | `number` |
-| `z`? | `number` |
-| `w`? | `number` |
-
-##### Returns
+#### Returns
 
 [`Vector4`](Vector4.md)
 
-##### Inherited from
-
-```ts
-Vector.create
-```
-
-#### Call Signature
-
-```ts
-protected static create<T, U>(this, obj): InferVector<U>
-```
-
-Defined in: [src/common/utils/Vector.ts:109](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L109)
-
-Creates a new vector based on the provided vector-like object.
-
-##### Type Parameters
-
-| Type Parameter |
-| ------ |
-| `T` *extends* *typeof* `Vector` |
-| `U` *extends* `VectorLike` |
-
-##### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `this` | `T` | - |
-| `obj` | `U` | The object representing the vector. |
-
-##### Returns
-
-`InferVector`\<`U`\>
-
 A new vector instance.
 
-A new vector instance.
-
-##### Param
-
-The x-component of the vector.
-
-##### Param
-
-The y-component of the vector (optional, defaults to the value of x).
-
-##### Param
-
-The z-component of the vector (optional, defaults to the value of y).
-
-##### Param
-
-The w-component of the vector (optional, defaults to the value of z).
-
-##### Inherited from
+#### Overrides
 
 ```ts
 Vector.create
@@ -1189,7 +1088,7 @@ static crossProduct<T, U>(
    b): U
 ```
 
-Defined in: [src/common/utils/Vector.ts:441](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L441)
+Defined in: [src/common/utils/Vector.ts:383](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L383)
 
 Calculates the cross product of two vectors in three-dimensional space.
 
@@ -1231,7 +1130,7 @@ static divide<T, U>(
    b): U
 ```
 
-Defined in: [src/common/utils/Vector.ts:319](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L319)
+Defined in: [src/common/utils/Vector.ts:261](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L261)
 
 Divides two vectors by their components, or divides a vector by a scalar value.
 
@@ -1273,7 +1172,7 @@ static divideAbsolute<T, U>(
    b): U
 ```
 
-Defined in: [src/common/utils/Vector.ts:402](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L402)
+Defined in: [src/common/utils/Vector.ts:344](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L344)
 
 Divides two vectors by their components, or divides a vector by a scalar value
 
@@ -1315,7 +1214,7 @@ static dotProduct<T, U>(
    b): number
 ```
 
-Defined in: [src/common/utils/Vector.ts:416](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L416)
+Defined in: [src/common/utils/Vector.ts:358](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L358)
 
 Calculates the dot product of two vectors.
 
@@ -1354,7 +1253,7 @@ Vector.dotProduct
 static fromArray<T, U>(this, primitive): InstanceType<T>
 ```
 
-Defined in: [src/common/utils/Vector.ts:486](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L486)
+Defined in: [src/common/utils/Vector.ts:428](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L428)
 
 Creates a vector from an array of numbers.
 
@@ -1390,7 +1289,7 @@ Vector.fromArray
 static fromArrays<T, U>(this, primitives): InstanceType<T>[]
 ```
 
-Defined in: [src/common/utils/Vector.ts:516](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L516)
+Defined in: [src/common/utils/Vector.ts:458](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L458)
 
 Creates an array of vectors from an array of number arrays
 
@@ -1426,7 +1325,7 @@ Vector.fromArrays
 static fromBuffer<T>(this, __namedParameters): InstanceType<T>
 ```
 
-Defined in: [src/common/utils/Vector.ts:153](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L153)
+Defined in: [src/common/utils/Vector.ts:109](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L109)
 
 Creates a vector from binary data in a MsgpackBuffer.
 
@@ -1463,7 +1362,7 @@ Vector.fromBuffer
 static fromObject<T, U>(this, primitive): InstanceType<T>
 ```
 
-Defined in: [src/common/utils/Vector.ts:498](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L498)
+Defined in: [src/common/utils/Vector.ts:440](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L440)
 
 Creates a vector from an array or object containing vector components.
 
@@ -1499,7 +1398,7 @@ Vector.fromObject
 static Length<T, U>(this, obj): number
 ```
 
-Defined in: [src/common/utils/Vector.ts:528](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L528)
+Defined in: [src/common/utils/Vector.ts:470](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L470)
 
 Calculates the length (magnitude) of a vector.
 
@@ -1540,7 +1439,7 @@ static multiply<T, U>(
    b): U
 ```
 
-Defined in: [src/common/utils/Vector.ts:305](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L305)
+Defined in: [src/common/utils/Vector.ts:247](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L247)
 
 Multiplies two vectors by their components, or multiplies a vector by a scalar value.
 
@@ -1582,7 +1481,7 @@ static multiplyAbsolute<T, U>(
    b): U
 ```
 
-Defined in: [src/common/utils/Vector.ts:388](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L388)
+Defined in: [src/common/utils/Vector.ts:330](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L330)
 
 Multiplies two vectors by their components, or multiplies a vector by a scalar value.
 
@@ -1621,7 +1520,7 @@ Vector.multiplyAbsolute
 static normalize<T, U>(this, a): U
 ```
 
-Defined in: [src/common/utils/Vector.ts:474](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L474)
+Defined in: [src/common/utils/Vector.ts:416](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L416)
 
 Normalizes a vector, producing a new vector with the same direction but with a magnitude of 1.
 
@@ -1662,7 +1561,7 @@ static subtract<T, U>(
    b): U
 ```
 
-Defined in: [src/common/utils/Vector.ts:291](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L291)
+Defined in: [src/common/utils/Vector.ts:233](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L233)
 
 Subtracts one vector from another or subtracts a scalar value from a vector.
 
@@ -1704,7 +1603,7 @@ static subtractAbsolute<T, U>(
    b): U
 ```
 
-Defined in: [src/common/utils/Vector.ts:374](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/Vector.ts#L374)
+Defined in: [src/common/utils/Vector.ts:316](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/Vector.ts#L316)
 
 Subtracts one vector from another or subtracts a scalar value from a vector.
 

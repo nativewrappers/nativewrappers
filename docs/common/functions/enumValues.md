@@ -8,7 +8,7 @@
 function enumValues<T>(enumObj): IterableIterator<T>
 ```
 
-Defined in: [src/common/utils/enumValues.ts:7](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/enumValues.ts#L7)
+Defined in: [src/common/utils/enumValues.ts:7](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/enumValues.ts#L7)
 
 EnumValues - iterate over enum values
 Just copy&paste from https://github.com/microsoft/TypeScript/issues/4753#issuecomment-694557208
@@ -35,7 +35,7 @@ Just copy&paste from https://github.com/microsoft/TypeScript/issues/4753#issueco
 function enumValues<T>(enumObj): IterableIterator<Exclude<T, string>>
 ```
 
-Defined in: [src/common/utils/enumValues.ts:10](https://github.com/nativewrappers/nativewrappers/blob/99c881fe3bb9acc58d25c55399e7f11bef9ab7c6/src/common/utils/enumValues.ts#L10)
+Defined in: [src/common/utils/enumValues.ts:10](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/utils/enumValues.ts#L10)
 
 EnumValues - iterate over enum values
 Just copy&paste from https://github.com/microsoft/TypeScript/issues/4753#issuecomment-694557208
