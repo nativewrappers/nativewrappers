@@ -6,6 +6,7 @@ import { ClassTypes } from "./ClassTypes";
 const EXT_VECTOR2 = 20;
 const EXT_VECTOR3 = 21;
 const EXT_VECTOR4 = 22;
+const size = Symbol("size");
 
 /**
  * Represents a 2-dimensional vector.
@@ -88,11 +89,7 @@ type InferVector<T> = T extends Vec4 | VectorN<4>
 /**
  * A base vector class inherited by all vector classes.
  */
-export class Vector {
-  // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
-  // TO EXIST
-  public type = ClassTypes.Vector2;
-
+class Vector {
   protected static create(x: number, y?: number): Vector2;
   protected static create(x: number, y?: number, z?: number): Vector3;
   protected static create(
@@ -543,21 +540,43 @@ export class Vector {
     return Math.sqrt(sum);
   }
 
+  readonly [size]: number = 2;
+  public x: number = 0;
+  public y: number = 0;
+  public z: number | undefined;
+  public w: number | undefined;
+
   /**
    * Constructs a new vector.
-   * @param size The size of the vector (number of components).
    * @param x The x-component of the vector.
    * @param y The y-component of the vector (optional, defaults to x).
    * @param z The z-component of the vector (optional).
    * @param w The w-component of the vector (optional).
    */
-  constructor(
-    public size: number,
-    public x: number = 0,
-    public y: number = x,
-    public z?: number,
-    public w?: number,
-  ) {}
+  constructor(x: number, y = x, z?: number, w?: number) {
+    for (let i = 0; i < arguments.length; i++) {
+      if (typeof arguments[i] !== "number") {
+        throw new TypeError(
+          `${
+            this.constructor.name
+          } argument at index ${i} must be a number, but got ${typeof arguments[i]}`,
+        );
+      }
+    }
+
+    this.x = x;
+    this.y = y;
+
+    if (z !== undefined) {
+      this.z = z;
+      ++this[size];
+    }
+
+    if (w !== undefined) {
+      this.w = w;
+      ++this[size];
+    }
+  }
 
   *[Symbol.iterator](): Iterator<number> {
     yield this.x;
@@ -565,6 +584,10 @@ export class Vector {
 
     if (this.z !== undefined) yield this.z;
     if (this.w !== undefined) yield this.w;
+  }
+
+  get size() {
+    return this[size];
   }
 
   public toString() {
@@ -719,7 +742,7 @@ export class Vector {
 export class Vector2 extends Vector {
   // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
   // TO EXIST, CHANGING IT WILL BREAK STUFF
-  public type = ClassTypes.Vector2;
+  readonly type = ClassTypes.Vector2;
 
   public static readonly Zero: Vector2 = new Vector2(0, 0);
 
@@ -729,7 +752,7 @@ export class Vector2 extends Vector {
    * @param y The y-component of the vector (optional, defaults to x).
    */
   constructor(x: number, y = x) {
-    super(2, x, y);
+    super(x, y);
   }
 }
 
@@ -739,8 +762,8 @@ export class Vector2 extends Vector {
 export class Vector3 extends Vector implements Vec3 {
   // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
   // TO EXIST, CHANGING IT WILL BREAK STUFF
-  public type = ClassTypes.Vector3;
-  public z: number;
+  readonly type = ClassTypes.Vector3;
+  public z: number = 0;
 
   public static readonly Zero: Vector3 = new Vector3(0, 0, 0);
 
@@ -777,8 +800,7 @@ export class Vector3 extends Vector implements Vec3 {
    * @param z The z-component of the vector (optional, defaults to y).
    */
   constructor(x: number, y = x, z = y) {
-    super(3, x, y, z);
-    this.z = z;
+    super(x, y, z);
   }
 
   /**
@@ -808,9 +830,9 @@ export class Vector3 extends Vector implements Vec3 {
 export class Vector4 extends Vector {
   // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
   // TO EXIST, CHANGING IT WILL BREAK STUFF
-  public type = ClassTypes.Vector4;
-  public z: number;
-  public w: number;
+  readonly type = ClassTypes.Vector4;
+  public z: number = 0;
+  public w: number = 0;
 
   public static readonly Zero: Vector4 = new Vector4(0, 0, 0, 0);
 
@@ -822,9 +844,7 @@ export class Vector4 extends Vector {
    * @param w The w-component of the vector (optional, defaults to z).
    */
   constructor(x: number, y = x, z = y, w = z) {
-    super(4, x, y, z, w);
-    this.z = z;
-    this.w = w;
+    super(x, y, z, w);
   }
 
   /**
