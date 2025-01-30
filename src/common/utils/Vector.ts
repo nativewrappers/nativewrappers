@@ -157,9 +157,11 @@ export class Vector {
     if (type !== EXT_VECTOR2 && type !== EXT_VECTOR3 && type !== EXT_VECTOR4)
       throw new Error("Buffer type is not a valid Vector.");
 
-    const arr = Array.from(new Float32Array(buffer), (v) =>
-      Number(v.toPrecision(7)),
-    );
+    const arr = new Array(buffer.length / 4);
+
+    for (let i = 0; i < arr.length; i++)
+      arr[i] = Number(buffer.readFloatLE(i * 4).toPrecision(7));
+
     return this.fromArray(arr) as InstanceType<T>;
   }
 
