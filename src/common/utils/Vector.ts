@@ -90,56 +90,15 @@ type InferVector<T> = T extends Vec4 | VectorN<4>
  * A base vector class inherited by all vector classes.
  */
 class Vector {
-  protected static create(x: number, y?: number): Vector2;
-  protected static create(x: number, y?: number, z?: number): Vector3;
   protected static create(
-    x: number,
-    y?: number,
+    x: number | Vec,
+    y: number = x as number,
     z?: number,
     w?: number,
-  ): Vector4;
-  /**
-   * Creates a new vector based on the provided vector-like object.
-   * @param obj The object representing the vector.
-   * @returns A new vector instance.
-   */
-  protected static create<T extends VectorType, U extends VectorLike>(
-    this: T,
-    obj: U,
-  ): InferVector<U>;
-  /**
-   * Creates a new vector based on the provided parameters.
-   * @param x The x-component of the vector.
-   * @param y The y-component of the vector (optional, defaults to the value of x).
-   * @param z The z-component of the vector (optional, defaults to the value of y).
-   * @param w The w-component of the vector (optional, defaults to the value of z).
-   * @returns A new vector instance.
-   */
-  protected static create<T extends VectorType, U extends VectorLike>(
-    this: T,
-    x: U | number,
-    y?: number,
-    z?: number,
-    w?: number,
-  ): InstanceType<T> {
-    if (y === undefined && typeof x === "number")
-      return new Vector2(x, x) as InstanceType<T>;
-    if (typeof x === "object") ({ x, y, z, w } = x);
+  ) {
+    if (typeof x === "object") ({ x, y, z = y, w = z } = x);
 
-    const size =
-      this instanceof Vector
-        ? this.size
-        : [x, y, z, w].filter((arg) => arg !== undefined).length;
-
-    switch (size) {
-      default:
-      case 2:
-        return new Vector2(x, y) as InstanceType<T>;
-      case 3:
-        return new Vector3(x, y, z) as InstanceType<T>;
-      case 4:
-        return new Vector4(x, y, z, w) as InstanceType<T>;
-    }
+    return new this(x, y, z, w);
   }
 
   /**
@@ -171,7 +130,7 @@ class Vector {
     this: T,
     obj: U,
   ) {
-    return this.create(obj);
+    return this.create(obj) as InstanceType<T>;
   }
 
   /**
@@ -219,15 +178,8 @@ class Vector {
    * @param x - The value to add to the x-component.
    * @returns A new vector with the x-component incremented.
    */
-  public static addX<T extends VectorType, U extends VectorLike>(
-    this: T,
-    obj: U,
-    x: number,
-  ) {
-    const vec = this.clone(obj);
-    vec.x += x;
-
-    return vec;
+  public static addX<U extends VectorLike>(obj: U, x: number) {
+    return this.create(obj.x + x, obj.y, obj.z, obj.w) as U;
   }
 
   /**
@@ -241,10 +193,7 @@ class Vector {
     obj: U,
     y: number,
   ) {
-    const vec = this.clone(obj);
-    vec.y += y;
-
-    return vec;
+    return this.create(obj.x, obj.y + y, obj.z, obj.w);
   }
 
   /**
@@ -258,10 +207,7 @@ class Vector {
     obj: U,
     z: number,
   ) {
-    const vec = this.clone(obj);
-    vec.z! += z;
-
-    return vec;
+    return this.create(obj.x, obj.y, obj.z + z, (obj as Vec4).w);
   }
 
   /**
@@ -275,10 +221,7 @@ class Vector {
     obj: U,
     w: number,
   ) {
-    const vec = this.clone(obj);
-    vec.w! += w;
-
-    return vec;
+    return this.create(obj.x, obj.y, obj.z, obj.w + w);
   }
 
   /**
@@ -540,6 +483,7 @@ class Vector {
     return Math.sqrt(sum);
   }
 
+  readonly type: unknown;
   readonly [size]: number = 2;
   public x: number = 0;
   public y: number = 0;
@@ -597,8 +541,8 @@ class Vector {
   /**
    * @see Vector.clone
    */
-  public clone() {
-    return Vector.clone(this);
+  public clone<T extends this>() {
+    return Vector.clone(this) as T;
   }
 
   /**
@@ -754,6 +698,18 @@ export class Vector2 extends Vector {
   constructor(x: number, y = x) {
     super(x, y);
   }
+
+  /**
+   * Creates a new vector based on the provided parameters.
+   * @param x The x-component of the vector.
+   * @param y The y-component of the vector (optional, defaults to the value of x).
+   * @returns A new vector instance.
+   */
+  protected static create(x: number | Vec, y = x as number) {
+    if (typeof x === "object") ({ x, y } = x);
+
+    return new this(x, y);
+  }
 }
 
 /**
@@ -804,6 +760,19 @@ export class Vector3 extends Vector implements Vec3 {
   }
 
   /**
+   * Creates a new vector based on the provided parameters.
+   * @param x The x-component of the vector.
+   * @param y The y-component of the vector (optional, defaults to the value of x).
+   * @param z The z-component of the vector (optional, defaults to the value of y).
+   * @returns A new vector instance.
+   */
+  protected static create(x: number | Vec, y = x as number, z = y) {
+    if (typeof x === "object") ({ x, y, z = y } = x);
+
+    return new this(x, y, z);
+  }
+
+  /**
    * @see Vector.addZ
    */
   public addZ(z: number) {
@@ -845,6 +814,20 @@ export class Vector4 extends Vector {
    */
   constructor(x: number, y = x, z = y, w = z) {
     super(x, y, z, w);
+  }
+
+  /**
+   * Creates a new vector based on the provided parameters.
+   * @param x The x-component of the vector.
+   * @param y The y-component of the vector (optional, defaults to the value of x).
+   * @param z The z-component of the vector (optional, defaults to the value of y).
+   * @param w The w-component of the vector (optional, defaults to the value of z).
+   * @returns A new vector instance.
+   */
+  protected static create(x: number | Vec, y = x as number, z = y, w = z) {
+    if (typeof x === "object") ({ x, y, z = y, w = z } = x);
+
+    return new this(x, y, z, w);
   }
 
   /**
