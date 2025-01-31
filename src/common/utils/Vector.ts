@@ -509,7 +509,7 @@ class Vector {
     }
 
     this.x = x;
-    this.y = y;    
+    this.y = y;
   }
 
   *[Symbol.iterator](): Iterator<number> {
