@@ -711,7 +711,7 @@ export class Vector3 extends Vector implements Vec3 {
   // TO EXIST, CHANGING IT WILL BREAK STUFF
   readonly type = ClassTypes.Vector3;
   readonly [size]: number = 3;
-  readonly z: number = 0;
+  public z: number = 0;
 
   public static readonly Zero: Vector3 = new Vector3(0, 0, 0);
 
@@ -794,8 +794,8 @@ export class Vector4 extends Vector {
   // TO EXIST, CHANGING IT WILL BREAK STUFF
   readonly type = ClassTypes.Vector4;
   readonly [size]: number = 4;
-  readonly z: number = 0;
-  readonly w: number = 0;
+  public z: number = 0;
+  public w: number = 0;
 
   public static readonly Zero: Vector4 = new Vector4(0, 0, 0, 0);
 
