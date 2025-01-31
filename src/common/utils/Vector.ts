@@ -483,8 +483,8 @@ class Vector {
     return Math.sqrt(sum);
   }
 
-  readonly type: unknown;
-  readonly [size]: number = 2;
+  public type: unknown;
+  public [size]: number = 2;
   public x: number = 0;
   public y: number = 0;
   public z: number | undefined;
@@ -509,17 +509,7 @@ class Vector {
     }
 
     this.x = x;
-    this.y = y;
-
-    if (z !== undefined) {
-      this.z = z;
-      ++this[size];
-    }
-
-    if (w !== undefined) {
-      this.w = w;
-      ++this[size];
-    }
+    this.y = y;    
   }
 
   *[Symbol.iterator](): Iterator<number> {
@@ -687,6 +677,7 @@ export class Vector2 extends Vector {
   // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
   // TO EXIST, CHANGING IT WILL BREAK STUFF
   readonly type = ClassTypes.Vector2;
+  readonly [size]: number = 2;
 
   public static readonly Zero: Vector2 = new Vector2(0, 0);
 
@@ -719,7 +710,8 @@ export class Vector3 extends Vector implements Vec3 {
   // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
   // TO EXIST, CHANGING IT WILL BREAK STUFF
   readonly type = ClassTypes.Vector3;
-  public z: number = 0;
+  readonly [size]: number = 3;
+  readonly z: number = 0;
 
   public static readonly Zero: Vector3 = new Vector3(0, 0, 0);
 
@@ -757,6 +749,7 @@ export class Vector3 extends Vector implements Vec3 {
    */
   constructor(x: number, y = x, z = y) {
     super(x, y, z);
+    this.z = z;
   }
 
   /**
@@ -800,8 +793,9 @@ export class Vector4 extends Vector {
   // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
   // TO EXIST, CHANGING IT WILL BREAK STUFF
   readonly type = ClassTypes.Vector4;
-  public z: number = 0;
-  public w: number = 0;
+  readonly [size]: number = 4;
+  readonly z: number = 0;
+  readonly w: number = 0;
 
   public static readonly Zero: Vector4 = new Vector4(0, 0, 0, 0);
 
@@ -814,6 +808,8 @@ export class Vector4 extends Vector {
    */
   constructor(x: number, y = x, z = y, w = z) {
     super(x, y, z, w);
+    this.z = w;
+    this.w = w;
   }
 
   /**
