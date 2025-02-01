@@ -18,7 +18,7 @@ Represents a 2-dimensional vector.
 new Vector2(x, y?): Vector2
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:317
+Defined in: lib/common/utils/Vector.d.ts:318
 
 Constructs a new 2D vector.
 
@@ -43,13 +43,13 @@ Vector.constructor
 
 | Property | Modifier | Type | Default value | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| <a id="size"></a> `[size]` | `readonly` | `number` | `undefined` | - | `Vector.[size]` | lib/common/utils/Vector.d.ts:209 |
+| <a id="size"></a> `[size]` | `readonly` | `number` | `undefined` | `Vector.[size]` | - | lib/common/utils/Vector.d.ts:311 |
 | <a id="type"></a> `type` | `readonly` | `Vector2` | `ClassTypes.Vector2` | `Vector.type` | - | lib/common/utils/Vector.d.ts:310 |
 | <a id="w"></a> `w` | `public` | `undefined` \| `number` | `undefined` | - | `Vector.w` | lib/common/utils/Vector.d.ts:213 |
 | <a id="x-1"></a> `x` | `public` | `number` | `undefined` | - | `Vector.x` | lib/common/utils/Vector.d.ts:210 |
 | <a id="y-1"></a> `y` | `public` | `number` | `undefined` | - | `Vector.y` | lib/common/utils/Vector.d.ts:211 |
 | <a id="z"></a> `z` | `public` | `undefined` \| `number` | `undefined` | - | `Vector.z` | lib/common/utils/Vector.d.ts:212 |
-| <a id="zero"></a> `Zero` | `readonly` | [`Vector2`](Vector2.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:311 |
+| <a id="zero"></a> `Zero` | `readonly` | [`Vector2`](Vector2.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:312 |
 
 ## Accessors
 
@@ -938,7 +938,7 @@ Vector.clone
 protected static create(x, y?): Vector2
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:324
+Defined in: lib/common/utils/Vector.d.ts:325
 
 Creates a new vector based on the provided parameters.
 

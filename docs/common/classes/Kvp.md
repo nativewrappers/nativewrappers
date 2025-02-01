@@ -2,7 +2,7 @@
 
 # Class: Kvp
 
-Defined in: [src/common/Kvp.ts:2](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/Kvp.ts#L2)
+Defined in: [src/common/Kvp.ts:2](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L2)
 
 ## Constructors
 
@@ -24,7 +24,7 @@ new Kvp(): Kvp
 delete(key): void
 ```
 
-Defined in: [src/common/Kvp.ts:88](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/Kvp.ts#L88)
+Defined in: [src/common/Kvp.ts:88](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L88)
 
 Deletes the specified value for key, this is a blocking operation, if you're deleting a bunch of keys you should use [[deleteAsync]]
 
@@ -46,7 +46,7 @@ Deletes the specified value for key, this is a blocking operation, if you're del
 deleteAsync(key): void
 ```
 
-Defined in: [src/common/Kvp.ts:96](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/Kvp.ts#L96)
+Defined in: [src/common/Kvp.ts:96](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L96)
 
 Deletes the specified resource keys value, this doesn't immediately write to disk and needs [[flush]] called afterwards.
 
@@ -68,7 +68,7 @@ Deletes the specified resource keys value, this doesn't immediately write to dis
 flush(): void
 ```
 
-Defined in: [src/common/Kvp.ts:103](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/Kvp.ts#L103)
+Defined in: [src/common/Kvp.ts:103](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L103)
 
 Ensures that any previous async call is flushed to disk
 
@@ -84,7 +84,7 @@ Ensures that any previous async call is flushed to disk
 getKvpFloat(key): number
 ```
 
-Defined in: [src/common/Kvp.ts:75](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/Kvp.ts#L75)
+Defined in: [src/common/Kvp.ts:75](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L75)
 
 Gets the specified value for key
 
@@ -108,7 +108,7 @@ the value stored as a float, or 0.0 if there is no value
 getKvpJson<T>(key): T
 ```
 
-Defined in: [src/common/Kvp.ts:79](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/Kvp.ts#L79)
+Defined in: [src/common/Kvp.ts:79](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L79)
 
 #### Type Parameters
 
@@ -134,7 +134,7 @@ Defined in: [src/common/Kvp.ts:79](https://github.com/nativewrappers/nativewrapp
 getKvpNumber(key): number
 ```
 
-Defined in: [src/common/Kvp.ts:66](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/Kvp.ts#L66)
+Defined in: [src/common/Kvp.ts:66](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L66)
 
 Gets the specified value for key
 
@@ -158,7 +158,7 @@ the value stored, as a number, or 0 if there is no value
 getKvpsAsFloat(prefix): IterableIterator<number>
 ```
 
-Defined in: [src/common/Kvp.ts:169](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/Kvp.ts#L169)
+Defined in: [src/common/Kvp.ts:169](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L169)
 
 enumerates over any kvp prefixed with the prefix
 
@@ -186,7 +186,7 @@ for (const value of Kvp.getKvpsAsFloat("native:")) {
 getKvpsAsNumber(prefix): IterableIterator<number>
 ```
 
-Defined in: [src/common/Kvp.ts:154](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/Kvp.ts#L154)
+Defined in: [src/common/Kvp.ts:154](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L154)
 
 enumerates over any kvp prefixed with the prefix
 
@@ -214,7 +214,7 @@ for (const value of Kvp.getKvpsAsNumber("native:")) {
 getKvpsAsString(prefix): IterableIterator<string>
 ```
 
-Defined in: [src/common/Kvp.ts:139](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/Kvp.ts#L139)
+Defined in: [src/common/Kvp.ts:139](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L139)
 
 enumerates over any kvp prefixed with the prefix
 
@@ -242,7 +242,7 @@ for (const value of Kvp.getKvpsAsString("native:")) {
 getKvpString(key): null | string
 ```
 
-Defined in: [src/common/Kvp.ts:57](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/Kvp.ts#L57)
+Defined in: [src/common/Kvp.ts:57](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L57)
 
 Gets the specified value for key
 
@@ -266,7 +266,7 @@ a string, or null if there is no value
 setKvp<T>(key, value): void
 ```
 
-Defined in: [src/common/Kvp.ts:10](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/Kvp.ts#L10)
+Defined in: [src/common/Kvp.ts:10](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L10)
 
 Sets the resource key to the specified value this is a blocking operation, if you're doing large write operations you should use [[setKvpAsync]] instead.
 
@@ -295,7 +295,7 @@ Sets the resource key to the specified value this is a blocking operation, if yo
 setKvpAsync<T>(key, value): void
 ```
 
-Defined in: [src/common/Kvp.ts:28](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/Kvp.ts#L28)
+Defined in: [src/common/Kvp.ts:28](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L28)
 
 Sets the resource key to the specified value, this doesn't immediately write to disk and needs [[flush]] called afterwards.
 
@@ -324,7 +324,7 @@ Sets the resource key to the specified value, this doesn't immediately write to 
 setKvpJson(key, value): void
 ```
 
-Defined in: [src/common/Kvp.ts:47](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/common/Kvp.ts#L47)
+Defined in: [src/common/Kvp.ts:47](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L47)
 
 Sets the specified key to the specified json value
 This can error if given an invalid object

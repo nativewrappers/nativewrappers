@@ -2,7 +2,7 @@
 
 # Class: CoreAttribute
 
-Defined in: [src/redm/Attribute.ts:9](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Attribute.ts#L9)
+Defined in: [src/redm/Attribute.ts:9](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/Attribute.ts#L9)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/redm/Attribute.ts:9](https://github.com/nativewrappers/nativewr
 new CoreAttribute(ped, attribute): CoreAttribute
 ```
 
-Defined in: [src/redm/Attribute.ts:12](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Attribute.ts#L12)
+Defined in: [src/redm/Attribute.ts:12](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/Attribute.ts#L12)
 
 #### Parameters
 
@@ -35,7 +35,7 @@ Defined in: [src/redm/Attribute.ts:12](https://github.com/nativewrappers/nativew
 get CoreValue(): number
 ```
 
-Defined in: [src/redm/Attribute.ts:52](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Attribute.ts#L52)
+Defined in: [src/redm/Attribute.ts:52](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/Attribute.ts#L52)
 
 Returns how full the core is
 
@@ -49,7 +49,7 @@ Returns how full the core is
 set CoreValue(amount): void
 ```
 
-Defined in: [src/redm/Attribute.ts:56](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Attribute.ts#L56)
+Defined in: [src/redm/Attribute.ts:56](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/Attribute.ts#L56)
 
 ##### Parameters
 
@@ -71,7 +71,7 @@ Defined in: [src/redm/Attribute.ts:56](https://github.com/nativewrappers/nativew
 get Overpowered(): boolean
 ```
 
-Defined in: [src/redm/Attribute.ts:28](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Attribute.ts#L28)
+Defined in: [src/redm/Attribute.ts:28](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/Attribute.ts#L28)
 
 ##### Returns
 
@@ -87,7 +87,7 @@ Defined in: [src/redm/Attribute.ts:28](https://github.com/nativewrappers/nativew
 get OverpoweredTimeLeft(): number
 ```
 
-Defined in: [src/redm/Attribute.ts:39](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Attribute.ts#L39)
+Defined in: [src/redm/Attribute.ts:39](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/Attribute.ts#L39)
 
 ##### Returns
 
@@ -103,7 +103,7 @@ the amount of overpower time left in seconds
 enableOverpower(amount, makeSound): void
 ```
 
-Defined in: [src/redm/Attribute.ts:23](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Attribute.ts#L23)
+Defined in: [src/redm/Attribute.ts:23](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/Attribute.ts#L23)
 
 This doesn't seem to actually do anything
 

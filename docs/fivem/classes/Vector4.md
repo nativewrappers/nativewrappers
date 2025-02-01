@@ -2,7 +2,7 @@
 
 # Class: Vector4
 
-Defined in: lib/common/utils/Vector.d.ts:377
+Defined in: lib/common/utils/Vector.d.ts:379
 
 Represents a 4-dimensional vector.
 
@@ -22,7 +22,7 @@ new Vector4(
    w?): Vector4
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:389
+Defined in: lib/common/utils/Vector.d.ts:392
 
 Constructs a new 4D vector.
 
@@ -49,13 +49,13 @@ Vector.constructor
 
 | Property | Modifier | Type | Default value | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| <a id="size"></a> `[size]` | `readonly` | `number` | `undefined` | - | `Vector.[size]` | lib/common/utils/Vector.d.ts:209 |
-| <a id="type"></a> `type` | `readonly` | `Vector4` | `ClassTypes.Vector4` | `Vector.type` | - | lib/common/utils/Vector.d.ts:378 |
-| <a id="w-1"></a> `w` | `public` | `number` | `undefined` | `Vector.w` | - | lib/common/utils/Vector.d.ts:380 |
+| <a id="size"></a> `[size]` | `readonly` | `number` | `undefined` | `Vector.[size]` | - | lib/common/utils/Vector.d.ts:381 |
+| <a id="type"></a> `type` | `readonly` | `Vector4` | `ClassTypes.Vector4` | `Vector.type` | - | lib/common/utils/Vector.d.ts:380 |
+| <a id="w-1"></a> `w` | `public` | `number` | `undefined` | `Vector.w` | - | lib/common/utils/Vector.d.ts:383 |
 | <a id="x-1"></a> `x` | `public` | `number` | `undefined` | - | `Vector.x` | lib/common/utils/Vector.d.ts:210 |
 | <a id="y-1"></a> `y` | `public` | `number` | `undefined` | - | `Vector.y` | lib/common/utils/Vector.d.ts:211 |
-| <a id="z-1"></a> `z` | `public` | `number` | `undefined` | `Vector.z` | - | lib/common/utils/Vector.d.ts:379 |
-| <a id="zero"></a> `Zero` | `readonly` | [`Vector4`](Vector4.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:381 |
+| <a id="z-1"></a> `z` | `public` | `number` | `undefined` | `Vector.z` | - | lib/common/utils/Vector.d.ts:382 |
+| <a id="zero"></a> `Zero` | `readonly` | [`Vector4`](Vector4.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:384 |
 
 ## Accessors
 
@@ -193,7 +193,7 @@ Vector.addAbsolute
 addW(w): Vector
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:406
+Defined in: lib/common/utils/Vector.d.ts:409
 
 #### Parameters
 
@@ -277,7 +277,7 @@ Vector.addY
 addZ(z): Vector
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:402
+Defined in: lib/common/utils/Vector.d.ts:405
 
 #### Parameters
 
@@ -331,7 +331,7 @@ Vector.clone
 crossProduct(v): Vec4 | Vec3
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:410
+Defined in: lib/common/utils/Vector.d.ts:413
 
 #### Parameters
 
@@ -731,7 +731,7 @@ Vector.toString
 toVec2(): Vector2
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:414
+Defined in: lib/common/utils/Vector.d.ts:417
 
 #### Returns
 
@@ -747,7 +747,7 @@ the x and y values as Vec2
 toVec3(): Vector3
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:418
+Defined in: lib/common/utils/Vector.d.ts:421
 
 #### Returns
 
@@ -1052,7 +1052,7 @@ protected static create(
    w?): Vector4
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:398
+Defined in: lib/common/utils/Vector.d.ts:401
 
 Creates a new vector based on the provided parameters.
 

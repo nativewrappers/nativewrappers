@@ -2,7 +2,7 @@
 
 # Interface: StateBagChangeHandler()\<T\>
 
-Defined in: [src/server/cfx/StateBagChangeHandler.ts:1](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/server/cfx/StateBagChangeHandler.ts#L1)
+Defined in: [src/server/cfx/StateBagChangeHandler.ts:1](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/server/cfx/StateBagChangeHandler.ts#L1)
 
 ## Type Parameters
 
@@ -19,7 +19,7 @@ interface StateBagChangeHandler(
    replicated): void
 ```
 
-Defined in: [src/server/cfx/StateBagChangeHandler.ts:2](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/server/cfx/StateBagChangeHandler.ts#L2)
+Defined in: [src/server/cfx/StateBagChangeHandler.ts:2](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/server/cfx/StateBagChangeHandler.ts#L2)
 
 ## Parameters
 

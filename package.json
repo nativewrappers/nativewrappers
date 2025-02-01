@@ -4,7 +4,7 @@
 	"author": "Remco Troost <d0p3t>",
 	"license": "MIT",
 	"type": "module",
-	"version": "0.0.49",
+	"version": "0.0.50",
 	"publishConfig": {
 		"directory": "lib"
 	},

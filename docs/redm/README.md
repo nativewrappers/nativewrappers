@@ -12,6 +12,7 @@
 | [ePedAttribute](enumerations/ePedAttribute.md) | - |
 | [KeyHash](enumerations/KeyHash.md) | - |
 | [KnockOffVehicle](enumerations/KnockOffVehicle.md) | - |
+| [RawKeys](enumerations/RawKeys.md) | - |
 | [Relationship](enumerations/Relationship.md) | - |
 | [TamingState](enumerations/TamingState.md) | - |
 | [VehicleSeat](enumerations/VehicleSeat.md) | - |
@@ -38,3 +39,12 @@
 | Type alias | Description |
 | ------ | ------ |
 | [OptionalPed](type-aliases/OptionalPed.md) | - |
+
+## Functions
+
+| Function | Description |
+| ------ | ------ |
+| [createDraftVehicle](functions/createDraftVehicle.md) | Creates a vehicle at the specified {@param spawnPos}, you don't need to request the model before this. |
+| [createPed](functions/createPed.md) | Creates a ped at the specified {@param spawnPos}, you don't need to request the model before this. |
+| [createProp](functions/createProp.md) | Creates a ped at the specified {@param spawnPos}, you don't need to request the model before this. |
+| [createVehicle](functions/createVehicle.md) | Creates a vehicle at the specified {@param spawnPos}, you don't need to request the model before this. |

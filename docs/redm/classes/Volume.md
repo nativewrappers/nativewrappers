@@ -2,7 +2,7 @@
 
 # Class: Volume
 
-Defined in: [src/redm/Volume.ts:3](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Volume.ts#L3)
+Defined in: [src/redm/Volume.ts:3](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/Volume.ts#L3)
 
 ## Constructors
 
@@ -16,7 +16,7 @@ new Volume(
    customName?): Volume
 ```
 
-Defined in: [src/redm/Volume.ts:5](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Volume.ts#L5)
+Defined in: [src/redm/Volume.ts:5](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/Volume.ts#L5)
 
 #### Parameters
 
@@ -41,7 +41,7 @@ Defined in: [src/redm/Volume.ts:5](https://github.com/nativewrappers/nativewrapp
 get Handle(): number
 ```
 
-Defined in: [src/redm/Volume.ts:40](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Volume.ts#L40)
+Defined in: [src/redm/Volume.ts:40](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/Volume.ts#L40)
 
 ##### Returns
 

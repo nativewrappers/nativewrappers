@@ -2,7 +2,7 @@
 
 # Class: GameConstants
 
-Defined in: [src/redm/Game.ts:4](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Game.ts#L4)
+Defined in: [src/redm/GameConstants.ts:4](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/GameConstants.ts#L4)
 
 ## Constructors
 
@@ -20,6 +20,21 @@ new GameConstants(): GameConstants
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="player"></a> `Player` | `readonly` | [`Player`](Player.md) | [src/redm/Game.ts:7](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Game.ts#L7) |
-| <a id="playerid"></a> `PlayerId` | `readonly` | `number` | [src/redm/Game.ts:5](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Game.ts#L5) |
-| <a id="serverid"></a> `ServerId` | `readonly` | `number` | [src/redm/Game.ts:6](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/Game.ts#L6) |
+| <a id="playerid"></a> `PlayerId` | `readonly` | `number` | [src/redm/GameConstants.ts:8](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/GameConstants.ts#L8) |
+| <a id="serverid"></a> `ServerId` | `readonly` | `number` | [src/redm/GameConstants.ts:10](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/GameConstants.ts#L10) |
+
+## Accessors
+
+### Player
+
+#### Get Signature
+
+```ts
+get static Player(): Player
+```
+
+Defined in: [src/redm/GameConstants.ts:12](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/GameConstants.ts#L12)
+
+##### Returns
+
+[`Player`](Player.md)

@@ -2,7 +2,7 @@
 
 # Class: Player
 
-Defined in: [src/redm/entities/Player.ts:20](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/entities/Player.ts#L20)
+Defined in: [src/redm/entities/Player.ts:23](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/entities/Player.ts#L23)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/redm/entities/Player.ts:20](https://github.com/nativewrappers/n
 new Player(handle): Player
 ```
 
-Defined in: [src/redm/entities/Player.ts:34](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/entities/Player.ts#L34)
+Defined in: [src/redm/entities/Player.ts:47](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/entities/Player.ts#L47)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [src/redm/entities/Player.ts:34](https://github.com/nativewrappers/n
 get Handle(): number
 ```
 
-Defined in: [src/redm/entities/Player.ts:38](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/entities/Player.ts#L38)
+Defined in: [src/redm/entities/Player.ts:51](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/entities/Player.ts#L51)
 
 ##### Returns
 
@@ -48,15 +48,13 @@ Defined in: [src/redm/entities/Player.ts:38](https://github.com/nativewrappers/n
 addDeadeyeUpgrade(amount): void
 ```
 
-Defined in: [src/redm/entities/Player.ts:58](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/entities/Player.ts#L58)
-
-Doesn't seem to work :*
+Defined in: [src/redm/entities/Player.ts:67](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/entities/Player.ts#L67)
 
 #### Parameters
 
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `amount` | `number` |  |
+| Parameter | Type |
+| ------ | ------ |
+| `amount` | `number` |
 
 #### Returns
 
@@ -70,7 +68,7 @@ Doesn't seem to work :*
 addHealthUpgrade(amount): void
 ```
 
-Defined in: [src/redm/entities/Player.ts:50](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/entities/Player.ts#L50)
+Defined in: [src/redm/entities/Player.ts:63](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/entities/Player.ts#L63)
 
 #### Parameters
 
@@ -90,7 +88,7 @@ Defined in: [src/redm/entities/Player.ts:50](https://github.com/nativewrappers/n
 addStaminaUpgrade(amount): void
 ```
 
-Defined in: [src/redm/entities/Player.ts:46](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/entities/Player.ts#L46)
+Defined in: [src/redm/entities/Player.ts:59](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/entities/Player.ts#L59)
 
 Adds the amount of stamina player has on the hud
 
@@ -112,7 +110,7 @@ Adds the amount of stamina player has on the hud
 static fromPedHandle(handle): Player
 ```
 
-Defined in: [src/redm/entities/Player.ts:23](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/entities/Player.ts#L23)
+Defined in: [src/redm/entities/Player.ts:26](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/entities/Player.ts#L26)
 
 #### Parameters
 
@@ -129,10 +127,12 @@ Defined in: [src/redm/entities/Player.ts:23](https://github.com/nativewrappers/n
 ### fromServerId()
 
 ```ts
-static fromServerId(serverId): Player
+static fromServerId(serverId): null | Player
 ```
 
-Defined in: [src/redm/entities/Player.ts:27](https://github.com/nativewrappers/nativewrappers/blob/b3515708998f90e7d7096e3fffccb36c69d6b942/src/redm/entities/Player.ts#L27)
+Defined in: [src/redm/entities/Player.ts:34](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/redm/entities/Player.ts#L34)
+
+Gets the player from the specified {@param serverId}
 
 #### Parameters
 
@@ -142,4 +142,6 @@ Defined in: [src/redm/entities/Player.ts:27](https://github.com/nativewrappers/n
 
 #### Returns
 
-[`Player`](Player.md)
+`null` \| [`Player`](Player.md)
+
+the player object, or null if the player didn't exist
