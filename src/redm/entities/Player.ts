@@ -1,3 +1,4 @@
+import { GameConstants } from "redm/GameConstants";
 import { _N } from "../utils/Native";
 
 const handleUpgrade = (name: string, amount: number): void => {
@@ -5,6 +6,8 @@ const handleUpgrade = (name: string, amount: number): void => {
   const a2 = new DataView(b1);
   const b2 = new ArrayBuffer(8 * 12);
   const a3 = new DataView(b2);
+
+  // _INVENTORY_ADD_ITEM_WITH_GUID
   _N(
     "0xCB5D11F9508A928D",
     1,
@@ -24,8 +27,18 @@ export class Player {
     return new Player(NetworkGetPlayerIndexFromPed(handle));
   }
 
-  public static fromServerId(serverId: number): Player {
-    return new Player(GetPlayerFromServerId(serverId));
+  /**
+   * Gets the player from the specified {@param serverId}
+   * @returns the player object, or null if the player didn't exist
+   */
+  public static fromServerId(serverId: number): Player | null {
+    if (serverId === GameConstants.ServerId) {
+      return GameConstants.Player;
+    }
+
+    const player = GetPlayerFromServerId(serverId);
+    if (player === -1) return null;
+    return new Player(player);
   }
 
   /**
@@ -51,10 +64,6 @@ export class Player {
     handleUpgrade("UPGRADE_HEALTH_TANK_1", amount);
   }
 
-  /**
-   * Doesn't seem to work :*
-   * @param amount
-   */
   addDeadeyeUpgrade(amount: number): void {
     handleUpgrade("UPGRADE_DEADEYE_TANK_1", amount);
   }

@@ -4,5 +4,9 @@ export * from "./Volume";
 export * from "./Controls";
 export * from "./Game";
 
+export * from "./world";
+
+export * from "./GameConstants";
+
 export * from "./RelationshipGroup";
 export * from "./Attribute";
