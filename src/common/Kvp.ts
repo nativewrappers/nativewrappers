@@ -1,23 +1,14 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 export class Kvp {
-  // TODO: Find a way to do this without casting to any
-
   /**
    * Sets the resource key to the specified value this is a blocking operation, if you're doing large write operations you should use [[setKvpAsync]] instead.
    * @param key the key string
    * @param value the value to set the key to
    */
-  public setKvp<T = number | string>(key: string, value: T): void {
-    const type = typeof value;
-    if (type === "string") {
-      SetResourceKvp(key, value as any);
-    } else {
-      if (Number.isInteger(value)) {
-        SetResourceKvpInt(key, value as any);
-      } else {
-        SetResourceKvpFloat(key, value as any);
-      }
-    }
+  public setKvp<T extends number | string>(key: string, value: T): void {
+    if (typeof value === "string") return SetResourceKvp(key, value);
+    if (Number.isInteger(value)) return SetResourceKvpInt(key, value);
+
+    return SetResourceKvpFloat(key, value);
   }
 
   /**
@@ -25,17 +16,11 @@ export class Kvp {
    * @param key the key string
    * @param value the value to set the key to
    */
-  public setKvpAsync<T = number | string>(key: string, value: T): void {
-    const type = typeof value;
-    if (type === "string") {
-      SetResourceKvpNoSync(key, value as any);
-    } else {
-      if (Number.isInteger(value)) {
-        SetResourceKvpIntNoSync(key, value as any);
-      } else {
-        SetResourceKvpFloatNoSync(key, value as any);
-      }
-    }
+  public setKvpAsync<T extends number | string>(key: string, value: T): void {
+    if (typeof value === "string") return SetResourceKvpNoSync(key, value);
+    if (Number.isInteger(value)) return SetResourceKvpIntNoSync(key, value);
+
+    return SetResourceKvpFloatNoSync(key, value);
   }
 
   /**
