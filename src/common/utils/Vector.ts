@@ -89,16 +89,43 @@ type InferVector<T> = T extends Vec4 | VectorN<4>
 /**
  * A base vector class inherited by all vector classes.
  */
-class Vector {
-  protected static create(
+abstract class Vector {
+  protected static create<T>(
+    this: T,
     x: number | Vec,
     y: number = x as number,
     z?: number,
     w?: number,
   ) {
-    if (typeof x === "object") ({ x, y, z = y, w = z } = x);
+    if (typeof x === "object") ({ x, y, z, w } = x);
 
-    return new this(x, y, z, w);
+    const size =
+      (this instanceof Vector && this.size) ||
+      [x, y, z, w].filter((arg) => arg !== undefined).length;
+
+    switch (size) {
+      case 1:
+      case 2:
+        return new Vector2(x, y);
+      case 3:
+        return new Vector3(x, y, z);
+      case 4:
+        return new Vector4(x, y, z, w);
+      default:
+        throw new Error(`Cannot instantiate Vector with size of ${size}.`);
+    }
+  }
+
+  /**
+   * Creates a deep copy of the provided vector.
+   * @param obj The vector to clone.
+   * @returns A new vector instance that is a copy of the provided vector.
+   */
+  public static clone<T extends VectorType, U extends VectorLike>(
+    this: T,
+    obj: U,
+  ) {
+    return this.create(obj);
   }
 
   /**
@@ -118,19 +145,7 @@ class Vector {
     for (let i = 0; i < arr.length; i++)
       arr[i] = Number(buffer.readFloatLE(i * 4).toPrecision(7));
 
-    return this.fromArray(arr) as InstanceType<T>;
-  }
-
-  /**
-   * Creates a deep copy of the provided vector.
-   * @param obj The vector to clone.
-   * @returns A new vector instance that is a copy of the provided vector.
-   */
-  public static clone<T extends VectorType, U extends VectorLike>(
-    this: T,
-    obj: U,
-  ) {
-    return this.create(obj) as InstanceType<T>;
+    return this.fromArray(arr);
   }
 
   /**
@@ -168,8 +183,8 @@ class Vector {
     this: T,
     a: U,
     b: VectorLike | number,
-  ): U {
-    return this.operate(a, b, (x, y) => x + y) as U;
+  ) {
+    return this.operate(a, b, (x, y) => x + y);
   }
 
   /**
@@ -179,7 +194,7 @@ class Vector {
    * @returns A new vector with the x-component incremented.
    */
   public static addX<U extends VectorLike>(obj: U, x: number) {
-    return this.create(obj.x + x, obj.y, obj.z, obj.w) as U;
+    return this.create(obj.x + x, obj.y, obj.z, obj.w) as unknown as U;
   }
 
   /**
@@ -193,7 +208,7 @@ class Vector {
     obj: U,
     y: number,
   ) {
-    return this.create(obj.x, obj.y + y, obj.z, obj.w);
+    return this.create(obj.x, obj.y + y, obj.z, obj.w) as unknown as U;
   }
 
   /**
@@ -207,7 +222,12 @@ class Vector {
     obj: U,
     z: number,
   ) {
-    return this.create(obj.x, obj.y, obj.z + z, (obj as Vec4).w);
+    return this.create(
+      obj.x,
+      obj.y,
+      obj.z + z,
+      (obj as Vec4).w,
+    ) as unknown as U;
   }
 
   /**
@@ -221,7 +241,7 @@ class Vector {
     obj: U,
     w: number,
   ) {
-    return this.create(obj.x, obj.y, obj.z, obj.w + w);
+    return this.create(obj.x, obj.y, obj.z, obj.w + w) as unknown as U;
   }
 
   /**
@@ -440,9 +460,9 @@ class Vector {
   static fromObject<
     T extends VectorType,
     U extends InferVector<T> | VectorArray<T>,
-  >(this: T, primitive: U | MsgpackBuffer) {
+  >(this: T, primitive: U | MsgpackBuffer): InstanceType<T> {
     if (Array.isArray(primitive))
-      return this.fromArray(primitive as VectorArray<T>) as InstanceType<T>;
+      return this.fromArray(primitive as VectorArray<T>);
 
     if ("buffer" in primitive) return this.fromBuffer(primitive);
 
