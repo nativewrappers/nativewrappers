@@ -1,157 +1,215 @@
-export class Kvp {
-  /**
-   * Sets the resource key to the specified value this is a blocking operation, if you're doing large write operations you should use [[setKvpAsync]] instead.
-   * @param key the key string
-   * @param value the value to set the key to
-   */
-  public setKvp<T extends number | string>(key: string, value: T): void {
-    if (typeof value === "string") return SetResourceKvp(key, value);
-    if (Number.isInteger(value)) return SetResourceKvpInt(key, value);
+interface Schema {
+  [key: string]: "string" | "number" | "float" | object;
+}
 
-    return SetResourceKvpFloat(key, value);
+export class Kvp<T extends Schema> {
+  private schema: T;
+
+  constructor(schema: T) {
+    this.schema = { ...schema };
+
+    for (const key in this.schema) {
+      if (typeof this.schema[key] === "object")
+        this.schema[key] = Object as any;
+    }
   }
 
   /**
-   * Sets the resource key to the specified value, this doesn't immediately write to disk and needs [[flush]] called afterwards.
-   * @param key the key string
-   * @param value the value to set the key to
+   * Returns the type associated with a schema key.
    */
-  public setKvpAsync<T extends number | string>(key: string, value: T): void {
-    if (typeof value === "string") return SetResourceKvpNoSync(key, value);
-    if (Number.isInteger(value)) return SetResourceKvpIntNoSync(key, value);
-
-    return SetResourceKvpFloatNoSync(key, value);
+  public getType(key: keyof T): "string" | "number" | "float" | "object" {
+    return typeof this.schema[key] === "object" ? "object" : this.schema[key];
   }
 
   /**
-   * Sets the specified key to the specified json value
-   * This can error if given an invalid object
-   * @param key the key string
-   * @param value the value to set the key to
+   * Returns the value associated with a key as a number.
    */
-  public setKvpJson(key: string, value: any): void {
-    const stringified = JSON.stringify(value);
-    this.setKvp(key, stringified);
-  }
-
-  /**
-   * Gets the specified value for key
-   * @param key the key of the value to get
-   * @returns a string, or null if there is no value
-   */
-  public getKvpString(key: string): string | null {
-    return GetResourceKvpString(key);
-  }
-
-  /**
-   * Gets the specified value for key
-   * @param key the key of the value to get
-   * @returns the value stored, as a number, or 0 if there is no value
-   */
-  public getKvpNumber(key: string): number {
+  public getNumber(key: string) {
     return GetResourceKvpInt(key);
   }
 
   /**
-   * Gets the specified value for key
-   * @param key the key of the value to get
-   * @returns the value stored as a float, or 0.0 if there is no value
+   * Returns the value associated with a key as a float.
    */
-  public getKvpFloat(key: string): number {
+  public getFloat(key: string) {
     return GetResourceKvpFloat(key);
   }
 
-  public getKvpJson<T>(key: string): T {
-    const kvp = this.getKvpString(key);
-    return JSON.parse(kvp || "{}");
-  }
-
   /**
-   * Deletes the specified value for key, this is a blocking operation, if you're deleting a bunch of keys you should use [[deleteAsync]]
-   * @param key the key of the value to delete
+   * Returns the value associated with a key as a string.
    */
-  public delete(key: string): void {
-    DeleteResourceKvp(key);
+  public getString(key: string) {
+    return GetResourceKvpString(key) as string | null;
   }
 
   /**
-   * Deletes the specified resource keys value, this doesn't immediately write to disk and needs [[flush]] called afterwards.
-   * @param key the key to delete
+   * Returns the value associated with a key as a parsed JSON string.
    */
-  public deleteAsync(key: string): void {
-    DeleteResourceKvpNoSync(key);
+  public getJson<T>(key: string): T | null {
+    const str = GetResourceKvpString(key as string);
+    return str ? JSON.parse(str) : null;
   }
 
   /**
-   * Ensures that any previous async call is flushed to disk
+   * Sets the value associated with a key as a number.
+   * @param async set the value using an async operation.
+   */
+  public setNumber(key: string, value: number, async = false): void {
+    return async
+      ? SetResourceKvpIntNoSync(key, value)
+      : SetResourceKvpInt(key, value);
+  }
+
+  /**
+   * Sets the value associated with a key as a float.
+   * @param async set the value using an async operation.
+   */
+  public setFloat(key: string, value: number, async = false): void {
+    return async
+      ? SetResourceKvpFloatNoSync(key, value)
+      : SetResourceKvpFloat(key, value);
+  }
+
+  /**
+   * Sets the value associated with a key as a string.
+   * @param async set the value using an async operation.
+   */
+  public setString(key: string, value: string, async = false): void {
+    return async
+      ? SetResourceKvpNoSync(key, value)
+      : SetResourceKvp(key, value);
+  }
+
+  /**
+   * Sets the value associated with a key as a JSON string.
+   * @param async set the value using an async operation.
+   */
+  public setJson(key: string, value: object, async = false): void {
+    const str = JSON.stringify(value);
+    return async ? SetResourceKvpNoSync(key, str) : SetResourceKvp(key, str);
+  }
+
+  /**
+   * Returns the value associated with a key, determining the type using the declared Kvp schema.
+   */
+  public get<K extends keyof T>(
+    key: K,
+  ): T[K] extends "number" | "float"
+    ? number
+    : T[K] extends object
+      ? T[K] | null
+      : string | null {
+    const type = this.getType(key);
+
+    switch (type) {
+      case "number":
+        return this.getNumber(key as string) as any;
+      case "float":
+        return this.getFloat(key as string) as any;
+      case "object":
+        return this.getJson(key as string) as any;
+      default:
+        return this.getString(key as string) as any;
+    }
+  }
+
+  /**
+   * Sets the value associated with a key as a value, using its type from the declared Kvp stricture.
+   * @param async set the value using an async operation.
+   */
+  public set<K extends string>(
+    key: K extends keyof T ? K : never,
+    value: T[K] extends "number" | "float"
+      ? number
+      : T[K] extends object
+        ? T[K] | null
+        : string | null,
+    async = false,
+  ): void {
+    const type = this.getType(key);
+    const valueType = typeof value;
+
+    if (valueType !== type && type !== "float" && valueType === "number")
+      throw new Error(
+        `Expected '${key as string}' to be type '${type}' but received '${valueType}'`,
+      );
+
+    switch (type) {
+      case "number":
+        return this.setNumber(key, value as number, async);
+      case "float":
+        return this.setFloat(key, value as number, async);
+      case "object":
+        return this.setJson(key, value as object, async);
+      default:
+        return this.setString(key, value as string, async);
+    }
+  }
+
+  /**
+   * Deletes the specified value for key.
+   * @param async remove the value using an async operation
+   */
+  public delete(key: string, async = false): void {
+    return async ? DeleteResourceKvpNoSync(key) : DeleteResourceKvp(key);
+  }
+
+  /**
+   * Commits pending asynchronous operations to disk, ensuring data consistency.
+   *
+   * Should be called after calling set methods using the async flag.
    */
   public flush(): void {
     FlushResourceKvp();
   }
 
-  private *handleKvp<T = number | string>(
-    prefix: string,
-    iterType: "string" | "number" | "float",
-  ): IterableIterator<T> {
+  private getAllKeys(prefix: string) {
+    const keys: string[] = [];
     const handle = StartFindKvp(prefix);
-    if (handle === -1) return;
-    let key;
+
+    if (handle === -1) return keys;
+
+    let key: string;
+
     do {
       key = FindKvp(handle);
-      if (iterType === "string") {
-        yield GetResourceKvpString(key) as unknown as T;
-      } else if (iterType === "number") {
-        yield GetResourceKvpInt(key) as unknown as T;
-      } else if (iterType === "float") {
-        yield GetResourceKvpFloat(key) as unknown as T;
-      }
+      if (key) keys.push(key);
     } while (key);
 
     EndFindKvp(handle);
+
+    return keys;
   }
 
   /**
-   * enumerates over any kvp prefixed with the prefix
-   *
-   * ```typescript
-   * for (const value of Kvp.getKvpsAsString("native:")) {
-   *		console.log(value);
-   * }
-   * ```
-   *
-   * @param prefix the prefix to search for
+   * Returns an array of keys which match or contain the given keys.
    */
-  public getKvpsAsString(prefix: string): IterableIterator<string> {
-    return this.handleKvp<string>(prefix, "string");
+  public getKeys(prefix: string | string[]) {
+    return typeof prefix === "string"
+      ? this.getAllKeys(prefix)
+      : prefix.flatMap((key) => this.getAllKeys(key));
   }
 
   /**
-   * enumerates over any kvp prefixed with the prefix
-   *
-   * ```typescript
-   * for (const value of Kvp.getKvpsAsNumber("native:")) {
-   *		console.log(value);
-   * }
-   * ```
-   *
-   * @param prefix the prefix to search for
+   * Get all values from keys in an array as the specified type.
    */
-  public getKvpsAsNumber(prefix: string): IterableIterator<number> {
-    return this.handleKvp<number>(prefix, "number");
-  }
+  public getValuesAsType(
+    prefix: string[],
+    type: "string" | "number" | "float" | "object",
+  ) {
+    const values = this.getKeys(prefix);
 
-  /**
-   * enumerates over any kvp prefixed with the prefix
-   *
-   * ```typescript
-   * for (const value of Kvp.getKvpsAsFloat("native:")) {
-   *		console.log(value);
-   * }
-   * ```
-   *
-   * @param prefix the prefix to search for
-   */
-  public getKvpsAsFloat(prefix: string): IterableIterator<number> {
-    return this.handleKvp<number>(prefix, "float");
+    return values.map((key) => {
+      switch (type) {
+        case "number":
+          return this.getNumber(key);
+        case "float":
+          return this.getFloat(key);
+        case "object":
+          return this.getJson(key);
+        default:
+          return this.getString(key);
+      }
+    });
   }
 }
