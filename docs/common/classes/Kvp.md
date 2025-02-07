@@ -1,60 +1,53 @@
 [@nativewrappers/fivem](../../README.md) / [common](../README.md) / Kvp
 
-# Class: Kvp
+# Class: Kvp\<T\>
 
-Defined in: [src/common/Kvp.ts:2](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L2)
+Defined in: [src/common/Kvp.ts:5](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L5)
+
+## Type Parameters
+
+| Type Parameter |
+| ------ |
+| `T` *extends* `Schema` |
 
 ## Constructors
 
 ### new Kvp()
 
 ```ts
-new Kvp(): Kvp
+new Kvp<T>(schema): Kvp<T>
 ```
+
+Defined in: [src/common/Kvp.ts:8](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L8)
+
+#### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `schema` | `T` |
 
 #### Returns
 
-[`Kvp`](Kvp.md)
+[`Kvp`](Kvp.md)\<`T`\>
 
 ## Methods
 
 ### delete()
 
 ```ts
-delete(key): void
+delete(key, async): void
 ```
 
-Defined in: [src/common/Kvp.ts:88](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L88)
+Defined in: [src/common/Kvp.ts:153](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L153)
 
-Deletes the specified value for key, this is a blocking operation, if you're deleting a bunch of keys you should use [[deleteAsync]]
+Deletes the specified value for key.
 
 #### Parameters
 
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `key` | `string` | the key of the value to delete |
-
-#### Returns
-
-`void`
-
-***
-
-### deleteAsync()
-
-```ts
-deleteAsync(key): void
-```
-
-Defined in: [src/common/Kvp.ts:96](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L96)
-
-Deletes the specified resource keys value, this doesn't immediately write to disk and needs [[flush]] called afterwards.
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `key` | `string` | the key to delete |
+| Parameter | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| `key` | `string` | `undefined` | - |
+| `async` | `boolean` | `false` | remove the value using an async operation |
 
 #### Returns
 
@@ -68,9 +61,11 @@ Deletes the specified resource keys value, this doesn't immediately write to dis
 flush(): void
 ```
 
-Defined in: [src/common/Kvp.ts:103](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L103)
+Defined in: [src/common/Kvp.ts:162](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L162)
 
-Ensures that any previous async call is flushed to disk
+Commits pending asynchronous operations to disk, ensuring data consistency.
+
+Should be called after calling set methods using the async flag.
 
 #### Returns
 
@@ -78,37 +73,65 @@ Ensures that any previous async call is flushed to disk
 
 ***
 
-### getKvpFloat()
+### get()
 
 ```ts
-getKvpFloat(key): number
+get<K>(key): T[K] extends "number" | "float" ? number : T[K] extends object ? null | any[any] : null | string
 ```
 
-Defined in: [src/common/Kvp.ts:75](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L75)
+Defined in: [src/common/Kvp.ts:95](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L95)
 
-Gets the specified value for key
+Returns the value associated with a key, determining the type using the declared Kvp schema.
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `K` *extends* `string` \| `number` \| `symbol` |
 
 #### Parameters
 
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `key` | `string` | the key of the value to get |
+| Parameter | Type |
+| ------ | ------ |
+| `key` | `K` |
+
+#### Returns
+
+`T`\[`K`\] *extends* `"number"` \| `"float"` ? `number` : `T`\[`K`\] *extends* `object` ? `null` \| `any`\[`any`\] : `null` \| `string`
+
+***
+
+### getFloat()
+
+```ts
+getFloat(key): number
+```
+
+Defined in: [src/common/Kvp.ts:34](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L34)
+
+Returns the value associated with a key as a float.
+
+#### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `key` | `string` |
 
 #### Returns
 
 `number`
 
-the value stored as a float, or 0.0 if there is no value
-
 ***
 
-### getKvpJson()
+### getJson()
 
 ```ts
-getKvpJson<T>(key): T
+getJson<T>(key): null | T
 ```
 
-Defined in: [src/common/Kvp.ts:79](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L79)
+Defined in: [src/common/Kvp.ts:48](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L48)
+
+Returns the value associated with a key as a parsed JSON string.
 
 #### Type Parameters
 
@@ -124,164 +147,147 @@ Defined in: [src/common/Kvp.ts:79](https://github.com/nativewrappers/nativewrapp
 
 #### Returns
 
-`T`
+`null` \| `T`
 
 ***
 
-### getKvpNumber()
+### getKeys()
 
 ```ts
-getKvpNumber(key): number
+getKeys(prefix): string[]
 ```
 
-Defined in: [src/common/Kvp.ts:66](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L66)
+Defined in: [src/common/Kvp.ts:187](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L187)
 
-Gets the specified value for key
+Returns an array of keys which match or contain the given keys.
 
 #### Parameters
 
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `key` | `string` | the key of the value to get |
+| Parameter | Type |
+| ------ | ------ |
+| `prefix` | `string` \| `string`[] |
+
+#### Returns
+
+`string`[]
+
+***
+
+### getNumber()
+
+```ts
+getNumber(key): number
+```
+
+Defined in: [src/common/Kvp.ts:27](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L27)
+
+Returns the value associated with a key as a number.
+
+#### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `key` | `string` |
 
 #### Returns
 
 `number`
 
-the value stored, as a number, or 0 if there is no value
-
 ***
 
-### getKvpsAsFloat()
+### getString()
 
 ```ts
-getKvpsAsFloat(prefix): IterableIterator<number>
+getString(key): null | string
 ```
 
-Defined in: [src/common/Kvp.ts:169](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L169)
+Defined in: [src/common/Kvp.ts:41](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L41)
 
-enumerates over any kvp prefixed with the prefix
-
-```typescript
-for (const value of Kvp.getKvpsAsFloat("native:")) {
-		console.log(value);
-}
-```
+Returns the value associated with a key as a string.
 
 #### Parameters
 
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `prefix` | `string` | the prefix to search for |
-
-#### Returns
-
-`IterableIterator`\<`number`\>
-
-***
-
-### getKvpsAsNumber()
-
-```ts
-getKvpsAsNumber(prefix): IterableIterator<number>
-```
-
-Defined in: [src/common/Kvp.ts:154](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L154)
-
-enumerates over any kvp prefixed with the prefix
-
-```typescript
-for (const value of Kvp.getKvpsAsNumber("native:")) {
-		console.log(value);
-}
-```
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `prefix` | `string` | the prefix to search for |
-
-#### Returns
-
-`IterableIterator`\<`number`\>
-
-***
-
-### getKvpsAsString()
-
-```ts
-getKvpsAsString(prefix): IterableIterator<string>
-```
-
-Defined in: [src/common/Kvp.ts:139](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L139)
-
-enumerates over any kvp prefixed with the prefix
-
-```typescript
-for (const value of Kvp.getKvpsAsString("native:")) {
-		console.log(value);
-}
-```
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `prefix` | `string` | the prefix to search for |
-
-#### Returns
-
-`IterableIterator`\<`string`\>
-
-***
-
-### getKvpString()
-
-```ts
-getKvpString(key): null | string
-```
-
-Defined in: [src/common/Kvp.ts:57](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L57)
-
-Gets the specified value for key
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `key` | `string` | the key of the value to get |
+| Parameter | Type |
+| ------ | ------ |
+| `key` | `string` |
 
 #### Returns
 
 `null` \| `string`
 
-a string, or null if there is no value
-
 ***
 
-### setKvp()
+### getType()
 
 ```ts
-setKvp<T>(key, value): void
+getType(key): "string" | "number" | "object" | "float"
 ```
 
-Defined in: [src/common/Kvp.ts:10](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L10)
+Defined in: [src/common/Kvp.ts:20](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L20)
 
-Sets the resource key to the specified value this is a blocking operation, if you're doing large write operations you should use [[setKvpAsync]] instead.
-
-#### Type Parameters
-
-| Type Parameter | Default type |
-| ------ | ------ |
-| `T` | `string` \| `number` |
+Returns the type associated with a schema key.
 
 #### Parameters
 
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `key` | `string` | the key string |
-| `value` | `T` | the value to set the key to |
+| Parameter | Type |
+| ------ | ------ |
+| `key` | keyof `T` |
+
+#### Returns
+
+`"string"` \| `"number"` \| `"object"` \| `"float"`
+
+***
+
+### getValuesAsType()
+
+```ts
+getValuesAsType(prefix, type): unknown[]
+```
+
+Defined in: [src/common/Kvp.ts:196](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L196)
+
+Get all values from keys in an array as the specified type.
+
+#### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `prefix` | `string`[] |
+| `type` | `"string"` \| `"number"` \| `"object"` \| `"float"` |
+
+#### Returns
+
+`unknown`[]
+
+***
+
+### set()
+
+```ts
+set<K>(
+   key, 
+   value, 
+   async): void
+```
+
+Defined in: [src/common/Kvp.ts:120](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L120)
+
+Sets the value associated with a key as a value, using its type from the declared Kvp stricture.
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `K` *extends* `string` |
+
+#### Parameters
+
+| Parameter | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| `key` | `K` *extends* keyof `T` ? `K`\<`K`\> : `never` | `undefined` | - |
+| `value` | `T`\[`K`\] *extends* `"number"` \| `"float"` ? `number` : `T`\[`K`\] *extends* `object` ? `null` \| `any`\[`any`\] : `null` \| `string` | `undefined` | - |
+| `async` | `boolean` | `false` | set the value using an async operation. |
 
 #### Returns
 
@@ -289,28 +295,26 @@ Sets the resource key to the specified value this is a blocking operation, if yo
 
 ***
 
-### setKvpAsync()
+### setFloat()
 
 ```ts
-setKvpAsync<T>(key, value): void
+setFloat(
+   key, 
+   value, 
+   async): void
 ```
 
-Defined in: [src/common/Kvp.ts:28](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L28)
+Defined in: [src/common/Kvp.ts:67](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L67)
 
-Sets the resource key to the specified value, this doesn't immediately write to disk and needs [[flush]] called afterwards.
-
-#### Type Parameters
-
-| Type Parameter | Default type |
-| ------ | ------ |
-| `T` | `string` \| `number` |
+Sets the value associated with a key as a float.
 
 #### Parameters
 
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `key` | `string` | the key string |
-| `value` | `T` | the value to set the key to |
+| Parameter | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| `key` | `string` | `undefined` | - |
+| `value` | `number` | `undefined` | - |
+| `async` | `boolean` | `false` | set the value using an async operation. |
 
 #### Returns
 
@@ -318,23 +322,80 @@ Sets the resource key to the specified value, this doesn't immediately write to 
 
 ***
 
-### setKvpJson()
+### setJson()
 
 ```ts
-setKvpJson(key, value): void
+setJson(
+   key, 
+   value, 
+   async): void
 ```
 
-Defined in: [src/common/Kvp.ts:47](https://github.com/nativewrappers/nativewrappers/blob/fae5ced8514b2702c9e091cb4666009f585dc560/src/common/Kvp.ts#L47)
+Defined in: [src/common/Kvp.ts:87](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L87)
 
-Sets the specified key to the specified json value
-This can error if given an invalid object
+Sets the value associated with a key as a JSON string.
 
 #### Parameters
 
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `key` | `string` | the key string |
-| `value` | `any` | the value to set the key to |
+| Parameter | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| `key` | `string` | `undefined` | - |
+| `value` | `object` | `undefined` | - |
+| `async` | `boolean` | `false` | set the value using an async operation. |
+
+#### Returns
+
+`void`
+
+***
+
+### setNumber()
+
+```ts
+setNumber(
+   key, 
+   value, 
+   async): void
+```
+
+Defined in: [src/common/Kvp.ts:57](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L57)
+
+Sets the value associated with a key as a number.
+
+#### Parameters
+
+| Parameter | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| `key` | `string` | `undefined` | - |
+| `value` | `number` | `undefined` | - |
+| `async` | `boolean` | `false` | set the value using an async operation. |
+
+#### Returns
+
+`void`
+
+***
+
+### setString()
+
+```ts
+setString(
+   key, 
+   value, 
+   async): void
+```
+
+Defined in: [src/common/Kvp.ts:77](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Kvp.ts#L77)
+
+Sets the value associated with a key as a string.
+
+#### Parameters
+
+| Parameter | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| `key` | `string` | `undefined` | - |
+| `value` | `string` | `undefined` | - |
+| `async` | `boolean` | `false` | set the value using an async operation. |
 
 #### Returns
 

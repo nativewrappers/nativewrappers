@@ -214,7 +214,7 @@ Vector.addX
 ### addY()
 
 ```ts
-addY(y): Vector
+addY(y): this
 ```
 
 Defined in: lib/common/utils/Vector.d.ts:262
@@ -227,7 +227,7 @@ Defined in: lib/common/utils/Vector.d.ts:262
 
 #### Returns
 
-`Vector`
+`this`
 
 #### See
 
@@ -737,7 +737,7 @@ Vector.addAbsolute
 static addW<T, U>(
    this, 
    obj, 
-   w): Vector
+   w): U
 ```
 
 Defined in: lib/common/utils/Vector.d.ts:109
@@ -761,7 +761,7 @@ Adds a scalar value to the w-component of a vector.
 
 #### Returns
 
-`Vector`
+`U`
 
 A new vector with the w-component incremented.
 
@@ -816,7 +816,7 @@ Vector.addX
 static addY<T, U>(
    this, 
    obj, 
-   y): Vector
+   y): U
 ```
 
 Defined in: lib/common/utils/Vector.d.ts:95
@@ -840,7 +840,7 @@ Adds a scalar value to the y-component of a vector.
 
 #### Returns
 
-`Vector`
+`U`
 
 A new vector with the y-component incremented.
 
@@ -858,7 +858,7 @@ Vector.addY
 static addZ<T, U>(
    this, 
    obj, 
-   z): Vector
+   z): U
 ```
 
 Defined in: lib/common/utils/Vector.d.ts:102
@@ -882,7 +882,7 @@ Adds a scalar value to the z-component of a vector.
 
 #### Returns
 
-`Vector`
+`U`
 
 A new vector with the z-component incremented.
 
@@ -897,10 +897,10 @@ Vector.addZ
 ### clone()
 
 ```ts
-static clone<T, U>(this, obj): InstanceType<T>
+static clone<T, U>(this, obj): Vector3 | Vector4 | Vector2
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:66
+Defined in: lib/common/utils/Vector.d.ts:60
 
 Creates a deep copy of the provided vector.
 
@@ -920,7 +920,7 @@ Creates a deep copy of the provided vector.
 
 #### Returns
 
-`InstanceType`\<`T`\>
+[`Vector3`](Vector3.md) \| [`Vector4`](Vector4.md) \| [`Vector2`](Vector2.md)
 
 A new vector instance that is a copy of the provided vector.
 
@@ -1209,7 +1209,7 @@ Vector.fromArrays
 static fromBuffer<T>(this, __namedParameters): InstanceType<T>
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:60
+Defined in: lib/common/utils/Vector.d.ts:66
 
 Creates a vector from binary data in a MsgpackBuffer.
 
