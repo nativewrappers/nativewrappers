@@ -2,7 +2,7 @@
 
 # Class: Entity
 
-Defined in: [src/redm/entities/Entity.ts:6](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/redm/entities/Entity.ts#L6)
+Defined in: [src/redm/entities/Entity.ts:6](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/redm/entities/Entity.ts#L6)
 
 ## Extends
 
@@ -16,7 +16,7 @@ Defined in: [src/redm/entities/Entity.ts:6](https://github.com/nativewrappers/na
 new Entity(handle): Entity
 ```
 
-Defined in: [src/redm/entities/Entity.ts:7](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/redm/entities/Entity.ts#L7)
+Defined in: [src/redm/entities/Entity.ts:7](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/redm/entities/Entity.ts#L7)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ BaseEntity.constructor
 get EntityType(): EntityType
 ```
 
-Defined in: [src/redm/entities/Entity.ts:16](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/redm/entities/Entity.ts#L16)
+Defined in: [src/redm/entities/Entity.ts:16](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/redm/entities/Entity.ts#L16)
 
 ##### Returns
 
@@ -60,7 +60,7 @@ Defined in: [src/redm/entities/Entity.ts:16](https://github.com/nativewrappers/n
 get Handle(): number
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:29](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/redm/entities/BaseEntity.ts#L29)
+Defined in: [src/redm/entities/BaseEntity.ts:29](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/redm/entities/BaseEntity.ts#L29)
 
 ##### Returns
 
@@ -82,7 +82,7 @@ BaseEntity.Handle
 get Health(): number
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:37](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/redm/entities/BaseEntity.ts#L37)
+Defined in: [src/redm/entities/BaseEntity.ts:37](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/redm/entities/BaseEntity.ts#L37)
 
 ##### Returns
 
@@ -94,7 +94,7 @@ Defined in: [src/redm/entities/BaseEntity.ts:37](https://github.com/nativewrappe
 set Health(amount): void
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:33](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/redm/entities/BaseEntity.ts#L33)
+Defined in: [src/redm/entities/BaseEntity.ts:33](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/redm/entities/BaseEntity.ts#L33)
 
 ##### Parameters
 
@@ -120,7 +120,7 @@ BaseEntity.Health
 addTrackingTrails(): void
 ```
 
-Defined in: [src/redm/entities/Entity.ts:11](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/redm/entities/Entity.ts#L11)
+Defined in: [src/redm/entities/Entity.ts:11](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/redm/entities/Entity.ts#L11)
 
 #### Returns
 
@@ -141,7 +141,7 @@ applyForce(
    isForceRel): void
 ```
 
-Defined in: [src/redm/entities/Entity.ts:29](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/redm/entities/Entity.ts#L29)
+Defined in: [src/redm/entities/Entity.ts:29](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/redm/entities/Entity.ts#L29)
 
 #### Parameters
 
@@ -171,7 +171,7 @@ applyForceToCenter(
    isForceRel): void
 ```
 
-Defined in: [src/redm/entities/Entity.ts:64](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/redm/entities/Entity.ts#L64)
+Defined in: [src/redm/entities/Entity.ts:64](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/redm/entities/Entity.ts#L64)
 
 #### Parameters
 
@@ -202,7 +202,7 @@ attachTo(
    fixedRot): void
 ```
 
-Defined in: [src/redm/entities/Entity.ts:95](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/redm/entities/Entity.ts#L95)
+Defined in: [src/redm/entities/Entity.ts:95](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/redm/entities/Entity.ts#L95)
 
 #### Parameters
 
@@ -233,7 +233,7 @@ Error if tgtEntity and {@Entity } are the same entity
 replaceHandle(newHandle): void
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:25](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/redm/entities/BaseEntity.ts#L25)
+Defined in: [src/redm/entities/BaseEntity.ts:25](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/redm/entities/BaseEntity.ts#L25)
 
 #### Parameters
 

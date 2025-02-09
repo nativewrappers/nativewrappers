@@ -2,7 +2,7 @@
 
 # Class: Convar
 
-Defined in: [src/common/Convar.ts:3](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Convar.ts#L3)
+Defined in: [src/common/Convar.ts:3](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/common/Convar.ts#L3)
 
 ## Constructors
 
@@ -24,7 +24,7 @@ new Convar(): Convar
 buffer(): string
 ```
 
-Defined in: [src/common/Convar.ts:7](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Convar.ts#L7)
+Defined in: [src/common/Convar.ts:7](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/common/Convar.ts#L7)
 
 #### Returns
 
@@ -40,7 +40,7 @@ the current console buffer
 get(variable, defaultVar): string
 ```
 
-Defined in: [src/common/Convar.ts:16](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Convar.ts#L16)
+Defined in: [src/common/Convar.ts:16](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/common/Convar.ts#L16)
 
 #### Parameters
 
@@ -61,7 +61,7 @@ Defined in: [src/common/Convar.ts:16](https://github.com/nativewrappers/nativewr
 getBool(varName, defaultVar): boolean
 ```
 
-Defined in: [src/common/Convar.ts:28](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Convar.ts#L28)
+Defined in: [src/common/Convar.ts:28](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/common/Convar.ts#L28)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: [src/common/Convar.ts:28](https://github.com/nativewrappers/nativewr
 getFloat(varName, defaultVar): number
 ```
 
-Defined in: [src/common/Convar.ts:24](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Convar.ts#L24)
+Defined in: [src/common/Convar.ts:24](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/common/Convar.ts#L24)
 
 #### Parameters
 
@@ -103,7 +103,7 @@ Defined in: [src/common/Convar.ts:24](https://github.com/nativewrappers/nativewr
 getInt(variable, defaultVar): number
 ```
 
-Defined in: [src/common/Convar.ts:20](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Convar.ts#L20)
+Defined in: [src/common/Convar.ts:20](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/common/Convar.ts#L20)
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: [src/common/Convar.ts:20](https://github.com/nativewrappers/nativewr
 set(variable, value): void
 ```
 
-Defined in: [src/common/Convar.ts:32](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Convar.ts#L32)
+Defined in: [src/common/Convar.ts:32](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/common/Convar.ts#L32)
 
 #### Parameters
 
@@ -145,7 +145,7 @@ Defined in: [src/common/Convar.ts:32](https://github.com/nativewrappers/nativewr
 setReplicated(variable, value): void
 ```
 
-Defined in: [src/common/Convar.ts:41](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Convar.ts#L41)
+Defined in: [src/common/Convar.ts:41](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/common/Convar.ts#L41)
 
 #### Parameters
 
@@ -166,7 +166,7 @@ Defined in: [src/common/Convar.ts:41](https://github.com/nativewrappers/nativewr
 setServerInfo(variable, value): void
 ```
 
-Defined in: [src/common/Convar.ts:50](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/Convar.ts#L50)
+Defined in: [src/common/Convar.ts:50](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/common/Convar.ts#L50)
 
 #### Parameters
 

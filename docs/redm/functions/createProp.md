@@ -14,7 +14,7 @@ function createProp(
 p8): Promise<Prop | null>
 ```
 
-Defined in: [src/redm/world/createProp.ts:8](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/redm/world/createProp.ts#L8)
+Defined in: [src/redm/world/createProp.ts:8](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/redm/world/createProp.ts#L8)
 
 Creates a ped at the specified {@param spawnPos}, you don't need to request the model before this.
 

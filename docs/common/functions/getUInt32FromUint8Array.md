@@ -9,7 +9,7 @@ function getUInt32FromUint8Array(
    end): number
 ```
 
-Defined in: [src/common/utils/getUInt32FromUint8Array.ts:8](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/common/utils/getUInt32FromUint8Array.ts#L8)
+Defined in: [src/common/utils/getUInt32FromUint8Array.ts:8](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/common/utils/getUInt32FromUint8Array.ts#L8)
 
 get uint32 from uint8 array
 

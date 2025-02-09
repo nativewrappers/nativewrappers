@@ -2,7 +2,7 @@
 
 # Class: MenuControl
 
-Defined in: [src/fivem/ui/menu/MenuControl.ts:1](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/ui/menu/MenuControl.ts#L1)
+Defined in: [src/fivem/ui/menu/MenuControl.ts:1](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/ui/menu/MenuControl.ts#L1)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/fivem/ui/menu/MenuControl.ts:1](https://github.com/nativewrappe
 new MenuControl(enabled): MenuControl
 ```
 
-Defined in: [src/fivem/ui/menu/MenuControl.ts:4](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/ui/menu/MenuControl.ts#L4)
+Defined in: [src/fivem/ui/menu/MenuControl.ts:4](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/ui/menu/MenuControl.ts#L4)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [src/fivem/ui/menu/MenuControl.ts:4](https://github.com/nativewrappe
 get Enabled(): boolean
 ```
 
-Defined in: [src/fivem/ui/menu/MenuControl.ts:8](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/ui/menu/MenuControl.ts#L8)
+Defined in: [src/fivem/ui/menu/MenuControl.ts:8](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/ui/menu/MenuControl.ts#L8)
 
 ##### Returns
 
@@ -46,7 +46,7 @@ Defined in: [src/fivem/ui/menu/MenuControl.ts:8](https://github.com/nativewrappe
 set Enabled(value): void
 ```
 
-Defined in: [src/fivem/ui/menu/MenuControl.ts:12](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/ui/menu/MenuControl.ts#L12)
+Defined in: [src/fivem/ui/menu/MenuControl.ts:12](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/ui/menu/MenuControl.ts#L12)
 
 ##### Parameters
 

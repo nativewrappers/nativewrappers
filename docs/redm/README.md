@@ -30,6 +30,7 @@
 | [Ped](classes/Ped.md) | - |
 | [PedAttribute](classes/PedAttribute.md) | - |
 | [Player](classes/Player.md) | - |
+| [RawControls](classes/RawControls.md) | - |
 | [RelationshipGroup](classes/RelationshipGroup.md) | Class to create and manage a relationship group. Useful to manage behavior between Peds. |
 | [Vehicle](classes/Vehicle.md) | - |
 | [Volume](classes/Volume.md) | - |

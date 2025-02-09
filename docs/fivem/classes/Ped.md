@@ -2,7 +2,7 @@
 
 # Class: Ped
 
-Defined in: [src/fivem/models/Ped.ts:18](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L18)
+Defined in: [src/fivem/models/Ped.ts:18](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L18)
 
 ## Extends
 
@@ -16,7 +16,7 @@ Defined in: [src/fivem/models/Ped.ts:18](https://github.com/nativewrappers/nativ
 new Ped(handle): Ped
 ```
 
-Defined in: [src/fivem/models/Ped.ts:81](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L81)
+Defined in: [src/fivem/models/Ped.ts:81](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L81)
 
 #### Parameters
 
@@ -36,11 +36,11 @@ Defined in: [src/fivem/models/Ped.ts:81](https://github.com/nativewrappers/nativ
 
 | Property | Modifier | Type | Default value | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| <a id="bones"></a> `bones` | `protected` | `undefined` \| [`EntityBoneCollection`](EntityBoneCollection.md) | `undefined` | - | [`BaseEntity`](BaseEntity.md).[`bones`](BaseEntity.md#bones) | [src/fivem/models/BaseEntity.ts:23](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L23) |
-| <a id="handle-1"></a> `handle` | `protected` | `number` | `undefined` | - | [`BaseEntity`](BaseEntity.md).[`handle`](BaseEntity.md#handle-1) | [src/fivem/models/BaseEntity.ts:22](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L22) |
-| <a id="netid"></a> `netId` | `protected` | `null` \| `number` | `null` | - | [`BaseEntity`](BaseEntity.md).[`netId`](BaseEntity.md#netid) | [src/fivem/models/BaseEntity.ts:25](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L25) |
-| <a id="statebagcookies"></a> `stateBagCookies` | `protected` | `number`[] | `[]` | - | [`BaseEntity`](BaseEntity.md).[`stateBagCookies`](BaseEntity.md#statebagcookies) | [src/fivem/models/BaseEntity.ts:24](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L24) |
-| <a id="type"></a> `type` | `protected` | `ClassTypes` | `ClassTypes.Ped` | [`BaseEntity`](BaseEntity.md).[`type`](BaseEntity.md#type) | - | [src/fivem/models/Ped.ts:35](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L35) |
+| <a id="bones"></a> `bones` | `protected` | `undefined` \| [`EntityBoneCollection`](EntityBoneCollection.md) | `undefined` | - | [`BaseEntity`](BaseEntity.md).[`bones`](BaseEntity.md#bones) | [src/fivem/models/BaseEntity.ts:23](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L23) |
+| <a id="handle-1"></a> `handle` | `protected` | `number` | `undefined` | - | [`BaseEntity`](BaseEntity.md).[`handle`](BaseEntity.md#handle-1) | [src/fivem/models/BaseEntity.ts:22](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L22) |
+| <a id="netid"></a> `netId` | `protected` | `null` \| `number` | `null` | - | [`BaseEntity`](BaseEntity.md).[`netId`](BaseEntity.md#netid) | [src/fivem/models/BaseEntity.ts:25](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L25) |
+| <a id="statebagcookies"></a> `stateBagCookies` | `protected` | `number`[] | `[]` | - | [`BaseEntity`](BaseEntity.md).[`stateBagCookies`](BaseEntity.md#statebagcookies) | [src/fivem/models/BaseEntity.ts:24](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L24) |
+| <a id="type"></a> `type` | `protected` | `ClassTypes` | `ClassTypes.Ped` | [`BaseEntity`](BaseEntity.md).[`type`](BaseEntity.md#type) | - | [src/fivem/models/Ped.ts:35](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L35) |
 
 ## Accessors
 
@@ -52,7 +52,7 @@ Defined in: [src/fivem/models/Ped.ts:81](https://github.com/nativewrappers/nativ
 get Accuracy(): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:110](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L110)
+Defined in: [src/fivem/models/Ped.ts:110](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L110)
 
 ##### Returns
 
@@ -64,7 +64,7 @@ Defined in: [src/fivem/models/Ped.ts:110](https://github.com/nativewrappers/nati
 set Accuracy(accuracy): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:114](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L114)
+Defined in: [src/fivem/models/Ped.ts:114](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L114)
 
 ##### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [src/fivem/models/Ped.ts:114](https://github.com/nativewrappers/nati
 get Armor(): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:101](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L101)
+Defined in: [src/fivem/models/Ped.ts:101](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L101)
 
 ##### Returns
 
@@ -98,7 +98,7 @@ Defined in: [src/fivem/models/Ped.ts:101](https://github.com/nativewrappers/nati
 set Armor(amount): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:105](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L105)
+Defined in: [src/fivem/models/Ped.ts:105](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L105)
 
 ##### Parameters
 
@@ -120,7 +120,7 @@ Defined in: [src/fivem/models/Ped.ts:105](https://github.com/nativewrappers/nati
 get AttachedBlip(): null | Blip
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:438](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L438)
+Defined in: [src/fivem/models/BaseEntity.ts:438](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L438)
 
 ##### Returns
 
@@ -140,7 +140,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:438](https://github.com/nativewrappe
 set BlockPermanentEvents(block): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:495](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L495)
+Defined in: [src/fivem/models/Ped.ts:495](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L495)
 
 ##### Parameters
 
@@ -162,7 +162,7 @@ Defined in: [src/fivem/models/Ped.ts:495](https://github.com/nativewrappers/nati
 get Bones(): PedBoneCollection
 ```
 
-Defined in: [src/fivem/models/Ped.ts:629](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L629)
+Defined in: [src/fivem/models/Ped.ts:629](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L629)
 
 ##### Returns
 
@@ -182,7 +182,7 @@ Defined in: [src/fivem/models/Ped.ts:629](https://github.com/nativewrappers/nati
 get CanRagdoll(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:673](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L673)
+Defined in: [src/fivem/models/Ped.ts:673](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L673)
 
 ##### Returns
 
@@ -194,7 +194,7 @@ Defined in: [src/fivem/models/Ped.ts:673](https://github.com/nativewrappers/nati
 set CanRagdoll(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:677](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L677)
+Defined in: [src/fivem/models/Ped.ts:677](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L677)
 
 ##### Parameters
 
@@ -216,7 +216,7 @@ Defined in: [src/fivem/models/Ped.ts:677](https://github.com/nativewrappers/nati
 get CurrentVehicle(): null | Vehicle
 ```
 
-Defined in: [src/fivem/models/Ped.ts:179](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L179)
+Defined in: [src/fivem/models/Ped.ts:179](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L179)
 
 ##### Returns
 
@@ -232,7 +232,7 @@ Defined in: [src/fivem/models/Ped.ts:179](https://github.com/nativewrappers/nati
 get DeathCause(): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:488](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L488)
+Defined in: [src/fivem/models/Ped.ts:488](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L488)
 
 ##### Returns
 
@@ -248,7 +248,7 @@ Defined in: [src/fivem/models/Ped.ts:488](https://github.com/nativewrappers/nati
 set DrivingSpeed(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:464](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L464)
+Defined in: [src/fivem/models/Ped.ts:464](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L464)
 
 ##### Parameters
 
@@ -270,7 +270,7 @@ Defined in: [src/fivem/models/Ped.ts:464](https://github.com/nativewrappers/nati
 set DrivingStyle(style): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:468](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L468)
+Defined in: [src/fivem/models/Ped.ts:468](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L468)
 
 ##### Parameters
 
@@ -292,7 +292,7 @@ Defined in: [src/fivem/models/Ped.ts:468](https://github.com/nativewrappers/nati
 set DropsWeaponsOnDeath(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:460](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L460)
+Defined in: [src/fivem/models/Ped.ts:460](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L460)
 
 ##### Parameters
 
@@ -314,7 +314,7 @@ Defined in: [src/fivem/models/Ped.ts:460](https://github.com/nativewrappers/nati
 set FiringPattern(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:456](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L456)
+Defined in: [src/fivem/models/Ped.ts:456](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L456)
 
 ##### Parameters
 
@@ -336,7 +336,7 @@ Defined in: [src/fivem/models/Ped.ts:456](https://github.com/nativewrappers/nati
 get ForwardVector(): Vector3
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:128](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L128)
+Defined in: [src/fivem/models/BaseEntity.ts:128](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L128)
 
 ##### Returns
 
@@ -356,7 +356,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:128](https://github.com/nativewrappe
 get Gender(): Gender
 ```
 
-Defined in: [src/fivem/models/Ped.ts:97](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L97)
+Defined in: [src/fivem/models/Ped.ts:97](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L97)
 
 ##### Returns
 
@@ -372,7 +372,7 @@ Defined in: [src/fivem/models/Ped.ts:97](https://github.com/nativewrappers/nativ
 get Handle(): number
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:35](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L35)
+Defined in: [src/fivem/models/BaseEntity.ts:35](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L35)
 
 ##### Returns
 
@@ -392,7 +392,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:35](https://github.com/nativewrapper
 get HasCollided(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:411](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L411)
+Defined in: [src/fivem/models/BaseEntity.ts:411](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L411)
 
 ##### Returns
 
@@ -412,7 +412,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:411](https://github.com/nativewrappe
 set HasGravity(value): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:314](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L314)
+Defined in: [src/fivem/models/BaseEntity.ts:314](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L314)
 
 ##### Parameters
 
@@ -438,7 +438,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:314](https://github.com/nativewrappe
 get Heading(): number
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:282](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L282)
+Defined in: [src/fivem/models/BaseEntity.ts:282](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L282)
 
 ##### Returns
 
@@ -450,7 +450,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:282](https://github.com/nativewrappe
 set Heading(heading): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:286](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L286)
+Defined in: [src/fivem/models/BaseEntity.ts:286](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L286)
 
 ##### Parameters
 
@@ -476,7 +476,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:286](https://github.com/nativewrappe
 get Health(): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:119](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L119)
+Defined in: [src/fivem/models/Ped.ts:119](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L119)
 
 ##### Returns
 
@@ -488,7 +488,7 @@ Defined in: [src/fivem/models/Ped.ts:119](https://github.com/nativewrappers/nati
 set Health(amount): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:123](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L123)
+Defined in: [src/fivem/models/Ped.ts:123](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L123)
 
 ##### Parameters
 
@@ -514,7 +514,7 @@ Defined in: [src/fivem/models/Ped.ts:123](https://github.com/nativewrappers/nati
 get HeightAboveGround(): number
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:318](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L318)
+Defined in: [src/fivem/models/BaseEntity.ts:318](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L318)
 
 ##### Returns
 
@@ -534,7 +534,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:318](https://github.com/nativewrappe
 get IsAiming(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:416](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L416)
+Defined in: [src/fivem/models/Ped.ts:416](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L416)
 
 ##### Returns
 
@@ -550,7 +550,7 @@ Defined in: [src/fivem/models/Ped.ts:416](https://github.com/nativewrappers/nati
 get IsAimingFromCover(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:444](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L444)
+Defined in: [src/fivem/models/Ped.ts:444](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L444)
 
 ##### Returns
 
@@ -566,7 +566,7 @@ Defined in: [src/fivem/models/Ped.ts:444](https://github.com/nativewrappers/nati
 get IsAlive(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:185](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L185)
+Defined in: [src/fivem/models/BaseEntity.ts:185](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L185)
 
 ##### Returns
 
@@ -586,7 +586,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:185](https://github.com/nativewrappe
 get IsAmbientSpeechEnabled(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:400](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L400)
+Defined in: [src/fivem/models/Ped.ts:400](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L400)
 
 ##### Returns
 
@@ -602,7 +602,7 @@ Defined in: [src/fivem/models/Ped.ts:400](https://github.com/nativewrappers/nati
 get IsAmbientSpeechPlaying(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:388](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L388)
+Defined in: [src/fivem/models/Ped.ts:388](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L388)
 
 ##### Returns
 
@@ -618,7 +618,7 @@ Defined in: [src/fivem/models/Ped.ts:388](https://github.com/nativewrappers/nati
 get IsAnySpeechPlaying(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:396](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L396)
+Defined in: [src/fivem/models/Ped.ts:396](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L396)
 
 ##### Returns
 
@@ -634,7 +634,7 @@ Defined in: [src/fivem/models/Ped.ts:396](https://github.com/nativewrappers/nati
 get IsBeingJacked(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:356](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L356)
+Defined in: [src/fivem/models/Ped.ts:356](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L356)
 
 ##### Returns
 
@@ -650,7 +650,7 @@ Defined in: [src/fivem/models/Ped.ts:356](https://github.com/nativewrappers/nati
 get IsBeingStealthKilled(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:436](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L436)
+Defined in: [src/fivem/models/Ped.ts:436](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L436)
 
 ##### Returns
 
@@ -666,7 +666,7 @@ Defined in: [src/fivem/models/Ped.ts:436](https://github.com/nativewrappers/nati
 get IsBeingStunned(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:432](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L432)
+Defined in: [src/fivem/models/Ped.ts:432](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L432)
 
 ##### Returns
 
@@ -682,7 +682,7 @@ Defined in: [src/fivem/models/Ped.ts:432](https://github.com/nativewrappers/nati
 get IsClimbing(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:264](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L264)
+Defined in: [src/fivem/models/Ped.ts:264](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L264)
 
 ##### Returns
 
@@ -698,7 +698,7 @@ Defined in: [src/fivem/models/Ped.ts:264](https://github.com/nativewrappers/nati
 get IsCollisionEnabled(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:419](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L419)
+Defined in: [src/fivem/models/BaseEntity.ts:419](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L419)
 
 ##### Returns
 
@@ -710,7 +710,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:419](https://github.com/nativewrappe
 set IsCollisionEnabled(value): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:423](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L423)
+Defined in: [src/fivem/models/BaseEntity.ts:423](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L423)
 
 ##### Parameters
 
@@ -736,7 +736,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:423](https://github.com/nativewrappe
 get IsCuffed(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:222](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L222)
+Defined in: [src/fivem/models/Ped.ts:222](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L222)
 
 ##### Returns
 
@@ -752,7 +752,7 @@ Defined in: [src/fivem/models/Ped.ts:222](https://github.com/nativewrappers/nati
 get IsDead(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:181](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L181)
+Defined in: [src/fivem/models/BaseEntity.ts:181](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L181)
 
 ##### Returns
 
@@ -764,7 +764,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:181](https://github.com/nativewrappe
 set IsDead(value): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:173](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L173)
+Defined in: [src/fivem/models/BaseEntity.ts:173](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L173)
 
 ##### Parameters
 
@@ -790,7 +790,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:173](https://github.com/nativewrappe
 get IsDiving(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:292](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L292)
+Defined in: [src/fivem/models/Ped.ts:292](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L292)
 
 ##### Returns
 
@@ -806,7 +806,7 @@ Defined in: [src/fivem/models/Ped.ts:292](https://github.com/nativewrappers/nati
 get IsDoingDriveby(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:424](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L424)
+Defined in: [src/fivem/models/Ped.ts:424](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L424)
 
 ##### Returns
 
@@ -822,7 +822,7 @@ Defined in: [src/fivem/models/Ped.ts:424](https://github.com/nativewrappers/nati
 set IsDrunk(isDrunk): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:472](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L472)
+Defined in: [src/fivem/models/Ped.ts:472](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L472)
 
 ##### Parameters
 
@@ -844,7 +844,7 @@ Defined in: [src/fivem/models/Ped.ts:472](https://github.com/nativewrappers/nati
 get IsDucking(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:256](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L256)
+Defined in: [src/fivem/models/Ped.ts:256](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L256)
 
 ##### Returns
 
@@ -856,7 +856,7 @@ Defined in: [src/fivem/models/Ped.ts:256](https://github.com/nativewrappers/nati
 set IsDucking(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:252](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L252)
+Defined in: [src/fivem/models/Ped.ts:252](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L252)
 
 ##### Parameters
 
@@ -878,7 +878,7 @@ Defined in: [src/fivem/models/Ped.ts:252](https://github.com/nativewrappers/nati
 set IsEnemy(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:210](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L210)
+Defined in: [src/fivem/models/Ped.ts:210](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L210)
 
 ##### Parameters
 
@@ -900,7 +900,7 @@ Defined in: [src/fivem/models/Ped.ts:210](https://github.com/nativewrappers/nati
 get IsFalling(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:272](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L272)
+Defined in: [src/fivem/models/Ped.ts:272](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L272)
 
 ##### Returns
 
@@ -916,7 +916,7 @@ Defined in: [src/fivem/models/Ped.ts:272](https://github.com/nativewrappers/nati
 get IsFleeing(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:372](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L372)
+Defined in: [src/fivem/models/Ped.ts:372](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L372)
 
 ##### Returns
 
@@ -932,7 +932,7 @@ Defined in: [src/fivem/models/Ped.ts:372](https://github.com/nativewrappers/nati
 get IsGettingIntoAVehicle(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:360](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L360)
+Defined in: [src/fivem/models/Ped.ts:360](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L360)
 
 ##### Returns
 
@@ -948,7 +948,7 @@ Defined in: [src/fivem/models/Ped.ts:360](https://github.com/nativewrappers/nati
 get IsGettingUp(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:260](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L260)
+Defined in: [src/fivem/models/Ped.ts:260](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L260)
 
 ##### Returns
 
@@ -964,7 +964,7 @@ Defined in: [src/fivem/models/Ped.ts:260](https://github.com/nativewrappers/nati
 get IsGoingIntoCover(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:428](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L428)
+Defined in: [src/fivem/models/Ped.ts:428](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L428)
 
 ##### Returns
 
@@ -980,7 +980,7 @@ Defined in: [src/fivem/models/Ped.ts:428](https://github.com/nativewrappers/nati
 get IsHuman(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:206](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L206)
+Defined in: [src/fivem/models/Ped.ts:206](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L206)
 
 ##### Returns
 
@@ -996,7 +996,7 @@ Defined in: [src/fivem/models/Ped.ts:206](https://github.com/nativewrappers/nati
 get IsIdle(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:234](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L234)
+Defined in: [src/fivem/models/Ped.ts:234](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L234)
 
 ##### Returns
 
@@ -1012,7 +1012,7 @@ Defined in: [src/fivem/models/Ped.ts:234](https://github.com/nativewrappers/nati
 get IsInAir(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:358](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L358)
+Defined in: [src/fivem/models/BaseEntity.ts:358](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L358)
 
 ##### Returns
 
@@ -1032,7 +1032,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:358](https://github.com/nativewrappe
 get IsInBoat(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:344](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L344)
+Defined in: [src/fivem/models/Ped.ts:344](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L344)
 
 ##### Returns
 
@@ -1048,7 +1048,7 @@ Defined in: [src/fivem/models/Ped.ts:344](https://github.com/nativewrappers/nati
 get IsInCombat(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:376](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L376)
+Defined in: [src/fivem/models/Ped.ts:376](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L376)
 
 ##### Returns
 
@@ -1064,7 +1064,7 @@ Defined in: [src/fivem/models/Ped.ts:376](https://github.com/nativewrappers/nati
 get IsInCoverFacingLeft(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:452](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L452)
+Defined in: [src/fivem/models/Ped.ts:452](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L452)
 
 ##### Returns
 
@@ -1080,7 +1080,7 @@ Defined in: [src/fivem/models/Ped.ts:452](https://github.com/nativewrappers/nati
 get IsInFlyingVehicle(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:340](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L340)
+Defined in: [src/fivem/models/Ped.ts:340](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L340)
 
 ##### Returns
 
@@ -1096,7 +1096,7 @@ Defined in: [src/fivem/models/Ped.ts:340](https://github.com/nativewrappers/nati
 get IsInGroup(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:568](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L568)
+Defined in: [src/fivem/models/Ped.ts:568](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L568)
 
 ##### Returns
 
@@ -1112,7 +1112,7 @@ Defined in: [src/fivem/models/Ped.ts:568](https://github.com/nativewrappers/nati
 get IsInHeli(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:332](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L332)
+Defined in: [src/fivem/models/Ped.ts:332](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L332)
 
 ##### Returns
 
@@ -1128,7 +1128,7 @@ Defined in: [src/fivem/models/Ped.ts:332](https://github.com/nativewrappers/nati
 get IsInjured(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:368](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L368)
+Defined in: [src/fivem/models/Ped.ts:368](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L368)
 
 ##### Returns
 
@@ -1144,7 +1144,7 @@ Defined in: [src/fivem/models/Ped.ts:368](https://github.com/nativewrappers/nati
 get IsInMeleeCombat(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:380](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L380)
+Defined in: [src/fivem/models/Ped.ts:380](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L380)
 
 ##### Returns
 
@@ -1160,7 +1160,7 @@ Defined in: [src/fivem/models/Ped.ts:380](https://github.com/nativewrappers/nati
 get IsInParachuteFreeFall(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:296](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L296)
+Defined in: [src/fivem/models/Ped.ts:296](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L296)
 
 ##### Returns
 
@@ -1176,7 +1176,7 @@ Defined in: [src/fivem/models/Ped.ts:296](https://github.com/nativewrappers/nati
 get IsInPlane(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:336](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L336)
+Defined in: [src/fivem/models/Ped.ts:336](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L336)
 
 ##### Returns
 
@@ -1192,7 +1192,7 @@ Defined in: [src/fivem/models/Ped.ts:336](https://github.com/nativewrappers/nati
 get IsInPoliceVehicle(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:348](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L348)
+Defined in: [src/fivem/models/Ped.ts:348](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L348)
 
 ##### Returns
 
@@ -1208,7 +1208,7 @@ Defined in: [src/fivem/models/Ped.ts:348](https://github.com/nativewrappers/nati
 get IsInStealthMode(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:384](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L384)
+Defined in: [src/fivem/models/Ped.ts:384](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L384)
 
 ##### Returns
 
@@ -1224,7 +1224,7 @@ Defined in: [src/fivem/models/Ped.ts:384](https://github.com/nativewrappers/nati
 get IsInSub(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:320](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L320)
+Defined in: [src/fivem/models/Ped.ts:320](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L320)
 
 ##### Returns
 
@@ -1240,7 +1240,7 @@ Defined in: [src/fivem/models/Ped.ts:320](https://github.com/nativewrappers/nati
 get IsInTaxi(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:324](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L324)
+Defined in: [src/fivem/models/Ped.ts:324](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L324)
 
 ##### Returns
 
@@ -1256,7 +1256,7 @@ Defined in: [src/fivem/models/Ped.ts:324](https://github.com/nativewrappers/nati
 get IsInTrain(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:328](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L328)
+Defined in: [src/fivem/models/Ped.ts:328](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L328)
 
 ##### Returns
 
@@ -1272,7 +1272,7 @@ Defined in: [src/fivem/models/Ped.ts:328](https://github.com/nativewrappers/nati
 set IsInvincible(value): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:388](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L388)
+Defined in: [src/fivem/models/BaseEntity.ts:388](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L388)
 
 ##### Parameters
 
@@ -1298,7 +1298,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:388](https://github.com/nativewrappe
 get IsInWater(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:362](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L362)
+Defined in: [src/fivem/models/BaseEntity.ts:362](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L362)
 
 ##### Returns
 
@@ -1318,7 +1318,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:362](https://github.com/nativewrappe
 get IsJacking(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:352](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L352)
+Defined in: [src/fivem/models/Ped.ts:352](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L352)
 
 ##### Returns
 
@@ -1334,7 +1334,7 @@ Defined in: [src/fivem/models/Ped.ts:352](https://github.com/nativewrappers/nati
 get IsJumping(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:268](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L268)
+Defined in: [src/fivem/models/Ped.ts:268](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L268)
 
 ##### Returns
 
@@ -1350,7 +1350,7 @@ Defined in: [src/fivem/models/Ped.ts:268](https://github.com/nativewrappers/nati
 get IsJumpingOutOfVehicle(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:194](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L194)
+Defined in: [src/fivem/models/Ped.ts:194](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L194)
 
 ##### Returns
 
@@ -1366,7 +1366,7 @@ Defined in: [src/fivem/models/Ped.ts:194](https://github.com/nativewrappers/nati
 get IsMissionEntity(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:210](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L210)
+Defined in: [src/fivem/models/BaseEntity.ts:210](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L210)
 
 Returns if the entity is set as a mission entity and will not be cleaned up by the engine
 
@@ -1380,7 +1380,7 @@ Returns if the entity is set as a mission entity and will not be cleaned up by t
 set IsMissionEntity(value): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:217](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L217)
+Defined in: [src/fivem/models/BaseEntity.ts:217](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L217)
 
 Sets if the entity is a mission entity and will not be cleaned up by the engine
 
@@ -1408,7 +1408,7 @@ Sets if the entity is a mission entity and will not be cleaned up by the engine
 get IsNetworkConcealed(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:61](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L61)
+Defined in: [src/fivem/models/BaseEntity.ts:61](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L61)
 
 ##### Returns
 
@@ -1420,7 +1420,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:61](https://github.com/nativewrapper
 set IsNetworkConcealed(concealed): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:65](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L65)
+Defined in: [src/fivem/models/BaseEntity.ts:65](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L65)
 
 ##### Parameters
 
@@ -1446,7 +1446,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:65](https://github.com/nativewrapper
 get IsNetworked(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:42](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L42)
+Defined in: [src/fivem/models/BaseEntity.ts:42](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L42)
 
 ##### Returns
 
@@ -1460,7 +1460,7 @@ if the entity is a networked entity or local entity
 set IsNetworked(networked): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:46](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L46)
+Defined in: [src/fivem/models/BaseEntity.ts:46](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L46)
 
 ##### Parameters
 
@@ -1486,7 +1486,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:46](https://github.com/nativewrapper
 get IsOccluded(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:342](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L342)
+Defined in: [src/fivem/models/BaseEntity.ts:342](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L342)
 
 ##### Returns
 
@@ -1506,7 +1506,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:342](https://github.com/nativewrappe
 get IsOnBike(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:312](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L312)
+Defined in: [src/fivem/models/Ped.ts:312](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L312)
 
 ##### Returns
 
@@ -1522,7 +1522,7 @@ Defined in: [src/fivem/models/Ped.ts:312](https://github.com/nativewrappers/nati
 get IsOnFire(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:384](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L384)
+Defined in: [src/fivem/models/BaseEntity.ts:384](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L384)
 
 ##### Returns
 
@@ -1542,7 +1542,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:384](https://github.com/nativewrappe
 get IsOnFoot(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:316](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L316)
+Defined in: [src/fivem/models/Ped.ts:316](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L316)
 
 ##### Returns
 
@@ -1558,7 +1558,7 @@ Defined in: [src/fivem/models/Ped.ts:316](https://github.com/nativewrappers/nati
 set IsOnlyDamagedByPlayer(value): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:392](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L392)
+Defined in: [src/fivem/models/BaseEntity.ts:392](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L392)
 
 ##### Parameters
 
@@ -1584,7 +1584,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:392](https://github.com/nativewrappe
 get IsOnScreen(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:346](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L346)
+Defined in: [src/fivem/models/BaseEntity.ts:346](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L346)
 
 ##### Returns
 
@@ -1604,7 +1604,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:346](https://github.com/nativewrappe
 set IsPainAudioEnabled(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:404](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L404)
+Defined in: [src/fivem/models/Ped.ts:404](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L404)
 
 ##### Parameters
 
@@ -1626,7 +1626,7 @@ Defined in: [src/fivem/models/Ped.ts:404](https://github.com/nativewrappers/nati
 get IsPerformingStealthKill(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:440](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L440)
+Defined in: [src/fivem/models/Ped.ts:440](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L440)
 
 ##### Returns
 
@@ -1642,7 +1642,7 @@ Defined in: [src/fivem/models/Ped.ts:440](https://github.com/nativewrappers/nati
 get IsPersistent(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:369](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L369)
+Defined in: [src/fivem/models/BaseEntity.ts:369](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L369)
 
 ##### Deprecated
 
@@ -1658,7 +1658,7 @@ use [[IsMissionEntity]] instead as its more obvious as what it does
 set IsPersistent(value): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:376](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L376)
+Defined in: [src/fivem/models/BaseEntity.ts:376](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L376)
 
 ##### Deprecated
 
@@ -1688,7 +1688,7 @@ use [[IsMissionEntity]] instead as its more obvious as what it does
 get IsPlantingBomb(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:408](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L408)
+Defined in: [src/fivem/models/Ped.ts:408](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L408)
 
 ##### Returns
 
@@ -1704,7 +1704,7 @@ Defined in: [src/fivem/models/Ped.ts:408](https://github.com/nativewrappers/nati
 get IsPlayer(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:218](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L218)
+Defined in: [src/fivem/models/Ped.ts:218](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L218)
 
 ##### Returns
 
@@ -1720,7 +1720,7 @@ Defined in: [src/fivem/models/Ped.ts:218](https://github.com/nativewrappers/nati
 get IsPositionFrozen(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:290](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L290)
+Defined in: [src/fivem/models/BaseEntity.ts:290](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L290)
 
 ##### Returns
 
@@ -1732,7 +1732,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:290](https://github.com/nativewrappe
 set IsPositionFrozen(value): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:294](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L294)
+Defined in: [src/fivem/models/BaseEntity.ts:294](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L294)
 
 ##### Parameters
 
@@ -1758,7 +1758,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:294](https://github.com/nativewrappe
 set IsPriorityTargetForEnemies(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:214](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L214)
+Defined in: [src/fivem/models/Ped.ts:214](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L214)
 
 ##### Parameters
 
@@ -1780,7 +1780,7 @@ Defined in: [src/fivem/models/Ped.ts:214](https://github.com/nativewrappers/nati
 get IsProne(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:248](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L248)
+Defined in: [src/fivem/models/Ped.ts:248](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L248)
 
 ##### Returns
 
@@ -1796,7 +1796,7 @@ Defined in: [src/fivem/models/Ped.ts:248](https://github.com/nativewrappers/nati
 get IsRagdoll(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:230](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L230)
+Defined in: [src/fivem/models/Ped.ts:230](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L230)
 
 ##### Returns
 
@@ -1812,7 +1812,7 @@ Defined in: [src/fivem/models/Ped.ts:230](https://github.com/nativewrappers/nati
 set IsRecordingCollisions(value): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:427](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L427)
+Defined in: [src/fivem/models/BaseEntity.ts:427](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L427)
 
 ##### Parameters
 
@@ -1838,7 +1838,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:427](https://github.com/nativewrappe
 get IsReloading(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:420](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L420)
+Defined in: [src/fivem/models/Ped.ts:420](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L420)
 
 ##### Returns
 
@@ -1854,7 +1854,7 @@ Defined in: [src/fivem/models/Ped.ts:420](https://github.com/nativewrappers/nati
 get IsRunning(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:284](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L284)
+Defined in: [src/fivem/models/Ped.ts:284](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L284)
 
 ##### Returns
 
@@ -1870,7 +1870,7 @@ Defined in: [src/fivem/models/Ped.ts:284](https://github.com/nativewrappers/nati
 get IsScriptedSpeechPlaying(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:392](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L392)
+Defined in: [src/fivem/models/Ped.ts:392](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L392)
 
 ##### Returns
 
@@ -1886,7 +1886,7 @@ Defined in: [src/fivem/models/Ped.ts:392](https://github.com/nativewrappers/nati
 get IsShooting(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:412](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L412)
+Defined in: [src/fivem/models/Ped.ts:412](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L412)
 
 ##### Returns
 
@@ -1902,7 +1902,7 @@ Defined in: [src/fivem/models/Ped.ts:412](https://github.com/nativewrappers/nati
 get IsSprinting(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:288](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L288)
+Defined in: [src/fivem/models/Ped.ts:288](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L288)
 
 ##### Returns
 
@@ -1918,7 +1918,7 @@ Defined in: [src/fivem/models/Ped.ts:288](https://github.com/nativewrappers/nati
 get IsStopped(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:276](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L276)
+Defined in: [src/fivem/models/Ped.ts:276](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L276)
 
 ##### Returns
 
@@ -1934,7 +1934,7 @@ Defined in: [src/fivem/models/Ped.ts:276](https://github.com/nativewrappers/nati
 get IsSwimming(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:300](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L300)
+Defined in: [src/fivem/models/Ped.ts:300](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L300)
 
 ##### Returns
 
@@ -1950,7 +1950,7 @@ Defined in: [src/fivem/models/Ped.ts:300](https://github.com/nativewrappers/nati
 get IsSwimmingUnderWater(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:304](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L304)
+Defined in: [src/fivem/models/Ped.ts:304](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L304)
 
 ##### Returns
 
@@ -1966,7 +1966,7 @@ Defined in: [src/fivem/models/Ped.ts:304](https://github.com/nativewrappers/nati
 get IsTryingToEnterALockedVehicle(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:364](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L364)
+Defined in: [src/fivem/models/Ped.ts:364](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L364)
 
 ##### Returns
 
@@ -1982,7 +1982,7 @@ Defined in: [src/fivem/models/Ped.ts:364](https://github.com/nativewrappers/nati
 get IsUpright(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:350](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L350)
+Defined in: [src/fivem/models/BaseEntity.ts:350](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L350)
 
 ##### Returns
 
@@ -2002,7 +2002,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:350](https://github.com/nativewrappe
 get IsUpsideDown(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:354](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L354)
+Defined in: [src/fivem/models/BaseEntity.ts:354](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L354)
 
 ##### Returns
 
@@ -2022,7 +2022,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:354](https://github.com/nativewrappe
 get IsVaulting(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:308](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L308)
+Defined in: [src/fivem/models/Ped.ts:308](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L308)
 
 ##### Returns
 
@@ -2038,7 +2038,7 @@ Defined in: [src/fivem/models/Ped.ts:308](https://github.com/nativewrappers/nati
 get IsVisible(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:334](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L334)
+Defined in: [src/fivem/models/BaseEntity.ts:334](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L334)
 
 ##### Returns
 
@@ -2050,7 +2050,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:334](https://github.com/nativewrappe
 set IsVisible(value): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:338](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L338)
+Defined in: [src/fivem/models/BaseEntity.ts:338](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L338)
 
 ##### Parameters
 
@@ -2076,7 +2076,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:338](https://github.com/nativewrappe
 get IsWalking(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:280](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L280)
+Defined in: [src/fivem/models/Ped.ts:280](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L280)
 
 ##### Returns
 
@@ -2092,7 +2092,7 @@ Defined in: [src/fivem/models/Ped.ts:280](https://github.com/nativewrappers/nati
 get IsWearingHelmet(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:226](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L226)
+Defined in: [src/fivem/models/Ped.ts:226](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L226)
 
 ##### Returns
 
@@ -2108,7 +2108,7 @@ Defined in: [src/fivem/models/Ped.ts:226](https://github.com/nativewrappers/nati
 get LastVehicle(): null | Vehicle
 ```
 
-Defined in: [src/fivem/models/Ped.ts:184](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L184)
+Defined in: [src/fivem/models/Ped.ts:184](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L184)
 
 ##### Returns
 
@@ -2124,7 +2124,7 @@ Defined in: [src/fivem/models/Ped.ts:184](https://github.com/nativewrappers/nati
 get LodDistance(): number
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:326](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L326)
+Defined in: [src/fivem/models/BaseEntity.ts:326](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L326)
 
 ##### Returns
 
@@ -2136,7 +2136,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:326](https://github.com/nativewrappe
 set LodDistance(value): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:330](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L330)
+Defined in: [src/fivem/models/BaseEntity.ts:330](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L330)
 
 ##### Parameters
 
@@ -2162,7 +2162,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:330](https://github.com/nativewrappe
 get MaterialCollidingWith(): MaterialHash
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:415](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L415)
+Defined in: [src/fivem/models/BaseEntity.ts:415](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L415)
 
 ##### Returns
 
@@ -2182,7 +2182,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:415](https://github.com/nativewrappe
 get Matrix(): Vector3[]
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:132](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L132)
+Defined in: [src/fivem/models/BaseEntity.ts:132](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L132)
 
 ##### Returns
 
@@ -2194,7 +2194,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:132](https://github.com/nativewrappe
 set Matrix(vectors): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:136](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L136)
+Defined in: [src/fivem/models/BaseEntity.ts:136](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L136)
 
 ##### Parameters
 
@@ -2220,7 +2220,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:136](https://github.com/nativewrappe
 set MaxDrivingSpeed(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:202](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L202)
+Defined in: [src/fivem/models/Ped.ts:202](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L202)
 
 ##### Parameters
 
@@ -2242,7 +2242,7 @@ Defined in: [src/fivem/models/Ped.ts:202](https://github.com/nativewrappers/nati
 get MaxHealth(): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:127](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L127)
+Defined in: [src/fivem/models/Ped.ts:127](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L127)
 
 ##### Returns
 
@@ -2254,7 +2254,7 @@ Defined in: [src/fivem/models/Ped.ts:127](https://github.com/nativewrappers/nati
 set MaxHealth(amount): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:131](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L131)
+Defined in: [src/fivem/models/Ped.ts:131](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L131)
 
 ##### Parameters
 
@@ -2280,7 +2280,7 @@ Defined in: [src/fivem/models/Ped.ts:131](https://github.com/nativewrappers/nati
 set MaxSpeed(value): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:310](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L310)
+Defined in: [src/fivem/models/BaseEntity.ts:310](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L310)
 
 ##### Parameters
 
@@ -2306,7 +2306,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:310](https://github.com/nativewrappe
 get Model(): Model
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:203](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L203)
+Defined in: [src/fivem/models/BaseEntity.ts:203](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L203)
 
 ##### Returns
 
@@ -2326,7 +2326,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:203](https://github.com/nativewrappe
 get Money(): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:89](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L89)
+Defined in: [src/fivem/models/Ped.ts:89](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L89)
 
 ##### Returns
 
@@ -2338,7 +2338,7 @@ Defined in: [src/fivem/models/Ped.ts:89](https://github.com/nativewrappers/nativ
 set Money(amount): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:93](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L93)
+Defined in: [src/fivem/models/Ped.ts:93](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L93)
 
 ##### Parameters
 
@@ -2360,7 +2360,7 @@ Defined in: [src/fivem/models/Ped.ts:93](https://github.com/nativewrappers/nativ
 set MotionBlur(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:476](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L476)
+Defined in: [src/fivem/models/Ped.ts:476](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L476)
 
 ##### Parameters
 
@@ -2382,7 +2382,7 @@ Defined in: [src/fivem/models/Ped.ts:476](https://github.com/nativewrappers/nati
 get NetworkId(): number
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:54](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L54)
+Defined in: [src/fivem/models/BaseEntity.ts:54](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L54)
 
 ##### Returns
 
@@ -2402,7 +2402,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:54](https://github.com/nativewrapper
 set NeverLeavesGroup(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:572](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L572)
+Defined in: [src/fivem/models/Ped.ts:572](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L572)
 
 ##### Parameters
 
@@ -2424,7 +2424,7 @@ Defined in: [src/fivem/models/Ped.ts:572](https://github.com/nativewrappers/nati
 get Opacity(): number
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:396](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L396)
+Defined in: [src/fivem/models/BaseEntity.ts:396](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L396)
 
 ##### Returns
 
@@ -2436,7 +2436,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:396](https://github.com/nativewrappe
 set Opacity(value): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:403](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L403)
+Defined in: [src/fivem/models/BaseEntity.ts:403](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L403)
 
 Sets how transparent an entity is, if you want to reset the alpha level use [[resetOpacity]] instead;
 
@@ -2464,7 +2464,7 @@ Sets how transparent an entity is, if you want to reset the alpha level use [[re
 get Owner(): number
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:112](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L112)
+Defined in: [src/fivem/models/BaseEntity.ts:112](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L112)
 
 ##### Returns
 
@@ -2484,7 +2484,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:112](https://github.com/nativewrappe
 get Player(): Player
 ```
 
-Defined in: [src/fivem/models/Ped.ts:85](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L85)
+Defined in: [src/fivem/models/Ped.ts:85](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L85)
 
 ##### Returns
 
@@ -2500,7 +2500,7 @@ Defined in: [src/fivem/models/Ped.ts:85](https://github.com/nativewrappers/nativ
 get Position(): Vector3
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:225](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L225)
+Defined in: [src/fivem/models/BaseEntity.ts:225](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L225)
 
 ##### Returns
 
@@ -2512,7 +2512,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:225](https://github.com/nativewrappe
 set Position(position): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:229](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L229)
+Defined in: [src/fivem/models/BaseEntity.ts:229](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L229)
 
 ##### Parameters
 
@@ -2538,7 +2538,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:229](https://github.com/nativewrappe
 set PositionNoOffset(position): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:242](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L242)
+Defined in: [src/fivem/models/BaseEntity.ts:242](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L242)
 
 ##### Parameters
 
@@ -2564,7 +2564,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:242](https://github.com/nativewrappe
 get Quaternion(): Quaternion
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:262](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L262)
+Defined in: [src/fivem/models/BaseEntity.ts:262](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L262)
 
 ##### Returns
 
@@ -2576,7 +2576,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:262](https://github.com/nativewrappe
 set Quaternion(quaternion): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:272](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L272)
+Defined in: [src/fivem/models/BaseEntity.ts:272](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L272)
 
 ##### Parameters
 
@@ -2602,7 +2602,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:272](https://github.com/nativewrappe
 get Rotation(): Vector3
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:254](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L254)
+Defined in: [src/fivem/models/BaseEntity.ts:254](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L254)
 
 ##### Returns
 
@@ -2614,7 +2614,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:254](https://github.com/nativewrappe
 set Rotation(rotation): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:258](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L258)
+Defined in: [src/fivem/models/BaseEntity.ts:258](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L258)
 
 ##### Parameters
 
@@ -2640,7 +2640,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:258](https://github.com/nativewrappe
 get RotationVelocity(): Vector3
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:306](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L306)
+Defined in: [src/fivem/models/BaseEntity.ts:306](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L306)
 
 ##### Returns
 
@@ -2660,7 +2660,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:306](https://github.com/nativewrappe
 get SeatIndex(): VehicleSeat
 ```
 
-Defined in: [src/fivem/models/Ped.ts:164](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L164)
+Defined in: [src/fivem/models/Ped.ts:164](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L164)
 
 ##### Returns
 
@@ -2676,7 +2676,7 @@ Defined in: [src/fivem/models/Ped.ts:164](https://github.com/nativewrappers/nati
 set ShootRate(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:151](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L151)
+Defined in: [src/fivem/models/Ped.ts:151](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L151)
 
 ##### Parameters
 
@@ -2698,7 +2698,7 @@ Defined in: [src/fivem/models/Ped.ts:151](https://github.com/nativewrappers/nati
 get Speed(): number
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:120](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L120)
+Defined in: [src/fivem/models/BaseEntity.ts:120](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L120)
 
 ##### Returns
 
@@ -2718,7 +2718,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:120](https://github.com/nativewrappe
 get State(): StateBagInterface
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:69](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L69)
+Defined in: [src/fivem/models/BaseEntity.ts:69](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L69)
 
 ##### Returns
 
@@ -2738,7 +2738,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:69](https://github.com/nativewrapper
 set StaysInVehicleWhenJacked(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:198](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L198)
+Defined in: [src/fivem/models/Ped.ts:198](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L198)
 
 ##### Parameters
 
@@ -2760,7 +2760,7 @@ Defined in: [src/fivem/models/Ped.ts:198](https://github.com/nativewrappers/nati
 get SubmersionLevel(): number
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:322](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L322)
+Defined in: [src/fivem/models/BaseEntity.ts:322](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L322)
 
 ##### Returns
 
@@ -2780,7 +2780,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:322](https://github.com/nativewrappe
 set Sweat(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:135](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L135)
+Defined in: [src/fivem/models/Ped.ts:135](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L135)
 
 ##### Parameters
 
@@ -2802,7 +2802,7 @@ Defined in: [src/fivem/models/Ped.ts:135](https://github.com/nativewrappers/nati
 get Task(): Tasks
 ```
 
-Defined in: [src/fivem/models/Ped.ts:480](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L480)
+Defined in: [src/fivem/models/Ped.ts:480](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L480)
 
 ##### Returns
 
@@ -2818,7 +2818,7 @@ Defined in: [src/fivem/models/Ped.ts:480](https://github.com/nativewrappers/nati
 get TaskSequenceProgress(): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:491](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L491)
+Defined in: [src/fivem/models/Ped.ts:491](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L491)
 
 ##### Returns
 
@@ -2834,7 +2834,7 @@ Defined in: [src/fivem/models/Ped.ts:491](https://github.com/nativewrappers/nati
 get VehicleTryingToEnter(): null | Vehicle
 ```
 
-Defined in: [src/fivem/models/Ped.ts:189](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L189)
+Defined in: [src/fivem/models/Ped.ts:189](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L189)
 
 ##### Returns
 
@@ -2850,7 +2850,7 @@ Defined in: [src/fivem/models/Ped.ts:189](https://github.com/nativewrappers/nati
 get Velocity(): Vector3
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:298](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L298)
+Defined in: [src/fivem/models/BaseEntity.ts:298](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L298)
 
 ##### Returns
 
@@ -2862,7 +2862,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:298](https://github.com/nativewrappe
 set Velocity(velocity): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:302](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L302)
+Defined in: [src/fivem/models/BaseEntity.ts:302](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L302)
 
 ##### Parameters
 
@@ -2888,7 +2888,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:302](https://github.com/nativewrappe
 set Voice(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:147](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L147)
+Defined in: [src/fivem/models/Ped.ts:147](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L147)
 
 ##### Parameters
 
@@ -2910,7 +2910,7 @@ Defined in: [src/fivem/models/Ped.ts:147](https://github.com/nativewrappers/nati
 get WasKilledByStealth(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:156](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L156)
+Defined in: [src/fivem/models/Ped.ts:156](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L156)
 
 ##### Returns
 
@@ -2926,7 +2926,7 @@ Defined in: [src/fivem/models/Ped.ts:156](https://github.com/nativewrappers/nati
 get WasKilledByTakedown(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:160](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L160)
+Defined in: [src/fivem/models/Ped.ts:160](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L160)
 
 ##### Returns
 
@@ -2942,7 +2942,7 @@ Defined in: [src/fivem/models/Ped.ts:160](https://github.com/nativewrappers/nati
 get Weapons(): WeaponCollection
 ```
 
-Defined in: [src/fivem/models/Ped.ts:642](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L642)
+Defined in: [src/fivem/models/Ped.ts:642](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L642)
 
 Ped Weapons
 
@@ -2960,7 +2960,7 @@ Ped Weapons
 set WetnessHeight(value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:139](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L139)
+Defined in: [src/fivem/models/Ped.ts:139](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L139)
 
 ##### Parameters
 
@@ -2980,7 +2980,7 @@ Defined in: [src/fivem/models/Ped.ts:139](https://github.com/nativewrappers/nati
 AddStateBagChangeHandler(keyFilter, handler): number
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:73](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L73)
+Defined in: [src/fivem/models/BaseEntity.ts:73](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L73)
 
 #### Parameters
 
@@ -3005,7 +3005,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:73](https://github.com/nativewrapper
 applyDamage(damageAmount, armorFirst): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:609](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L609)
+Defined in: [src/fivem/models/Ped.ts:609](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L609)
 
 #### Parameters
 
@@ -3029,7 +3029,7 @@ applyForce(
    forceType): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:698](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L698)
+Defined in: [src/fivem/models/BaseEntity.ts:698](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L698)
 
 #### Parameters
 
@@ -3058,7 +3058,7 @@ applyForceRelative(
    forceType): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:721](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L721)
+Defined in: [src/fivem/models/BaseEntity.ts:721](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L721)
 
 #### Parameters
 
@@ -3084,7 +3084,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:721](https://github.com/nativewrappe
 attachBlip(): Blip
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:448](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L448)
+Defined in: [src/fivem/models/BaseEntity.ts:448](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L448)
 
 #### Returns
 
@@ -3109,7 +3109,7 @@ attachTo(
    rotationOrder): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:603](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L603)
+Defined in: [src/fivem/models/BaseEntity.ts:603](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L603)
 
 #### Parameters
 
@@ -3146,7 +3146,7 @@ attachToBone(
    rotationOrder): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:649](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L649)
+Defined in: [src/fivem/models/BaseEntity.ts:649](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L649)
 
 #### Parameters
 
@@ -3176,7 +3176,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:649](https://github.com/nativewrappe
 cancelRagdoll(): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:697](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L697)
+Defined in: [src/fivem/models/Ped.ts:697](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L697)
 
 #### Returns
 
@@ -3190,7 +3190,7 @@ Defined in: [src/fivem/models/Ped.ts:697](https://github.com/nativewrappers/nati
 clearAllProps(): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:810](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L810)
+Defined in: [src/fivem/models/Ped.ts:810](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L810)
 
 #### Returns
 
@@ -3204,7 +3204,7 @@ Defined in: [src/fivem/models/Ped.ts:810](https://github.com/nativewrappers/nati
 clearBloodDamage(): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:562](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L562)
+Defined in: [src/fivem/models/Ped.ts:562](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L562)
 
 #### Returns
 
@@ -3218,7 +3218,7 @@ Defined in: [src/fivem/models/Ped.ts:562](https://github.com/nativewrappers/nati
 clearLastWeaponDamage(): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:625](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L625)
+Defined in: [src/fivem/models/Ped.ts:625](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L625)
 
 #### Returns
 
@@ -3236,7 +3236,7 @@ Defined in: [src/fivem/models/Ped.ts:625](https://github.com/nativewrappers/nati
 clearProp(propId): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:806](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L806)
+Defined in: [src/fivem/models/Ped.ts:806](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L806)
 
 #### Parameters
 
@@ -3256,7 +3256,7 @@ Defined in: [src/fivem/models/Ped.ts:806](https://github.com/nativewrappers/nati
 clone(): Ped
 ```
 
-Defined in: [src/fivem/models/Ped.ts:735](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L735)
+Defined in: [src/fivem/models/Ped.ts:735](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L735)
 
 #### Returns
 
@@ -3270,7 +3270,7 @@ Defined in: [src/fivem/models/Ped.ts:735](https://github.com/nativewrappers/nati
 delete(): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:762](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L762)
+Defined in: [src/fivem/models/BaseEntity.ts:762](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L762)
 
 #### Returns
 
@@ -3288,7 +3288,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:762](https://github.com/nativewrappe
 detach(): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:682](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L682)
+Defined in: [src/fivem/models/BaseEntity.ts:682](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L682)
 
 #### Returns
 
@@ -3306,7 +3306,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:682](https://github.com/nativewrappe
 exists(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:739](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L739)
+Defined in: [src/fivem/models/Ped.ts:739](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L739)
 
 #### Returns
 
@@ -3324,7 +3324,7 @@ Defined in: [src/fivem/models/Ped.ts:739](https://github.com/nativewrappers/nati
 finalizeHeadBlend(): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:1031](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L1031)
+Defined in: [src/fivem/models/Ped.ts:1031](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L1031)
 
 #### Returns
 
@@ -3338,7 +3338,7 @@ Defined in: [src/fivem/models/Ped.ts:1031](https://github.com/nativewrappers/nat
 getConfigFlag(flagId): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:722](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L722)
+Defined in: [src/fivem/models/Ped.ts:722](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L722)
 
 #### Parameters
 
@@ -3358,7 +3358,7 @@ Defined in: [src/fivem/models/Ped.ts:722](https://github.com/nativewrappers/nati
 getDrawableVariation(componentId): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:770](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L770)
+Defined in: [src/fivem/models/Ped.ts:770](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L770)
 
 #### Parameters
 
@@ -3378,7 +3378,7 @@ Defined in: [src/fivem/models/Ped.ts:770](https://github.com/nativewrappers/nati
 getEntityAttachedTo(): BaseEntity
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:694](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L694)
+Defined in: [src/fivem/models/BaseEntity.ts:694](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L694)
 
 #### Returns
 
@@ -3396,7 +3396,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:694](https://github.com/nativewrappe
 getEyeColor(): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:858](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L858)
+Defined in: [src/fivem/models/Ped.ts:858](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L858)
 
 #### Returns
 
@@ -3410,7 +3410,7 @@ Defined in: [src/fivem/models/Ped.ts:858](https://github.com/nativewrappers/nati
 getHairColor(): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:870](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L870)
+Defined in: [src/fivem/models/Ped.ts:870](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L870)
 
 #### Returns
 
@@ -3424,7 +3424,7 @@ Defined in: [src/fivem/models/Ped.ts:870](https://github.com/nativewrappers/nati
 getHairHighlightColor(): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:878](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L878)
+Defined in: [src/fivem/models/Ped.ts:878](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L878)
 
 #### Returns
 
@@ -3440,7 +3440,7 @@ getHeadBlend():
   | [number, number, number, number, number, number, number, number, number, boolean]
 ```
 
-Defined in: [src/fivem/models/Ped.ts:975](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L975)
+Defined in: [src/fivem/models/Ped.ts:975](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L975)
 
 #### Returns
 
@@ -3455,7 +3455,7 @@ Defined in: [src/fivem/models/Ped.ts:975](https://github.com/nativewrappers/nati
 getHeadOverlay(overlayId): void | [number, number, number, number, number]
 ```
 
-Defined in: [src/fivem/models/Ped.ts:895](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L895)
+Defined in: [src/fivem/models/Ped.ts:895](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L895)
 
 #### Parameters
 
@@ -3475,7 +3475,7 @@ Defined in: [src/fivem/models/Ped.ts:895](https://github.com/nativewrappers/nati
 getHeadOverlayNum(overlayId): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:882](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L882)
+Defined in: [src/fivem/models/Ped.ts:882](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L882)
 
 #### Parameters
 
@@ -3495,7 +3495,7 @@ Defined in: [src/fivem/models/Ped.ts:882](https://github.com/nativewrappers/nati
 getHeadOverlayOpacity(overlayId): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:926](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L926)
+Defined in: [src/fivem/models/Ped.ts:926](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L926)
 
 #### Parameters
 
@@ -3515,7 +3515,7 @@ Defined in: [src/fivem/models/Ped.ts:926](https://github.com/nativewrappers/nati
 getHeadOverlayValue(overlayId): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:886](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L886)
+Defined in: [src/fivem/models/Ped.ts:886](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L886)
 
 #### Parameters
 
@@ -3535,7 +3535,7 @@ Defined in: [src/fivem/models/Ped.ts:886](https://github.com/nativewrappers/nati
 getJacker(): Ped
 ```
 
-Defined in: [src/fivem/models/Ped.ts:527](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L527)
+Defined in: [src/fivem/models/Ped.ts:527](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L527)
 
 #### Returns
 
@@ -3549,7 +3549,7 @@ Defined in: [src/fivem/models/Ped.ts:527](https://github.com/nativewrappers/nati
 getJackTarget(): Ped
 ```
 
-Defined in: [src/fivem/models/Ped.ts:531](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L531)
+Defined in: [src/fivem/models/Ped.ts:531](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L531)
 
 #### Returns
 
@@ -3563,7 +3563,7 @@ Defined in: [src/fivem/models/Ped.ts:531](https://github.com/nativewrappers/nati
 getKiller(): null | BaseEntity
 ```
 
-Defined in: [src/fivem/models/Ped.ts:539](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L539)
+Defined in: [src/fivem/models/Ped.ts:539](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L539)
 
 #### Returns
 
@@ -3577,7 +3577,7 @@ Defined in: [src/fivem/models/Ped.ts:539](https://github.com/nativewrappers/nati
 getLastWeaponImpactPosition(): Vector3
 ```
 
-Defined in: [src/fivem/models/Ped.ts:667](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L667)
+Defined in: [src/fivem/models/Ped.ts:667](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L667)
 
 #### Returns
 
@@ -3591,7 +3591,7 @@ Defined in: [src/fivem/models/Ped.ts:667](https://github.com/nativewrappers/nati
 getMeleeTarget(): Ped
 ```
 
-Defined in: [src/fivem/models/Ped.ts:535](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L535)
+Defined in: [src/fivem/models/Ped.ts:535](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L535)
 
 #### Returns
 
@@ -3605,7 +3605,7 @@ Defined in: [src/fivem/models/Ped.ts:535](https://github.com/nativewrappers/nati
 getNumberOfDrawableVariations(componentId): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:774](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L774)
+Defined in: [src/fivem/models/Ped.ts:774](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L774)
 
 #### Parameters
 
@@ -3625,7 +3625,7 @@ Defined in: [src/fivem/models/Ped.ts:774](https://github.com/nativewrappers/nati
 getNumberOfPropDrawableVariations(propId): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:835](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L835)
+Defined in: [src/fivem/models/Ped.ts:835](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L835)
 
 #### Parameters
 
@@ -3645,7 +3645,7 @@ Defined in: [src/fivem/models/Ped.ts:835](https://github.com/nativewrappers/nati
 getNumberOfPropTextureVariations(propId, drawableId): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:839](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L839)
+Defined in: [src/fivem/models/Ped.ts:839](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L839)
 
 #### Parameters
 
@@ -3666,7 +3666,7 @@ Defined in: [src/fivem/models/Ped.ts:839](https://github.com/nativewrappers/nati
 getNumberTextureVariations(componentId, drawableId): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:782](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L782)
+Defined in: [src/fivem/models/Ped.ts:782](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L782)
 
 #### Parameters
 
@@ -3687,7 +3687,7 @@ Defined in: [src/fivem/models/Ped.ts:782](https://github.com/nativewrappers/nati
 getOffsetInRelativeCoords(worldCoords): Vector3
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:550](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L550)
+Defined in: [src/fivem/models/BaseEntity.ts:550](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L550)
 
 #### Parameters
 
@@ -3713,7 +3713,7 @@ the offset position from the entity in world coords
 getOffsetInWorldCoords(offset): Vector3
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:578](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L578)
+Defined in: [src/fivem/models/BaseEntity.ts:578](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L578)
 
 #### Parameters
 
@@ -3753,7 +3753,7 @@ const offset = bag.getRelativePositionOffset(plyPos);
 getOffsetPosition(offset): Vector3
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:599](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L599)
+Defined in: [src/fivem/models/BaseEntity.ts:599](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L599)
 
 #### Parameters
 
@@ -3781,7 +3781,7 @@ use [[getOffsetInWorldCoords]]
 getPositionOffset(worldCoords): Vector3
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:592](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L592)
+Defined in: [src/fivem/models/BaseEntity.ts:592](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L592)
 
 #### Parameters
 
@@ -3809,7 +3809,7 @@ use [[getOffsetInRelativeCoords]] instead
 getPropIndex(propId): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:831](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L831)
+Defined in: [src/fivem/models/Ped.ts:831](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L831)
 
 #### Parameters
 
@@ -3829,7 +3829,7 @@ Defined in: [src/fivem/models/Ped.ts:831](https://github.com/nativewrappers/nati
 getPropTextureIndex(propId): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:846](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L846)
+Defined in: [src/fivem/models/Ped.ts:846](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L846)
 
 #### Parameters
 
@@ -3849,7 +3849,7 @@ Defined in: [src/fivem/models/Ped.ts:846](https://github.com/nativewrappers/nati
 getSpeedVector(isRelative): Vector3
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:124](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L124)
+Defined in: [src/fivem/models/BaseEntity.ts:124](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L124)
 
 #### Parameters
 
@@ -3873,7 +3873,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:124](https://github.com/nativewrappe
 getTextureVariation(componentId): number
 ```
 
-Defined in: [src/fivem/models/Ped.ts:778](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L778)
+Defined in: [src/fivem/models/Ped.ts:778](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L778)
 
 #### Parameters
 
@@ -3896,7 +3896,7 @@ giveHelmet(
    textureIndex): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:701](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L701)
+Defined in: [src/fivem/models/Ped.ts:701](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L701)
 
 #### Parameters
 
@@ -3922,7 +3922,7 @@ giveWeapon(
    equipNow): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:650](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L650)
+Defined in: [src/fivem/models/Ped.ts:650](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L650)
 
 #### Parameters
 
@@ -3945,7 +3945,7 @@ Defined in: [src/fivem/models/Ped.ts:650](https://github.com/nativewrappers/nati
 hasBeenDamagedBy(entity): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:464](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L464)
+Defined in: [src/fivem/models/BaseEntity.ts:464](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L464)
 
 #### Parameters
 
@@ -3969,7 +3969,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:464](https://github.com/nativewrappe
 hasBeenDamagedByAnyMeleeWeapon(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:621](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L621)
+Defined in: [src/fivem/models/Ped.ts:621](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L621)
 
 #### Returns
 
@@ -3987,7 +3987,7 @@ Defined in: [src/fivem/models/Ped.ts:621](https://github.com/nativewrappers/nati
 hasBeenDamagedByAnyWeapon(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:617](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L617)
+Defined in: [src/fivem/models/Ped.ts:617](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L617)
 
 #### Returns
 
@@ -4005,7 +4005,7 @@ Defined in: [src/fivem/models/Ped.ts:617](https://github.com/nativewrappers/nati
 hasBeenDamagedByWeapon(weapon): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:613](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L613)
+Defined in: [src/fivem/models/Ped.ts:613](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L613)
 
 #### Parameters
 
@@ -4029,7 +4029,7 @@ Defined in: [src/fivem/models/Ped.ts:613](https://github.com/nativewrappers/nati
 hasClearLosToEntity(entity, traceType): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:456](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L456)
+Defined in: [src/fivem/models/BaseEntity.ts:456](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L456)
 
 #### Parameters
 
@@ -4054,7 +4054,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:456](https://github.com/nativewrappe
 hasClearLosToEntityInFront(entity): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:460](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L460)
+Defined in: [src/fivem/models/BaseEntity.ts:460](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L460)
 
 #### Parameters
 
@@ -4078,7 +4078,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:460](https://github.com/nativewrappe
 hasHeadBlendFinished(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:1035](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L1035)
+Defined in: [src/fivem/models/Ped.ts:1035](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L1035)
 
 #### Returns
 
@@ -4092,7 +4092,7 @@ Defined in: [src/fivem/models/Ped.ts:1035](https://github.com/nativewrappers/nat
 isAlive(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:199](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L199)
+Defined in: [src/fivem/models/BaseEntity.ts:199](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L199)
 
 #### Returns
 
@@ -4114,7 +4114,7 @@ use [[IsAlive]] instead
 isAttached(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:686](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L686)
+Defined in: [src/fivem/models/BaseEntity.ts:686](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L686)
 
 #### Returns
 
@@ -4132,7 +4132,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:686](https://github.com/nativewrappe
 isAttachedTo(entity): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:690](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L690)
+Defined in: [src/fivem/models/BaseEntity.ts:690](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L690)
 
 #### Parameters
 
@@ -4156,7 +4156,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:690](https://github.com/nativewrappe
 isDead(): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:192](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L192)
+Defined in: [src/fivem/models/BaseEntity.ts:192](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L192)
 
 #### Returns
 
@@ -4178,7 +4178,7 @@ use [[IsDead]] instead
 isFacingPed(ped, angle): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:743](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L743)
+Defined in: [src/fivem/models/Ped.ts:743](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L743)
 
 #### Parameters
 
@@ -4199,7 +4199,7 @@ Defined in: [src/fivem/models/Ped.ts:743](https://github.com/nativewrappers/nati
 isHeadtracking(entity): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:519](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L519)
+Defined in: [src/fivem/models/Ped.ts:519](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L519)
 
 #### Parameters
 
@@ -4222,7 +4222,7 @@ isInAngledArea(
    angle): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:499](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L499)
+Defined in: [src/fivem/models/BaseEntity.ts:499](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L499)
 
 #### Parameters
 
@@ -4248,7 +4248,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:499](https://github.com/nativewrappe
 isInAnyVehicle(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:499](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L499)
+Defined in: [src/fivem/models/Ped.ts:499](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L499)
 
 #### Returns
 
@@ -4262,7 +4262,7 @@ Defined in: [src/fivem/models/Ped.ts:499](https://github.com/nativewrappers/nati
 isInArea(minBounds, maxBounds): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:484](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L484)
+Defined in: [src/fivem/models/BaseEntity.ts:484](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L484)
 
 #### Parameters
 
@@ -4287,7 +4287,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:484](https://github.com/nativewrappe
 isInCombatAgainst(target): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:523](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L523)
+Defined in: [src/fivem/models/Ped.ts:523](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L523)
 
 #### Parameters
 
@@ -4307,7 +4307,7 @@ Defined in: [src/fivem/models/Ped.ts:523](https://github.com/nativewrappers/nati
 isInCover(expectUseWeapon): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:448](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L448)
+Defined in: [src/fivem/models/Ped.ts:448](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L448)
 
 #### Parameters
 
@@ -4327,7 +4327,7 @@ Defined in: [src/fivem/models/Ped.ts:448](https://github.com/nativewrappers/nati
 isInRangeOf(position, range): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:519](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L519)
+Defined in: [src/fivem/models/BaseEntity.ts:519](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L519)
 
 #### Parameters
 
@@ -4352,7 +4352,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:519](https://github.com/nativewrappe
 isInVehicle(vehicle): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:503](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L503)
+Defined in: [src/fivem/models/Ped.ts:503](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L503)
 
 #### Parameters
 
@@ -4372,7 +4372,7 @@ Defined in: [src/fivem/models/Ped.ts:503](https://github.com/nativewrappers/nati
 isNearEntity(entity, bounds): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:525](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L525)
+Defined in: [src/fivem/models/BaseEntity.ts:525](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L525)
 
 #### Parameters
 
@@ -4400,7 +4400,7 @@ isPropValid(
    textureId): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:823](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L823)
+Defined in: [src/fivem/models/Ped.ts:823](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L823)
 
 #### Parameters
 
@@ -4422,7 +4422,7 @@ Defined in: [src/fivem/models/Ped.ts:823](https://github.com/nativewrappers/nati
 isSittingInAnyVehicle(): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:507](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L507)
+Defined in: [src/fivem/models/Ped.ts:507](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L507)
 
 #### Returns
 
@@ -4436,7 +4436,7 @@ Defined in: [src/fivem/models/Ped.ts:507](https://github.com/nativewrappers/nati
 isSittingInVehicle(vehicle): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:511](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L511)
+Defined in: [src/fivem/models/Ped.ts:511](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L511)
 
 #### Parameters
 
@@ -4456,7 +4456,7 @@ Defined in: [src/fivem/models/Ped.ts:511](https://github.com/nativewrappers/nati
 isTouching(entity): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:538](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L538)
+Defined in: [src/fivem/models/BaseEntity.ts:538](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L538)
 
 #### Parameters
 
@@ -4480,7 +4480,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:538](https://github.com/nativewrappe
 isTouchingModel(model): boolean
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:542](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L542)
+Defined in: [src/fivem/models/BaseEntity.ts:542](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L542)
 
 #### Parameters
 
@@ -4504,7 +4504,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:542](https://github.com/nativewrappe
 kill(): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:543](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L543)
+Defined in: [src/fivem/models/Ped.ts:543](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L543)
 
 #### Returns
 
@@ -4522,7 +4522,7 @@ knockPropOff(
    p4): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:814](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L814)
+Defined in: [src/fivem/models/Ped.ts:814](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L814)
 
 #### Parameters
 
@@ -4545,7 +4545,7 @@ Defined in: [src/fivem/models/Ped.ts:814](https://github.com/nativewrappers/nati
 leaveGroup(): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:576](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L576)
+Defined in: [src/fivem/models/Ped.ts:576](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L576)
 
 #### Returns
 
@@ -4559,7 +4559,7 @@ Defined in: [src/fivem/models/Ped.ts:576](https://github.com/nativewrappers/nati
 listenForStateChange(keyFilter, handler): number
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:97](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L97)
+Defined in: [src/fivem/models/BaseEntity.ts:97](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L97)
 
 A short hand function for AddStateBagChangeHandler, this gets automatically cleaned up on entity deletion.
 
@@ -4588,7 +4588,7 @@ a cookie to be used in RemoveStateBagChangeHandler
 markAsNoLongerNeeded(): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:773](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L773)
+Defined in: [src/fivem/models/BaseEntity.ts:773](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L773)
 
 #### Returns
 
@@ -4610,7 +4610,7 @@ use [[IsMissionEntity]] setter as false instead.
 openParachute(): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:718](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L718)
+Defined in: [src/fivem/models/Ped.ts:718](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L718)
 
 #### Returns
 
@@ -4627,7 +4627,7 @@ playAmbientSpeed(
    modifier): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:580](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L580)
+Defined in: [src/fivem/models/Ped.ts:580](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L580)
 
 #### Parameters
 
@@ -4649,7 +4649,7 @@ Defined in: [src/fivem/models/Ped.ts:580](https://github.com/nativewrappers/nati
 ragdoll(duration, ragdollType): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:681](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L681)
+Defined in: [src/fivem/models/Ped.ts:681](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L681)
 
 #### Parameters
 
@@ -4670,7 +4670,7 @@ Defined in: [src/fivem/models/Ped.ts:681](https://github.com/nativewrappers/nati
 removeAllParticleEffects(): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:754](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L754)
+Defined in: [src/fivem/models/BaseEntity.ts:754](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L754)
 
 #### Returns
 
@@ -4692,7 +4692,7 @@ use [[removePtfxEffects]]
 removeAllWeapons(): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:663](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L663)
+Defined in: [src/fivem/models/Ped.ts:663](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L663)
 
 #### Returns
 
@@ -4706,7 +4706,7 @@ Defined in: [src/fivem/models/Ped.ts:663](https://github.com/nativewrappers/nati
 removeHelmet(instantly): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:714](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L714)
+Defined in: [src/fivem/models/Ped.ts:714](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L714)
 
 #### Parameters
 
@@ -4726,7 +4726,7 @@ Defined in: [src/fivem/models/Ped.ts:714](https://github.com/nativewrappers/nati
 removePtfxEffects(): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:747](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L747)
+Defined in: [src/fivem/models/BaseEntity.ts:747](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L747)
 
 Removes all particle effects from the entity
 
@@ -4746,7 +4746,7 @@ Removes all particle effects from the entity
 removeStateListener(tgtCookie): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:104](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L104)
+Defined in: [src/fivem/models/BaseEntity.ts:104](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L104)
 
 #### Parameters
 
@@ -4770,7 +4770,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:104](https://github.com/nativewrappe
 removeWeapon(weapon): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:659](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L659)
+Defined in: [src/fivem/models/Ped.ts:659](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L659)
 
 #### Parameters
 
@@ -4790,7 +4790,7 @@ Defined in: [src/fivem/models/Ped.ts:659](https://github.com/nativewrappers/nati
 resetConfigFlag(flagId): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:730](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L730)
+Defined in: [src/fivem/models/Ped.ts:730](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L730)
 
 #### Parameters
 
@@ -4810,7 +4810,7 @@ Defined in: [src/fivem/models/Ped.ts:730](https://github.com/nativewrappers/nati
 resetOpacity(): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:407](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L407)
+Defined in: [src/fivem/models/BaseEntity.ts:407](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L407)
 
 #### Returns
 
@@ -4828,7 +4828,7 @@ Defined in: [src/fivem/models/BaseEntity.ts:407](https://github.com/nativewrappe
 resetVisibleDamage(): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:558](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L558)
+Defined in: [src/fivem/models/Ped.ts:558](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L558)
 
 #### Returns
 
@@ -4842,7 +4842,7 @@ Defined in: [src/fivem/models/Ped.ts:558](https://github.com/nativewrappers/nati
 resurrect(): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:547](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L547)
+Defined in: [src/fivem/models/Ped.ts:547](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L547)
 
 #### Returns
 
@@ -4860,7 +4860,7 @@ setComponentVariation(
    paletteId): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:747](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L747)
+Defined in: [src/fivem/models/Ped.ts:747](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L747)
 
 #### Parameters
 
@@ -4883,7 +4883,7 @@ Defined in: [src/fivem/models/Ped.ts:747](https://github.com/nativewrappers/nati
 setConfigFlag(flagId, value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:726](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L726)
+Defined in: [src/fivem/models/Ped.ts:726](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L726)
 
 #### Parameters
 
@@ -4904,7 +4904,7 @@ Defined in: [src/fivem/models/Ped.ts:726](https://github.com/nativewrappers/nati
 setDefaultComponentVariation(): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:766](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L766)
+Defined in: [src/fivem/models/Ped.ts:766](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L766)
 
 #### Returns
 
@@ -4918,7 +4918,7 @@ Defined in: [src/fivem/models/Ped.ts:766](https://github.com/nativewrappers/nati
 setEyeColor(color): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:854](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L854)
+Defined in: [src/fivem/models/Ped.ts:854](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L854)
 
 #### Parameters
 
@@ -4938,7 +4938,7 @@ Defined in: [src/fivem/models/Ped.ts:854](https://github.com/nativewrappers/nati
 setHairColor(color): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:866](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L866)
+Defined in: [src/fivem/models/Ped.ts:866](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L866)
 
 #### Parameters
 
@@ -4958,7 +4958,7 @@ Defined in: [src/fivem/models/Ped.ts:866](https://github.com/nativewrappers/nati
 setHairColors(primary, highlight): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:862](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L862)
+Defined in: [src/fivem/models/Ped.ts:862](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L862)
 
 #### Parameters
 
@@ -4979,7 +4979,7 @@ Defined in: [src/fivem/models/Ped.ts:862](https://github.com/nativewrappers/nati
 setHairHighlightColor(color): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:874](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L874)
+Defined in: [src/fivem/models/Ped.ts:874](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L874)
 
 #### Parameters
 
@@ -5009,7 +5009,7 @@ setHeadBlend(
    isParent): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:948](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L948)
+Defined in: [src/fivem/models/Ped.ts:948](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L948)
 
 #### Parameters
 
@@ -5041,7 +5041,7 @@ setHeadOverlay(
    opacity): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:918](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L918)
+Defined in: [src/fivem/models/Ped.ts:918](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L918)
 
 #### Parameters
 
@@ -5063,7 +5063,7 @@ Defined in: [src/fivem/models/Ped.ts:918](https://github.com/nativewrappers/nati
 setHeadOverlayColor(overlayId, color): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:938](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L938)
+Defined in: [src/fivem/models/Ped.ts:938](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L938)
 
 #### Parameters
 
@@ -5084,7 +5084,7 @@ Defined in: [src/fivem/models/Ped.ts:938](https://github.com/nativewrappers/nati
 setHeadOverlayOpacity(overlayId, opacity): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:930](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L930)
+Defined in: [src/fivem/models/Ped.ts:930](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L930)
 
 #### Parameters
 
@@ -5105,7 +5105,7 @@ Defined in: [src/fivem/models/Ped.ts:930](https://github.com/nativewrappers/nati
 setHeadOverlayValue(overlayId, value): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:890](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L890)
+Defined in: [src/fivem/models/Ped.ts:890](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L890)
 
 #### Parameters
 
@@ -5126,7 +5126,7 @@ Defined in: [src/fivem/models/Ped.ts:890](https://github.com/nativewrappers/nati
 setHelmetPropIndex(propIndex): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:850](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L850)
+Defined in: [src/fivem/models/Ped.ts:850](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L850)
 
 #### Parameters
 
@@ -5146,7 +5146,7 @@ Defined in: [src/fivem/models/Ped.ts:850](https://github.com/nativewrappers/nati
 setIntoVehicle(vehicle, seat): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:515](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L515)
+Defined in: [src/fivem/models/Ped.ts:515](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L515)
 
 #### Parameters
 
@@ -5167,7 +5167,7 @@ Defined in: [src/fivem/models/Ped.ts:515](https://github.com/nativewrappers/nati
 setNoCollision(entity, toggle): void
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:452](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L452)
+Defined in: [src/fivem/models/BaseEntity.ts:452](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L452)
 
 #### Parameters
 
@@ -5196,7 +5196,7 @@ setPropIndex(
    attach): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:797](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L797)
+Defined in: [src/fivem/models/Ped.ts:797](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L797)
 
 #### Parameters
 
@@ -5219,7 +5219,7 @@ Defined in: [src/fivem/models/Ped.ts:797](https://github.com/nativewrappers/nati
 setRandomComponentVariation(): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:762](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L762)
+Defined in: [src/fivem/models/Ped.ts:762](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L762)
 
 #### Returns
 
@@ -5233,7 +5233,7 @@ Defined in: [src/fivem/models/Ped.ts:762](https://github.com/nativewrappers/nati
 setRandomProps(): void
 ```
 
-Defined in: [src/fivem/models/Ped.ts:793](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L793)
+Defined in: [src/fivem/models/Ped.ts:793](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L793)
 
 #### Returns
 
@@ -5247,7 +5247,7 @@ Defined in: [src/fivem/models/Ped.ts:793](https://github.com/nativewrappers/nati
 static exists(ped): boolean
 ```
 
-Defined in: [src/fivem/models/Ped.ts:19](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L19)
+Defined in: [src/fivem/models/Ped.ts:19](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L19)
 
 #### Parameters
 
@@ -5267,7 +5267,7 @@ Defined in: [src/fivem/models/Ped.ts:19](https://github.com/nativewrappers/nativ
 static fromHandle(handle): null | Ped
 ```
 
-Defined in: [src/fivem/models/Ped.ts:23](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L23)
+Defined in: [src/fivem/models/Ped.ts:23](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L23)
 
 #### Parameters
 
@@ -5287,7 +5287,7 @@ Defined in: [src/fivem/models/Ped.ts:23](https://github.com/nativewrappers/nativ
 static fromNetworkId(networkId): null | Ped
 ```
 
-Defined in: [src/fivem/models/Ped.ts:27](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/Ped.ts#L27)
+Defined in: [src/fivem/models/Ped.ts:27](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/Ped.ts#L27)
 
 #### Parameters
 
@@ -5311,7 +5311,7 @@ Defined in: [src/fivem/models/Ped.ts:27](https://github.com/nativewrappers/nativ
 static fromStateBagName(stateBagName): null | BaseEntity
 ```
 
-Defined in: [src/fivem/models/BaseEntity.ts:16](https://github.com/nativewrappers/nativewrappers/blob/427b5ee59afa6efb7a0db0f5ab134f700c75b61b/src/fivem/models/BaseEntity.ts#L16)
+Defined in: [src/fivem/models/BaseEntity.ts:16](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/BaseEntity.ts#L16)
 
 #### Parameters
 
