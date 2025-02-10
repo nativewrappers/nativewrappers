@@ -16,10 +16,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/nativewrappers/fivem.git"
+		"url": "https://github.com/nativewrappers/nativewrappers.git"
 	},
 	"bugs": {
-		"url": "https://github.com/nativewrappers/fivem/issues"
+		"url": "https://github.com/nativewrappers/nativewrappers/issues"
 	},
 	"homepage": "https://fivemjs.avarian.dev/",
 	"keywords": [

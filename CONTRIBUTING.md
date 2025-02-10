@@ -1,6 +1,6 @@
 # Contributing
 
-We welcome contributions and assistance! If you want to know where to start, check out our [Github Projects sorted by name](https://github.com/nativewrappers/fivem/projects?query=is%3Aopen+sort%3Aname-asc).
+We welcome contributions and assistance! If you want to know where to start, check out our [Github Projects sorted by name](https://github.com/nativewrappers/nativewrappers/projects?query=is%3Aopen+sort%3Aname-asc).
 
 If you want to add a new feature, note that we strive to support OneSync, so keep that in mind when submitting feature requests.
 
