@@ -1,52 +1,44 @@
-interface Schema {
-  [key: string]: "string" | "number" | "float" | object;
-}
+type KvpSchema = Record<string, string | number | object>;
 
-export class Kvp<T extends Schema> {
-  private schema: T;
+type KvpObject<T> = T extends `${infer Prefix}.${infer Rest}`
+  ? Rest extends `${string}.${string}`
+    ? never
+    : Prefix
+  : never;
 
-  constructor(schema: T) {
-    this.schema = { ...schema };
+type ValidJsonKey<Schema> = {
+  [K in keyof Schema]: K extends string ? `${K}.${string}` : never;
+}[keyof Schema];
 
-    for (const key in this.schema) {
-      if (typeof this.schema[key] === "object")
-        this.schema[key] = Object as any;
-    }
-  }
-
-  /**
-   * Returns the type associated with a schema key.
-   */
-  public getType(key: keyof T): "string" | "number" | "float" | "object" {
-    return typeof this.schema[key] === "object" ? "object" : this.schema[key];
-  }
-
+export class Kvp<Schema extends KvpSchema> {
   /**
    * Returns the value associated with a key as a number.
    */
-  public getNumber(key: string) {
+  public getNumber<K extends string & keyof Schema>(key: K): number {
     return GetResourceKvpInt(key);
   }
 
   /**
    * Returns the value associated with a key as a float.
    */
-  public getFloat(key: string) {
+  public getFloat<K extends string & keyof Schema>(key: K): number {
     return GetResourceKvpFloat(key);
   }
 
   /**
    * Returns the value associated with a key as a string.
    */
-  public getString(key: string) {
-    return GetResourceKvpString(key) as string | null;
+  public getString<K extends string & keyof Schema>(key: K): string | null {
+    return GetResourceKvpString(key);
   }
 
   /**
    * Returns the value associated with a key as a parsed JSON string.
    */
-  public getJson<T>(key: string): T | null {
-    const str = GetResourceKvpString(key as string);
+  public getJson<K extends string, O = KvpObject<K>>(
+    key: K extends ValidJsonKey<O> ? K : never,
+  ): O extends string ? Schema[O] : null {
+    const str = GetResourceKvpString(key);
     return str ? JSON.parse(str) : null;
   }
 
@@ -54,17 +46,25 @@ export class Kvp<T extends Schema> {
    * Sets the value associated with a key as a number.
    * @param async set the value using an async operation.
    */
-  public setNumber(key: string, value: number, async = false): void {
+  public setNumber<K extends string & keyof Schema>(
+    key: K,
+    value: number,
+    async = false,
+  ): void {
     return async
-      ? SetResourceKvpIntNoSync(key, value)
-      : SetResourceKvpInt(key, value);
+      ? SetResourceKvpIntNoSync(key, value as number)
+      : SetResourceKvpInt(key, value as number);
   }
 
   /**
    * Sets the value associated with a key as a float.
    * @param async set the value using an async operation.
    */
-  public setFloat(key: string, value: number, async = false): void {
+  public setFloat<K extends string & keyof Schema>(
+    key: K,
+    value: number,
+    async = false,
+  ): void {
     return async
       ? SetResourceKvpFloatNoSync(key, value)
       : SetResourceKvpFloat(key, value);
@@ -74,7 +74,11 @@ export class Kvp<T extends Schema> {
    * Sets the value associated with a key as a string.
    * @param async set the value using an async operation.
    */
-  public setString(key: string, value: string, async = false): void {
+  public setString<K extends string & keyof Schema>(
+    key: K,
+    value: string,
+    async = false,
+  ): void {
     return async
       ? SetResourceKvpNoSync(key, value)
       : SetResourceKvp(key, value);
@@ -84,64 +88,44 @@ export class Kvp<T extends Schema> {
    * Sets the value associated with a key as a JSON string.
    * @param async set the value using an async operation.
    */
-  public setJson(key: string, value: object, async = false): void {
+  public setJson<K extends string, O = KvpObject<K>>(
+    key: K extends ValidJsonKey<O> ? K : never,
+    value: O extends string ? Schema[O] : never,
+    async = false,
+  ): void {
     const str = JSON.stringify(value);
     return async ? SetResourceKvpNoSync(key, str) : SetResourceKvp(key, str);
   }
 
   /**
-   * Returns the value associated with a key, determining the type using the declared Kvp schema.
-   */
-  public get<K extends keyof T>(
-    key: K,
-  ): T[K] extends "number" | "float"
-    ? number
-    : T[K] extends object
-      ? T[K] | null
-      : string | null {
-    const type = this.getType(key);
-
-    switch (type) {
-      case "number":
-        return this.getNumber(key as string) as any;
-      case "float":
-        return this.getFloat(key as string) as any;
-      case "object":
-        return this.getJson(key as string) as any;
-      default:
-        return this.getString(key as string) as any;
-    }
-  }
-
-  /**
-   * Sets the value associated with a key as a value, using its type from the declared Kvp stricture.
+   * Sets the value associated with a key as a JSON string.
    * @param async set the value using an async operation.
    */
-  public set<K extends string>(
-    key: K extends keyof T ? K : never,
-    value: T[K] extends "number" | "float"
-      ? number
-      : T[K] extends object
-        ? T[K] | null
-        : string | null,
+  public set<K extends string, O = KvpObject<K>>(
+    key: K extends keyof Schema ? K : O extends string ? K : never,
+    value: K extends keyof Schema
+      ? Schema[K]
+      : O extends string
+        ? Schema[O]
+        : never,
     async = false,
   ): void {
-    const type = this.getType(key);
-    const valueType = typeof value;
-
-    if (valueType !== type && type !== "float" && valueType === "number")
-      throw new Error(
-        `Expected '${key as string}' to be type '${type}' but received '${valueType}'`,
-      );
-
-    switch (type) {
-      case "number":
-        return this.setNumber(key, value as number, async);
-      case "float":
-        return this.setFloat(key, value as number, async);
+    switch (typeof value) {
+      case "function":
+      case "symbol":
+        throw new Error(`Failed to set Kvp for invalid type '${typeof value}'`);
+      case "undefined":
+        return this.delete(key, async);
       case "object":
-        return this.setJson(key, value as object, async);
+        return this.setJson(key as any, value, async);
+      case "boolean":
+        (value as any) = value ? 1 : 0;
+      case "number":
+        return Number.isInteger(value)
+          ? this.setNumber(key, value, async)
+          : this.setFloat(key, value, async);
       default:
+        (value as any) = String(value);
         return this.setString(key, value as string, async);
     }
   }
@@ -163,8 +147,8 @@ export class Kvp<T extends Schema> {
     FlushResourceKvp();
   }
 
-  private getAllKeys(prefix: string) {
-    const keys: string[] = [];
+  public getAllKeys(prefix: string) {
+    const keys: (keyof Schema)[] = [];
     const handle = StartFindKvp(prefix);
 
     if (handle === -1) return keys;
@@ -184,7 +168,7 @@ export class Kvp<T extends Schema> {
   /**
    * Returns an array of keys which match or contain the given keys.
    */
-  public getKeys(prefix: string | string[]) {
+  public getKeys<K extends (string & keyof Schema) | string[]>(prefix: K) {
     return typeof prefix === "string"
       ? this.getAllKeys(prefix)
       : prefix.flatMap((key) => this.getAllKeys(key));
@@ -193,22 +177,21 @@ export class Kvp<T extends Schema> {
   /**
    * Get all values from keys in an array as the specified type.
    */
-  public getValuesAsType(
-    prefix: string[],
-    type: "string" | "number" | "float" | "object",
-  ) {
+  public getValuesAsType<
+    K extends (string & keyof Schema) | (string & keyof Schema)[],
+  >(prefix: K, type: any) {
     const values = this.getKeys(prefix);
 
     return values.map((key) => {
       switch (type) {
         case "number":
-          return this.getNumber(key);
+          return this.getNumber(key as any);
         case "float":
-          return this.getFloat(key);
-        case "object":
-          return this.getJson(key);
+          return this.getFloat(key as any);
+        case "string":
+          return this.getString(key as any);
         default:
-          return this.getString(key);
+          return this.getJson(key as any);
       }
     });
   }
