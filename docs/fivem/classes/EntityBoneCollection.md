@@ -2,7 +2,7 @@
 
 # Class: EntityBoneCollection
 
-Defined in: [src/fivem/models/EntityBoneCollection.ts:4](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/EntityBoneCollection.ts#L4)
+Defined in: [src/fivem/models/EntityBoneCollection.ts:4](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/models/EntityBoneCollection.ts#L4)
 
 ## Extended by
 
@@ -16,7 +16,7 @@ Defined in: [src/fivem/models/EntityBoneCollection.ts:4](https://github.com/nati
 new EntityBoneCollection(owner): EntityBoneCollection
 ```
 
-Defined in: [src/fivem/models/EntityBoneCollection.ts:7](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/EntityBoneCollection.ts#L7)
+Defined in: [src/fivem/models/EntityBoneCollection.ts:7](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/models/EntityBoneCollection.ts#L7)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [src/fivem/models/EntityBoneCollection.ts:7](https://github.com/nati
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="owner-1"></a> `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [src/fivem/models/EntityBoneCollection.ts:5](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/EntityBoneCollection.ts#L5) |
+| <a id="owner-1"></a> `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [src/fivem/models/EntityBoneCollection.ts:5](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/models/EntityBoneCollection.ts#L5) |
 
 ## Accessors
 
@@ -44,7 +44,7 @@ Defined in: [src/fivem/models/EntityBoneCollection.ts:7](https://github.com/nati
 get Core(): EntityBone
 ```
 
-Defined in: [src/fivem/models/EntityBoneCollection.ts:24](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/EntityBoneCollection.ts#L24)
+Defined in: [src/fivem/models/EntityBoneCollection.ts:24](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/models/EntityBoneCollection.ts#L24)
 
 ##### Returns
 
@@ -58,7 +58,7 @@ Defined in: [src/fivem/models/EntityBoneCollection.ts:24](https://github.com/nat
 getBone(boneIndex?, boneName?): EntityBone
 ```
 
-Defined in: [src/fivem/models/EntityBoneCollection.ts:15](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/EntityBoneCollection.ts#L15)
+Defined in: [src/fivem/models/EntityBoneCollection.ts:15](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/models/EntityBoneCollection.ts#L15)
 
 #### Parameters
 
@@ -79,7 +79,7 @@ Defined in: [src/fivem/models/EntityBoneCollection.ts:15](https://github.com/nat
 hasBone(name): boolean
 ```
 
-Defined in: [src/fivem/models/EntityBoneCollection.ts:11](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/EntityBoneCollection.ts#L11)
+Defined in: [src/fivem/models/EntityBoneCollection.ts:11](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/models/EntityBoneCollection.ts#L11)
 
 #### Parameters
 

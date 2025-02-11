@@ -2,7 +2,7 @@
 
 # Class: PedBoneCollection
 
-Defined in: [src/fivem/models/PedBoneCollection.ts:3](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/PedBoneCollection.ts#L3)
+Defined in: [src/fivem/models/PedBoneCollection.ts:3](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/models/PedBoneCollection.ts#L3)
 
 ## Extends
 
@@ -16,7 +16,7 @@ Defined in: [src/fivem/models/PedBoneCollection.ts:3](https://github.com/nativew
 new PedBoneCollection(owner): PedBoneCollection
 ```
 
-Defined in: [src/fivem/models/PedBoneCollection.ts:4](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/PedBoneCollection.ts#L4)
+Defined in: [src/fivem/models/PedBoneCollection.ts:4](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/models/PedBoneCollection.ts#L4)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [src/fivem/models/PedBoneCollection.ts:4](https://github.com/nativew
 
 | Property | Modifier | Type | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| <a id="owner-1"></a> `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [`EntityBoneCollection`](EntityBoneCollection.md).[`owner`](EntityBoneCollection.md#owner-1) | [src/fivem/models/EntityBoneCollection.ts:5](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/EntityBoneCollection.ts#L5) |
+| <a id="owner-1"></a> `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [`EntityBoneCollection`](EntityBoneCollection.md).[`owner`](EntityBoneCollection.md#owner-1) | [src/fivem/models/EntityBoneCollection.ts:5](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/models/EntityBoneCollection.ts#L5) |
 
 ## Accessors
 
@@ -48,7 +48,7 @@ Defined in: [src/fivem/models/PedBoneCollection.ts:4](https://github.com/nativew
 get Core(): PedBone
 ```
 
-Defined in: [src/fivem/models/PedBoneCollection.ts:8](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/PedBoneCollection.ts#L8)
+Defined in: [src/fivem/models/PedBoneCollection.ts:8](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/models/PedBoneCollection.ts#L8)
 
 ##### Returns
 
@@ -68,7 +68,7 @@ Defined in: [src/fivem/models/PedBoneCollection.ts:8](https://github.com/nativew
 get LastDamaged(): PedBone
 ```
 
-Defined in: [src/fivem/models/PedBoneCollection.ts:12](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/PedBoneCollection.ts#L12)
+Defined in: [src/fivem/models/PedBoneCollection.ts:12](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/models/PedBoneCollection.ts#L12)
 
 ##### Returns
 
@@ -82,7 +82,7 @@ Defined in: [src/fivem/models/PedBoneCollection.ts:12](https://github.com/native
 clearLastDamaged(): void
 ```
 
-Defined in: [src/fivem/models/PedBoneCollection.ts:17](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/PedBoneCollection.ts#L17)
+Defined in: [src/fivem/models/PedBoneCollection.ts:17](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/models/PedBoneCollection.ts#L17)
 
 #### Returns
 
@@ -96,7 +96,7 @@ Defined in: [src/fivem/models/PedBoneCollection.ts:17](https://github.com/native
 getBone(boneIndex?, boneName?): PedBone
 ```
 
-Defined in: [src/fivem/models/PedBoneCollection.ts:21](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/PedBoneCollection.ts#L21)
+Defined in: [src/fivem/models/PedBoneCollection.ts:21](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/models/PedBoneCollection.ts#L21)
 
 #### Parameters
 
@@ -121,7 +121,7 @@ Defined in: [src/fivem/models/PedBoneCollection.ts:21](https://github.com/native
 hasBone(name): boolean
 ```
 
-Defined in: [src/fivem/models/EntityBoneCollection.ts:11](https://github.com/nativewrappers/nativewrappers/blob/4bf6e80cad9d1396d4cdc3ea16cf4f39993ed50e/src/fivem/models/EntityBoneCollection.ts#L11)
+Defined in: [src/fivem/models/EntityBoneCollection.ts:11](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/models/EntityBoneCollection.ts#L11)
 
 #### Parameters
 

@@ -1,34 +1,26 @@
 [@nativewrappers/fivem](../../README.md) / [server](../README.md) / Kvp
 
-# Class: Kvp\<T\>
+# Class: Kvp\<Schema\>
 
-Defined in: lib/common/Kvp.d.ts:4
+Defined in: lib/common/Kvp.d.ts:6
 
 ## Type Parameters
 
 | Type Parameter |
 | ------ |
-| `T` *extends* `Schema` |
+| `Schema` *extends* `KvpSchema` |
 
 ## Constructors
 
 ### new Kvp()
 
 ```ts
-new Kvp<T>(schema): Kvp<T>
+new Kvp<Schema>(): Kvp<Schema>
 ```
-
-Defined in: lib/common/Kvp.d.ts:6
-
-#### Parameters
-
-| Parameter | Type |
-| ------ | ------ |
-| `schema` | `T` |
 
 #### Returns
 
-[`Kvp`](Kvp.md)\<`T`\>
+[`Kvp`](Kvp.md)\<`Schema`\>
 
 ## Methods
 
@@ -38,7 +30,7 @@ Defined in: lib/common/Kvp.d.ts:6
 delete(key, async?): void
 ```
 
-Defined in: lib/common/Kvp.d.ts:60
+Defined in: lib/common/Kvp.d.ts:52
 
 Deletes the specified value for key.
 
@@ -61,7 +53,7 @@ Deletes the specified value for key.
 flush(): void
 ```
 
-Defined in: lib/common/Kvp.d.ts:66
+Defined in: lib/common/Kvp.d.ts:58
 
 Commits pending asynchronous operations to disk, ensuring data consistency.
 
@@ -73,49 +65,47 @@ Should be called after calling set methods using the async flag.
 
 ***
 
-### get()
+### getAllKeys()
 
 ```ts
-get<K>(key): T[K] extends "number" | "float" ? number : T[K] extends object ? null | any[any] : null | string
+getAllKeys(prefix): keyof Schema[]
 ```
 
-Defined in: lib/common/Kvp.d.ts:50
-
-Returns the value associated with a key, determining the type using the declared Kvp schema.
-
-#### Type Parameters
-
-| Type Parameter |
-| ------ |
-| `K` *extends* `string` \| `number` \| `symbol` |
+Defined in: lib/common/Kvp.d.ts:59
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `key` | `K` |
+| `prefix` | `string` |
 
 #### Returns
 
-`T`\[`K`\] *extends* `"number"` \| `"float"` ? `number` : `T`\[`K`\] *extends* `object` ? `null` \| `any`\[`any`\] : `null` \| `string`
+keyof `Schema`[]
 
 ***
 
 ### getFloat()
 
 ```ts
-getFloat(key): number
+getFloat<K>(key): number
 ```
 
-Defined in: lib/common/Kvp.d.ts:18
+Defined in: lib/common/Kvp.d.ts:14
 
 Returns the value associated with a key as a float.
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `K` *extends* `string` |
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `key` | `string` |
+| `key` | `K` |
 
 #### Returns
 
@@ -126,68 +116,81 @@ Returns the value associated with a key as a float.
 ### getJson()
 
 ```ts
-getJson<T>(key): null | T
+getJson<K, O>(key): O extends string ? Schema[O<O>] : null
 ```
 
-Defined in: lib/common/Kvp.d.ts:26
+Defined in: lib/common/Kvp.d.ts:22
 
 Returns the value associated with a key as a parsed JSON string.
 
 #### Type Parameters
 
-| Type Parameter |
-| ------ |
-| `T` |
+| Type Parameter | Default type |
+| ------ | ------ |
+| `K` *extends* `string` | - |
+| `O` | `KvpObject`\<`K`\> |
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `key` | `string` |
+| `key` | `K` *extends* `ValidJsonKey`\<`O`\> ? `K`\<`K`\> : `never` |
 
 #### Returns
 
-`null` \| `T`
+`O` *extends* `string` ? `Schema`\[`O`\<`O`\>\] : `null`
 
 ***
 
 ### getKeys()
 
 ```ts
-getKeys(prefix): string[]
+getKeys<K>(prefix): keyof Schema[]
 ```
 
-Defined in: lib/common/Kvp.d.ts:71
+Defined in: lib/common/Kvp.d.ts:63
 
 Returns an array of keys which match or contain the given keys.
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `K` *extends* `string` \| `string`[] |
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `prefix` | `string` \| `string`[] |
+| `prefix` | `K` |
 
 #### Returns
 
-`string`[]
+keyof `Schema`[]
 
 ***
 
 ### getNumber()
 
 ```ts
-getNumber(key): number
+getNumber<K>(key): number
 ```
 
-Defined in: lib/common/Kvp.d.ts:14
+Defined in: lib/common/Kvp.d.ts:10
 
 Returns the value associated with a key as a number.
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `K` *extends* `string` |
 
 #### Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `key` | `string` |
+| `key` | `K` |
 
 #### Returns
 
@@ -198,82 +201,12 @@ Returns the value associated with a key as a number.
 ### getString()
 
 ```ts
-getString(key): null | string
+getString<K>(key): null | string
 ```
 
-Defined in: lib/common/Kvp.d.ts:22
+Defined in: lib/common/Kvp.d.ts:18
 
 Returns the value associated with a key as a string.
-
-#### Parameters
-
-| Parameter | Type |
-| ------ | ------ |
-| `key` | `string` |
-
-#### Returns
-
-`null` \| `string`
-
-***
-
-### getType()
-
-```ts
-getType(key): "string" | "number" | "object" | "float"
-```
-
-Defined in: lib/common/Kvp.d.ts:10
-
-Returns the type associated with a schema key.
-
-#### Parameters
-
-| Parameter | Type |
-| ------ | ------ |
-| `key` | keyof `T` |
-
-#### Returns
-
-`"string"` \| `"number"` \| `"object"` \| `"float"`
-
-***
-
-### getValuesAsType()
-
-```ts
-getValuesAsType(prefix, type): unknown[]
-```
-
-Defined in: lib/common/Kvp.d.ts:75
-
-Get all values from keys in an array as the specified type.
-
-#### Parameters
-
-| Parameter | Type |
-| ------ | ------ |
-| `prefix` | `string`[] |
-| `type` | `"string"` \| `"number"` \| `"object"` \| `"float"` |
-
-#### Returns
-
-`unknown`[]
-
-***
-
-### set()
-
-```ts
-set<K>(
-   key, 
-   value, 
-   async?): void
-```
-
-Defined in: lib/common/Kvp.d.ts:55
-
-Sets the value associated with a key as a value, using its type from the declared Kvp stricture.
 
 #### Type Parameters
 
@@ -283,10 +216,71 @@ Sets the value associated with a key as a value, using its type from the declare
 
 #### Parameters
 
+| Parameter | Type |
+| ------ | ------ |
+| `key` | `K` |
+
+#### Returns
+
+`null` \| `string`
+
+***
+
+### getValuesAsType()
+
+```ts
+getValuesAsType<K>(prefix, type): (null | string | number | Schema[string])[]
+```
+
+Defined in: lib/common/Kvp.d.ts:67
+
+Get all values from keys in an array as the specified type.
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `K` *extends* `string` \| `string` & keyof `Schema`[] |
+
+#### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `prefix` | `K` |
+| `type` | `any` |
+
+#### Returns
+
+(`null` \| `string` \| `number` \| `Schema`\[`string`\])[]
+
+***
+
+### set()
+
+```ts
+set<K, O>(
+   key, 
+   value, 
+   async?): void
+```
+
+Defined in: lib/common/Kvp.d.ts:47
+
+Sets the value associated with a key as a JSON string.
+
+#### Type Parameters
+
+| Type Parameter | Default type |
+| ------ | ------ |
+| `K` *extends* `string` | - |
+| `O` | `KvpObject`\<`K`\> |
+
+#### Parameters
+
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
-| `key` | `K` *extends* keyof `T` ? `K`\<`K`\> : `never` | - |
-| `value` | `T`\[`K`\] *extends* `"number"` \| `"float"` ? `number` : `T`\[`K`\] *extends* `object` ? `null` \| `any`\[`any`\] : `null` \| `string` | - |
+| `key` | `K` *extends* keyof `Schema` ? `K`\<`K`\> : `O` *extends* `string` ? `K` : `never` | - |
+| `value` | `K` *extends* keyof `Schema` ? `Schema`\[`K`\<`K`\>\] : `O` *extends* `string` ? `Schema`\[`O`\<`O`\>\] : `never` | - |
 | `async`? | `boolean` | set the value using an async operation. |
 
 #### Returns
@@ -298,21 +292,27 @@ Sets the value associated with a key as a value, using its type from the declare
 ### setFloat()
 
 ```ts
-setFloat(
+setFloat<K>(
    key, 
    value, 
    async?): void
 ```
 
-Defined in: lib/common/Kvp.d.ts:36
+Defined in: lib/common/Kvp.d.ts:32
 
 Sets the value associated with a key as a float.
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `K` *extends* `string` |
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
-| `key` | `string` | - |
+| `key` | `K` | - |
 | `value` | `number` | - |
 | `async`? | `boolean` | set the value using an async operation. |
 
@@ -325,22 +325,29 @@ Sets the value associated with a key as a float.
 ### setJson()
 
 ```ts
-setJson(
+setJson<K, O>(
    key, 
    value, 
    async?): void
 ```
 
-Defined in: lib/common/Kvp.d.ts:46
+Defined in: lib/common/Kvp.d.ts:42
 
 Sets the value associated with a key as a JSON string.
+
+#### Type Parameters
+
+| Type Parameter | Default type |
+| ------ | ------ |
+| `K` *extends* `string` | - |
+| `O` | `KvpObject`\<`K`\> |
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
-| `key` | `string` | - |
-| `value` | `object` | - |
+| `key` | `K` *extends* `ValidJsonKey`\<`O`\> ? `K`\<`K`\> : `never` | - |
+| `value` | `O` *extends* `string` ? `Schema`\[`O`\<`O`\>\] : `never` | - |
 | `async`? | `boolean` | set the value using an async operation. |
 
 #### Returns
@@ -352,21 +359,27 @@ Sets the value associated with a key as a JSON string.
 ### setNumber()
 
 ```ts
-setNumber(
+setNumber<K>(
    key, 
    value, 
    async?): void
 ```
 
-Defined in: lib/common/Kvp.d.ts:31
+Defined in: lib/common/Kvp.d.ts:27
 
 Sets the value associated with a key as a number.
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `K` *extends* `string` |
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
-| `key` | `string` | - |
+| `key` | `K` | - |
 | `value` | `number` | - |
 | `async`? | `boolean` | set the value using an async operation. |
 
@@ -379,21 +392,27 @@ Sets the value associated with a key as a number.
 ### setString()
 
 ```ts
-setString(
+setString<K>(
    key, 
    value, 
    async?): void
 ```
 
-Defined in: lib/common/Kvp.d.ts:41
+Defined in: lib/common/Kvp.d.ts:37
 
 Sets the value associated with a key as a string.
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `K` *extends* `string` |
 
 #### Parameters
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
-| `key` | `string` | - |
+| `key` | `K` | - |
 | `value` | `string` | - |
 | `async`? | `boolean` | set the value using an async operation. |
 
