@@ -47,7 +47,17 @@ export function Event(eventName: string) {
     context.addInitializer(function () {
       const t = this;
       on(eventName, (...args: any[]) => {
-        return originalMethod.call(t, ...args);
+        try {
+          return originalMethod.call(t, ...args);
+        } catch (e) {
+          REMOVE_EVENT_LOG: {
+            console.error(`------- EVENT ERROR --------`);
+            console.error(`Call to ${eventName} errored`);
+            console.error(`Data: ${JSON.stringify(args)}`);
+            console.error(`Error: ${e}`);
+            console.error(`------- END EVENT ERROR --------`);
+          }
+        }
       });
     });
   };
@@ -69,12 +79,24 @@ export function NetEvent(eventName: string, remoteOnly = false) {
     context.addInitializer(function () {
       const t = this;
       onNet(eventName, (...args: any[]) => {
-        CLIENT: {
-          if (remoteOnly && source !== 65535) {
-            return;
+        const src = source;
+        try {
+          CLIENT: {
+            if (remoteOnly && source !== 65535) {
+              return;
+            }
+          }
+          return originalMethod.call(t, ...args);
+        } catch (e) {
+          REMOVE_NET_EVENT_LOG: {
+            console.error(`------- NET EVENT ERROR --------`);
+            console.error(`Call to ${eventName} errored`);
+            console.error(`Caller: ${src}`);
+            console.error(`Data: ${JSON.stringify(args)}`);
+            console.error(`Error: ${e}`);
+            console.error(`------- END NET EVENT ERROR --------`);
           }
         }
-        return originalMethod.call(t, ...args);
       });
     });
   };
