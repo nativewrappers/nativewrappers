@@ -2,12 +2,12 @@
 
 # Enumeration: eAttributeCore
 
-Defined in: [src/redm/enums/Attributes.ts:27](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/enums/Attributes.ts#L27)
+Defined in: [src/redm/enums/Attributes.ts:27](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/enums/Attributes.ts#L27)
 
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| <a id="deadeye"></a> `Deadeye` | `2` | [src/redm/enums/Attributes.ts:30](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/enums/Attributes.ts#L30) |
-| <a id="health"></a> `Health` | `0` | [src/redm/enums/Attributes.ts:28](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/enums/Attributes.ts#L28) |
-| <a id="stamina"></a> `Stamina` | `1` | [src/redm/enums/Attributes.ts:29](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/enums/Attributes.ts#L29) |
+| <a id="deadeye"></a> `Deadeye` | `2` | [src/redm/enums/Attributes.ts:30](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/enums/Attributes.ts#L30) |
+| <a id="health"></a> `Health` | `0` | [src/redm/enums/Attributes.ts:28](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/enums/Attributes.ts#L28) |
+| <a id="stamina"></a> `Stamina` | `1` | [src/redm/enums/Attributes.ts:29](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/enums/Attributes.ts#L29) |

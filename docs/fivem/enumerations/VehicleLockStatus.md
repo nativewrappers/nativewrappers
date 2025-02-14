@@ -2,17 +2,17 @@
 
 # Enumeration: VehicleLockStatus
 
-Defined in: [src/fivem/enums/Vehicle.ts:215](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/enums/Vehicle.ts#L215)
+Defined in: [src/fivem/enums/Vehicle.ts:215](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/enums/Vehicle.ts#L215)
 
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| <a id="canbebrokeninto"></a> `CanBeBrokenInto` | `7` | [src/fivem/enums/Vehicle.ts:221](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/enums/Vehicle.ts#L221) |
-| <a id="canbebrokenintopersist"></a> `CanBeBrokenIntoPersist` | `8` | [src/fivem/enums/Vehicle.ts:222](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/enums/Vehicle.ts#L222) |
-| <a id="cannotbetriedtoenter"></a> `CannotBeTriedToEnter` | `10` | [src/fivem/enums/Vehicle.ts:223](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/enums/Vehicle.ts#L223) |
-| <a id="locked"></a> `Locked` | `2` | [src/fivem/enums/Vehicle.ts:218](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/enums/Vehicle.ts#L218) |
-| <a id="lockedforplayer"></a> `LockedForPlayer` | `3` | [src/fivem/enums/Vehicle.ts:219](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/enums/Vehicle.ts#L219) |
-| <a id="none"></a> `None` | `0` | [src/fivem/enums/Vehicle.ts:216](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/enums/Vehicle.ts#L216) |
-| <a id="stickplayerinside"></a> `StickPlayerInside` | `4` | [src/fivem/enums/Vehicle.ts:220](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/enums/Vehicle.ts#L220) |
-| <a id="unlocked"></a> `Unlocked` | `1` | [src/fivem/enums/Vehicle.ts:217](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/enums/Vehicle.ts#L217) |
+| <a id="canbebrokeninto"></a> `CanBeBrokenInto` | `7` | [src/fivem/enums/Vehicle.ts:221](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/enums/Vehicle.ts#L221) |
+| <a id="canbebrokenintopersist"></a> `CanBeBrokenIntoPersist` | `8` | [src/fivem/enums/Vehicle.ts:222](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/enums/Vehicle.ts#L222) |
+| <a id="cannotbetriedtoenter"></a> `CannotBeTriedToEnter` | `10` | [src/fivem/enums/Vehicle.ts:223](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/enums/Vehicle.ts#L223) |
+| <a id="locked"></a> `Locked` | `2` | [src/fivem/enums/Vehicle.ts:218](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/enums/Vehicle.ts#L218) |
+| <a id="lockedforplayer"></a> `LockedForPlayer` | `3` | [src/fivem/enums/Vehicle.ts:219](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/enums/Vehicle.ts#L219) |
+| <a id="none"></a> `None` | `0` | [src/fivem/enums/Vehicle.ts:216](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/enums/Vehicle.ts#L216) |
+| <a id="stickplayerinside"></a> `StickPlayerInside` | `4` | [src/fivem/enums/Vehicle.ts:220](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/enums/Vehicle.ts#L220) |
+| <a id="unlocked"></a> `Unlocked` | `1` | [src/fivem/enums/Vehicle.ts:217](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/enums/Vehicle.ts#L217) |

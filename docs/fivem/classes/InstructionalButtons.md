@@ -2,7 +2,7 @@
 
 # Class: InstructionalButtons
 
-Defined in: [src/fivem/ui/InstructionalButtons.ts:22](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/ui/InstructionalButtons.ts#L22)
+Defined in: [src/fivem/ui/InstructionalButtons.ts:22](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/ui/InstructionalButtons.ts#L22)
 
 Draw native instructional buttons in the bottom left of the screen using scaleform
 
@@ -29,7 +29,7 @@ setTick(() => {
 new InstructionalButtons(buttons): InstructionalButtons
 ```
 
-Defined in: [src/fivem/ui/InstructionalButtons.ts:30](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/ui/InstructionalButtons.ts#L30)
+Defined in: [src/fivem/ui/InstructionalButtons.ts:30](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/ui/InstructionalButtons.ts#L30)
 
 Draws native instructional buttons
 
@@ -51,7 +51,7 @@ Draws native instructional buttons
 draw(): Promise<void>
 ```
 
-Defined in: [src/fivem/ui/InstructionalButtons.ts:60](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/ui/InstructionalButtons.ts#L60)
+Defined in: [src/fivem/ui/InstructionalButtons.ts:60](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/ui/InstructionalButtons.ts#L60)
 
 Renders the instructional button scaleform
 

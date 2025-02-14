@@ -2,7 +2,7 @@
 
 # Class: Vehicle
 
-Defined in: [src/redm/entities/Vehicle.ts:3](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/entities/Vehicle.ts#L3)
+Defined in: [src/redm/entities/Vehicle.ts:3](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/entities/Vehicle.ts#L3)
 
 ## Extends
 
@@ -16,7 +16,7 @@ Defined in: [src/redm/entities/Vehicle.ts:3](https://github.com/nativewrappers/n
 new Vehicle(handle): Vehicle
 ```
 
-Defined in: [src/redm/entities/Vehicle.ts:4](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/entities/Vehicle.ts#L4)
+Defined in: [src/redm/entities/Vehicle.ts:4](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/entities/Vehicle.ts#L4)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ BaseEntity.constructor
 get Handle(): number
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:29](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/entities/BaseEntity.ts#L29)
+Defined in: [src/redm/entities/BaseEntity.ts:29](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/entities/BaseEntity.ts#L29)
 
 ##### Returns
 
@@ -66,7 +66,7 @@ BaseEntity.Handle
 get Health(): number
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:37](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/entities/BaseEntity.ts#L37)
+Defined in: [src/redm/entities/BaseEntity.ts:37](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/entities/BaseEntity.ts#L37)
 
 ##### Returns
 
@@ -78,7 +78,7 @@ Defined in: [src/redm/entities/BaseEntity.ts:37](https://github.com/nativewrappe
 set Health(amount): void
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:33](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/entities/BaseEntity.ts#L33)
+Defined in: [src/redm/entities/BaseEntity.ts:33](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/entities/BaseEntity.ts#L33)
 
 ##### Parameters
 
@@ -104,7 +104,7 @@ BaseEntity.Health
 replaceHandle(newHandle): void
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:25](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/entities/BaseEntity.ts#L25)
+Defined in: [src/redm/entities/BaseEntity.ts:25](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/entities/BaseEntity.ts#L25)
 
 #### Parameters
 

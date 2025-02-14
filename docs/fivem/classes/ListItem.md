@@ -2,7 +2,7 @@
 
 # Class: ListItem
 
-Defined in: [src/fivem/ui/menu/modules/ListItem.ts:3](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/ui/menu/modules/ListItem.ts#L3)
+Defined in: [src/fivem/ui/menu/modules/ListItem.ts:3](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/ui/menu/modules/ListItem.ts#L3)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/fivem/ui/menu/modules/ListItem.ts:3](https://github.com/nativew
 new ListItem(name, value): ListItem
 ```
 
-Defined in: [src/fivem/ui/menu/modules/ListItem.ts:9](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/ui/menu/modules/ListItem.ts#L9)
+Defined in: [src/fivem/ui/menu/modules/ListItem.ts:9](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/ui/menu/modules/ListItem.ts#L9)
 
 #### Parameters
 
@@ -29,6 +29,6 @@ Defined in: [src/fivem/ui/menu/modules/ListItem.ts:9](https://github.com/nativew
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="id"></a> `id` | `readonly` | `string` | [src/fivem/ui/menu/modules/ListItem.ts:4](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/ui/menu/modules/ListItem.ts#L4) |
-| <a id="name-1"></a> `name` | `public` | `string` | [src/fivem/ui/menu/modules/ListItem.ts:6](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/ui/menu/modules/ListItem.ts#L6) |
-| <a id="value-1"></a> `value` | `public` | `unknown` | [src/fivem/ui/menu/modules/ListItem.ts:7](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/fivem/ui/menu/modules/ListItem.ts#L7) |
+| <a id="id"></a> `id` | `readonly` | `string` | [src/fivem/ui/menu/modules/ListItem.ts:4](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/ui/menu/modules/ListItem.ts#L4) |
+| <a id="name-1"></a> `name` | `public` | `string` | [src/fivem/ui/menu/modules/ListItem.ts:6](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/ui/menu/modules/ListItem.ts#L6) |
+| <a id="value-1"></a> `value` | `public` | `unknown` | [src/fivem/ui/menu/modules/ListItem.ts:7](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/ui/menu/modules/ListItem.ts#L7) |

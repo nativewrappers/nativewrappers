@@ -2,16 +2,16 @@
 
 # Enumeration: Relationship
 
-Defined in: [src/redm/enums/Relationship.ts:1](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/enums/Relationship.ts#L1)
+Defined in: [src/redm/enums/Relationship.ts:1](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/enums/Relationship.ts#L1)
 
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| <a id="companion"></a> `Companion` | `0` | [src/redm/enums/Relationship.ts:7](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/enums/Relationship.ts#L7) |
-| <a id="dislike"></a> `Dislike` | `4` | [src/redm/enums/Relationship.ts:3](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/enums/Relationship.ts#L3) |
-| <a id="hate"></a> `Hate` | `5` | [src/redm/enums/Relationship.ts:2](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/enums/Relationship.ts#L2) |
-| <a id="like"></a> `Like` | `2` | [src/redm/enums/Relationship.ts:5](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/enums/Relationship.ts#L5) |
-| <a id="neutral"></a> `Neutral` | `3` | [src/redm/enums/Relationship.ts:4](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/enums/Relationship.ts#L4) |
-| <a id="pedestrians"></a> `Pedestrians` | `255` | [src/redm/enums/Relationship.ts:8](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/enums/Relationship.ts#L8) |
-| <a id="respect"></a> `Respect` | `1` | [src/redm/enums/Relationship.ts:6](https://github.com/nativewrappers/nativewrappers/blob/756c662f77d10717b10de50b84f2e02fa47719d1/src/redm/enums/Relationship.ts#L6) |
+| <a id="companion"></a> `Companion` | `0` | [src/redm/enums/Relationship.ts:7](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/enums/Relationship.ts#L7) |
+| <a id="dislike"></a> `Dislike` | `4` | [src/redm/enums/Relationship.ts:3](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/enums/Relationship.ts#L3) |
+| <a id="hate"></a> `Hate` | `5` | [src/redm/enums/Relationship.ts:2](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/enums/Relationship.ts#L2) |
+| <a id="like"></a> `Like` | `2` | [src/redm/enums/Relationship.ts:5](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/enums/Relationship.ts#L5) |
+| <a id="neutral"></a> `Neutral` | `3` | [src/redm/enums/Relationship.ts:4](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/enums/Relationship.ts#L4) |
+| <a id="pedestrians"></a> `Pedestrians` | `255` | [src/redm/enums/Relationship.ts:8](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/enums/Relationship.ts#L8) |
+| <a id="respect"></a> `Respect` | `1` | [src/redm/enums/Relationship.ts:6](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/enums/Relationship.ts#L6) |
