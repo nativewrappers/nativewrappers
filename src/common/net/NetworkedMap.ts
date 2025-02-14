@@ -71,7 +71,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
    */
   addSubscriber(sub: number) {
     this.#subscribers.add(sub);
-    const packed_data = msgpack_pack([MapChangeType.Init, Array.from(this)]);
+    const packed_data = msgpack_pack([[MapChangeType.Init, this.size === 0 ? [] : Array.from(this)]]);
     TriggerClientEventInternal(
       `${this.#syncName}:syncChanges`,
       sub as any,
@@ -90,8 +90,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
 
   #handleSync(msgpack_data: Buffer) {
     const data = msgpack_unpack(msgpack_data);
-    for (const change_data of data) {
-      const [change_type, key, value] = change_data;
+    for (const [change_type, key, value, possibly_undefined_subvalue] of data) {
       switch (change_type) {
         case MapChangeType.Add: {
           this.set(key!, value!);
@@ -110,11 +109,13 @@ export class NetworkedMap<K, V> extends Map<K, V> {
           for (const [k, v] of key_value) {
             this.set(k, v);
           }
+          continue;
         }
         case MapChangeType.SubValueChanged: {
           const data = this.get(key!)!;
           // @ts-ignore
-          data[value] = change_data[3];
+          data[value] = possibly_undefined_subvalue;
+          continue;
         }
       }
     }
