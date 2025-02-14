@@ -84,6 +84,10 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     return this.#subscribers.delete(sub);
   }
 
+  hasSubscriber(sub: number): boolean {
+    return this.#subscribers.has(sub);
+  }
+
   #handleSync(msgpack_data: Buffer) {
     const data = msgpack_unpack(msgpack_data);
     for (const change_data of data) {
