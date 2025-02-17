@@ -2,7 +2,7 @@
 
 # Class: NetworkedMap\<K, V\>
 
-Defined in: [src/common/net/NetworkedMap.ts:30](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/net/NetworkedMap.ts#L30)
+Defined in: [src/common/net/NetworkedMap.ts:30](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/net/NetworkedMap.ts#L30)
 
 not ready to be used just thoughts right now
 
@@ -25,7 +25,7 @@ not ready to be used just thoughts right now
 new NetworkedMap<K, V>(syncName, initialValue?): NetworkedMap<K, V>
 ```
 
-Defined in: [src/common/net/NetworkedMap.ts:36](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/net/NetworkedMap.ts#L36)
+Defined in: [src/common/net/NetworkedMap.ts:36](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/net/NetworkedMap.ts#L36)
 
 #### Parameters
 
@@ -61,7 +61,7 @@ Map<K, V>.constructor
 get toStringTag: string
 ```
 
-Defined in: [src/common/net/NetworkedMap.ts:234](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/net/NetworkedMap.ts#L234)
+Defined in: [src/common/net/NetworkedMap.ts:237](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/net/NetworkedMap.ts#L237)
 
 ##### Returns
 
@@ -81,7 +81,7 @@ Map.[toStringTag]
 dispose: void
 ```
 
-Defined in: [src/common/net/NetworkedMap.ts:217](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/net/NetworkedMap.ts#L217)
+Defined in: [src/common/net/NetworkedMap.ts:220](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/net/NetworkedMap.ts#L220)
 
 #### Returns
 
@@ -117,7 +117,7 @@ Map.[iterator]
 addSubscriber(sub): void
 ```
 
-Defined in: [src/common/net/NetworkedMap.ts:72](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/net/NetworkedMap.ts#L72)
+Defined in: [src/common/net/NetworkedMap.ts:72](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/net/NetworkedMap.ts#L72)
 
 #### Parameters
 
@@ -137,7 +137,7 @@ Defined in: [src/common/net/NetworkedMap.ts:72](https://github.com/nativewrapper
 clear(): void
 ```
 
-Defined in: [src/common/net/NetworkedMap.ts:195](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/net/NetworkedMap.ts#L195)
+Defined in: [src/common/net/NetworkedMap.ts:198](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/net/NetworkedMap.ts#L198)
 
 #### Returns
 
@@ -157,7 +157,7 @@ Map.clear
 delete(key): boolean
 ```
 
-Defined in: [src/common/net/NetworkedMap.ts:204](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/net/NetworkedMap.ts#L204)
+Defined in: [src/common/net/NetworkedMap.ts:207](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/net/NetworkedMap.ts#L207)
 
 #### Parameters
 
@@ -185,7 +185,7 @@ Map.delete
 dispose(): void
 ```
 
-Defined in: [src/common/net/NetworkedMap.ts:230](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/net/NetworkedMap.ts#L230)
+Defined in: [src/common/net/NetworkedMap.ts:233](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/net/NetworkedMap.ts#L233)
 
 Unregisters from the tick handler and removes the event listener
 
@@ -310,7 +310,7 @@ Map.has
 hasSubscriber(sub): boolean
 ```
 
-Defined in: [src/common/net/NetworkedMap.ts:87](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/net/NetworkedMap.ts#L87)
+Defined in: [src/common/net/NetworkedMap.ts:89](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/net/NetworkedMap.ts#L89)
 
 #### Parameters
 
@@ -352,7 +352,7 @@ Map.keys
 listenForChange(key, fn): void
 ```
 
-Defined in: [src/common/net/NetworkedMap.ts:127](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/net/NetworkedMap.ts#L127)
+Defined in: [src/common/net/NetworkedMap.ts:130](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/net/NetworkedMap.ts#L130)
 
 #### Parameters
 
@@ -373,7 +373,7 @@ Defined in: [src/common/net/NetworkedMap.ts:127](https://github.com/nativewrappe
 networkTick(): void
 ```
 
-Defined in: [src/common/net/NetworkedMap.ts:210](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/net/NetworkedMap.ts#L210)
+Defined in: [src/common/net/NetworkedMap.ts:213](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/net/NetworkedMap.ts#L213)
 
 #### Returns
 
@@ -387,7 +387,7 @@ Defined in: [src/common/net/NetworkedMap.ts:210](https://github.com/nativewrappe
 removeSubscriber(sub): boolean
 ```
 
-Defined in: [src/common/net/NetworkedMap.ts:83](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/net/NetworkedMap.ts#L83)
+Defined in: [src/common/net/NetworkedMap.ts:85](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/net/NetworkedMap.ts#L85)
 
 #### Parameters
 
@@ -407,7 +407,7 @@ Defined in: [src/common/net/NetworkedMap.ts:83](https://github.com/nativewrapper
 set(key, value): this
 ```
 
-Defined in: [src/common/net/NetworkedMap.ts:152](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/net/NetworkedMap.ts#L152)
+Defined in: [src/common/net/NetworkedMap.ts:155](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/net/NetworkedMap.ts#L155)
 
 Adds a new element with a specified key and value to the Map. If an element with the same key already exists, the element will be updated.
 

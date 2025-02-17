@@ -2,7 +2,7 @@
 
 # Class: PedBone
 
-Defined in: [src/fivem/models/PedBone.ts:4](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/models/PedBone.ts#L4)
+Defined in: [src/fivem/models/PedBone.ts:4](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/fivem/models/PedBone.ts#L4)
 
 ## Extends
 
@@ -16,7 +16,7 @@ Defined in: [src/fivem/models/PedBone.ts:4](https://github.com/nativewrappers/na
 new PedBone(owner, boneId): PedBone
 ```
 
-Defined in: [src/fivem/models/PedBone.ts:5](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/models/PedBone.ts#L5)
+Defined in: [src/fivem/models/PedBone.ts:5](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/fivem/models/PedBone.ts#L5)
 
 #### Parameters
 
@@ -37,8 +37,8 @@ Defined in: [src/fivem/models/PedBone.ts:5](https://github.com/nativewrappers/na
 
 | Property | Modifier | Type | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| <a id="index"></a> `index` | `readonly` | `number` | [`EntityBone`](EntityBone.md).[`index`](EntityBone.md#index) | [src/fivem/models/EntityBone.ts:30](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/models/EntityBone.ts#L30) |
-| <a id="owner-1"></a> `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [`EntityBone`](EntityBone.md).[`owner`](EntityBone.md#owner-1) | [src/fivem/models/EntityBone.ts:29](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/models/EntityBone.ts#L29) |
+| <a id="index"></a> `index` | `readonly` | `number` | [`EntityBone`](EntityBone.md).[`index`](EntityBone.md#index) | [src/fivem/models/EntityBone.ts:30](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/fivem/models/EntityBone.ts#L30) |
+| <a id="owner-1"></a> `owner` | `readonly` | [`BaseEntity`](BaseEntity.md) | [`EntityBone`](EntityBone.md).[`owner`](EntityBone.md#owner-1) | [src/fivem/models/EntityBone.ts:29](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/fivem/models/EntityBone.ts#L29) |
 
 ## Accessors
 
@@ -50,7 +50,7 @@ Defined in: [src/fivem/models/PedBone.ts:5](https://github.com/nativewrappers/na
 get Index(): number
 ```
 
-Defined in: [src/fivem/models/EntityBone.ts:5](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/models/EntityBone.ts#L5)
+Defined in: [src/fivem/models/EntityBone.ts:5](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/fivem/models/EntityBone.ts#L5)
 
 ##### Returns
 
@@ -70,7 +70,7 @@ Defined in: [src/fivem/models/EntityBone.ts:5](https://github.com/nativewrappers
 get IsValid(): boolean
 ```
 
-Defined in: [src/fivem/models/PedBone.ts:9](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/models/PedBone.ts#L9)
+Defined in: [src/fivem/models/PedBone.ts:9](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/fivem/models/PedBone.ts#L9)
 
 ##### Returns
 
@@ -90,7 +90,7 @@ Defined in: [src/fivem/models/PedBone.ts:9](https://github.com/nativewrappers/na
 get Owner(): BaseEntity
 ```
 
-Defined in: [src/fivem/models/EntityBone.ts:9](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/models/EntityBone.ts#L9)
+Defined in: [src/fivem/models/EntityBone.ts:9](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/fivem/models/EntityBone.ts#L9)
 
 ##### Returns
 
@@ -110,7 +110,7 @@ Defined in: [src/fivem/models/EntityBone.ts:9](https://github.com/nativewrappers
 get Position(): Vector3
 ```
 
-Defined in: [src/fivem/models/EntityBone.ts:13](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/models/EntityBone.ts#L13)
+Defined in: [src/fivem/models/EntityBone.ts:13](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/fivem/models/EntityBone.ts#L13)
 
 ##### Returns
 
@@ -130,7 +130,7 @@ Defined in: [src/fivem/models/EntityBone.ts:13](https://github.com/nativewrapper
 get Rotation(): Vector3
 ```
 
-Defined in: [src/fivem/models/EntityBone.ts:19](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/models/EntityBone.ts#L19)
+Defined in: [src/fivem/models/EntityBone.ts:19](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/fivem/models/EntityBone.ts#L19)
 
 ##### Returns
 

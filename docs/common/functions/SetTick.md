@@ -6,7 +6,7 @@
 function SetTick(): (originalMethod, context) => void
 ```
 
-Defined in: [src/common/decors/Events.ts:226](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/decors/Events.ts#L226)
+Defined in: [src/common/decors/Events.ts:226](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/decors/Events.ts#L226)
 
 ## Returns
 

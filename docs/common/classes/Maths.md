@@ -2,7 +2,7 @@
 
 # Class: `abstract` Maths
 
-Defined in: [src/common/utils/Maths.ts:1](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/utils/Maths.ts#L1)
+Defined in: [src/common/utils/Maths.ts:1](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/utils/Maths.ts#L1)
 
 ## Constructors
 
@@ -27,7 +27,7 @@ static clamp(
    max): number
 ```
 
-Defined in: [src/common/utils/Maths.ts:2](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/utils/Maths.ts#L2)
+Defined in: [src/common/utils/Maths.ts:2](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/utils/Maths.ts#L2)
 
 #### Parameters
 
@@ -49,7 +49,7 @@ Defined in: [src/common/utils/Maths.ts:2](https://github.com/nativewrappers/nati
 static getRandomInt(min, max): number
 ```
 
-Defined in: [src/common/utils/Maths.ts:6](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/utils/Maths.ts#L6)
+Defined in: [src/common/utils/Maths.ts:6](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/utils/Maths.ts#L6)
 
 #### Parameters
 

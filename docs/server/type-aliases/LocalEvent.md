@@ -6,7 +6,7 @@
 type LocalEvent = (...args) => void;
 ```
 
-Defined in: [src/server/Events.ts:7](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/server/Events.ts#L7)
+Defined in: [src/server/Events.ts:7](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/server/Events.ts#L7)
 
 ## Parameters
 

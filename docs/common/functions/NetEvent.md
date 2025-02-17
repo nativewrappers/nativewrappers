@@ -6,7 +6,7 @@
 function NetEvent(eventName, remoteOnly): (originalMethod, context) => void
 ```
 
-Defined in: [src/common/decors/Events.ts:69](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/decors/Events.ts#L69)
+Defined in: [src/common/decors/Events.ts:69](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/decors/Events.ts#L69)
 
 ## Parameters
 

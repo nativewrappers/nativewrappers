@@ -6,6 +6,6 @@
 WeaponComponentHudStats: Map<WeaponComponentHash, WeaponComponentHudStats>;
 ```
 
-Defined in: [src/fivem/weaponComponent/WeaponComponentHudStats.ts:19](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/weaponComponent/WeaponComponentHudStats.ts#L19)
+Defined in: [src/fivem/weaponComponent/WeaponComponentHudStats.ts:19](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/fivem/weaponComponent/WeaponComponentHudStats.ts#L19)
 
 Mapping of WeaponComponentHash -> WeaponComponentHudStats

@@ -2,7 +2,7 @@
 
 # Class: `abstract` Crypto
 
-Defined in: [src/fivem/utils/Crypto.ts:1](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/utils/Crypto.ts#L1)
+Defined in: [src/fivem/utils/Crypto.ts:1](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/fivem/utils/Crypto.ts#L1)
 
 ## Constructors
 
@@ -24,7 +24,7 @@ new Crypto(): Crypto
 static uuidv4(): string
 ```
 
-Defined in: [src/fivem/utils/Crypto.ts:2](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/utils/Crypto.ts#L2)
+Defined in: [src/fivem/utils/Crypto.ts:2](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/fivem/utils/Crypto.ts#L2)
 
 #### Returns
 
