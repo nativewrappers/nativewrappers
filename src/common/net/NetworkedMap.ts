@@ -71,7 +71,9 @@ export class NetworkedMap<K, V> extends Map<K, V> {
    */
   addSubscriber(sub: number) {
     this.#subscribers.add(sub);
-    const packed_data = msgpack_pack([[MapChangeType.Init, this.size === 0 ? [] : Array.from(this)]]);
+    const packed_data = msgpack_pack([
+      [MapChangeType.Init, this.size === 0 ? [] : Array.from(this)],
+    ]);
     TriggerClientEventInternal(
       `${this.#syncName}:syncChanges`,
       sub as any,
