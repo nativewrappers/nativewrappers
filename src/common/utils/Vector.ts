@@ -828,7 +828,7 @@ export class Vector4 extends Vector {
    */
   constructor(x: number, y = x, z = y, w = z) {
     super(x, y, z, w);
-    this.z = w;
+    this.z = z;
     this.w = w;
   }
 
