@@ -2,7 +2,7 @@
 
 # Class: Kvp\<Schema\>
 
-Defined in: [src/common/Kvp.ts:13](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L13)
+Defined in: [src/common/Kvp.ts:13](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L13)
 
 ## Type Parameters
 
@@ -30,7 +30,7 @@ new Kvp<Schema>(): Kvp<Schema>
 delete(key, async): void
 ```
 
-Defined in: [src/common/Kvp.ts:137](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L137)
+Defined in: [src/common/Kvp.ts:137](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L137)
 
 Deletes the specified value for key.
 
@@ -53,7 +53,7 @@ Deletes the specified value for key.
 flush(): void
 ```
 
-Defined in: [src/common/Kvp.ts:146](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L146)
+Defined in: [src/common/Kvp.ts:146](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L146)
 
 Commits pending asynchronous operations to disk, ensuring data consistency.
 
@@ -71,7 +71,7 @@ Should be called after calling set methods using the async flag.
 getAllKeys(prefix): keyof Schema[]
 ```
 
-Defined in: [src/common/Kvp.ts:150](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L150)
+Defined in: [src/common/Kvp.ts:150](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L150)
 
 #### Parameters
 
@@ -91,7 +91,7 @@ keyof `Schema`[]
 getFloat<K>(key): number
 ```
 
-Defined in: [src/common/Kvp.ts:24](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L24)
+Defined in: [src/common/Kvp.ts:24](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L24)
 
 Returns the value associated with a key as a float.
 
@@ -119,7 +119,7 @@ Returns the value associated with a key as a float.
 getJson<K, O>(key): O extends string ? Schema[O<O>] : null
 ```
 
-Defined in: [src/common/Kvp.ts:38](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L38)
+Defined in: [src/common/Kvp.ts:38](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L38)
 
 Returns the value associated with a key as a parsed JSON string.
 
@@ -148,7 +148,7 @@ Returns the value associated with a key as a parsed JSON string.
 getKeys<K>(prefix): keyof Schema[]
 ```
 
-Defined in: [src/common/Kvp.ts:171](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L171)
+Defined in: [src/common/Kvp.ts:171](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L171)
 
 Returns an array of keys which match or contain the given keys.
 
@@ -176,7 +176,7 @@ keyof `Schema`[]
 getNumber<K>(key): number
 ```
 
-Defined in: [src/common/Kvp.ts:17](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L17)
+Defined in: [src/common/Kvp.ts:17](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L17)
 
 Returns the value associated with a key as a number.
 
@@ -204,7 +204,7 @@ Returns the value associated with a key as a number.
 getString<K>(key): null | string
 ```
 
-Defined in: [src/common/Kvp.ts:31](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L31)
+Defined in: [src/common/Kvp.ts:31](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L31)
 
 Returns the value associated with a key as a string.
 
@@ -232,7 +232,7 @@ Returns the value associated with a key as a string.
 getValuesAsType<K>(prefix, type): (null | string | number | Schema[string])[]
 ```
 
-Defined in: [src/common/Kvp.ts:180](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L180)
+Defined in: [src/common/Kvp.ts:180](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L180)
 
 Get all values from keys in an array as the specified type.
 
@@ -264,7 +264,7 @@ set<K, O>(
    async): void
 ```
 
-Defined in: [src/common/Kvp.ts:104](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L104)
+Defined in: [src/common/Kvp.ts:104](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L104)
 
 Sets the value associated with a key as a JSON string.
 
@@ -298,7 +298,7 @@ setFloat<K>(
    async): void
 ```
 
-Defined in: [src/common/Kvp.ts:63](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L63)
+Defined in: [src/common/Kvp.ts:63](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L63)
 
 Sets the value associated with a key as a float.
 
@@ -331,7 +331,7 @@ setJson<K, O>(
    async): void
 ```
 
-Defined in: [src/common/Kvp.ts:91](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L91)
+Defined in: [src/common/Kvp.ts:91](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L91)
 
 Sets the value associated with a key as a JSON string.
 
@@ -365,7 +365,7 @@ setNumber<K>(
    async): void
 ```
 
-Defined in: [src/common/Kvp.ts:49](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L49)
+Defined in: [src/common/Kvp.ts:49](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L49)
 
 Sets the value associated with a key as a number.
 
@@ -398,7 +398,7 @@ setString<K>(
    async): void
 ```
 
-Defined in: [src/common/Kvp.ts:77](https://github.com/nativewrappers/nativewrappers/blob/c6ab47d1014f341bb58fccc9d519ceb48157a741/src/common/Kvp.ts#L77)
+Defined in: [src/common/Kvp.ts:77](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/Kvp.ts#L77)
 
 Sets the value associated with a key as a string.
 

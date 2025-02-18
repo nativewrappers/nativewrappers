@@ -2,7 +2,7 @@
 
 # Class: Vector3
 
-Defined in: lib/common/utils/Vector.d.ts:330
+Defined in: lib/common/utils/Vector.d.ts:336
 
 Represents a 3-dimensional vector.
 
@@ -25,7 +25,7 @@ new Vector3(
    z?): Vector3
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:354
+Defined in: lib/common/utils/Vector.d.ts:360
 
 Constructs a new 3D vector.
 
@@ -51,26 +51,26 @@ Vector.constructor
 
 | Property | Modifier | Type | Default value | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| <a id="size"></a> `[size]` | `readonly` | `number` | `undefined` | `Vector.[size]` | - | lib/common/utils/Vector.d.ts:332 |
-| <a id="type"></a> `type` | `readonly` | `Vector3` | `ClassTypes.Vector3` | `Vector.type` | - | lib/common/utils/Vector.d.ts:331 |
-| <a id="w"></a> `w` | `public` | `undefined` \| `number` | `undefined` | - | `Vector.w` | lib/common/utils/Vector.d.ts:213 |
-| <a id="x-1"></a> `x` | `public` | `number` | `undefined` | - | `Vec3.x` `Vector.x` | lib/common/utils/Vector.d.ts:210 |
-| <a id="y-1"></a> `y` | `public` | `number` | `undefined` | - | `Vec3.y` `Vector.y` | lib/common/utils/Vector.d.ts:211 |
-| <a id="z-1"></a> `z` | `public` | `number` | `undefined` | `Vec3.z` `Vector.z` | - | lib/common/utils/Vector.d.ts:333 |
-| <a id="backward"></a> `Backward` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:347 |
-| <a id="backwardlh"></a> `BackwardLH` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:346 |
-| <a id="backwardrh"></a> `BackwardRH` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:345 |
-| <a id="down"></a> `Down` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:340 |
-| <a id="forwardlh"></a> `ForwardLH` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:344 |
-| <a id="forwardrh"></a> `ForwardRH` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:343 |
-| <a id="left"></a> `Left` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:341 |
-| <a id="one"></a> `One` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:338 |
-| <a id="right"></a> `Right` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:342 |
-| <a id="unitx"></a> `UnitX` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:335 |
-| <a id="unity"></a> `UnitY` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:336 |
-| <a id="unitz"></a> `UnitZ` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:337 |
-| <a id="up"></a> `Up` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:339 |
-| <a id="zero"></a> `Zero` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:334 |
+| <a id="size"></a> `[size]` | `readonly` | `number` | `undefined` | `Vector.[size]` | - | lib/common/utils/Vector.d.ts:338 |
+| <a id="type"></a> `type` | `readonly` | `Vector3` | `ClassTypes.Vector3` | `Vector.type` | - | lib/common/utils/Vector.d.ts:337 |
+| <a id="w"></a> `w` | `public` | `undefined` \| `number` | `undefined` | - | `Vector.w` | lib/common/utils/Vector.d.ts:218 |
+| <a id="x-1"></a> `x` | `public` | `number` | `undefined` | - | `Vec3.x` `Vector.x` | lib/common/utils/Vector.d.ts:215 |
+| <a id="y-1"></a> `y` | `public` | `number` | `undefined` | - | `Vec3.y` `Vector.y` | lib/common/utils/Vector.d.ts:216 |
+| <a id="z-1"></a> `z` | `public` | `number` | `undefined` | `Vec3.z` `Vector.z` | - | lib/common/utils/Vector.d.ts:339 |
+| <a id="backward"></a> `Backward` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:353 |
+| <a id="backwardlh"></a> `BackwardLH` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:352 |
+| <a id="backwardrh"></a> `BackwardRH` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:351 |
+| <a id="down"></a> `Down` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:346 |
+| <a id="forwardlh"></a> `ForwardLH` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:350 |
+| <a id="forwardrh"></a> `ForwardRH` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:349 |
+| <a id="left"></a> `Left` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:347 |
+| <a id="one"></a> `One` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:344 |
+| <a id="right"></a> `Right` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:348 |
+| <a id="unitx"></a> `UnitX` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:341 |
+| <a id="unity"></a> `UnitY` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:342 |
+| <a id="unitz"></a> `UnitZ` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:343 |
+| <a id="up"></a> `Up` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:345 |
+| <a id="zero"></a> `Zero` | `readonly` | [`Vector3`](Vector3.md) | `undefined` | - | - | lib/common/utils/Vector.d.ts:340 |
 
 ## Accessors
 
@@ -82,7 +82,7 @@ Vector.constructor
 get Length(): number
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:304
+Defined in: lib/common/utils/Vector.d.ts:309
 
 Calculates the length (magnitude) of a vector.
 
@@ -108,7 +108,7 @@ Vector.Length
 get size(): number
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:223
+Defined in: lib/common/utils/Vector.d.ts:228
 
 ##### Returns
 
@@ -128,7 +128,7 @@ Vector.size
 iterator: Iterator<number>
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:222
+Defined in: lib/common/utils/Vector.d.ts:227
 
 #### Returns
 
@@ -148,7 +148,7 @@ Vector.[iterator]
 add(v): this
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:254
+Defined in: lib/common/utils/Vector.d.ts:259
 
 #### Parameters
 
@@ -178,7 +178,7 @@ Vector.add
 addAbsolute(v): this
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:278
+Defined in: lib/common/utils/Vector.d.ts:283
 
 #### Parameters
 
@@ -208,7 +208,7 @@ Vector.addAbsolute
 addX(x): this
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:258
+Defined in: lib/common/utils/Vector.d.ts:263
 
 #### Parameters
 
@@ -238,7 +238,7 @@ Vector.addX
 addY(y): this
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:262
+Defined in: lib/common/utils/Vector.d.ts:267
 
 #### Parameters
 
@@ -268,7 +268,7 @@ Vector.addY
 addZ(z): this
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:366
+Defined in: lib/common/utils/Vector.d.ts:372
 
 #### Parameters
 
@@ -292,7 +292,7 @@ Vector.addZ
 clone<T>(): T
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:228
+Defined in: lib/common/utils/Vector.d.ts:233
 
 #### Type Parameters
 
@@ -322,7 +322,7 @@ Vector.clone
 crossProduct(v): Vec4 | Vec3
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:370
+Defined in: lib/common/utils/Vector.d.ts:376
 
 #### Parameters
 
@@ -346,7 +346,7 @@ Vector.crossProduct
 distance(v): number
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:242
+Defined in: lib/common/utils/Vector.d.ts:247
 
 The distance between two Vectors.
 
@@ -376,7 +376,7 @@ Vector.distance
 distanceSquared(v): number
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:235
+Defined in: lib/common/utils/Vector.d.ts:240
 
 The product of the Euclidean magnitudes of this and another Vector.
 
@@ -406,7 +406,7 @@ Vector.distanceSquared
 divide(v): this
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:274
+Defined in: lib/common/utils/Vector.d.ts:279
 
 #### Parameters
 
@@ -436,7 +436,7 @@ Vector.divide
 divideAbsolute(v): this
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:290
+Defined in: lib/common/utils/Vector.d.ts:295
 
 #### Parameters
 
@@ -466,7 +466,7 @@ Vector.divideAbsolute
 dotProduct(v): number
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:250
+Defined in: lib/common/utils/Vector.d.ts:255
 
 #### Parameters
 
@@ -496,7 +496,7 @@ Vector.dotProduct
 multiply(v): this
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:270
+Defined in: lib/common/utils/Vector.d.ts:275
 
 #### Parameters
 
@@ -526,7 +526,7 @@ Vector.multiply
 multiplyAbsolute(v): this
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:286
+Defined in: lib/common/utils/Vector.d.ts:291
 
 #### Parameters
 
@@ -556,7 +556,7 @@ Vector.multiplyAbsolute
 normalize(): this
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:246
+Defined in: lib/common/utils/Vector.d.ts:251
 
 #### Returns
 
@@ -580,7 +580,7 @@ Vector.normalize
 replace<T>(v): void
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:299
+Defined in: lib/common/utils/Vector.d.ts:304
 
 Replaces the components of the vector with the components of another vector object.
 
@@ -614,7 +614,7 @@ Vector.replace
 subtract(v): this
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:266
+Defined in: lib/common/utils/Vector.d.ts:271
 
 #### Parameters
 
@@ -644,7 +644,7 @@ Vector.subtract
 subtractAbsolute(v): this
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:282
+Defined in: lib/common/utils/Vector.d.ts:287
 
 #### Parameters
 
@@ -668,13 +668,205 @@ Vector.subtractAbsolute
 
 ***
 
+### swizzle()
+
+```ts
+swizzle<T>(components): T extends 
+  | "xx"
+  | "xy"
+  | "xz"
+  | "xw"
+  | "yx"
+  | "yy"
+  | "yz"
+  | "yw"
+  | "zx"
+  | "zy"
+  | "zz"
+  | "zw"
+  | "wx"
+  | "wy"
+  | "wz"
+  | "ww" ? Vector2 : T extends 
+  | "xxx"
+  | "xxy"
+  | "xxz"
+  | "xxw"
+  | "xyx"
+  | "xyy"
+  | "xyz"
+  | "xyw"
+  | "xzx"
+  | "xzy"
+  | "xzz"
+  | "xzw"
+  | "xwx"
+  | "xwy"
+  | "xwz"
+  | "xww"
+  | "yxx"
+  | "yxy"
+  | "yxz"
+  | "yxw"
+  | "yyx"
+  | "yyy"
+  | "yyz"
+  | "yyw"
+  | "yzx"
+  | "yzy"
+  | "yzz"
+  | "yzw"
+  | "ywx"
+  | "ywy"
+  | "ywz"
+  | "yww"
+  | "zxx"
+  | "zxy"
+  | "zxz"
+  | "zxw"
+  | "zyx"
+  | "zyy"
+  | "zyz"
+  | "zyw"
+  | "zzx"
+  | "zzy"
+  | "zzz"
+  | "zzw"
+  | "zwx"
+  | "zwy"
+  | "zwz"
+  | "zww"
+  | "wxx"
+  | "wxy"
+  | "wxz"
+  | "wxw"
+  | "wyx"
+  | "wyy"
+  | "wyz"
+  | "wyw"
+  | "wzx"
+  | "wzy"
+  | "wzz"
+  | "wzw"
+  | "wwx"
+  | "wwy"
+  | "wwz"
+  | "www" ? Vector3 : Vector4
+```
+
+Defined in: lib/common/utils/Vector.d.ts:310
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `T` *extends* `VectorSwizzle` |
+
+#### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `components` | `T` |
+
+#### Returns
+
+`T` *extends* 
+  \| `"xx"`
+  \| `"xy"`
+  \| `"xz"`
+  \| `"xw"`
+  \| `"yx"`
+  \| `"yy"`
+  \| `"yz"`
+  \| `"yw"`
+  \| `"zx"`
+  \| `"zy"`
+  \| `"zz"`
+  \| `"zw"`
+  \| `"wx"`
+  \| `"wy"`
+  \| `"wz"`
+  \| `"ww"` ? [`Vector2`](Vector2.md) : `T` *extends* 
+  \| `"xxx"`
+  \| `"xxy"`
+  \| `"xxz"`
+  \| `"xxw"`
+  \| `"xyx"`
+  \| `"xyy"`
+  \| `"xyz"`
+  \| `"xyw"`
+  \| `"xzx"`
+  \| `"xzy"`
+  \| `"xzz"`
+  \| `"xzw"`
+  \| `"xwx"`
+  \| `"xwy"`
+  \| `"xwz"`
+  \| `"xww"`
+  \| `"yxx"`
+  \| `"yxy"`
+  \| `"yxz"`
+  \| `"yxw"`
+  \| `"yyx"`
+  \| `"yyy"`
+  \| `"yyz"`
+  \| `"yyw"`
+  \| `"yzx"`
+  \| `"yzy"`
+  \| `"yzz"`
+  \| `"yzw"`
+  \| `"ywx"`
+  \| `"ywy"`
+  \| `"ywz"`
+  \| `"yww"`
+  \| `"zxx"`
+  \| `"zxy"`
+  \| `"zxz"`
+  \| `"zxw"`
+  \| `"zyx"`
+  \| `"zyy"`
+  \| `"zyz"`
+  \| `"zyw"`
+  \| `"zzx"`
+  \| `"zzy"`
+  \| `"zzz"`
+  \| `"zzw"`
+  \| `"zwx"`
+  \| `"zwy"`
+  \| `"zwz"`
+  \| `"zww"`
+  \| `"wxx"`
+  \| `"wxy"`
+  \| `"wxz"`
+  \| `"wxw"`
+  \| `"wyx"`
+  \| `"wyy"`
+  \| `"wyz"`
+  \| `"wyw"`
+  \| `"wzx"`
+  \| `"wzy"`
+  \| `"wzz"`
+  \| `"wzw"`
+  \| `"wwx"`
+  \| `"wwy"`
+  \| `"wwz"`
+  \| `"www"` ? [`Vector3`](Vector3.md) : [`Vector4`](Vector4.md)
+
+#### Inherited from
+
+```ts
+Vector.swizzle
+```
+
+***
+
 ### toArray()
 
 ```ts
 toArray<T>(): VectorArray<T>
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:294
+Defined in: lib/common/utils/Vector.d.ts:299
 
 Converts the vector to an array of its components.
 
@@ -702,7 +894,7 @@ Vector.toArray
 toString(): string
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:224
+Defined in: lib/common/utils/Vector.d.ts:229
 
 #### Returns
 
@@ -722,7 +914,7 @@ Vector.toString
 toVec2(): Vector2
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:374
+Defined in: lib/common/utils/Vector.d.ts:380
 
 #### Returns
 
@@ -741,7 +933,7 @@ static add<T, U>(
    b): U
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:81
+Defined in: lib/common/utils/Vector.d.ts:86
 
 Adds two vectors or a scalar value to a vector.
 
@@ -783,7 +975,7 @@ static addAbsolute<T, U>(
    b): U
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:145
+Defined in: lib/common/utils/Vector.d.ts:150
 
 Adds two vectors or a scalar value to a vector.
 
@@ -825,7 +1017,7 @@ static addW<T, U>(
    w): U
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:109
+Defined in: lib/common/utils/Vector.d.ts:114
 
 Adds a scalar value to the w-component of a vector.
 
@@ -864,7 +1056,7 @@ Vector.addW
 static addX<U>(obj, x): U
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:88
+Defined in: lib/common/utils/Vector.d.ts:93
 
 Adds a scalar value to the x-component of a vector.
 
@@ -904,7 +1096,7 @@ static addY<T, U>(
    y): U
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:95
+Defined in: lib/common/utils/Vector.d.ts:100
 
 Adds a scalar value to the y-component of a vector.
 
@@ -946,7 +1138,7 @@ static addZ<T, U>(
    z): U
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:102
+Defined in: lib/common/utils/Vector.d.ts:107
 
 Adds a scalar value to the z-component of a vector.
 
@@ -985,7 +1177,7 @@ Vector.addZ
 static clone<T, U>(this, obj): Vector3 | Vector4 | Vector2
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:60
+Defined in: lib/common/utils/Vector.d.ts:65
 
 Creates a deep copy of the provided vector.
 
@@ -1026,7 +1218,7 @@ protected static create(
    z?): Vector3
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:362
+Defined in: lib/common/utils/Vector.d.ts:368
 
 Creates a new vector based on the provided parameters.
 
@@ -1061,7 +1253,7 @@ static crossProduct<T, U>(
    b): U
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:180
+Defined in: lib/common/utils/Vector.d.ts:185
 
 Calculates the cross product of two vectors in three-dimensional space.
 
@@ -1103,7 +1295,7 @@ static divide<T, U>(
    b): U
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:130
+Defined in: lib/common/utils/Vector.d.ts:135
 
 Divides two vectors by their components, or divides a vector by a scalar value.
 
@@ -1145,7 +1337,7 @@ static divideAbsolute<T, U>(
    b): U
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:166
+Defined in: lib/common/utils/Vector.d.ts:171
 
 Divides two vectors by their components, or divides a vector by a scalar value
 
@@ -1187,7 +1379,7 @@ static dotProduct<T, U>(
    b): number
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:173
+Defined in: lib/common/utils/Vector.d.ts:178
 
 Calculates the dot product of two vectors.
 
@@ -1226,7 +1418,7 @@ Vector.dotProduct
 static fromArray<T, U>(this, primitive): InstanceType<T>
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:191
+Defined in: lib/common/utils/Vector.d.ts:196
 
 Creates a vector from an array of numbers.
 
@@ -1262,7 +1454,7 @@ Vector.fromArray
 static fromArrays<T, U>(this, primitives): InstanceType<T>[]
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:201
+Defined in: lib/common/utils/Vector.d.ts:206
 
 Creates an array of vectors from an array of number arrays
 
@@ -1298,7 +1490,7 @@ Vector.fromArrays
 static fromBuffer<T>(this, __namedParameters): InstanceType<T>
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:66
+Defined in: lib/common/utils/Vector.d.ts:71
 
 Creates a vector from binary data in a MsgpackBuffer.
 
@@ -1335,7 +1527,7 @@ Vector.fromBuffer
 static fromObject<T, U>(this, primitive): InstanceType<T>
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:196
+Defined in: lib/common/utils/Vector.d.ts:201
 
 Creates a vector from an array or object containing vector components.
 
@@ -1371,7 +1563,7 @@ Vector.fromObject
 static Length<T, U>(this, obj): number
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:207
+Defined in: lib/common/utils/Vector.d.ts:212
 
 Calculates the length (magnitude) of a vector.
 
@@ -1412,7 +1604,7 @@ static multiply<T, U>(
    b): U
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:123
+Defined in: lib/common/utils/Vector.d.ts:128
 
 Multiplies two vectors by their components, or multiplies a vector by a scalar value.
 
@@ -1454,7 +1646,7 @@ static multiplyAbsolute<T, U>(
    b): U
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:159
+Defined in: lib/common/utils/Vector.d.ts:164
 
 Multiplies two vectors by their components, or multiplies a vector by a scalar value.
 
@@ -1493,7 +1685,7 @@ Vector.multiplyAbsolute
 static normalize<T, U>(this, a): U
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:186
+Defined in: lib/common/utils/Vector.d.ts:191
 
 Normalizes a vector, producing a new vector with the same direction but with a magnitude of 1.
 
@@ -1534,7 +1726,7 @@ static subtract<T, U>(
    b): U
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:116
+Defined in: lib/common/utils/Vector.d.ts:121
 
 Subtracts one vector from another or subtracts a scalar value from a vector.
 
@@ -1576,7 +1768,7 @@ static subtractAbsolute<T, U>(
    b): U
 ```
 
-Defined in: lib/common/utils/Vector.d.ts:152
+Defined in: lib/common/utils/Vector.d.ts:157
 
 Subtracts one vector from another or subtracts a scalar value from a vector.
 
