@@ -86,6 +86,12 @@ type InferVector<T> = T extends Vec4 | VectorN<4>
       ? Vector2
       : any;
 
+type VectorKey = "x" | "y" | "z" | "w";
+type VectorSwizzle = Vec2Swizzle | Vec3Swizzle | Vec4Swizzle;
+type Vec2Swizzle = `${VectorKey}${VectorKey}`;
+type Vec3Swizzle = `${VectorKey}${VectorKey}${VectorKey}`;
+type Vec4Swizzle = `${VectorKey}${VectorKey}${VectorKey}${VectorKey}`;
+
 /**
  * A base vector class inherited by all vector classes.
  */
@@ -687,6 +693,22 @@ abstract class Vector {
     for (let value of this) sum += value * value;
 
     return Math.sqrt(sum);
+  }
+
+  public swizzle<T extends VectorSwizzle>(
+    components: T,
+  ): T extends Vec2Swizzle
+    ? Vector2
+    : T extends Vec3Swizzle
+      ? Vector3
+      : Vector4 {
+    if (!/^[xyzw]+$/.test(components))
+      throw new Error(`Invalid key in swizzle components (${components}).`);
+
+    const arr = components.split("").map((char) => (this as any)[char] ?? 0);
+
+    //@ts-ignore
+    return Vector.create(...arr);
   }
 }
 
