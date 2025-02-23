@@ -1,3 +1,5 @@
+import { Vector3 } from "@common/utils";
+
 export class BaseEntity {
   private handle: number;
   constructor(entHandle: number) {
@@ -36,5 +38,22 @@ export class BaseEntity {
 
   get Health(): number {
     return GetEntityHealth(this.Handle);
+  }
+
+  get Position(): Vector3 {
+    return Vector3.fromArray(GetEntityCoords(this.handle, true, true));
+  }
+
+  set Position(pos: Vector3) {
+    SetEntityCoords(
+      this.handle,
+      pos.x,
+      pos.y,
+      pos.z,
+      false,
+      false,
+      false,
+      false,
+    );
   }
 }
