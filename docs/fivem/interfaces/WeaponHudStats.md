@@ -2,7 +2,7 @@
 
 # Interface: WeaponHudStats
 
-Defined in: [src/fivem/weapon/WeaponHudStats.ts:19](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/weapon/WeaponHudStats.ts#L19)
+Defined in: [src/fivem/weapon/WeaponHudStats.ts:19](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/weapon/WeaponHudStats.ts#L19)
 
 WeaponHudStats
 refer1: https://github.com/citizenfx/fivem/blob/master/code/client/clrcore/External/Game.cs#L900
@@ -21,8 +21,8 @@ struct WeaponHudStatsData
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="hudaccuracy"></a> `hudAccuracy` | `number` | [src/fivem/weapon/WeaponHudStats.ts:23](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/weapon/WeaponHudStats.ts#L23) |
-| <a id="hudcapacity"></a> `hudCapacity` | `number` | [src/fivem/weapon/WeaponHudStats.ts:22](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/weapon/WeaponHudStats.ts#L22) |
-| <a id="huddamage"></a> `hudDamage` | `number` | [src/fivem/weapon/WeaponHudStats.ts:20](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/weapon/WeaponHudStats.ts#L20) |
-| <a id="hudrange"></a> `hudRange` | `number` | [src/fivem/weapon/WeaponHudStats.ts:24](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/weapon/WeaponHudStats.ts#L24) |
-| <a id="hudspeed"></a> `hudSpeed` | `number` | [src/fivem/weapon/WeaponHudStats.ts:21](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/weapon/WeaponHudStats.ts#L21) |
+| <a id="hudaccuracy"></a> `hudAccuracy` | `number` | [src/fivem/weapon/WeaponHudStats.ts:23](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/weapon/WeaponHudStats.ts#L23) |
+| <a id="hudcapacity"></a> `hudCapacity` | `number` | [src/fivem/weapon/WeaponHudStats.ts:22](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/weapon/WeaponHudStats.ts#L22) |
+| <a id="huddamage"></a> `hudDamage` | `number` | [src/fivem/weapon/WeaponHudStats.ts:20](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/weapon/WeaponHudStats.ts#L20) |
+| <a id="hudrange"></a> `hudRange` | `number` | [src/fivem/weapon/WeaponHudStats.ts:24](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/weapon/WeaponHudStats.ts#L24) |
+| <a id="hudspeed"></a> `hudSpeed` | `number` | [src/fivem/weapon/WeaponHudStats.ts:21](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/weapon/WeaponHudStats.ts#L21) |

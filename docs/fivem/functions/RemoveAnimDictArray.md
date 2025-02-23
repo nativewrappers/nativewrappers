@@ -6,7 +6,7 @@
 function RemoveAnimDictArray(animDict): void
 ```
 
-Defined in: [src/fivem/utils/Animations.ts:65](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/utils/Animations.ts#L65)
+Defined in: [src/fivem/utils/Animations.ts:65](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/utils/Animations.ts#L65)
 
 A utility to unload multiple animation dictionary
 

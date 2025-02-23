@@ -2,7 +2,7 @@
 
 # Class: Prop
 
-Defined in: [src/server/entities/Prop.ts:4](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/Prop.ts#L4)
+Defined in: [src/server/entities/Prop.ts:4](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/Prop.ts#L4)
 
 ## Extends
 
@@ -16,7 +16,7 @@ Defined in: [src/server/entities/Prop.ts:4](https://github.com/nativewrappers/na
 new Prop(handle): Prop
 ```
 
-Defined in: [src/server/entities/Prop.ts:6](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/Prop.ts#L6)
+Defined in: [src/server/entities/Prop.ts:6](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/Prop.ts#L6)
 
 #### Parameters
 
@@ -38,8 +38,8 @@ BaseEntity.constructor
 
 | Property | Modifier | Type | Default value | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| <a id="handle-1"></a> `handle` | `protected` | `number` | `undefined` | - | `BaseEntity.handle` | [src/server/entities/BaseEntity.ts:11](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L11) |
-| <a id="type"></a> `type` | `protected` | `ClassTypes` | `ClassTypes.Prop` | `BaseEntity.type` | - | [src/server/entities/Prop.ts:5](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/Prop.ts#L5) |
+| <a id="handle-1"></a> `handle` | `protected` | `number` | `undefined` | - | `BaseEntity.handle` | [src/server/entities/BaseEntity.ts:11](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L11) |
+| <a id="type"></a> `type` | `protected` | `ClassTypes` | `ClassTypes.Prop` | `BaseEntity.type` | - | [src/server/entities/Prop.ts:5](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/Prop.ts#L5) |
 
 ## Accessors
 
@@ -51,7 +51,7 @@ BaseEntity.constructor
 get AttachedTo(): null | BaseEntity
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:72](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L72)
+Defined in: [src/server/entities/BaseEntity.ts:72](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L72)
 
 ##### Returns
 
@@ -76,7 +76,7 @@ BaseEntity.AttachedTo
 get Exists(): boolean
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:64](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L64)
+Defined in: [src/server/entities/BaseEntity.ts:64](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L64)
 
 ##### Returns
 
@@ -98,7 +98,7 @@ BaseEntity.Exists
 get FirstOwner(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:60](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L60)
+Defined in: [src/server/entities/BaseEntity.ts:60](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L60)
 
 ##### Returns
 
@@ -120,7 +120,7 @@ BaseEntity.FirstOwner
 get Handle(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:52](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L52)
+Defined in: [src/server/entities/BaseEntity.ts:52](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L52)
 
 ##### Returns
 
@@ -142,7 +142,7 @@ BaseEntity.Handle
 get Heading(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:82](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L82)
+Defined in: [src/server/entities/BaseEntity.ts:82](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L82)
 
 ##### Returns
 
@@ -164,7 +164,7 @@ BaseEntity.Heading
 get Health(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:93](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L93)
+Defined in: [src/server/entities/BaseEntity.ts:93](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L93)
 
 ##### Returns
 
@@ -186,7 +186,7 @@ BaseEntity.Health
 get IsNoLongerNeeded(): boolean
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:151](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L151)
+Defined in: [src/server/entities/BaseEntity.ts:151](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L151)
 
 ##### Returns
 
@@ -208,7 +208,7 @@ BaseEntity.IsNoLongerNeeded
 get IsVisible(): boolean
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:143](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L143)
+Defined in: [src/server/entities/BaseEntity.ts:143](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L143)
 
 ##### Returns
 
@@ -230,7 +230,7 @@ BaseEntity.IsVisible
 get MaxHealth(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:97](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L97)
+Defined in: [src/server/entities/BaseEntity.ts:97](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L97)
 
 ##### Returns
 
@@ -252,7 +252,7 @@ BaseEntity.MaxHealth
 get Model(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:101](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L101)
+Defined in: [src/server/entities/BaseEntity.ts:101](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L101)
 
 ##### Returns
 
@@ -274,7 +274,7 @@ BaseEntity.Model
 get NetworkId(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:147](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L147)
+Defined in: [src/server/entities/BaseEntity.ts:147](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L147)
 
 ##### Returns
 
@@ -296,7 +296,7 @@ BaseEntity.NetworkId
 get Owner(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:56](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L56)
+Defined in: [src/server/entities/BaseEntity.ts:56](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L56)
 
 ##### Returns
 
@@ -318,7 +318,7 @@ BaseEntity.Owner
 get PopulationType(): PopulationType
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:105](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L105)
+Defined in: [src/server/entities/BaseEntity.ts:105](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L105)
 
 ##### Returns
 
@@ -340,7 +340,7 @@ BaseEntity.PopulationType
 get Position(): Vector3
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:78](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L78)
+Defined in: [src/server/entities/BaseEntity.ts:78](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L78)
 
 ##### Returns
 
@@ -362,7 +362,7 @@ BaseEntity.Position
 get PositionAndHeading(): Vector4
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:86](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L86)
+Defined in: [src/server/entities/BaseEntity.ts:86](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L86)
 
 ##### Returns
 
@@ -384,7 +384,7 @@ BaseEntity.PositionAndHeading
 get Rotation(): Vector3
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:109](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L109)
+Defined in: [src/server/entities/BaseEntity.ts:109](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L109)
 
 ##### Returns
 
@@ -406,7 +406,7 @@ BaseEntity.Rotation
 get RotationVelocity(): Vector3
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:113](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L113)
+Defined in: [src/server/entities/BaseEntity.ts:113](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L113)
 
 ##### Returns
 
@@ -428,7 +428,7 @@ BaseEntity.RotationVelocity
 get RoutingBucket(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:117](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L117)
+Defined in: [src/server/entities/BaseEntity.ts:117](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L117)
 
 ##### Returns
 
@@ -450,7 +450,7 @@ BaseEntity.RoutingBucket
 get Script(): string
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:124](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L124)
+Defined in: [src/server/entities/BaseEntity.ts:124](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L124)
 
 ##### Returns
 
@@ -474,7 +474,7 @@ BaseEntity.Script
 get Speed(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:128](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L128)
+Defined in: [src/server/entities/BaseEntity.ts:128](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L128)
 
 ##### Returns
 
@@ -496,7 +496,7 @@ BaseEntity.Speed
 get State(): StateBagInterface
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:48](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L48)
+Defined in: [src/server/entities/BaseEntity.ts:48](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L48)
 
 ##### Returns
 
@@ -518,7 +518,7 @@ BaseEntity.State
 get Type(): eEntityType
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:132](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L132)
+Defined in: [src/server/entities/BaseEntity.ts:132](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L132)
 
 ##### Returns
 
@@ -540,7 +540,7 @@ BaseEntity.Type
 get Velocity(): Vector3
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:139](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L139)
+Defined in: [src/server/entities/BaseEntity.ts:139](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L139)
 
 ##### Returns
 
@@ -562,7 +562,7 @@ BaseEntity.Velocity
 delete(): void
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:155](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L155)
+Defined in: [src/server/entities/BaseEntity.ts:155](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L155)
 
 #### Returns
 
@@ -582,7 +582,7 @@ BaseEntity.delete
 replaceHandle(newHandle): void
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:32](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/BaseEntity.ts#L32)
+Defined in: [src/server/entities/BaseEntity.ts:32](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/BaseEntity.ts#L32)
 
 #### Parameters
 
@@ -608,7 +608,7 @@ BaseEntity.replaceHandle
 static AllProps(): IterableIterator<Prop>
 ```
 
-Defined in: [src/server/entities/Prop.ts:14](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/Prop.ts#L14)
+Defined in: [src/server/entities/Prop.ts:14](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/Prop.ts#L14)
 
 Get an interable list of props currently on the server
 
@@ -626,7 +626,7 @@ Iterable list of Props.
 static fromHandle(handle): Prop
 ```
 
-Defined in: [src/server/entities/Prop.ts:32](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/Prop.ts#L32)
+Defined in: [src/server/entities/Prop.ts:32](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/Prop.ts#L32)
 
 #### Parameters
 
@@ -646,7 +646,7 @@ Defined in: [src/server/entities/Prop.ts:32](https://github.com/nativewrappers/n
 static fromNetworkId(networkId): null | Prop
 ```
 
-Defined in: [src/server/entities/Prop.ts:20](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/Prop.ts#L20)
+Defined in: [src/server/entities/Prop.ts:20](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/Prop.ts#L20)
 
 #### Parameters
 
@@ -672,7 +672,7 @@ BaseEntity.fromNetworkId
 static fromStateBagName(stateBagName): null | Prop
 ```
 
-Defined in: [src/server/entities/Prop.ts:26](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/server/entities/Prop.ts#L26)
+Defined in: [src/server/entities/Prop.ts:26](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/entities/Prop.ts#L26)
 
 #### Parameters
 
