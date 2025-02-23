@@ -2,7 +2,7 @@
 
 # Class: `abstract` Game
 
-Defined in: [src/fivem/Game.ts:6](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L6)
+Defined in: [src/fivem/Game.ts:6](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L6)
 
 ## Constructors
 
@@ -20,9 +20,9 @@ new Game(): Game
 
 | Property | Modifier | Type | Default value | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| <a id="cachedplayer"></a> `cachedPlayer` | `static` | [`Player`](Player.md) | `undefined` | [src/fivem/Game.ts:583](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L583) |
-| <a id="hashcache"></a> `hashCache` | `static` | `Map`\<`string`, `number`\> | `undefined` | [src/fivem/Game.ts:9](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L9) |
-| <a id="usehashcache"></a> `useHashCache` | `static` | `boolean` | `true` | [src/fivem/Game.ts:7](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L7) |
+| <a id="cachedplayer"></a> `cachedPlayer` | `static` | [`Player`](Player.md) | `undefined` | [src/fivem/Game.ts:583](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L583) |
+| <a id="hashcache"></a> `hashCache` | `static` | `Map`\<`string`, `number`\> | `undefined` | [src/fivem/Game.ts:9](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L9) |
+| <a id="usehashcache"></a> `useHashCache` | `static` | `boolean` | `true` | [src/fivem/Game.ts:7](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L7) |
 
 ## Accessors
 
@@ -34,7 +34,7 @@ new Game(): Game
 set ExtendWorldBoundry(vec): void
 ```
 
-Defined in: [src/fivem/Game.ts:533](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L533)
+Defined in: [src/fivem/Game.ts:533](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L533)
 
 Sets the max boundry the local player can go to before they get killed
 
@@ -58,7 +58,7 @@ Sets the max boundry the local player can go to before they get killed
 get LastVehicle(): null | Vehicle
 ```
 
-Defined in: [src/fivem/Game.ts:537](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L537)
+Defined in: [src/fivem/Game.ts:537](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L537)
 
 ##### Returns
 
@@ -74,7 +74,7 @@ Defined in: [src/fivem/Game.ts:537](https://github.com/nativewrappers/nativewrap
 get static CurrentInputMode(): InputMode
 ```
 
-Defined in: [src/fivem/Game.ts:264](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L264)
+Defined in: [src/fivem/Game.ts:264](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L264)
 
 Get current input mode.
 
@@ -94,7 +94,7 @@ InputMode: Mouse & Keyboard or GamePad.
 get static FPS(): number
 ```
 
-Defined in: [src/fivem/Game.ts:85](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L85)
+Defined in: [src/fivem/Game.ts:85](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L85)
 
 Gets the current frame rate per second
 
@@ -112,7 +112,7 @@ Gets the current frame rate per second
 get static FrameCount(): number
 ```
 
-Defined in: [src/fivem/Game.ts:78](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L78)
+Defined in: [src/fivem/Game.ts:78](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L78)
 
 Gets the total amount of frames rendered in this session
 
@@ -130,7 +130,7 @@ Gets the total amount of frames rendered in this session
 get static GameTime(): number
 ```
 
-Defined in: [src/fivem/Game.ts:62](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L62)
+Defined in: [src/fivem/Game.ts:62](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L62)
 
 Gets how many milliseconds the game has been open this session
 
@@ -148,7 +148,7 @@ Gets how many milliseconds the game has been open this session
 get static IsCutsceneActive(): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:228](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L228)
+Defined in: [src/fivem/Game.ts:228](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L228)
 
 ##### Returns
 
@@ -164,7 +164,7 @@ Defined in: [src/fivem/Game.ts:228](https://github.com/nativewrappers/nativewrap
 get static IsLoading(): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:256](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L256)
+Defined in: [src/fivem/Game.ts:256](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L256)
 
 Get if a loading screen is active.
 
@@ -182,7 +182,7 @@ Get if a loading screen is active.
 get static IsMissionActive(): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:212](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L212)
+Defined in: [src/fivem/Game.ts:212](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L212)
 
 ##### Returns
 
@@ -194,7 +194,7 @@ Defined in: [src/fivem/Game.ts:212](https://github.com/nativewrappers/nativewrap
 set static IsMissionActive(toggle): void
 ```
 
-Defined in: [src/fivem/Game.ts:216](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L216)
+Defined in: [src/fivem/Game.ts:216](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L216)
 
 ##### Parameters
 
@@ -216,7 +216,7 @@ Defined in: [src/fivem/Game.ts:216](https://github.com/nativewrappers/nativewrap
 get static IsPaused(): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:242](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L242)
+Defined in: [src/fivem/Game.ts:242](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L242)
 
 Is the player in the pause menu (ESC).
 
@@ -230,7 +230,7 @@ Is the player in the pause menu (ESC).
 set static IsPaused(toggle): void
 ```
 
-Defined in: [src/fivem/Game.ts:249](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L249)
+Defined in: [src/fivem/Game.ts:249](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L249)
 
 Force enable pause menu.
 
@@ -254,7 +254,7 @@ Force enable pause menu.
 get static IsRandomEventActive(): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:220](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L220)
+Defined in: [src/fivem/Game.ts:220](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L220)
 
 ##### Returns
 
@@ -266,7 +266,7 @@ Defined in: [src/fivem/Game.ts:220](https://github.com/nativewrappers/nativewrap
 set static IsRandomEventActive(toggle): void
 ```
 
-Defined in: [src/fivem/Game.ts:224](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L224)
+Defined in: [src/fivem/Game.ts:224](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L224)
 
 ##### Parameters
 
@@ -288,7 +288,7 @@ Defined in: [src/fivem/Game.ts:224](https://github.com/nativewrappers/nativewrap
 get static IsWaypointActive(): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:235](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L235)
+Defined in: [src/fivem/Game.ts:235](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L235)
 
 Is a waypoint set on the map.
 
@@ -306,7 +306,7 @@ Is a waypoint set on the map.
 get static Language(): Language
 ```
 
-Defined in: [src/fivem/Game.ts:55](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L55)
+Defined in: [src/fivem/Game.ts:55](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L55)
 
 Gets the game language
 
@@ -324,7 +324,7 @@ Gets the game language
 get static LastFrameTime(): number
 ```
 
-Defined in: [src/fivem/Game.ts:92](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L92)
+Defined in: [src/fivem/Game.ts:92](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L92)
 
 Gets the time it currently takes to render a frame, in seconds;
 
@@ -342,7 +342,7 @@ Gets the time it currently takes to render a frame, in seconds;
 get static MaxWantedLevel(): number
 ```
 
-Defined in: [src/fivem/Game.ts:153](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L153)
+Defined in: [src/fivem/Game.ts:153](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L153)
 
 Get the maximum wanted level.
 
@@ -356,7 +356,7 @@ Get the maximum wanted level.
 set static MaxWantedLevel(value): void
 ```
 
-Defined in: [src/fivem/Game.ts:160](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L160)
+Defined in: [src/fivem/Game.ts:160](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L160)
 
 Set the maximum wanted level the local client can get.
 
@@ -380,7 +380,7 @@ Set the maximum wanted level the local client can get.
 get static Nightvision(): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:187](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L187)
+Defined in: [src/fivem/Game.ts:187](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L187)
 
 Get if nightvision is active.
 
@@ -394,7 +394,7 @@ Get if nightvision is active.
 set static Nightvision(toggle): void
 ```
 
-Defined in: [src/fivem/Game.ts:194](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L194)
+Defined in: [src/fivem/Game.ts:194](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L194)
 
 Toggle nightvision.
 
@@ -418,7 +418,7 @@ Toggle nightvision.
 get static Player(): Player
 ```
 
-Defined in: [src/fivem/Game.ts:99](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L99)
+Defined in: [src/fivem/Game.ts:99](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L99)
 
 Get the local player's Player object.
 
@@ -436,7 +436,7 @@ Get the local player's Player object.
 get static PlayerPed(): Ped
 ```
 
-Defined in: [src/fivem/Game.ts:115](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L115)
+Defined in: [src/fivem/Game.ts:115](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L115)
 
 Get the local player character's Ped object.
 
@@ -456,7 +456,7 @@ A local player's character.
 get static PlayerVersusPlayer(): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:139](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L139)
+Defined in: [src/fivem/Game.ts:139](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L139)
 
 Get whether PvP is enabled.
 
@@ -472,7 +472,7 @@ True if enabled.
 set static PlayerVersusPlayer(value): void
 ```
 
-Defined in: [src/fivem/Game.ts:146](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L146)
+Defined in: [src/fivem/Game.ts:146](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L146)
 
 Set whether PvP is enabled.
 
@@ -496,7 +496,7 @@ Set whether PvP is enabled.
 get static RadioStation(): RadioStation
 ```
 
-Defined in: [src/fivem/Game.ts:273](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L273)
+Defined in: [src/fivem/Game.ts:273](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L273)
 
 Gets the player's current radio station.
 
@@ -512,7 +512,7 @@ A radio station.
 set static RadioStation(station): void
 ```
 
-Defined in: [src/fivem/Game.ts:283](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L283)
+Defined in: [src/fivem/Game.ts:283](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L283)
 
 Sets the player's radio station.
 
@@ -536,7 +536,7 @@ Sets the player's radio station.
 set static ShowPoliceBlipsOnRadar(toggle): void
 ```
 
-Defined in: [src/fivem/Game.ts:180](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L180)
+Defined in: [src/fivem/Game.ts:180](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L180)
 
 Set whether police blips should show on minimap.
 
@@ -560,7 +560,7 @@ Set whether police blips should show on minimap.
 get static ThermalVision(): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:201](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L201)
+Defined in: [src/fivem/Game.ts:201](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L201)
 
 Get if thermal (heat) vision is active.
 
@@ -574,7 +574,7 @@ Get if thermal (heat) vision is active.
 set static ThermalVision(toggle): void
 ```
 
-Defined in: [src/fivem/Game.ts:208](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L208)
+Defined in: [src/fivem/Game.ts:208](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L208)
 
 Toggle thermal (heat) vision.
 
@@ -598,7 +598,7 @@ Toggle thermal (heat) vision.
 set static TimeScale(time): void
 ```
 
-Defined in: [src/fivem/Game.ts:71](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L71)
+Defined in: [src/fivem/Game.ts:71](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L71)
 
 Sets the time scale of the Game.
 
@@ -622,7 +622,7 @@ Sets the time scale of the Game.
 set static WantedMultiplier(value): void
 ```
 
-Defined in: [src/fivem/Game.ts:173](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L173)
+Defined in: [src/fivem/Game.ts:173](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L173)
 
 Set the multiplier of the wanted level.
 
@@ -646,7 +646,7 @@ Set the multiplier of the wanted level.
 get static WaypointPosition(): Vector3
 ```
 
-Defined in: [src/fivem/Game.ts:561](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L561)
+Defined in: [src/fivem/Game.ts:561](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L561)
 
 ##### Returns
 
@@ -658,7 +658,7 @@ Defined in: [src/fivem/Game.ts:561](https://github.com/nativewrappers/nativewrap
 set static WaypointPosition(position): void
 ```
 
-Defined in: [src/fivem/Game.ts:574](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L574)
+Defined in: [src/fivem/Game.ts:574](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L574)
 
 ##### Parameters
 
@@ -678,7 +678,7 @@ Defined in: [src/fivem/Game.ts:574](https://github.com/nativewrappers/nativewrap
 static disableAllControlsThisFrame(inputMode): void
 ```
 
-Defined in: [src/fivem/Game.ts:444](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L444)
+Defined in: [src/fivem/Game.ts:444](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L444)
 
 Disables all Controls this frame.
 
@@ -700,7 +700,7 @@ Disables all Controls this frame.
 static disableControlThisFrame(inputMode, control): void
 ```
 
-Defined in: [src/fivem/Game.ts:432](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L432)
+Defined in: [src/fivem/Game.ts:432](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L432)
 
 Makes the Game Engine ignore the given Control this frame
 
@@ -723,7 +723,7 @@ Makes the Game Engine ignore the given Control this frame
 static doesGXTEntryExist(entry): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:510](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L510)
+Defined in: [src/fivem/Game.ts:510](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L510)
 
 Determines the game language files contain a entry for the specified GXT key
 
@@ -747,7 +747,7 @@ true if GXT entry exists; otherwise, false
 static enableAllControlsThisFrame(inputMode): void
 ```
 
-Defined in: [src/fivem/Game.ts:453](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L453)
+Defined in: [src/fivem/Game.ts:453](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L453)
 
 Enables all Controls this frame.
 
@@ -769,7 +769,7 @@ Enables all Controls this frame.
 static enableControlThisFrame(inputMode, control): void
 ```
 
-Defined in: [src/fivem/Game.ts:419](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L419)
+Defined in: [src/fivem/Game.ts:419](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L419)
 
 Makes the Game Engine respond to the given Control this frame
 
@@ -792,7 +792,7 @@ Makes the Game Engine respond to the given Control this frame
 static entityFromHandle(handle): null | Ped | Vehicle | Prop
 ```
 
-Defined in: [src/fivem/Game.ts:463](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L463)
+Defined in: [src/fivem/Game.ts:463](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L463)
 
 Get an entity object from an entity handle.
 
@@ -816,7 +816,7 @@ A Ped, Vehicle or Prop object. `undefined` if entity handle doesn't exist.
 static generateHash(input): number
 ```
 
-Defined in: [src/fivem/Game.ts:15](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L15)
+Defined in: [src/fivem/Game.ts:15](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L15)
 
 Calculate the Jenkins One At A Time (joaat) has from the given string.
 
@@ -838,7 +838,7 @@ Calculate the Jenkins One At A Time (joaat) has from the given string.
 static getGroundHeight(position): number
 ```
 
-Defined in: [src/fivem/Game.ts:578](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L578)
+Defined in: [src/fivem/Game.ts:578](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L578)
 
 #### Parameters
 
@@ -858,7 +858,7 @@ Defined in: [src/fivem/Game.ts:578](https://github.com/nativewrappers/nativewrap
 static getGXTEntry(entry): string
 ```
 
-Defined in: [src/fivem/Game.ts:524](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L524)
+Defined in: [src/fivem/Game.ts:524](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L524)
 
 Returns a localised string from the games language files with a specified GXT key
 
@@ -882,7 +882,7 @@ The localised string if the key exists; otherwise, empty string
 static getWaypointBlip(): null | Blip
 ```
 
-Defined in: [src/fivem/Game.ts:543](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L543)
+Defined in: [src/fivem/Game.ts:543](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L543)
 
 #### Returns
 
@@ -896,7 +896,7 @@ Defined in: [src/fivem/Game.ts:543](https://github.com/nativewrappers/nativewrap
 static isControlEnabled(inputMode, control): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:406](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L406)
+Defined in: [src/fivem/Game.ts:406](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L406)
 
 Check whether a control is enabled this frame.
 
@@ -921,7 +921,7 @@ True or False.
 static isControlJustPressed(inputMode, control): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:322](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L322)
+Defined in: [src/fivem/Game.ts:322](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L322)
 
 Check whether a control has been pressed since last check.
 
@@ -946,7 +946,7 @@ True or False.
 static isControlJustReleased(inputMode, control): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:378](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L378)
+Defined in: [src/fivem/Game.ts:378](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L378)
 
 Check whether a control has been released since last check.
 
@@ -971,7 +971,7 @@ True or False.
 static isControlPressed(inputMode, control): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:294](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L294)
+Defined in: [src/fivem/Game.ts:294](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L294)
 
 Check whether a control is currently pressed.
 
@@ -996,7 +996,7 @@ True or False.
 static isControlReleased(inputMode, control): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:350](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L350)
+Defined in: [src/fivem/Game.ts:350](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L350)
 
 Check whether a control is being released.
 
@@ -1021,7 +1021,7 @@ True or False.
 static isDisabledControlJustPressed(inputMode, control): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:336](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L336)
+Defined in: [src/fivem/Game.ts:336](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L336)
 
 Check whether a disabled control has been pressed since last check.
 
@@ -1046,7 +1046,7 @@ True or False.
 static isDisabledControlJustReleased(inputMode, control): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:392](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L392)
+Defined in: [src/fivem/Game.ts:392](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L392)
 
 Check whether a disabled control has been released since last check.
 
@@ -1071,7 +1071,7 @@ True or False.
 static isDisabledControlPressed(inputMode, control): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:308](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L308)
+Defined in: [src/fivem/Game.ts:308](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L308)
 
 Check whether a disabled control is currently pressed.
 
@@ -1096,7 +1096,7 @@ True or False.
 static isDisabledControlReleased(inputMode, control): boolean
 ```
 
-Defined in: [src/fivem/Game.ts:364](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L364)
+Defined in: [src/fivem/Game.ts:364](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L364)
 
 Check whether a disabled control is being released.
 
@@ -1121,7 +1121,7 @@ True or False.
 static playerList(excludeLocalPlayer): IterableIterator<Player>
 ```
 
-Defined in: [src/fivem/Game.ts:123](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L123)
+Defined in: [src/fivem/Game.ts:123](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L123)
 
 Get an iterable list of players currently on server.
 
@@ -1145,7 +1145,7 @@ Iterable list of Player objects.
 static playMusic(musicFile): void
 ```
 
-Defined in: [src/fivem/Game.ts:490](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L490)
+Defined in: [src/fivem/Game.ts:490](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L490)
 
 Play music. Same as Audio.playSound
 
@@ -1167,7 +1167,7 @@ Play music. Same as Audio.playSound
 static playSound(soundFile, soundSet): void
 ```
 
-Defined in: [src/fivem/Game.ts:481](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L481)
+Defined in: [src/fivem/Game.ts:481](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L481)
 
 Play a sound. Same as Audio.playSound
 
@@ -1190,7 +1190,7 @@ Play a sound. Same as Audio.playSound
 static removeWaypoint(): void
 ```
 
-Defined in: [src/fivem/Game.ts:557](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L557)
+Defined in: [src/fivem/Game.ts:557](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L557)
 
 #### Returns
 
@@ -1204,7 +1204,7 @@ Defined in: [src/fivem/Game.ts:557](https://github.com/nativewrappers/nativewrap
 static resetGhostAlpha(): void
 ```
 
-Defined in: [src/fivem/Game.ts:43](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L43)
+Defined in: [src/fivem/Game.ts:43](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L43)
 
 #### Returns
 
@@ -1218,7 +1218,7 @@ Defined in: [src/fivem/Game.ts:43](https://github.com/nativewrappers/nativewrapp
 static setGhostAlpha(alpha): void
 ```
 
-Defined in: [src/fivem/Game.ts:39](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L39)
+Defined in: [src/fivem/Game.ts:39](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L39)
 
 #### Parameters
 
@@ -1238,7 +1238,7 @@ Defined in: [src/fivem/Game.ts:39](https://github.com/nativewrappers/nativewrapp
 static setGhostingInverted(isInverted): void
 ```
 
-Defined in: [src/fivem/Game.ts:47](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L47)
+Defined in: [src/fivem/Game.ts:47](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L47)
 
 #### Parameters
 
@@ -1258,7 +1258,7 @@ Defined in: [src/fivem/Game.ts:47](https://github.com/nativewrappers/nativewrapp
 static setLocalPlayerGhosted(isGhosted, inverseGhost): void
 ```
 
-Defined in: [src/fivem/Game.ts:31](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L31)
+Defined in: [src/fivem/Game.ts:31](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L31)
 
 #### Parameters
 
@@ -1279,7 +1279,7 @@ Defined in: [src/fivem/Game.ts:31](https://github.com/nativewrappers/nativewrapp
 static stopMusic(musicFile?): void
 ```
 
-Defined in: [src/fivem/Game.ts:499](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Game.ts#L499)
+Defined in: [src/fivem/Game.ts:499](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Game.ts#L499)
 
 Stop music. If `musicFile` is not given, last played music is stopped. Same as Audio.playSound
 

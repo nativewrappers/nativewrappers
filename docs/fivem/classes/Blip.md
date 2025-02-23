@@ -2,7 +2,7 @@
 
 # Class: Blip
 
-Defined in: [src/fivem/Blip.ts:5](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L5)
+Defined in: [src/fivem/Blip.ts:5](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L5)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/fivem/Blip.ts:5](https://github.com/nativewrappers/nativewrappe
 new Blip(handle): Blip
 ```
 
-Defined in: [src/fivem/Blip.ts:8](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L8)
+Defined in: [src/fivem/Blip.ts:8](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L8)
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Defined in: [src/fivem/Blip.ts:8](https://github.com/nativewrappers/nativewrappe
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="handle-1"></a> `handle` | `protected` | `number` | [src/fivem/Blip.ts:6](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L6) |
+| <a id="handle-1"></a> `handle` | `protected` | `number` | [src/fivem/Blip.ts:6](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L6) |
 
 ## Accessors
 
@@ -40,7 +40,7 @@ Defined in: [src/fivem/Blip.ts:8](https://github.com/nativewrappers/nativewrappe
 get Alpha(): number
 ```
 
-Defined in: [src/fivem/Blip.ts:36](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L36)
+Defined in: [src/fivem/Blip.ts:36](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L36)
 
 ##### Returns
 
@@ -52,7 +52,7 @@ Defined in: [src/fivem/Blip.ts:36](https://github.com/nativewrappers/nativewrapp
 set Alpha(alpha): void
 ```
 
-Defined in: [src/fivem/Blip.ts:40](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L40)
+Defined in: [src/fivem/Blip.ts:40](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L40)
 
 ##### Parameters
 
@@ -74,7 +74,7 @@ Defined in: [src/fivem/Blip.ts:40](https://github.com/nativewrappers/nativewrapp
 get Color(): BlipColor
 ```
 
-Defined in: [src/fivem/Blip.ts:52](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L52)
+Defined in: [src/fivem/Blip.ts:52](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L52)
 
 ##### Returns
 
@@ -86,7 +86,7 @@ Defined in: [src/fivem/Blip.ts:52](https://github.com/nativewrappers/nativewrapp
 set Color(color): void
 ```
 
-Defined in: [src/fivem/Blip.ts:56](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L56)
+Defined in: [src/fivem/Blip.ts:56](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L56)
 
 ##### Parameters
 
@@ -108,7 +108,7 @@ Defined in: [src/fivem/Blip.ts:56](https://github.com/nativewrappers/nativewrapp
 set Display(display): void
 ```
 
-Defined in: [src/fivem/Blip.ts:68](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L68)
+Defined in: [src/fivem/Blip.ts:68](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L68)
 
 ##### Parameters
 
@@ -130,7 +130,7 @@ Defined in: [src/fivem/Blip.ts:68](https://github.com/nativewrappers/nativewrapp
 get Entity(): null | BaseEntity
 ```
 
-Defined in: [src/fivem/Blip.ts:82](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L82)
+Defined in: [src/fivem/Blip.ts:82](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L82)
 
 ##### Returns
 
@@ -146,7 +146,7 @@ Defined in: [src/fivem/Blip.ts:82](https://github.com/nativewrappers/nativewrapp
 get Handle(): number
 ```
 
-Defined in: [src/fivem/Blip.ts:12](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L12)
+Defined in: [src/fivem/Blip.ts:12](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L12)
 
 ##### Returns
 
@@ -162,7 +162,7 @@ Defined in: [src/fivem/Blip.ts:12](https://github.com/nativewrappers/nativewrapp
 set IsCrew(crew): void
 ```
 
-Defined in: [src/fivem/Blip.ts:102](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L102)
+Defined in: [src/fivem/Blip.ts:102](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L102)
 
 ##### Parameters
 
@@ -184,7 +184,7 @@ Defined in: [src/fivem/Blip.ts:102](https://github.com/nativewrappers/nativewrap
 get IsFlashing(): boolean
 ```
 
-Defined in: [src/fivem/Blip.ts:106](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L106)
+Defined in: [src/fivem/Blip.ts:106](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L106)
 
 ##### Returns
 
@@ -196,7 +196,7 @@ Defined in: [src/fivem/Blip.ts:106](https://github.com/nativewrappers/nativewrap
 set IsFlashing(flashing): void
 ```
 
-Defined in: [src/fivem/Blip.ts:110](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L110)
+Defined in: [src/fivem/Blip.ts:110](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L110)
 
 ##### Parameters
 
@@ -218,7 +218,7 @@ Defined in: [src/fivem/Blip.ts:110](https://github.com/nativewrappers/nativewrap
 set IsFriend(friend): void
 ```
 
-Defined in: [src/fivem/Blip.ts:98](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L98)
+Defined in: [src/fivem/Blip.ts:98](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L98)
 
 ##### Parameters
 
@@ -240,7 +240,7 @@ Defined in: [src/fivem/Blip.ts:98](https://github.com/nativewrappers/nativewrapp
 set IsFriendly(friendly): void
 ```
 
-Defined in: [src/fivem/Blip.ts:94](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L94)
+Defined in: [src/fivem/Blip.ts:94](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L94)
 
 ##### Parameters
 
@@ -262,7 +262,7 @@ Defined in: [src/fivem/Blip.ts:94](https://github.com/nativewrappers/nativewrapp
 get IsOnMinimap(): boolean
 ```
 
-Defined in: [src/fivem/Blip.ts:114](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L114)
+Defined in: [src/fivem/Blip.ts:114](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L114)
 
 ##### Returns
 
@@ -278,7 +278,7 @@ Defined in: [src/fivem/Blip.ts:114](https://github.com/nativewrappers/nativewrap
 get IsShortRange(): boolean
 ```
 
-Defined in: [src/fivem/Blip.ts:118](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L118)
+Defined in: [src/fivem/Blip.ts:118](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L118)
 
 ##### Returns
 
@@ -290,7 +290,7 @@ Defined in: [src/fivem/Blip.ts:118](https://github.com/nativewrappers/nativewrap
 set IsShortRange(shortRange): void
 ```
 
-Defined in: [src/fivem/Blip.ts:122](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L122)
+Defined in: [src/fivem/Blip.ts:122](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L122)
 
 ##### Parameters
 
@@ -312,7 +312,7 @@ Defined in: [src/fivem/Blip.ts:122](https://github.com/nativewrappers/nativewrap
 set Name(name): void
 ```
 
-Defined in: [src/fivem/Blip.ts:72](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L72)
+Defined in: [src/fivem/Blip.ts:72](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L72)
 
 ##### Parameters
 
@@ -334,7 +334,7 @@ Defined in: [src/fivem/Blip.ts:72](https://github.com/nativewrappers/nativewrapp
 set NumberLabel(number): void
 ```
 
-Defined in: [src/fivem/Blip.ts:48](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L48)
+Defined in: [src/fivem/Blip.ts:48](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L48)
 
 ##### Parameters
 
@@ -356,7 +356,7 @@ Defined in: [src/fivem/Blip.ts:48](https://github.com/nativewrappers/nativewrapp
 get Position(): Vector3
 ```
 
-Defined in: [src/fivem/Blip.ts:16](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L16)
+Defined in: [src/fivem/Blip.ts:16](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L16)
 
 ##### Returns
 
@@ -368,7 +368,7 @@ Defined in: [src/fivem/Blip.ts:16](https://github.com/nativewrappers/nativewrapp
 set Position(location): void
 ```
 
-Defined in: [src/fivem/Blip.ts:20](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L20)
+Defined in: [src/fivem/Blip.ts:20](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L20)
 
 ##### Parameters
 
@@ -390,7 +390,7 @@ Defined in: [src/fivem/Blip.ts:20](https://github.com/nativewrappers/nativewrapp
 set Priority(priority): void
 ```
 
-Defined in: [src/fivem/Blip.ts:44](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L44)
+Defined in: [src/fivem/Blip.ts:44](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L44)
 
 ##### Parameters
 
@@ -412,7 +412,7 @@ Defined in: [src/fivem/Blip.ts:44](https://github.com/nativewrappers/nativewrapp
 set Rotation(rotation): void
 ```
 
-Defined in: [src/fivem/Blip.ts:24](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L24)
+Defined in: [src/fivem/Blip.ts:24](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L24)
 
 ##### Parameters
 
@@ -434,7 +434,7 @@ Defined in: [src/fivem/Blip.ts:24](https://github.com/nativewrappers/nativewrapp
 set Scale(scale): void
 ```
 
-Defined in: [src/fivem/Blip.ts:28](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L28)
+Defined in: [src/fivem/Blip.ts:28](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L28)
 
 ##### Parameters
 
@@ -456,7 +456,7 @@ Defined in: [src/fivem/Blip.ts:28](https://github.com/nativewrappers/nativewrapp
 set ShowHeadingIndicator(show): void
 ```
 
-Defined in: [src/fivem/Blip.ts:86](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L86)
+Defined in: [src/fivem/Blip.ts:86](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L86)
 
 ##### Parameters
 
@@ -478,7 +478,7 @@ Defined in: [src/fivem/Blip.ts:86](https://github.com/nativewrappers/nativewrapp
 set ShowRoute(show): void
 ```
 
-Defined in: [src/fivem/Blip.ts:90](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L90)
+Defined in: [src/fivem/Blip.ts:90](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L90)
 
 ##### Parameters
 
@@ -500,7 +500,7 @@ Defined in: [src/fivem/Blip.ts:90](https://github.com/nativewrappers/nativewrapp
 get Sprite(): BlipSprite
 ```
 
-Defined in: [src/fivem/Blip.ts:60](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L60)
+Defined in: [src/fivem/Blip.ts:60](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L60)
 
 ##### Returns
 
@@ -512,7 +512,7 @@ Defined in: [src/fivem/Blip.ts:60](https://github.com/nativewrappers/nativewrapp
 set Sprite(sprite): void
 ```
 
-Defined in: [src/fivem/Blip.ts:64](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L64)
+Defined in: [src/fivem/Blip.ts:64](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L64)
 
 ##### Parameters
 
@@ -534,7 +534,7 @@ Defined in: [src/fivem/Blip.ts:64](https://github.com/nativewrappers/nativewrapp
 get Type(): number
 ```
 
-Defined in: [src/fivem/Blip.ts:32](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L32)
+Defined in: [src/fivem/Blip.ts:32](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L32)
 
 ##### Returns
 
@@ -548,7 +548,7 @@ Defined in: [src/fivem/Blip.ts:32](https://github.com/nativewrappers/nativewrapp
 delete(): void
 ```
 
-Defined in: [src/fivem/Blip.ts:130](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L130)
+Defined in: [src/fivem/Blip.ts:130](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L130)
 
 #### Returns
 
@@ -562,7 +562,7 @@ Defined in: [src/fivem/Blip.ts:130](https://github.com/nativewrappers/nativewrap
 exists(): boolean
 ```
 
-Defined in: [src/fivem/Blip.ts:136](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L136)
+Defined in: [src/fivem/Blip.ts:136](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L136)
 
 #### Returns
 
@@ -576,7 +576,7 @@ Defined in: [src/fivem/Blip.ts:136](https://github.com/nativewrappers/nativewrap
 removeNumberLabel(): void
 ```
 
-Defined in: [src/fivem/Blip.ts:126](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L126)
+Defined in: [src/fivem/Blip.ts:126](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L126)
 
 #### Returns
 
@@ -590,7 +590,7 @@ Defined in: [src/fivem/Blip.ts:126](https://github.com/nativewrappers/nativewrap
 setNameToPlayerName(player): void
 ```
 
-Defined in: [src/fivem/Blip.ts:78](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/fivem/Blip.ts#L78)
+Defined in: [src/fivem/Blip.ts:78](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/fivem/Blip.ts#L78)
 
 #### Parameters
 

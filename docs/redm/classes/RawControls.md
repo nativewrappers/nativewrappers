@@ -2,7 +2,7 @@
 
 # Class: RawControls
 
-Defined in: [src/redm/RawControls.ts:9](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/RawControls.ts#L9)
+Defined in: [src/redm/RawControls.ts:9](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/redm/RawControls.ts#L9)
 
 ## Constructors
 
@@ -24,7 +24,7 @@ new RawControls(): RawControls
 static IsKeyDown(rawKey): boolean
 ```
 
-Defined in: [src/redm/RawControls.ts:10](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/RawControls.ts#L10)
+Defined in: [src/redm/RawControls.ts:10](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/redm/RawControls.ts#L10)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [src/redm/RawControls.ts:10](https://github.com/nativewrappers/nativ
 static IsKeyPressed(rawKey): boolean
 ```
 
-Defined in: [src/redm/RawControls.ts:14](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/RawControls.ts#L14)
+Defined in: [src/redm/RawControls.ts:14](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/redm/RawControls.ts#L14)
 
 #### Parameters
 
@@ -64,7 +64,7 @@ Defined in: [src/redm/RawControls.ts:14](https://github.com/nativewrappers/nativ
 static IsKeyReleased(rawKey): boolean
 ```
 
-Defined in: [src/redm/RawControls.ts:18](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/RawControls.ts#L18)
+Defined in: [src/redm/RawControls.ts:18](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/redm/RawControls.ts#L18)
 
 #### Parameters
 
@@ -84,7 +84,7 @@ Defined in: [src/redm/RawControls.ts:18](https://github.com/nativewrappers/nativ
 static IsKeyUp(rawKey): boolean
 ```
 
-Defined in: [src/redm/RawControls.ts:22](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/redm/RawControls.ts#L22)
+Defined in: [src/redm/RawControls.ts:22](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/redm/RawControls.ts#L22)
 
 #### Parameters
 

@@ -2,7 +2,7 @@
 
 # Class: Quaternion
 
-Defined in: [src/common/utils/Quaternion.ts:3](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/utils/Quaternion.ts#L3)
+Defined in: [src/common/utils/Quaternion.ts:3](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/utils/Quaternion.ts#L3)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/common/utils/Quaternion.ts:3](https://github.com/nativewrappers
 new Quaternion(value): Quaternion
 ```
 
-Defined in: [src/common/utils/Quaternion.ts:9](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/utils/Quaternion.ts#L9)
+Defined in: [src/common/utils/Quaternion.ts:9](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/utils/Quaternion.ts#L9)
 
 #### Parameters
 
@@ -30,7 +30,7 @@ Defined in: [src/common/utils/Quaternion.ts:9](https://github.com/nativewrappers
 new Quaternion(vector, w): Quaternion
 ```
 
-Defined in: [src/common/utils/Quaternion.ts:10](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/utils/Quaternion.ts#L10)
+Defined in: [src/common/utils/Quaternion.ts:10](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/utils/Quaternion.ts#L10)
 
 #### Parameters
 
@@ -53,7 +53,7 @@ new Quaternion(
    w): Quaternion
 ```
 
-Defined in: [src/common/utils/Quaternion.ts:11](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/utils/Quaternion.ts#L11)
+Defined in: [src/common/utils/Quaternion.ts:11](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/utils/Quaternion.ts#L11)
 
 #### Parameters
 
@@ -72,7 +72,7 @@ Defined in: [src/common/utils/Quaternion.ts:11](https://github.com/nativewrapper
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="w-2"></a> `w` | `public` | `number` | [src/common/utils/Quaternion.ts:7](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/utils/Quaternion.ts#L7) |
-| <a id="x-1"></a> `x` | `public` | `number` | [src/common/utils/Quaternion.ts:4](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/utils/Quaternion.ts#L4) |
-| <a id="y-1"></a> `y` | `public` | `number` | [src/common/utils/Quaternion.ts:5](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/utils/Quaternion.ts#L5) |
-| <a id="z-1"></a> `z` | `public` | `number` | [src/common/utils/Quaternion.ts:6](https://github.com/nativewrappers/nativewrappers/blob/0bf5a50fdb39736240229f922b5089be4fd3a85c/src/common/utils/Quaternion.ts#L6) |
+| <a id="w-2"></a> `w` | `public` | `number` | [src/common/utils/Quaternion.ts:7](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/utils/Quaternion.ts#L7) |
+| <a id="x-1"></a> `x` | `public` | `number` | [src/common/utils/Quaternion.ts:4](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/utils/Quaternion.ts#L4) |
+| <a id="y-1"></a> `y` | `public` | `number` | [src/common/utils/Quaternion.ts:5](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/utils/Quaternion.ts#L5) |
+| <a id="z-1"></a> `z` | `public` | `number` | [src/common/utils/Quaternion.ts:6](https://github.com/nativewrappers/nativewrappers/blob/c639ec5cd28328d6b44c7ebf73de56bb1b4bef7d/src/common/utils/Quaternion.ts#L6) |
