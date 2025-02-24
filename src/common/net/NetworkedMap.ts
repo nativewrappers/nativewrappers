@@ -1,4 +1,3 @@
-import { Event } from "@common/decors/Events";
 import { GlobalData } from "@common/GlobalData";
 import type { Buffer } from "buffer";
 
@@ -24,6 +23,58 @@ declare function msgpack_unpack(data: Buffer): any;
 
 type ChangeListener<V> = (value: V) => void;
 
+type HandleSyncCall = (data: any) => void;
+
+// Used to not make a bunch of on/raw events, we just reuse the same one and look up the data in the map
+class NetworkedMapEventManager {
+  #syncedCalls = new Map<string, typeof NetworkedMap>();
+  #playerDropped: Map<string, (() => void)> = new Map();
+
+  constructor() {
+    SERVER: if (GlobalData.IS_SERVER) {
+      on("playerDropped", () => {
+        // call the player dropped for each call
+        for (const [_k, fn] of this.#playerDropped) {
+          fn();
+        }
+      })
+      return;
+    }
+    CLIENT: {
+      RegisterResourceAsEventHandler(`${GlobalData.CurrentResource}:syncChanges`);
+      addRawEventListener(`${GlobalData.CurrentResource}:syncChanges`, (msgpack_data: any) => {
+        const data = msgpack_unpack(msgpack_data);
+        const syncName = data[0];
+        const syncData = data[1];
+
+        const map = this.#syncedCalls.get(syncName);
+
+        if (!map) {
+          throw new Error(`Tried to sync changes for a networked map but ${syncName} does't exist.`);
+        }
+
+        // @ts-ignore
+        map.handleSync(syncData);
+      });
+    }
+  }
+
+  add_networked_map<K, V>(map: NetworkedMap<K, V>) {
+    // abuse typescript, we don't want the end user to use these calls but we still want it to be accessible internally.
+    // @ts-ignore
+    this.#syncedCalls.set(map.SyncName, map);
+    // @ts-ignore
+    this.#playerDropped.set(map.SyncName, map.onPlayerDropped)
+  }
+
+  remove_networked_map(syncName: string) {
+    this.#syncedCalls.delete(syncName);
+    this.#playerDropped.delete(syncName);
+  }
+}
+
+const netManager = new NetworkedMapEventManager();
+
 /**
  * not ready to be used just thoughts right now
  */
@@ -39,7 +90,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
 
     GlobalData.NetworkedTicks.push(this);
 
-    on("playerDropped", () => this.onPlayerDropped());
+    netManager.add_networked_map(this);
 
     // if we don't have a network tick then we want to register it.
     SERVER: {
@@ -52,13 +103,10 @@ export class NetworkedMap<K, V> extends Map<K, V> {
       }
     }
 
-    SERVER: if (GlobalData.IS_SERVER) return;
-    CLIENT: {
-      RegisterResourceAsEventHandler(`${this.#syncName}:syncChanges`);
-      addRawEventListener(`${this.#syncName}:syncChanges`, (data: any) =>
-        this.#handleSync(data),
-      );
-    }
+  }
+
+  get SyncName() {
+    return this.#syncName;
   }
 
   // handles removing the player from the map whenever they're dropped
@@ -72,10 +120,11 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   addSubscriber(sub: number) {
     this.#subscribers.add(sub);
     const packed_data = msgpack_pack([
-      [MapChangeType.Init, this.size === 0 ? [] : Array.from(this)],
+      this.#syncName,
+      [[MapChangeType.Init, this.size === 0 ? [] : Array.from(this)]],
     ]);
     TriggerClientEventInternal(
-      `${this.#syncName}:syncChanges`,
+      `${GlobalData.CurrentResource}:syncChanges`,
       sub as any,
       packed_data as any,
       packed_data.length,
@@ -90,8 +139,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     return this.#subscribers.has(sub);
   }
 
-  #handleSync(msgpack_data: Buffer) {
-    const data = msgpack_unpack(msgpack_data);
+  private handleSync(data: MapChanges<K, V>[]) {
     for (const [change_type, key, value, possibly_undefined_subvalue] of data) {
       switch (change_type) {
         case MapChangeType.Add: {
@@ -133,10 +181,10 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   }
 
   #triggerEventForSubscribers(data: any) {
-    const packed_data = msgpack_pack(data);
+    const packed_data = msgpack_pack([this.#syncName, data]);
     for (const sub of this.#subscribers) {
       TriggerClientEventInternal(
-        `${this.#syncName}:syncChanges`,
+        `${GlobalData.CurrentResource}:syncChanges`,
         sub as any,
         packed_data as any,
         packed_data.length,
@@ -218,11 +266,11 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   }
 
   [Symbol.dispose]() {
-    removeEventListener("playerDropped", this.onPlayerDropped);
-
     this.#subscribers.clear();
     this.#changeListeners.clear();
     this.#queuedChanges = [];
+
+    netManager.remove_networked_map(this.#syncName);
 
     GlobalData.NetworkedTicks.filter((v) => v !== this);
   }
