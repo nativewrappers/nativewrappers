@@ -2,7 +2,7 @@
 
 # Class: UIMenuGridPanel
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:8](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L8)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:8](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L8)
 
 ## Extends
 
@@ -21,7 +21,7 @@ new UIMenuGridPanel(
    circlePosition?): UIMenuGridPanel
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:27](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L27)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:27](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L27)
 
 #### Parameters
 
@@ -45,10 +45,10 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:27](https://githu
 
 | Property | Modifier | Type | Default value | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| <a id="background"></a> `background` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`background`](AbstractUIMenuPanel.md#background) | - | [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:9](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L9) |
-| <a id="enabled"></a> `enabled` | `protected` | `boolean` | `true` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`enabled`](AbstractUIMenuPanel.md#enabled) | [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:10](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L10) |
-| <a id="id"></a> `id` | `readonly` | `string` | `undefined` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`id`](AbstractUIMenuPanel.md#id) | [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:7](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L7) |
-| <a id="parentitem"></a> `parentItem?` | `protected` | [`UIMenuItem`](UIMenuItem.md) | `undefined` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`parentItem`](AbstractUIMenuPanel.md#parentitem) | [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:9](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L9) |
+| <a id="background"></a> `background` | `readonly` | [`Sprite`](Sprite.md) | `undefined` | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`background`](AbstractUIMenuPanel.md#background) | - | [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:9](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L9) |
+| <a id="enabled"></a> `enabled` | `protected` | `boolean` | `true` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`enabled`](AbstractUIMenuPanel.md#enabled) | [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:10](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L10) |
+| <a id="id"></a> `id` | `readonly` | `string` | `undefined` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`id`](AbstractUIMenuPanel.md#id) | [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:7](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L7) |
+| <a id="parentitem"></a> `parentItem?` | `protected` | [`UIMenuItem`](UIMenuItem.md) | `undefined` | - | [`AbstractUIMenuPanel`](AbstractUIMenuPanel.md).[`parentItem`](AbstractUIMenuPanel.md#parentitem) | [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:9](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L9) |
 
 ## Accessors
 
@@ -60,7 +60,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:27](https://githu
 get BottomText(): string
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:86](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L86)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:86](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L86)
 
 ##### Returns
 
@@ -72,7 +72,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:86](https://githu
 set BottomText(value): void
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:90](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L90)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:90](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L90)
 
 ##### Parameters
 
@@ -94,7 +94,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:90](https://githu
 get CirclePosition(): Point
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:94](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L94)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:94](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L94)
 
 ##### Returns
 
@@ -106,7 +106,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:94](https://githu
 set CirclePosition(position): void
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:113](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L113)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:113](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L113)
 
 ##### Parameters
 
@@ -128,7 +128,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:113](https://gith
 set CirclePositionX(x): void
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:118](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L118)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:118](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L118)
 
 ##### Parameters
 
@@ -150,7 +150,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:118](https://gith
 set CirclePositionY(y): void
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:131](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L131)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:131](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L131)
 
 ##### Parameters
 
@@ -172,7 +172,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:131](https://gith
 get Enabled(): boolean
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:26](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L26)
+Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:26](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L26)
 
 ##### Returns
 
@@ -184,7 +184,7 @@ Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:26](https://g
 set Enabled(value): void
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:30](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L30)
+Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:30](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L30)
 
 ##### Parameters
 
@@ -210,7 +210,7 @@ Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:30](https://g
 get Height(): number
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:34](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L34)
+Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:34](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L34)
 
 ##### Returns
 
@@ -230,7 +230,7 @@ Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:34](https://g
 get LeftText(): string
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:70](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L70)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:70](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L70)
 
 ##### Returns
 
@@ -242,7 +242,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:70](https://githu
 set LeftText(value): void
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:74](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L74)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:74](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L74)
 
 ##### Parameters
 
@@ -264,7 +264,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:74](https://githu
 get LockXAxis(): boolean
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:144](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L144)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:144](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L144)
 
 ##### Returns
 
@@ -276,7 +276,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:144](https://gith
 set LockXAxis(value): void
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:148](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L148)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:148](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L148)
 
 ##### Parameters
 
@@ -298,7 +298,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:148](https://gith
 get LockYAxis(): boolean
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:158](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L158)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:158](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L158)
 
 ##### Returns
 
@@ -310,7 +310,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:158](https://gith
 set LockYAxis(value): void
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:162](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L162)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:162](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L162)
 
 ##### Parameters
 
@@ -332,7 +332,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:162](https://gith
 get ParentItem(): undefined | UIMenuItem
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:18](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L18)
+Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:18](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L18)
 
 ##### Returns
 
@@ -344,7 +344,7 @@ Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:18](https://g
 set ParentItem(value): void
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:22](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L22)
+Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:22](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L22)
 
 ##### Parameters
 
@@ -370,7 +370,7 @@ Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:22](https://g
 get ParentMenu(): undefined | Menu
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:14](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L14)
+Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:14](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts#L14)
 
 ##### Returns
 
@@ -390,7 +390,7 @@ Defined in: [src/fivem/ui/menu/items/panels/AbstractUIMenuPanel.ts:14](https://g
 get RightText(): string
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:78](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L78)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:78](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L78)
 
 ##### Returns
 
@@ -402,7 +402,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:78](https://githu
 set RightText(value): void
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:82](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L82)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:82](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L82)
 
 ##### Parameters
 
@@ -424,7 +424,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:82](https://githu
 get TopText(): string
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:62](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L62)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:62](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L62)
 
 ##### Returns
 
@@ -436,7 +436,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:62](https://githu
 set TopText(value): void
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:66](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L66)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:66](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L66)
 
 ##### Parameters
 
@@ -456,7 +456,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:66](https://githu
 draw(): void
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:201](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L201)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:201](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L201)
 
 #### Returns
 
@@ -474,7 +474,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:201](https://gith
 setVerticalPosition(y): void
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:184](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L184)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:184](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L184)
 
 #### Parameters
 
@@ -498,7 +498,7 @@ Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:184](https://gith
 updateParentItem(): void
 ```
 
-Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:172](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L172)
+Defined in: [src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts:172](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/menu/items/panels/UIMenuGridPanel.ts#L172)
 
 #### Returns
 

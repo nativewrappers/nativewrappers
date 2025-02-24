@@ -2,7 +2,7 @@
 
 # Class: `abstract` LoadingPrompt
 
-Defined in: [src/fivem/ui/LoadingPrompt.ts:18](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/LoadingPrompt.ts#L18)
+Defined in: [src/fivem/ui/LoadingPrompt.ts:18](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/LoadingPrompt.ts#L18)
 
 Show and hide loading prompt on the bottom right of the screen.
 
@@ -40,7 +40,7 @@ new LoadingPrompt(): LoadingPrompt
 get static IsActive(): boolean
 ```
 
-Defined in: [src/fivem/ui/LoadingPrompt.ts:49](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/LoadingPrompt.ts#L49)
+Defined in: [src/fivem/ui/LoadingPrompt.ts:49](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/LoadingPrompt.ts#L49)
 
 ##### Returns
 
@@ -54,7 +54,7 @@ Defined in: [src/fivem/ui/LoadingPrompt.ts:49](https://github.com/nativewrappers
 static hide(): void
 ```
 
-Defined in: [src/fivem/ui/LoadingPrompt.ts:43](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/LoadingPrompt.ts#L43)
+Defined in: [src/fivem/ui/LoadingPrompt.ts:43](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/LoadingPrompt.ts#L43)
 
 #### Returns
 
@@ -68,7 +68,7 @@ Defined in: [src/fivem/ui/LoadingPrompt.ts:43](https://github.com/nativewrappers
 static show(loadingText, spinnerType): void
 ```
 
-Defined in: [src/fivem/ui/LoadingPrompt.ts:25](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/fivem/ui/LoadingPrompt.ts#L25)
+Defined in: [src/fivem/ui/LoadingPrompt.ts:25](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/LoadingPrompt.ts#L25)
 
 Shows a loading prompt.
 

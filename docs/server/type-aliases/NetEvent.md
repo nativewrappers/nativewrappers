@@ -6,7 +6,7 @@
 type NetEvent = (player, ...args) => void;
 ```
 
-Defined in: [src/server/Events.ts:6](https://github.com/nativewrappers/nativewrappers/blob/84be26c83fecd998aefe2c41198ac733aa3abad7/src/server/Events.ts#L6)
+Defined in: [src/server/Events.ts:6](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/server/Events.ts#L6)
 
 ## Parameters
 
