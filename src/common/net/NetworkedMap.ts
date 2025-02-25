@@ -25,15 +25,15 @@ type ChangeListener<V> = (value: V) => void;
 
 // Used to not make a bunch of on/raw events, we just reuse the same one and look up the data in the map
 class NetworkedMapEventManager {
-  #syncedCalls = new Map<string, typeof NetworkedMap>();
-  #playerDropped: Map<string, () => void> = new Map();
+  #syncedCalls = new Map<string, NetworkedMap<any, any>>();
 
   constructor() {
     SERVER: if (GlobalData.IS_SERVER) {
       on("playerDropped", () => {
+        const src = source;
         // call the player dropped for each call
-        for (const [_k, fn] of this.#playerDropped) {
-          fn();
+        for (const [_k, map] of this.#syncedCalls) {
+          map.removeSubscriber(src);
         }
       });
       return;
@@ -68,8 +68,6 @@ class NetworkedMapEventManager {
     // abuse typescript, we don't want the end user to use these calls but we still want it to be accessible internally.
     // @ts-ignore
     this.#syncedCalls.set(map.SyncName, map);
-    // @ts-ignore
-    this.#playerDropped.set(map.SyncName, map.onPlayerDropped);
   }
 
   removeNetworkedMap(syncName: string) {
