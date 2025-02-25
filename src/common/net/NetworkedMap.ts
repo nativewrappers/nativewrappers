@@ -72,7 +72,6 @@ class NetworkedMapEventManager {
 
   removeNetworkedMap(syncName: string) {
     this.#syncedCalls.delete(syncName);
-    this.#playerDropped.delete(syncName);
   }
 }
 
