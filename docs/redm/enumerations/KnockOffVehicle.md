@@ -2,13 +2,13 @@
 
 # Enumeration: KnockOffVehicle
 
-Defined in: [src/redm/enums/Ped.ts:1](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/enums/Ped.ts#L1)
+Defined in: [src/redm/enums/Ped.ts:1](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/enums/Ped.ts#L1)
 
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| <a id="default"></a> `Default` | `0` | [src/redm/enums/Ped.ts:2](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/enums/Ped.ts#L2) |
-| <a id="easy"></a> `Easy` | `2` | [src/redm/enums/Ped.ts:4](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/enums/Ped.ts#L4) |
-| <a id="hard"></a> `Hard` | `3` | [src/redm/enums/Ped.ts:5](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/enums/Ped.ts#L5) |
-| <a id="never"></a> `Never` | `1` | [src/redm/enums/Ped.ts:3](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/enums/Ped.ts#L3) |
+| <a id="default"></a> `Default` | `0` | [src/redm/enums/Ped.ts:2](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/enums/Ped.ts#L2) |
+| <a id="easy"></a> `Easy` | `2` | [src/redm/enums/Ped.ts:4](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/enums/Ped.ts#L4) |
+| <a id="hard"></a> `Hard` | `3` | [src/redm/enums/Ped.ts:5](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/enums/Ped.ts#L5) |
+| <a id="never"></a> `Never` | `1` | [src/redm/enums/Ped.ts:3](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/enums/Ped.ts#L3) |

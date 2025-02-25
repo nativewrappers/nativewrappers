@@ -2,7 +2,7 @@
 
 # Class: AsynchronousRaycastResult
 
-Defined in: [src/fivem/Raycast.ts:125](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/Raycast.ts#L125)
+Defined in: [src/fivem/Raycast.ts:125](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Raycast.ts#L125)
 
 ## Extends
 
@@ -16,7 +16,7 @@ Defined in: [src/fivem/Raycast.ts:125](https://github.com/nativewrappers/nativew
 new AsynchronousRaycastResult(handle): AsynchronousRaycastResult
 ```
 
-Defined in: [src/fivem/Raycast.ts:105](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/Raycast.ts#L105)
+Defined in: [src/fivem/Raycast.ts:105](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Raycast.ts#L105)
 
 Create a RaycastResult object that gets the results from a StartShapeTestRay()
 
@@ -46,7 +46,7 @@ RaycastResult.constructor
 get DidHit(): boolean
 ```
 
-Defined in: [src/fivem/Raycast.ts:35](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/Raycast.ts#L35)
+Defined in: [src/fivem/Raycast.ts:35](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Raycast.ts#L35)
 
 Whether we hit anything.
 
@@ -70,7 +70,7 @@ RaycastResult.DidHit
 get DidHitEntity(): boolean
 ```
 
-Defined in: [src/fivem/Raycast.ts:42](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/Raycast.ts#L42)
+Defined in: [src/fivem/Raycast.ts:42](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Raycast.ts#L42)
 
 Whether the entity hit exists.
 
@@ -94,7 +94,7 @@ RaycastResult.DidHitEntity
 get HasResolved(): boolean
 ```
 
-Defined in: [src/fivem/Raycast.ts:72](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/Raycast.ts#L72)
+Defined in: [src/fivem/Raycast.ts:72](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Raycast.ts#L72)
 
 NOTE: These will not be updated unless polled by `resolve` or the shape
 test is synchronous
@@ -121,7 +121,7 @@ RaycastResult.HasResolved
 get HitEntity(): null | Ped | Vehicle | Prop
 ```
 
-Defined in: [src/fivem/Raycast.ts:14](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/Raycast.ts#L14)
+Defined in: [src/fivem/Raycast.ts:14](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Raycast.ts#L14)
 
 Return the entity that was hit.
 
@@ -145,7 +145,7 @@ RaycastResult.HitEntity
 get HitPosition(): Vector3
 ```
 
-Defined in: [src/fivem/Raycast.ts:21](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/Raycast.ts#L21)
+Defined in: [src/fivem/Raycast.ts:21](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Raycast.ts#L21)
 
 Get the position of the entity that was hit.
 
@@ -169,7 +169,7 @@ RaycastResult.HitPosition
 get Material(): MaterialHash
 ```
 
-Defined in: [src/fivem/Raycast.ts:49](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/Raycast.ts#L49)
+Defined in: [src/fivem/Raycast.ts:49](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Raycast.ts#L49)
 
 Material type that was hit.
 
@@ -193,7 +193,7 @@ RaycastResult.Material
 get Result(): number
 ```
 
-Defined in: [src/fivem/Raycast.ts:56](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/Raycast.ts#L56)
+Defined in: [src/fivem/Raycast.ts:56](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Raycast.ts#L56)
 
 Raycast result's handle.
 
@@ -217,7 +217,7 @@ RaycastResult.Result
 get SurfaceNormal(): Vector3
 ```
 
-Defined in: [src/fivem/Raycast.ts:28](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/Raycast.ts#L28)
+Defined in: [src/fivem/Raycast.ts:28](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Raycast.ts#L28)
 
 Return the vector perpendicular to the tangent plane.
 
@@ -241,7 +241,7 @@ RaycastResult.SurfaceNormal
 get WasDiscarded(): boolean
 ```
 
-Defined in: [src/fivem/Raycast.ts:63](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/Raycast.ts#L63)
+Defined in: [src/fivem/Raycast.ts:63](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Raycast.ts#L63)
 
 ##### Returns
 
@@ -263,7 +263,7 @@ RaycastResult.WasDiscarded
 protected applyShapeTestResults(): void
 ```
 
-Defined in: [src/fivem/Raycast.ts:76](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/Raycast.ts#L76)
+Defined in: [src/fivem/Raycast.ts:76](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Raycast.ts#L76)
 
 #### Returns
 
@@ -283,7 +283,7 @@ RaycastResult.applyShapeTestResults
 resolve(timeoutInMs): Promise<void>
 ```
 
-Defined in: [src/fivem/Raycast.ts:130](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/Raycast.ts#L130)
+Defined in: [src/fivem/Raycast.ts:130](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Raycast.ts#L130)
 
 waits until the shape test handle is valid and then sets the expected
 values on the RaycastResult

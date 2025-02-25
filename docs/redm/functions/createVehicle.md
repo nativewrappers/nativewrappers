@@ -13,7 +13,7 @@ function createVehicle(
 p8): Promise<Vehicle | null>
 ```
 
-Defined in: [src/redm/world/createVehicle.ts:8](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/world/createVehicle.ts#L8)
+Defined in: [src/redm/world/createVehicle.ts:8](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/world/createVehicle.ts#L8)
 
 Creates a vehicle at the specified {@param spawnPos}, you don't need to request the model before this.
 

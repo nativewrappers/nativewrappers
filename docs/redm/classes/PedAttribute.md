@@ -2,7 +2,7 @@
 
 # Class: PedAttribute
 
-Defined in: [src/redm/Attribute.ts:62](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/Attribute.ts#L62)
+Defined in: [src/redm/Attribute.ts:62](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/Attribute.ts#L62)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/redm/Attribute.ts:62](https://github.com/nativewrappers/nativew
 new PedAttribute(ped, attribute): PedAttribute
 ```
 
-Defined in: [src/redm/Attribute.ts:65](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/Attribute.ts#L65)
+Defined in: [src/redm/Attribute.ts:65](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/Attribute.ts#L65)
 
 #### Parameters
 
@@ -35,7 +35,7 @@ Defined in: [src/redm/Attribute.ts:65](https://github.com/nativewrappers/nativew
 get BaseRank(): number
 ```
 
-Defined in: [src/redm/Attribute.ts:114](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/Attribute.ts#L114)
+Defined in: [src/redm/Attribute.ts:114](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/Attribute.ts#L114)
 
 ##### Returns
 
@@ -47,7 +47,7 @@ Defined in: [src/redm/Attribute.ts:114](https://github.com/nativewrappers/native
 set BaseRank(amount): void
 ```
 
-Defined in: [src/redm/Attribute.ts:110](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/Attribute.ts#L110)
+Defined in: [src/redm/Attribute.ts:110](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/Attribute.ts#L110)
 
 ##### Parameters
 
@@ -69,7 +69,7 @@ Defined in: [src/redm/Attribute.ts:110](https://github.com/nativewrappers/native
 get BonusRank(): number
 ```
 
-Defined in: [src/redm/Attribute.ts:122](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/Attribute.ts#L122)
+Defined in: [src/redm/Attribute.ts:122](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/Attribute.ts#L122)
 
 ##### Returns
 
@@ -81,7 +81,7 @@ Defined in: [src/redm/Attribute.ts:122](https://github.com/nativewrappers/native
 set BonusRank(amount): void
 ```
 
-Defined in: [src/redm/Attribute.ts:118](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/Attribute.ts#L118)
+Defined in: [src/redm/Attribute.ts:118](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/Attribute.ts#L118)
 
 ##### Parameters
 
@@ -103,7 +103,7 @@ Defined in: [src/redm/Attribute.ts:118](https://github.com/nativewrappers/native
 get MaxRank(): number
 ```
 
-Defined in: [src/redm/Attribute.ts:126](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/Attribute.ts#L126)
+Defined in: [src/redm/Attribute.ts:126](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/Attribute.ts#L126)
 
 ##### Returns
 
@@ -119,7 +119,7 @@ Defined in: [src/redm/Attribute.ts:126](https://github.com/nativewrappers/native
 get Overpowered(): boolean
 ```
 
-Defined in: [src/redm/Attribute.ts:135](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/Attribute.ts#L135)
+Defined in: [src/redm/Attribute.ts:135](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/Attribute.ts#L135)
 
 ##### Returns
 
@@ -135,7 +135,7 @@ Defined in: [src/redm/Attribute.ts:135](https://github.com/nativewrappers/native
 get Points(): number
 ```
 
-Defined in: [src/redm/Attribute.ts:98](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/Attribute.ts#L98)
+Defined in: [src/redm/Attribute.ts:98](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/Attribute.ts#L98)
 
 Gets the amount of attribute points the ped has
 
@@ -149,7 +149,7 @@ Gets the amount of attribute points the ped has
 set Points(amount): void
 ```
 
-Defined in: [src/redm/Attribute.ts:102](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/Attribute.ts#L102)
+Defined in: [src/redm/Attribute.ts:102](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/Attribute.ts#L102)
 
 ##### Parameters
 
@@ -171,7 +171,7 @@ Defined in: [src/redm/Attribute.ts:102](https://github.com/nativewrappers/native
 get Rank(): number
 ```
 
-Defined in: [src/redm/Attribute.ts:106](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/Attribute.ts#L106)
+Defined in: [src/redm/Attribute.ts:106](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/Attribute.ts#L106)
 
 ##### Returns
 
@@ -185,7 +185,7 @@ Defined in: [src/redm/Attribute.ts:106](https://github.com/nativewrappers/native
 addPoints(amount): void
 ```
 
-Defined in: [src/redm/Attribute.ts:74](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/Attribute.ts#L74)
+Defined in: [src/redm/Attribute.ts:74](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/Attribute.ts#L74)
 
 #### Parameters
 
@@ -205,7 +205,7 @@ Defined in: [src/redm/Attribute.ts:74](https://github.com/nativewrappers/nativew
 disableOverpower(): void
 ```
 
-Defined in: [src/redm/Attribute.ts:81](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/Attribute.ts#L81)
+Defined in: [src/redm/Attribute.ts:81](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/Attribute.ts#L81)
 
 Disables the overpower state on this attribute, see [enableOverpower](PedAttribute.md#enableoverpower) on how to enable
 
@@ -221,7 +221,7 @@ Disables the overpower state on this attribute, see [enableOverpower](PedAttribu
 enableOverpower(amount, makeSound): void
 ```
 
-Defined in: [src/redm/Attribute.ts:90](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/Attribute.ts#L90)
+Defined in: [src/redm/Attribute.ts:90](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/Attribute.ts#L90)
 
 #### Parameters
 
