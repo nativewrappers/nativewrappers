@@ -23,8 +23,6 @@ declare function msgpack_unpack(data: Buffer): any;
 
 type ChangeListener<V> = (value: V) => void;
 
-type HandleSyncCall = (data: any) => void;
-
 // Used to not make a bunch of on/raw events, we just reuse the same one and look up the data in the map
 class NetworkedMapEventManager {
   #syncedCalls = new Map<string, typeof NetworkedMap>();
@@ -121,20 +119,29 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   }
 
   /*
-   * Adds a new subscriber to the map, if the
+   * Resyncs the entire map to the client, useful for if there's a mismatch in the clients map (when multiple players change things, in cases like inventories)
+   *
+   * NOTE: This doesn't check that the player is already subscribed to the map, you should do your own due-diligence to only call this for players already subscribed
    */
-  addSubscriber(sub: number) {
-    this.#subscribers.add(sub);
+  resync(source: number) {
     const packed_data = msgpack_pack([
       this.#syncName,
       [[MapChangeType.Init, this.size === 0 ? [] : Array.from(this)]],
     ]);
     TriggerClientEventInternal(
       `${GlobalData.CurrentResource}:syncChanges`,
-      sub as any,
+      source as any,
       packed_data as any,
       packed_data.length,
     );
+  }
+
+  /*
+   * Adds a new subscriber to the map
+   */
+  addSubscriber(source: number) {
+    this.#subscribers.add(source);
+    this.resync(source);
   }
 
   removeSubscriber(sub: number): boolean {
@@ -161,6 +168,8 @@ export class NetworkedMap<K, V> extends Map<K, V> {
           continue;
         }
         case MapChangeType.Init: {
+          // We also use this for whenever we want to resync a table
+          super.clear();
           const key_value = key as [K, V][];
           for (const [k, v] of key_value) {
             this.set(k, v);
@@ -249,6 +258,9 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     return this;
   }
 
+  /*
+   * Resets the map to its default state
+   */
   clear(): void {
     CLIENT: throw new Error(`Cannot call 'clear' on client`);
     // if we're clearing our map then we want to remove all queued changes and
