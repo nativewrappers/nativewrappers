@@ -2,13 +2,13 @@
 
 # Enumeration: InvertAxisFlags
 
-Defined in: [src/fivem/enums/InvertAxis.ts:5](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/enums/InvertAxis.ts#L5)
+Defined in: [src/fivem/enums/InvertAxis.ts:5](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/enums/InvertAxis.ts#L5)
 
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| <a id="none"></a> `None` | `0` | [src/fivem/enums/InvertAxis.ts:6](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/enums/InvertAxis.ts#L6) |
-| <a id="x"></a> `X` | `1` | [src/fivem/enums/InvertAxis.ts:7](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/enums/InvertAxis.ts#L7) |
-| <a id="y"></a> `Y` | `2` | [src/fivem/enums/InvertAxis.ts:8](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/enums/InvertAxis.ts#L8) |
-| <a id="z"></a> `Z` | `4` | [src/fivem/enums/InvertAxis.ts:9](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/enums/InvertAxis.ts#L9) |
+| <a id="none"></a> `None` | `0` | [src/fivem/enums/InvertAxis.ts:6](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/enums/InvertAxis.ts#L6) |
+| <a id="x"></a> `X` | `1` | [src/fivem/enums/InvertAxis.ts:7](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/enums/InvertAxis.ts#L7) |
+| <a id="y"></a> `Y` | `2` | [src/fivem/enums/InvertAxis.ts:8](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/enums/InvertAxis.ts#L8) |
+| <a id="z"></a> `Z` | `4` | [src/fivem/enums/InvertAxis.ts:9](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/enums/InvertAxis.ts#L9) |

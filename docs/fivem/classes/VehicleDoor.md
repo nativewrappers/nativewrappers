@@ -2,7 +2,7 @@
 
 # Class: VehicleDoor
 
-Defined in: [src/fivem/models/VehicleDoor.ts:4](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/models/VehicleDoor.ts#L4)
+Defined in: [src/fivem/models/VehicleDoor.ts:4](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/models/VehicleDoor.ts#L4)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/fivem/models/VehicleDoor.ts:4](https://github.com/nativewrapper
 new VehicleDoor(owner, index): VehicleDoor
 ```
 
-Defined in: [src/fivem/models/VehicleDoor.ts:8](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/models/VehicleDoor.ts#L8)
+Defined in: [src/fivem/models/VehicleDoor.ts:8](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/models/VehicleDoor.ts#L8)
 
 #### Parameters
 
@@ -35,7 +35,7 @@ Defined in: [src/fivem/models/VehicleDoor.ts:8](https://github.com/nativewrapper
 get AngleRatio(): number
 ```
 
-Defined in: [src/fivem/models/VehicleDoor.ts:21](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/models/VehicleDoor.ts#L21)
+Defined in: [src/fivem/models/VehicleDoor.ts:21](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/models/VehicleDoor.ts#L21)
 
 ##### Returns
 
@@ -47,7 +47,7 @@ Defined in: [src/fivem/models/VehicleDoor.ts:21](https://github.com/nativewrappe
 set AngleRatio(value): void
 ```
 
-Defined in: [src/fivem/models/VehicleDoor.ts:25](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/models/VehicleDoor.ts#L25)
+Defined in: [src/fivem/models/VehicleDoor.ts:25](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/models/VehicleDoor.ts#L25)
 
 ##### Parameters
 
@@ -69,7 +69,7 @@ Defined in: [src/fivem/models/VehicleDoor.ts:25](https://github.com/nativewrappe
 set CanBeBroken(value): void
 ```
 
-Defined in: [src/fivem/models/VehicleDoor.ts:29](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/models/VehicleDoor.ts#L29)
+Defined in: [src/fivem/models/VehicleDoor.ts:29](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/models/VehicleDoor.ts#L29)
 
 ##### Parameters
 
@@ -91,7 +91,7 @@ Defined in: [src/fivem/models/VehicleDoor.ts:29](https://github.com/nativewrappe
 get Index(): VehicleDoorIndex
 ```
 
-Defined in: [src/fivem/models/VehicleDoor.ts:13](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/models/VehicleDoor.ts#L13)
+Defined in: [src/fivem/models/VehicleDoor.ts:13](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/models/VehicleDoor.ts#L13)
 
 ##### Returns
 
@@ -103,7 +103,7 @@ Defined in: [src/fivem/models/VehicleDoor.ts:13](https://github.com/nativewrappe
 set Index(index): void
 ```
 
-Defined in: [src/fivem/models/VehicleDoor.ts:17](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/models/VehicleDoor.ts#L17)
+Defined in: [src/fivem/models/VehicleDoor.ts:17](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/models/VehicleDoor.ts#L17)
 
 ##### Parameters
 
@@ -125,7 +125,7 @@ Defined in: [src/fivem/models/VehicleDoor.ts:17](https://github.com/nativewrappe
 get IsBroken(): boolean
 ```
 
-Defined in: [src/fivem/models/VehicleDoor.ts:41](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/models/VehicleDoor.ts#L41)
+Defined in: [src/fivem/models/VehicleDoor.ts:41](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/models/VehicleDoor.ts#L41)
 
 ##### Returns
 
@@ -141,7 +141,7 @@ Defined in: [src/fivem/models/VehicleDoor.ts:41](https://github.com/nativewrappe
 get IsFullyOpen(): boolean
 ```
 
-Defined in: [src/fivem/models/VehicleDoor.ts:37](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/models/VehicleDoor.ts#L37)
+Defined in: [src/fivem/models/VehicleDoor.ts:37](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/models/VehicleDoor.ts#L37)
 
 ##### Returns
 
@@ -157,7 +157,7 @@ Defined in: [src/fivem/models/VehicleDoor.ts:37](https://github.com/nativewrappe
 get IsOpen(): boolean
 ```
 
-Defined in: [src/fivem/models/VehicleDoor.ts:33](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/models/VehicleDoor.ts#L33)
+Defined in: [src/fivem/models/VehicleDoor.ts:33](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/models/VehicleDoor.ts#L33)
 
 ##### Returns
 
@@ -173,7 +173,7 @@ Defined in: [src/fivem/models/VehicleDoor.ts:33](https://github.com/nativewrappe
 get Vehicle(): Vehicle
 ```
 
-Defined in: [src/fivem/models/VehicleDoor.ts:45](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/models/VehicleDoor.ts#L45)
+Defined in: [src/fivem/models/VehicleDoor.ts:45](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/models/VehicleDoor.ts#L45)
 
 ##### Returns
 
@@ -187,7 +187,7 @@ Defined in: [src/fivem/models/VehicleDoor.ts:45](https://github.com/nativewrappe
 break(stayInTheWorld): void
 ```
 
-Defined in: [src/fivem/models/VehicleDoor.ts:57](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/models/VehicleDoor.ts#L57)
+Defined in: [src/fivem/models/VehicleDoor.ts:57](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/models/VehicleDoor.ts#L57)
 
 #### Parameters
 
@@ -207,7 +207,7 @@ Defined in: [src/fivem/models/VehicleDoor.ts:57](https://github.com/nativewrappe
 close(instantly): void
 ```
 
-Defined in: [src/fivem/models/VehicleDoor.ts:53](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/models/VehicleDoor.ts#L53)
+Defined in: [src/fivem/models/VehicleDoor.ts:53](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/models/VehicleDoor.ts#L53)
 
 #### Parameters
 
@@ -227,7 +227,7 @@ Defined in: [src/fivem/models/VehicleDoor.ts:53](https://github.com/nativewrappe
 open(loose, instantly): void
 ```
 
-Defined in: [src/fivem/models/VehicleDoor.ts:49](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/models/VehicleDoor.ts#L49)
+Defined in: [src/fivem/models/VehicleDoor.ts:49](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/models/VehicleDoor.ts#L49)
 
 #### Parameters
 

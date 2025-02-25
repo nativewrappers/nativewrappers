@@ -2,12 +2,12 @@
 
 # Enumeration: HelmetType
 
-Defined in: [src/fivem/enums/HelmetType.ts:1](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/enums/HelmetType.ts#L1)
+Defined in: [src/fivem/enums/HelmetType.ts:1](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/enums/HelmetType.ts#L1)
 
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| <a id="firemanhelmet"></a> `FiremanHelmet` | `16384` | [src/fivem/enums/HelmetType.ts:3](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/enums/HelmetType.ts#L3) |
-| <a id="pilotheadset"></a> `PilotHeadset` | `32768` | [src/fivem/enums/HelmetType.ts:4](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/enums/HelmetType.ts#L4) |
-| <a id="regularmotorcyclehelmet"></a> `RegularMotorcycleHelmet` | `4096` | [src/fivem/enums/HelmetType.ts:2](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/enums/HelmetType.ts#L2) |
+| <a id="firemanhelmet"></a> `FiremanHelmet` | `16384` | [src/fivem/enums/HelmetType.ts:3](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/enums/HelmetType.ts#L3) |
+| <a id="pilotheadset"></a> `PilotHeadset` | `32768` | [src/fivem/enums/HelmetType.ts:4](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/enums/HelmetType.ts#L4) |
+| <a id="regularmotorcyclehelmet"></a> `RegularMotorcycleHelmet` | `4096` | [src/fivem/enums/HelmetType.ts:2](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/enums/HelmetType.ts#L2) |

@@ -2,7 +2,7 @@
 
 # Class: `abstract` String
 
-Defined in: [src/fivem/utils/String.ts:4](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/utils/String.ts#L4)
+Defined in: [src/fivem/utils/String.ts:4](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/utils/String.ts#L4)
 
 ## Constructors
 
@@ -28,7 +28,7 @@ static measureString(
    screenWidth?): number
 ```
 
-Defined in: [src/fivem/utils/String.ts:33](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/utils/String.ts#L33)
+Defined in: [src/fivem/utils/String.ts:33](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/utils/String.ts#L33)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ static measureStringWidthNoConvert(
    scale): number
 ```
 
-Defined in: [src/fivem/utils/String.ts:21](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/utils/String.ts#L21)
+Defined in: [src/fivem/utils/String.ts:21](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/utils/String.ts#L21)
 
 #### Parameters
 
@@ -76,7 +76,7 @@ Defined in: [src/fivem/utils/String.ts:21](https://github.com/nativewrappers/nat
 static stringToArray(input): string[]
 ```
 
-Defined in: [src/fivem/utils/String.ts:5](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/utils/String.ts#L5)
+Defined in: [src/fivem/utils/String.ts:5](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/utils/String.ts#L5)
 
 #### Parameters
 

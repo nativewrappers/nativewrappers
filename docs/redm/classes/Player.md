@@ -2,7 +2,7 @@
 
 # Class: Player
 
-Defined in: [src/redm/entities/Player.ts:23](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/redm/entities/Player.ts#L23)
+Defined in: [src/redm/entities/Player.ts:23](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/entities/Player.ts#L23)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/redm/entities/Player.ts:23](https://github.com/nativewrappers/n
 new Player(handle): Player
 ```
 
-Defined in: [src/redm/entities/Player.ts:47](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/redm/entities/Player.ts#L47)
+Defined in: [src/redm/entities/Player.ts:47](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/entities/Player.ts#L47)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [src/redm/entities/Player.ts:47](https://github.com/nativewrappers/n
 get Handle(): number
 ```
 
-Defined in: [src/redm/entities/Player.ts:51](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/redm/entities/Player.ts#L51)
+Defined in: [src/redm/entities/Player.ts:51](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/entities/Player.ts#L51)
 
 ##### Returns
 
@@ -48,7 +48,7 @@ Defined in: [src/redm/entities/Player.ts:51](https://github.com/nativewrappers/n
 addDeadeyeUpgrade(amount): void
 ```
 
-Defined in: [src/redm/entities/Player.ts:67](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/redm/entities/Player.ts#L67)
+Defined in: [src/redm/entities/Player.ts:67](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/entities/Player.ts#L67)
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Defined in: [src/redm/entities/Player.ts:67](https://github.com/nativewrappers/n
 addHealthUpgrade(amount): void
 ```
 
-Defined in: [src/redm/entities/Player.ts:63](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/redm/entities/Player.ts#L63)
+Defined in: [src/redm/entities/Player.ts:63](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/entities/Player.ts#L63)
 
 #### Parameters
 
@@ -88,7 +88,7 @@ Defined in: [src/redm/entities/Player.ts:63](https://github.com/nativewrappers/n
 addStaminaUpgrade(amount): void
 ```
 
-Defined in: [src/redm/entities/Player.ts:59](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/redm/entities/Player.ts#L59)
+Defined in: [src/redm/entities/Player.ts:59](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/entities/Player.ts#L59)
 
 Adds the amount of stamina player has on the hud
 
@@ -110,7 +110,7 @@ Adds the amount of stamina player has on the hud
 static fromPedHandle(handle): Player
 ```
 
-Defined in: [src/redm/entities/Player.ts:26](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/redm/entities/Player.ts#L26)
+Defined in: [src/redm/entities/Player.ts:26](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/entities/Player.ts#L26)
 
 #### Parameters
 
@@ -130,7 +130,7 @@ Defined in: [src/redm/entities/Player.ts:26](https://github.com/nativewrappers/n
 static fromServerId(serverId): null | Player
 ```
 
-Defined in: [src/redm/entities/Player.ts:34](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/redm/entities/Player.ts#L34)
+Defined in: [src/redm/entities/Player.ts:34](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/redm/entities/Player.ts#L34)
 
 Gets the player from the specified {@param serverId}
 

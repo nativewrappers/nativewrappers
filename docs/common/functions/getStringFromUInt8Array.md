@@ -9,7 +9,7 @@ function getStringFromUInt8Array(
    end): string
 ```
 
-Defined in: [src/common/utils/getStringFromUInt8Array.ts:8](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/common/utils/getStringFromUInt8Array.ts#L8)
+Defined in: [src/common/utils/getStringFromUInt8Array.ts:8](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/common/utils/getStringFromUInt8Array.ts#L8)
 
 get string from uint8 array
 

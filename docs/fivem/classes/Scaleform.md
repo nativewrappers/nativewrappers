@@ -2,7 +2,7 @@
 
 # Class: Scaleform
 
-Defined in: [src/fivem/ui/Scaleform.ts:20](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L20)
+Defined in: [src/fivem/ui/Scaleform.ts:20](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L20)
 
 Scaleforms will automatically load when calling any of the render functions.
 
@@ -28,7 +28,7 @@ setTick(() => {
 new Scaleform(name): Scaleform
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:47](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L47)
+Defined in: [src/fivem/ui/Scaleform.ts:47](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L47)
 
 #### Parameters
 
@@ -44,9 +44,9 @@ Defined in: [src/fivem/ui/Scaleform.ts:47](https://github.com/nativewrappers/nat
 
 | Property | Modifier | Type | Default value | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| <a id="handle"></a> `handle` | `protected` | `number` | `undefined` | [src/fivem/ui/Scaleform.ts:43](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L43) |
-| <a id="loaded"></a> `loaded` | `protected` | `boolean` | `false` | [src/fivem/ui/Scaleform.ts:45](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L45) |
-| <a id="name-1"></a> `name` | `protected` | `string` | `undefined` | [src/fivem/ui/Scaleform.ts:44](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L44) |
+| <a id="handle"></a> `handle` | `protected` | `number` | `undefined` | [src/fivem/ui/Scaleform.ts:43](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L43) |
+| <a id="loaded"></a> `loaded` | `protected` | `boolean` | `false` | [src/fivem/ui/Scaleform.ts:45](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L45) |
+| <a id="name-1"></a> `name` | `protected` | `string` | `undefined` | [src/fivem/ui/Scaleform.ts:44](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L44) |
 
 ## Accessors
 
@@ -58,7 +58,7 @@ Defined in: [src/fivem/ui/Scaleform.ts:47](https://github.com/nativewrappers/nat
 get Handle(): number
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:55](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L55)
+Defined in: [src/fivem/ui/Scaleform.ts:55](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L55)
 
 Get the handle of the scaleform.
 
@@ -76,7 +76,7 @@ Get the handle of the scaleform.
 get IsLoaded(): boolean
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:69](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L69)
+Defined in: [src/fivem/ui/Scaleform.ts:69](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L69)
 
 Get whether the scaleform is loaded.
 
@@ -94,7 +94,7 @@ Get whether the scaleform is loaded.
 get IsValid(): boolean
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:62](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L62)
+Defined in: [src/fivem/ui/Scaleform.ts:62](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L62)
 
 Get whether the handle is a valid handle.
 
@@ -110,7 +110,7 @@ Get whether the handle is a valid handle.
 callFunction(name, ...args): void
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:93](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L93)
+Defined in: [src/fivem/ui/Scaleform.ts:93](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L93)
 
 Call a function on the scaleform.
 
@@ -139,7 +139,7 @@ callNumberMethod(
    param5): void
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:165](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L165)
+Defined in: [src/fivem/ui/Scaleform.ts:165](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L165)
 
 Calls a number method on the scaleform.
 
@@ -177,7 +177,7 @@ callSharedMethod(
    sParam5): void
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:199](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L199)
+Defined in: [src/fivem/ui/Scaleform.ts:199](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L199)
 
 Calls a number & string method on the scaleform.
 
@@ -215,7 +215,7 @@ callStringMethod(
    param5): void
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:136](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L136)
+Defined in: [src/fivem/ui/Scaleform.ts:136](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L136)
 
 Calls a string method on the scaleform.
 
@@ -242,7 +242,7 @@ Calls a string method on the scaleform.
 callVoidMethod(name): void
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:122](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L122)
+Defined in: [src/fivem/ui/Scaleform.ts:122](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L122)
 
 Calls a void method on the scaleform.
 
@@ -264,7 +264,7 @@ Calls a void method on the scaleform.
 dispose(): void
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:80](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L80)
+Defined in: [src/fivem/ui/Scaleform.ts:80](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L80)
 
 Dispose the scaleform allowing the GTA engine to free memory when wanted.
 
@@ -280,7 +280,7 @@ Dispose the scaleform allowing the GTA engine to free memory when wanted.
 load(): Promise<boolean>
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:349](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L349)
+Defined in: [src/fivem/ui/Scaleform.ts:349](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L349)
 
 #### Returns
 
@@ -294,7 +294,7 @@ Defined in: [src/fivem/ui/Scaleform.ts:349](https://github.com/nativewrappers/na
 render2D(): Promise<void>
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:251](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L251)
+Defined in: [src/fivem/ui/Scaleform.ts:251](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L251)
 
 #### Returns
 
@@ -308,7 +308,7 @@ Defined in: [src/fivem/ui/Scaleform.ts:251](https://github.com/nativewrappers/na
 render2DScreenSpace(location, size): Promise<void>
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:262](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L262)
+Defined in: [src/fivem/ui/Scaleform.ts:262](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L262)
 
 #### Parameters
 
@@ -332,7 +332,7 @@ render3D(
 scale): Promise<void>
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:289](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L289)
+Defined in: [src/fivem/ui/Scaleform.ts:289](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L289)
 
 #### Parameters
 
@@ -357,7 +357,7 @@ render3DAdditive(
 scale): Promise<void>
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:319](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L319)
+Defined in: [src/fivem/ui/Scaleform.ts:319](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L319)
 
 #### Parameters
 
@@ -379,7 +379,7 @@ Defined in: [src/fivem/ui/Scaleform.ts:319](https://github.com/nativewrappers/na
 setDuration(duration): void
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:236](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L236)
+Defined in: [src/fivem/ui/Scaleform.ts:236](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L236)
 
 Sets a duration the scaleform should be shown.
 Useful for showing a scaleform for a known amount of time, such as messages.
@@ -404,7 +404,7 @@ This only works for any scaleform using [`render2D`](Scaleform.md#render2d);
 static render2DMasked(scaleform1, scaleform2): Promise<void>
 ```
 
-Defined in: [src/fivem/ui/Scaleform.ts:21](https://github.com/nativewrappers/nativewrappers/blob/df8f763f54a2ec439be9cb68f9abf90f9a4d79aa/src/fivem/ui/Scaleform.ts#L21)
+Defined in: [src/fivem/ui/Scaleform.ts:21](https://github.com/nativewrappers/nativewrappers/blob/ef9379993d0b7126700360ea0bc0e228bd354e81/src/fivem/ui/Scaleform.ts#L21)
 
 #### Parameters
 
