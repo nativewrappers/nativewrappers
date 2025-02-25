@@ -152,6 +152,10 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     return this.#subscribers.has(sub);
   }
 
+  subscriberCount() {
+    return this.#subscribers.size;
+  }
+
   private handleSync(data: MapChanges<K, V>[]) {
     for (const [change_type, key, value, possibly_undefined_subvalue] of data) {
       switch (change_type) {
