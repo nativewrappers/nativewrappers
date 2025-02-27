@@ -1,4 +1,4 @@
-import { GlobalData } from './GlobalData';
+import { GlobalData } from "./GlobalData";
 
 type Restricted = boolean | string | string[];
 
@@ -19,14 +19,16 @@ interface Parameter {
 const commands: Partial<Command>[] = [];
 
 if (GlobalData.IS_SERVER) {
-  on('playerJoining', () => emitNet('chat:addSuggestions', source, commands));
+  on("playerJoining", () => emitNet("chat:addSuggestions", source, commands));
 }
 
 type MappedParameters<T extends Parameter[]> = {
-  [K in T[number] as K['name']]: ParameterTypes[K['type']];
+  [K in T[number] as K["name"]]: ParameterTypes[K["type"]];
 } & { source: number; raw: string };
 
-type CommandHandler<T extends Parameter[]> = (args: MappedParameters<T>) => void | Promise<void>;
+type CommandHandler<T extends Parameter[]> = (
+  args: MappedParameters<T>,
+) => void | Promise<void>;
 
 class Command<T extends Parameter[] = Parameter[]> {
   #handler: CommandHandler<T>;
@@ -43,28 +45,36 @@ class Command<T extends Parameter[] = Parameter[]> {
     this.#handler = handler;
     this.name = `/${name}`;
 
-    typeof name === 'string'
+    typeof name === "string"
       ? RegisterCommand(name, commandHandler, !!restricted)
-      : name.forEach(name => RegisterCommand(name, commandHandler, !!restricted));
+      : name.forEach((name) =>
+          RegisterCommand(name, commandHandler, !!restricted),
+        );
 
     if (params) {
-      params.forEach(param => {
+      params.forEach((param) => {
         if (param.type)
-          param.help = param.help ? `${param.help} (type: ${param.type})` : `(type: ${param.type})`;
+          param.help = param.help
+            ? `${param.help} (type: ${param.type})`
+            : `(type: ${param.type})`;
       });
 
       setTimeout(() => {
         if (GlobalData.IS_SERVER) {
           commands.push(this);
-          return emitNet('chat:addSuggestions', -1, this);
+          return emitNet("chat:addSuggestions", -1, this);
         }
 
-        emit('chat:addSuggestion', this);
+        emit("chat:addSuggestion", this);
       }, 100);
     }
   }
 
-  private mapArguments(source: number, args: string[], raw: string): MappedParameters<T> | null {
+  private mapArguments(
+    source: number,
+    args: string[],
+    raw: string,
+  ): MappedParameters<T> | null {
     const mapped = {
       source,
       raw,
@@ -77,32 +87,33 @@ class Command<T extends Parameter[] = Parameter[]> {
       let value: any = arg;
 
       switch (param.type) {
-        case 'number':
+        case "number":
           value = +arg;
           break;
-        case 'string':
+        case "string":
           value = !Number(arg) ? arg : false;
           break;
-        case 'playerId':
+        case "playerId":
           if (GlobalData.IS_SERVER) {
-            value = arg === 'me' ? source : +arg;
+            value = arg === "me" ? source : +arg;
 
             if (!value || !DoesPlayerExist(value.toString())) value = undefined;
           } else {
-            value = arg === 'me' ? GetPlayerServerId(PlayerId()) : +arg;
+            value = arg === "me" ? GetPlayerServerId(PlayerId()) : +arg;
 
-            if (!value || GetPlayerFromServerId(value) === -1) value = undefined;
+            if (!value || GetPlayerFromServerId(value) === -1)
+              value = undefined;
           }
 
           break;
-        case 'longString':
+        case "longString":
           value = raw.substring(raw.indexOf(arg));
           break;
       }
 
       if (value === undefined && (!param.optional || (param.optional && arg))) {
         return Citizen.trace(
-          `^1command '${raw.split(' ')[0] || raw}' received an invalid ${param.type} for argument ${
+          `^1command '${raw.split(" ")[0] || raw}' received an invalid ${param.type} for argument ${
             index + 1
           } (${param.name}), received '${arg}'^0`,
         );
@@ -116,7 +127,11 @@ class Command<T extends Parameter[] = Parameter[]> {
     return result ? mapped : null;
   }
 
-  public async call(source: number, args: string[], raw: string = args.join(' ')) {
+  public async call(
+    source: number,
+    args: string[],
+    raw: string = args.join(" "),
+  ) {
     const parsed = this.mapArguments(source, args, raw);
 
     if (!parsed) return;
@@ -124,7 +139,9 @@ class Command<T extends Parameter[] = Parameter[]> {
     try {
       await this.#handler(parsed);
     } catch (err: any) {
-      Citizen.trace(`^1command '${raw.split(' ')[0] || raw}' failed to execute!^0\n${err.message}`);
+      Citizen.trace(
+        `^1command '${raw.split(" ")[0] || raw}' failed to execute!^0\n${err.message}`,
+      );
     }
   }
 }
