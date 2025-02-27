@@ -2,13 +2,13 @@
 
 # Enumeration: ParachuteLandingType
 
-Defined in: [src/fivem/enums/Parachute.ts:1](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/enums/Parachute.ts#L1)
+Defined in: [src/fivem/enums/Parachute.ts:1](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/enums/Parachute.ts#L1)
 
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| <a id="none"></a> `None` | `-1` | [src/fivem/enums/Parachute.ts:2](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/enums/Parachute.ts#L2) |
-| <a id="ragdoll"></a> `Ragdoll` | `3` | [src/fivem/enums/Parachute.ts:5](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/enums/Parachute.ts#L5) |
-| <a id="rolling"></a> `Rolling` | `2` | [src/fivem/enums/Parachute.ts:4](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/enums/Parachute.ts#L4) |
-| <a id="stumbling"></a> `Stumbling` | `1` | [src/fivem/enums/Parachute.ts:3](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/enums/Parachute.ts#L3) |
+| <a id="none"></a> `None` | `-1` | [src/fivem/enums/Parachute.ts:2](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/enums/Parachute.ts#L2) |
+| <a id="ragdoll"></a> `Ragdoll` | `3` | [src/fivem/enums/Parachute.ts:5](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/enums/Parachute.ts#L5) |
+| <a id="rolling"></a> `Rolling` | `2` | [src/fivem/enums/Parachute.ts:4](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/enums/Parachute.ts#L4) |
+| <a id="stumbling"></a> `Stumbling` | `1` | [src/fivem/enums/Parachute.ts:3](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/enums/Parachute.ts#L3) |

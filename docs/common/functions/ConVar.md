@@ -9,7 +9,7 @@ function ConVar<T>(
    deserialize?): (_initialValue, context, ...args) => void
 ```
 
-Defined in: [src/common/decors/Events.ts:156](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/common/decors/Events.ts#L156)
+Defined in: [src/common/decors/Events.ts:156](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/decors/Events.ts#L156)
 
 ## Type Parameters
 

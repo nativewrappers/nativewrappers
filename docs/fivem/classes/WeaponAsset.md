@@ -2,7 +2,7 @@
 
 # Class: WeaponAsset
 
-Defined in: [src/fivem/weapon/WeaponAsset.ts:10](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/weapon/WeaponAsset.ts#L10)
+Defined in: [src/fivem/weapon/WeaponAsset.ts:10](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/weapon/WeaponAsset.ts#L10)
 
 weapon asset
 
@@ -14,7 +14,7 @@ weapon asset
 new WeaponAsset(hash): WeaponAsset
 ```
 
-Defined in: [src/fivem/weapon/WeaponAsset.ts:13](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/weapon/WeaponAsset.ts#L13)
+Defined in: [src/fivem/weapon/WeaponAsset.ts:13](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/weapon/WeaponAsset.ts#L13)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [src/fivem/weapon/WeaponAsset.ts:13](https://github.com/nativewrappe
 get DisplayName(): string
 ```
 
-Defined in: [src/fivem/weapon/WeaponAsset.ts:87](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/weapon/WeaponAsset.ts#L87)
+Defined in: [src/fivem/weapon/WeaponAsset.ts:87](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/weapon/WeaponAsset.ts#L87)
 
 get weapon display name / label
 
@@ -54,7 +54,7 @@ get weapon display name / label
 get Hash(): WeaponHash
 ```
 
-Defined in: [src/fivem/weapon/WeaponAsset.ts:22](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/weapon/WeaponAsset.ts#L22)
+Defined in: [src/fivem/weapon/WeaponAsset.ts:22](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/weapon/WeaponAsset.ts#L22)
 
 get weapon hash
 
@@ -72,7 +72,7 @@ get weapon hash
 get IsLoaded(): boolean
 ```
 
-Defined in: [src/fivem/weapon/WeaponAsset.ts:40](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/weapon/WeaponAsset.ts#L40)
+Defined in: [src/fivem/weapon/WeaponAsset.ts:40](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/weapon/WeaponAsset.ts#L40)
 
 check weapon assets is loaded
 
@@ -90,7 +90,7 @@ check weapon assets is loaded
 get IsValid(): boolean
 ```
 
-Defined in: [src/fivem/weapon/WeaponAsset.ts:31](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/weapon/WeaponAsset.ts#L31)
+Defined in: [src/fivem/weapon/WeaponAsset.ts:31](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/weapon/WeaponAsset.ts#L31)
 
 check weapon is valid
 
@@ -108,7 +108,7 @@ check weapon is valid
 get LocalizedName(): string
 ```
 
-Defined in: [src/fivem/weapon/WeaponAsset.ts:96](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/weapon/WeaponAsset.ts#L96)
+Defined in: [src/fivem/weapon/WeaponAsset.ts:96](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/weapon/WeaponAsset.ts#L96)
 
 get weapon localized name
 
@@ -124,7 +124,7 @@ get weapon localized name
 dismiss(): void
 ```
 
-Defined in: [src/fivem/weapon/WeaponAsset.ts:78](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/weapon/WeaponAsset.ts#L78)
+Defined in: [src/fivem/weapon/WeaponAsset.ts:78](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/weapon/WeaponAsset.ts#L78)
 
 unload weapon asset
 
@@ -140,7 +140,7 @@ unload weapon asset
 request(): void
 ```
 
-Defined in: [src/fivem/weapon/WeaponAsset.ts:48](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/weapon/WeaponAsset.ts#L48)
+Defined in: [src/fivem/weapon/WeaponAsset.ts:48](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/weapon/WeaponAsset.ts#L48)
 
 request weapon asset
 
@@ -156,7 +156,7 @@ request weapon asset
 requestAsync(timeout): Promise<boolean>
 ```
 
-Defined in: [src/fivem/weapon/WeaponAsset.ts:57](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/weapon/WeaponAsset.ts#L57)
+Defined in: [src/fivem/weapon/WeaponAsset.ts:57](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/weapon/WeaponAsset.ts#L57)
 
 request weapon asset async
 

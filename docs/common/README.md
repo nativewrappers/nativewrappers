@@ -13,6 +13,7 @@
 | Class | Description |
 | ------ | ------ |
 | [Color](classes/Color.md) | - |
+| [Command](classes/Command.md) | - |
 | [Convar](classes/Convar.md) | - |
 | [Kvp](classes/Kvp.md) | - |
 | [Maths](classes/Maths.md) | - |

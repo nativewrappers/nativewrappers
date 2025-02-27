@@ -2,7 +2,7 @@
 
 # Class: VehicleWheel
 
-Defined in: [src/fivem/models/VehicleWheel.ts:3](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/models/VehicleWheel.ts#L3)
+Defined in: [src/fivem/models/VehicleWheel.ts:3](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleWheel.ts#L3)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/fivem/models/VehicleWheel.ts:3](https://github.com/nativewrappe
 new VehicleWheel(owner, index): VehicleWheel
 ```
 
-Defined in: [src/fivem/models/VehicleWheel.ts:7](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/models/VehicleWheel.ts#L7)
+Defined in: [src/fivem/models/VehicleWheel.ts:7](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleWheel.ts#L7)
 
 #### Parameters
 
@@ -35,7 +35,7 @@ Defined in: [src/fivem/models/VehicleWheel.ts:7](https://github.com/nativewrappe
 get Index(): number
 ```
 
-Defined in: [src/fivem/models/VehicleWheel.ts:12](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/models/VehicleWheel.ts#L12)
+Defined in: [src/fivem/models/VehicleWheel.ts:12](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleWheel.ts#L12)
 
 ##### Returns
 
@@ -47,7 +47,7 @@ Defined in: [src/fivem/models/VehicleWheel.ts:12](https://github.com/nativewrapp
 set Index(index): void
 ```
 
-Defined in: [src/fivem/models/VehicleWheel.ts:16](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/models/VehicleWheel.ts#L16)
+Defined in: [src/fivem/models/VehicleWheel.ts:16](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleWheel.ts#L16)
 
 ##### Parameters
 
@@ -69,7 +69,7 @@ Defined in: [src/fivem/models/VehicleWheel.ts:16](https://github.com/nativewrapp
 get Vehicle(): Vehicle
 ```
 
-Defined in: [src/fivem/models/VehicleWheel.ts:20](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/models/VehicleWheel.ts#L20)
+Defined in: [src/fivem/models/VehicleWheel.ts:20](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleWheel.ts#L20)
 
 ##### Returns
 
@@ -83,7 +83,7 @@ Defined in: [src/fivem/models/VehicleWheel.ts:20](https://github.com/nativewrapp
 burst(): void
 ```
 
-Defined in: [src/fivem/models/VehicleWheel.ts:24](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/models/VehicleWheel.ts#L24)
+Defined in: [src/fivem/models/VehicleWheel.ts:24](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleWheel.ts#L24)
 
 #### Returns
 
@@ -97,7 +97,7 @@ Defined in: [src/fivem/models/VehicleWheel.ts:24](https://github.com/nativewrapp
 fix(): void
 ```
 
-Defined in: [src/fivem/models/VehicleWheel.ts:28](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/models/VehicleWheel.ts#L28)
+Defined in: [src/fivem/models/VehicleWheel.ts:28](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleWheel.ts#L28)
 
 #### Returns
 

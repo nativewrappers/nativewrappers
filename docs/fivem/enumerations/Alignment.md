@@ -2,12 +2,12 @@
 
 # Enumeration: Alignment
 
-Defined in: [src/fivem/enums/Alignment.ts:1](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/enums/Alignment.ts#L1)
+Defined in: [src/fivem/enums/Alignment.ts:1](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/enums/Alignment.ts#L1)
 
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| <a id="centered"></a> `Centered` | `1` | [src/fivem/enums/Alignment.ts:3](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/enums/Alignment.ts#L3) |
-| <a id="left"></a> `Left` | `0` | [src/fivem/enums/Alignment.ts:2](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/enums/Alignment.ts#L2) |
-| <a id="right"></a> `Right` | `2` | [src/fivem/enums/Alignment.ts:4](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/enums/Alignment.ts#L4) |
+| <a id="centered"></a> `Centered` | `1` | [src/fivem/enums/Alignment.ts:3](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/enums/Alignment.ts#L3) |
+| <a id="left"></a> `Left` | `0` | [src/fivem/enums/Alignment.ts:2](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/enums/Alignment.ts#L2) |
+| <a id="right"></a> `Right` | `2` | [src/fivem/enums/Alignment.ts:4](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/enums/Alignment.ts#L4) |
