@@ -2,7 +2,7 @@
 
 # Class: `abstract` Game
 
-Defined in: [src/server/Game.ts:3](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/server/Game.ts#L3)
+Defined in: [src/server/Game.ts:3](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/server/Game.ts#L3)
 
 ## Constructors
 
@@ -20,7 +20,7 @@ new Game(): Game
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="hashcache"></a> `hashCache` | `static` | `Map`\<`string`, `number`\> | [src/server/Game.ts:5](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/server/Game.ts#L5) |
+| <a id="hashcache"></a> `hashCache` | `static` | `Map`\<`string`, `number`\> | [src/server/Game.ts:5](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/server/Game.ts#L5) |
 
 ## Accessors
 
@@ -32,7 +32,7 @@ new Game(): Game
 get static GameBuild(): number
 ```
 
-Defined in: [src/server/Game.ts:30](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/server/Game.ts#L30)
+Defined in: [src/server/Game.ts:30](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/server/Game.ts#L30)
 
 ##### Returns
 
@@ -48,7 +48,7 @@ Defined in: [src/server/Game.ts:30](https://github.com/nativewrappers/nativewrap
 get static GameName(): string
 ```
 
-Defined in: [src/server/Game.ts:34](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/server/Game.ts#L34)
+Defined in: [src/server/Game.ts:34](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/server/Game.ts#L34)
 
 ##### Returns
 
@@ -64,7 +64,7 @@ Defined in: [src/server/Game.ts:34](https://github.com/nativewrappers/nativewrap
 get static GameTime(): number
 ```
 
-Defined in: [src/server/Game.ts:26](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/server/Game.ts#L26)
+Defined in: [src/server/Game.ts:26](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/server/Game.ts#L26)
 
 Gets how many milliseconds the game has been open this session
 
@@ -84,7 +84,7 @@ get static RegisteredCommands(): [{
  }]
 ```
 
-Defined in: [src/server/Game.ts:56](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/server/Game.ts#L56)
+Defined in: [src/server/Game.ts:56](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/server/Game.ts#L56)
 
 ##### Returns
 
@@ -100,7 +100,7 @@ Defined in: [src/server/Game.ts:56](https://github.com/nativewrappers/nativewrap
 static generateHash(input): number
 ```
 
-Defined in: [src/server/Game.ts:11](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/server/Game.ts#L11)
+Defined in: [src/server/Game.ts:11](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/server/Game.ts#L11)
 
 Calculate the Jenkins One At A Time (joaat) has from the given string.
 
@@ -122,7 +122,7 @@ Calculate the Jenkins One At A Time (joaat) has from the given string.
 static PlayerList(): IterableIterator<Player>
 ```
 
-Defined in: [src/server/Game.ts:64](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/server/Game.ts#L64)
+Defined in: [src/server/Game.ts:64](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/server/Game.ts#L64)
 
 Get an iterable list of players currently on the server.
 
@@ -143,7 +143,7 @@ static registerCommand(
    restricted): void
 ```
 
-Defined in: [src/server/Game.ts:38](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/server/Game.ts#L38)
+Defined in: [src/server/Game.ts:38](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/server/Game.ts#L38)
 
 #### Parameters
 

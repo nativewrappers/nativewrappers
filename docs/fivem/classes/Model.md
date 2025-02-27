@@ -2,7 +2,7 @@
 
 # Class: Model
 
-Defined in: [src/fivem/Model.ts:9](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L9)
+Defined in: [src/fivem/Model.ts:9](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L9)
 
 Class to create and manage entity models.
 
@@ -18,7 +18,7 @@ Class to create and manage entity models.
 new Model(hash): Model
 ```
 
-Defined in: [src/fivem/Model.ts:21](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L21)
+Defined in: [src/fivem/Model.ts:21](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L21)
 
 Creates a model object based on the hash key or model string.
 
@@ -42,7 +42,7 @@ Creates a model object based on the hash key or model string.
 get Dimensions(): Dimensions
 ```
 
-Defined in: [src/fivem/Model.ts:203](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L203)
+Defined in: [src/fivem/Model.ts:203](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L203)
 
 Gets the model dimensions.
 
@@ -62,7 +62,7 @@ This model min & max dimensions.
 get Hash(): number
 ```
 
-Defined in: [src/fivem/Model.ts:40](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L40)
+Defined in: [src/fivem/Model.ts:40](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L40)
 
 Gets the hash of the model.
 
@@ -82,7 +82,7 @@ The hash key.
 get IsBicycle(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:85](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L85)
+Defined in: [src/fivem/Model.ts:85](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L85)
 
 Gets if the model is a bicycle or not.
 
@@ -102,7 +102,7 @@ Whether this model is a bicycle.
 get IsBike(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:94](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L94)
+Defined in: [src/fivem/Model.ts:94](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L94)
 
 Gets if the model is a motorbike or not.
 
@@ -122,7 +122,7 @@ Whether this model is a motorbike.
 get IsBoat(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:103](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L103)
+Defined in: [src/fivem/Model.ts:103](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L103)
 
 Gets if the model is a boat or not.
 
@@ -142,7 +142,7 @@ Whether this model is a boat.
 get IsCar(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:112](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L112)
+Defined in: [src/fivem/Model.ts:112](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L112)
 
 Gets if the model is a car or not.
 
@@ -162,7 +162,7 @@ Whether this model is a car.
 get IsCargobob(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:121](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L121)
+Defined in: [src/fivem/Model.ts:121](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L121)
 
 Gets if the model is a cargobob or not.
 
@@ -182,7 +182,7 @@ Whether this model is a cargobob.
 get IsCollisionLoaded(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:76](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L76)
+Defined in: [src/fivem/Model.ts:76](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L76)
 
 Gets if the model collision is loaded or not.
 
@@ -202,7 +202,7 @@ Whether this model collision is loaded.
 get IsHelicopter(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:135](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L135)
+Defined in: [src/fivem/Model.ts:135](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L135)
 
 Gets if the model is a helicopter or not.
 
@@ -222,7 +222,7 @@ Whether this model is a helicopter.
 get IsInCdImage(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:58](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L58)
+Defined in: [src/fivem/Model.ts:58](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L58)
 
 Gets if the model is in cd image or not.
 
@@ -242,7 +242,7 @@ Whether this model is in cd image.
 get IsLoaded(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:67](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L67)
+Defined in: [src/fivem/Model.ts:67](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L67)
 
 Gets if the model is loaded or not.
 
@@ -262,7 +262,7 @@ Whether this model is loaded.
 get IsPed(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:144](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L144)
+Defined in: [src/fivem/Model.ts:144](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L144)
 
 Gets if the model is a Ped or not.
 
@@ -282,7 +282,7 @@ Whether this model is a Ped.
 get IsPlane(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:153](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L153)
+Defined in: [src/fivem/Model.ts:153](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L153)
 
 Gets if the model is a plane or not.
 
@@ -302,7 +302,7 @@ Whether this model is a plane.
 get IsProp(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:162](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L162)
+Defined in: [src/fivem/Model.ts:162](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L162)
 
 Gets if the model is a prop or not.
 
@@ -322,7 +322,7 @@ Whether this model is a prop.
 get IsQuadbike(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:176](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L176)
+Defined in: [src/fivem/Model.ts:176](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L176)
 
 Gets if the model is a quadbike or not.
 
@@ -342,7 +342,7 @@ Whether this model is a quadbike.
 get IsTrain(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:185](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L185)
+Defined in: [src/fivem/Model.ts:185](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L185)
 
 Gets if the model is a train or not.
 
@@ -362,7 +362,7 @@ Whether this model is a train.
 get IsValid(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:49](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L49)
+Defined in: [src/fivem/Model.ts:49](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L49)
 
 Gets if the model is valid or not.
 
@@ -382,7 +382,7 @@ Whether this model is valid.
 get IsVehicle(): boolean
 ```
 
-Defined in: [src/fivem/Model.ts:194](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L194)
+Defined in: [src/fivem/Model.ts:194](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L194)
 
 Gets if the model is a Vehicle or not.
 
@@ -400,7 +400,7 @@ Whether this model is a Vehicle.
 dispose: void
 ```
 
-Defined in: [src/fivem/Model.ts:29](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L29)
+Defined in: [src/fivem/Model.ts:29](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L29)
 
 #### Returns
 
@@ -420,7 +420,7 @@ Disposable.[dispose]
 markAsNoLongerNeeded(): void
 ```
 
-Defined in: [src/fivem/Model.ts:238](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L238)
+Defined in: [src/fivem/Model.ts:238](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L238)
 
 Sets the model as no longer needed allowing the game engine to free memory.
 
@@ -436,7 +436,7 @@ Sets the model as no longer needed allowing the game engine to free memory.
 request(timeoutMs): Promise<boolean>
 ```
 
-Defined in: [src/fivem/Model.ts:217](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/fivem/Model.ts#L217)
+Defined in: [src/fivem/Model.ts:217](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/fivem/Model.ts#L217)
 
 Request and load the model with a specified timeout. Default timeout is 1000 (recommended).
 This function will not automatically set the model as no longer needed when

@@ -14,7 +14,7 @@ function createDraftVehicle(
 p9): Promise<Vehicle | null>
 ```
 
-Defined in: [src/redm/world/createDraftVehicle.ts:9](https://github.com/nativewrappers/nativewrappers/blob/11c6a49b7dbba5233f7fb8c63e2382099dcf6c28/src/redm/world/createDraftVehicle.ts#L9)
+Defined in: [src/redm/world/createDraftVehicle.ts:9](https://github.com/nativewrappers/nativewrappers/blob/3a5a8937f4f56e42414bc65083bf196262ee500c/src/redm/world/createDraftVehicle.ts#L9)
 
 Creates a vehicle at the specified {@param spawnPos}, you don't need to request the model before this.
 
