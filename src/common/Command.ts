@@ -30,7 +30,7 @@ type CommandHandler<T extends Parameter[]> = (
   args: MappedParameters<T>,
 ) => void | Promise<void>;
 
-class Command<T extends Parameter[] = Parameter[]> {
+export class Command<T extends Parameter[] = Parameter[]> {
   #handler: CommandHandler<T>;
 
   constructor(
