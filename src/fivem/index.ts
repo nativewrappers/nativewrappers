@@ -18,6 +18,8 @@ export { TaskSequence } from "./TaskSequence";
 export { NetworkedScene } from "./NetworkedScene";
 export { Rope } from "./Rope";
 
+export { Convar, Kvp, Resource, Command } from "@common/index";
+
 // Lets export all from folders
 export * from "./models";
 export * from "./enums";
