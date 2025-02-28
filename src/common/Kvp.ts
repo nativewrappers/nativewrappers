@@ -37,7 +37,7 @@ export class Kvp<Schema extends KvpSchema> {
    */
   public getJson<K extends string, O = KvpObject<K>>(
     key: K extends ValidJsonKey<O> ? K : never,
-  ): O extends string ? Schema[O] : null {
+  ): (O extends string ? Schema[O] : null) | null {
     const str = GetResourceKvpString(key);
     return str ? JSON.parse(str) : null;
   }

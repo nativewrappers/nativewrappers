@@ -73,8 +73,8 @@ export class Vehicle extends BaseEntity {
     return GetVehicleDoorLockStatus(this.handle);
   }
 
-  public get DoorStatus(): number {
-    return GetVehicleDoorStatus(this.handle);
+  public getDoorStatus(doorIndex: number): number {
+    return GetVehicleDoorStatus(this.handle, doorIndex);
   }
 
   public get DoorsLockedForPlayer(): number {

@@ -43,14 +43,14 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
-		"@citizenfx/client": "2.0.7604-1",
-		"@citizenfx/server": "2.0.10673-1",
-		"@types/node": "^16.18.123",
+		"@citizenfx/client": "2.0.13079-1",
+		"@citizenfx/server": "2.0.13079-1",
+		"@types/node": "^22.13.7",
 		"buffer": "^6.0.3",
-		"tsc-alias": "^1.8.10",
-		"typedoc": "^0.27.6",
+		"tsc-alias": "^1.8.11",
+		"typedoc": "^0.27.9",
 		"typedoc-fivemjs-theme": "^0.2.7",
-		"typedoc-plugin-markdown": "^4.4.1",
-		"typescript": "^5.7.2"
+		"typedoc-plugin-markdown": "^4.4.2",
+		"typescript": "^5.8.2"
 	}
 }
