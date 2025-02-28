@@ -2,7 +2,7 @@
 
 # Class: VehicleDoorCollection
 
-Defined in: [src/fivem/models/VehicleDoorCollection.ts:5](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleDoorCollection.ts#L5)
+Defined in: [src/fivem/models/VehicleDoorCollection.ts:5](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleDoorCollection.ts#L5)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/fivem/models/VehicleDoorCollection.ts:5](https://github.com/nat
 new VehicleDoorCollection(owner): VehicleDoorCollection
 ```
 
-Defined in: [src/fivem/models/VehicleDoorCollection.ts:12](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleDoorCollection.ts#L12)
+Defined in: [src/fivem/models/VehicleDoorCollection.ts:12](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleDoorCollection.ts#L12)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [src/fivem/models/VehicleDoorCollection.ts:12](https://github.com/na
 breakAllDoors(stayInTheWorld?): void
 ```
 
-Defined in: [src/fivem/models/VehicleDoorCollection.ts:48](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleDoorCollection.ts#L48)
+Defined in: [src/fivem/models/VehicleDoorCollection.ts:48](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleDoorCollection.ts#L48)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [src/fivem/models/VehicleDoorCollection.ts:48](https://github.com/na
 closeAllDoors(instantly?): void
 ```
 
-Defined in: [src/fivem/models/VehicleDoorCollection.ts:42](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleDoorCollection.ts#L42)
+Defined in: [src/fivem/models/VehicleDoorCollection.ts:42](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleDoorCollection.ts#L42)
 
 #### Parameters
 
@@ -72,7 +72,7 @@ Defined in: [src/fivem/models/VehicleDoorCollection.ts:42](https://github.com/na
 getAllDoors(): (undefined | null | VehicleDoor)[]
 ```
 
-Defined in: [src/fivem/models/VehicleDoorCollection.ts:23](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleDoorCollection.ts#L23)
+Defined in: [src/fivem/models/VehicleDoorCollection.ts:23](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleDoorCollection.ts#L23)
 
 #### Returns
 
@@ -86,7 +86,7 @@ Defined in: [src/fivem/models/VehicleDoorCollection.ts:23](https://github.com/na
 getDoors(index): undefined | VehicleDoor
 ```
 
-Defined in: [src/fivem/models/VehicleDoorCollection.ts:16](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleDoorCollection.ts#L16)
+Defined in: [src/fivem/models/VehicleDoorCollection.ts:16](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleDoorCollection.ts#L16)
 
 #### Parameters
 
@@ -106,7 +106,7 @@ Defined in: [src/fivem/models/VehicleDoorCollection.ts:16](https://github.com/na
 hasDoor(index): boolean
 ```
 
-Defined in: [src/fivem/models/VehicleDoorCollection.ts:54](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleDoorCollection.ts#L54)
+Defined in: [src/fivem/models/VehicleDoorCollection.ts:54](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleDoorCollection.ts#L54)
 
 #### Parameters
 
@@ -126,7 +126,7 @@ Defined in: [src/fivem/models/VehicleDoorCollection.ts:54](https://github.com/na
 openAllDoors(loose?, instantly?): void
 ```
 
-Defined in: [src/fivem/models/VehicleDoorCollection.ts:36](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleDoorCollection.ts#L36)
+Defined in: [src/fivem/models/VehicleDoorCollection.ts:36](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleDoorCollection.ts#L36)
 
 #### Parameters
 

@@ -2,7 +2,7 @@
 
 # Class: Events
 
-Defined in: [src/server/Events.ts:58](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/Events.ts#L58)
+Defined in: [src/server/Events.ts:58](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/Events.ts#L58)
 
 ## Constructors
 
@@ -26,7 +26,7 @@ new Events(): Events
 get static InvokingResource(): string
 ```
 
-Defined in: [src/server/Events.ts:67](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/Events.ts#L67)
+Defined in: [src/server/Events.ts:67](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/Events.ts#L67)
 
 ##### Returns
 
@@ -40,7 +40,7 @@ Defined in: [src/server/Events.ts:67](https://github.com/nativewrappers/nativewr
 static cancel(): void
 ```
 
-Defined in: [src/server/Events.ts:59](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/Events.ts#L59)
+Defined in: [src/server/Events.ts:59](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/Events.ts#L59)
 
 #### Returns
 
@@ -54,7 +54,7 @@ Defined in: [src/server/Events.ts:59](https://github.com/nativewrappers/nativewr
 static on(eventName, event): void
 ```
 
-Defined in: [src/server/Events.ts:85](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/Events.ts#L85)
+Defined in: [src/server/Events.ts:85](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/Events.ts#L85)
 
 An on wrapper that properly converts the classes
 
@@ -77,7 +77,7 @@ An on wrapper that properly converts the classes
 static onNet(eventName, event): void
 ```
 
-Defined in: [src/server/Events.ts:74](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/Events.ts#L74)
+Defined in: [src/server/Events.ts:74](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/Events.ts#L74)
 
 An onNet wrapper that properly converts the type into the correct type
 
@@ -100,7 +100,7 @@ An onNet wrapper that properly converts the type into the correct type
 static wasCanceled(): boolean
 ```
 
-Defined in: [src/server/Events.ts:63](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/Events.ts#L63)
+Defined in: [src/server/Events.ts:63](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/Events.ts#L63)
 
 #### Returns
 

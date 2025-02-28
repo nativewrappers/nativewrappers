@@ -2,7 +2,7 @@
 
 # Class: Color
 
-Defined in: [src/common/utils/Color.ts:1](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/utils/Color.ts#L1)
+Defined in: [src/common/utils/Color.ts:1](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/utils/Color.ts#L1)
 
 ## Constructors
 
@@ -16,7 +16,7 @@ new Color(
    a): Color
 ```
 
-Defined in: [src/common/utils/Color.ts:26](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/utils/Color.ts#L26)
+Defined in: [src/common/utils/Color.ts:26](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/utils/Color.ts#L26)
 
 #### Parameters
 
@@ -35,14 +35,14 @@ Defined in: [src/common/utils/Color.ts:26](https://github.com/nativewrappers/nat
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="a-1"></a> `a` | `public` | `number` | [src/common/utils/Color.ts:21](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/utils/Color.ts#L21) |
-| <a id="b-1"></a> `b` | `public` | `number` | [src/common/utils/Color.ts:24](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/utils/Color.ts#L24) |
-| <a id="g-1"></a> `g` | `public` | `number` | [src/common/utils/Color.ts:23](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/utils/Color.ts#L23) |
-| <a id="r-1"></a> `r` | `public` | `number` | [src/common/utils/Color.ts:22](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/utils/Color.ts#L22) |
-| <a id="black"></a> `Black` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:3](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/utils/Color.ts#L3) |
-| <a id="transparent"></a> `Transparent` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:2](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/utils/Color.ts#L2) |
-| <a id="white"></a> `White` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:4](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/utils/Color.ts#L4) |
-| <a id="whitesmoke"></a> `WhiteSmoke` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:5](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/utils/Color.ts#L5) |
+| <a id="a-1"></a> `a` | `public` | `number` | [src/common/utils/Color.ts:21](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/utils/Color.ts#L21) |
+| <a id="b-1"></a> `b` | `public` | `number` | [src/common/utils/Color.ts:24](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/utils/Color.ts#L24) |
+| <a id="g-1"></a> `g` | `public` | `number` | [src/common/utils/Color.ts:23](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/utils/Color.ts#L23) |
+| <a id="r-1"></a> `r` | `public` | `number` | [src/common/utils/Color.ts:22](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/utils/Color.ts#L22) |
+| <a id="black"></a> `Black` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:3](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/utils/Color.ts#L3) |
+| <a id="transparent"></a> `Transparent` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:2](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/utils/Color.ts#L2) |
+| <a id="white"></a> `White` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:4](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/utils/Color.ts#L4) |
+| <a id="whitesmoke"></a> `WhiteSmoke` | `static` | [`Color`](Color.md) | [src/common/utils/Color.ts:5](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/utils/Color.ts#L5) |
 
 ## Methods
 
@@ -56,7 +56,7 @@ static fromArgb(
    b): Color
 ```
 
-Defined in: [src/common/utils/Color.ts:7](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/utils/Color.ts#L7)
+Defined in: [src/common/utils/Color.ts:7](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/utils/Color.ts#L7)
 
 #### Parameters
 
@@ -79,7 +79,7 @@ Defined in: [src/common/utils/Color.ts:7](https://github.com/nativewrappers/nati
 static fromArray(primitive): Color
 ```
 
-Defined in: [src/common/utils/Color.ts:15](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/utils/Color.ts#L15)
+Defined in: [src/common/utils/Color.ts:15](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/utils/Color.ts#L15)
 
 #### Parameters
 
@@ -102,7 +102,7 @@ static fromRgb(
    b): Color
 ```
 
-Defined in: [src/common/utils/Color.ts:11](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/utils/Color.ts#L11)
+Defined in: [src/common/utils/Color.ts:11](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/utils/Color.ts#L11)
 
 #### Parameters
 

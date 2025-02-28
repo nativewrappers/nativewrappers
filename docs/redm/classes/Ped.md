@@ -2,7 +2,7 @@
 
 # Class: Ped
 
-Defined in: [src/redm/entities/Ped.ts:11](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L11)
+Defined in: [src/redm/entities/Ped.ts:11](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L11)
 
 ## Extends
 
@@ -16,7 +16,7 @@ Defined in: [src/redm/entities/Ped.ts:11](https://github.com/nativewrappers/nati
 new Ped(handle): Ped
 ```
 
-Defined in: [src/redm/entities/Ped.ts:14](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L14)
+Defined in: [src/redm/entities/Ped.ts:14](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L14)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ BaseEntity.constructor
 get Accuracy(): number
 ```
 
-Defined in: [src/redm/entities/Ped.ts:102](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L102)
+Defined in: [src/redm/entities/Ped.ts:94](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L94)
 
 ##### Returns
 
@@ -56,7 +56,7 @@ Defined in: [src/redm/entities/Ped.ts:102](https://github.com/nativewrappers/nat
 set Accuracy(accuracy): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:106](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L106)
+Defined in: [src/redm/entities/Ped.ts:98](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L98)
 
 ##### Parameters
 
@@ -78,7 +78,7 @@ Defined in: [src/redm/entities/Ped.ts:106](https://github.com/nativewrappers/nat
 get Attributes(): Attributes
 ```
 
-Defined in: [src/redm/entities/Ped.ts:68](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L68)
+Defined in: [src/redm/entities/Ped.ts:68](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L68)
 
 ##### Returns
 
@@ -96,7 +96,7 @@ the [Attributes](Attributes.md) for the current ped
 get CanBeKnockedOffVehicle(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:110](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L110)
+Defined in: [src/redm/entities/Ped.ts:102](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L102)
 
 ##### Returns
 
@@ -112,7 +112,7 @@ Defined in: [src/redm/entities/Ped.ts:110](https://github.com/nativewrappers/nat
 set CanBeTargeted(toggle): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:324](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L324)
+Defined in: [src/redm/entities/Ped.ts:321](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L321)
 
 ##### Parameters
 
@@ -134,7 +134,7 @@ Defined in: [src/redm/entities/Ped.ts:324](https://github.com/nativewrappers/nat
 get CrouchMovement(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:285](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L285)
+Defined in: [src/redm/entities/Ped.ts:281](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L281)
 
 ##### Returns
 
@@ -150,7 +150,7 @@ Defined in: [src/redm/entities/Ped.ts:285](https://github.com/nativewrappers/nat
 get CurrentVehicle(): null | Vehicle
 ```
 
-Defined in: [src/redm/entities/Ped.ts:507](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L507)
+Defined in: [src/redm/entities/Ped.ts:490](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L490)
 
 ##### Returns
 
@@ -166,7 +166,7 @@ Defined in: [src/redm/entities/Ped.ts:507](https://github.com/nativewrappers/nat
 get DamageCleanliness(): eDamageCleanliness
 ```
 
-Defined in: [src/redm/entities/Ped.ts:308](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L308)
+Defined in: [src/redm/entities/Ped.ts:305](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L305)
 
 ##### Returns
 
@@ -178,7 +178,7 @@ Defined in: [src/redm/entities/Ped.ts:308](https://github.com/nativewrappers/nat
 set DamageCleanliness(cleanliness): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:316](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L316)
+Defined in: [src/redm/entities/Ped.ts:313](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L313)
 
 ##### Parameters
 
@@ -200,7 +200,7 @@ Defined in: [src/redm/entities/Ped.ts:316](https://github.com/nativewrappers/nat
 set DefenseModifier(amount): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:320](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L320)
+Defined in: [src/redm/entities/Ped.ts:317](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L317)
 
 ##### Parameters
 
@@ -214,6 +214,30 @@ Defined in: [src/redm/entities/Ped.ts:320](https://github.com/nativewrappers/nat
 
 ***
 
+### Exists
+
+#### Get Signature
+
+```ts
+get Exists(): boolean
+```
+
+Defined in: [src/redm/entities/BaseEntity.ts:34](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L34)
+
+##### Returns
+
+`boolean`
+
+Returns true if the entity handle is not 0 and exists in the game engine
+
+#### Inherited from
+
+```ts
+BaseEntity.Exists
+```
+
+***
+
 ### Handle
 
 #### Get Signature
@@ -222,7 +246,7 @@ Defined in: [src/redm/entities/Ped.ts:320](https://github.com/nativewrappers/nat
 get Handle(): number
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:31](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/BaseEntity.ts#L31)
+Defined in: [src/redm/entities/BaseEntity.ts:38](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L38)
 
 ##### Returns
 
@@ -244,7 +268,7 @@ BaseEntity.Handle
 get Heading(): number
 ```
 
-Defined in: [src/redm/entities/Ped.ts:90](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L90)
+Defined in: [src/redm/entities/BaseEntity.ts:50](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L50)
 
 ##### Returns
 
@@ -256,7 +280,7 @@ Defined in: [src/redm/entities/Ped.ts:90](https://github.com/nativewrappers/nati
 set Heading(heading): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:94](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L94)
+Defined in: [src/redm/entities/BaseEntity.ts:54](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L54)
 
 ##### Parameters
 
@@ -268,6 +292,12 @@ Defined in: [src/redm/entities/Ped.ts:94](https://github.com/nativewrappers/nati
 
 `void`
 
+#### Inherited from
+
+```ts
+BaseEntity.Heading
+```
+
 ***
 
 ### Health
@@ -278,7 +308,7 @@ Defined in: [src/redm/entities/Ped.ts:94](https://github.com/nativewrappers/nati
 get Health(): number
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:39](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/BaseEntity.ts#L39)
+Defined in: [src/redm/entities/BaseEntity.ts:46](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L46)
 
 ##### Returns
 
@@ -290,7 +320,7 @@ Defined in: [src/redm/entities/BaseEntity.ts:39](https://github.com/nativewrappe
 set Health(amount): void
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:35](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/BaseEntity.ts#L35)
+Defined in: [src/redm/entities/BaseEntity.ts:42](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L42)
 
 ##### Parameters
 
@@ -318,7 +348,7 @@ BaseEntity.Health
 set HearingRange(value): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:257](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L257)
+Defined in: [src/redm/entities/Ped.ts:253](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L253)
 
 ##### Parameters
 
@@ -340,7 +370,7 @@ Defined in: [src/redm/entities/Ped.ts:257](https://github.com/nativewrappers/nat
 get InVehicle(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:74](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L74)
+Defined in: [src/redm/entities/Ped.ts:74](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L74)
 
 ##### Returns
 
@@ -356,7 +386,7 @@ Defined in: [src/redm/entities/Ped.ts:74](https://github.com/nativewrappers/nati
 get IsBeingJacked(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:273](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L273)
+Defined in: [src/redm/entities/Ped.ts:269](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L269)
 
 ##### Returns
 
@@ -372,7 +402,7 @@ Defined in: [src/redm/entities/Ped.ts:273](https://github.com/nativewrappers/nat
 get IsClimbing(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:228](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L228)
+Defined in: [src/redm/entities/Ped.ts:224](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L224)
 
 ##### Returns
 
@@ -388,7 +418,7 @@ Defined in: [src/redm/entities/Ped.ts:228](https://github.com/nativewrappers/nat
 get IsClimbingLadder(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:232](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L232)
+Defined in: [src/redm/entities/Ped.ts:228](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L228)
 
 ##### Returns
 
@@ -404,7 +434,7 @@ Defined in: [src/redm/entities/Ped.ts:232](https://github.com/nativewrappers/nat
 get IsDamaged(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:296](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L296)
+Defined in: [src/redm/entities/Ped.ts:292](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L292)
 
 returns true if [DamageCleanliness](Ped.md#damagecleanliness) was ever lower than [eDamageCleanliness.Good](../enumerations/eDamageCleanliness.md#good)
 
@@ -418,7 +448,7 @@ returns true if [DamageCleanliness](Ped.md#damagecleanliness) was ever lower tha
 set IsDamaged(damaged): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:304](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L304)
+Defined in: [src/redm/entities/Ped.ts:300](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L300)
 
 ##### Parameters
 
@@ -440,7 +470,7 @@ Defined in: [src/redm/entities/Ped.ts:304](https://github.com/nativewrappers/nat
 get IsDiving(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:245](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L245)
+Defined in: [src/redm/entities/Ped.ts:241](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L241)
 
 ##### Returns
 
@@ -456,7 +486,7 @@ Defined in: [src/redm/entities/Ped.ts:245](https://github.com/nativewrappers/nat
 get IsFalling(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:211](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L211)
+Defined in: [src/redm/entities/Ped.ts:207](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L207)
 
 ##### Returns
 
@@ -472,7 +502,7 @@ Defined in: [src/redm/entities/Ped.ts:211](https://github.com/nativewrappers/nat
 get IsFatallyInjured(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:82](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L82)
+Defined in: [src/redm/entities/Ped.ts:82](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L82)
 
 ##### Returns
 
@@ -488,7 +518,7 @@ Defined in: [src/redm/entities/Ped.ts:82](https://github.com/nativewrappers/nati
 get IsHuman(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:118](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L118)
+Defined in: [src/redm/entities/Ped.ts:110](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L110)
 
 ##### Returns
 
@@ -504,7 +534,7 @@ Defined in: [src/redm/entities/Ped.ts:118](https://github.com/nativewrappers/nat
 get IsInAnyBoat(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:195](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L195)
+Defined in: [src/redm/entities/Ped.ts:191](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L191)
 
 ##### Returns
 
@@ -520,7 +550,7 @@ Defined in: [src/redm/entities/Ped.ts:195](https://github.com/nativewrappers/nat
 get IsInAnyHeli(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:199](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L199)
+Defined in: [src/redm/entities/Ped.ts:195](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L195)
 
 ##### Returns
 
@@ -536,7 +566,7 @@ Defined in: [src/redm/entities/Ped.ts:199](https://github.com/nativewrappers/nat
 get IsInAnyPlane(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:203](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L203)
+Defined in: [src/redm/entities/Ped.ts:199](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L199)
 
 ##### Returns
 
@@ -552,7 +582,7 @@ Defined in: [src/redm/entities/Ped.ts:203](https://github.com/nativewrappers/nat
 get IsInCombatRoll(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:277](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L277)
+Defined in: [src/redm/entities/Ped.ts:273](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L273)
 
 ##### Returns
 
@@ -568,7 +598,7 @@ Defined in: [src/redm/entities/Ped.ts:277](https://github.com/nativewrappers/nat
 get IsInFlyingVehicle(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:207](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L207)
+Defined in: [src/redm/entities/Ped.ts:203](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L203)
 
 ##### Returns
 
@@ -584,7 +614,7 @@ Defined in: [src/redm/entities/Ped.ts:207](https://github.com/nativewrappers/nat
 get IsInjured(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:78](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L78)
+Defined in: [src/redm/entities/Ped.ts:78](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L78)
 
 ##### Returns
 
@@ -600,7 +630,7 @@ Defined in: [src/redm/entities/Ped.ts:78](https://github.com/nativewrappers/nati
 get IsInteractingWithAnimal(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:178](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L178)
+Defined in: [src/redm/entities/Ped.ts:174](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L174)
 
 ##### Returns
 
@@ -616,7 +646,7 @@ Defined in: [src/redm/entities/Ped.ts:178](https://github.com/nativewrappers/nat
 get IsJacking(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:265](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L265)
+Defined in: [src/redm/entities/Ped.ts:261](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L261)
 
 ##### Returns
 
@@ -632,7 +662,7 @@ Defined in: [src/redm/entities/Ped.ts:265](https://github.com/nativewrappers/nat
 get IsJumping(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:224](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L224)
+Defined in: [src/redm/entities/Ped.ts:220](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L220)
 
 ##### Returns
 
@@ -648,7 +678,7 @@ Defined in: [src/redm/entities/Ped.ts:224](https://github.com/nativewrappers/nat
 get IsMale(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:114](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L114)
+Defined in: [src/redm/entities/Ped.ts:106](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L106)
 
 ##### Returns
 
@@ -664,7 +694,7 @@ Defined in: [src/redm/entities/Ped.ts:114](https://github.com/nativewrappers/nat
 get IsOnTopOfVehicle(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:122](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L122)
+Defined in: [src/redm/entities/Ped.ts:114](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L114)
 
 ##### Returns
 
@@ -680,7 +710,7 @@ Defined in: [src/redm/entities/Ped.ts:122](https://github.com/nativewrappers/nat
 get IsOpeningADoor(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:249](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L249)
+Defined in: [src/redm/entities/Ped.ts:245](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L245)
 
 ##### Returns
 
@@ -696,7 +726,7 @@ Defined in: [src/redm/entities/Ped.ts:249](https://github.com/nativewrappers/nat
 get IsPlantingBomb(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:191](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L191)
+Defined in: [src/redm/entities/Ped.ts:187](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L187)
 
 ##### Returns
 
@@ -712,7 +742,7 @@ Defined in: [src/redm/entities/Ped.ts:191](https://github.com/nativewrappers/nat
 get IsPlayer(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:86](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L86)
+Defined in: [src/redm/entities/Ped.ts:86](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L86)
 
 ##### Returns
 
@@ -728,7 +758,7 @@ Defined in: [src/redm/entities/Ped.ts:86](https://github.com/nativewrappers/nati
 get IsShooting(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:98](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L98)
+Defined in: [src/redm/entities/Ped.ts:90](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L90)
 
 ##### Returns
 
@@ -744,7 +774,7 @@ Defined in: [src/redm/entities/Ped.ts:98](https://github.com/nativewrappers/nati
 get IsSittingInAnyVehicle(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:187](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L187)
+Defined in: [src/redm/entities/Ped.ts:183](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L183)
 
 ##### Returns
 
@@ -760,7 +790,7 @@ Defined in: [src/redm/entities/Ped.ts:187](https://github.com/nativewrappers/nat
 get IsSliding(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:215](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L215)
+Defined in: [src/redm/entities/Ped.ts:211](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L211)
 
 ##### Returns
 
@@ -776,7 +806,7 @@ Defined in: [src/redm/entities/Ped.ts:215](https://github.com/nativewrappers/nat
 get IsStealthed(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:261](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L261)
+Defined in: [src/redm/entities/Ped.ts:257](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L257)
 
 ##### Returns
 
@@ -792,7 +822,7 @@ Defined in: [src/redm/entities/Ped.ts:261](https://github.com/nativewrappers/nat
 get IsStunned(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:269](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L269)
+Defined in: [src/redm/entities/Ped.ts:265](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L265)
 
 ##### Returns
 
@@ -808,7 +838,7 @@ Defined in: [src/redm/entities/Ped.ts:269](https://github.com/nativewrappers/nat
 get IsVaulting(): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:241](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L241)
+Defined in: [src/redm/entities/Ped.ts:237](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L237)
 
 ##### Returns
 
@@ -824,7 +854,7 @@ Defined in: [src/redm/entities/Ped.ts:241](https://github.com/nativewrappers/nat
 get LeadingHorse(): OptionalPed
 ```
 
-Defined in: [src/redm/entities/Ped.ts:146](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L146)
+Defined in: [src/redm/entities/Ped.ts:142](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L142)
 
 returns the horse that this ped is leading
 
@@ -842,7 +872,7 @@ returns the horse that this ped is leading
 get MaxHealth(): number
 ```
 
-Defined in: [src/redm/entities/Ped.ts:61](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L61)
+Defined in: [src/redm/entities/Ped.ts:61](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L61)
 
 ##### Returns
 
@@ -856,7 +886,7 @@ the maximum health of the ped
 set MaxHealth(amount): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:54](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L54)
+Defined in: [src/redm/entities/Ped.ts:54](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L54)
 
 While this increases the peds max health, if used on a player it wont increase the max core value on the hud
 
@@ -880,7 +910,7 @@ While this increases the peds max health, if used on a player it wont increase t
 get Mount(): OptionalPed
 ```
 
-Defined in: [src/redm/entities/Ped.ts:133](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L133)
+Defined in: [src/redm/entities/Ped.ts:129](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L129)
 
 ##### Returns
 
@@ -898,7 +928,7 @@ the last mount that this ped was on, or null if it doesn't exist
 get Owner(): OptionalPed
 ```
 
-Defined in: [src/redm/entities/Ped.ts:159](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L159)
+Defined in: [src/redm/entities/Ped.ts:155](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L155)
 
 returns the owner of the current animal
 
@@ -916,7 +946,7 @@ returns the owner of the current animal
 set OwnsAnimal(animal): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:352](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L352)
+Defined in: [src/redm/entities/Ped.ts:349](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L349)
 
 ##### Parameters
 
@@ -938,7 +968,7 @@ Defined in: [src/redm/entities/Ped.ts:352](https://github.com/nativewrappers/nat
 get Position(): Vector3
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:43](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/BaseEntity.ts#L43)
+Defined in: [src/redm/entities/BaseEntity.ts:58](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L58)
 
 ##### Returns
 
@@ -950,7 +980,7 @@ Defined in: [src/redm/entities/BaseEntity.ts:43](https://github.com/nativewrappe
 set Position(pos): void
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:47](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/BaseEntity.ts#L47)
+Defined in: [src/redm/entities/BaseEntity.ts:62](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L62)
 
 ##### Parameters
 
@@ -978,7 +1008,7 @@ BaseEntity.Position
 set SeeingRange(value): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:253](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L253)
+Defined in: [src/redm/entities/Ped.ts:249](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L249)
 
 ##### Parameters
 
@@ -1000,7 +1030,7 @@ Defined in: [src/redm/entities/Ped.ts:253](https://github.com/nativewrappers/nat
 get TamingState(): TamingState
 ```
 
-Defined in: [src/redm/entities/Ped.ts:169](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L169)
+Defined in: [src/redm/entities/Ped.ts:165](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L165)
 
 ##### Returns
 
@@ -1013,14 +1043,14 @@ Defined in: [src/redm/entities/Ped.ts:169](https://github.com/nativewrappers/nat
 #### Get Signature
 
 ```ts
-get Vehicle(): Vehicle
+get Vehicle(): null | Vehicle
 ```
 
-Defined in: [src/redm/entities/Ped.ts:126](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L126)
+Defined in: [src/redm/entities/Ped.ts:118](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L118)
 
 ##### Returns
 
-[`Vehicle`](Vehicle.md)
+`null` \| [`Vehicle`](Vehicle.md)
 
 ## Methods
 
@@ -1030,7 +1060,7 @@ Defined in: [src/redm/entities/Ped.ts:126](https://github.com/nativewrappers/nat
 addArmour(amount): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:480](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L480)
+Defined in: [src/redm/entities/Ped.ts:463](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L463)
 
 #### Parameters
 
@@ -1053,7 +1083,7 @@ applyDamage(
    pedKiller): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:484](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L484)
+Defined in: [src/redm/entities/Ped.ts:467](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L467)
 
 #### Parameters
 
@@ -1078,7 +1108,7 @@ applyDamagePack(
    mult): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:503](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L503)
+Defined in: [src/redm/entities/Ped.ts:486](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L486)
 
 #### Parameters
 
@@ -1100,7 +1130,7 @@ Defined in: [src/redm/entities/Ped.ts:503](https://github.com/nativewrappers/nat
 canBeTargetedByPlayer(player, toggle): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:344](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L344)
+Defined in: [src/redm/entities/Ped.ts:341](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L341)
 
 #### Parameters
 
@@ -1121,7 +1151,7 @@ Defined in: [src/redm/entities/Ped.ts:344](https://github.com/nativewrappers/nat
 clearLastBoneDamage(): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:348](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L348)
+Defined in: [src/redm/entities/Ped.ts:345](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L345)
 
 #### Returns
 
@@ -1138,7 +1168,7 @@ clone(
    copyHeadBlend): Ped
 ```
 
-Defined in: [src/redm/entities/Ped.ts:459](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L459)
+Defined in: [src/redm/entities/Ped.ts:442](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L442)
 
 creates a clone of the ped
 
@@ -1164,7 +1194,7 @@ the cloned ped
 cloneTo(targetPed): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:473](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L473)
+Defined in: [src/redm/entities/Ped.ts:456](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L456)
 
 clones the ped onto the target ped
 
@@ -1189,7 +1219,7 @@ damage(
    killer?): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:426](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L426)
+Defined in: [src/redm/entities/Ped.ts:409](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L409)
 
 #### Parameters
 
@@ -1211,7 +1241,7 @@ Defined in: [src/redm/entities/Ped.ts:426](https://github.com/nativewrappers/nat
 delete(): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:447](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L447)
+Defined in: [src/redm/entities/Ped.ts:430](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L430)
 
 Removes the specified ped if its not a player entity
 
@@ -1227,7 +1257,7 @@ Removes the specified ped if its not a player entity
 getJacker(): Ped
 ```
 
-Defined in: [src/redm/entities/Ped.ts:335](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L335)
+Defined in: [src/redm/entities/Ped.ts:332](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L332)
 
 returns the ped who jacked this ped
 
@@ -1243,7 +1273,7 @@ returns the ped who jacked this ped
 isInteractionPossible(animal): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:357](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L357)
+Defined in: [src/redm/entities/Ped.ts:354](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L354)
 
 #### Parameters
 
@@ -1263,7 +1293,7 @@ Defined in: [src/redm/entities/Ped.ts:357](https://github.com/nativewrappers/nat
 isOnVehicle(vehicle): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:367](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L367)
+Defined in: [src/redm/entities/Ped.ts:364](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L364)
 
 #### Parameters
 
@@ -1277,35 +1307,13 @@ Defined in: [src/redm/entities/Ped.ts:367](https://github.com/nativewrappers/nat
 
 ***
 
-### isSeatFree()
-
-```ts
-isSeatFree(seatIndex): boolean
-```
-
-Defined in: [src/redm/entities/Ped.ts:400](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L400)
-
-#### Parameters
-
-| Parameter | Type | Description |
-| ------ | ------ | ------ |
-| `seatIndex` | [`VehicleSeat`](../enumerations/VehicleSeat.md) | the seat index to check |
-
-#### Returns
-
-`boolean`
-
-true of the specified seat is free on the mount
-
-***
-
 ### isSittingInVehicle()
 
 ```ts
 isSittingInVehicle(vehicle): boolean
 ```
 
-Defined in: [src/redm/entities/Ped.ts:371](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L371)
+Defined in: [src/redm/entities/Ped.ts:368](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L368)
 
 #### Parameters
 
@@ -1325,7 +1333,7 @@ Defined in: [src/redm/entities/Ped.ts:371](https://github.com/nativewrappers/nat
 killPed(killer?): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:422](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L422)
+Defined in: [src/redm/entities/Ped.ts:405](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L405)
 
 kills the ped and optionally sets the killer
 
@@ -1347,7 +1355,7 @@ kills the ped and optionally sets the killer
 removeFromMount(): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:390](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L390)
+Defined in: [src/redm/entities/Ped.ts:387](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L387)
 
 #### Returns
 
@@ -1361,7 +1369,7 @@ Defined in: [src/redm/entities/Ped.ts:390](https://github.com/nativewrappers/nat
 replaceHandle(newHandle): void
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:27](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/BaseEntity.ts#L27)
+Defined in: [src/redm/entities/BaseEntity.ts:27](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L27)
 
 #### Parameters
 
@@ -1387,7 +1395,7 @@ BaseEntity.replaceHandle
 setCanBeKnockedOffVehicle(state): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:440](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L440)
+Defined in: [src/redm/entities/Ped.ts:423](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L423)
 
 this returns a different type then the getter so we can't use set, maybe ts will fix soon (tm)
 
@@ -1409,7 +1417,7 @@ this returns a different type then the getter so we can't use set, maybe ts will
 setCrouchMovement(state, immediately): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:339](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L339)
+Defined in: [src/redm/entities/Ped.ts:336](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L336)
 
 #### Parameters
 
@@ -1430,7 +1438,7 @@ Defined in: [src/redm/entities/Ped.ts:339](https://github.com/nativewrappers/nat
 setIntoVehicle(vehicle, seatIndex): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:414](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L414)
+Defined in: [src/redm/entities/Ped.ts:397](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L397)
 
 Sets the ped into the specified vehicle
 
@@ -1453,7 +1461,7 @@ Sets the ped into the specified vehicle
 setOntoMount(targetPed, seatIndex): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:385](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L385)
+Defined in: [src/redm/entities/Ped.ts:382](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L382)
 
 puts the ped onto the specified mount
 
@@ -1476,7 +1484,7 @@ puts the ped onto the specified mount
 warpOutOfVehicle(): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:375](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L375)
+Defined in: [src/redm/entities/Ped.ts:372](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L372)
 
 #### Returns
 
@@ -1493,7 +1501,7 @@ static blockScenariosInArea(
    blockingFlags): number
 ```
 
-Defined in: [src/redm/entities/Ped.ts:26](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L26)
+Defined in: [src/redm/entities/Ped.ts:26](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L26)
 
 Blocks scenarios inbetween the specified vectors
 
@@ -1523,7 +1531,7 @@ Move to Game
 static removeScenarioBlock(scenarioId): void
 ```
 
-Defined in: [src/redm/entities/Ped.ts:47](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/redm/entities/Ped.ts#L47)
+Defined in: [src/redm/entities/Ped.ts:47](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Ped.ts#L47)
 
 Removes the blocking of scenarios in the specified area
 

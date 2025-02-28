@@ -2,7 +2,7 @@
 
 # Class: VehicleToggleMod
 
-Defined in: [src/fivem/models/VehicleToggleMod.ts:4](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleToggleMod.ts#L4)
+Defined in: [src/fivem/models/VehicleToggleMod.ts:4](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleToggleMod.ts#L4)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/fivem/models/VehicleToggleMod.ts:4](https://github.com/nativewr
 new VehicleToggleMod(owner, modType): VehicleToggleMod
 ```
 
-Defined in: [src/fivem/models/VehicleToggleMod.ts:8](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleToggleMod.ts#L8)
+Defined in: [src/fivem/models/VehicleToggleMod.ts:8](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleToggleMod.ts#L8)
 
 #### Parameters
 
@@ -35,7 +35,7 @@ Defined in: [src/fivem/models/VehicleToggleMod.ts:8](https://github.com/nativewr
 get IsInstalled(): boolean
 ```
 
-Defined in: [src/fivem/models/VehicleToggleMod.ts:21](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleToggleMod.ts#L21)
+Defined in: [src/fivem/models/VehicleToggleMod.ts:21](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleToggleMod.ts#L21)
 
 ##### Returns
 
@@ -47,7 +47,7 @@ Defined in: [src/fivem/models/VehicleToggleMod.ts:21](https://github.com/nativew
 set IsInstalled(value): void
 ```
 
-Defined in: [src/fivem/models/VehicleToggleMod.ts:25](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleToggleMod.ts#L25)
+Defined in: [src/fivem/models/VehicleToggleMod.ts:25](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleToggleMod.ts#L25)
 
 ##### Parameters
 
@@ -69,7 +69,7 @@ Defined in: [src/fivem/models/VehicleToggleMod.ts:25](https://github.com/nativew
 get LocalizedModTypeName(): string
 ```
 
-Defined in: [src/fivem/models/VehicleToggleMod.ts:29](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleToggleMod.ts#L29)
+Defined in: [src/fivem/models/VehicleToggleMod.ts:29](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleToggleMod.ts#L29)
 
 ##### Returns
 
@@ -85,7 +85,7 @@ Defined in: [src/fivem/models/VehicleToggleMod.ts:29](https://github.com/nativew
 get ModType(): VehicleToggleModType
 ```
 
-Defined in: [src/fivem/models/VehicleToggleMod.ts:13](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleToggleMod.ts#L13)
+Defined in: [src/fivem/models/VehicleToggleMod.ts:13](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleToggleMod.ts#L13)
 
 ##### Returns
 
@@ -97,7 +97,7 @@ Defined in: [src/fivem/models/VehicleToggleMod.ts:13](https://github.com/nativew
 set ModType(modType): void
 ```
 
-Defined in: [src/fivem/models/VehicleToggleMod.ts:17](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleToggleMod.ts#L17)
+Defined in: [src/fivem/models/VehicleToggleMod.ts:17](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleToggleMod.ts#L17)
 
 ##### Parameters
 
@@ -119,7 +119,7 @@ Defined in: [src/fivem/models/VehicleToggleMod.ts:17](https://github.com/nativew
 get Vehicle(): Vehicle
 ```
 
-Defined in: [src/fivem/models/VehicleToggleMod.ts:33](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleToggleMod.ts#L33)
+Defined in: [src/fivem/models/VehicleToggleMod.ts:33](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleToggleMod.ts#L33)
 
 ##### Returns
 
@@ -133,7 +133,7 @@ Defined in: [src/fivem/models/VehicleToggleMod.ts:33](https://github.com/nativew
 remove(): void
 ```
 
-Defined in: [src/fivem/models/VehicleToggleMod.ts:37](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/models/VehicleToggleMod.ts#L37)
+Defined in: [src/fivem/models/VehicleToggleMod.ts:37](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/models/VehicleToggleMod.ts#L37)
 
 #### Returns
 

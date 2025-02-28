@@ -2,7 +2,7 @@
 
 # Class: `abstract` World
 
-Defined in: [src/fivem/World.ts:32](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L32)
+Defined in: [src/fivem/World.ts:32](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L32)
 
 Class with common world manipulations.
 
@@ -32,7 +32,7 @@ new World(): World
 set static Blackout(value): void
 ```
 
-Defined in: [src/fivem/World.ts:106](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L106)
+Defined in: [src/fivem/World.ts:106](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L106)
 
 Disables all emissive textures, street/building/vehicle lights. "EMP" effect.
 
@@ -56,7 +56,7 @@ Disables all emissive textures, street/building/vehicle lights. "EMP" effect.
 get static CloudHat(): CloudHat
 ```
 
-Defined in: [src/fivem/World.ts:115](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L115)
+Defined in: [src/fivem/World.ts:115](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L115)
 
 Get the current cloud hat.
 
@@ -72,7 +72,7 @@ The current cloud hat type.
 set static CloudHat(value): void
 ```
 
-Defined in: [src/fivem/World.ts:124](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L124)
+Defined in: [src/fivem/World.ts:124](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L124)
 
 Set the current cloud hat.
 
@@ -96,7 +96,7 @@ Set the current cloud hat.
 get static CloudHatOpacity(): number
 ```
 
-Defined in: [src/fivem/World.ts:140](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L140)
+Defined in: [src/fivem/World.ts:140](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L140)
 
 Get the opacity of current cloud hat. Value is between 0-1.
 
@@ -112,7 +112,7 @@ The current cloud opacity between 0.0 and 1.0
 set static CloudHatOpacity(value): void
 ```
 
-Defined in: [src/fivem/World.ts:149](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L149)
+Defined in: [src/fivem/World.ts:149](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L149)
 
 Set opacity of current cloud hat between 0-1.
 
@@ -136,7 +136,7 @@ Set opacity of current cloud hat between 0-1.
 get static CurrentDate(): Date
 ```
 
-Defined in: [src/fivem/World.ts:78](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L78)
+Defined in: [src/fivem/World.ts:78](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L78)
 
 Get the current date in the world.
 
@@ -152,7 +152,7 @@ The current date.
 set static CurrentDate(date): void
 ```
 
-Defined in: [src/fivem/World.ts:92](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L92)
+Defined in: [src/fivem/World.ts:92](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L92)
 
 Set the current date of the world.
 
@@ -176,7 +176,7 @@ Set the current date of the world.
 get static NextWeather(): Weather
 ```
 
-Defined in: [src/fivem/World.ts:215](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L215)
+Defined in: [src/fivem/World.ts:215](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L215)
 
 Get the next weather type.
 
@@ -192,7 +192,7 @@ The Weather type
 set static NextWeather(value): void
 ```
 
-Defined in: [src/fivem/World.ts:255](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L255)
+Defined in: [src/fivem/World.ts:255](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L255)
 
 Set weather type instantly. Similar to World.transitionToWeather with duration 0.
 
@@ -216,7 +216,7 @@ Set weather type instantly. Similar to World.transitionToWeather with duration 0
 get static RenderingCamera(): Camera
 ```
 
-Defined in: [src/fivem/World.ts:38](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L38)
+Defined in: [src/fivem/World.ts:38](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L38)
 
 Get the current camera that's rendering.
 
@@ -232,7 +232,7 @@ The camera that's currently used.
 set static RenderingCamera(value): void
 ```
 
-Defined in: [src/fivem/World.ts:56](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L56)
+Defined in: [src/fivem/World.ts:56](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L56)
 
 Set the rendering camera. World.RenderingCamera = null to reset.
 
@@ -265,7 +265,7 @@ World.RenderingCamera = null;
 set static RopesCreateNetworkWorldState(value): void
 ```
 
-Defined in: [src/fivem/World.ts:69](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L69)
+Defined in: [src/fivem/World.ts:69](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L69)
 
 Whether to create a network world state for Ropes
 This currently does nothing
@@ -290,7 +290,7 @@ This currently does nothing
 get static Weather(): Weather
 ```
 
-Defined in: [src/fivem/World.ts:158](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L158)
+Defined in: [src/fivem/World.ts:158](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L158)
 
 Get the current weather type.
 
@@ -306,7 +306,7 @@ The current type of weather.
 set static Weather(value): void
 ```
 
-Defined in: [src/fivem/World.ts:200](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L200)
+Defined in: [src/fivem/World.ts:200](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L200)
 
 Set the current weather.
 
@@ -330,7 +330,7 @@ Set the current weather.
 get static WeatherTransition(): [string | Weather, string | Weather, number]
 ```
 
-Defined in: [src/fivem/World.ts:265](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L265)
+Defined in: [src/fivem/World.ts:265](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L265)
 
 Doesn't work
 
@@ -344,7 +344,7 @@ Doesn't work
 set static WeatherTransition(transition): void
 ```
 
-Defined in: [src/fivem/World.ts:281](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L281)
+Defined in: [src/fivem/World.ts:281](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L281)
 
 Doesn't work
 
@@ -370,7 +370,7 @@ static createAmbientPickup(
 value): Promise<null | Prop>
 ```
 
-Defined in: [src/fivem/World.ts:693](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L693)
+Defined in: [src/fivem/World.ts:693](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L693)
 
 Creates an ambient pickup.
 
@@ -397,7 +397,7 @@ The pickup in form of a Prop.
 static createBlip(position, radius?): Blip
 ```
 
-Defined in: [src/fivem/World.ts:321](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L321)
+Defined in: [src/fivem/World.ts:321](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L321)
 
 Creates a blip at a given position and optionally radius.
 
@@ -428,7 +428,7 @@ Blip object.
 static createCamera(cameraType, active): Camera
 ```
 
-Defined in: [src/fivem/World.ts:340](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L340)
+Defined in: [src/fivem/World.ts:340](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L340)
 
 Creates a cam that defaults to [CameraTypes.Scripted](../enumerations/CameraTypes.md#scripted)
 
@@ -459,7 +459,7 @@ static createCameraWithParams(
    fieldOfView): Camera
 ```
 
-Defined in: [src/fivem/World.ts:360](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L360)
+Defined in: [src/fivem/World.ts:360](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L360)
 
 Creates a camera using 'DEFAULT_SCRIPTED_CAMERA'.
 
@@ -496,7 +496,7 @@ static createPed(
 pinToScript): Promise<null | Ped>
 ```
 
-Defined in: [src/fivem/World.ts:397](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L397)
+Defined in: [src/fivem/World.ts:397](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L397)
 
 Create a ped at a desired location.
 
@@ -535,7 +535,7 @@ static createPickup(
 rotation?): Promise<null | Pickup>
 ```
 
-Defined in: [src/fivem/World.ts:635](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L635)
+Defined in: [src/fivem/World.ts:635](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L635)
 
 Create a pickup in a specific position in the world with a specified type and value.
 
@@ -569,7 +569,7 @@ static createProp(
 forceToBeObject): Promise<null | Prop>
 ```
 
-Defined in: [src/fivem/World.ts:588](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L588)
+Defined in: [src/fivem/World.ts:588](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L588)
 
 Spawns a [[`Prop`]] at the given position.
 
@@ -604,7 +604,7 @@ Prop object.
 static createRandomPed(position): Ped
 ```
 
-Defined in: [src/fivem/World.ts:439](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L439)
+Defined in: [src/fivem/World.ts:439](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L439)
 
 Creates a [[`Ped`]] with a random model.
 
@@ -636,7 +636,7 @@ static createRandomVehicle(
 isNetwork): Promise<null | Vehicle>
 ```
 
-Defined in: [src/fivem/World.ts:499](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L499)
+Defined in: [src/fivem/World.ts:499](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L499)
 
 Create a random vehicle at a desired location.
 
@@ -680,7 +680,7 @@ static createRope(
 shouldLoadTextures): Promise<Rope>
 ```
 
-Defined in: [src/fivem/World.ts:525](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L525)
+Defined in: [src/fivem/World.ts:525](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L525)
 
 #### Parameters
 
@@ -717,7 +717,7 @@ static createVehicle(
 pinToScript): Promise<null | Vehicle>
 ```
 
-Defined in: [src/fivem/World.ts:458](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L458)
+Defined in: [src/fivem/World.ts:458](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L458)
 
 Create a vehicle at a desired location.
 
@@ -751,7 +751,7 @@ Vehicle object.
 static destroyAllCameras(): void
 ```
 
-Defined in: [src/fivem/World.ts:304](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L304)
+Defined in: [src/fivem/World.ts:304](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L304)
 
 Destroys all existing cameras and sets your rendering camera back to GameplayCam.
 
@@ -771,7 +771,7 @@ static drawLightWithRange(
    intensity): void
 ```
 
-Defined in: [src/fivem/World.ts:799](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L799)
+Defined in: [src/fivem/World.ts:799](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L799)
 
 Creates a light in the world with a certain length (range).
 
@@ -799,7 +799,7 @@ static drawLine(
    color): void
 ```
 
-Defined in: [src/fivem/World.ts:905](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L905)
+Defined in: [src/fivem/World.ts:905](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L905)
 
 Draws a line in the world. It's not possible to change thickness.
 
@@ -835,7 +835,7 @@ static drawMarker(
    drawOnEntity): void
 ```
 
-Defined in: [src/fivem/World.ts:749](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L749)
+Defined in: [src/fivem/World.ts:749](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L749)
 
 Draw a marker at a desired location. Careful! Must be drawn every tick.
 
@@ -881,7 +881,7 @@ static drawPoly(
    color): void
 ```
 
-Defined in: [src/fivem/World.ts:928](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L928)
+Defined in: [src/fivem/World.ts:928](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L928)
 
 Draw polygon in the world.
 
@@ -914,7 +914,7 @@ static drawSpotLight(
    fadeOut): void
 ```
 
-Defined in: [src/fivem/World.ts:829](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L829)
+Defined in: [src/fivem/World.ts:829](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L829)
 
 Creates a light in the world. More configurable than World.drawLightWithRange.
 
@@ -951,7 +951,7 @@ static drawSpotLightWithShadow(
    fadeOut): void
 ```
 
-Defined in: [src/fivem/World.ts:869](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L869)
+Defined in: [src/fivem/World.ts:869](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L869)
 
 Creates a light in the world. Same as World.drawSpotlight, but also draws shadows.
 
@@ -985,7 +985,7 @@ static expensiveRaycast(
    ignoreEntity?): SynchronousRaycastResult
 ```
 
-Defined in: [src/fivem/World.ts:963](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L963)
+Defined in: [src/fivem/World.ts:963](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L963)
 
 Cast a ray from {@param start} to {@param end}.
 
@@ -1013,7 +1013,7 @@ Cast a ray from {@param start} to {@param end}.
 static getAllPeds(): Ped[]
 ```
 
-Defined in: [src/fivem/World.ts:1172](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L1172)
+Defined in: [src/fivem/World.ts:1172](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L1172)
 
 Get all [[`Ped`]] entities in your own scope.
 
@@ -1031,7 +1031,7 @@ Array of Peds.
 static getAllPickups(): Pickup[]
 ```
 
-Defined in: [src/fivem/World.ts:1223](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L1223)
+Defined in: [src/fivem/World.ts:1223](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L1223)
 
 Get all [[`Pickup`]] entities using the GetGamePool.
 
@@ -1049,7 +1049,7 @@ Array of Pickups.
 static getAllProps(): Prop[]
 ```
 
-Defined in: [src/fivem/World.ts:1144](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L1144)
+Defined in: [src/fivem/World.ts:1144](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L1144)
 
 Get all [[`Prop`]] entities in your own scope.
 
@@ -1067,7 +1067,7 @@ Array of Props.
 static getAllRopes(): Rope[]
 ```
 
-Defined in: [src/fivem/World.ts:1158](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L1158)
+Defined in: [src/fivem/World.ts:1158](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L1158)
 
 Get all [[`Rope`]] entities in your own scope.
 
@@ -1085,7 +1085,7 @@ Array of Ropes.
 static getAllVehicles(): Vehicle[]
 ```
 
-Defined in: [src/fivem/World.ts:1186](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L1186)
+Defined in: [src/fivem/World.ts:1186](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L1186)
 
 Get all [[`Vehicle`]] entities in your own scope.
 
@@ -1107,7 +1107,7 @@ static getClosestObject(
    isMission): null | Prop
 ```
 
-Defined in: [src/fivem/World.ts:1117](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L1117)
+Defined in: [src/fivem/World.ts:1117](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L1117)
 
 Gets the closest object of this model
 
@@ -1132,7 +1132,7 @@ Gets the closest object of this model
 static getClosestVehicle(coords): null | Vehicle
 ```
 
-Defined in: [src/fivem/World.ts:1199](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L1199)
+Defined in: [src/fivem/World.ts:1199](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L1199)
 
 Gets the cloest [[`Vehicle`]] to the current coords, or null if none are found
 
@@ -1161,7 +1161,7 @@ static raycast(
    ignoreEntity?): AsynchronousRaycastResult
 ```
 
-Defined in: [src/fivem/World.ts:996](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L996)
+Defined in: [src/fivem/World.ts:996](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L996)
 
 Cast a ray from {@param start} to {@param end} and returns the first hit
 entity or coordinate .
@@ -1199,7 +1199,7 @@ static raycastDirection(
    ignoreEntity?): SynchronousRaycastResult
 ```
 
-Defined in: [src/fivem/World.ts:1018](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L1018)
+Defined in: [src/fivem/World.ts:1018](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L1018)
 
 ##### Parameters
 
@@ -1230,7 +1230,7 @@ static raycastDirection(
    ignoreEntity?): AsynchronousRaycastResult
 ```
 
-Defined in: [src/fivem/World.ts:1028](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L1028)
+Defined in: [src/fivem/World.ts:1028](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L1028)
 
 ##### Parameters
 
@@ -1256,7 +1256,7 @@ Defined in: [src/fivem/World.ts:1028](https://github.com/nativewrappers/nativewr
 static raycastPlayerCamera(maxDistance, flags): SynchronousRaycastResult
 ```
 
-Defined in: [src/fivem/World.ts:1090](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L1090)
+Defined in: [src/fivem/World.ts:1090](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L1090)
 
 Cast a ray from the local players camera until it hits an entity
 
@@ -1281,7 +1281,7 @@ SynchronousRaycast object.
 static transitionToWeather(weather, duration): void
 ```
 
-Defined in: [src/fivem/World.ts:295](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/fivem/World.ts#L295)
+Defined in: [src/fivem/World.ts:295](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/World.ts#L295)
 
 Transition to different weather type within a certain time.
 

@@ -2,7 +2,7 @@
 
 # Class: Command\<T\>
 
-Defined in: [src/common/Command.ts:33](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/Command.ts#L33)
+Defined in: [src/common/Command.ts:33](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/Command.ts#L33)
 
 ## Type Parameters
 
@@ -23,7 +23,7 @@ new Command<T>(
 restricted?): Command<T>
 ```
 
-Defined in: [src/common/Command.ts:36](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/Command.ts#L36)
+Defined in: [src/common/Command.ts:36](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/Command.ts#L36)
 
 #### Parameters
 
@@ -43,9 +43,9 @@ Defined in: [src/common/Command.ts:36](https://github.com/nativewrappers/nativew
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="help-1"></a> `help` | `readonly` | `string` | [src/common/Command.ts:38](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/Command.ts#L38) |
-| <a id="name-1"></a> `name` | `readonly` | `string` \| `string`[] | [src/common/Command.ts:37](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/Command.ts#L37) |
-| <a id="params-1"></a> `params?` | `readonly` | `T` | [src/common/Command.ts:40](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/Command.ts#L40) |
+| <a id="help-1"></a> `help` | `readonly` | `string` | [src/common/Command.ts:38](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/Command.ts#L38) |
+| <a id="name-1"></a> `name` | `readonly` | `string` \| `string`[] | [src/common/Command.ts:37](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/Command.ts#L37) |
+| <a id="params-1"></a> `params?` | `readonly` | `T` | [src/common/Command.ts:40](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/Command.ts#L40) |
 
 ## Methods
 
@@ -58,7 +58,7 @@ call(
 raw): Promise<void>
 ```
 
-Defined in: [src/common/Command.ts:130](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/common/Command.ts#L130)
+Defined in: [src/common/Command.ts:130](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/Command.ts#L130)
 
 #### Parameters
 

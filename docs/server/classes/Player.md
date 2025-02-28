@@ -2,7 +2,7 @@
 
 # Class: Player
 
-Defined in: [src/server/entities/Player.ts:7](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L7)
+Defined in: [src/server/entities/Player.ts:7](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L7)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/server/entities/Player.ts:7](https://github.com/nativewrappers/
 new Player(source): Player
 ```
 
-Defined in: [src/server/entities/Player.ts:9](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L9)
+Defined in: [src/server/entities/Player.ts:9](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L9)
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Defined in: [src/server/entities/Player.ts:9](https://github.com/nativewrappers/
 
 | Property | Modifier | Type | Default value | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| <a id="type"></a> `type` | `protected` | `ClassTypes` | `ClassTypes.Player` | [src/server/entities/Player.ts:8](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L8) |
+| <a id="type"></a> `type` | `protected` | `ClassTypes` | `ClassTypes.Player` | [src/server/entities/Player.ts:8](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L8) |
 
 ## Accessors
 
@@ -40,7 +40,7 @@ Defined in: [src/server/entities/Player.ts:9](https://github.com/nativewrappers/
 get AirDragMultiplier(): number
 ```
 
-Defined in: [src/server/entities/Player.ts:136](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L136)
+Defined in: [src/server/entities/Player.ts:136](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L136)
 
 ##### Returns
 
@@ -56,7 +56,7 @@ Defined in: [src/server/entities/Player.ts:136](https://github.com/nativewrapper
 get CamerRotation(): Vector3
 ```
 
-Defined in: [src/server/entities/Player.ts:57](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L57)
+Defined in: [src/server/entities/Player.ts:57](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L57)
 
 ##### Returns
 
@@ -72,7 +72,7 @@ Defined in: [src/server/entities/Player.ts:57](https://github.com/nativewrappers
 get Endpoint(): string
 ```
 
-Defined in: [src/server/entities/Player.ts:53](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L53)
+Defined in: [src/server/entities/Player.ts:53](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L53)
 
 ##### Returns
 
@@ -88,7 +88,7 @@ Defined in: [src/server/entities/Player.ts:53](https://github.com/nativewrappers
 get Exists(): boolean
 ```
 
-Defined in: [src/server/entities/Player.ts:22](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L22)
+Defined in: [src/server/entities/Player.ts:22](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L22)
 
 ##### Returns
 
@@ -104,7 +104,7 @@ Defined in: [src/server/entities/Player.ts:22](https://github.com/nativewrappers
 get Identifiers(): string[]
 ```
 
-Defined in: [src/server/entities/Player.ts:49](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L49)
+Defined in: [src/server/entities/Player.ts:49](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L49)
 
 ##### Returns
 
@@ -120,7 +120,7 @@ Defined in: [src/server/entities/Player.ts:49](https://github.com/nativewrappers
 get IsEvadingWanted(): boolean
 ```
 
-Defined in: [src/server/entities/Player.ts:120](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L120)
+Defined in: [src/server/entities/Player.ts:120](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L120)
 
 ##### Returns
 
@@ -136,7 +136,7 @@ Defined in: [src/server/entities/Player.ts:120](https://github.com/nativewrapper
 get IsMuted(): boolean
 ```
 
-Defined in: [src/server/entities/Player.ts:144](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L144)
+Defined in: [src/server/entities/Player.ts:144](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L144)
 
 ##### Returns
 
@@ -148,7 +148,7 @@ Defined in: [src/server/entities/Player.ts:144](https://github.com/nativewrapper
 set IsMuted(isMuted): void
 ```
 
-Defined in: [src/server/entities/Player.ts:148](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L148)
+Defined in: [src/server/entities/Player.ts:148](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L148)
 
 ##### Parameters
 
@@ -170,7 +170,7 @@ Defined in: [src/server/entities/Player.ts:148](https://github.com/nativewrapper
 get IsUsingSuperJump(): boolean
 ```
 
-Defined in: [src/server/entities/Player.ts:140](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L140)
+Defined in: [src/server/entities/Player.ts:140](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L140)
 
 ##### Returns
 
@@ -186,7 +186,7 @@ Defined in: [src/server/entities/Player.ts:140](https://github.com/nativewrapper
 get LastMessage(): number
 ```
 
-Defined in: [src/server/entities/Player.ts:64](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L64)
+Defined in: [src/server/entities/Player.ts:64](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L64)
 
 Returns the time since the last player UDP message
 
@@ -204,7 +204,7 @@ Returns the time since the last player UDP message
 get MaxArmour(): number
 ```
 
-Defined in: [src/server/entities/Player.ts:68](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L68)
+Defined in: [src/server/entities/Player.ts:68](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L68)
 
 ##### Returns
 
@@ -220,7 +220,7 @@ Defined in: [src/server/entities/Player.ts:68](https://github.com/nativewrappers
 get MaxHealth(): number
 ```
 
-Defined in: [src/server/entities/Player.ts:72](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L72)
+Defined in: [src/server/entities/Player.ts:72](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L72)
 
 ##### Returns
 
@@ -236,7 +236,7 @@ Defined in: [src/server/entities/Player.ts:72](https://github.com/nativewrappers
 get MeleeModifier(): number
 ```
 
-Defined in: [src/server/entities/Player.ts:76](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L76)
+Defined in: [src/server/entities/Player.ts:76](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L76)
 
 ##### Returns
 
@@ -252,7 +252,7 @@ Defined in: [src/server/entities/Player.ts:76](https://github.com/nativewrappers
 get Name(): string
 ```
 
-Defined in: [src/server/entities/Player.ts:83](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L83)
+Defined in: [src/server/entities/Player.ts:83](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L83)
 
 ##### Returns
 
@@ -270,7 +270,7 @@ the players name
 get Ped(): Ped
 ```
 
-Defined in: [src/server/entities/Player.ts:41](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L41)
+Defined in: [src/server/entities/Player.ts:41](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L41)
 
 ##### Returns
 
@@ -286,7 +286,7 @@ Defined in: [src/server/entities/Player.ts:41](https://github.com/nativewrappers
 get Ping(): number
 ```
 
-Defined in: [src/server/entities/Player.ts:97](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L97)
+Defined in: [src/server/entities/Player.ts:97](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L97)
 
 ##### Returns
 
@@ -304,7 +304,7 @@ the players round trip ping
 get RoutingBucket(): number
 ```
 
-Defined in: [src/server/entities/Player.ts:104](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L104)
+Defined in: [src/server/entities/Player.ts:104](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L104)
 
 ##### Returns
 
@@ -322,7 +322,7 @@ the current routhing bucket the player is in, default is 0
 get Source(): number
 ```
 
-Defined in: [src/server/entities/Player.ts:26](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L26)
+Defined in: [src/server/entities/Player.ts:26](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L26)
 
 ##### Returns
 
@@ -338,7 +338,7 @@ Defined in: [src/server/entities/Player.ts:26](https://github.com/nativewrappers
 get Src(): string
 ```
 
-Defined in: [src/server/entities/Player.ts:37](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L37)
+Defined in: [src/server/entities/Player.ts:37](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L37)
 
 Returns the player source casted as a string
 
@@ -356,7 +356,7 @@ Returns the player source casted as a string
 get State(): StateBagInterface
 ```
 
-Defined in: [src/server/entities/Player.ts:30](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L30)
+Defined in: [src/server/entities/Player.ts:30](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L30)
 
 ##### Returns
 
@@ -372,7 +372,7 @@ Defined in: [src/server/entities/Player.ts:30](https://github.com/nativewrappers
 get Team(): number
 ```
 
-Defined in: [src/server/entities/Player.ts:108](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L108)
+Defined in: [src/server/entities/Player.ts:108](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L108)
 
 ##### Returns
 
@@ -388,7 +388,7 @@ Defined in: [src/server/entities/Player.ts:108](https://github.com/nativewrapper
 get Tokens(): string[]
 ```
 
-Defined in: [src/server/entities/Player.ts:45](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L45)
+Defined in: [src/server/entities/Player.ts:45](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L45)
 
 ##### Returns
 
@@ -404,7 +404,7 @@ Defined in: [src/server/entities/Player.ts:45](https://github.com/nativewrappers
 get WantedLevel(): number
 ```
 
-Defined in: [src/server/entities/Player.ts:116](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L116)
+Defined in: [src/server/entities/Player.ts:116](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L116)
 
 ##### Returns
 
@@ -420,7 +420,7 @@ Defined in: [src/server/entities/Player.ts:116](https://github.com/nativewrapper
 get WantedPosition(): Vector3
 ```
 
-Defined in: [src/server/entities/Player.ts:112](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L112)
+Defined in: [src/server/entities/Player.ts:112](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L112)
 
 ##### Returns
 
@@ -436,7 +436,7 @@ Defined in: [src/server/entities/Player.ts:112](https://github.com/nativewrapper
 get WeaponDamageModifier(): number
 ```
 
-Defined in: [src/server/entities/Player.ts:124](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L124)
+Defined in: [src/server/entities/Player.ts:124](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L124)
 
 ##### Returns
 
@@ -452,7 +452,7 @@ Defined in: [src/server/entities/Player.ts:124](https://github.com/nativewrapper
 get WeaponDefenseModifier(): number
 ```
 
-Defined in: [src/server/entities/Player.ts:128](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L128)
+Defined in: [src/server/entities/Player.ts:128](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L128)
 
 ##### Returns
 
@@ -468,7 +468,7 @@ Defined in: [src/server/entities/Player.ts:128](https://github.com/nativewrapper
 get WeaponDefenseModifier2(): number
 ```
 
-Defined in: [src/server/entities/Player.ts:132](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L132)
+Defined in: [src/server/entities/Player.ts:132](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L132)
 
 ##### Returns
 
@@ -482,7 +482,7 @@ Defined in: [src/server/entities/Player.ts:132](https://github.com/nativewrapper
 drop(reason): void
 ```
 
-Defined in: [src/server/entities/Player.ts:160](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L160)
+Defined in: [src/server/entities/Player.ts:160](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L160)
 
 #### Parameters
 
@@ -502,7 +502,7 @@ Defined in: [src/server/entities/Player.ts:160](https://github.com/nativewrapper
 emit(eventName, ...args): void
 ```
 
-Defined in: [src/server/entities/Player.ts:164](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L164)
+Defined in: [src/server/entities/Player.ts:164](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L164)
 
 #### Parameters
 
@@ -523,7 +523,7 @@ Defined in: [src/server/entities/Player.ts:164](https://github.com/nativewrapper
 filteredName(): string
 ```
 
-Defined in: [src/server/entities/Player.ts:90](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L90)
+Defined in: [src/server/entities/Player.ts:90](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L90)
 
 #### Returns
 
@@ -539,7 +539,7 @@ the players name with any color code unicode, etc removed, this can lead to ther
 isAceAllowed(object): boolean
 ```
 
-Defined in: [src/server/entities/Player.ts:152](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L152)
+Defined in: [src/server/entities/Player.ts:152](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L152)
 
 #### Parameters
 
@@ -559,7 +559,7 @@ Defined in: [src/server/entities/Player.ts:152](https://github.com/nativewrapper
 timeInPersuit(lastPursuit): number
 ```
 
-Defined in: [src/server/entities/Player.ts:156](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L156)
+Defined in: [src/server/entities/Player.ts:156](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L156)
 
 #### Parameters
 
@@ -579,7 +579,7 @@ Defined in: [src/server/entities/Player.ts:156](https://github.com/nativewrapper
 static AllPlayers(): IterableIterator<Player>
 ```
 
-Defined in: [src/server/entities/Player.ts:15](https://github.com/nativewrappers/nativewrappers/blob/b77be96b90a0116f980e0511bdd4877df779df2d/src/server/entities/Player.ts#L15)
+Defined in: [src/server/entities/Player.ts:15](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/server/entities/Player.ts#L15)
 
 Get an interable list of players currently on the server
 
