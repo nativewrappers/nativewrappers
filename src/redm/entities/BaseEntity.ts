@@ -28,6 +28,13 @@ export class BaseEntity {
     this.handle = newHandle;
   }
 
+  /**
+   * @returns Returns true if the entity handle is not 0 and exists in the game engine
+   */
+  get Exists(): boolean {
+    return this.handle !== 0 && DoesEntityExist(this.Handle);
+  }
+
   get Handle(): number {
     return this.handle;
   }
@@ -38,6 +45,14 @@ export class BaseEntity {
 
   get Health(): number {
     return GetEntityHealth(this.Handle);
+  }
+
+  get Heading(): number {
+    return GetEntityHeading(this.Handle);
+  }
+
+  set Heading(heading: number) {
+    SetEntityHeading(this.Handle, heading);
   }
 
   get Position(): Vector3 {

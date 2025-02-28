@@ -87,14 +87,6 @@ export class Ped extends BaseEntity {
     return IsPedAPlayer(this.Handle);
   }
 
-  get Heading(): number {
-    return GetEntityHeading(this.Handle);
-  }
-
-  set Heading(heading: number) {
-    SetEntityHeading(this.Handle, heading);
-  }
-
   get IsShooting(): boolean {
     return IsPedShooting(this.Handle);
   }
@@ -123,8 +115,12 @@ export class Ped extends BaseEntity {
     return IsPedOnVehicle(this.Handle, false as unknown as number);
   }
 
-  get Vehicle(): Vehicle {
-    return new Vehicle(GetVehiclePedIsIn(this.Handle, false));
+  get Vehicle(): Vehicle | null {
+    const vehicle = GetVehiclePedIsIn(this.Handle, false);
+    if (vehicle === 0) {
+      return null;
+    }
+    return new Vehicle(vehicle);
   }
 
   /**
@@ -302,7 +298,8 @@ export class Ped extends BaseEntity {
   }
 
   set IsDamaged(damaged: boolean) {
-    _N("_SET_PED_DAMAGED", this.Handle, damaged);
+    // _SET_PED_DAMAGED
+    _N("0xDACE03C65C6666DB", this.Handle, damaged);
   }
 
   get DamageCleanliness(): eDamageCleanliness {
@@ -390,20 +387,6 @@ export class Ped extends BaseEntity {
   removeFromMount(): void {
     // REMOVE_PED_FROM_MOUNT
     _N("0x5337B721C51883A9", this.Handle, true, true);
-  }
-
-  /**
-   *
-   * @param seatIndex the seat index to check
-   * @returns true of the specified seat is free on the mount
-   */
-  isSeatFree(seatIndex: VehicleSeat): boolean {
-    return _N<boolean>(
-      "0xAAB0FE202E9FC9F0",
-      this.Vehicle.Handle,
-      seatIndex,
-      Citizen.resultAsInteger(),
-    );
   }
 
   /**

@@ -4,6 +4,7 @@ import { Vector3, _N } from "../utils";
 import { BaseEntity } from "./BaseEntity";
 
 export class Entity extends BaseEntity {
+  // NOTE: There is nothing stopping you from using creating an invalid entity, you should do your own due-diligence
   constructor(handle: number) {
     super(handle);
   }
