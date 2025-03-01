@@ -2,7 +2,7 @@
 
 # Class: Entity
 
-Defined in: [src/redm/entities/Entity.ts:6](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Entity.ts#L6)
+Defined in: [src/redm/entities/Entity.ts:6](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/Entity.ts#L6)
 
 ## Extends
 
@@ -16,7 +16,7 @@ Defined in: [src/redm/entities/Entity.ts:6](https://github.com/nativewrappers/na
 new Entity(handle): Entity
 ```
 
-Defined in: [src/redm/entities/Entity.ts:8](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Entity.ts#L8)
+Defined in: [src/redm/entities/Entity.ts:8](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/Entity.ts#L8)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ BaseEntity.constructor
 get EntityType(): EntityType
 ```
 
-Defined in: [src/redm/entities/Entity.ts:17](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Entity.ts#L17)
+Defined in: [src/redm/entities/Entity.ts:17](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/Entity.ts#L17)
 
 ##### Returns
 
@@ -60,7 +60,7 @@ Defined in: [src/redm/entities/Entity.ts:17](https://github.com/nativewrappers/n
 get Exists(): boolean
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:34](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L34)
+Defined in: [src/redm/entities/BaseEntity.ts:52](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/BaseEntity.ts#L52)
 
 ##### Returns
 
@@ -84,11 +84,13 @@ BaseEntity.Exists
 get Handle(): number
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:38](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L38)
+Defined in: [src/redm/entities/BaseEntity.ts:59](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/BaseEntity.ts#L59)
 
 ##### Returns
 
 `number`
+
+The entitys current handle.
 
 #### Inherited from
 
@@ -106,11 +108,13 @@ BaseEntity.Handle
 get Heading(): number
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:50](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L50)
+Defined in: [src/redm/entities/BaseEntity.ts:80](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/BaseEntity.ts#L80)
 
 ##### Returns
 
 `number`
+
+the heading of the current BaseEntity
 
 #### Set Signature
 
@@ -118,13 +122,13 @@ Defined in: [src/redm/entities/BaseEntity.ts:50](https://github.com/nativewrappe
 set Heading(heading): void
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:54](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L54)
+Defined in: [src/redm/entities/BaseEntity.ts:87](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/BaseEntity.ts#L87)
 
 ##### Parameters
 
-| Parameter | Type |
-| ------ | ------ |
-| `heading` | `number` |
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `heading` | `number` | sets the entitys heading to the specified heading, this can be in the range of 0..360 |
 
 ##### Returns
 
@@ -146,11 +150,13 @@ BaseEntity.Heading
 get Health(): number
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:46](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L46)
+Defined in: [src/redm/entities/BaseEntity.ts:73](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/BaseEntity.ts#L73)
 
 ##### Returns
 
 `number`
+
+the amount of health the current BaseEntity has
 
 #### Set Signature
 
@@ -158,13 +164,13 @@ Defined in: [src/redm/entities/BaseEntity.ts:46](https://github.com/nativewrappe
 set Health(amount): void
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:42](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L42)
+Defined in: [src/redm/entities/BaseEntity.ts:66](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/BaseEntity.ts#L66)
 
 ##### Parameters
 
-| Parameter | Type |
-| ------ | ------ |
-| `amount` | `number` |
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `amount` | `number` | the health to set the health to, setting to `0` will kill the entity, if using on a [Ped](Ped.md) you should check the MaxHealth before setting. |
 
 ##### Returns
 
@@ -178,6 +184,54 @@ BaseEntity.Health
 
 ***
 
+### IsNetworked
+
+#### Get Signature
+
+```ts
+get IsNetworked(): boolean
+```
+
+Defined in: [src/redm/entities/BaseEntity.ts:45](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/BaseEntity.ts#L45)
+
+##### Returns
+
+`boolean`
+
+`true` if the current entity is networked, false otherwise
+
+#### Inherited from
+
+```ts
+BaseEntity.IsNetworked
+```
+
+***
+
+### NetworkId
+
+#### Get Signature
+
+```ts
+get NetworkId(): number
+```
+
+Defined in: [src/redm/entities/BaseEntity.ts:38](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/BaseEntity.ts#L38)
+
+##### Returns
+
+`number`
+
+the network for the specified entity, this doesn't check if the entity is networked, you should use [BaseEntity.IsNetworked](Entity.md#isnetworked)
+
+#### Inherited from
+
+```ts
+BaseEntity.NetworkId
+```
+
+***
+
 ### Position
 
 #### Get Signature
@@ -186,11 +240,13 @@ BaseEntity.Health
 get Position(): Vector3
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:58](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L58)
+Defined in: [src/redm/entities/BaseEntity.ts:94](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/BaseEntity.ts#L94)
 
 ##### Returns
 
 [`Vector3`](../../fivem/classes/Vector3.md)
+
+the position of the current Entity
 
 #### Set Signature
 
@@ -198,13 +254,15 @@ Defined in: [src/redm/entities/BaseEntity.ts:58](https://github.com/nativewrappe
 set Position(pos): void
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:62](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L62)
+Defined in: [src/redm/entities/BaseEntity.ts:102](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/BaseEntity.ts#L102)
+
+You should (almost) always try to load the collisions before setting the entitys position if going a long distance.
 
 ##### Parameters
 
-| Parameter | Type |
-| ------ | ------ |
-| `pos` | [`Vector3`](../../fivem/classes/Vector3.md) |
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `pos` | [`Vector3`](../../fivem/classes/Vector3.md) | sets the position for the current ped |
 
 ##### Returns
 
@@ -224,7 +282,7 @@ BaseEntity.Position
 addTrackingTrails(): void
 ```
 
-Defined in: [src/redm/entities/Entity.ts:12](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Entity.ts#L12)
+Defined in: [src/redm/entities/Entity.ts:12](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/Entity.ts#L12)
 
 #### Returns
 
@@ -245,7 +303,7 @@ applyForce(
    isForceRel): void
 ```
 
-Defined in: [src/redm/entities/Entity.ts:30](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Entity.ts#L30)
+Defined in: [src/redm/entities/Entity.ts:30](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/Entity.ts#L30)
 
 #### Parameters
 
@@ -275,7 +333,7 @@ applyForceToCenter(
    isForceRel): void
 ```
 
-Defined in: [src/redm/entities/Entity.ts:65](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Entity.ts#L65)
+Defined in: [src/redm/entities/Entity.ts:65](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/Entity.ts#L65)
 
 #### Parameters
 
@@ -306,7 +364,7 @@ attachTo(
    fixedRot): void
 ```
 
-Defined in: [src/redm/entities/Entity.ts:96](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/Entity.ts#L96)
+Defined in: [src/redm/entities/Entity.ts:96](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/Entity.ts#L96)
 
 #### Parameters
 
@@ -337,7 +395,26 @@ Error if tgtEntity and {@Entity } are the same entity
 replaceHandle(newHandle): void
 ```
 
-Defined in: [src/redm/entities/BaseEntity.ts:27](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/entities/BaseEntity.ts#L27)
+Defined in: [src/redm/entities/BaseEntity.ts:31](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/entities/BaseEntity.ts#L31)
+
+Replaces the current handle for the entity used on, this hsould be used sparringly, mainly
+in situations where you're going to reuse an entity over and over and don't want to make a
+new entity every time.
+
+ **WARNING**: This does no checks, if you provide it an invalid entity it will use it
+
+```ts
+const REUSABLE_ENTITY = new Entity(entityHandle);
+
+onNet("entityHandler", (entNetId: number) => {
+ // if no net entity we should ignore
+ if (!NetworkDoesEntityExistWithNetworkId(entNetId)) return;
+
+ // Reuse our entity so we don't have to initialize a new one
+ REUSABLE_ENTITY.replaceHandle(NetworkGetEntityFromNetworkId(entNetId));
+ // Do something with REUSABLE_ENTITY entity
+})
+```
 
 #### Parameters
 

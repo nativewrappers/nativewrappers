@@ -2,10 +2,10 @@
 
 # Interface: InvertAxis
 
-Defined in: [src/fivem/enums/InvertAxis.ts:1](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/enums/InvertAxis.ts#L1)
+Defined in: [src/fivem/enums/InvertAxis.ts:1](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/enums/InvertAxis.ts#L1)
 
 ## Properties
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="flags"></a> `flags` | [`InvertAxisFlags`](../enumerations/InvertAxisFlags.md) | [src/fivem/enums/InvertAxis.ts:2](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/enums/InvertAxis.ts#L2) |
+| <a id="flags"></a> `flags` | [`InvertAxisFlags`](../enumerations/InvertAxisFlags.md) | [src/fivem/enums/InvertAxis.ts:2](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/enums/InvertAxis.ts#L2) |

@@ -1,4 +1,4 @@
-[@nativewrappers/fivem](../../README.md) / [server](../README.md) / Kvp
+[@nativewrappers/fivem](../../README.md) / [fivem](../README.md) / Kvp
 
 # Class: Kvp\<Schema\>
 
@@ -116,7 +116,7 @@ Returns the value associated with a key as a float.
 ### getJson()
 
 ```ts
-getJson<K, O>(key): O extends string ? Schema[O<O>] : null
+getJson<K, O>(key): null | O extends string ? Schema[O<O>] : null
 ```
 
 Defined in: lib/common/Kvp.d.ts:22
@@ -138,7 +138,7 @@ Returns the value associated with a key as a parsed JSON string.
 
 #### Returns
 
-`O` *extends* `string` ? `Schema`\[`O`\<`O`\>\] : `null`
+`null` \| `O` *extends* `string` ? `Schema`\[`O`\<`O`\>\] : `null`
 
 ***
 

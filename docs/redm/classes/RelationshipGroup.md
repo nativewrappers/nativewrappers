@@ -2,7 +2,7 @@
 
 # Class: RelationshipGroup
 
-Defined in: [src/redm/RelationshipGroup.ts:6](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/RelationshipGroup.ts#L6)
+Defined in: [src/redm/RelationshipGroup.ts:6](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/RelationshipGroup.ts#L6)
 
 Class to create and manage a relationship group. Useful to manage behavior between Peds.
 
@@ -14,7 +14,7 @@ Class to create and manage a relationship group. Useful to manage behavior betwe
 new RelationshipGroup(name): RelationshipGroup
 ```
 
-Defined in: [src/redm/RelationshipGroup.ts:17](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/RelationshipGroup.ts#L17)
+Defined in: [src/redm/RelationshipGroup.ts:17](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/RelationshipGroup.ts#L17)
 
 Create a relationship group. Optionally pass a group hash.
 
@@ -38,7 +38,7 @@ Create a relationship group. Optionally pass a group hash.
 get Hash(): number
 ```
 
-Defined in: [src/redm/RelationshipGroup.ts:27](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/RelationshipGroup.ts#L27)
+Defined in: [src/redm/RelationshipGroup.ts:27](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/RelationshipGroup.ts#L27)
 
 Gets the hash of the relationship group.
 
@@ -59,7 +59,7 @@ clearRelationshipBetweenGroups(
    biDirectionally): void
 ```
 
-Defined in: [src/redm/RelationshipGroup.ts:77](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/RelationshipGroup.ts#L77)
+Defined in: [src/redm/RelationshipGroup.ts:77](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/RelationshipGroup.ts#L77)
 
 Clear the relationship between this relationship group and another.
 
@@ -83,7 +83,7 @@ Clear the relationship between this relationship group and another.
 getRelationshipBetweenGroups(targetGroup): Relationship
 ```
 
-Defined in: [src/redm/RelationshipGroup.ts:37](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/RelationshipGroup.ts#L37)
+Defined in: [src/redm/RelationshipGroup.ts:37](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/RelationshipGroup.ts#L37)
 
 Get the relationship between two relationship groups.
 
@@ -107,7 +107,7 @@ The relationship
 remove(): void
 ```
 
-Defined in: [src/redm/RelationshipGroup.ts:100](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/RelationshipGroup.ts#L100)
+Defined in: [src/redm/RelationshipGroup.ts:100](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/RelationshipGroup.ts#L100)
 
 Remove this relationship group from the game. This will not delete this object.
 
@@ -126,7 +126,7 @@ setRelationshipBetweenGroups(
    biDirectionally): void
 ```
 
-Defined in: [src/redm/RelationshipGroup.ts:50](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/RelationshipGroup.ts#L50)
+Defined in: [src/redm/RelationshipGroup.ts:50](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/RelationshipGroup.ts#L50)
 
 Set the relationship group between this relationship group and another one.
 

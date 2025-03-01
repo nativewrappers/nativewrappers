@@ -10,10 +10,10 @@ function createPed(
    isNetwork, 
    bScriptHostPed, 
    p7, 
-p8): Promise<Ped | null>
+p8): Promise<null | Ped>
 ```
 
-Defined in: [src/redm/world/createPed.ts:8](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/world/createPed.ts#L8)
+Defined in: [src/redm/world/createPed.ts:8](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/world/createPed.ts#L8)
 
 Creates a ped at the specified {@param spawnPos}, you don't need to request the model before this.
 
@@ -31,4 +31,4 @@ Creates a ped at the specified {@param spawnPos}, you don't need to request the 
 
 ## Returns
 
-`Promise`\<[`Ped`](../classes/Ped.md) \| `null`\>
+`Promise`\<`null` \| [`Ped`](../classes/Ped.md)\>

@@ -1,4 +1,4 @@
-[@nativewrappers/fivem](../../README.md) / [server](../README.md) / Resource
+[@nativewrappers/fivem](../../README.md) / [fivem](../README.md) / Resource
 
 # Class: Resource
 

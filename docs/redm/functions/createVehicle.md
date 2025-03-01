@@ -10,10 +10,10 @@ function createVehicle(
    isNetwork, 
    bScriptHostVeh, 
    bDontAutoCreateDraftAnimals, 
-p8): Promise<Vehicle | null>
+p8): Promise<null | Vehicle>
 ```
 
-Defined in: [src/redm/world/createVehicle.ts:8](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/redm/world/createVehicle.ts#L8)
+Defined in: [src/redm/world/createVehicle.ts:8](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/world/createVehicle.ts#L8)
 
 Creates a vehicle at the specified {@param spawnPos}, you don't need to request the model before this.
 
@@ -31,4 +31,4 @@ Creates a vehicle at the specified {@param spawnPos}, you don't need to request 
 
 ## Returns
 
-`Promise`\<[`Vehicle`](../classes/Vehicle.md) \| `null`\>
+`Promise`\<`null` \| [`Vehicle`](../classes/Vehicle.md)\>

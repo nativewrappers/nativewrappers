@@ -35,12 +35,6 @@
 | [Vehicle](classes/Vehicle.md) | - |
 | [Volume](classes/Volume.md) | - |
 
-## Type Aliases
-
-| Type alias | Description |
-| ------ | ------ |
-| [OptionalPed](type-aliases/OptionalPed.md) | - |
-
 ## Functions
 
 | Function | Description |
@@ -49,3 +43,27 @@
 | [createPed](functions/createPed.md) | Creates a ped at the specified {@param spawnPos}, you don't need to request the model before this. |
 | [createProp](functions/createProp.md) | Creates a ped at the specified {@param spawnPos}, you don't need to request the model before this. |
 | [createVehicle](functions/createVehicle.md) | Creates a vehicle at the specified {@param spawnPos}, you don't need to request the model before this. |
+
+## References
+
+### Command
+
+Re-exports [Command](../fivem/classes/Command.md)
+
+***
+
+### Convar
+
+Re-exports [Convar](../fivem/classes/Convar.md)
+
+***
+
+### Kvp
+
+Re-exports [Kvp](../fivem/classes/Kvp.md)
+
+***
+
+### Resource
+
+Re-exports [Resource](../fivem/classes/Resource.md)

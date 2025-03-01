@@ -6,15 +6,12 @@
 
 | Class | Description |
 | ------ | ------ |
-| [Convar](classes/Convar.md) | - |
 | [Entity](classes/Entity.md) | - |
 | [Events](classes/Events.md) | - |
 | [Game](classes/Game.md) | - |
-| [Kvp](classes/Kvp.md) | - |
 | [Ped](classes/Ped.md) | - |
 | [Player](classes/Player.md) | - |
 | [Prop](classes/Prop.md) | - |
-| [Resource](classes/Resource.md) | - |
 | [Vehicle](classes/Vehicle.md) | - |
 
 ## Interfaces
@@ -44,6 +41,18 @@ Re-exports [Color](../fivem/classes/Color.md)
 
 ***
 
+### Command
+
+Re-exports [Command](../fivem/classes/Command.md)
+
+***
+
+### Convar
+
+Re-exports [Convar](../fivem/classes/Convar.md)
+
+***
+
 ### Delay
 
 Re-exports [Delay](../fivem/functions/Delay.md)
@@ -68,6 +77,12 @@ Re-exports [getUInt32FromUint8Array](../fivem/functions/getUInt32FromUint8Array.
 
 ***
 
+### Kvp
+
+Re-exports [Kvp](../fivem/classes/Kvp.md)
+
+***
+
 ### Maths
 
 Re-exports [Maths](../fivem/classes/Maths.md)
@@ -77,6 +92,12 @@ Re-exports [Maths](../fivem/classes/Maths.md)
 ### Quaternion
 
 Re-exports [Quaternion](../fivem/classes/Quaternion.md)
+
+***
+
+### Resource
+
+Re-exports [Resource](../fivem/classes/Resource.md)
 
 ***
 

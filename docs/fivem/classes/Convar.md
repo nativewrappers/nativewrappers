@@ -1,4 +1,4 @@
-[@nativewrappers/fivem](../../README.md) / [server](../README.md) / Convar
+[@nativewrappers/fivem](../../README.md) / [fivem](../README.md) / Convar
 
 # Class: Convar
 

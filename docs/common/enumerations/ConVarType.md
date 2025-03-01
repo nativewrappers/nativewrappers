@@ -2,13 +2,13 @@
 
 # Enumeration: ConVarType
 
-Defined in: [src/common/decors/Events.ts:1](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/decors/Events.ts#L1)
+Defined in: [src/common/decors/Events.ts:1](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/common/decors/Events.ts#L1)
 
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| <a id="boolean"></a> `Boolean` | `3` | [src/common/decors/Events.ts:5](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/decors/Events.ts#L5) |
-| <a id="float"></a> `Float` | `2` | [src/common/decors/Events.ts:4](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/decors/Events.ts#L4) |
-| <a id="integer"></a> `Integer` | `1` | [src/common/decors/Events.ts:3](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/decors/Events.ts#L3) |
-| <a id="string"></a> `String` | `0` | [src/common/decors/Events.ts:2](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/decors/Events.ts#L2) |
+| <a id="boolean"></a> `Boolean` | `3` | [src/common/decors/Events.ts:5](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/common/decors/Events.ts#L5) |
+| <a id="float"></a> `Float` | `2` | [src/common/decors/Events.ts:4](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/common/decors/Events.ts#L4) |
+| <a id="integer"></a> `Integer` | `1` | [src/common/decors/Events.ts:3](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/common/decors/Events.ts#L3) |
+| <a id="string"></a> `String` | `0` | [src/common/decors/Events.ts:2](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/common/decors/Events.ts#L2) |

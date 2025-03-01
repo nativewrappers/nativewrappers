@@ -2,7 +2,7 @@
 
 # Class: Size
 
-Defined in: [src/fivem/utils/Size.ts:1](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/utils/Size.ts#L1)
+Defined in: [src/fivem/utils/Size.ts:1](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/utils/Size.ts#L1)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/fivem/utils/Size.ts:1](https://github.com/nativewrappers/native
 new Size(w, h): Size
 ```
 
-Defined in: [src/fivem/utils/Size.ts:4](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/utils/Size.ts#L4)
+Defined in: [src/fivem/utils/Size.ts:4](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/utils/Size.ts#L4)
 
 #### Parameters
 
@@ -29,5 +29,5 @@ Defined in: [src/fivem/utils/Size.ts:4](https://github.com/nativewrappers/native
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="height"></a> `height` | `public` | `number` | [src/fivem/utils/Size.ts:3](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/utils/Size.ts#L3) |
-| <a id="width"></a> `width` | `public` | `number` | [src/fivem/utils/Size.ts:2](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/utils/Size.ts#L2) |
+| <a id="height"></a> `height` | `public` | `number` | [src/fivem/utils/Size.ts:3](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/utils/Size.ts#L3) |
+| <a id="width"></a> `width` | `public` | `number` | [src/fivem/utils/Size.ts:2](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/utils/Size.ts#L2) |

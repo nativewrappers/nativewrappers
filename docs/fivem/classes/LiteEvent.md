@@ -2,7 +2,7 @@
 
 # Class: LiteEvent
 
-Defined in: [src/fivem/utils/LiteEvent.ts:4](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/utils/LiteEvent.ts#L4)
+Defined in: [src/fivem/utils/LiteEvent.ts:4](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/utils/LiteEvent.ts#L4)
 
 ## Implements
 
@@ -28,7 +28,7 @@ new LiteEvent(): LiteEvent
 emit(...args): void
 ```
 
-Defined in: [src/fivem/utils/LiteEvent.ts:20](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/utils/LiteEvent.ts#L20)
+Defined in: [src/fivem/utils/LiteEvent.ts:20](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/utils/LiteEvent.ts#L20)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [src/fivem/utils/LiteEvent.ts:20](https://github.com/nativewrappers/
 expose(): LiteEvent
 ```
 
-Defined in: [src/fivem/utils/LiteEvent.ts:26](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/utils/LiteEvent.ts#L26)
+Defined in: [src/fivem/utils/LiteEvent.ts:26](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/utils/LiteEvent.ts#L26)
 
 #### Returns
 
@@ -64,7 +64,7 @@ Defined in: [src/fivem/utils/LiteEvent.ts:26](https://github.com/nativewrappers/
 off(handler): void
 ```
 
-Defined in: [src/fivem/utils/LiteEvent.ts:6](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/utils/LiteEvent.ts#L6)
+Defined in: [src/fivem/utils/LiteEvent.ts:6](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/utils/LiteEvent.ts#L6)
 
 ##### Parameters
 
@@ -82,7 +82,7 @@ Defined in: [src/fivem/utils/LiteEvent.ts:6](https://github.com/nativewrappers/n
 off(handler): void
 ```
 
-Defined in: [src/fivem/utils/LiteEvent.ts:16](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/utils/LiteEvent.ts#L16)
+Defined in: [src/fivem/utils/LiteEvent.ts:16](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/utils/LiteEvent.ts#L16)
 
 ##### Parameters
 
@@ -104,7 +104,7 @@ Defined in: [src/fivem/utils/LiteEvent.ts:16](https://github.com/nativewrappers/
 on(handler): void
 ```
 
-Defined in: [src/fivem/utils/LiteEvent.ts:5](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/utils/LiteEvent.ts#L5)
+Defined in: [src/fivem/utils/LiteEvent.ts:5](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/utils/LiteEvent.ts#L5)
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ Defined in: [src/fivem/utils/LiteEvent.ts:5](https://github.com/nativewrappers/n
 on(handler): void
 ```
 
-Defined in: [src/fivem/utils/LiteEvent.ts:12](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/fivem/utils/LiteEvent.ts#L12)
+Defined in: [src/fivem/utils/LiteEvent.ts:12](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/utils/LiteEvent.ts#L12)
 
 ##### Parameters
 

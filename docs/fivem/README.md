@@ -96,7 +96,9 @@
 | [Camera](classes/Camera.md) | - |
 | [Checkpoint](classes/Checkpoint.md) | - |
 | [Color](classes/Color.md) | - |
+| [Command](classes/Command.md) | - |
 | [Container](classes/Container.md) | - |
+| [Convar](classes/Convar.md) | - |
 | [Crypto](classes/Crypto.md) | - |
 | [Effects](classes/Effects.md) | - |
 | [EntityBone](classes/EntityBone.md) | - |
@@ -107,6 +109,7 @@
 | [Hud](classes/Hud.md) | - |
 | [InstructionalButtons](classes/InstructionalButtons.md) | Draw native instructional buttons in the bottom left of the screen using scaleform |
 | [InvalidWeaponComponent](classes/InvalidWeaponComponent.md) | - |
+| [Kvp](classes/Kvp.md) | - |
 | [ListItem](classes/ListItem.md) | - |
 | [LiteEvent](classes/LiteEvent.md) | - |
 | [LoadingPrompt](classes/LoadingPrompt.md) | Show and hide loading prompt on the bottom right of the screen. |
@@ -131,6 +134,7 @@
 | [Quaternion](classes/Quaternion.md) | - |
 | [Rectangle](classes/Rectangle.md) | - |
 | [RelationshipGroup](classes/RelationshipGroup.md) | Class to create and manage a relationship group. Useful to manage behavior between Peds. |
+| [Resource](classes/Resource.md) | - |
 | [Rope](classes/Rope.md) | Class to manage invisible ropes between entities. |
 | [Scaleform](classes/Scaleform.md) | Scaleforms will automatically load when calling any of the render functions. |
 | [Screen](classes/Screen.md) | - |

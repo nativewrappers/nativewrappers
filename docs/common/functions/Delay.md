@@ -6,7 +6,7 @@
 function Delay(milliseconds): Promise<void>
 ```
 
-Defined in: [src/common/utils/index.ts:11](https://github.com/nativewrappers/nativewrappers/blob/9823dedfda755d69570435af704d4d60473d3d5a/src/common/utils/index.ts#L11)
+Defined in: [src/common/utils/index.ts:11](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/common/utils/index.ts#L11)
 
 ## Parameters
 
