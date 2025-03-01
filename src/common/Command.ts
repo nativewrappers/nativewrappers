@@ -18,7 +18,7 @@ interface Parameter {
 
 const commands: Partial<Command>[] = [];
 
-if (GlobalData.IS_SERVER) {
+$SERVER: {
   on("playerJoining", () => emitNet("chat:addSuggestions", source, commands));
 }
 
@@ -45,20 +45,20 @@ function registerCommand(
 
   RegisterCommand(name, commandHandler, !!restricted);
 
-  if (GlobalData.IS_CLIENT) return;
+  $SERVER: {
+    const ace = `command.${name}`;
 
-  const ace = `command.${name}`;
+    if (typeof restricted === "string") {
+      if (IsPrincipalAceAllowed(restricted, ace)) return;
 
-  if (typeof restricted === "string") {
-    if (IsPrincipalAceAllowed(restricted, ace)) return;
+      return ExecuteCommand(`add_ace ${restricted} ${ace} allow`);
+    }
 
-    return ExecuteCommand(`add_ace ${restricted} ${ace} allow`);
-  }
-
-  if (Array.isArray(restricted)) {
-    for (const principal of restricted) {
-      if (!IsPrincipalAceAllowed(principal, ace))
-        ExecuteCommand(`add_ace ${restricted} ${ace} allow`);
+    if (Array.isArray(restricted)) {
+      for (const principal of restricted) {
+        if (!IsPrincipalAceAllowed(principal, ace))
+          ExecuteCommand(`add_ace ${restricted} ${ace} allow`);
+      }
     }
   }
 }
@@ -93,12 +93,14 @@ export class Command<T extends Parameter[] = Parameter[]> {
       }
 
       setTimeout(() => {
-        if (GlobalData.IS_SERVER) {
+        $SERVER: {
           commands.push(this);
-          return emitNet("chat:addSuggestions", -1, this);
+          emitNet("chat:addSuggestions", -1, this);
         }
 
-        emit("chat:addSuggestion", this);
+        $CLIENT: {
+          emit("chat:addSuggestion", this);
+        }
       }, 100);
     }
   }
@@ -127,11 +129,13 @@ export class Command<T extends Parameter[] = Parameter[]> {
           value = !Number(arg) ? arg : false;
           break;
         case "playerId":
-          if (GlobalData.IS_SERVER) {
+          $SERVER: {
             value = arg === "me" ? source : +arg;
 
             if (!value || !DoesPlayerExist(value.toString())) value = undefined;
-          } else {
+          }
+
+          $CLIENT: {
             value = arg === "me" ? GetPlayerServerId(PlayerId()) : +arg;
 
             if (!value || GetPlayerFromServerId(value as number) === -1)

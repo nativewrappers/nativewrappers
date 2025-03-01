@@ -1,6 +1,6 @@
 {
   "files": {
-    "ignore": ["node_modules/**", "lib/**"]
+    "include": ["./src/**/*.ts"]
   },
   "linter": {
     "enabled": true,

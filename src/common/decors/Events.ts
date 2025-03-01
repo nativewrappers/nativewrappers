@@ -100,7 +100,7 @@ export function NetEvent(eventName: string, remoteOnly = true) {
       onNet(eventName, (...args: any[]) => {
         const src = source;
         try {
-          CLIENT: {
+          $CLIENT: {
             if (remoteOnly && source !== 65535) {
               return;
             }

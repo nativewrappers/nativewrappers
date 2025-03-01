@@ -6,17 +6,12 @@
     "Dillon Skaggs <AvarianKnight>",
     "Linden <thelindat>"
   ],
+  "private": true,
   "license": "MIT",
   "type": "module",
   "version": "0.0.67",
   "publishConfig": {
     "directory": "lib"
-  },
-  "exports": {
-    ".": "./common/index.js",
-    "./server": "./server/index.js",
-    "./fivem": "./fivem/index.js",
-    "./redm": "./redm/index.js"
   },
   "repository": {
     "type": "git",
@@ -39,9 +34,9 @@
   ],
   "scripts": {
     "delete": "rm -rf lib",
-    "build": "pnpm run delete && tsc --build && tsc-alias && cp README.md lib/README.md && node postbuild.js",
+    "build": "pnpm delete && tsc --build && node build.js",
     "watch": "tsc --watch",
-    "check": "pnpm biome format --include ./src/**/*.ts",
+    "check": "pnpm biome format",
     "format": "pnpm biome format --write",
     "lint": "pnpm biome lint --write",
     "prepare": "husky"
@@ -52,6 +47,8 @@
     "@citizenfx/server": "2.0.13079-1",
     "@types/node": "^22.13.7",
     "buffer": "^6.0.3",
+    "esbuild": "^0.25.0",
+    "fs-extra": "^11.3.0",
     "husky": "^9.1.7",
     "tsc-alias": "^1.8.11",
     "typedoc": "^0.27.9",

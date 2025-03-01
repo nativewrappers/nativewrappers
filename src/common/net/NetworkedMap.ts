@@ -28,7 +28,7 @@ class NetworkedMapEventManager {
   #syncedCalls = new Map<string, NetworkedMap<any, any>>();
 
   constructor() {
-    SERVER: if (GlobalData.IS_SERVER) {
+    $SERVER: if (GlobalData.IS_SERVER) {
       on("playerDropped", () => {
         const src = source;
         // call the player dropped for each call
@@ -38,7 +38,7 @@ class NetworkedMapEventManager {
       });
       return;
     }
-    CLIENT: {
+    $CLIENT: {
       RegisterResourceAsEventHandler(
         `${GlobalData.CurrentResource}:syncChanges`,
       );
@@ -95,7 +95,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     netManager.addNetworkedMap(this);
 
     // if we don't have a network tick then we want to register it.
-    SERVER: {
+    $SERVER: {
       if (!GlobalData.NetworkTick && GlobalData.IS_SERVER) {
         GlobalData.NetworkTick = setTick(() => {
           for (const networkedThis of GlobalData.NetworkedTicks) {
@@ -235,7 +235,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
           if (success) {
             curMap.#pushChangeForListener(key, target);
 
-            SERVER: {
+            $SERVER: {
               curMap.#queuedChanges.push([
                 MapChangeType.SubValueChanged,
                 key,
@@ -253,7 +253,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     super.set(key, v);
 
     this.#pushChangeForListener(key, v);
-    SERVER: {
+    $SERVER: {
       this.#queuedChanges.push([MapChangeType.Add, key, v]);
     }
     return this;
@@ -263,7 +263,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
    * Resets the map to its default state
    */
   clear(): void {
-    CLIENT: throw new Error(`Cannot call 'clear' on client`);
+    $CLIENT: throw new Error(`Cannot call 'clear' on client`);
     // if we're clearing our map then we want to remove all queued changes and
     // just push a reset
     this.#queuedChanges = [];
@@ -272,7 +272,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   }
 
   delete(key: K): boolean {
-    CLIENT: throw new Error(`Cannot call 'delete' on client`);
+    $CLIENT: throw new Error(`Cannot call 'delete' on client`);
     this.#queuedChanges.push([MapChangeType.Remove, key]);
     return super.delete(key);
   }

@@ -5,7 +5,7 @@ export class Convar {
    * @returns the current console buffer
    */
   public buffer(): string {
-    CLIENT: {
+    $CLIENT: {
       if (GlobalData.IS_CLIENT) {
         throw new Error("This function isn't available on the client");
       }
@@ -30,7 +30,7 @@ export class Convar {
   }
 
   public set(variable: string, value: string): void {
-    CLIENT: {
+    $CLIENT: {
       if (GlobalData.IS_CLIENT) {
         throw new Error("This function isn't available on the client");
       }
@@ -39,7 +39,7 @@ export class Convar {
   }
 
   public setReplicated(variable: string, value: string): void {
-    CLIENT: {
+    $CLIENT: {
       if (GlobalData.IS_CLIENT) {
         throw new Error("This function isn't available on the client");
       }
@@ -48,7 +48,7 @@ export class Convar {
   }
 
   public setServerInfo(variable: string, value: string): void {
-    CLIENT: {
+    $CLIENT: {
       if (GlobalData.IS_CLIENT) {
         throw new Error("This function isn't available on the client");
       }

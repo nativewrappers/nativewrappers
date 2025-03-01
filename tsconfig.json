@@ -3,9 +3,9 @@
     "rootDir": "./src",
     "baseUrl": "./src",
     "outDir": "./lib",
-    "declarationDir": "./lib",
-    "target": "es2022",
-    "lib": ["es2022", "esnext.decorators", "esnext.disposable"],
+    "emitDeclarationOnly": true,
+    "target": "esnext",
+    "lib": ["esnext"],
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "esModuleInterop": true,
@@ -18,10 +18,9 @@
       "@common/*": ["./common/*"]
     }
   },
-  "include": [],
-  "exclude": ["lib", "**/examples/"],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "lib", "**/examples/"],
   "references": [
-    { "path": "./src/common" },
     { "path": "./src/server" },
     { "path": "./src/fivem" },
     { "path": "./src/redm" }

@@ -1,7 +1,6 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "target": "es2022",
     "composite": true,
     "types": ["@citizenfx/client"]
   },

@@ -15,7 +15,7 @@ export class Resource {
   }
 
   public saveFile(fileName: string, data: string, length: number): boolean {
-    CLIENT: {
+    $CLIENT: {
       if (GlobalData.IS_CLIENT) {
         throw new Error("This function isn't available on the client");
       }
@@ -24,7 +24,7 @@ export class Resource {
   }
 
   public scheduleTick(): void {
-    CLIENT: {
+    $CLIENT: {
       if (GlobalData.IS_CLIENT) {
         throw new Error("This function isn't available on the client");
       }
