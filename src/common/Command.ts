@@ -30,6 +30,37 @@ type CommandHandler<T extends Parameter[]> = (
   args: MappedParameters<T>,
 ) => void | Promise<void>;
 
+function registerCommand(
+  name: string | string[],
+  commandHandler: Function,
+  restricted?: Restricted,
+) {
+  if (Array.isArray(name))
+    return name.forEach((name) =>
+      registerCommand(name, commandHandler, restricted),
+    );
+
+  RegisterCommand(name, commandHandler, !!restricted);
+
+  if (GlobalData.IS_CLIENT) return;
+
+  const ace = `command.${name}`;
+
+  if (typeof restricted === "string") {
+    if (IsPrincipalAceAllowed(restricted, ace)) return;
+
+    return ExecuteCommand(`add_ace ${restricted} ${ace} allow`);
+  }
+
+  if (Array.isArray(restricted)) {
+    restricted.forEach(
+      (principal) =>
+        !IsPrincipalAceAllowed(principal, ace) &&
+        ExecuteCommand(`add_ace ${restricted} ${ace} allow`),
+    );
+  }
+}
+
 export class Command<T extends Parameter[] = Parameter[]> {
   #handler: CommandHandler<T>;
 
@@ -40,16 +71,15 @@ export class Command<T extends Parameter[] = Parameter[]> {
     readonly params?: T,
     restricted: Restricted = true,
   ) {
-    const commandHandler = (source: number, args: string[], raw: string) =>
-      this.call(source, args, raw);
     this.#handler = handler;
     this.name = `/${name}`;
 
-    typeof name === "string"
-      ? RegisterCommand(name, commandHandler, !!restricted)
-      : name.forEach((name) =>
-          RegisterCommand(name, commandHandler, !!restricted),
-        );
+    registerCommand(
+      name,
+      (source: number, args: string[], raw: string) =>
+        this.call(source, args, raw),
+      restricted,
+    );
 
     if (params) {
       params.forEach((param) => {
