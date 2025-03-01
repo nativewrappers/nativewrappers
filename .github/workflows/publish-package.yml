@@ -38,7 +38,7 @@ jobs:
           git fetch origin
           git branch -D docs
           git push origin --delete docs
-          git checkout --orphan 
+          git checkout --orphan docs
           git rm -rf .
           mv temp-docs/* .
           git add .
