@@ -1,9 +1,16 @@
+import { GlobalData } from "@common/GlobalData";
+
 export enum ConVarType {
   String,
   Integer,
   Float,
   Boolean,
 }
+
+/**
+ * Disables pretty printing in error messages
+ */
+export const DisablePrettyPrint = () => (GlobalData.EnablePrettyPrint = false);
 
 // TODO: Have a way to clean all of this up (maybe hook Symbol.disposable
 // somehow?)
@@ -31,8 +38,14 @@ export function Exports(exportName: string) {
   };
 }
 
-/*
- * Registers the Event call for {eventName} to this method
+/**
+ * Registers the Event call for {@link eventName} to this method.
+ *
+ * This has internal pretty-printing to make errors easier to track, if
+ * you want to disable this you will need to call {@link DisablePrettyPrint}, or if you're
+ * using esbuild you can add `REMOVE_EVENT_LOG` to your drop label {@link https://esbuild.github.io/api/#drop-labels}
+ *
+ * @param eventName the event to bind to
  */
 export function Event(eventName: string) {
   return function actualDecorator(
@@ -51,6 +64,7 @@ export function Event(eventName: string) {
           return originalMethod.call(t, ...args);
         } catch (e) {
           REMOVE_EVENT_LOG: {
+            if (!GlobalData.EnablePrettyPrint) return;
             console.error(`------- EVENT ERROR --------`);
             console.error(`Call to ${eventName} errored`);
             console.error(`Data: ${JSON.stringify(args)}`);
@@ -63,10 +77,18 @@ export function Event(eventName: string) {
   };
 }
 
-/*
- * Registers the Net Event call for {eventName} to this method
+/**
+ * Registers the Net Event call for {@link eventName} to this method
+ *
+ *
+ * This has internal pretty-printing to make errors easier to track, if
+ * you want to disable this you will need to call {@link DisablePrettyPrint}, or if you're
+ * using esbuild you can add `REMOVE_EVENT_LOG` to your drop label {@link https://esbuild.github.io/api/#drop-labels}
+ *
+ * @param eventName the event to bind this net event to
+ * @param remoteOnly if the event should only accept remote calls, if set to true it will ignore any local call via `emit`, defaults to true
  */
-export function NetEvent(eventName: string, remoteOnly = false) {
+export function NetEvent(eventName: string, remoteOnly = true) {
   return function actualDecorator(
     originalMethod: any,
     context: ClassMethodDecoratorContext,
@@ -89,6 +111,7 @@ export function NetEvent(eventName: string, remoteOnly = false) {
           return originalMethod.call(t, ...args);
         } catch (e) {
           REMOVE_NET_EVENT_LOG: {
+            if (!GlobalData.EnablePrettyPrint) return;
             console.error(`------- NET EVENT ERROR --------`);
             console.error(`Call to ${eventName} errored`);
             console.error(`Caller: ${src}`);
@@ -102,11 +125,12 @@ export function NetEvent(eventName: string, remoteOnly = false) {
   };
 }
 
-/*
+/**
  * Registers the NUI Event call for {eventName} to this method, the function signature
  * should be (data: unknown, cb: (data?: any) => void) => void
- * You shoud always execute `cb` with '' if you don't want to send data back to
+ * You shoud always execute `cb` with 'ok' if you don't want to send data back to
  * the UI, otherwise you'll cause a network error for the `fetch` request
+ * @param eventName the event this will listen for
  */
 export function NuiEvent(eventName: string) {
   return function actualDecorator(
@@ -140,6 +164,8 @@ const get_convar_fn = (con_var_type: ConVarType): ConVarFunction => {
       return GetConvarFloat;
     case ConVarType.Boolean:
       return GetConvarBool;
+    // needed so typescript wont complain about "unreachable code" for the error below
+    default:
   }
 
   // never guess people wont manage to hit this
@@ -148,10 +174,10 @@ const get_convar_fn = (con_var_type: ConVarType): ConVarFunction => {
 
 type DeserializeFn<T> = (data: T) => unknown;
 
-/*
- * Gets the specified `ConVar`s value, do note that if you *expect* the convar
- * to be a float you should explicitly set is_floating_point, otherwise some
- * bundlers will remove the float
+/**
+ * Gets the specified `ConVar`s value, this will bind to the param.
+ * @param name the convar name
+ * @param is_floating_point if the convar is floating point, this should be explicitly set to true if your convar will be a float
  */
 export function ConVar<T>(
   name: string,
@@ -163,7 +189,7 @@ export function ConVar<T>(
   return function actualDecorator(
     _initialValue: any,
     context: ClassFieldDecoratorContext,
-    ...args: any[]
+    ..._args: any[]
   ) {
     if (context.private) {
       throw new Error(
@@ -212,14 +238,14 @@ export function ConVar<T>(
       };
 
       Reflect.set(t, context.name, get_convar_value());
-      AddConvarChangeListener(name, (con_var_name: string) => {
+      AddConvarChangeListener(name, () => {
         Reflect.set(t, context.name, get_convar_value());
       });
     });
   };
 }
 
-/*
+/**
  * Gets called per server/client tick, this is asyncronous though, if you await
  * in it, it will not be called until whatever was being awaited resolves.
  */

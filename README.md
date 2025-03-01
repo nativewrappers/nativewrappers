@@ -22,7 +22,7 @@
   </a>
 </p>
 
-<h3 align="center">This project is currently interating rapidly, there will be breaking changes.</h3>
+<h3 align="center">This project is currently iterating rapidly, there will be breaking changes.</h3>
 
 <p align="center">
 	<h2 align="center"><a href="https://github.com/nativewrappers/nativewrappers/tree/main/docs">Documentation</a></h2>
@@ -32,10 +32,14 @@
 ## Features
 
 - No runtime dependencies
-- Abstracts common used FiveM practices
 - Entity management through class objects (i.e. `Vehicle` and `Ped` entities)
 - Server and Client side variants on wrapper
 
-## Download & Install
 
-`pnpm add @nativewrappers/fivem`
+## Download & Install
+```
+pnpm add @nativewrappers/redm # for redm,
+pnpm add @nativewrappers/fivem # for fivem
+pnpm add @nativewrappers/common # for any, should be game agnostic, provides Vector3, decors, kvps, helper functions, etc
+pnpm add @nativewrappers/server # for server
+```

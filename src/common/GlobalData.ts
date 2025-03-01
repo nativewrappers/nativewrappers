@@ -4,4 +4,5 @@ export class GlobalData {
   static IS_CLIENT = !GlobalData.IS_SERVER;
   static NetworkTick: number | null = null;
   static NetworkedTicks: any[] = [];
+  static EnablePrettyPrint = true;
 }
