@@ -1,7 +1,6 @@
 {
   "plugin": ["typedoc-plugin-markdown"],
   "entryPoints": [
-    "./src/common/index.ts",
     "./src/fivem/index.ts",
     "./src/redm/index.ts",
     "./src/server/index.ts"
