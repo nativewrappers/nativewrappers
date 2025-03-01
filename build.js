@@ -1,6 +1,6 @@
 import esbuild from "esbuild";
 import { writeFile, copyFile } from "node:fs/promises";
-import { copy as copyDir, remove as removeDir } from "fs-extra";
+import { copy as copyDir } from "fs-extra";
 import repoPackage from "./package.json" with { type: "json" };
 import { replaceTscAliasPaths } from "tsc-alias";
 
@@ -83,8 +83,6 @@ async function createBuilder(environments) {
       ),
     );
   }
-
-  await removeDir("./lib/common/");
 
   if (!watch) process.exit(0);
 }

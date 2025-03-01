@@ -31,12 +31,12 @@ jobs:
           pnpm version ${{ github.ref_name }} --git-tag-version false
           pnpm build
           git add .
-          git commit -am '${{ github.ref_name }}'
-          git push
 
       - name: Generate docs
         run: |
           pnpm typedoc --out temp-docs
+          git commit -am '${{ github.ref_name }}'
+          git push
           git checkout --orphan docs
           git rm -rf .
           mv temp-docs/* .
@@ -52,6 +52,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         run: |
+          rm -rf ./lib/common/
           for dir in ./lib/*; do
             if [ -f "$dir/package.json" ]; then
               echo "Publishing $dir..."
