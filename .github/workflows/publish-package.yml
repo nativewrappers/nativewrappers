@@ -38,7 +38,7 @@ jobs:
         run: |
           pnpm typedoc --out temp-docs
           git checkout --orphan docs
-          git rm -rf
+          git rm -rf .
           mv temp-docs/* .
           git add .
           git commit -m "Generate ${{ github.ref_name }} documentation"
