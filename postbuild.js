@@ -1,5 +1,5 @@
-import { writeFileSync } from 'fs';
-import repoPackage from './package.json' with { type: 'json' };
+import { writeFileSync } from "node:fs";
+import repoPackage from "./package.json" with { type: "json" };
 
 const packageTemplate = {
   author: repoPackage.author,
@@ -11,12 +11,12 @@ const packageTemplate = {
   homepage: repoPackage.homepage,
   keywords: repoPackage.keywords,
   files: repoPackage.files,
-  exports: { ".": "./index.js", },
+  exports: { ".": "./index.js" },
   dependencies: repoPackage.dependencies,
 };
 
-const packages = ['common', 'fivem', 'redm', 'server'];
-const aliases = ['Cfx.re\'s scripting runtimes', 'FiveM', 'RedM', 'FxServer'];
+const packages = ["common", "fivem", "redm", "server"];
+const aliases = ["Cfx.re's scripting runtimes", "FiveM", "RedM", "FXServer"];
 
 packages.forEach((packageName, index) => {
   const packageJson = {
@@ -25,7 +25,13 @@ packages.forEach((packageName, index) => {
     ...packageTemplate,
   };
 
-  if (packageName !== 'common') packageJson.dependencies = { '@nativewrappers/common': packageJson.version };
+  if (packageName !== "common")
+    packageJson.dependencies = {
+      "@nativewrappers/common": packageJson.version,
+    };
 
-  writeFileSync(`./lib/${packageName}/package.json`, JSON.stringify(packageJson, null, 2));
+  writeFileSync(
+    `./lib/${packageName}/package.json`,
+    JSON.stringify(packageJson, null, 2),
+  );
 });

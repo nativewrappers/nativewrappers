@@ -30,9 +30,8 @@ export function Exports(exportName: string) {
     }
 
     context.addInitializer(function () {
-      const t = this;
       exports(exportName, (...args: any[]) => {
-        return originalMethod.call(t, ...args);
+        return originalMethod.call(this, ...args);
       });
     });
   };
@@ -58,10 +57,9 @@ export function Event(eventName: string) {
       );
     }
     context.addInitializer(function () {
-      const t = this;
       on(eventName, (...args: any[]) => {
         try {
-          return originalMethod.call(t, ...args);
+          return originalMethod.call(this, ...args);
         } catch (e) {
           REMOVE_EVENT_LOG: {
             if (!GlobalData.EnablePrettyPrint) return;
@@ -99,7 +97,6 @@ export function NetEvent(eventName: string, remoteOnly = true) {
       );
     }
     context.addInitializer(function () {
-      const t = this;
       onNet(eventName, (...args: any[]) => {
         const src = source;
         try {
@@ -108,7 +105,7 @@ export function NetEvent(eventName: string, remoteOnly = true) {
               return;
             }
           }
-          return originalMethod.call(t, ...args);
+          return originalMethod.call(this, ...args);
         } catch (e) {
           REMOVE_NET_EVENT_LOG: {
             if (!GlobalData.EnablePrettyPrint) return;
@@ -143,10 +140,8 @@ export function NuiEvent(eventName: string) {
       );
     }
     context.addInitializer(function () {
-      const t = this;
-
       RegisterNuiCallback(eventName, (...args: any[]) => {
-        return originalMethod.call(t, ...args);
+        return originalMethod.call(this, ...args);
       });
     });
   };
@@ -260,9 +255,8 @@ export function SetTick() {
       );
     }
     context.addInitializer(function () {
-      const t = this;
       setTick(async () => {
-        await originalMethod.call(t);
+        await originalMethod.call(this);
       });
     });
   };

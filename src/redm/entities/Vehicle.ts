@@ -1,4 +1,4 @@
-import { VehicleSeat } from "redm/enums";
+import type { VehicleSeat } from "redm/enums";
 import { BaseEntity } from "./BaseEntity";
 import { _N } from "redm/utils";
 

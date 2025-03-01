@@ -32,13 +32,16 @@ type CommandHandler<T extends Parameter[]> = (
 
 function registerCommand(
   name: string | string[],
-  commandHandler: Function,
+  commandHandler: (source: number, args: string[], raw: string) => void,
   restricted?: Restricted,
 ) {
-  if (Array.isArray(name))
-    return name.forEach((name) =>
-      registerCommand(name, commandHandler, restricted),
-    );
+  if (Array.isArray(name)) {
+    for (const command of name) {
+      registerCommand(command, commandHandler, restricted);
+    }
+
+    return;
+  }
 
   RegisterCommand(name, commandHandler, !!restricted);
 
@@ -53,11 +56,10 @@ function registerCommand(
   }
 
   if (Array.isArray(restricted)) {
-    restricted.forEach(
-      (principal) =>
-        !IsPrincipalAceAllowed(principal, ace) &&
-        ExecuteCommand(`add_ace ${restricted} ${ace} allow`),
-    );
+    for (const principal of restricted) {
+      if (!IsPrincipalAceAllowed(principal, ace))
+        ExecuteCommand(`add_ace ${restricted} ${ace} allow`);
+    }
   }
 }
 
@@ -82,12 +84,13 @@ export class Command<T extends Parameter[] = Parameter[]> {
     );
 
     if (params) {
-      params.forEach((param) => {
-        if (param.type)
-          param.help = param.help
-            ? `${param.help} (type: ${param.type})`
-            : `(type: ${param.type})`;
-      });
+      for (const parameter of params) {
+        if (parameter.type) {
+          parameter.help = parameter.help
+            ? `${parameter.help} (type: ${parameter.type})`
+            : `(type: ${parameter.type})`;
+        }
+      }
 
       setTimeout(() => {
         if (GlobalData.IS_SERVER) {
@@ -114,7 +117,7 @@ export class Command<T extends Parameter[] = Parameter[]> {
 
     const result = this.params.every((param, index) => {
       const arg = args[index];
-      let value: any = arg;
+      let value: unknown = arg;
 
       switch (param.type) {
         case "number":
@@ -131,7 +134,7 @@ export class Command<T extends Parameter[] = Parameter[]> {
           } else {
             value = arg === "me" ? GetPlayerServerId(PlayerId()) : +arg;
 
-            if (!value || GetPlayerFromServerId(value) === -1)
+            if (!value || GetPlayerFromServerId(value as number) === -1)
               value = undefined;
           }
 
@@ -149,7 +152,7 @@ export class Command<T extends Parameter[] = Parameter[]> {
         );
       }
 
-      mapped[param.name as keyof MappedParameters<T>] = value;
+      mapped[param.name as keyof MappedParameters<T>] = value as any;
 
       return true;
     });

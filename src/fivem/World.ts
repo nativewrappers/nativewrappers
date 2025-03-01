@@ -5,9 +5,9 @@ import {
   CameraTypes,
   CloudHat,
   IntersectFlags,
-  MarkerType,
-  PickupType,
-  RopeType,
+  type MarkerType,
+  type PickupType,
+  type RopeType,
   SHAPE_TEST_DEFAULT,
   Weather,
 } from "./enums";
@@ -18,7 +18,7 @@ import type { BaseEntity } from "./models/BaseEntity";
 import { Pickup } from "./Pickup";
 import { AsynchronousRaycastResult, SynchronousRaycastResult } from "./Raycast";
 import { Rope } from "./Rope";
-import { Color, Maths, Vector3, Wait } from "./utils";
+import { type Color, Maths, Vector3, Wait } from "./utils";
 
 /**
  * Class with common world manipulations.

@@ -15,7 +15,7 @@ export class Player {
   public static *AllPlayers(): IterableIterator<Player> {
     const num = GetNumPlayerIndices();
     for (let i = 0; i < num; i++) {
-      yield new Player(parseInt(GetPlayerFromIndex(i)));
+      yield new Player(Number.parseInt(GetPlayerFromIndex(i)));
     }
   }
 

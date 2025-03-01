@@ -1,8 +1,8 @@
 {
-	"extends": "../../tsconfig.json",
-	"compilerOptions": {
-		"composite": true,
-		"types": ["@citizenfx/server", "@citizenfx/client"]
-	},
-	"include": ["./"]
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "types": ["@citizenfx/server", "@citizenfx/client"]
+  },
+  "include": ["./"]
 }

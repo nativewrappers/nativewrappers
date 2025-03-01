@@ -1,5 +1,5 @@
 import { Scaleform } from "./Scaleform";
-import { IButton } from "./interfaces/IButton";
+import type { IButton } from "./interfaces/IButton";
 
 /**
  * Draw native instructional buttons in the bottom left of the screen using scaleform

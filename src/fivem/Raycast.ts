@@ -1,7 +1,7 @@
 import { ShapeTestStatus } from "./enums/RaycastEnums";
 import { Game } from "./Game";
-import { MaterialHash } from "./hashes";
-import { Ped, Prop, Vehicle } from "./models";
+import type { MaterialHash } from "./hashes";
+import type { Ped, Prop, Vehicle } from "./models";
 import { Delay, Vector3 } from "./utils";
 
 /**

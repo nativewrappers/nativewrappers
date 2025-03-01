@@ -1,7 +1,7 @@
 import { Menu, Sprite, Text } from "../../";
 import { Alignment, Font } from "../../../enums";
 import { Color, LiteEvent, Point, Size, String } from "../../../utils";
-import { ListItem } from "../modules/";
+import type { ListItem } from "../modules/";
 import { UIMenuItem } from "./";
 
 export class UIMenuListItem extends UIMenuItem {

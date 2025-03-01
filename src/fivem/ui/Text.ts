@@ -1,6 +1,6 @@
 import { Alignment, Font } from "../enums";
 import { Color, Point, Size } from "../utils";
-import { IDrawable, Screen } from "./";
+import { type IDrawable, Screen } from "./";
 
 export class Text implements IDrawable {
   public static draw(

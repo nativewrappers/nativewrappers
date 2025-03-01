@@ -1,4 +1,4 @@
-import { InvertAxis, InvertAxisFlags } from "./enums";
+import { type InvertAxis, InvertAxisFlags } from "./enums";
 import type { BaseEntity } from "./models/BaseEntity";
 import { Vector3 } from "./utils";
 

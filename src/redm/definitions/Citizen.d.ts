@@ -1,17 +1,17 @@
 /* eslint-disable */
 
-interface IntPtrInitialized {}
-interface FloatPtrInitialized {}
-interface IntPtr {}
-interface FloatPtr {}
-interface VectorPtr {}
-interface ReturnResultAnyway {}
-interface ResultAsInteger {}
-interface ResultAsFloat {}
-interface ResultAsString {}
-interface ResultAsVector {}
-interface ResultAsLong {}
-interface ResultAsObject {}
+type IntPtrInitialized = {};
+type FloatPtrInitialized = {};
+type IntPtr = {};
+type FloatPtr = {};
+type VectorPtr = {};
+type ReturnResultAnyway = {};
+type ResultAsInteger = {};
+type ResultAsFloat = {};
+type ResultAsString = {};
+type ResultAsVector = {};
+type ResultAsLong = {};
+type ResultAsObject = {};
 
 type InputArgument =
   | string

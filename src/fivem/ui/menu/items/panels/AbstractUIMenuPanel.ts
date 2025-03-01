@@ -1,6 +1,6 @@
-import { UIMenuItem } from "../";
+import type { UIMenuItem } from "../";
 import { Crypto } from "../../../../utils";
-import { Rectangle, Sprite } from "../../../";
+import { type Rectangle, Sprite } from "../../../";
 import { Menu } from "../../";
 
 export abstract class AbstractUIMenuPanel {

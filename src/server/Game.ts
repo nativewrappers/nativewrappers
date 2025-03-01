@@ -45,7 +45,7 @@ export abstract class Game {
       name,
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (source: string, args: any[]) => {
-        const player = new Player(parseInt(source));
+        const player = new Player(Number.parseInt(source));
 
         handler(player, args);
       },

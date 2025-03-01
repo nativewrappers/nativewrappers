@@ -1,5 +1,5 @@
 import { Model, Color } from "..";
-import cfx, { StateBagChangeHandler } from "../cfx";
+import cfx, { type StateBagChangeHandler } from "../cfx";
 import { ClassTypes } from "../../common/utils/ClassTypes";
 import { BaseEntity, Ped } from "./";
 

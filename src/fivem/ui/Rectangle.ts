@@ -1,5 +1,5 @@
-import { Color, Point, Size } from "../utils";
-import { IDrawable, Screen } from "./";
+import { type Color, Point, Size } from "../utils";
+import { type IDrawable, Screen } from "./";
 
 export class Rectangle implements IDrawable {
   public pos: Point;

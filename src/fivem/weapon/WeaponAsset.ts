@@ -1,4 +1,4 @@
-import { WeaponHash } from "../hashes";
+import type { WeaponHash } from "../hashes";
 import { Weapon } from "./Weapon";
 import { Game } from "../Game";
 import { Wait } from "../utils";

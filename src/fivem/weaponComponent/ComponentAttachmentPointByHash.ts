@@ -575,7 +575,7 @@ export const ComponentAttachmentPointByHash = new Map<
 function initializeOnce() {
   let isInitialized = false;
 
-  return function () {
+  return () => {
     if (isInitialized) {
       return;
     }

@@ -15,7 +15,10 @@ export class Point {
       } else {
         if (arg.indexOf(",") !== -1) {
           const arr = arg.split(",");
-          point = new Point(parseFloat(arr[0]), parseFloat(arr[1]));
+          point = new Point(
+            Number.parseFloat(arr[0]),
+            Number.parseFloat(arr[1]),
+          );
         }
       }
     }

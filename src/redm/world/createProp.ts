@@ -1,6 +1,6 @@
-import { Vector3 } from "@common/utils";
+import type { Vector3 } from "@common/utils";
 import { Prop } from "redm/entities/Prop";
-import { Model } from "redm/Model";
+import type { Model } from "redm/Model";
 
 /**
  * Creates a ped at the specified {@param spawnPos}, you don't need to request the model before this.

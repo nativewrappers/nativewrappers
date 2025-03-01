@@ -1,7 +1,7 @@
 import { ClassTypes } from "../../common/utils/ClassTypes";
-import { VehicleLockStatus } from "../enum/VehicleLockStatus";
-import { VehicleType } from "../enum/VehicleType";
-import { Hash } from "../type/Hash";
+import type { VehicleLockStatus } from "../enum/VehicleLockStatus";
+import type { VehicleType } from "../enum/VehicleType";
+import type { Hash } from "../type/Hash";
 import { Color } from "../utils";
 import { BaseEntity } from "./BaseEntity";
 

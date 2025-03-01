@@ -1,4 +1,4 @@
-import { KeyHash } from "./enums/Keys";
+import type { KeyHash } from "./enums/Keys";
 
 export class Controls {
   public static IsInputJustPressed(hash: KeyHash) {

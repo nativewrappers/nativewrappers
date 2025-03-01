@@ -1,9 +1,9 @@
 {
-	"extends": "../../tsconfig.json",
-	"compilerOptions": {
-		"composite": true,
-		"types": ["@citizenfx/server"]
-	},
-	"include": ["./"],
-	"references": [{ "path": "../common" }]
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "types": ["@citizenfx/server"]
+  },
+  "include": ["./"],
+  "references": [{ "path": "../common" }]
 }

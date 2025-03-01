@@ -1,6 +1,6 @@
 import { Audio } from "../Audio";
 import { HudColor, NotificationType } from "../enums";
-import { Color, Size, String, Vector3 } from "../utils";
+import { Color, Size, String, type Vector3 } from "../utils";
 import { Notification } from "./";
 
 export abstract class Screen {

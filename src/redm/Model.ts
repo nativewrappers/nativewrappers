@@ -1,6 +1,6 @@
 import { Vector3 } from "@common/utils/Vector3";
 import { Delay } from "@common/utils";
-import { type Dimensions } from "./interfaces/Dimensions";
+import type { Dimensions } from "./interfaces/Dimensions";
 
 /**
  * Class to create and manage entity models.
@@ -10,7 +10,7 @@ export class Model implements Disposable {
    * Hash of this model.
    */
   private hash: number;
-  private requestedModel: boolean = false;
+  private requestedModel = false;
 
   /**
    * Creates a model object based on the hash key or model string.

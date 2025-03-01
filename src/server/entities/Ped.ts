@@ -1,5 +1,5 @@
 import { ClassTypes } from "../../common/utils/ClassTypes";
-import { Hash } from "../type/Hash";
+import type { Hash } from "../type/Hash";
 import { BaseEntity } from "./BaseEntity";
 import { Vehicle } from "./Vehicle";
 

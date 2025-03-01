@@ -1,4 +1,4 @@
-import { RawKeys } from "./enums";
+import type { RawKeys } from "./enums";
 
 // rdr3 doesn't have proper definitions
 declare function IsRawKeyDown(rawKeyIndex: number): boolean;

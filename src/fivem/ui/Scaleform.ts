@@ -1,4 +1,4 @@
-import { PointF, Vector3 } from "../utils";
+import type { PointF, Vector3 } from "../utils";
 
 /**
  * Scaleforms will automatically load when calling any of the render functions.

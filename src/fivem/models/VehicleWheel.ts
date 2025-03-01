@@ -1,4 +1,4 @@
-import { Vehicle } from "./Vehicle";
+import type { Vehicle } from "./Vehicle";
 
 export class VehicleWheel {
   private _owner: Vehicle;

@@ -1,6 +1,6 @@
 import { WeaponComponent } from "./WeaponComponent";
 import { WeaponComponentHash } from "./WeaponComponentHash";
-import { WeaponHash } from "../hashes";
+import type { WeaponHash } from "../hashes";
 import { ComponentAttachmentPoint } from "./ComponentAttachmentPoint";
 import { Game } from "../Game";
 

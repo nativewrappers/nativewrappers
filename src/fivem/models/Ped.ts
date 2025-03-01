@@ -1,14 +1,14 @@
 import { Player, Vector3 } from "../";
 import {
-  DrivingStyle,
-  FiringPattern,
+  type DrivingStyle,
+  type FiringPattern,
   Gender,
-  HelmetType,
+  type HelmetType,
   RagdollType,
   SpeechModifier,
   VehicleSeat,
 } from "../enums";
-import { WeaponHash } from "../hashes";
+import type { WeaponHash } from "../hashes";
 import { Tasks } from "../Tasks";
 import { PedBoneCollection, Vehicle } from "./";
 import { WeaponCollection } from "../weapon/WeaponCollection";

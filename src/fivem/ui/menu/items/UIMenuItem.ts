@@ -1,4 +1,4 @@
-import { AbstractUIMenuPanel, Menu } from "../";
+import { type AbstractUIMenuPanel, Menu } from "../";
 import { Rectangle, Sprite, Text } from "../../";
 import { Alignment, BadgeStyle, Font } from "../../../enums";
 import { Color, Crypto, LiteEvent, Point, Size, String } from "../../../utils";

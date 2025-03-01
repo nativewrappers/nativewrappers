@@ -36,7 +36,7 @@ export const WeaponComponentHudStats = new Map<
 function initializeOnce() {
   let isInitialized = false;
 
-  return function () {
+  return () => {
     if (isInitialized || IsDuplicityVersion()) {
       return;
     }

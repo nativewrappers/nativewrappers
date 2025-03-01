@@ -1,6 +1,26 @@
 {
   "files": {
-    "include": ["src/**/*.ts"]
+    "ignore": ["node_modules/**", "lib/**"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "suspicious": {
+        "noConfusingLabels": "off",
+        "noAssignInExpressions": "off",
+        "noExplicitAny": "off",
+        "noFallthroughSwitchClause": "off"
+      },
+      "correctness": {
+        "noUnusedLabels": "off",
+        "noVoidTypeReturn": "off"
+      },
+      "style": {
+        "useEnumInitializers": "off",
+        "noNonNullAssertion": "off",
+        "noParameterAssign": "off"
+      }
+    }
   },
   "formatter": {
     "enabled": true,

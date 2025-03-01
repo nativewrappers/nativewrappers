@@ -6,14 +6,14 @@ import {
   VehicleWindowCollection,
 } from "./";
 import {
-  RadioStation,
-  VehicleClass,
-  VehicleLandingGearState,
-  VehicleLockStatus,
+  type RadioStation,
+  type VehicleClass,
+  type VehicleLandingGearState,
+  type VehicleLockStatus,
   VehicleRoofState,
   VehicleSeat,
 } from "../enums";
-import { Model } from "../Model";
+import type { Model } from "../Model";
 import { Game } from "../Game";
 import { Vector3 } from "../utils";
 import { ClassTypes } from "../../common/utils/ClassTypes";

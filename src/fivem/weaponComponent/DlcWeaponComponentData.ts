@@ -1,4 +1,4 @@
-import { WeaponComponentHash } from "./WeaponComponentHash";
+import type { WeaponComponentHash } from "./WeaponComponentHash";
 import { getStringFromUInt8Array, getUInt32FromUint8Array } from "../utils";
 
 /**
@@ -52,7 +52,7 @@ export const DlcWeaponComponentData = new Map<
 function initializeOnce() {
   let isInitialized = false;
 
-  return function () {
+  return () => {
     if (isInitialized || IsDuplicityVersion()) {
       return;
     }

@@ -812,7 +812,7 @@ export const WeaponComponentHashesByWeaponHash = new Map<
 function initializeOnce() {
   let isInitialized = false;
 
-  return function () {
+  return () => {
     if (isInitialized || IsDuplicityVersion()) {
       return;
     }

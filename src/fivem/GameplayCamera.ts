@@ -1,5 +1,5 @@
 import { Camera } from "./Camera";
-import { CameraShake } from "./enums";
+import type { CameraShake } from "./enums";
 import { Vector3 } from "./utils";
 
 /**

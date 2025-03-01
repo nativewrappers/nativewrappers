@@ -1,4 +1,4 @@
-import { CameraShake } from "./enums";
+import type { CameraShake } from "./enums";
 import { PedBone } from "./models";
 import { BaseEntity } from "./models/BaseEntity";
 import { Vector3 } from "./utils";

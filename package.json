@@ -26,24 +26,16 @@
     "url": "https://github.com/nativewrappers/nativewrappers/issues"
   },
   "homepage": "https://fivemjs.avarian.dev/",
-  "keywords": [
-    "fivem",
-    "wrapper",
-    "javascript",
-    "typescript",
-    "citizenfx"
-  ],
-  "files": [
-    "./**/*.js",
-    "./**/*.d.ts"
-  ],
+  "keywords": ["fivem", "wrapper", "javascript", "typescript", "citizenfx"],
+  "files": ["./**/*.js", "./**/*.d.ts"],
   "scripts": {
     "delete": "rm -rf lib",
     "build": "pnpm run delete && tsc --build && tsc-alias && cp README.md lib/README.md && node postbuild.js",
     "watch": "tsc --watch",
     "ci": "pnpm run check && pnpm run build",
     "check": "pnpm biome format",
-    "biome-fix": "pnpm biome format --write",
+    "format": "pnpm biome format --write",
+    "lint": "pnpm biome lint --write",
     "prepare": "husky"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-import { Vehicle } from "./Vehicle";
+import type { Vehicle } from "./Vehicle";
 import { VehicleDoorIndex } from "../enums";
 import { VehicleDoor } from "./VehicleDoor";
 

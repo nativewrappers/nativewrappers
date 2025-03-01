@@ -1,11 +1,11 @@
 module.exports = {
-  entry: './src/index.ts',
-  mode: 'production',
+  entry: "./src/index.ts",
+  mode: "production",
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: "ts-loader",
         exclude: /node_modules/,
       },
     ],
@@ -14,10 +14,10 @@ module.exports = {
     minimize: false,
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: [".tsx", ".ts", ".js"],
   },
   output: {
-    filename: 'index.js',
-    path: __dirname + '/dist/',
+    filename: "index.js",
+    path: __dirname + "/dist/",
   },
 };

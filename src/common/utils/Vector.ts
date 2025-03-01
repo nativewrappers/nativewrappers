@@ -510,9 +510,9 @@ abstract class Vector {
   }
 
   public type: unknown;
-  public [size]: number = 2;
-  public x: number = 0;
-  public y: number = 0;
+  public [size] = 2;
+  public x = 0;
+  public y = 0;
   public z: number | undefined;
   public w: number | undefined;
 
@@ -690,7 +690,7 @@ abstract class Vector {
   public get Length(): number {
     let sum = 0;
 
-    for (let value of this) sum += value * value;
+    for (const value of this) sum += value * value;
 
     return Math.sqrt(sum);
   }
@@ -753,7 +753,7 @@ export class Vector3 extends Vector implements Vec3 {
   // TO EXIST, CHANGING IT WILL BREAK STUFF
   readonly type = ClassTypes.Vector3;
   readonly [size]: number = 3;
-  public z: number = 0;
+  public z = 0;
 
   public static readonly Zero: Vector3 = new Vector3(0, 0, 0);
 
@@ -836,8 +836,8 @@ export class Vector4 extends Vector {
   // TO EXIST, CHANGING IT WILL BREAK STUFF
   readonly type = ClassTypes.Vector4;
   readonly [size]: number = 4;
-  public z: number = 0;
-  public w: number = 0;
+  public z = 0;
+  public w = 0;
 
   public static readonly Zero: Vector4 = new Vector4(0, 0, 0, 0);
 

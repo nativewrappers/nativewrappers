@@ -1,9 +1,9 @@
-import {
+import type {
   eAttributeCore,
   ePedAttribute,
   eHudStatusEffect,
 } from "./enums/Attributes";
-import { Ped } from "./entities/Ped";
+import type { Ped } from "./entities/Ped";
 import { _N } from "./utils/Native";
 
 export class CoreAttribute {

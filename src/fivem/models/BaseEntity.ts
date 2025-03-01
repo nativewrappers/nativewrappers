@@ -1,11 +1,11 @@
 import { Blip } from "../Blip";
 import { ForceType } from "../enums";
-import { MaterialHash, WeaponHash } from "../hashes";
+import type { MaterialHash, WeaponHash } from "../hashes";
 import { Model } from "../Model";
 import { Quaternion, Vector3 } from "../utils";
 import { EntityBoneCollection } from "./";
-import { EntityBone } from "./EntityBone";
-import cfx, { StateBagChangeHandler } from "../cfx";
+import type { EntityBone } from "./EntityBone";
+import cfx, { type StateBagChangeHandler } from "../cfx";
 import { ClassTypes } from "../../common/utils/ClassTypes";
 
 export class BaseEntity {

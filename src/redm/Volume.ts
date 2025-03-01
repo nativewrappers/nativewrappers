@@ -1,4 +1,4 @@
-import { Vector3 } from "@common/utils/Vector3";
+import type { Vector3 } from "@common/utils/Vector3";
 
 export class Volume {
   private handle: number;

@@ -1,6 +1,6 @@
-import { Vector3 } from "@common/utils";
+import type { Vector3 } from "@common/utils";
 import { Vehicle } from "redm/entities";
-import { Model } from "redm/Model";
+import type { Model } from "redm/Model";
 import { _N } from "redm/utils";
 
 /**

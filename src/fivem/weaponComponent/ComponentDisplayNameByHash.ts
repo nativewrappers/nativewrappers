@@ -317,7 +317,7 @@ export const ComponentDisplayNameByHash = new Map<WeaponComponentHash, string>([
 function initializeOnce() {
   let isInitialized = false;
 
-  return function () {
+  return () => {
     if (isInitialized) {
       return;
     }

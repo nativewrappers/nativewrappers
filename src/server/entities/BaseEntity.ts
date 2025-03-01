@@ -1,8 +1,8 @@
 import cfx from "../cfx";
 import { ClassTypes } from "../../common/utils/ClassTypes";
-import { eEntityType } from "../enum/eEntityType";
-import { PopulationType } from "../enum/PopulationType";
-import { Hash } from "../type/Hash";
+import type { eEntityType } from "../enum/eEntityType";
+import type { PopulationType } from "../enum/PopulationType";
+import type { Hash } from "../type/Hash";
 import { Vector4 } from "../utils";
 import { Vector3 } from "../utils";
 

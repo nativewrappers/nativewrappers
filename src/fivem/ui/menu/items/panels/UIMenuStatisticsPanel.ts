@@ -1,5 +1,5 @@
 import { Color, Point, Size } from "../../../../utils";
-import { AbstractUIMenuPanel, UIMenuStatisticsPanelItem } from "./";
+import { AbstractUIMenuPanel, type UIMenuStatisticsPanelItem } from "./";
 import { Menu, Rectangle } from "../../../";
 
 export class UIMenuStatisticsPanel extends AbstractUIMenuPanel {

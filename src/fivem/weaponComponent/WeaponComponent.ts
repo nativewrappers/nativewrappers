@@ -1,7 +1,7 @@
-import { Ped } from "../models";
-import { Weapon } from "../weapon";
+import type { Ped } from "../models";
+import type { Weapon } from "../weapon";
 import { WeaponComponentHash } from "./WeaponComponentHash";
-import { WeaponHash } from "../hashes";
+import type { WeaponHash } from "../hashes";
 import { ComponentAttachmentPoint } from "./ComponentAttachmentPoint";
 import { Game } from "../Game";
 import { ComponentDisplayNameByHash } from "./ComponentDisplayNameByHash";

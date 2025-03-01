@@ -1,17 +1,17 @@
 import { WeaponComponentCollection } from "../weaponComponent/WeaponComponentCollection";
-import { Ped } from "../models";
-import { AmmoType, WeaponHash } from "../hashes";
+import type { Ped } from "../models";
+import { type AmmoType, WeaponHash } from "../hashes";
 import { WeaponDisplayNameByHash } from "./WeaponDisplayNameByHash";
 import { Game } from "../Game";
 import { Model } from "../Model";
-import { WeaponTint } from "./WeaponTint";
-import { WeaponGroup } from "./WeaponGroup";
-import { WeaponLivery } from "./WeaponLivery";
-import { WeaponLiveryColor } from "./WeaponLiveryColor";
+import type { WeaponTint } from "./WeaponTint";
+import type { WeaponGroup } from "./WeaponGroup";
+import type { WeaponLivery } from "./WeaponLivery";
+import type { WeaponLiveryColor } from "./WeaponLiveryColor";
 import { WeaponHudStats } from "./WeaponHudStats";
 import { enumValues } from "../utils";
 import { Mk2WeaponHash } from "./Mk2WeaponHash";
-import { WeaponComponentHash } from "../weaponComponent";
+import type { WeaponComponentHash } from "../weaponComponent";
 import { WeaponComponentHashesByWeaponHash } from "../weaponComponent/WeaponComponentHashesByWeaponHash";
 
 /**

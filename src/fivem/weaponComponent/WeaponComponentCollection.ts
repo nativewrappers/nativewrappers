@@ -1,6 +1,6 @@
-import { Ped } from "../models";
-import { Weapon } from "../weapon";
-import { WeaponComponentHash } from "./WeaponComponentHash";
+import type { Ped } from "../models";
+import type { Weapon } from "../weapon";
+import type { WeaponComponentHash } from "./WeaponComponentHash";
 import { WeaponComponent } from "./WeaponComponent";
 import { InvalidWeaponComponent } from "./InvalidWeaponComponent";
 import { WeaponComponentHashesByWeaponHash } from "./WeaponComponentHashesByWeaponHash";

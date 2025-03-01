@@ -1,6 +1,6 @@
 import { Game } from "./Game";
 import { VehicleHash } from "./hashes";
-import { Dimensions } from "./interfaces/Dimensions";
+import type { Dimensions } from "./interfaces/Dimensions";
 import { Vector3, Wait } from "./utils";
 
 /**
@@ -11,7 +11,7 @@ export class Model implements Disposable {
    * Hash of this model.
    */
   private hash: number;
-  private requestedModel: boolean = false;
+  private requestedModel = false;
 
   /**
    * Creates a model object based on the hash key or model string.

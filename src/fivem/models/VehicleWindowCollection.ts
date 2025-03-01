@@ -1,4 +1,4 @@
-import { Vehicle } from "./Vehicle";
+import type { Vehicle } from "./Vehicle";
 import { VehicleWindowIndex } from "../enums";
 import { VehicleWindow } from "./VehicleWindow";
 
@@ -12,7 +12,7 @@ export class VehicleWindowCollection {
   }
 
   public getWindow(index: VehicleWindowIndex): VehicleWindow {
-    let window = this._vehicleWindows.get(index);
+    const window = this._vehicleWindows.get(index);
     if (!window) {
       const vehicleWindow = new VehicleWindow(this._owner, index);
       this._vehicleWindows.set(index, vehicleWindow);

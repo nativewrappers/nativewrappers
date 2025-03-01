@@ -1,6 +1,6 @@
 import { Weapon } from "./Weapon";
-import { Ped, Prop } from "../models";
-import { WeaponHash } from "../hashes";
+import { type Ped, Prop } from "../models";
+import type { WeaponHash } from "../hashes";
 
 /**
  * ped weapons

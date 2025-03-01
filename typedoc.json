@@ -1,14 +1,19 @@
 {
-	"plugin": ["typedoc-plugin-markdown"],
-	"entryPoints": ["./src/common/index.ts", "./src/fivem/index.ts", "./src/redm/index.ts", "./src/server/index.ts"],
-	"readme": "none",
-	"out": "docs",
-	"enumMembersFormat": "table",
-	"parametersFormat": "table",
-	"propertiesFormat": "table",
-	"typeDeclarationFormat": "table",
-	"indexFormat": "table",
-	"useCodeBlocks": true,
-	"expandObjects": true,
-	"hidePageHeader": true
+  "plugin": ["typedoc-plugin-markdown"],
+  "entryPoints": [
+    "./src/common/index.ts",
+    "./src/fivem/index.ts",
+    "./src/redm/index.ts",
+    "./src/server/index.ts"
+  ],
+  "readme": "none",
+  "out": "docs",
+  "enumMembersFormat": "table",
+  "parametersFormat": "table",
+  "propertiesFormat": "table",
+  "typeDeclarationFormat": "table",
+  "indexFormat": "table",
+  "useCodeBlocks": true,
+  "expandObjects": true,
+  "hidePageHeader": true
 }

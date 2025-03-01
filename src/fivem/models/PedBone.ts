@@ -1,4 +1,4 @@
-import { Bone } from "../enums";
+import type { Bone } from "../enums";
 import { EntityBone, Ped } from "./";
 
 export class PedBone extends EntityBone {

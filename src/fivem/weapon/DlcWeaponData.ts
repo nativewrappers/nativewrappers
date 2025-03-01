@@ -1,4 +1,4 @@
-import { WeaponHash } from "../hashes";
+import type { WeaponHash } from "../hashes";
 import { getUInt32FromUint8Array } from "../utils";
 import { getStringFromUInt8Array } from "../utils";
 
@@ -53,7 +53,7 @@ export const DlcWeaponData = new Map<WeaponHash, DlcWeaponData>();
 function initializeOnce() {
   let isInitialized = false;
 
-  return function () {
+  return () => {
     if (isInitialized || IsDuplicityVersion()) {
       return;
     }

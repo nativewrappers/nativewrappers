@@ -1,10 +1,10 @@
 import { Blip, Vector3 } from ".";
 import { Audio } from "./Audio";
-import { Control, InputMode, Language, RadioStation } from "./enums";
+import { type Control, InputMode, type Language, RadioStation } from "./enums";
 import { Ped, Player, Prop, Vehicle } from "./models";
 
 export abstract class Game {
-  public static useHashCache: boolean = true;
+  public static useHashCache = true;
   // A map containing generated hashes.
   public static hashCache: Map<string, number> = new Map();
   /**
