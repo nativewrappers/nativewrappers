@@ -6,8 +6,6 @@ import { BaseEntity } from "./BaseEntity";
 import { Vehicle } from "./Vehicle";
 import { Player } from "./Player";
 
-export type OptionalPed = Ped | null;
-
 export class Ped extends BaseEntity {
   private attributes: Attributes | undefined;
 
@@ -126,7 +124,7 @@ export class Ped extends BaseEntity {
   /**
    * @returns the last mount that this ped was on, or null if it doesn't exist
    */
-  get Mount(): OptionalPed {
+  get Mount(): Ped | null {
     // GET_LAST_MOUNT
     const pedId = _N<number>(
       "0x4C8B59171957BCF7",
@@ -139,7 +137,7 @@ export class Ped extends BaseEntity {
   /**
    * returns the horse that this ped is leading
    */
-  get LeadingHorse(): OptionalPed {
+  get LeadingHorse(): Ped | null {
     // GET_LAST_LED_MOUNT
     const pedId = _N<number>(
       "0x693126B5D0457D0D",
@@ -152,7 +150,7 @@ export class Ped extends BaseEntity {
   /**
    * returns the owner of the current animal
    */
-  get Owner(): OptionalPed {
+  get Owner(): Ped | null {
     // _GET_ACTIVE_ANIMAL_OWNER
     const pedId = _N<number>(
       "0xF103823FFE72BB49",
@@ -467,7 +465,7 @@ export class Ped extends BaseEntity {
   applyDamage(
     damageAmount: number,
     boneId = 0,
-    pedKiller: OptionalPed = null,
+    pedKiller: Ped | null = null,
   ): void {
     ApplyDamageToPed(
       this.Handle,
