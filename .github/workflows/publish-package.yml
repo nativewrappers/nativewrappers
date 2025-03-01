@@ -35,9 +35,8 @@ jobs:
       - name: Generate docs
         run: |
           pnpm typedoc --out temp-docs
-          git commit -am '${{ github.ref_name }}'
-          git push
-          git checkout --orphan docs
+          git checkout docs
+          git pull origin docs
           git rm -rf .
           mv temp-docs/* .
           git add .
@@ -45,6 +44,8 @@ jobs:
           git push -u origin docs
           rm -rf docs
           git checkout main
+          git commit -am '${{ github.ref_name }}'
+          git push
 
       # because we update the package version pnpm will get mad over an unclean branch
       # we don't want a bunch of version bump commits so just ignore the git checks
