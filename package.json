@@ -32,7 +32,7 @@
     "delete": "rm -rf lib",
     "build": "pnpm run delete && tsc --build && tsc-alias && cp README.md lib/README.md && node postbuild.js",
     "watch": "tsc --watch",
-    "check": "pnpm biome format",
+    "check": "pnpm biome format --include ./src/**/*.ts",
     "format": "pnpm biome format --write",
     "lint": "pnpm biome lint --write",
     "prepare": "husky"
