@@ -1,56 +1,58 @@
 {
-	"name": "@nativewrappers/fivem",
-	"description": "Javascript/Typescript wrapper for the FiveM natives",
-	"author": "Remco Troost <d0p3t>",
-	"license": "MIT",
-	"type": "module",
-	"version": "0.0.63",
-	"publishConfig": {
-		"directory": "lib"
-	},
-	"exports": {
-		".": "./common/index.js",
-		"./server": "./server/index.js",
-		"./fivem": "./fivem/index.js",
-		"./redm": "./redm/index.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/nativewrappers/nativewrappers.git"
-	},
-	"bugs": {
-		"url": "https://github.com/nativewrappers/nativewrappers/issues"
-	},
-	"homepage": "https://fivemjs.avarian.dev/",
-	"keywords": [
-		"fivem",
-		"wrapper",
-		"javascript",
-		"typescript",
-		"citizenfx"
-	],
-	"files": [
-		"./**/*.js",
-		"./**/*.d.ts"
-	],
-	"scripts": {
-		"delete": "rm -rf lib",
-		"build": "pnpm run delete && tsc --build && tsc-alias && cp README.md lib/README.md && node postbuild.js",
-		"watch": "tsc --watch",
-		"ci": "pnpm run check && pnpm run build && pnpm typedoc",
-		"check": "pnpm biome format",
-		"biome-fix": "pnpm biome format --write"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
-		"@citizenfx/client": "2.0.13079-1",
-		"@citizenfx/server": "2.0.13079-1",
-		"@types/node": "^22.13.7",
-		"buffer": "^6.0.3",
-		"tsc-alias": "^1.8.11",
-		"typedoc": "^0.27.9",
-		"typedoc-fivemjs-theme": "^0.2.7",
-		"typedoc-plugin-markdown": "^4.4.2",
-		"typescript": "^5.8.2"
-	}
+  "name": "@nativewrappers/fivem",
+  "description": "Javascript/Typescript wrapper for the FiveM natives",
+  "author": "Remco Troost <d0p3t>",
+  "license": "MIT",
+  "type": "module",
+  "version": "0.0.63",
+  "publishConfig": {
+    "directory": "lib"
+  },
+  "exports": {
+    ".": "./common/index.js",
+    "./server": "./server/index.js",
+    "./fivem": "./fivem/index.js",
+    "./redm": "./redm/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nativewrappers/nativewrappers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nativewrappers/nativewrappers/issues"
+  },
+  "homepage": "https://fivemjs.avarian.dev/",
+  "keywords": [
+    "fivem",
+    "wrapper",
+    "javascript",
+    "typescript",
+    "citizenfx"
+  ],
+  "files": [
+    "./**/*.js",
+    "./**/*.d.ts"
+  ],
+  "scripts": {
+    "delete": "rm -rf lib",
+    "build": "pnpm run delete && tsc --build && tsc-alias && cp README.md lib/README.md && node postbuild.js",
+    "watch": "tsc --watch",
+    "ci": "pnpm run check && pnpm run build && pnpm typedoc",
+    "check": "pnpm biome format",
+    "biome-fix": "pnpm biome format --write",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@citizenfx/client": "2.0.13079-1",
+    "@citizenfx/server": "2.0.13079-1",
+    "@types/node": "^22.13.7",
+    "buffer": "^6.0.3",
+    "husky": "^9.1.7",
+    "tsc-alias": "^1.8.11",
+    "typedoc": "^0.27.9",
+    "typedoc-fivemjs-theme": "^0.2.7",
+    "typedoc-plugin-markdown": "^4.4.2",
+    "typescript": "^5.8.2"
+  }
 }
