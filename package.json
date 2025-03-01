@@ -8,7 +8,7 @@
   ],
   "license": "MIT",
   "type": "module",
-  "version": "0.0.65",
+  "version": "0.0.66",
   "publishConfig": {
     "directory": "lib"
   },
@@ -26,8 +26,17 @@
     "url": "https://github.com/nativewrappers/nativewrappers/issues"
   },
   "homepage": "https://fivemjs.avarian.dev/",
-  "keywords": ["fivem", "wrapper", "javascript", "typescript", "citizenfx"],
-  "files": ["./**/*.js", "./**/*.d.ts"],
+  "keywords": [
+    "fivem",
+    "wrapper",
+    "javascript",
+    "typescript",
+    "citizenfx"
+  ],
+  "files": [
+    "./**/*.js",
+    "./**/*.d.ts"
+  ],
   "scripts": {
     "delete": "rm -rf lib",
     "build": "pnpm run delete && tsc --build && tsc-alias && cp README.md lib/README.md && node postbuild.js",
