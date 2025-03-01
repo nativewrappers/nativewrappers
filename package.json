@@ -41,7 +41,7 @@
     "delete": "rm -rf lib",
     "build": "pnpm run delete && tsc --build && tsc-alias && cp README.md lib/README.md && node postbuild.js",
     "watch": "tsc --watch",
-    "ci": "pnpm run check && pnpm run build && pnpm typedoc",
+    "ci": "pnpm run check && pnpm run build",
     "check": "pnpm biome format",
     "biome-fix": "pnpm biome format --write",
     "prepare": "husky"
