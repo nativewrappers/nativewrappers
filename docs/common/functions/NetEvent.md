@@ -6,14 +6,20 @@
 function NetEvent(eventName, remoteOnly): (originalMethod, context) => void
 ```
 
-Defined in: [src/common/decors/Events.ts:69](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/common/decors/Events.ts#L69)
+Defined in: [src/common/decors/Events.ts:91](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/common/decors/Events.ts#L91)
+
+Registers the Net Event call for [eventName](NetEvent.md#eventname) to this method
+
+This has internal pretty-printing to make errors easier to track, if
+you want to disable this you will need to call [DisablePrettyPrint](DisablePrettyPrint.md), or if you're
+using esbuild you can add `REMOVE_EVENT_LOG` to your drop label [https://esbuild.github.io/api/#drop-labels](https://esbuild.github.io/api/#drop-labels)
 
 ## Parameters
 
-| Parameter | Type | Default value |
-| ------ | ------ | ------ |
-| `eventName` | `string` | `undefined` |
-| `remoteOnly` | `boolean` | `false` |
+| Parameter | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| `eventName` | `string` | `undefined` | the event to bind this net event to |
+| `remoteOnly` | `boolean` | `true` | if the event should only accept remote calls, if set to true it will ignore any local call via `emit`, defaults to true |
 
 ## Returns
 

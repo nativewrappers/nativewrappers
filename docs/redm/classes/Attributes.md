@@ -2,7 +2,7 @@
 
 # Class: Attributes
 
-Defined in: [src/redm/Attribute.ts:146](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/Attribute.ts#L146)
+Defined in: [src/redm/Attribute.ts:146](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/redm/Attribute.ts#L146)
 
 ## Constructors
 
@@ -12,7 +12,7 @@ Defined in: [src/redm/Attribute.ts:146](https://github.com/nativewrappers/native
 new Attributes(ped): Attributes
 ```
 
-Defined in: [src/redm/Attribute.ts:149](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/Attribute.ts#L149)
+Defined in: [src/redm/Attribute.ts:149](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/redm/Attribute.ts#L149)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [src/redm/Attribute.ts:149](https://github.com/nativewrappers/native
 set CoreIcon(status): void
 ```
 
-Defined in: [src/redm/Attribute.ts:176](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/Attribute.ts#L176)
+Defined in: [src/redm/Attribute.ts:176](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/redm/Attribute.ts#L176)
 
 ##### Parameters
 
@@ -56,7 +56,7 @@ Defined in: [src/redm/Attribute.ts:176](https://github.com/nativewrappers/native
 set PeriodicIcon(status): void
 ```
 
-Defined in: [src/redm/Attribute.ts:184](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/Attribute.ts#L184)
+Defined in: [src/redm/Attribute.ts:184](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/redm/Attribute.ts#L184)
 
 ##### Parameters
 
@@ -76,7 +76,7 @@ Defined in: [src/redm/Attribute.ts:184](https://github.com/nativewrappers/native
 get(attribute): PedAttribute
 ```
 
-Defined in: [src/redm/Attribute.ts:168](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/Attribute.ts#L168)
+Defined in: [src/redm/Attribute.ts:168](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/redm/Attribute.ts#L168)
 
 #### Parameters
 
@@ -96,7 +96,7 @@ Defined in: [src/redm/Attribute.ts:168](https://github.com/nativewrappers/native
 getCore(attribute): CoreAttribute
 ```
 
-Defined in: [src/redm/Attribute.ts:159](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/Attribute.ts#L159)
+Defined in: [src/redm/Attribute.ts:159](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/redm/Attribute.ts#L159)
 
 #### Parameters
 

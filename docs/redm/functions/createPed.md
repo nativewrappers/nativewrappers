@@ -13,7 +13,7 @@ function createPed(
 p8): Promise<null | Ped>
 ```
 
-Defined in: [src/redm/world/createPed.ts:8](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/redm/world/createPed.ts#L8)
+Defined in: [src/redm/world/createPed.ts:8](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/redm/world/createPed.ts#L8)
 
 Creates a ped at the specified {@param spawnPos}, you don't need to request the model before this.
 

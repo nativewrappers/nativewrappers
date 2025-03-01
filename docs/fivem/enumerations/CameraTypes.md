@@ -2,14 +2,14 @@
 
 # Enumeration: CameraTypes
 
-Defined in: [src/fivem/enums/CameraTypes.ts:1](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/enums/CameraTypes.ts#L1)
+Defined in: [src/fivem/enums/CameraTypes.ts:1](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/fivem/enums/CameraTypes.ts#L1)
 
 ## Enumeration Members
 
 | Enumeration Member | Value | Defined in |
 | ------ | ------ | ------ |
-| <a id="animated"></a> `Animated` | `"DEFAULT_ANIMATED_CAMERA"` | [src/fivem/enums/CameraTypes.ts:3](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/enums/CameraTypes.ts#L3) |
-| <a id="scripted"></a> `Scripted` | `"DEFAULT_SCRIPTED_CAMERA"` | [src/fivem/enums/CameraTypes.ts:2](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/enums/CameraTypes.ts#L2) |
-| <a id="scriptedfly"></a> `ScriptedFly` | `"DEFAULT_SCRIPTED_FLY_CAMERA"` | [src/fivem/enums/CameraTypes.ts:5](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/enums/CameraTypes.ts#L5) |
-| <a id="spline"></a> `Spline` | `"DEFAULT_SPLINE_CAMERA"` | [src/fivem/enums/CameraTypes.ts:4](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/enums/CameraTypes.ts#L4) |
-| <a id="timedspline"></a> `TimedSpline` | `"TIMED_SPLINE_CAMERA"` | [src/fivem/enums/CameraTypes.ts:6](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/enums/CameraTypes.ts#L6) |
+| <a id="animated"></a> `Animated` | `"DEFAULT_ANIMATED_CAMERA"` | [src/fivem/enums/CameraTypes.ts:3](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/fivem/enums/CameraTypes.ts#L3) |
+| <a id="scripted"></a> `Scripted` | `"DEFAULT_SCRIPTED_CAMERA"` | [src/fivem/enums/CameraTypes.ts:2](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/fivem/enums/CameraTypes.ts#L2) |
+| <a id="scriptedfly"></a> `ScriptedFly` | `"DEFAULT_SCRIPTED_FLY_CAMERA"` | [src/fivem/enums/CameraTypes.ts:5](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/fivem/enums/CameraTypes.ts#L5) |
+| <a id="spline"></a> `Spline` | `"DEFAULT_SPLINE_CAMERA"` | [src/fivem/enums/CameraTypes.ts:4](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/fivem/enums/CameraTypes.ts#L4) |
+| <a id="timedspline"></a> `TimedSpline` | `"TIMED_SPLINE_CAMERA"` | [src/fivem/enums/CameraTypes.ts:6](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/fivem/enums/CameraTypes.ts#L6) |

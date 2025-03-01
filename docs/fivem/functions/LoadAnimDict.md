@@ -6,7 +6,7 @@
 function LoadAnimDict(animDict, waitTime): Promise<boolean>
 ```
 
-Defined in: [src/fivem/utils/Animations.ts:9](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/utils/Animations.ts#L9)
+Defined in: [src/fivem/utils/Animations.ts:9](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/fivem/utils/Animations.ts#L9)
 
 A utility to load an animation dictionary, anything that loads an animation should RemoveAnimDict after its finish being used.
 

@@ -6,7 +6,7 @@
 function cleanPlayerName(original): string
 ```
 
-Defined in: [src/common/utils/cleanPlayerName.ts:9](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/common/utils/cleanPlayerName.ts#L9)
+Defined in: [src/common/utils/cleanPlayerName.ts:9](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/common/utils/cleanPlayerName.ts#L9)
 
 Cleans up a player name and returns one version to be displayed, and one pure version to be used for fuzzy matching.
 In case the name has no ascii characters, the pure name will be "empty name".

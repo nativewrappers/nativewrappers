@@ -6,10 +6,12 @@
 function ConVar<T>(
    name, 
    is_floating_point?, 
-   deserialize?): (_initialValue, context, ...args) => void
+   deserialize?): (_initialValue, context, ..._args) => void
 ```
 
-Defined in: [src/common/decors/Events.ts:156](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/common/decors/Events.ts#L156)
+Defined in: [src/common/decors/Events.ts:182](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/common/decors/Events.ts#L182)
+
+Gets the specified `ConVar`s value, this will bind to the param.
 
 ## Type Parameters
 
@@ -19,11 +21,11 @@ Defined in: [src/common/decors/Events.ts:156](https://github.com/nativewrappers/
 
 ## Parameters
 
-| Parameter | Type |
-| ------ | ------ |
-| `name` | `string` |
-| `is_floating_point`? | `boolean` |
-| `deserialize`? | `DeserializeFn`\<`T`\> |
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `name` | `string` | the convar name |
+| `is_floating_point`? | `boolean` | if the convar is floating point, this should be explicitly set to true if your convar will be a float |
+| `deserialize`? | `DeserializeFn`\<`T`\> | - |
 
 ## Returns
 
@@ -35,7 +37,7 @@ Defined in: [src/common/decors/Events.ts:156](https://github.com/nativewrappers/
 | ------ | ------ |
 | `_initialValue` | `any` |
 | `context` | `ClassFieldDecoratorContext` |
-| ...`args` | `any`[] |
+| ...`_args` | `any`[] |
 
 ### Returns
 

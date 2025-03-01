@@ -6,4 +6,4 @@
 const SHAPE_TEST_DEFAULT: number;
 ```
 
-Defined in: [src/fivem/enums/RaycastEnums.ts:30](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/fivem/enums/RaycastEnums.ts#L30)
+Defined in: [src/fivem/enums/RaycastEnums.ts:30](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/fivem/enums/RaycastEnums.ts#L30)

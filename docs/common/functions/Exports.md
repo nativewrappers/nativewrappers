@@ -6,7 +6,7 @@
 function Exports(exportName): (originalMethod, context) => void
 ```
 
-Defined in: [src/common/decors/Events.ts:14](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/common/decors/Events.ts#L14)
+Defined in: [src/common/decors/Events.ts:21](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/common/decors/Events.ts#L21)
 
 ## Parameters
 

@@ -2,7 +2,7 @@
 
 # Class: Vehicle
 
-Defined in: [src/server/entities/Vehicle.ts:8](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L8)
+Defined in: [src/server/entities/Vehicle.ts:8](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L8)
 
 ## Extends
 
@@ -16,7 +16,7 @@ Defined in: [src/server/entities/Vehicle.ts:8](https://github.com/nativewrappers
 new Vehicle(handle): Vehicle
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:10](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L10)
+Defined in: [src/server/entities/Vehicle.ts:10](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L10)
 
 #### Parameters
 
@@ -38,8 +38,8 @@ BaseEntity.constructor
 
 | Property | Modifier | Type | Default value | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-| <a id="handle-1"></a> `handle` | `protected` | `number` | `undefined` | - | `BaseEntity.handle` | [src/server/entities/BaseEntity.ts:11](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L11) |
-| <a id="type"></a> `type` | `protected` | `ClassTypes` | `ClassTypes.Vehicle` | `BaseEntity.type` | - | [src/server/entities/Vehicle.ts:9](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L9) |
+| <a id="handle-1"></a> `handle` | `protected` | `number` | `undefined` | - | `BaseEntity.handle` | [src/server/entities/BaseEntity.ts:11](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L11) |
+| <a id="type"></a> `type` | `protected` | `ClassTypes` | `ClassTypes.Vehicle` | `BaseEntity.type` | - | [src/server/entities/Vehicle.ts:9](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L9) |
 
 ## Accessors
 
@@ -51,7 +51,7 @@ BaseEntity.constructor
 get AttachedTo(): null | BaseEntity
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:72](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L72)
+Defined in: [src/server/entities/BaseEntity.ts:72](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L72)
 
 ##### Returns
 
@@ -76,7 +76,7 @@ BaseEntity.AttachedTo
 get BodyHealth(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:48](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L48)
+Defined in: [src/server/entities/Vehicle.ts:48](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L48)
 
 ##### Returns
 
@@ -92,7 +92,7 @@ Defined in: [src/server/entities/Vehicle.ts:48](https://github.com/nativewrapper
 get CustomPrimaryColour(): Color
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:56](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L56)
+Defined in: [src/server/entities/Vehicle.ts:56](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L56)
 
 ##### Returns
 
@@ -108,7 +108,7 @@ Defined in: [src/server/entities/Vehicle.ts:56](https://github.com/nativewrapper
 get CustomSecondaryColour(): Color
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:60](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L60)
+Defined in: [src/server/entities/Vehicle.ts:60](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L60)
 
 ##### Returns
 
@@ -124,7 +124,7 @@ Defined in: [src/server/entities/Vehicle.ts:60](https://github.com/nativewrapper
 get DashboardColour(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:64](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L64)
+Defined in: [src/server/entities/Vehicle.ts:64](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L64)
 
 ##### Returns
 
@@ -140,7 +140,7 @@ Defined in: [src/server/entities/Vehicle.ts:64](https://github.com/nativewrapper
 get DirtLevel(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:68](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L68)
+Defined in: [src/server/entities/Vehicle.ts:68](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L68)
 
 ##### Returns
 
@@ -156,7 +156,7 @@ Defined in: [src/server/entities/Vehicle.ts:68](https://github.com/nativewrapper
 get DoorsLockedForPlayer(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:80](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L80)
+Defined in: [src/server/entities/Vehicle.ts:80](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L80)
 
 ##### Returns
 
@@ -172,7 +172,7 @@ Defined in: [src/server/entities/Vehicle.ts:80](https://github.com/nativewrapper
 get EngineHealth(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:84](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L84)
+Defined in: [src/server/entities/Vehicle.ts:84](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L84)
 
 ##### Returns
 
@@ -188,7 +188,7 @@ Defined in: [src/server/entities/Vehicle.ts:84](https://github.com/nativewrapper
 get Exists(): boolean
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:64](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L64)
+Defined in: [src/server/entities/BaseEntity.ts:64](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L64)
 
 ##### Returns
 
@@ -210,7 +210,7 @@ BaseEntity.Exists
 get ExtraColours(): [number, number]
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:88](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L88)
+Defined in: [src/server/entities/Vehicle.ts:88](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L88)
 
 ##### Returns
 
@@ -226,7 +226,7 @@ Defined in: [src/server/entities/Vehicle.ts:88](https://github.com/nativewrapper
 get FirstOwner(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:60](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L60)
+Defined in: [src/server/entities/BaseEntity.ts:60](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L60)
 
 ##### Returns
 
@@ -248,7 +248,7 @@ BaseEntity.FirstOwner
 get FlightNozzlePosition(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:92](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L92)
+Defined in: [src/server/entities/Vehicle.ts:92](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L92)
 
 ##### Returns
 
@@ -264,7 +264,7 @@ Defined in: [src/server/entities/Vehicle.ts:92](https://github.com/nativewrapper
 get Handbrake(): boolean
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:96](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L96)
+Defined in: [src/server/entities/Vehicle.ts:96](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L96)
 
 ##### Returns
 
@@ -280,7 +280,7 @@ Defined in: [src/server/entities/Vehicle.ts:96](https://github.com/nativewrapper
 get Handle(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:52](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L52)
+Defined in: [src/server/entities/BaseEntity.ts:52](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L52)
 
 ##### Returns
 
@@ -302,7 +302,7 @@ BaseEntity.Handle
 get HasBeenOwnedByPlayer(): boolean
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:169](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L169)
+Defined in: [src/server/entities/Vehicle.ts:169](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L169)
 
 ##### Returns
 
@@ -318,7 +318,7 @@ Defined in: [src/server/entities/Vehicle.ts:169](https://github.com/nativewrappe
 get Heading(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:82](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L82)
+Defined in: [src/server/entities/BaseEntity.ts:82](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L82)
 
 ##### Returns
 
@@ -340,7 +340,7 @@ BaseEntity.Heading
 get HeadlightsColour(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:100](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L100)
+Defined in: [src/server/entities/Vehicle.ts:100](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L100)
 
 ##### Returns
 
@@ -356,7 +356,7 @@ Defined in: [src/server/entities/Vehicle.ts:100](https://github.com/nativewrappe
 get Health(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:93](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L93)
+Defined in: [src/server/entities/BaseEntity.ts:93](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L93)
 
 ##### Returns
 
@@ -378,7 +378,7 @@ BaseEntity.Health
 get HomingLockonState(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:104](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L104)
+Defined in: [src/server/entities/Vehicle.ts:104](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L104)
 
 ##### Returns
 
@@ -394,7 +394,7 @@ Defined in: [src/server/entities/Vehicle.ts:104](https://github.com/nativewrappe
 get InteriorColour(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:108](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L108)
+Defined in: [src/server/entities/Vehicle.ts:108](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L108)
 
 ##### Returns
 
@@ -410,7 +410,7 @@ Defined in: [src/server/entities/Vehicle.ts:108](https://github.com/nativewrappe
 get IsEngineRunning(): boolean
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:36](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L36)
+Defined in: [src/server/entities/Vehicle.ts:36](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L36)
 
 ##### Returns
 
@@ -426,7 +426,7 @@ Defined in: [src/server/entities/Vehicle.ts:36](https://github.com/nativewrapper
 get IsEngineStarting(): boolean
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:173](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L173)
+Defined in: [src/server/entities/Vehicle.ts:173](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L173)
 
 ##### Returns
 
@@ -442,7 +442,7 @@ Defined in: [src/server/entities/Vehicle.ts:173](https://github.com/nativewrappe
 get IsNoLongerNeeded(): boolean
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:151](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L151)
+Defined in: [src/server/entities/BaseEntity.ts:151](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L151)
 
 ##### Returns
 
@@ -464,7 +464,7 @@ BaseEntity.IsNoLongerNeeded
 get IsPrimaryColourCustom(): boolean
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:40](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L40)
+Defined in: [src/server/entities/Vehicle.ts:40](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L40)
 
 ##### Returns
 
@@ -480,7 +480,7 @@ Defined in: [src/server/entities/Vehicle.ts:40](https://github.com/nativewrapper
 get IsSecondaryColourCustom(): boolean
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:44](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L44)
+Defined in: [src/server/entities/Vehicle.ts:44](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L44)
 
 ##### Returns
 
@@ -496,7 +496,7 @@ Defined in: [src/server/entities/Vehicle.ts:44](https://github.com/nativewrapper
 get IsSirenOn(): boolean
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:177](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L177)
+Defined in: [src/server/entities/Vehicle.ts:177](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L177)
 
 ##### Returns
 
@@ -512,7 +512,7 @@ Defined in: [src/server/entities/Vehicle.ts:177](https://github.com/nativewrappe
 get IsVisible(): boolean
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:143](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L143)
+Defined in: [src/server/entities/BaseEntity.ts:143](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L143)
 
 ##### Returns
 
@@ -534,7 +534,7 @@ BaseEntity.IsVisible
 get LightsState(): [boolean, boolean]
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:112](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L112)
+Defined in: [src/server/entities/Vehicle.ts:112](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L112)
 
 ##### Returns
 
@@ -550,7 +550,7 @@ Defined in: [src/server/entities/Vehicle.ts:112](https://github.com/nativewrappe
 get Livery(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:117](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L117)
+Defined in: [src/server/entities/Vehicle.ts:117](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L117)
 
 ##### Returns
 
@@ -566,7 +566,7 @@ Defined in: [src/server/entities/Vehicle.ts:117](https://github.com/nativewrappe
 get LockOnTarget(): Vehicle
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:121](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L121)
+Defined in: [src/server/entities/Vehicle.ts:121](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L121)
 
 ##### Returns
 
@@ -582,7 +582,7 @@ Defined in: [src/server/entities/Vehicle.ts:121](https://github.com/nativewrappe
 get LockStatus(): VehicleLockStatus
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:72](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L72)
+Defined in: [src/server/entities/Vehicle.ts:72](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L72)
 
 ##### Returns
 
@@ -598,7 +598,7 @@ Defined in: [src/server/entities/Vehicle.ts:72](https://github.com/nativewrapper
 get MainRotorHealth(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:193](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L193)
+Defined in: [src/server/entities/Vehicle.ts:193](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L193)
 
 ##### Returns
 
@@ -614,7 +614,7 @@ Defined in: [src/server/entities/Vehicle.ts:193](https://github.com/nativewrappe
 get MaxHealth(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:181](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L181)
+Defined in: [src/server/entities/Vehicle.ts:181](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L181)
 
 ##### Returns
 
@@ -636,7 +636,7 @@ BaseEntity.MaxHealth
 get Model(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:101](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L101)
+Defined in: [src/server/entities/BaseEntity.ts:101](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L101)
 
 ##### Returns
 
@@ -658,7 +658,7 @@ BaseEntity.Model
 get NetworkId(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:147](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L147)
+Defined in: [src/server/entities/BaseEntity.ts:147](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L147)
 
 ##### Returns
 
@@ -680,7 +680,7 @@ BaseEntity.NetworkId
 get Owner(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:56](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L56)
+Defined in: [src/server/entities/BaseEntity.ts:56](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L56)
 
 ##### Returns
 
@@ -702,7 +702,7 @@ BaseEntity.Owner
 get PetrolTankHealth(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:137](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L137)
+Defined in: [src/server/entities/Vehicle.ts:137](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L137)
 
 ##### Returns
 
@@ -718,7 +718,7 @@ Defined in: [src/server/entities/Vehicle.ts:137](https://github.com/nativewrappe
 get Plate(): string
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:125](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L125)
+Defined in: [src/server/entities/Vehicle.ts:125](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L125)
 
 ##### Returns
 
@@ -734,7 +734,7 @@ Defined in: [src/server/entities/Vehicle.ts:125](https://github.com/nativewrappe
 get PlateIndex(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:133](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L133)
+Defined in: [src/server/entities/Vehicle.ts:133](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L133)
 
 ##### Returns
 
@@ -750,7 +750,7 @@ Defined in: [src/server/entities/Vehicle.ts:133](https://github.com/nativewrappe
 get PlateTrimmed(): string
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:129](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L129)
+Defined in: [src/server/entities/Vehicle.ts:129](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L129)
 
 ##### Returns
 
@@ -766,7 +766,7 @@ Defined in: [src/server/entities/Vehicle.ts:129](https://github.com/nativewrappe
 get PopulationType(): PopulationType
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:105](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L105)
+Defined in: [src/server/entities/BaseEntity.ts:105](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L105)
 
 ##### Returns
 
@@ -788,7 +788,7 @@ BaseEntity.PopulationType
 get Position(): Vector3
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:78](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L78)
+Defined in: [src/server/entities/BaseEntity.ts:78](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L78)
 
 ##### Returns
 
@@ -810,7 +810,7 @@ BaseEntity.Position
 get PositionAndHeading(): Vector4
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:86](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L86)
+Defined in: [src/server/entities/BaseEntity.ts:86](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L86)
 
 ##### Returns
 
@@ -832,7 +832,7 @@ BaseEntity.PositionAndHeading
 get RadioStation(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:141](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L141)
+Defined in: [src/server/entities/Vehicle.ts:141](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L141)
 
 ##### Returns
 
@@ -848,7 +848,7 @@ Defined in: [src/server/entities/Vehicle.ts:141](https://github.com/nativewrappe
 get RoofLivery(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:145](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L145)
+Defined in: [src/server/entities/Vehicle.ts:145](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L145)
 
 ##### Returns
 
@@ -864,7 +864,7 @@ Defined in: [src/server/entities/Vehicle.ts:145](https://github.com/nativewrappe
 get Rotation(): Vector3
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:109](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L109)
+Defined in: [src/server/entities/BaseEntity.ts:109](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L109)
 
 ##### Returns
 
@@ -886,7 +886,7 @@ BaseEntity.Rotation
 get RotationVelocity(): Vector3
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:113](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L113)
+Defined in: [src/server/entities/BaseEntity.ts:113](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L113)
 
 ##### Returns
 
@@ -908,7 +908,7 @@ BaseEntity.RotationVelocity
 get RoutingBucket(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:117](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L117)
+Defined in: [src/server/entities/BaseEntity.ts:117](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L117)
 
 ##### Returns
 
@@ -930,7 +930,7 @@ BaseEntity.RoutingBucket
 get Script(): string
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:124](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L124)
+Defined in: [src/server/entities/BaseEntity.ts:124](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L124)
 
 ##### Returns
 
@@ -954,7 +954,7 @@ BaseEntity.Script
 get ScriptTaskCommand(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:185](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L185)
+Defined in: [src/server/entities/Vehicle.ts:185](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L185)
 
 ##### Returns
 
@@ -970,7 +970,7 @@ Defined in: [src/server/entities/Vehicle.ts:185](https://github.com/nativewrappe
 get ScriptTaskStage(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:189](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L189)
+Defined in: [src/server/entities/Vehicle.ts:189](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L189)
 
 ##### Returns
 
@@ -986,7 +986,7 @@ Defined in: [src/server/entities/Vehicle.ts:189](https://github.com/nativewrappe
 get Speed(): number
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:128](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L128)
+Defined in: [src/server/entities/BaseEntity.ts:128](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L128)
 
 ##### Returns
 
@@ -1008,7 +1008,7 @@ BaseEntity.Speed
 get State(): StateBagInterface
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:48](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L48)
+Defined in: [src/server/entities/BaseEntity.ts:48](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L48)
 
 ##### Returns
 
@@ -1030,7 +1030,7 @@ BaseEntity.State
 get SteeringAngle(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:149](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L149)
+Defined in: [src/server/entities/Vehicle.ts:149](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L149)
 
 ##### Returns
 
@@ -1046,7 +1046,7 @@ Defined in: [src/server/entities/Vehicle.ts:149](https://github.com/nativewrappe
 get TailRotorHealth(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:197](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L197)
+Defined in: [src/server/entities/Vehicle.ts:197](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L197)
 
 ##### Returns
 
@@ -1062,7 +1062,7 @@ Defined in: [src/server/entities/Vehicle.ts:197](https://github.com/nativewrappe
 get TrainCarriageEngine(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:204](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L204)
+Defined in: [src/server/entities/Vehicle.ts:204](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L204)
 
 This might supposed to be TrainEngineHealth?
 
@@ -1080,7 +1080,7 @@ This might supposed to be TrainEngineHealth?
 get TrainCarriageIndex(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:208](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L208)
+Defined in: [src/server/entities/Vehicle.ts:208](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L208)
 
 ##### Returns
 
@@ -1096,7 +1096,7 @@ Defined in: [src/server/entities/Vehicle.ts:208](https://github.com/nativewrappe
 get Type(): eEntityType
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:132](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L132)
+Defined in: [src/server/entities/BaseEntity.ts:132](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L132)
 
 ##### Returns
 
@@ -1118,7 +1118,7 @@ BaseEntity.Type
 get TyreSmokeColour(): Color
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:157](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L157)
+Defined in: [src/server/entities/Vehicle.ts:157](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L157)
 
 ##### Returns
 
@@ -1134,7 +1134,7 @@ Defined in: [src/server/entities/Vehicle.ts:157](https://github.com/nativewrappe
 get VehicleColours(): [number, number]
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:52](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L52)
+Defined in: [src/server/entities/Vehicle.ts:52](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L52)
 
 ##### Returns
 
@@ -1150,7 +1150,7 @@ Defined in: [src/server/entities/Vehicle.ts:52](https://github.com/nativewrapper
 get VehicleType(): VehicleType
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:153](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L153)
+Defined in: [src/server/entities/Vehicle.ts:153](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L153)
 
 ##### Returns
 
@@ -1166,7 +1166,7 @@ Defined in: [src/server/entities/Vehicle.ts:153](https://github.com/nativewrappe
 get Velocity(): Vector3
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:139](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L139)
+Defined in: [src/server/entities/BaseEntity.ts:139](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L139)
 
 ##### Returns
 
@@ -1190,7 +1190,7 @@ BaseEntity.Velocity
 get WheelType(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:161](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L161)
+Defined in: [src/server/entities/Vehicle.ts:161](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L161)
 
 ##### Returns
 
@@ -1206,7 +1206,7 @@ Defined in: [src/server/entities/Vehicle.ts:161](https://github.com/nativewrappe
 get WindowTint(): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:165](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L165)
+Defined in: [src/server/entities/Vehicle.ts:165](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L165)
 
 ##### Returns
 
@@ -1220,7 +1220,7 @@ Defined in: [src/server/entities/Vehicle.ts:165](https://github.com/nativewrappe
 delete(): void
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:155](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L155)
+Defined in: [src/server/entities/BaseEntity.ts:155](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L155)
 
 #### Returns
 
@@ -1240,7 +1240,7 @@ BaseEntity.delete
 getDoorStatus(doorIndex): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:76](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L76)
+Defined in: [src/server/entities/Vehicle.ts:76](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L76)
 
 #### Parameters
 
@@ -1260,7 +1260,7 @@ Defined in: [src/server/entities/Vehicle.ts:76](https://github.com/nativewrapper
 getLastPedInSeat(seatIndex): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:224](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L224)
+Defined in: [src/server/entities/Vehicle.ts:224](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L224)
 
 #### Parameters
 
@@ -1280,7 +1280,7 @@ Defined in: [src/server/entities/Vehicle.ts:224](https://github.com/nativewrappe
 getPedInSeat(seatIndex): number
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:220](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L220)
+Defined in: [src/server/entities/Vehicle.ts:220](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L220)
 
 #### Parameters
 
@@ -1300,7 +1300,7 @@ Defined in: [src/server/entities/Vehicle.ts:220](https://github.com/nativewrappe
 isExtraTurnedOn(extraId): boolean
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:216](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L216)
+Defined in: [src/server/entities/Vehicle.ts:216](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L216)
 
 #### Parameters
 
@@ -1320,7 +1320,7 @@ Defined in: [src/server/entities/Vehicle.ts:216](https://github.com/nativewrappe
 isTyreBurst(wheelId, completely): boolean
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:212](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L212)
+Defined in: [src/server/entities/Vehicle.ts:212](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L212)
 
 #### Parameters
 
@@ -1341,7 +1341,7 @@ Defined in: [src/server/entities/Vehicle.ts:212](https://github.com/nativewrappe
 replaceHandle(newHandle): void
 ```
 
-Defined in: [src/server/entities/BaseEntity.ts:32](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/BaseEntity.ts#L32)
+Defined in: [src/server/entities/BaseEntity.ts:32](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/BaseEntity.ts#L32)
 
 #### Parameters
 
@@ -1367,7 +1367,7 @@ BaseEntity.replaceHandle
 static AllVehicles(): IterableIterator<Vehicle>
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:18](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L18)
+Defined in: [src/server/entities/Vehicle.ts:18](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L18)
 
 Get an interable list of vehicles currently on the server
 
@@ -1385,7 +1385,7 @@ Iterable list of Vehicles.
 static fromNetworkId(networkId): null | Vehicle
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:24](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L24)
+Defined in: [src/server/entities/Vehicle.ts:24](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L24)
 
 #### Parameters
 
@@ -1411,7 +1411,7 @@ BaseEntity.fromNetworkId
 static fromStateBagName(stateBageName): null | Vehicle
 ```
 
-Defined in: [src/server/entities/Vehicle.ts:30](https://github.com/nativewrappers/nativewrappers/blob/bed19baaeaf131ae08126ef8189b9b3d2beb3a28/src/server/entities/Vehicle.ts#L30)
+Defined in: [src/server/entities/Vehicle.ts:30](https://github.com/nativewrappers/nativewrappers/blob/bf1d263f0188667cde482dc5657983cf3674a640/src/server/entities/Vehicle.ts#L30)
 
 #### Parameters
 
