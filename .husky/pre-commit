@@ -1,2 +1,1 @@
-pnpm biome-fix
-git add .
+pnpm check
