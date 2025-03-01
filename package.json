@@ -1,7 +1,11 @@
 {
   "name": "@nativewrappers/fivem",
   "description": "Javascript/Typescript wrapper for the FiveM natives",
-  "author": "Remco Troost <d0p3t>",
+  "contributors": [
+    "Remco Troost <d0p3t>",
+    "Dillon Skaggs <AvarianKnight>",
+    "Linden <thelindat>"
+  ],
   "license": "MIT",
   "type": "module",
   "version": "0.0.63",
