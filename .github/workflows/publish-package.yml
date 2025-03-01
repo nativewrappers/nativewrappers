@@ -1,8 +1,8 @@
-name: 'Publish Package'
+name: "Publish Package"
 on:
   push:
     tags:
-      - '*.*.*'
+      - "*.*.*"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,10 +18,10 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '22.x'
-          registry-url: 'https://registry.npmjs.org'
-          cache: 'pnpm'
-          cache-dependency-path: 'pnpm-lock.yaml'
+          node-version: "22.x"
+          registry-url: "https://registry.npmjs.org"
+          cache: "pnpm"
+          cache-dependency-path: "pnpm-lock.yaml"
 
       - name: Install and build packages
         run: |
@@ -56,9 +56,10 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         run: |
           rm -rf ./lib/common/
+
           for dir in ./lib/*; do
             if [ -f "$dir/package.json" ]; then
-              echo "Publishing $dir..."
-              pnpm publish --no-git-checks --access public "$dir"
+              echo "Publishing ${dir}..."
+              pnpm publish --no-git-checks --access public "${dir}" || echo "Failed to publish ${dir}"
             fi
           done
