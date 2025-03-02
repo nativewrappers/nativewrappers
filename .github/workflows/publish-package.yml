@@ -30,17 +30,18 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           pnpm version ${{ github.ref_name }} --git-tag-version false
           pnpm build
-          rm -rf ./lib/common/
 
       - name: Publish packages
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         run: |
-          for dir in ./lib/*; do
-            if [ -f "$dir/package.json" ]; then
-              pnpm publish --no-git-checks --access public "$dir"
+          packages=(fivem redm server)
+          for package in "${packages[@]}"; do
+            if [ -f "./lib/$package/package.json" ]; then
+              pnpm publish --no-git-checks --access public "./lib/$package"
             fi
           done
+        
 
       - name: Push new commits
         run: |
@@ -51,6 +52,7 @@ jobs:
       - name: Generate docs
         run: |
           pnpm typedoc --out temp-docs
+          rm -rf ./lib/common/
           git fetch origin
           git checkout -B docs
           git rm -rf .
