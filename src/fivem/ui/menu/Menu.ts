@@ -599,7 +599,7 @@ export class Menu {
     }
 
     let hoveredItem: UIMenuItem | undefined;
-    let hoveredItemIndex: number;
+    let hoveredItemIndex = 0;
     const limit = this.items.length > this._maxItemsOnScreen + 1 ? this._maxItem : this.items.length - 1;
 
     for (let i = this._minItem; i <= limit; i++) {
@@ -637,7 +637,7 @@ export class Menu {
           }
         } else {
           this._playSoundAndReleaseId(this.Settings.audio.error, this.Settings.audio.library);
-          this.CurrentSelection = hoveredItemIndex ?? 0;
+          this.CurrentSelection = hoveredItemIndex;
           this.indexChange.emit(this.CurrentSelection);
         }
         await Wait(this._navigationDelay);
@@ -656,7 +656,7 @@ export class Menu {
             }
           } else {
             this._playSoundAndReleaseId(this.Settings.audio.error, this.Settings.audio.library);
-            this.CurrentSelection = hoveredItemIndex ?? 0;
+            this.CurrentSelection = hoveredItemIndex;
             this.indexChange.emit(this.CurrentSelection);
           }
           await Wait(125);
