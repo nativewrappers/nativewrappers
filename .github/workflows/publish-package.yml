@@ -30,6 +30,20 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           pnpm version ${{ github.ref_name }} --git-tag-version false
           pnpm build
+          rm -rf ./lib/common/
+
+      - name: Publish packages
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        run: |
+          for dir in ./lib/*; do
+            if [ -f "$dir/package.json" ]; then
+              pnpm publish --no-git-checks --access public "$dir"
+            fi
+          done
+
+      - name: Push new commits
+        run: |
           git add .
           git commit -am '${{ github.ref_name }}'
           git push
@@ -38,28 +52,10 @@ jobs:
         run: |
           pnpm typedoc --out temp-docs
           git fetch origin
-          git branch -D docs || true
-          git push origin --delete docs || true
-          git checkout --orphan docs
+          git checkout -B docs
           git rm -rf .
           mv temp-docs/* .
           git add .
           git commit -m "Generate ${{ github.ref_name }} documentation"
-          git push -u origin docs
+          git push -f origin docs
           rm -rf docs
-          git checkout main
-
-      # because we update the package version pnpm will get mad over an unclean branch
-      # we don't want a bunch of version bump commits so just ignore the git checks
-      - name: Publish packages
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-        run: |
-          rm -rf ./lib/common/
-
-          for dir in ./lib/*; do
-            if [ -f "$dir/package.json" ]; then
-              echo "Publishing ${dir}..."
-              pnpm publish --no-git-checks --access public "${dir}" || echo "Failed to publish ${dir}"
-            fi
-          done
