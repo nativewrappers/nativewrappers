@@ -37,13 +37,11 @@ export abstract class Game {
 
   public static registerCommand(
     name: string,
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     handler: (player: Player, args: any[]) => void,
     restricted = false,
   ): void {
     RegisterCommand(
       name,
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (source: string, args: any[]) => {
         const player = new Player(Number.parseInt(source));
 

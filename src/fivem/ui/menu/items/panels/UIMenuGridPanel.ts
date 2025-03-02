@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { Color, Point, Size, Wait } from "../../../../utils";
 import { AbstractUIMenuPanel } from "./";
 import { Menu, Sprite, Text } from "../../../";
@@ -24,33 +23,12 @@ export class UIMenuGridPanel extends AbstractUIMenuPanel {
   private readonly _circle: Sprite;
   private readonly _setCirclePosition: Point;
 
-  constructor(
-    topText?: string,
-    leftText?: string,
-    rightText?: string,
-    bottomText?: string,
-    circlePosition?: Point,
-  ) {
+  constructor(topText?: string, leftText?: string, rightText?: string, bottomText?: string, circlePosition?: Point) {
     super();
     this._setCirclePosition = circlePosition || new Point(0.5, 0.5);
-    this.background = new Sprite(
-      "commonmenu",
-      "gradient_bgd",
-      new Point(),
-      new Size(431, 275),
-    );
-    this._grid = new Sprite(
-      "pause_menu_pages_char_mom_dad",
-      "nose_grid",
-      new Point(),
-      new Size(200, 200),
-    );
-    this._circle = new Sprite(
-      "mpinventory",
-      "in_world_circle",
-      new Point(),
-      new Size(20, 20),
-    );
+    this.background = new Sprite("commonmenu", "gradient_bgd", new Point(), new Size(431, 275));
+    this._grid = new Sprite("pause_menu_pages_char_mom_dad", "nose_grid", new Point(), new Size(200, 200));
+    this._circle = new Sprite("mpinventory", "in_world_circle", new Point(), new Size(20, 20));
     this.TopText = topText ?? "";
     this.LeftText = leftText ?? "";
     this.RightText = rightText ?? "";
@@ -94,16 +72,11 @@ export class UIMenuGridPanel extends AbstractUIMenuPanel {
   public get CirclePosition(): Point {
     return new Point(
       Math.round(
-        ((this._circle.pos.X -
-          (this._grid.pos.X + 20) +
-          this._circle.size.width / 2) /
-          (this._grid.size.width - 40)) *
+        ((this._circle.pos.X - (this._grid.pos.X + 20) + this._circle.size.width / 2) / (this._grid.size.width - 40)) *
           100,
       ) / 100,
       Math.round(
-        ((this._circle.pos.Y -
-          (this._grid.pos.Y + 20) +
-          this._circle.size.height / 2) /
+        ((this._circle.pos.Y - (this._grid.pos.Y + 20) + this._circle.size.height / 2) /
           (this._grid.size.height - 40)) *
           100,
       ) / 100,
@@ -121,11 +94,7 @@ export class UIMenuGridPanel extends AbstractUIMenuPanel {
     }
     x = x >= 0 && x <= 1 ? x : 0;
     this._setCirclePosition.X = x;
-    this._circle.pos.X =
-      this._grid.pos.X +
-      20 +
-      (this._grid.size.width - 40) * x -
-      this._circle.size.width / 2;
+    this._circle.pos.X = this._grid.pos.X + 20 + (this._grid.size.width - 40) * x - this._circle.size.width / 2;
   }
 
   public set CirclePositionY(y: number) {
@@ -134,11 +103,7 @@ export class UIMenuGridPanel extends AbstractUIMenuPanel {
     }
     y = y >= 0 && y <= 1 ? y : 0;
     this._setCirclePosition.Y = y;
-    this._circle.pos.Y =
-      this._grid.pos.Y +
-      20 +
-      (this._grid.size.height - 40) * y -
-      this._circle.size.height / 2;
+    this._circle.pos.Y = this._grid.pos.Y + 20 + (this._grid.size.height - 40) * y - this._circle.size.height / 2;
   }
 
   public get LockXAxis(): boolean {
@@ -202,9 +167,7 @@ export class UIMenuGridPanel extends AbstractUIMenuPanel {
     if (this.enabled) {
       super.draw();
 
-      const x =
-        this.parentItem?.offset.X ??
-        0 + (this.ParentMenu?.WidthOffset ?? 0) / 2;
+      const x = this.parentItem?.offset.X ?? 0 + (this.ParentMenu?.WidthOffset ?? 0) / 2;
       this._grid.pos.X = x + 115.5;
 
       if (!this._isCircleLocked) {
@@ -241,14 +204,7 @@ export class UIMenuGridPanel extends AbstractUIMenuPanel {
       // @ts-ignore
       if (!this[name]) {
         // @ts-ignore
-        this[name] = new Text(
-          value,
-          new Point(),
-          0.35,
-          Color.White,
-          Font.ChaletLondon,
-          Alignment.Centered,
-        );
+        this[name] = new Text(value, new Point(), 0.35, Color.White, Font.ChaletLondon, Alignment.Centered);
       } else {
         // @ts-ignore
         this[name].caption = value;
@@ -271,50 +227,22 @@ export class UIMenuGridPanel extends AbstractUIMenuPanel {
         const drawOffset = this.ParentMenu?.DrawOffset ?? new Point(0, 0);
         while (Game.isDisabledControlPressed(0, Control.Attack)) {
           await Wait(0);
-          let cX =
-            (GetControlNormal(0, Control.CursorX) - drawOffset.X) *
-            Menu.screenWidth;
-          let cY =
-            (GetControlNormal(0, Control.CursorY) - drawOffset.Y) *
-            Menu.screenHeight;
+          let cX = (GetControlNormal(0, Control.CursorX) - drawOffset.X) * Menu.screenWidth;
+          let cY = (GetControlNormal(0, Control.CursorY) - drawOffset.Y) * Menu.screenHeight;
           cX -= this._circle.size.width / 2;
           cY -= this._circle.size.height / 2;
 
           this._circle.pos.X =
-            cX >
-            this._grid.pos.X +
-              10 +
-              this._grid.size.width -
-              (this._lockXAxis ? 120 : 40)
-              ? this._grid.pos.X +
-                10 +
-                this._grid.size.width -
-                (this._lockXAxis ? 120 : 40)
-              : cX <
-                  this._grid.pos.X +
-                    (this._lockXAxis ? 100 : 20) -
-                    this._circle.size.width / 2
-                ? this._grid.pos.X +
-                  (this._lockXAxis ? 100 : 20) -
-                  this._circle.size.width / 2
+            cX > this._grid.pos.X + 10 + this._grid.size.width - (this._lockXAxis ? 120 : 40)
+              ? this._grid.pos.X + 10 + this._grid.size.width - (this._lockXAxis ? 120 : 40)
+              : cX < this._grid.pos.X + (this._lockXAxis ? 100 : 20) - this._circle.size.width / 2
+                ? this._grid.pos.X + (this._lockXAxis ? 100 : 20) - this._circle.size.width / 2
                 : cX;
           this._circle.pos.Y =
-            cY >
-            this._grid.pos.Y +
-              10 +
-              this._grid.size.height -
-              (this._lockYAxis ? 120 : 40)
-              ? this._grid.pos.Y +
-                10 +
-                this._grid.size.height -
-                (this._lockYAxis ? 120 : 40)
-              : cY <
-                  this._grid.pos.Y +
-                    (this._lockYAxis ? 100 : 20) -
-                    this._circle.size.height / 2
-                ? this._grid.pos.Y +
-                  (this._lockYAxis ? 100 : 20) -
-                  this._circle.size.height / 2
+            cY > this._grid.pos.Y + 10 + this._grid.size.height - (this._lockYAxis ? 120 : 40)
+              ? this._grid.pos.Y + 10 + this._grid.size.height - (this._lockYAxis ? 120 : 40)
+              : cY < this._grid.pos.Y + (this._lockYAxis ? 100 : 20) - this._circle.size.height / 2
+                ? this._grid.pos.Y + (this._lockYAxis ? 100 : 20) - this._circle.size.height / 2
                 : cY;
         }
         this.updateParentItem();

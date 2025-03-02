@@ -1,10 +1,4 @@
-import {
-  Ped,
-  VehicleDoorCollection,
-  VehicleModCollection,
-  VehicleWheelCollection,
-  VehicleWindowCollection,
-} from "./";
+import { Ped, VehicleDoorCollection, VehicleModCollection, VehicleWheelCollection, VehicleWindowCollection } from "./";
 import {
   type RadioStation,
   type VehicleClass,
@@ -258,10 +252,7 @@ export class Vehicle extends BaseEntity {
     SetVehicleHasMutedSirens(this.handle, value);
   }
 
-  public soundHorn(
-    duration: number,
-    mode = Game.generateHash("HELDDOWN"),
-  ): void {
+  public soundHorn(duration: number, mode = Game.generateHash("HELDDOWN")): void {
     StartVehicleHorn(this.handle, duration, mode, false);
   }
 
@@ -609,9 +600,7 @@ export class Vehicle extends BaseEntity {
   }
 
   public isExtraOn(extra: number): boolean {
-    return this.extraExists(extra)
-      ? IsVehicleExtraTurnedOn(this.handle, extra)
-      : false;
+    return this.extraExists(extra) ? IsVehicleExtraTurnedOn(this.handle, extra) : false;
   }
 
   public toggleExtra(extra: number, toggle: boolean): void {
@@ -673,9 +662,7 @@ export class Vehicle extends BaseEntity {
   }
 
   public get HasBombBay(): boolean {
-    return this.Bones
-      ? this.Bones.hasBone("door_hatch_1") && this.Bones.hasBone("door_hatch_r")
-      : false;
+    return this.Bones ? this.Bones.hasBone("door_hatch_1") && this.Bones.hasBone("door_hatch_r") : false;
   }
 
   public openBombBay(): void {
@@ -720,15 +707,7 @@ export class Vehicle extends BaseEntity {
   }
 
   public deform(position: Vector3, damageAmount: number, radius: number): void {
-    SetVehicleDamage(
-      this.handle,
-      position.x,
-      position.y,
-      position.z,
-      damageAmount,
-      radius,
-      false,
-    );
+    SetVehicleDamage(this.handle, position.x, position.y, position.z, damageAmount, radius, false);
   }
 
   public get PassengerCapacity(): number {
@@ -756,17 +735,10 @@ export class Vehicle extends BaseEntity {
   }
 
   public setHandlingInt(fieldName: string, value: number): void {
-    SetVehicleHandlingInt(
-      this.handle,
-      "CHandlingData",
-      fieldName,
-      Math.ceil(value),
-    );
+    SetVehicleHandlingInt(this.handle, "CHandlingData", fieldName, Math.ceil(value));
   }
 
   public getHandlingVector(fieldName: string): Vector3 {
-    return Vector3.fromArray(
-      GetVehicleHandlingVector(this.handle, "CHandlingData", fieldName),
-    );
+    return Vector3.fromArray(GetVehicleHandlingVector(this.handle, "CHandlingData", fieldName));
   }
 }

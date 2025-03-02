@@ -69,17 +69,7 @@ export class Entity extends BaseEntity {
     isForceRel = true,
   ): void {
     const d = direction;
-    ApplyForceToEntityCenterOfMass(
-      this.Handle,
-      forceType,
-      d.x,
-      d.y,
-      d.z,
-      false,
-      isDirectional,
-      isForceRel,
-      false,
-    );
+    ApplyForceToEntityCenterOfMass(this.Handle, forceType, d.x, d.y, d.z, false, isDirectional, isForceRel, false);
   }
 
   /**
@@ -104,9 +94,7 @@ export class Entity extends BaseEntity {
     fixedRot = true,
   ): Throwable<void> {
     if (tgtEntity.Handle === this.Handle) {
-      throw new Error(
-        "tgtEntity had the same handle as the current entity, attaching an entity to itself will crash",
-      );
+      throw new Error("tgtEntity had the same handle as the current entity, attaching an entity to itself will crash");
     }
     const p = pos;
     const r = rot;

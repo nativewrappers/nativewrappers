@@ -14,12 +14,7 @@ export class Rectangle implements IDrawable {
 
   public draw(offset?: Size, resolution?: Size): void;
   public draw(pos: Point, size: Size, color: Color, resolution?: Size): void;
-  public draw(
-    arg1?: Point | Size,
-    arg2?: Size,
-    color?: Color,
-    resolution?: Size,
-  ): void {
+  public draw(arg1?: Point | Size, arg2?: Size, color?: Color, resolution?: Size): void {
     resolution = color === undefined ? arg2 : resolution;
     resolution = resolution || new Size(Screen.ScaledWidth, Screen.Height);
 

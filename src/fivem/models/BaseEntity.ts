@@ -70,20 +70,9 @@ export class BaseEntity {
     return cfx.Entity(this.handle).state;
   }
 
-  public AddStateBagChangeHandler(
-    keyFilter: string | null,
-    handler: StateBagChangeHandler,
-  ): number {
-    const stateBagName = this.IsNetworked
-      ? `entity:${this.NetworkId}`
-      : `localEntity:${this.handle}`;
-    // keyFilter is casted to any because it can take a null value.
-    /* eslint-disable @typescript-eslint/no-explicit-any */
-    const cookie = AddStateBagChangeHandler(
-      keyFilter as any,
-      stateBagName,
-      handler,
-    );
+  public AddStateBagChangeHandler(keyFilter: string | null, handler: StateBagChangeHandler): number {
+    const stateBagName = this.IsNetworked ? `entity:${this.NetworkId}` : `localEntity:${this.handle}`;
+    const cookie = AddStateBagChangeHandler(keyFilter as any, stateBagName, handler);
     this.stateBagCookies.push(cookie);
     return cookie;
   }
@@ -94,16 +83,13 @@ export class BaseEntity {
    * @param handler the function to handle the change
    * @returns a cookie to be used in RemoveStateBagChangeHandler
    */
-  public listenForStateChange(
-    keyFilter: string | null,
-    handler: StateBagChangeHandler,
-  ): number {
+  public listenForStateChange(keyFilter: string | null, handler: StateBagChangeHandler): number {
     return this.AddStateBagChangeHandler(keyFilter, handler);
   }
 
   public removeStateListener(tgtCookie: number): void {
     this.stateBagCookies = this.stateBagCookies.filter((cookie) => {
-      const isCookie = cookie == tgtCookie;
+      const isCookie = cookie === tgtCookie;
       if (isCookie) RemoveStateBagChangeHandler(cookie);
       return isCookie;
     });
@@ -134,8 +120,7 @@ export class BaseEntity {
   }
 
   public set Matrix(vectors: Vector3[]) {
-    if (vectors.length !== 4)
-      throw Error(`Expected 4 Vectors, got ${vectors.length}`);
+    if (vectors.length !== 4) throw Error(`Expected 4 Vectors, got ${vectors.length}`);
     const [forward, right, up, pos] = vectors;
     SetEntityMatrix(
       this.handle,
@@ -227,28 +212,11 @@ export class BaseEntity {
   }
 
   public set Position(position: Vector3) {
-    SetEntityCoords(
-      this.handle,
-      position.x,
-      position.y,
-      position.z,
-      false,
-      false,
-      false,
-      true,
-    );
+    SetEntityCoords(this.handle, position.x, position.y, position.z, false, false, false, true);
   }
 
   public set PositionNoOffset(position: Vector3) {
-    SetEntityCoordsNoOffset(
-      this.handle,
-      position.x,
-      position.y,
-      position.z,
-      true,
-      true,
-      true,
-    );
+    SetEntityCoordsNoOffset(this.handle, position.x, position.y, position.z, true, true, true);
   }
 
   public get Rotation(): Vector3 {
@@ -261,22 +229,11 @@ export class BaseEntity {
 
   public get Quaternion(): Quaternion {
     const quaternion = GetEntityQuaternion(this.handle);
-    return new Quaternion(
-      quaternion[0],
-      quaternion[1],
-      quaternion[2],
-      quaternion[3],
-    );
+    return new Quaternion(quaternion[0], quaternion[1], quaternion[2], quaternion[3]);
   }
 
   public set Quaternion(quaternion: Quaternion) {
-    SetEntityQuaternion(
-      this.handle,
-      quaternion.x,
-      quaternion.y,
-      quaternion.z,
-      quaternion.w,
-    );
+    SetEntityQuaternion(this.handle, quaternion.x, quaternion.y, quaternion.z, quaternion.w);
   }
 
   public get Heading(): number {
@@ -496,11 +453,7 @@ export class BaseEntity {
     );
   }
 
-  public isInAngledArea(
-    origin: Vector3,
-    edge: Vector3,
-    angle: number,
-  ): boolean {
+  public isInAngledArea(origin: Vector3, edge: Vector3, angle: number): boolean {
     return IsEntityInAngledArea(
       this.handle,
       origin.x,
@@ -523,16 +476,7 @@ export class BaseEntity {
   }
 
   public isNearEntity(entity: BaseEntity, bounds: Vector3): boolean {
-    return IsEntityAtEntity(
-      this.handle,
-      entity.Handle,
-      bounds.x,
-      bounds.y,
-      bounds.z,
-      false,
-      true,
-      0,
-    );
+    return IsEntityAtEntity(this.handle, entity.Handle, bounds.x, bounds.y, bounds.z, false, true, 0);
   }
 
   public isTouching(entity: BaseEntity): boolean {
@@ -549,12 +493,7 @@ export class BaseEntity {
    */
   public getOffsetInRelativeCoords(worldCoords: Vector3): Vector3 {
     return Vector3.fromArray(
-      GetOffsetFromEntityGivenWorldCoords(
-        this.handle,
-        worldCoords.x,
-        worldCoords.y,
-        worldCoords.z,
-      ),
+      GetOffsetFromEntityGivenWorldCoords(this.handle, worldCoords.x, worldCoords.y, worldCoords.z),
     );
   }
 
@@ -576,14 +515,7 @@ export class BaseEntity {
    * @returns the offset position from the entity in relative coords
    */
   public getOffsetInWorldCoords(offset: Vector3): Vector3 {
-    return Vector3.fromArray(
-      GetOffsetFromEntityInWorldCoords(
-        this.handle,
-        offset.x,
-        offset.y,
-        offset.z,
-      ),
-    );
+    return Vector3.fromArray(GetOffsetFromEntityInWorldCoords(this.handle, offset.x, offset.y, offset.z));
   }
 
   /**
@@ -609,10 +541,8 @@ export class BaseEntity {
     useSoftPinning = true,
     rotationOrder = 1,
   ): void {
-    if (this.handle == entity.Handle) {
-      throw new Error(
-        "You cannot attach an entity to the same entity this will result in a crash!",
-      );
+    if (this.handle === entity.Handle) {
+      throw new Error("You cannot attach an entity to the same entity this will result in a crash!");
     }
     AttachEntityToEntity(
       this.handle,
@@ -655,10 +585,8 @@ export class BaseEntity {
     useSoftPinning = true,
     rotationOrder = 1,
   ): void {
-    if (this.handle == entityBone.Owner.Handle) {
-      throw new Error(
-        "You cannot attach an entity to the same entity this will result in a crash!",
-      );
+    if (this.handle === entityBone.Owner.Handle) {
+      throw new Error("You cannot attach an entity to the same entity this will result in a crash!");
     }
     AttachEntityToEntity(
       this.handle,
@@ -695,11 +623,7 @@ export class BaseEntity {
     return new BaseEntity(GetEntityAttachedTo(this.handle));
   }
 
-  public applyForce(
-    direction: Vector3,
-    rotation: Vector3,
-    forceType: ForceType = ForceType.MaxForceRot2,
-  ): void {
+  public applyForce(direction: Vector3, rotation: Vector3, forceType: ForceType = ForceType.MaxForceRot2): void {
     ApplyForceToEntity(
       this.handle,
       Number(forceType),

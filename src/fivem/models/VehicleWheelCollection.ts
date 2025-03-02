@@ -4,10 +4,7 @@ import { VehicleWheelIndex } from "../enums";
 
 export class VehicleWheelCollection {
   private _owner: Vehicle;
-  private readonly _vehicleWheels: Map<number, VehicleWheel> = new Map<
-    number,
-    VehicleWheel
-  >();
+  private readonly _vehicleWheels: Map<number, VehicleWheel> = new Map<number, VehicleWheel>();
 
   constructor(owner: Vehicle) {
     this._owner = owner;

@@ -22,9 +22,9 @@ export class WeaponCollection implements Iterable<Weapon> {
       next(): IteratorResult<Weapon> {
         if (pointer < weapons.length) {
           return { done: false, value: weapons[pointer++] };
-        } else {
-          return { done: true, value: null };
         }
+
+        return { done: true, value: null };
       },
     };
   }
@@ -57,11 +57,10 @@ export class WeaponCollection implements Iterable<Weapon> {
     const [, hash] = GetCurrentPedWeapon(this.owner.Handle, true);
 
     if (this.weapons.has(hash)) {
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       return this.weapons.get(hash)!;
-    } else {
-      return this.createAndAddWeapon(hash);
     }
+
+    return this.createAndAddWeapon(hash);
   }
 
   /**
@@ -86,11 +85,10 @@ export class WeaponCollection implements Iterable<Weapon> {
     const hash = GetBestPedWeapon(this.owner.Handle, false);
 
     if (this.weapons.has(hash)) {
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       return this.weapons.get(hash)!;
-    } else {
-      return this.createAndAddWeapon(hash);
     }
+
+    return this.createAndAddWeapon(hash);
   }
 
   /**
@@ -119,12 +117,7 @@ export class WeaponCollection implements Iterable<Weapon> {
    * @param equipNow
    * @param isAmmoLoaded
    */
-  public give(
-    hash: WeaponHash,
-    ammoCount: number,
-    equipNow: boolean,
-    isAmmoLoaded: boolean,
-  ): Weapon {
+  public give(hash: WeaponHash, ammoCount: number, equipNow: boolean, isAmmoLoaded: boolean): Weapon {
     let weapon = this.weapons.get(hash);
 
     if (!weapon) {
@@ -134,13 +127,7 @@ export class WeaponCollection implements Iterable<Weapon> {
     if (weapon.IsPresent) {
       this.select(weapon);
     } else {
-      GiveWeaponToPed(
-        this.owner.Handle,
-        weapon.Hash,
-        ammoCount,
-        equipNow,
-        isAmmoLoaded,
-      );
+      GiveWeaponToPed(this.owner.Handle, weapon.Hash, ammoCount, equipNow, isAmmoLoaded);
     }
 
     return weapon;
@@ -160,15 +147,15 @@ export class WeaponCollection implements Iterable<Weapon> {
       SetCurrentPedWeapon(this.owner.Handle, weapon.Hash, true);
 
       return true;
-    } else {
-      if (!this.hasWeapon(weapon)) {
-        return false;
-      }
-
-      SetCurrentPedWeapon(this.owner.Handle, weapon, true);
-
-      return true;
     }
+
+    if (!this.hasWeapon(weapon)) {
+      return false;
+    }
+
+    SetCurrentPedWeapon(this.owner.Handle, weapon, true);
+
+    return true;
   }
 
   /**

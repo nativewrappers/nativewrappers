@@ -4,8 +4,10 @@ import { VehicleWindow } from "./VehicleWindow";
 
 export class VehicleWindowCollection {
   private _owner: Vehicle;
-  private readonly _vehicleWindows: Map<VehicleWindowIndex, VehicleWindow> =
-    new Map<VehicleWindowIndex, VehicleWindow>();
+  private readonly _vehicleWindows: Map<VehicleWindowIndex, VehicleWindow> = new Map<
+    VehicleWindowIndex,
+    VehicleWindow
+  >();
 
   constructor(owner: Vehicle) {
     this._owner = owner;

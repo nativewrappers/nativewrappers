@@ -1,4 +1,5 @@
 import type { CameraShake } from "./enums";
+import { GameplayCamera } from "./GameplayCamera";
 import { PedBone } from "./models";
 import { BaseEntity } from "./models/BaseEntity";
 import { Vector3 } from "./utils";
@@ -81,7 +82,7 @@ export class Camera {
   //   }
 
   public get ForwardVector(): Vector3 {
-    const rotation = Vector3.multiply(this.Rotation, Math.PI / 180);
+    const rotation = Vector3.multiply(GameplayCamera.Rotation, Math.PI / 180);
     const normalized = Vector3.normalize(
       new Vector3(
         -Math.sin(rotation.z) * Math.abs(Math.cos(rotation.x)),
@@ -163,12 +164,7 @@ export class Camera {
     SetCamShakeAmplitude(this.handle, amplitude);
   }
 
-  public async playAnim(
-    animName: string,
-    animDict: string,
-    position: Vector3,
-    rotation: Vector3,
-  ): Promise<void> {
+  public async playAnim(animName: string, animDict: string, position: Vector3, rotation: Vector3): Promise<void> {
     await LoadAnimDict(animDict);
     PlayCamAnim(
       this.handle,
@@ -186,29 +182,11 @@ export class Camera {
     RemoveAnimDict(animDict);
   }
 
-  public pointAt(
-    target: BaseEntity | PedBone | Vector3,
-    offset: Vector3 = new Vector3(0, 0, 0),
-  ): void {
+  public pointAt(target: BaseEntity | PedBone | Vector3, offset: Vector3 = new Vector3(0, 0, 0)): void {
     if (target instanceof BaseEntity) {
-      PointCamAtEntity(
-        this.handle,
-        target.Handle,
-        offset.x,
-        offset.y,
-        offset.z,
-        true,
-      );
+      PointCamAtEntity(this.handle, target.Handle, offset.x, offset.y, offset.z, true);
     } else if (target instanceof PedBone) {
-      PointCamAtPedBone(
-        this.handle,
-        target.Owner.Handle,
-        target.Index,
-        offset.x,
-        offset.y,
-        offset.z,
-        true,
-      );
+      PointCamAtPedBone(this.handle, target.Owner.Handle, target.Index, offset.x, offset.y, offset.z, true);
     } else {
       PointCamAtCoord(this.handle, target.x, target.y, target.z);
     }
@@ -218,19 +196,8 @@ export class Camera {
     StopCamPointing(this.handle);
   }
 
-  public interpTo(
-    to: Camera,
-    duration: number,
-    easePosition: boolean,
-    easeRotation: boolean,
-  ): void {
-    SetCamActiveWithInterp(
-      to.handle,
-      this.handle,
-      duration,
-      Number(easePosition),
-      Number(easeRotation),
-    );
+  public interpTo(to: Camera, duration: number, easePosition: boolean, easeRotation: boolean): void {
+    SetCamActiveWithInterp(to.handle, this.handle, duration, Number(easePosition), Number(easeRotation));
   }
 
   public get IsInterpolating(): boolean {
@@ -239,24 +206,9 @@ export class Camera {
 
   public attachTo(object: BaseEntity | PedBone, offset: Vector3): void {
     if (object instanceof BaseEntity) {
-      AttachCamToEntity(
-        this.handle,
-        object.Handle,
-        offset.x,
-        offset.y,
-        offset.z,
-        true,
-      );
+      AttachCamToEntity(this.handle, object.Handle, offset.x, offset.y, offset.z, true);
     } else if (object instanceof PedBone) {
-      AttachCamToPedBone(
-        this.handle,
-        object.Owner.Handle,
-        object.Index,
-        offset.x,
-        offset.y,
-        offset.z,
-        true,
-      );
+      AttachCamToPedBone(this.handle, object.Owner.Handle, object.Index, offset.x, offset.y, offset.z, true);
     }
   }
 

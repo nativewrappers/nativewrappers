@@ -1,24 +1,20 @@
 import type { ScreenEffect } from "../enums";
 
 export abstract class Effects {
-  public static start(
-    effectName: ScreenEffect,
-    duration = 0,
-    looped = false,
-  ): void {
-    StartScreenEffect(this.effectToString(effectName), duration, looped);
+  public static start(effectName: ScreenEffect, duration = 0, looped = false): void {
+    StartScreenEffect(Effects.effectToString(effectName), duration, looped);
   }
 
   public static stop(screenEffect?: ScreenEffect): void {
     if (typeof screenEffect === "undefined") {
-      StopAllScreenEffects();
-    } else {
-      StopScreenEffect(this.effectToString(screenEffect));
+      return StopAllScreenEffects();
     }
+
+    StopScreenEffect(Effects.effectToString(screenEffect));
   }
 
   public static isActive(screenEffect: ScreenEffect): boolean {
-    return GetScreenEffectIsActive(this.effectToString(screenEffect));
+    return GetScreenEffectIsActive(Effects.effectToString(screenEffect));
   }
 
   private static readonly effects: string[] = [
@@ -107,8 +103,8 @@ export abstract class Effects {
 
   private static effectToString(screenEffect: ScreenEffect): string {
     const effect = Number(screenEffect);
-    if (effect >= 0 && effect <= this.effects.length) {
-      return this.effects[effect];
+    if (effect >= 0 && effect <= Effects.effects.length) {
+      return Effects.effects[effect];
     }
     return "INVALID";
   }

@@ -13,11 +13,6 @@ export class Vehicle extends BaseEntity {
    * @returns true of the specified seat is free on the mount
    */
   isSeatFree(seatIndex: VehicleSeat): boolean {
-    return _N<boolean>(
-      "0xAAB0FE202E9FC9F0",
-      this.Handle,
-      seatIndex,
-      Citizen.resultAsInteger(),
-    );
+    return _N<boolean>("0xAAB0FE202E9FC9F0", this.Handle, seatIndex, Citizen.resultAsInteger());
   }
 }

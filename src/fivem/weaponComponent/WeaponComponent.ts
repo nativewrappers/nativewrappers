@@ -18,11 +18,7 @@ export class WeaponComponent {
   protected readonly weapon: Weapon;
   protected readonly componentHash: WeaponComponentHash;
 
-  public constructor(
-    owner: Ped,
-    weapon: Weapon,
-    componentHash: WeaponComponentHash,
-  ) {
+  public constructor(owner: Ped, weapon: Weapon, componentHash: WeaponComponentHash) {
     this.owner = owner;
     this.weapon = weapon;
     this.componentHash = componentHash;
@@ -52,11 +48,7 @@ export class WeaponComponent {
    * @constructor
    */
   public get Active(): boolean {
-    return HasPedGotWeaponComponent(
-      this.owner.Handle,
-      this.weapon.Hash,
-      this.componentHash,
-    );
+    return HasPedGotWeaponComponent(this.owner.Handle, this.weapon.Hash, this.componentHash);
   }
 
   /**
@@ -67,17 +59,9 @@ export class WeaponComponent {
    */
   public set Active(value: boolean) {
     if (value) {
-      GiveWeaponComponentToPed(
-        this.owner.Handle,
-        this.weapon.Hash,
-        this.componentHash,
-      );
+      GiveWeaponComponentToPed(this.owner.Handle, this.weapon.Hash, this.componentHash);
     } else {
-      RemoveWeaponComponentFromPed(
-        this.owner.Handle,
-        this.weapon.Hash,
-        this.componentHash,
-      );
+      RemoveWeaponComponentFromPed(this.owner.Handle, this.weapon.Hash, this.componentHash);
     }
   }
 
@@ -87,10 +71,7 @@ export class WeaponComponent {
    * @constructor
    */
   public get DisplayName(): string {
-    return WeaponComponent.getComponentDisplayNameFromHash(
-      this.weapon.Hash,
-      this.componentHash,
-    );
+    return WeaponComponent.getComponentDisplayNameFromHash(this.weapon.Hash, this.componentHash);
   }
 
   /**
@@ -108,10 +89,7 @@ export class WeaponComponent {
    * @constructor
    */
   public get AttachmentPoint(): ComponentAttachmentPoint {
-    return WeaponComponent.getAttachmentPoint(
-      this.weapon.Hash,
-      this.componentHash,
-    );
+    return WeaponComponent.getAttachmentPoint(this.weapon.Hash, this.componentHash);
   }
 
   /**
@@ -120,7 +98,6 @@ export class WeaponComponent {
    * @constructor
    */
   public get HudStats(): WeaponComponentHudStats {
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     return WeaponComponentHudStats.get(this.componentHash)!;
   }
 
@@ -131,10 +108,7 @@ export class WeaponComponent {
    * @param componentHash
    * @constructor
    */
-  public static getComponentDisplayNameFromHash(
-    hash: WeaponHash,
-    componentHash: WeaponComponentHash,
-  ): string {
+  public static getComponentDisplayNameFromHash(hash: WeaponHash, componentHash: WeaponComponentHash): string {
     if (!hash) {
       return "WCT_INVALID";
     }
@@ -162,9 +136,6 @@ export class WeaponComponent {
       return ComponentAttachmentPoint.Invalid;
     }
 
-    return (
-      ComponentAttachmentPointByHash.get(componentHash) ??
-      ComponentAttachmentPoint.Invalid
-    );
+    return ComponentAttachmentPointByHash.get(componentHash) ?? ComponentAttachmentPoint.Invalid;
   }
 }

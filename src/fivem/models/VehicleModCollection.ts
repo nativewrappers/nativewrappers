@@ -16,14 +16,11 @@ import { VehicleToggleMod } from "./VehicleToggleMod";
 
 export class VehicleModCollection {
   private _owner: Vehicle;
-  private readonly _vehicleMods: Map<VehicleModType, VehicleMod> = new Map<
-    VehicleModType,
-    VehicleMod
-  >();
-  private readonly _vehicleToggleMods: Map<
+  private readonly _vehicleMods: Map<VehicleModType, VehicleMod> = new Map<VehicleModType, VehicleMod>();
+  private readonly _vehicleToggleMods: Map<VehicleToggleModType, VehicleToggleMod> = new Map<
     VehicleToggleModType,
     VehicleToggleMod
-  > = new Map<VehicleToggleModType, VehicleToggleMod>();
+  >();
 
   constructor(owner: Vehicle) {
     this._owner = owner;
@@ -40,14 +37,9 @@ export class VehicleModCollection {
     return this._vehicleMods.get(modType);
   }
 
-  public getToggleMod(
-    modType: VehicleToggleModType,
-  ): VehicleToggleMod | undefined {
+  public getToggleMod(modType: VehicleToggleModType): VehicleToggleMod | undefined {
     if (!this._vehicleToggleMods.has(modType)) {
-      this._vehicleToggleMods.set(
-        modType,
-        new VehicleToggleMod(this._owner, modType),
-      );
+      this._vehicleToggleMods.set(modType, new VehicleToggleMod(this._owner, modType));
     }
     return this._vehicleToggleMods.get(modType);
   }
@@ -251,12 +243,7 @@ export class VehicleModCollection {
   }
 
   public set CustomPrimaryColor(color: Color) {
-    SetVehicleCustomPrimaryColour(
-      this._owner.Handle,
-      color.r,
-      color.g,
-      color.b,
-    );
+    SetVehicleCustomPrimaryColour(this._owner.Handle, color.r, color.g, color.b);
   }
 
   public get CustomSecondaryColor(): Color {
@@ -265,12 +252,7 @@ export class VehicleModCollection {
   }
 
   public set CustomSecondaryColor(color: Color) {
-    SetVehicleCustomSecondaryColour(
-      this._owner.Handle,
-      color.r,
-      color.g,
-      color.b,
-    );
+    SetVehicleCustomSecondaryColour(this._owner.Handle, color.r, color.g, color.b);
   }
 
   public get IsPrimaryColorCustom(): boolean {

@@ -12,9 +12,7 @@ export class Color {
     return new Color(r, g, b);
   }
 
-  public static fromArray(
-    primitive: [number, number, number] | number[],
-  ): Color {
+  public static fromArray(primitive: [number, number, number] | number[]): Color {
     return new Color(primitive[0], primitive[1], primitive[2], 255);
   }
 

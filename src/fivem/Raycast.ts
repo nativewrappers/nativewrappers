@@ -74,8 +74,9 @@ abstract class RaycastResult {
   }
 
   protected applyShapeTestResults() {
-    const [result, hit, endCoords, surfaceNormal, materialHash, entityHit] =
-      GetShapeTestResultIncludingMaterial(this.handle);
+    const [result, hit, endCoords, surfaceNormal, materialHash, entityHit] = GetShapeTestResultIncludingMaterial(
+      this.handle,
+    );
 
     this.result = result;
 

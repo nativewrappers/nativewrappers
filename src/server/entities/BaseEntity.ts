@@ -84,10 +84,7 @@ export class BaseEntity {
   }
 
   public get PositionAndHeading(): Vector4 {
-    return Vector4.fromArray([
-      ...GetEntityCoords(this.handle),
-      GetEntityHeading(this.handle),
-    ]);
+    return Vector4.fromArray([...GetEntityCoords(this.handle), GetEntityHeading(this.handle)]);
   }
 
   public get Health(): number {

@@ -61,15 +61,7 @@ export class NetworkedScene {
     speedMultiplier: number,
     flag: number,
   ): void {
-    NetworkAddEntityToSynchronisedScene(
-      entity.Handle,
-      this.scene,
-      animDict,
-      animName,
-      speed,
-      speedMultiplier,
-      flag,
-    );
+    NetworkAddEntityToSynchronisedScene(entity.Handle, this.scene, animDict, animName, speed, speedMultiplier, flag);
   }
 
   start(): void {

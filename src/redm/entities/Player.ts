@@ -8,16 +8,7 @@ const handleUpgrade = (name: string, amount: number): void => {
   const a3 = new DataView(b2);
 
   // _INVENTORY_ADD_ITEM_WITH_GUID
-  _N(
-    "0xCB5D11F9508A928D",
-    1,
-    a2,
-    a3,
-    GetHashKey(name),
-    1084182731,
-    amount,
-    752097756,
-  );
+  _N("0xCB5D11F9508A928D", 1, a2, a3, GetHashKey(name), 1084182731, amount, 752097756);
 };
 
 export class Player {

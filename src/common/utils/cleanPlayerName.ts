@@ -1,5 +1,3 @@
-/* eslint-disable */
-// Spooky shit happens in here, don't let eslint get angry
 // Shamlessly ripped from txAdmin, MIT license
 /**
  * Cleans up a player name and returns one version to be displayed, and one pure version to be used for fuzzy matching.
@@ -16,6 +14,7 @@ export const cleanPlayerName = (original: string) => {
   let displayName = original
     .substring(0, 75) //lua should have truncated it first, but double checking
     .replace(
+      // biome-ignore lint/suspicious/noMisleadingCharacterClass: <explanation>
       /[\u0000-\u001F\u007F-\u009F\u200B-\u200D\uFEFF\u200E\uA9C1-\uA9C5\u239B-\u23AD]/g,
       "",
     )

@@ -91,11 +91,7 @@ export abstract class World {
    */
   public static set CurrentDate(date: Date) {
     SetClockDate(date.getDate(), date.getMonth(), date.getFullYear());
-    NetworkOverrideClockTime(
-      date.getHours(),
-      date.getMinutes(),
-      date.getSeconds(),
-    );
+    NetworkOverrideClockTime(date.getHours(), date.getMinutes(), date.getSeconds());
   }
 
   /**
@@ -262,27 +258,15 @@ export abstract class World {
   /**
    * Doesn't work
    */
-  public static get WeatherTransition(): [
-    string | Weather,
-    string | Weather,
-    number,
-  ] {
+  public static get WeatherTransition(): [string | Weather, string | Weather, number] {
     const transition = GetWeatherTypeTransition();
-    return [
-      this.weatherDict[transition[0]],
-      this.weatherDict[transition[1]],
-      transition[2],
-    ];
+    return [this.weatherDict[transition[0]], this.weatherDict[transition[1]], transition[2]];
   }
 
   /**
    * Doesn't work
    */
-  public static set WeatherTransition(transition: [
-    string | Weather,
-    string | Weather,
-    number,
-  ]) {
+  public static set WeatherTransition(transition: [string | Weather, string | Weather, number]) {
     SetWeatherTypeTransition(transition[0], transition[1], transition[2]);
   }
 
@@ -320,9 +304,7 @@ export abstract class World {
    */
   public static createBlip(position: Vector3, radius?: number): Blip {
     if (radius !== null && radius !== undefined) {
-      return new Blip(
-        AddBlipForRadius(position.x, position.y, position.z, radius),
-      );
+      return new Blip(AddBlipForRadius(position.x, position.y, position.z, radius));
     }
     return new Blip(AddBlipForCoord(position.x, position.y, position.z));
   }
@@ -337,10 +319,7 @@ export abstract class World {
    * @param active unknown
    * @returns
    */
-  public static createCamera(
-    cameraType = CameraTypes.Scripted,
-    active = true,
-  ): Camera {
+  public static createCamera(cameraType = CameraTypes.Scripted, active = true): Camera {
     return new Camera(CreateCam(cameraType, active));
   }
 
@@ -359,9 +338,9 @@ export abstract class World {
    */
   public static createCameraWithParams(
     cameraType = CameraTypes.Scripted,
-    position: Vector3,
-    rotation: Vector3,
-    fieldOfView: number,
+    position = Vector3.Zero,
+    rotation = Vector3.Zero,
+    fieldOfView = 90,
   ): Camera {
     return new Camera(
       CreateCamWithParams(
@@ -405,16 +384,7 @@ export abstract class World {
       return null;
     }
 
-    const ped = CreatePed(
-      -1,
-      model.Hash,
-      position.x,
-      position.y,
-      position.z,
-      heading,
-      isNetwork,
-      pinToScript,
-    );
+    const ped = CreatePed(-1, model.Hash, position.x, position.y, position.z, heading, isNetwork, pinToScript);
 
     model.markAsNoLongerNeeded();
 
@@ -466,15 +436,7 @@ export abstract class World {
       return null;
     }
 
-    const vehicle = CreateVehicle(
-      model.Hash,
-      position.x,
-      position.y,
-      position.z,
-      heading,
-      isNetwork,
-      pinToScript,
-    );
+    const vehicle = CreateVehicle(model.Hash, position.x, position.y, position.z, heading, isNetwork, pinToScript);
 
     if (vehicle === 0) {
       return null;
@@ -496,11 +458,7 @@ export abstract class World {
    * @param isNetwork
    * @returns Vehicle object.
    */
-  public static async createRandomVehicle(
-    position: Vector3,
-    heading = 0.0,
-    isNetwork = true,
-  ): Promise<Vehicle | null> {
+  public static async createRandomVehicle(position: Vector3, heading = 0.0, isNetwork = true): Promise<Vehicle | null> {
     const vehicleCount: number = Object.keys(VehicleHash).length / 2; // check
     const randomIndex: number = Maths.getRandomInt(0, vehicleCount);
     const randomVehicleName: string = VehicleHash[randomIndex];
@@ -660,17 +618,7 @@ export abstract class World {
         true,
         model.Hash,
       );
-    else
-      handle = CreatePickup(
-        type,
-        position.x,
-        position.y,
-        position.z,
-        0,
-        value,
-        true,
-        model.Hash,
-      );
+    else handle = CreatePickup(type, position.x, position.y, position.z, 0, value, true, model.Hash);
 
     model.markAsNoLongerNeeded();
 
@@ -700,17 +648,7 @@ export abstract class World {
       return null;
     }
 
-    const handle = CreateAmbientPickup(
-      type,
-      position.x,
-      position.y,
-      position.z,
-      0,
-      value,
-      model.Hash,
-      false,
-      true,
-    );
+    const handle = CreateAmbientPickup(type, position.x, position.y, position.z, 0, value, model.Hash, false, true);
 
     model.markAsNoLongerNeeded();
 
@@ -796,22 +734,8 @@ export abstract class World {
    * @param range How far to draw the light.
    * @param intensity Intensity of the light ("alpha").
    */
-  public static drawLightWithRange(
-    pos: Vector3,
-    color: Color,
-    range: number,
-    intensity: number,
-  ): void {
-    DrawLightWithRange(
-      pos.x,
-      pos.y,
-      pos.z,
-      color.r,
-      color.g,
-      color.b,
-      range,
-      intensity,
-    );
+  public static drawLightWithRange(pos: Vector3, color: Color, range: number, intensity: number): void {
+    DrawLightWithRange(pos.x, pos.y, pos.z, color.r, color.g, color.b, range, intensity);
   }
 
   /**
@@ -903,18 +827,7 @@ export abstract class World {
    * @param color RGB color of line.
    */
   public static drawLine(start: Vector3, end: Vector3, color: Color): void {
-    DrawLine(
-      start.x,
-      start.y,
-      start.z,
-      end.x,
-      end.y,
-      end.z,
-      color.r,
-      color.g,
-      color.b,
-      color.a,
-    );
+    DrawLine(start.x, start.y, start.z, end.x, end.y, end.z, color.r, color.g, color.b, color.a);
   }
 
   /**
@@ -925,12 +838,7 @@ export abstract class World {
    * @param vertexC World coordinate of third point.
    * @param color RGB color of polygon.
    */
-  public static drawPoly(
-    vertexA: Vector3,
-    vertexB: Vector3,
-    vertexC: Vector3,
-    color: Color,
-  ): void {
+  public static drawPoly(vertexA: Vector3, vertexB: Vector3, vertexC: Vector3, color: Color): void {
     DrawPoly(
       vertexA.x,
       vertexA.y,
@@ -1044,10 +952,7 @@ export abstract class World {
     shapeTestOptions = SHAPE_TEST_DEFAULT,
     ignoreEntity?: BaseEntity,
   ): SynchronousRaycastResult | AsynchronousRaycastResult {
-    const target = Vector3.add(
-      source,
-      Vector3.multiply(direction, maxDistance),
-    );
+    const target = Vector3.add(source, Vector3.multiply(direction, maxDistance));
 
     if (useExpensiveRaycast) {
       return new SynchronousRaycastResult(
@@ -1087,10 +992,7 @@ export abstract class World {
    * @param flags Possible entity types to detect.
    * @returns SynchronousRaycast object.
    */
-  public static raycastPlayerCamera(
-    maxDistance: number,
-    flags: IntersectFlags,
-  ): SynchronousRaycastResult {
+  public static raycastPlayerCamera(maxDistance: number, flags: IntersectFlags): SynchronousRaycastResult {
     const camera = GameplayCamera.Position;
     const direction = GameplayCamera.ForwardVector;
 
@@ -1114,22 +1016,8 @@ export abstract class World {
    * Gets the closest object of this model
    */
 
-  public static getClosestObject(
-    model: Model,
-    coords: Vector3,
-    radius = 25.0,
-    isMission = false,
-  ): Prop | null {
-    const prop = GetClosestObjectOfType(
-      coords.x,
-      coords.y,
-      coords.z,
-      radius,
-      model.Hash,
-      isMission,
-      false,
-      false,
-    );
+  public static getClosestObject(model: Model, coords: Vector3, radius = 25.0, isMission = false): Prop | null {
+    const prop = GetClosestObjectOfType(coords.x, coords.y, coords.z, radius, model.Hash, isMission, false, false);
     if (prop !== 0) {
       return new Prop(prop);
     }
@@ -1231,10 +1119,7 @@ export abstract class World {
 
   private static currentCloudHat: CloudHat = CloudHat.Clear;
 
-  private static cloudHatDict: Map<CloudHat, string> = new Map<
-    CloudHat,
-    string
-  >([
+  private static cloudHatDict: Map<CloudHat, string> = new Map<CloudHat, string>([
     [CloudHat.Unknown, "Unknown"],
     [CloudHat.Altostratus, "altostratus"],
     [CloudHat.Cirrus, "Cirrus"],

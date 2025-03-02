@@ -1,6 +1,6 @@
 import { Audio } from "../Audio";
 import { HudColor, NotificationType } from "../enums";
-import { Color, Size, String, type Vector3 } from "../utils";
+import { Color, Size, _String, type Vector3 } from "../utils";
 import { Notification } from "./";
 
 export abstract class Screen {
@@ -31,7 +31,7 @@ export abstract class Screen {
   }
 
   public static showSubtitle(message: string, duration = 2500): void {
-    const strings: string[] = String.stringToArray(message);
+    const strings: string[] = _String.stringToArray(message);
 
     BeginTextCommandPrint("CELL_EMAIL_BCON");
 
@@ -43,7 +43,7 @@ export abstract class Screen {
   }
 
   public static displayHelpTextThisFrame(message: string): void {
-    const strings: string[] = String.stringToArray(message);
+    const strings: string[] = _String.stringToArray(message);
 
     BeginTextCommandDisplayHelp("CELL_EMAIL_BCON");
 
@@ -54,11 +54,8 @@ export abstract class Screen {
     EndTextCommandDisplayHelp(0, false, false, -1);
   }
 
-  public static showNotification(
-    message: string,
-    blinking = false,
-  ): Notification {
-    const strings: string[] = String.stringToArray(message);
+  public static showNotification(message: string, blinking = false): Notification {
+    const strings: string[] = _String.stringToArray(message);
 
     SetNotificationTextEntry("CELL_EMAIL_BCON");
 
@@ -82,7 +79,7 @@ export abstract class Screen {
     showInBrief = true,
     sound = true,
   ): Notification {
-    const strings: string[] = String.stringToArray(message);
+    const strings: string[] = _String.stringToArray(message);
 
     SetNotificationTextEntry("CELL_EMAIL_BCON");
 
@@ -95,12 +92,7 @@ export abstract class Screen {
     }
 
     if (flashColor !== Color.Transparent && blinking) {
-      SetNotificationFlashColor(
-        flashColor.r,
-        flashColor.g,
-        flashColor.b,
-        flashColor.a,
-      );
+      SetNotificationFlashColor(flashColor.r, flashColor.g, flashColor.b, flashColor.a);
     }
 
     if (sound) {
@@ -112,14 +104,7 @@ export abstract class Screen {
   }
 
   public static worldToScreen(position: Vector3, scaleWidth = false): Size {
-    const coords = GetScreenCoordFromWorldCoord(
-      position.x,
-      position.y,
-      position.z,
-    );
-    return new Size(
-      coords[1] * (scaleWidth ? this.ScaledWidth : this.Width),
-      coords[2] * this.Height,
-    );
+    const coords = GetScreenCoordFromWorldCoord(position.x, position.y, position.z);
+    return new Size(coords[1] * (scaleWidth ? this.ScaledWidth : this.Width), coords[2] * this.Height);
   }
 }

@@ -160,12 +160,7 @@ export class Model implements Disposable {
    * @returns Whether this model is a prop.
    */
   public get IsProp(): boolean {
-    return (
-      this.IsValid &&
-      !this.IsPed &&
-      !this.IsVehicle &&
-      !IsWeaponValid(this.hash)
-    );
+    return this.IsValid && !this.IsPed && !this.IsVehicle && !IsWeaponValid(this.hash);
   }
 
   /**

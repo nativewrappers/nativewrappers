@@ -7,10 +7,7 @@ import { getUInt32FromUint8Array } from "../utils";
  * refer: https://wiki.rage.mp/index.php?title=Weapons_Components
  *
  */
-export const WeaponComponentHashesByWeaponHash = new Map<
-  WeaponHash,
-  WeaponComponentHash[]
->([
+export const WeaponComponentHashesByWeaponHash = new Map<WeaponHash, WeaponComponentHash[]>([
   // Melees
   [
     WeaponHash.KnuckleDuster, // Knuckle Duster
@@ -260,10 +257,7 @@ export const WeaponComponentHashesByWeaponHash = new Map<
   ],
   [
     WeaponHash.MiniSMG, // Mini SMG
-    [
-      WeaponComponentHash.COMPONENT_MINISMG_CLIP_01,
-      WeaponComponentHash.COMPONENT_MINISMG_CLIP_02,
-    ],
+    [WeaponComponentHash.COMPONENT_MINISMG_CLIP_01, WeaponComponentHash.COMPONENT_MINISMG_CLIP_02],
   ],
   [
     WeaponHash.SMGMk2, // SMG Mk II
@@ -393,10 +387,7 @@ export const WeaponComponentHashesByWeaponHash = new Map<
   ],
   [
     WeaponHash.CombatShotgun, // Combat Shotgun
-    [
-      WeaponComponentHash.COMPONENT_AT_AR_FLSH,
-      WeaponComponentHash.COMPONENT_AT_AR_SUPP,
-    ],
+    [WeaponComponentHash.COMPONENT_AT_AR_FLSH, WeaponComponentHash.COMPONENT_AT_AR_SUPP],
   ],
 
   // Rifles
@@ -687,10 +678,7 @@ export const WeaponComponentHashesByWeaponHash = new Map<
   ],
   [
     WeaponHash.Gusenberg, // Gusenberg Sweeper
-    [
-      WeaponComponentHash.COMPONENT_GUSENBERG_CLIP_01,
-      WeaponComponentHash.COMPONENT_GUSENBERG_CLIP_02,
-    ],
+    [WeaponComponentHash.COMPONENT_GUSENBERG_CLIP_01, WeaponComponentHash.COMPONENT_GUSENBERG_CLIP_02],
   ],
 
   // Sniper Rifles
@@ -826,18 +814,9 @@ function initializeOnce() {
       const weaponBuffer = new Uint8Array(14 * intLength + 4 * strLength);
 
       // https://docs.fivem.net/natives/?_0x79923CD21BECE14E
-      Citizen.invokeNative(
-        "0x79923CD21BECE14E",
-        i,
-        weaponBuffer,
-        Citizen.returnResultAnyway(),
-      );
+      Citizen.invokeNative("0x79923CD21BECE14E", i, weaponBuffer, Citizen.returnResultAnyway());
 
-      const weaponHash = getUInt32FromUint8Array(
-        weaponBuffer,
-        2 * intLength,
-        3 * intLength,
-      );
+      const weaponHash = getUInt32FromUint8Array(weaponBuffer, 2 * intLength, 3 * intLength);
 
       const componentCount = GetNumDlcWeaponComponents(i);
 
@@ -846,19 +825,9 @@ function initializeOnce() {
         const componentBuffer = new Uint8Array(14 * intLength + 4 * strLength);
 
         // https://docs.fivem.net/natives/?_0x6CF598A2957C2BF8
-        Citizen.invokeNative(
-          "0x6CF598A2957C2BF8",
-          i,
-          j,
-          componentBuffer,
-          Citizen.returnResultAnyway(),
-        );
+        Citizen.invokeNative("0x6CF598A2957C2BF8", i, j, componentBuffer, Citizen.returnResultAnyway());
 
-        const componentHash = getUInt32FromUint8Array(
-          componentBuffer,
-          6 * intLength,
-          7 * intLength,
-        );
+        const componentHash = getUInt32FromUint8Array(componentBuffer, 6 * intLength, 7 * intLength);
         componentHashes.push(componentHash);
       }
 

@@ -257,9 +257,7 @@ export class Weapon {
    * @constructor
    */
   public get IsMk2(): boolean {
-    return Array.from(enumValues(Mk2WeaponHash)).some(
-      (x) => (x as number) === (this.hash as number),
-    );
+    return Array.from(enumValues(Mk2WeaponHash)).some((x) => (x as number) === (this.hash as number));
   }
 
   /**
@@ -270,28 +268,19 @@ export class Weapon {
    */
   public setLivery(liveryId: WeaponLivery, colorId: WeaponLiveryColor): void {
     if (!this.IsMk2) {
-      console.log(
-        `[ERROR]${this.setLivery.name} failed. Reason: non-Mk2 weapon`,
-      );
+      console.log(`[ERROR]${this.setLivery.name} failed. Reason: non-Mk2 weapon`);
       return;
     }
 
     const component = this.Components.getMk2CamoComponent(liveryId);
 
     if (component.IsInvalid) {
-      console.log(
-        `[ERROR]${this.setLivery.name} failed. Reason: invalid liveryId/Component`,
-      );
+      console.log(`[ERROR]${this.setLivery.name} failed. Reason: invalid liveryId/Component`);
       return;
     }
 
     component.Active = true;
-    SetPedWeaponLiveryColor(
-      this.owner.Handle,
-      this.hash,
-      component.ComponentHash,
-      colorId,
-    );
+    SetPedWeaponLiveryColor(this.owner.Handle, this.hash, component.ComponentHash, colorId);
   }
 
   /**
@@ -321,9 +310,7 @@ export class Weapon {
    *
    * @param hash
    */
-  public static getWeaponComponentHashes(
-    hash: WeaponHash,
-  ): WeaponComponentHash[] {
+  public static getWeaponComponentHashes(hash: WeaponHash): WeaponComponentHash[] {
     const hashes = WeaponComponentHashesByWeaponHash.get(hash);
 
     if (!hashes) {

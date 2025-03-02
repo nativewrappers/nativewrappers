@@ -11,24 +11,11 @@ export class UIMenuStatisticsPanelItem {
   public readonly divider: Rectangle[] = [];
 
   constructor(name: string, percentage = 0) {
-    this.text = new Text(
-      "",
-      new Point(),
-      0.35,
-      Color.White,
-      Font.ChaletLondon,
-      Alignment.Left,
-    );
-    this.backgroundBar = new Rectangle(
-      new Point(),
-      new Size(200, 10),
-      Color.fromArgb(100, 87, 87, 87),
-    );
+    this.text = new Text("", new Point(), 0.35, Color.White, Font.ChaletLondon, Alignment.Left);
+    this.backgroundBar = new Rectangle(new Point(), new Size(200, 10), Color.fromArgb(100, 87, 87, 87));
     this.activeBar = new Rectangle(new Point(), new Size(0, 10), Color.White);
     for (let i = 1; i <= 4; i++) {
-      this.divider.push(
-        new Rectangle(new Point(), new Size(2, 10), Color.Black),
-      );
+      this.divider.push(new Rectangle(new Point(), new Size(2, 10), Color.Black));
     }
     this.Name = name;
     this.Percentage = percentage;

@@ -19,14 +19,9 @@ export const DisablePrettyPrint = () => (GlobalData.EnablePrettyPrint = false);
  * Registers the export call for {exportName} to this method
  */
 export function Exports(exportName: string) {
-  return function actualDecorator(
-    originalMethod: any,
-    context: ClassMethodDecoratorContext,
-  ) {
+  return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
     if (context.private) {
-      throw new Error(
-        "Exports does not work on private methods, please mark the method as public",
-      );
+      throw new Error("Exports does not work on private methods, please mark the method as public");
     }
 
     context.addInitializer(function () {
@@ -47,14 +42,9 @@ export function Exports(exportName: string) {
  * @param eventName the event to bind to
  */
 export function Event(eventName: string) {
-  return function actualDecorator(
-    originalMethod: any,
-    context: ClassMethodDecoratorContext,
-  ) {
+  return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
     if (context.private) {
-      throw new Error(
-        "Event does not work on private methods, please mark the method as public",
-      );
+      throw new Error("Event does not work on private methods, please mark the method as public");
     }
     context.addInitializer(function () {
       on(eventName, (...args: any[]) => {
@@ -63,11 +53,11 @@ export function Event(eventName: string) {
         } catch (e) {
           REMOVE_EVENT_LOG: {
             if (!GlobalData.EnablePrettyPrint) return;
-            console.error(`------- EVENT ERROR --------`);
+            console.error("------- EVENT ERROR --------");
             console.error(`Call to ${eventName} errored`);
             console.error(`Data: ${JSON.stringify(args)}`);
             console.error(`Error: ${e}`);
-            console.error(`------- END EVENT ERROR --------`);
+            console.error("------- END EVENT ERROR --------");
           }
         }
       });
@@ -87,14 +77,9 @@ export function Event(eventName: string) {
  * @param remoteOnly if the event should only accept remote calls, if set to true it will ignore any local call via `emit`, defaults to true
  */
 export function NetEvent(eventName: string, remoteOnly = true) {
-  return function actualDecorator(
-    originalMethod: any,
-    context: ClassMethodDecoratorContext,
-  ) {
+  return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
     if (context.private) {
-      throw new Error(
-        "NetEvent does not work on private methods, please mark the method as public",
-      );
+      throw new Error("NetEvent does not work on private methods, please mark the method as public");
     }
     context.addInitializer(function () {
       onNet(eventName, (...args: any[]) => {
@@ -109,12 +94,12 @@ export function NetEvent(eventName: string, remoteOnly = true) {
         } catch (e) {
           REMOVE_NET_EVENT_LOG: {
             if (!GlobalData.EnablePrettyPrint) return;
-            console.error(`------- NET EVENT ERROR --------`);
+            console.error("------- NET EVENT ERROR --------");
             console.error(`Call to ${eventName} errored`);
             console.error(`Caller: ${src}`);
             console.error(`Data: ${JSON.stringify(args)}`);
             console.error(`Error: ${e}`);
-            console.error(`------- END NET EVENT ERROR --------`);
+            console.error("------- END NET EVENT ERROR --------");
           }
         }
       });
@@ -130,14 +115,9 @@ export function NetEvent(eventName: string, remoteOnly = true) {
  * @param eventName the event this will listen for
  */
 export function NuiEvent(eventName: string) {
-  return function actualDecorator(
-    originalMethod: any,
-    context: ClassMethodDecoratorContext,
-  ) {
+  return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
     if (context.private) {
-      throw new Error(
-        "NuiEvent does not work on private methods, please mark the method as public",
-      );
+      throw new Error("NuiEvent does not work on private methods, please mark the method as public");
     }
     context.addInitializer(function () {
       RegisterNuiCallback(eventName, (...args: any[]) => {
@@ -174,22 +154,12 @@ type DeserializeFn<T> = (data: T) => unknown;
  * @param name the convar name
  * @param is_floating_point if the convar is floating point, this should be explicitly set to true if your convar will be a float
  */
-export function ConVar<T>(
-  name: string,
-  is_floating_point?: boolean,
-  deserialize?: DeserializeFn<T>,
-) {
+export function ConVar<T>(name: string, is_floating_point?: boolean, deserialize?: DeserializeFn<T>) {
   // the implementation shows that this will be _initialValue, but it doesn't
   // seem to actually be???
-  return function actualDecorator(
-    _initialValue: any,
-    context: ClassFieldDecoratorContext,
-    ..._args: any[]
-  ) {
+  return function actualDecorator(_initialValue: any, context: ClassFieldDecoratorContext, ..._args: any[]) {
     if (context.private) {
-      throw new Error(
-        "ConVar does not work on private types, please mark the field as public",
-      );
+      throw new Error("ConVar does not work on private types, please mark the field as public");
     }
     context.addInitializer(function () {
       const t = this as any;
@@ -197,15 +167,15 @@ export function ConVar<T>(
       const default_value = Reflect.get(t, context.name);
       const default_type = typeof default_value;
       let con_var_type: ConVarType | null = null;
-      if (default_type == "number") {
+      if (default_type === "number") {
         if (is_floating_point || !Number.isInteger(default_value)) {
           con_var_type = ConVarType.Float;
         } else {
           con_var_type = ConVarType.Integer;
         }
-      } else if (default_type == "boolean") {
+      } else if (default_type === "boolean") {
         con_var_type = ConVarType.Boolean;
-      } else if (default_value == "string") {
+      } else if (default_value === "string") {
         con_var_type = ConVarType.String;
       }
 
@@ -213,9 +183,7 @@ export function ConVar<T>(
       // undefined (which we should just get rid of) or an object, and the
       // caller should send a deserialize function to work with.
       if (!deserialize && con_var_type === null) {
-        throw new Error(
-          "You should provide a deserialize function if you want to convert this to an object type",
-        );
+        throw new Error("You should provide a deserialize function if you want to convert this to an object type");
       }
 
       // if we got past our previous check then we're going to take the data as
@@ -245,14 +213,9 @@ export function ConVar<T>(
  * in it, it will not be called until whatever was being awaited resolves.
  */
 export function SetTick() {
-  return function actualDecorator(
-    originalMethod: any,
-    context: ClassMethodDecoratorContext,
-  ) {
+  return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
     if (context.private) {
-      throw new Error(
-        "SetTick does not work on private types, please mark the field as public",
-      );
+      throw new Error("SetTick does not work on private types, please mark the field as public");
     }
     context.addInitializer(function () {
       setTick(async () => {

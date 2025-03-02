@@ -11,14 +11,7 @@ export class Sprite {
 
   private _textureDict: string;
 
-  constructor(
-    textureDict: string,
-    textureName: string,
-    pos?: Point,
-    size?: Size,
-    heading = 0,
-    color = Color.White,
-  ) {
+  constructor(textureDict: string, textureName: string, pos?: Point, size?: Size, heading = 0, color = Color.White) {
     this._textureDict = textureDict;
     this.textureName = textureName;
     this.pos = pos || new Point();
@@ -73,8 +66,7 @@ export class Sprite {
     loadTexture = true,
     resolution?: Size,
   ): void {
-    const textureDictionary =
-      arg1 && typeof arg1 === "string" ? arg1 : this.TextureDict;
+    const textureDictionary = arg1 && typeof arg1 === "string" ? arg1 : this.TextureDict;
 
     textureName = textureName || this.textureName;
     pos = pos || this.pos;
@@ -96,18 +88,6 @@ export class Sprite {
     const x = pos.X / resolution.width + w * 0.5;
     const y = pos.Y / resolution.height + h * 0.5;
 
-    DrawSprite(
-      textureDictionary,
-      textureName,
-      x,
-      y,
-      w,
-      h,
-      heading,
-      color.r,
-      color.g,
-      color.b,
-      color.a,
-    );
+    DrawSprite(textureDictionary, textureName, x, y, w, h, heading, color.r, color.g, color.b, color.a);
   }
 }

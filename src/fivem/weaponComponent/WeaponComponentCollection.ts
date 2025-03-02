@@ -32,9 +32,9 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
       next(): IteratorResult<WeaponComponent> {
         if (pointer < components.length) {
           return { done: false, value: components[pointer++] };
-        } else {
-          return { done: true, value: null };
         }
+
+        return { done: true, value: null };
       },
     };
   }
@@ -73,11 +73,7 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
    * @param index - index of component
    */
   public getClipComponent(index: number): WeaponComponent {
-    return this.getAnyComponentByAttachmentPoints(
-      index,
-      ComponentAttachmentPoint.Clip,
-      ComponentAttachmentPoint.Clip2,
-    );
+    return this.getAnyComponentByAttachmentPoints(index, ComponentAttachmentPoint.Clip, ComponentAttachmentPoint.Clip2);
   }
 
   /**
@@ -86,10 +82,8 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
    * @constructor
    */
   public get ClipVariationsCount(): number {
-    return this.getComponentHashesByAttachmentPoints(
-      ComponentAttachmentPoint.Clip,
-      ComponentAttachmentPoint.Clip2,
-    ).length;
+    return this.getComponentHashesByAttachmentPoints(ComponentAttachmentPoint.Clip, ComponentAttachmentPoint.Clip2)
+      .length;
   }
 
   /**
@@ -111,10 +105,8 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
    * @constructor
    */
   public get ScopeVariationsCount(): number {
-    return this.getComponentHashesByAttachmentPoints(
-      ComponentAttachmentPoint.Scope,
-      ComponentAttachmentPoint.Scope2,
-    ).length;
+    return this.getComponentHashesByAttachmentPoints(ComponentAttachmentPoint.Scope, ComponentAttachmentPoint.Scope2)
+      .length;
   }
 
   /**
@@ -146,10 +138,7 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
    *
    */
   public getLuxuryFinishComponent(): WeaponComponent {
-    return this.getAnyComponentByAttachmentPoints(
-      undefined,
-      ComponentAttachmentPoint.GunRoot,
-    );
+    return this.getAnyComponentByAttachmentPoints(undefined, ComponentAttachmentPoint.GunRoot);
   }
 
   /**
@@ -158,10 +147,7 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
    * @param index - index of component
    */
   public getMk2CamoComponent(index: number): WeaponComponent {
-    return this.getAnyComponentByAttachmentPoints(
-      index,
-      ComponentAttachmentPoint.GunRoot,
-    );
+    return this.getAnyComponentByAttachmentPoints(index, ComponentAttachmentPoint.GunRoot);
   }
 
   /**
@@ -170,10 +156,7 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
    * @param index - index of component
    */
   public getMk2BarrelComponent(index: number): WeaponComponent {
-    return this.getAnyComponentByAttachmentPoints(
-      index,
-      ComponentAttachmentPoint.Barrel,
-    );
+    return this.getAnyComponentByAttachmentPoints(index, ComponentAttachmentPoint.Barrel);
   }
 
   /**
@@ -202,7 +185,6 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
    * @private
    */
   private get AllWeaponComponentHashes(): WeaponComponentHash[] {
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     return WeaponComponentHashesByWeaponHash.get(this.weapon.Hash)!;
   }
 
@@ -212,14 +194,9 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
    * @param attachmentPoints
    * @private
    */
-  private getComponentHashesByAttachmentPoints(
-    ...attachmentPoints: ComponentAttachmentPoint[]
-  ): WeaponComponentHash[] {
+  private getComponentHashesByAttachmentPoints(...attachmentPoints: ComponentAttachmentPoint[]): WeaponComponentHash[] {
     return this.AllWeaponComponentHashes.filter((hash) =>
-      attachmentPoints.some(
-        (attachmentPoint) =>
-          ComponentAttachmentPointByHash.get(hash) === attachmentPoint,
-      ),
+      attachmentPoints.some((attachmentPoint) => ComponentAttachmentPointByHash.get(hash) === attachmentPoint),
     );
   }
 
@@ -230,20 +207,13 @@ export class WeaponComponentCollection implements Iterable<WeaponComponent> {
    * @param attachmentPoints -  attachmentPoints to search
    * @private
    */
-  private getAnyComponentByAttachmentPoints(
-    index?: number,
-    ...attachmentPoints: ComponentAttachmentPoint[]
-  ) {
-    const hashes = this.getComponentHashesByAttachmentPoints(
-      ...attachmentPoints,
-    );
+  private getAnyComponentByAttachmentPoints(index?: number, ...attachmentPoints: ComponentAttachmentPoint[]) {
+    const hashes = this.getComponentHashesByAttachmentPoints(...attachmentPoints);
 
     if (index === undefined) {
       return this.get(hashes[0]) ?? this.invalidComponent;
     }
 
-    return 0 <= index && index <= hashes.length - 1
-      ? this.get(hashes[index])
-      : this.invalidComponent;
+    return 0 <= index && index <= hashes.length - 1 ? this.get(hashes[index]) : this.invalidComponent;
   }
 }

@@ -18,26 +18,13 @@ import type { PointF, Vector3 } from "../utils";
  * ```
  */
 export class Scaleform {
-  public static render2DMasked(
-    scaleform1: Scaleform,
-    scaleform2: Scaleform,
-  ): Promise<void> {
-    return new Promise(async (resolve) => {
-      if (scaleform1.IsLoaded && scaleform2.IsLoaded) {
-        DrawScaleformMovieFullscreenMasked(
-          scaleform1.Handle,
-          scaleform2.Handle,
-          255,
-          255,
-          255,
-          255,
-        );
-      } else {
-        await scaleform1.load();
-        await scaleform2.load();
-      }
-      resolve();
-    });
+  public static async render2DMasked(scaleform1: Scaleform, scaleform2: Scaleform): Promise<void> {
+    if (!scaleform1.IsLoaded) await scaleform1.load();
+    if (!scaleform2.IsLoaded) await scaleform2.load();
+
+    if (scaleform1.IsLoaded && scaleform2.IsLoaded) {
+      DrawScaleformMovieFullscreenMasked(scaleform1.Handle, scaleform2.Handle, 255, 255, 255, 255);
+    }
   }
 
   protected handle: number;
@@ -133,23 +120,8 @@ export class Scaleform {
    * @param param4
    * @param param5
    */
-  public callStringMethod(
-    name: string,
-    param1 = "",
-    param2 = "",
-    param3 = "",
-    param4 = "",
-    param5 = "",
-  ): void {
-    CallScaleformMovieMethodWithString(
-      this.handle,
-      name,
-      param1,
-      param2,
-      param3,
-      param4,
-      param5,
-    );
+  public callStringMethod(name: string, param1 = "", param2 = "", param3 = "", param4 = "", param5 = ""): void {
+    CallScaleformMovieMethodWithString(this.handle, name, param1, param2, param3, param4, param5);
   }
 
   /**
@@ -170,15 +142,7 @@ export class Scaleform {
     param4 = -1.0,
     param5 = -1.0,
   ): void {
-    CallScaleformMovieMethodWithNumber(
-      this.handle,
-      name,
-      param1,
-      param2,
-      param3,
-      param4,
-      param5,
-    );
+    CallScaleformMovieMethodWithNumber(this.handle, name, param1, param2, param3, param4, param5);
   }
 
   /**
@@ -248,102 +212,69 @@ export class Scaleform {
     }, 0);
   }
 
-  public render2D(): Promise<void> {
-    return new Promise(async (resolve) => {
-      if (this.IsLoaded) {
-        DrawScaleformMovieFullscreen(this.handle, 255, 255, 255, 255, 0);
-      } else {
-        await this.load();
-      }
-      resolve();
-    });
+  public async render2D(): Promise<void> {
+    if (!this.IsLoaded) await this.load();
+
+    if (!this.IsLoaded) return;
+    DrawScaleformMovieFullscreen(this.handle, 255, 255, 255, 255, 0);
   }
 
-  public render2DScreenSpace(location: PointF, size: PointF): Promise<void> {
-    return new Promise(async (resolve) => {
-      if (this.IsLoaded) {
-        const x = location.x; /* UI.Screen.Width*/
-        const y = location.y; /* UI.Screen.Height*/
-        const width = size.x; /* UI.Screen.Width*/
-        const height = size.y; /* UI.Screen.Height*/
+  public async render2DScreenSpace(location: PointF, size: PointF): Promise<void> {
+    if (this.IsLoaded) await this.load();
 
-        DrawScaleformMovie(
-          this.handle,
-          x + width / 2,
-          y + height / 2,
-          width,
-          height,
-          255,
-          255,
-          255,
-          255,
-          0,
-        );
-      } else {
-        await this.load();
-      }
-      resolve();
-    });
+    if (!this.IsLoaded) return;
+    const x = location.x; /* UI.Screen.Width*/
+    const y = location.y; /* UI.Screen.Height*/
+    const width = size.x; /* UI.Screen.Width*/
+    const height = size.y; /* UI.Screen.Height*/
+
+    DrawScaleformMovie(this.handle, x + width / 2, y + height / 2, width, height, 255, 255, 255, 255, 0);
   }
 
-  public render3D(
-    position: Vector3,
-    rotation: Vector3,
-    scale: Vector3,
-  ): Promise<void> {
-    return new Promise(async (resolve) => {
-      if (this.IsLoaded) {
-        DrawScaleformMovie_3dNonAdditive(
-          this.handle,
-          position.x,
-          position.y,
-          position.z,
-          rotation.x,
-          rotation.y,
-          rotation.z,
-          2,
-          2,
-          1,
-          scale.x,
-          scale.y,
-          scale.z,
-          2,
-        );
-      } else {
-        await this.load();
-      }
-      resolve();
-    });
+  public async render3D(position: Vector3, rotation: Vector3, scale: Vector3): Promise<void> {
+    if (this.IsLoaded) await this.load();
+
+    if (!this.IsLoaded) return;
+
+    DrawScaleformMovie_3dNonAdditive(
+      this.handle,
+      position.x,
+      position.y,
+      position.z,
+      rotation.x,
+      rotation.y,
+      rotation.z,
+      2,
+      2,
+      1,
+      scale.x,
+      scale.y,
+      scale.z,
+      2,
+    );
   }
 
-  public render3DAdditive(
-    position: Vector3,
-    rotation: Vector3,
-    scale: Vector3,
-  ): Promise<void> {
-    return new Promise(async (resolve) => {
-      if (this.IsLoaded) {
-        DrawScaleformMovie_3d(
-          this.handle,
-          position.x,
-          position.y,
-          position.z,
-          rotation.x,
-          rotation.y,
-          rotation.z,
-          2,
-          2,
-          1,
-          scale.x,
-          scale.y,
-          scale.z,
-          2,
-        );
-      } else {
-        await this.load();
-      }
-      resolve();
-    });
+  public async render3DAdditive(position: Vector3, rotation: Vector3, scale: Vector3): Promise<void> {
+    if (this.IsLoaded) await this.load();
+
+    if (!this.IsLoaded) return;
+
+    DrawScaleformMovie_3d(
+      this.handle,
+      position.x,
+      position.y,
+      position.z,
+      rotation.x,
+      rotation.y,
+      rotation.z,
+      2,
+      2,
+      1,
+      scale.x,
+      scale.y,
+      scale.z,
+      2,
+    );
   }
 
   public load(): Promise<boolean> {
@@ -358,9 +289,7 @@ export class Scaleform {
             resolve(true);
           } else if (GetGameTimer() - start > 5000) {
             clearInterval(interval);
-            console.log(
-              `^1[fivemjs/client] Could not load scaleform ${this.name}!^7`,
-            );
+            console.log(`^1[fivemjs/client] Could not load scaleform ${this.name}!^7`);
             resolve(false);
           }
         }, 0);

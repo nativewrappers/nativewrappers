@@ -22,12 +22,9 @@ export abstract class LoadingPrompt {
    * @param loadingText Text to be displayed inside loading prompt.
    * @param spinnerType Type of spinner.
    */
-  public static show(
-    loadingText = "",
-    spinnerType: LoadingSpinnerType = LoadingSpinnerType.RegularClockwise,
-  ): void {
-    if (this.IsActive) {
-      this.hide();
+  public static show(loadingText = "", spinnerType: LoadingSpinnerType = LoadingSpinnerType.RegularClockwise): void {
+    if (LoadingPrompt.IsActive) {
+      LoadingPrompt.hide();
     }
 
     if (loadingText === "") {
@@ -41,7 +38,7 @@ export abstract class LoadingPrompt {
   }
 
   public static hide(): void {
-    if (this.IsActive) {
+    if (LoadingPrompt.IsActive) {
       RemoveLoadingPrompt();
     }
   }

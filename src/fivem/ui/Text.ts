@@ -156,26 +156,12 @@ export class Text implements IDrawable {
       scale = scale !== undefined && scale !== null ? scale : this.scale;
       color = color || this.color;
       font = font !== undefined && font !== null ? font : this.font;
-      alignment =
-        alignment !== undefined && alignment !== null
-          ? alignment
-          : this.alignment;
+      alignment = alignment !== undefined && alignment !== null ? alignment : this.alignment;
       dropShadow = typeof dropShadow === "boolean" ? dropShadow : dropShadow;
       outline = typeof outline === "boolean" ? outline : outline;
       wordWrap = wordWrap || this.wordWrap;
     }
 
-    Text.draw(
-      arg1 as string,
-      arg2,
-      scale,
-      color,
-      font,
-      alignment,
-      dropShadow,
-      outline,
-      wordWrap,
-      resolution,
-    );
+    Text.draw(arg1 as string, arg2, scale, color, font, alignment, dropShadow, outline, wordWrap, resolution);
   }
 }

@@ -1,7 +1,8 @@
 import { Font, Screen, Text } from "..";
 import { Maths } from "./Maths";
 
-export abstract class String {
+// todo: rename?
+export abstract class _String {
   public static stringToArray(input: string): string[] {
     let stringsNeeded = 1;
     if (input.length > 99) {
@@ -10,19 +11,12 @@ export abstract class String {
 
     const outputString: string[] = new Array(stringsNeeded);
     for (let i = 0; i < stringsNeeded; i++) {
-      outputString[i] = input.substring(
-        i * 99,
-        i * 99 + Maths.clamp(input.substring(i * 99).length, 0, 99),
-      );
+      outputString[i] = input.substring(i * 99, i * 99 + Maths.clamp(input.substring(i * 99).length, 0, 99));
     }
     return outputString;
   }
 
-  public static measureStringWidthNoConvert(
-    input: string,
-    font = Font.ChaletLondon,
-    scale = 0,
-  ): number {
+  public static measureStringWidthNoConvert(input: string, font = Font.ChaletLondon, scale = 0): number {
     SetTextEntryForWidth("STRING");
     Text.addLongString(input);
     SetTextFont(font);
@@ -30,12 +24,7 @@ export abstract class String {
     return GetTextScreenWidth(false);
   }
 
-  public static measureString(
-    str: string,
-    font?: Font,
-    scale?: number,
-    screenWidth = Screen.ScaledWidth,
-  ): number {
+  public static measureString(str: string, font?: Font, scale?: number, screenWidth = Screen.ScaledWidth): number {
     return this.measureStringWidthNoConvert(str, font, scale) * screenWidth;
   }
 }

@@ -4,10 +4,7 @@ import { VehicleDoor } from "./VehicleDoor";
 
 export class VehicleDoorCollection {
   private _owner: Vehicle;
-  private readonly _vehicleDoors: Map<VehicleDoorIndex, VehicleDoor> = new Map<
-    VehicleDoorIndex,
-    VehicleDoor
-  >();
+  private readonly _vehicleDoors: Map<VehicleDoorIndex, VehicleDoor> = new Map<VehicleDoorIndex, VehicleDoor>();
 
   constructor(owner: Vehicle) {
     this._owner = owner;

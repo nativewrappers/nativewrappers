@@ -8,16 +8,9 @@ export class UIMenuStatisticsPanel extends AbstractUIMenuPanel {
   private _divider = true;
   private _items: UIMenuStatisticsPanelItem[] = [];
 
-  constructor(
-    item?: UIMenuStatisticsPanelItem[] | UIMenuStatisticsPanelItem,
-    divider = true,
-  ) {
+  constructor(item?: UIMenuStatisticsPanelItem[] | UIMenuStatisticsPanelItem, divider = true) {
     super();
-    this.background = new Rectangle(
-      new Point(),
-      new Size(431, 47),
-      new Color(0, 0, 0, 170),
-    );
+    this.background = new Rectangle(new Point(), new Size(431, 47), new Color(0, 0, 0, 170));
     if (item) {
       this.addItem(item);
     }
@@ -40,9 +33,7 @@ export class UIMenuStatisticsPanel extends AbstractUIMenuPanel {
     this._items = value;
   }
 
-  public addItem(
-    item: UIMenuStatisticsPanelItem | UIMenuStatisticsPanelItem[],
-  ): void {
+  public addItem(item: UIMenuStatisticsPanelItem | UIMenuStatisticsPanelItem[]): void {
     const items = Array.isArray(item) ? item : [item];
     this._items.push(...items);
   }
@@ -75,9 +66,7 @@ export class UIMenuStatisticsPanel extends AbstractUIMenuPanel {
     if (this.enabled) {
       super.draw();
 
-      const x =
-        this.parentItem?.offset.X ??
-        0 + (this.ParentMenu?.WidthOffset ?? 0) / 2;
+      const x = this.parentItem?.offset.X ?? 0 + (this.ParentMenu?.WidthOffset ?? 0) / 2;
       this._items.forEach(async (item, index) => {
         const itemCountOffset = 40 * (index + 1);
         item.backgroundBar.pos.X = x + 200;

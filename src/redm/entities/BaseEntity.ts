@@ -100,15 +100,6 @@ export class BaseEntity {
    * @param pos sets the position for the current ped
    */
   set Position(pos: Vector3) {
-    SetEntityCoords(
-      this.handle,
-      pos.x,
-      pos.y,
-      pos.z,
-      false,
-      false,
-      false,
-      false,
-    );
+    SetEntityCoords(this.handle, pos.x, pos.y, pos.z, false, false, false, false);
   }
 }

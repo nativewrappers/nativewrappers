@@ -1,4 +1,4 @@
-export { String } from "./String";
+export { _String } from "./String";
 export { LiteEvent } from "./LiteEvent";
 export { PointF } from "./PointF";
 export { Crypto } from "./Crypto";

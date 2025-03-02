@@ -24,7 +24,7 @@ export abstract class GameplayCamera {
    * Get the forward vector of gameplay camera.
    */
   public static get ForwardVector(): Vector3 {
-    const rotation = Vector3.multiply(this.Rotation, Math.PI / 180);
+    const rotation = Vector3.multiply(GameplayCamera.Rotation, Math.PI / 180);
     return Vector3.normalize(
       new Vector3(
         -Math.sin(rotation.z) * Math.abs(Math.cos(rotation.x)),

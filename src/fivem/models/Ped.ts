@@ -164,11 +164,9 @@ export class Ped extends BaseEntity {
   public get SeatIndex(): VehicleSeat {
     if (!this.CurrentVehicle) return VehicleSeat.None;
 
-    const numberOfSeats = GetVehicleModelNumberOfSeats(
-      this.CurrentVehicle.Model.Hash,
-    );
+    const numberOfSeats = GetVehicleModelNumberOfSeats(this.CurrentVehicle.Model.Hash);
     for (let seat = -1; seat < numberOfSeats; seat++) {
-      if (this.CurrentVehicle.getPedOnSeat(seat).Handle == this.handle) {
+      if (this.CurrentVehicle.getPedOnSeat(seat).Handle === this.handle) {
         return seat;
       }
     }
@@ -582,16 +580,9 @@ export class Ped extends BaseEntity {
     voiceName = "",
     modifier: SpeechModifier = SpeechModifier.Standard,
   ): void {
-    if (
-      Number(modifier) >= 0 &&
-      Number(modifier) < Ped.speechModifierNames.length
-    ) {
+    if (Number(modifier) >= 0 && Number(modifier) < Ped.speechModifierNames.length) {
       if (voiceName === "") {
-        PlayAmbientSpeech1(
-          this.handle,
-          speechName,
-          Ped.speechModifierNames[Number(modifier)],
-        );
+        PlayAmbientSpeech1(this.handle, speechName, Ped.speechModifierNames[Number(modifier)]);
       } else {
         PlayAmbientSpeechWithVoice(
           this.handle,
@@ -647,12 +638,7 @@ export class Ped extends BaseEntity {
     return this.weapons;
   }
 
-  public giveWeapon(
-    weapon: WeaponHash,
-    ammoCount = 999,
-    isHidden = false,
-    equipNow = true,
-  ): void {
+  public giveWeapon(weapon: WeaponHash, ammoCount = 999, isHidden = false, equipNow = true): void {
     GiveWeaponToPed(this.handle, weapon, ammoCount, isHidden, equipNow);
   }
 
@@ -678,37 +664,17 @@ export class Ped extends BaseEntity {
     SetPedCanRagdoll(this.handle, value);
   }
 
-  public ragdoll(
-    duration = -1,
-    ragdollType: RagdollType = RagdollType.Normal,
-  ): void {
+  public ragdoll(duration = -1, ragdollType: RagdollType = RagdollType.Normal): void {
     this.CanRagdoll = true;
-    SetPedToRagdoll(
-      this.handle,
-      duration,
-      duration,
-      Number(ragdollType),
-      false,
-      false,
-      false,
-    );
+    SetPedToRagdoll(this.handle, duration, duration, Number(ragdollType), false, false, false);
   }
 
   public cancelRagdoll(): void {
     SetPedToRagdoll(this.handle, 1, 1, 1, false, false, false);
   }
 
-  public giveHelmet(
-    canBeRemovedByPed: boolean,
-    helmetType: HelmetType,
-    textureIndex: number,
-  ): void {
-    GivePedHelmet(
-      this.handle,
-      !canBeRemovedByPed,
-      Number(helmetType),
-      textureIndex,
-    );
+  public giveHelmet(canBeRemovedByPed: boolean, helmetType: HelmetType, textureIndex: number): void {
+    GivePedHelmet(this.handle, !canBeRemovedByPed, Number(helmetType), textureIndex);
   }
 
   public removeHelmet(instantly: boolean): void {
@@ -744,19 +710,8 @@ export class Ped extends BaseEntity {
     return IsPedFacingPed(this.handle, ped.Handle, angle);
   }
 
-  public setComponentVariation(
-    componentId: number,
-    drawableId: number,
-    textureId: number,
-    paletteId = 0,
-  ): void {
-    SetPedComponentVariation(
-      this.handle,
-      componentId,
-      drawableId,
-      textureId,
-      paletteId,
-    );
+  public setComponentVariation(componentId: number, drawableId: number, textureId: number, paletteId = 0): void {
+    SetPedComponentVariation(this.handle, componentId, drawableId, textureId, paletteId);
   }
 
   public setRandomComponentVariation(): void {
@@ -779,27 +734,15 @@ export class Ped extends BaseEntity {
     return GetPedTextureVariation(this.handle, componentId);
   }
 
-  public getNumberTextureVariations(
-    componentId: number,
-    drawableId = this.getDrawableVariation(componentId),
-  ): number {
-    return GetNumberOfPedTextureVariations(
-      this.handle,
-      componentId,
-      drawableId,
-    );
+  public getNumberTextureVariations(componentId: number, drawableId = this.getDrawableVariation(componentId)): number {
+    return GetNumberOfPedTextureVariations(this.handle, componentId, drawableId);
   }
 
   public setRandomProps(): void {
     SetPedRandomProps(this.handle);
   }
 
-  public setPropIndex(
-    propId: number,
-    drawableId: number,
-    textureId: number,
-    attach = true,
-  ): void {
+  public setPropIndex(propId: number, drawableId: number, textureId: number, attach = true): void {
     SetPedPropIndex(this.handle, propId, drawableId, textureId, attach);
   }
 
@@ -811,20 +754,11 @@ export class Ped extends BaseEntity {
     ClearAllPedProps(this.handle);
   }
 
-  public knockPropOff(
-    p1: boolean,
-    p2: boolean,
-    p3: boolean,
-    p4: boolean,
-  ): void {
+  public knockPropOff(p1: boolean, p2: boolean, p3: boolean, p4: boolean): void {
     KnockOffPedProp(this.handle, p1, p2, p3, p4);
   }
 
-  public isPropValid(
-    propId: number,
-    drawableId: number,
-    textureId: number,
-  ): boolean {
+  public isPropValid(propId: number, drawableId: number, textureId: number): boolean {
     return SetPedPreloadPropData(this.handle, propId, drawableId, textureId);
   }
 
@@ -836,10 +770,7 @@ export class Ped extends BaseEntity {
     return GetNumberOfPedPropDrawableVariations(this.handle, propId);
   }
 
-  public getNumberOfPropTextureVariations(
-    propId: number,
-    drawableId = this.getPropIndex(propId),
-  ): number {
+  public getNumberOfPropTextureVariations(propId: number, drawableId = this.getPropIndex(propId)): number {
     return GetNumberOfPedPropTextureVariations(this.handle, propId, drawableId);
   }
 
@@ -892,34 +823,18 @@ export class Ped extends BaseEntity {
     this.setHeadOverlay(overlayId, value, opacity);
   }
 
-  public getHeadOverlay(
-    overlayId: number,
-  ): [number, number, number, number, number] | void {
-    const [
-      ret,
-      overlayValue,
-      colourType,
-      firstColour,
-      secondColour,
-      overlayOpacity,
-    ] = GetPedHeadOverlayData(this.handle, overlayId);
+  public getHeadOverlay(overlayId: number): [number, number, number, number, number] | null {
+    const [ret, overlayValue, colourType, firstColour, secondColour, overlayOpacity] = GetPedHeadOverlayData(
+      this.handle,
+      overlayId,
+    );
     if (!ret) {
-      return undefined;
+      return null;
     }
-    return [
-      overlayValue,
-      colourType,
-      firstColour,
-      secondColour,
-      overlayOpacity,
-    ];
+    return [overlayValue, colourType, firstColour, secondColour, overlayOpacity];
   }
 
-  public setHeadOverlay(
-    overlayId: number,
-    index: number,
-    opacity: number,
-  ): void {
+  public setHeadOverlay(overlayId: number, index: number, opacity: number): void {
     SetPedHeadOverlay(this.handle, overlayId, index, opacity);
   }
 
@@ -928,11 +843,7 @@ export class Ped extends BaseEntity {
   }
 
   public setHeadOverlayOpacity(overlayId: number, opacity: number): void {
-    this.setHeadOverlay(
-      overlayId,
-      this.getHeadOverlayValue(overlayId),
-      opacity,
-    );
+    this.setHeadOverlay(overlayId, this.getHeadOverlayValue(overlayId), opacity);
   }
 
   public setHeadOverlayColor(overlayId: number, color: number): void {
@@ -972,30 +883,11 @@ export class Ped extends BaseEntity {
     );
   }
 
-  public getHeadBlend():
-    | [
-        number,
-        number,
-        number,
-        number,
-        number,
-        number,
-        number,
-        number,
-        number,
-        boolean,
-      ]
-    | void {
+  public getHeadBlend(): [number, number, number, number, number, number, number, number, number, boolean] | null {
     const buffer = new ArrayBuffer(80);
 
-    if (
-      !(Citizen.invokeNative(
-        "0x2746BD9D88C5C5D0",
-        this.handle,
-        new Float32Array(buffer),
-      ) as unknown)
-    ) {
-      return undefined;
+    if (!(Citizen.invokeNative("0x2746BD9D88C5C5D0", this.handle, new Float32Array(buffer)) as unknown)) {
+      return null;
     }
 
     const {
@@ -1008,11 +900,7 @@ export class Ped extends BaseEntity {
       18: isParent,
     } = new Uint32Array(buffer);
 
-    const {
-      0: shapeMix,
-      2: skinMix,
-      4: thirdMix,
-    } = new Float32Array(buffer, 48);
+    const { 0: shapeMix, 2: skinMix, 4: thirdMix } = new Float32Array(buffer, 48);
 
     return [
       shapeFirstId,

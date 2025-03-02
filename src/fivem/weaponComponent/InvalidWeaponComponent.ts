@@ -6,7 +6,6 @@ import { Game } from "../Game";
 
 export class InvalidWeaponComponent extends WeaponComponent {
   constructor() {
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     super(null!, null!, WeaponComponentHash.Invalid);
   }
 
@@ -14,7 +13,6 @@ export class InvalidWeaponComponent extends WeaponComponent {
     return false;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
   public set Active(value: boolean) {}
 
   public get DisplayName(): string {
@@ -25,12 +23,7 @@ export class InvalidWeaponComponent extends WeaponComponent {
     return Game.getGXTEntry(this.DisplayName);
   }
 
-  public static getAttachmentPoint(
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    hash: WeaponHash,
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    componentHash: WeaponComponentHash,
-  ): ComponentAttachmentPoint {
+  public static getAttachmentPoint(hash: WeaponHash, componentHash: WeaponComponentHash): ComponentAttachmentPoint {
     return ComponentAttachmentPoint.Invalid;
   }
 }

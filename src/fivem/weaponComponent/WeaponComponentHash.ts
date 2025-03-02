@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-duplicate-enum-values */
-
 /**
  * weapon component hash
  * refer: https://wiki.rage.mp/index.php?title=Weapons_Components

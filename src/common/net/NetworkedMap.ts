@@ -14,9 +14,7 @@ enum MapChangeType {
   Init,
 }
 
-type MapChanges<K, V> =
-  | [MapChangeType, K?, V?]
-  | [MapChangeType.SubValueChanged, K, string, any];
+type MapChanges<K, V> = [MapChangeType, K?, V?] | [MapChangeType.SubValueChanged, K, string, any];
 
 declare function msgpack_pack(data: any): Buffer;
 declare function msgpack_unpack(data: Buffer): any;
@@ -39,28 +37,21 @@ class NetworkedMapEventManager {
       return;
     }
     $CLIENT: {
-      RegisterResourceAsEventHandler(
-        `${GlobalData.CurrentResource}:syncChanges`,
-      );
-      addRawEventListener(
-        `${GlobalData.CurrentResource}:syncChanges`,
-        (msgpack_data: any) => {
-          const data = msgpack_unpack(msgpack_data);
-          const syncName = data[0];
-          const syncData = data[1];
+      RegisterResourceAsEventHandler(`${GlobalData.CurrentResource}:syncChanges`);
+      addRawEventListener(`${GlobalData.CurrentResource}:syncChanges`, (msgpack_data: any) => {
+        const data = msgpack_unpack(msgpack_data);
+        const syncName = data[0];
+        const syncData = data[1];
 
-          const map = this.#syncedCalls.get(syncName);
+        const map = this.#syncedCalls.get(syncName);
 
-          if (!map) {
-            throw new Error(
-              `Tried to sync changes for a networked map but ${syncName} does't exist.`,
-            );
-          }
+        if (!map) {
+          throw new Error(`Tried to sync changes for a networked map but ${syncName} does't exist.`);
+        }
 
-          // @ts-ignore
-          map.handleSync(syncData);
-        },
-      );
+        // @ts-ignore
+        map.handleSync(syncData);
+      });
     }
   }
 
@@ -121,10 +112,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
    * NOTE: This doesn't check that the player is already subscribed to the map, you should do your own due-diligence to only call this for players already subscribed
    */
   resync(source: number) {
-    const packed_data = msgpack_pack([
-      this.#syncName,
-      [[MapChangeType.Init, this.size === 0 ? [] : Array.from(this)]],
-    ]);
+    const packed_data = msgpack_pack([this.#syncName, [[MapChangeType.Init, this.size === 0 ? [] : Array.from(this)]]]);
     TriggerClientEventInternal(
       `${GlobalData.CurrentResource}:syncChanges`,
       source as any,
@@ -236,12 +224,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
             curMap.#pushChangeForListener(key, target);
 
             $SERVER: {
-              curMap.#queuedChanges.push([
-                MapChangeType.SubValueChanged,
-                key,
-                p as string,
-                newValue,
-              ]);
+              curMap.#queuedChanges.push([MapChangeType.SubValueChanged, key, p as string, newValue]);
             }
           }
           return success;
@@ -263,7 +246,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
    * Resets the map to its default state
    */
   clear(): void {
-    $CLIENT: throw new Error(`Cannot call 'clear' on client`);
+    $CLIENT: if (GlobalData.IS_CLIENT) throw new Error(`Cannot call 'clear' on client`);
     // if we're clearing our map then we want to remove all queued changes and
     // just push a reset
     this.#queuedChanges = [];
@@ -272,7 +255,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   }
 
   delete(key: K): boolean {
-    $CLIENT: throw new Error(`Cannot call 'delete' on client`);
+    $CLIENT: if (GlobalData.IS_CLIENT) throw new Error(`Cannot call 'delete' on client`);
     this.#queuedChanges.push([MapChangeType.Remove, key]);
     return super.delete(key);
   }

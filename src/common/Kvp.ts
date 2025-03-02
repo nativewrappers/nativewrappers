@@ -46,42 +46,24 @@ export class Kvp<Schema extends KvpSchema> {
    * Sets the value associated with a key as a number.
    * @param async set the value using an async operation.
    */
-  public setNumber<K extends string & keyof Schema>(
-    key: K,
-    value: number,
-    async = false,
-  ): void {
-    return async
-      ? SetResourceKvpIntNoSync(key, value as number)
-      : SetResourceKvpInt(key, value as number);
+  public setNumber<K extends string & keyof Schema>(key: K, value: number, async = false): void {
+    return async ? SetResourceKvpIntNoSync(key, value as number) : SetResourceKvpInt(key, value as number);
   }
 
   /**
    * Sets the value associated with a key as a float.
    * @param async set the value using an async operation.
    */
-  public setFloat<K extends string & keyof Schema>(
-    key: K,
-    value: number,
-    async = false,
-  ): void {
-    return async
-      ? SetResourceKvpFloatNoSync(key, value)
-      : SetResourceKvpFloat(key, value);
+  public setFloat<K extends string & keyof Schema>(key: K, value: number, async = false): void {
+    return async ? SetResourceKvpFloatNoSync(key, value) : SetResourceKvpFloat(key, value);
   }
 
   /**
    * Sets the value associated with a key as a string.
    * @param async set the value using an async operation.
    */
-  public setString<K extends string & keyof Schema>(
-    key: K,
-    value: string,
-    async = false,
-  ): void {
-    return async
-      ? SetResourceKvpNoSync(key, value)
-      : SetResourceKvp(key, value);
+  public setString<K extends string & keyof Schema>(key: K, value: string, async = false): void {
+    return async ? SetResourceKvpNoSync(key, value) : SetResourceKvp(key, value);
   }
 
   /**
@@ -103,11 +85,7 @@ export class Kvp<Schema extends KvpSchema> {
    */
   public set<K extends string, O = KvpObject<K>>(
     key: K extends keyof Schema ? K : O extends string ? K : never,
-    value: K extends keyof Schema
-      ? Schema[K]
-      : O extends string
-        ? Schema[O]
-        : never,
+    value: K extends keyof Schema ? Schema[K] : O extends string ? Schema[O] : never,
     async = false,
   ): void {
     switch (typeof value) {
@@ -121,9 +99,7 @@ export class Kvp<Schema extends KvpSchema> {
       case "boolean":
         (value as any) = value ? 1 : 0;
       case "number":
-        return Number.isInteger(value)
-          ? this.setNumber(key, value, async)
-          : this.setFloat(key, value, async);
+        return Number.isInteger(value) ? this.setNumber(key, value, async) : this.setFloat(key, value, async);
       default:
         (value as any) = String(value);
         return this.setString(key, value as string, async);
@@ -169,17 +145,13 @@ export class Kvp<Schema extends KvpSchema> {
    * Returns an array of keys which match or contain the given keys.
    */
   public getKeys<K extends (string & keyof Schema) | string[]>(prefix: K) {
-    return typeof prefix === "string"
-      ? this.getAllKeys(prefix)
-      : prefix.flatMap((key) => this.getAllKeys(key));
+    return typeof prefix === "string" ? this.getAllKeys(prefix) : prefix.flatMap((key) => this.getAllKeys(key));
   }
 
   /**
    * Get all values from keys in an array as the specified type.
    */
-  public getValuesAsType<
-    K extends (string & keyof Schema) | (string & keyof Schema)[],
-  >(prefix: K, type: any) {
+  public getValuesAsType<K extends (string & keyof Schema) | (string & keyof Schema)[]>(prefix: K, type: any) {
     const values = this.getKeys(prefix);
 
     return values.map((key) => {

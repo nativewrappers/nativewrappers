@@ -1,9 +1,5 @@
 import { Attributes } from "../Attribute";
-import type {
-  eDamageCleanliness,
-  KnockOffVehicle,
-  TamingState,
-} from "../enums/Ped";
+import type { eDamageCleanliness, KnockOffVehicle, TamingState } from "../enums/Ped";
 import type { VehicleSeat } from "../enums/VehicleSeat";
 import { _N, type Vector3 } from "../utils";
 import { BaseEntity } from "./BaseEntity";
@@ -25,11 +21,7 @@ export class Ped extends BaseEntity {
    * @param blockingFlags you can find blocking flags [here](https://github.com/Halen84/RDR3-Native-Flags-And-Enums/blob/main/ADD_SCENARIO_BLOCKING_AREA/README.md)
    * @returns the scenarioId that can be used in {@link removeScenarioBlock} to unblock
    */
-  static blockScenariosInArea(
-    vec1: Vector3,
-    vec2: Vector3,
-    blockingFlags: number,
-  ): number {
+  static blockScenariosInArea(vec1: Vector3, vec2: Vector3, blockingFlags: number): number {
     return AddScenarioBlockingArea(
       vec1.x,
       vec1.y,
@@ -130,11 +122,7 @@ export class Ped extends BaseEntity {
    */
   get Mount(): Ped | null {
     // GET_LAST_MOUNT
-    const pedId = _N<number>(
-      "0x4C8B59171957BCF7",
-      this.Handle,
-      Citizen.resultAsInteger(),
-    );
+    const pedId = _N<number>("0x4C8B59171957BCF7", this.Handle, Citizen.resultAsInteger());
     return pedId ? new Ped(pedId) : null;
   }
 
@@ -143,11 +131,7 @@ export class Ped extends BaseEntity {
    */
   get LeadingHorse(): Ped | null {
     // GET_LAST_LED_MOUNT
-    const pedId = _N<number>(
-      "0x693126B5D0457D0D",
-      this.Handle,
-      Citizen.resultAsInteger(),
-    );
+    const pedId = _N<number>("0x693126B5D0457D0D", this.Handle, Citizen.resultAsInteger());
     return pedId ? new Ped(pedId) : null;
   }
 
@@ -156,30 +140,18 @@ export class Ped extends BaseEntity {
    */
   get Owner(): Ped | null {
     // _GET_ACTIVE_ANIMAL_OWNER
-    const pedId = _N<number>(
-      "0xF103823FFE72BB49",
-      this.Handle,
-      Citizen.resultAsInteger(),
-    );
+    const pedId = _N<number>("0xF103823FFE72BB49", this.Handle, Citizen.resultAsInteger());
     return pedId ? new Ped(pedId) : null;
   }
 
   get TamingState(): TamingState {
     // _GET_HORSE_TAMING_STATE
-    return _N<TamingState>(
-      "0x454AD4DA6C41B5BD",
-      this.Handle,
-      Citizen.resultAsInteger(),
-    );
+    return _N<TamingState>("0x454AD4DA6C41B5BD", this.Handle, Citizen.resultAsInteger());
   }
 
   get IsInteractingWithAnimal(): boolean {
     // _IS_ANIMAL_INTERACTION_RUNNING
-    return _N<boolean>(
-      "0x7FC84E85D98F063D",
-      this.Handle,
-      Citizen.resultAsInteger(),
-    );
+    return _N<boolean>("0x7FC84E85D98F063D", this.Handle, Citizen.resultAsInteger());
   }
 
   get IsSittingInAnyVehicle(): boolean {
@@ -212,11 +184,7 @@ export class Ped extends BaseEntity {
 
   get IsSliding(): boolean {
     // _IS_PED_SLIDING
-    return _N<boolean>(
-      "0xD6740E14E4CEFC0B",
-      this.Handle,
-      Citizen.resultAsInteger(),
-    );
+    return _N<boolean>("0xD6740E14E4CEFC0B", this.Handle, Citizen.resultAsInteger());
   }
 
   get IsJumping(): boolean {
@@ -229,11 +197,7 @@ export class Ped extends BaseEntity {
 
   get IsClimbingLadder(): boolean {
     // _IS_PED_CLIMBING_LADDER
-    return _N<boolean>(
-      "0x59643424B68D52B5",
-      this.Handle,
-      Citizen.resultAsInteger(),
-    );
+    return _N<boolean>("0x59643424B68D52B5", this.Handle, Citizen.resultAsInteger());
   }
 
   get IsVaulting(): boolean {
@@ -273,30 +237,18 @@ export class Ped extends BaseEntity {
   }
 
   get IsInCombatRoll(): boolean {
-    return _N<boolean>(
-      "0xC48A9EB0D499B3E5",
-      this.Handle,
-      Citizen.resultAsInteger(),
-    );
+    return _N<boolean>("0xC48A9EB0D499B3E5", this.Handle, Citizen.resultAsInteger());
   }
 
   get CrouchMovement(): boolean {
-    return _N<boolean>(
-      "0xD5FE956C70FF370B",
-      this.Handle,
-      Citizen.resultAsInteger(),
-    );
+    return _N<boolean>("0xD5FE956C70FF370B", this.Handle, Citizen.resultAsInteger());
   }
 
   /**
    * returns true if {@link DamageCleanliness} was ever lower than {@link eDamageCleanliness.Good}
    */
   get IsDamaged(): boolean {
-    return _N<boolean>(
-      "0x6CFC373008A1EDAF",
-      this.Handle,
-      Citizen.resultAsInteger(),
-    );
+    return _N<boolean>("0x6CFC373008A1EDAF", this.Handle, Citizen.resultAsInteger());
   }
 
   set IsDamaged(damaged: boolean) {
@@ -305,11 +257,7 @@ export class Ped extends BaseEntity {
   }
 
   get DamageCleanliness(): eDamageCleanliness {
-    return _N<eDamageCleanliness>(
-      "0x88EFFED5FE8B0B4A",
-      this.Handle,
-      Citizen.resultAsInteger(),
-    );
+    return _N<eDamageCleanliness>("0x88EFFED5FE8B0B4A", this.Handle, Citizen.resultAsInteger());
   }
 
   set DamageCleanliness(cleanliness: eDamageCleanliness) {
@@ -355,12 +303,7 @@ export class Ped extends BaseEntity {
 
   isInteractionPossible(animal: Ped): boolean {
     // IS_ANIMAL_INTERACTION_POSSIBLE
-    return _N<boolean>(
-      "0xD543D3A8FDE4F185",
-      this.Handle,
-      animal.Handle,
-      Citizen.resultAsInteger(),
-    );
+    return _N<boolean>("0xD543D3A8FDE4F185", this.Handle, animal.Handle, Citizen.resultAsInteger());
   }
 
   isOnVehicle(vehicle: Vehicle): boolean {
@@ -409,13 +352,7 @@ export class Ped extends BaseEntity {
   }
 
   damage(amount: number, boneId = 0, killer?: Ped): void {
-    ApplyDamageToPed(
-      this.Handle,
-      amount,
-      0,
-      boneId,
-      killer ? killer.Handle : 0,
-    );
+    ApplyDamageToPed(this.Handle, amount, 0, boneId, killer ? killer.Handle : 0);
   }
 
   /**
@@ -441,14 +378,8 @@ export class Ped extends BaseEntity {
    * @param copyHeadBlend whether to copy the peds head blend
    * @returns the cloned ped
    */
-  clone(
-    network: boolean,
-    bScriptHostPed: boolean,
-    copyHeadBlend: boolean,
-  ): Ped {
-    return new Ped(
-      ClonePed(this.Handle, network, bScriptHostPed, copyHeadBlend),
-    );
+  clone(network: boolean, bScriptHostPed: boolean, copyHeadBlend: boolean): Ped {
+    return new Ped(ClonePed(this.Handle, network, bScriptHostPed, copyHeadBlend));
   }
 
   /**
@@ -466,18 +397,8 @@ export class Ped extends BaseEntity {
     AddArmourToPed(this.Handle, amount);
   }
 
-  applyDamage(
-    damageAmount: number,
-    boneId = 0,
-    pedKiller: Ped | null = null,
-  ): void {
-    ApplyDamageToPed(
-      this.Handle,
-      damageAmount,
-      0,
-      boneId,
-      pedKiller ? pedKiller.Handle : 0,
-    );
+  applyDamage(damageAmount: number, boneId = 0, pedKiller: Ped | null = null): void {
+    ApplyDamageToPed(this.Handle, damageAmount, 0, boneId, pedKiller ? pedKiller.Handle : 0);
   }
 
   /**

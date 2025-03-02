@@ -34,9 +34,7 @@ export class RelationshipGroup {
    * @param targetGroup The other relationship group.
    * @returns The relationship
    */
-  public getRelationshipBetweenGroups(
-    targetGroup: RelationshipGroup,
-  ): Relationship {
+  public getRelationshipBetweenGroups(targetGroup: RelationshipGroup): Relationship {
     return GetRelationshipBetweenGroups(this.Hash, targetGroup.Hash);
   }
 
@@ -52,18 +50,10 @@ export class RelationshipGroup {
     relationship: Relationship,
     biDirectionally = false,
   ): void {
-    SetRelationshipBetweenGroups(
-      Number(relationship),
-      this.Hash,
-      targetGroup.Hash,
-    );
+    SetRelationshipBetweenGroups(Number(relationship), this.Hash, targetGroup.Hash);
 
     if (biDirectionally) {
-      SetRelationshipBetweenGroups(
-        Number(relationship),
-        targetGroup.Hash,
-        this.Hash,
-      );
+      SetRelationshipBetweenGroups(Number(relationship), targetGroup.Hash, this.Hash);
     }
   }
 
@@ -79,18 +69,10 @@ export class RelationshipGroup {
     relationship: Relationship,
     biDirectionally = false,
   ): void {
-    ClearRelationshipBetweenGroups(
-      Number(relationship),
-      this.Hash,
-      targetGroup.Hash,
-    );
+    ClearRelationshipBetweenGroups(Number(relationship), this.Hash, targetGroup.Hash);
 
     if (biDirectionally) {
-      ClearRelationshipBetweenGroups(
-        Number(relationship),
-        targetGroup.Hash,
-        this.Hash,
-      );
+      ClearRelationshipBetweenGroups(Number(relationship), targetGroup.Hash, this.Hash);
     }
   }
 

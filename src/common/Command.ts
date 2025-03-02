@@ -26,9 +26,7 @@ type MappedParameters<T extends Parameter[]> = {
   [K in T[number] as K["name"]]: ParameterTypes[K["type"]];
 } & { source: number; raw: string };
 
-type CommandHandler<T extends Parameter[]> = (
-  args: MappedParameters<T>,
-) => void | Promise<void>;
+type CommandHandler<T extends Parameter[]> = (args: MappedParameters<T>) => void | Promise<void>;
 
 function registerCommand(
   name: string | string[],
@@ -56,8 +54,7 @@ function registerCommand(
 
     if (Array.isArray(restricted)) {
       for (const principal of restricted) {
-        if (!IsPrincipalAceAllowed(principal, ace))
-          ExecuteCommand(`add_ace ${restricted} ${ace} allow`);
+        if (!IsPrincipalAceAllowed(principal, ace)) ExecuteCommand(`add_ace ${restricted} ${ace} allow`);
       }
     }
   }
@@ -76,19 +73,12 @@ export class Command<T extends Parameter[] = Parameter[]> {
     this.#handler = handler;
     this.name = `/${name}`;
 
-    registerCommand(
-      name,
-      (source: number, args: string[], raw: string) =>
-        this.call(source, args, raw),
-      restricted,
-    );
+    registerCommand(name, (source: number, args: string[], raw: string) => this.call(source, args, raw), restricted);
 
     if (params) {
       for (const parameter of params) {
         if (parameter.type) {
-          parameter.help = parameter.help
-            ? `${parameter.help} (type: ${parameter.type})`
-            : `(type: ${parameter.type})`;
+          parameter.help = parameter.help ? `${parameter.help} (type: ${parameter.type})` : `(type: ${parameter.type})`;
         }
       }
 
@@ -105,11 +95,7 @@ export class Command<T extends Parameter[] = Parameter[]> {
     }
   }
 
-  private mapArguments(
-    source: number,
-    args: string[],
-    raw: string,
-  ): MappedParameters<T> | null {
+  private mapArguments(source: number, args: string[], raw: string): MappedParameters<T> | null {
     const mapped = {
       source,
       raw,
@@ -138,8 +124,7 @@ export class Command<T extends Parameter[] = Parameter[]> {
           $CLIENT: {
             value = arg === "me" ? GetPlayerServerId(PlayerId()) : +arg;
 
-            if (!value || GetPlayerFromServerId(value as number) === -1)
-              value = undefined;
+            if (!value || GetPlayerFromServerId(value as number) === -1) value = undefined;
           }
 
           break;
@@ -164,11 +149,7 @@ export class Command<T extends Parameter[] = Parameter[]> {
     return result ? mapped : null;
   }
 
-  public async call(
-    source: number,
-    args: string[],
-    raw: string = args.join(" "),
-  ) {
+  public async call(source: number, args: string[], raw: string = args.join(" ")) {
     const parsed = this.mapArguments(source, args, raw);
 
     if (!parsed) return;
@@ -176,9 +157,7 @@ export class Command<T extends Parameter[] = Parameter[]> {
     try {
       await this.#handler(parsed);
     } catch (err: any) {
-      Citizen.trace(
-        `^1command '${raw.split(" ")[0] || raw}' failed to execute!^0\n${err.message}`,
-      );
+      Citizen.trace(`^1command '${raw.split(" ")[0] || raw}' failed to execute!^0\n${err.message}`);
     }
   }
 }

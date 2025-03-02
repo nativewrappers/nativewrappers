@@ -69,15 +69,7 @@ export abstract class ParticleEffect {
     this.rotation = rotation;
     if (this.IsActive) {
       const off = this.offset; // TODO Matrix stuff to access from memory
-      SetParticleFxLoopedOffsets(
-        this.Handle,
-        off.x,
-        off.y,
-        off.z,
-        rotation.x,
-        rotation.y,
-        rotation.z,
-      );
+      SetParticleFxLoopedOffsets(this.Handle, off.x, off.y, off.z, rotation.x, rotation.y, rotation.z);
     }
   }
 

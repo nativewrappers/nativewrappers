@@ -1,10 +1,4 @@
-import {
-  type AnimationFlags,
-  DrivingStyle,
-  FiringPattern,
-  type LeaveVehicleFlags,
-  VehicleSeat,
-} from "./enums";
+import { type AnimationFlags, DrivingStyle, FiringPattern, type LeaveVehicleFlags, VehicleSeat } from "./enums";
 import { Ped, type Vehicle } from "./models";
 import { BaseEntity } from "./models/BaseEntity";
 import type { TaskSequence } from "./TaskSequence";
@@ -31,18 +25,8 @@ export class Tasks {
   }
 
   public aimAt(target: BaseEntity | Vector3, duration: number): void {
-    if (target instanceof BaseEntity)
-      TaskAimGunAtEntity(this.ped.Handle, target.Handle, duration, false);
-    else
-      TaskAimGunAtCoord(
-        this.ped.Handle,
-        target.x,
-        target.y,
-        target.z,
-        duration,
-        false,
-        false,
-      );
+    if (target instanceof BaseEntity) TaskAimGunAtEntity(this.ped.Handle, target.Handle, duration, false);
+    else TaskAimGunAtCoord(this.ped.Handle, target.x, target.y, target.z, duration, false, false);
   }
 
   public arrest(ped: Ped): void {
@@ -78,26 +62,11 @@ export class Tasks {
   }
 
   public chaseWithPlane(target: BaseEntity, offset: Vector3): void {
-    TaskPlaneChase(
-      this.ped.Handle,
-      target.Handle,
-      offset.x,
-      offset.y,
-      offset.z,
-    );
+    TaskPlaneChase(this.ped.Handle, target.Handle, offset.x, offset.y, offset.z);
   }
 
-  public cruiseWithVehicle(
-    vehicle: Vehicle,
-    speed: number,
-    drivingstyle = DrivingStyle.None,
-  ): void {
-    TaskVehicleDriveWander(
-      this.ped.Handle,
-      vehicle.Handle,
-      speed,
-      drivingstyle,
-    );
+  public cruiseWithVehicle(vehicle: Vehicle, speed: number, drivingstyle = DrivingStyle.None): void {
+    TaskVehicleDriveWander(this.ped.Handle, vehicle.Handle, speed, drivingstyle);
   }
 
   public driveTo(
@@ -119,12 +88,7 @@ export class Tasks {
     );
   }
 
-  public enterAnyVehicle(
-    seat = VehicleSeat.Any,
-    timeout = -1,
-    speed = 0,
-    flag = 0,
-  ): void {
+  public enterAnyVehicle(seat = VehicleSeat.Any, timeout = -1, speed = 0, flag = 0): void {
     TaskEnterVehicle(this.ped.Handle, 0, timeout, seat, speed, flag, 0);
   }
 
@@ -142,12 +106,7 @@ export class Tasks {
 
   public fightAgainstHatedTargets(radius: number, duration?: number): void {
     if (duration) {
-      TaskCombatHatedTargetsAroundPedTimed(
-        this.ped.Handle,
-        radius,
-        duration,
-        0,
-      );
+      TaskCombatHatedTargetsAroundPedTimed(this.ped.Handle, radius, duration, 0);
     } else {
       TaskCombatHatedTargetsAroundPed(this.ped.Handle, radius, 0);
     }
@@ -155,14 +114,7 @@ export class Tasks {
 
   public fleeFrom(pedOrPosition: Ped | Vector3, duration = -1): void {
     if (pedOrPosition instanceof Ped) {
-      TaskSmartFleePed(
-        this.ped.Handle,
-        pedOrPosition.Handle,
-        100,
-        duration,
-        false,
-        false,
-      );
+      TaskSmartFleePed(this.ped.Handle, pedOrPosition.Handle, 100, duration, false, false);
     } else {
       TaskSmartFleeCoord(
         this.ped.Handle,
@@ -241,25 +193,12 @@ export class Tasks {
     }
   }
 
-  public goToEntity(
-    target: BaseEntity,
-    offset: Vector3 | null = null,
-    timeout = -1,
-  ): void {
+  public goToEntity(target: BaseEntity, offset: Vector3 | null = null, timeout = -1): void {
     if (offset === null) {
       offset = new Vector3(0, 0, 0);
     }
 
-    TaskGotoEntityOffsetXy(
-      this.ped.Handle,
-      target.Handle,
-      timeout,
-      offset.x,
-      offset.y,
-      offset.z,
-      1,
-      true,
-    );
+    TaskGotoEntityOffsetXy(this.ped.Handle, target.Handle, timeout, offset.x, offset.y, offset.z, 1, true);
   }
 
   public guardCurrentPosition(): void {
@@ -270,11 +209,7 @@ export class Tasks {
     TaskHandsUp(this.ped.Handle, duration, 0, -1, false);
   }
 
-  public landPlane(
-    startPosition: Vector3,
-    touchdownPosition: Vector3,
-    plane: Vehicle | null = null,
-  ): void {
+  public landPlane(startPosition: Vector3, touchdownPosition: Vector3, plane: Vehicle | null = null): void {
     if (plane === null) {
       plane = this.ped.CurrentVehicle;
     }
@@ -306,36 +241,15 @@ export class Tasks {
 
   public lookAt(targetOrPosition: BaseEntity | Vector3, duration = -1): void {
     if (targetOrPosition instanceof BaseEntity)
-      TaskLookAtEntity(
-        this.ped.Handle,
-        targetOrPosition.Handle,
-        duration,
-        0,
-        2,
-      );
-    else
-      TaskLookAtCoord(
-        this.ped.Handle,
-        targetOrPosition.x,
-        targetOrPosition.y,
-        targetOrPosition.z,
-        duration,
-        0,
-        2,
-      );
+      TaskLookAtEntity(this.ped.Handle, targetOrPosition.Handle, duration, 0, 2);
+    else TaskLookAtCoord(this.ped.Handle, targetOrPosition.x, targetOrPosition.y, targetOrPosition.z, duration, 0, 2);
   }
 
   public parachuteTo(position: Vector3): void {
     TaskParachuteToTarget(this.ped.Handle, position.x, position.y, position.z);
   }
 
-  public parkVehicle(
-    vehicle: Vehicle,
-    position: Vector3,
-    heading: number,
-    radius = 20,
-    keepEngineOn = false,
-  ): void {
+  public parkVehicle(vehicle: Vehicle, position: Vector3, heading: number, radius = 20, keepEngineOn = false): void {
     TaskVehiclePark(
       this.ped.Handle,
       vehicle.Handle,
@@ -396,27 +310,10 @@ export class Tasks {
     TaskReloadWeapon(this.ped.Handle, true);
   }
 
-  public shootAt(
-    targetOrPosition: Ped | Vector3,
-    duration = -1,
-    pattern = FiringPattern.Default,
-  ): void {
-    if (targetOrPosition instanceof Ped)
-      TaskShootAtEntity(
-        this.ped.Handle,
-        targetOrPosition.Handle,
-        duration,
-        pattern,
-      );
+  public shootAt(targetOrPosition: Ped | Vector3, duration = -1, pattern = FiringPattern.Default): void {
+    if (targetOrPosition instanceof Ped) TaskShootAtEntity(this.ped.Handle, targetOrPosition.Handle, duration, pattern);
     else
-      TaskShootAtCoord(
-        this.ped.Handle,
-        targetOrPosition.x,
-        targetOrPosition.y,
-        targetOrPosition.z,
-        duration,
-        pattern,
-      );
+      TaskShootAtCoord(this.ped.Handle, targetOrPosition.x, targetOrPosition.y, targetOrPosition.z, duration, pattern);
   }
 
   public shuffleToNextVehicleSeat(vehicle: Vehicle): void {
@@ -428,14 +325,7 @@ export class Tasks {
   }
 
   public slideTo(position: Vector3, heading: number, duration = 0.7): void {
-    TaskPedSlideToCoord(
-      this.ped.Handle,
-      position.x,
-      position.y,
-      position.z,
-      heading,
-      duration,
-    );
+    TaskPedSlideToCoord(this.ped.Handle, position.x, position.y, position.z, heading, duration);
   }
 
   public standStill(duration: number): void {
@@ -469,19 +359,8 @@ export class Tasks {
 
   public turnTo(targetOrPosition: BaseEntity | Vector3, duration = -1): void {
     if (targetOrPosition instanceof BaseEntity)
-      TaskTurnPedToFaceEntity(
-        this.ped.Handle,
-        targetOrPosition.Handle,
-        duration,
-      );
-    else
-      TaskTurnPedToFaceCoord(
-        this.ped.Handle,
-        targetOrPosition.x,
-        targetOrPosition.y,
-        targetOrPosition.z,
-        duration,
-      );
+      TaskTurnPedToFaceEntity(this.ped.Handle, targetOrPosition.Handle, duration);
+    else TaskTurnPedToFaceCoord(this.ped.Handle, targetOrPosition.x, targetOrPosition.y, targetOrPosition.z, duration);
   }
 
   public useParachute(): void {
@@ -513,16 +392,7 @@ export class Tasks {
   }
 
   public wanderAround(position?: Vector3, radius?: number): void {
-    if (position && radius)
-      TaskWanderInArea(
-        this.ped.Handle,
-        position.x,
-        position.y,
-        position.z,
-        radius,
-        0,
-        0,
-      );
+    if (position && radius) TaskWanderInArea(this.ped.Handle, position.x, position.y, position.z, radius, 0, 0);
     else TaskWanderStandard(this.ped.Handle, 0, 0);
   }
 

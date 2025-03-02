@@ -62,17 +62,8 @@ export class Player {
     return cfx.Player(this.ServerId).state;
   }
 
-  public AddStateBagChangeHandler(
-    keyFilter: string | null,
-    handler: StateBagChangeHandler,
-  ): number {
-    // keyFilter is casted to any because it can take a null value.
-    /* eslint-disable @typescript-eslint/no-explicit-any */
-    const cookie = AddStateBagChangeHandler(
-      keyFilter as any,
-      `player:${this.ServerId}`,
-      handler,
-    );
+  public AddStateBagChangeHandler(keyFilter: string | null, handler: StateBagChangeHandler): number {
+    const cookie = AddStateBagChangeHandler(keyFilter as any, `player:${this.ServerId}`, handler);
     this.stateBagCookies.push(cookie);
     return cookie;
   }
@@ -83,16 +74,13 @@ export class Player {
    * @param handler the function to handle the change
    * @returns a cookie to be used in RemoveStateBagChangeHandler
    */
-  public listenForStateChange(
-    keyFilter: string | null,
-    handler: StateBagChangeHandler,
-  ): number {
+  public listenForStateChange(keyFilter: string | null, handler: StateBagChangeHandler): number {
     return this.AddStateBagChangeHandler(keyFilter, handler);
   }
 
   public removeStateListener(tgtCookie: number): void {
     this.stateBagCookies = this.stateBagCookies.filter((cookie) => {
-      const isCookie = cookie == tgtCookie;
+      const isCookie = cookie === tgtCookie;
       if (isCookie) RemoveStateBagChangeHandler(cookie);
       return isCookie;
     });
@@ -167,9 +155,9 @@ export class Player {
   public get IsInvincible(): boolean {
     if (IsDuplicityVersion()) {
       return GetPlayerInvincible(this.handle);
-    } else {
-      return GetPlayerInvincible_2(this.handle);
     }
+
+    return GetPlayerInvincible_2(this.handle);
   }
 
   public get MaxArmor(): number {

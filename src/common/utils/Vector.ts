@@ -96,18 +96,10 @@ type Vec4Swizzle = `${VectorKey}${VectorKey}${VectorKey}${VectorKey}`;
  * A base vector class inherited by all vector classes.
  */
 abstract class Vector {
-  protected static create<T>(
-    this: T,
-    x: number | Vec,
-    y: number = x as number,
-    z?: number,
-    w?: number,
-  ) {
+  protected static create<T>(this: T, x: number | Vec, y: number = x as number, z?: number, w?: number) {
     if (typeof x === "object") ({ x, y, z, w } = x);
 
-    const size =
-      (this instanceof Vector && this.size) ||
-      [x, y, z, w].filter((arg) => arg !== undefined).length;
+    const size = (this instanceof Vector && this.size) || [x, y, z, w].filter((arg) => arg !== undefined).length;
 
     switch (size) {
       case 1:
@@ -127,10 +119,7 @@ abstract class Vector {
    * @param obj The vector to clone.
    * @returns A new vector instance that is a copy of the provided vector.
    */
-  public static clone<T extends VectorType, U extends VectorLike>(
-    this: T,
-    obj: U,
-  ) {
+  public static clone<T extends VectorType, U extends VectorLike>(this: T, obj: U) {
     return this.create(obj);
   }
 
@@ -139,17 +128,13 @@ abstract class Vector {
    * @param msgpackBuffer The buffer containing binary data.
    * @returns A new vector instance.
    */
-  public static fromBuffer<T extends VectorType>(
-    this: T,
-    { buffer, type }: MsgpackBuffer,
-  ) {
+  public static fromBuffer<T extends VectorType>(this: T, { buffer, type }: MsgpackBuffer) {
     if (type !== EXT_VECTOR2 && type !== EXT_VECTOR3 && type !== EXT_VECTOR4)
       throw new Error("Buffer type is not a valid Vector.");
 
     const arr = new Array(buffer.length / 4);
 
-    for (let i = 0; i < arr.length; i++)
-      arr[i] = Number(buffer.readFloatLE(i * 4).toPrecision(7));
+    for (let i = 0; i < arr.length; i++) arr[i] = Number(buffer.readFloatLE(i * 4).toPrecision(7));
 
     return this.fromArray(arr);
   }
@@ -185,11 +170,7 @@ abstract class Vector {
    * @param b - The second vector or scalar value.
    * @returns A new vector with incremented components.
    */
-  public static add<T extends VectorType, U extends VectorLike>(
-    this: T,
-    a: U,
-    b: VectorLike | number,
-  ) {
+  public static add<T extends VectorType, U extends VectorLike>(this: T, a: U, b: VectorLike | number) {
     return this.operate(a, b, (x, y) => x + y);
   }
 
@@ -209,11 +190,7 @@ abstract class Vector {
    * @param y - The value to add to the y-component.
    * @returns A new vector with the y-component incremented.
    */
-  public static addY<T extends VectorType, U extends VectorLike>(
-    this: T,
-    obj: U,
-    y: number,
-  ) {
+  public static addY<T extends VectorType, U extends VectorLike>(this: T, obj: U, y: number) {
     return this.create(obj.x, obj.y + y, obj.z, obj.w) as unknown as U;
   }
 
@@ -223,17 +200,8 @@ abstract class Vector {
    * @param z - The value to add to the z-component.
    * @returns A new vector with the z-component incremented.
    */
-  public static addZ<T extends VectorType, U extends Vec3 | Vec4>(
-    this: T,
-    obj: U,
-    z: number,
-  ) {
-    return this.create(
-      obj.x,
-      obj.y,
-      obj.z + z,
-      (obj as Vec4).w,
-    ) as unknown as U;
+  public static addZ<T extends VectorType, U extends Vec3 | Vec4>(this: T, obj: U, z: number) {
+    return this.create(obj.x, obj.y, obj.z + z, (obj as Vec4).w) as unknown as U;
   }
 
   /**
@@ -242,11 +210,7 @@ abstract class Vector {
    * @param w - The value to add to the w-component.
    * @returns A new vector with the w-component incremented.
    */
-  public static addW<T extends VectorType, U extends Vec4>(
-    this: T,
-    obj: U,
-    w: number,
-  ) {
+  public static addW<T extends VectorType, U extends Vec4>(this: T, obj: U, w: number) {
     return this.create(obj.x, obj.y, obj.z, obj.w + w) as unknown as U;
   }
 
@@ -256,11 +220,7 @@ abstract class Vector {
    * @param b - The second vector or scalar value.
    * @returns A new vector with subtracted components.
    */
-  public static subtract<T extends VectorType, U extends VectorLike>(
-    this: T,
-    a: U,
-    b: VectorLike | number,
-  ): U {
+  public static subtract<T extends VectorType, U extends VectorLike>(this: T, a: U, b: VectorLike | number): U {
     return this.operate(a, b, (x, y) => x - y) as U;
   }
 
@@ -270,11 +230,7 @@ abstract class Vector {
    * @param b - The second vector or scalar value.
    * @returns A new vector with multiplied components.
    */
-  public static multiply<T extends VectorType, U extends VectorLike>(
-    this: T,
-    a: U,
-    b: VectorLike | number,
-  ): U {
+  public static multiply<T extends VectorType, U extends VectorLike>(this: T, a: U, b: VectorLike | number): U {
     return this.operate(a, b, (x, y) => x * y) as U;
   }
 
@@ -284,11 +240,7 @@ abstract class Vector {
    * @param b - The second vector or scalar vector.
    * @returns A new vector with divided components.
    */
-  public static divide<T extends VectorType, U extends VectorLike>(
-    this: T,
-    a: U,
-    b: VectorLike | number,
-  ): U {
+  public static divide<T extends VectorType, U extends VectorLike>(this: T, a: U, b: VectorLike | number): U {
     return this.operate(a, b, (x, y) => x / y);
   }
 
@@ -311,10 +263,8 @@ abstract class Vector {
     x = operator(Math.abs(x), isNumber ? b : Math.abs(b.x ?? 0));
     y = operator(Math.abs(y), isNumber ? b : Math.abs(b.y ?? 0));
 
-    if (z !== undefined)
-      z = operator(Math.abs(z), isNumber ? b : Math.abs(b.z ?? 0));
-    if (w !== undefined)
-      w = operator(Math.abs(w), isNumber ? b : Math.abs(b.w ?? 0));
+    if (z !== undefined) z = operator(Math.abs(z), isNumber ? b : Math.abs(b.z ?? 0));
+    if (w !== undefined) w = operator(Math.abs(w), isNumber ? b : Math.abs(b.w ?? 0));
 
     return this.create(x, y, z, w) as unknown as U;
   }
@@ -325,11 +275,7 @@ abstract class Vector {
    * @param b - The second vector or scalar value.
    * @returns A new vector with incremented components.
    */
-  public static addAbsolute<T extends VectorType, U extends VectorLike>(
-    this: T,
-    a: U,
-    b: VectorLike | number,
-  ): U {
+  public static addAbsolute<T extends VectorType, U extends VectorLike>(this: T, a: U, b: VectorLike | number): U {
     return this.operateAbsolute(a, b, (x, y) => x + y) as U;
   }
 
@@ -339,11 +285,7 @@ abstract class Vector {
    * @param b - The second vector or scalar value.
    * @returns A new vector with subtracted components.
    */
-  public static subtractAbsolute<T extends VectorType, U extends VectorLike>(
-    this: T,
-    a: U,
-    b: VectorLike | number,
-  ): U {
+  public static subtractAbsolute<T extends VectorType, U extends VectorLike>(this: T, a: U, b: VectorLike | number): U {
     return this.operateAbsolute(a, b, (x, y) => x - y) as U;
   }
 
@@ -353,11 +295,7 @@ abstract class Vector {
    * @param b - The second vector or scalar value.
    * @returns A new vector with multiplied components.
    */
-  public static multiplyAbsolute<T extends VectorType, U extends VectorLike>(
-    this: T,
-    a: U,
-    b: VectorLike | number,
-  ): U {
+  public static multiplyAbsolute<T extends VectorType, U extends VectorLike>(this: T, a: U, b: VectorLike | number): U {
     return this.operateAbsolute(a, b, (x, y) => x * y) as U;
   }
 
@@ -367,11 +305,7 @@ abstract class Vector {
    * @param b - The second vector or scalar vector.
    * @returns A new vector with divided components.
    */
-  public static divideAbsolute<T extends VectorType, U extends VectorLike>(
-    this: T,
-    a: U,
-    b: VectorLike | number,
-  ): U {
+  public static divideAbsolute<T extends VectorType, U extends VectorLike>(this: T, a: U, b: VectorLike | number): U {
     return this.operateAbsolute(a, b, (x, y) => x / y);
   }
 
@@ -381,11 +315,7 @@ abstract class Vector {
    * @param b - The second vector.
    * @returns A scalar value representing the degree of alignment between the input vectors.
    */
-  public static dotProduct<T extends VectorType, U extends VectorLike>(
-    this: T,
-    a: U,
-    b: U,
-  ): number {
+  public static dotProduct<T extends VectorType, U extends VectorLike>(this: T, a: U, b: U): number {
     let result = 0;
 
     for (const key of ["x", "y", "z", "w"] as (keyof U)[]) {
@@ -393,8 +323,7 @@ abstract class Vector {
       const y = b[key] as number | undefined;
 
       if (!!x && !!y) result += x * y;
-      else if (x || y)
-        throw new Error("Vectors must have the same dimensions.");
+      else if (x || y) throw new Error("Vectors must have the same dimensions.");
     }
 
     return result;
@@ -406,11 +335,7 @@ abstract class Vector {
    * @param b - The second vector.
    * @returns A new vector perpendicular to both input vectors.
    */
-  public static crossProduct<T extends VectorType, U extends Vec3 | Vec4>(
-    this: T,
-    a: U,
-    b: U,
-  ) {
+  public static crossProduct<T extends VectorType, U extends Vec3 | Vec4>(this: T, a: U, b: U) {
     const { x: ax, y: ay, z: az, w: aw } = a as Vec;
     const { x: bx, y: by, z: bz } = b;
 
@@ -422,16 +347,9 @@ abstract class Vector {
       by === undefined ||
       bz === undefined
     )
-      throw new Error(
-        "Vector.crossProduct requires two three-dimensional vectors.",
-      );
+      throw new Error("Vector.crossProduct requires two three-dimensional vectors.");
 
-    return this.create(
-      ay * bz - az * by,
-      az * bx - ax * bz,
-      ax * by - ay * bx,
-      aw,
-    ) as unknown as U;
+    return this.create(ay * bz - az * by, az * bx - ax * bz, ax * by - ay * bx, aw) as unknown as U;
   }
 
   /**
@@ -439,10 +357,7 @@ abstract class Vector {
    * @param vector - The vector to be normalized.
    * @returns The new normalized vector.
    */
-  public static normalize<T extends VectorType, U extends VectorLike>(
-    this: T,
-    a: U,
-  ): U {
+  public static normalize<T extends VectorType, U extends VectorLike>(this: T, a: U): U {
     const length = a instanceof Vector ? a.Length : this.Length(a);
     return this.divide(a, length) as U;
   }
@@ -451,10 +366,7 @@ abstract class Vector {
    * Creates a vector from an array of numbers.
    * @param primitive An array of numbers (usually returned by a native).
    */
-  static fromArray<T extends VectorType, U extends VectorArray<T> | number[]>(
-    this: T,
-    primitive: U,
-  ) {
+  static fromArray<T extends VectorType, U extends VectorArray<T> | number[]>(this: T, primitive: U) {
     const [x, y, z, w] = primitive;
     return this.create(x, y, z, w) as InstanceType<T>;
   }
@@ -463,12 +375,11 @@ abstract class Vector {
    * Creates a vector from an array or object containing vector components.
    * @param primitive The object to use as a vector.
    */
-  static fromObject<
-    T extends VectorType,
-    U extends InferVector<T> | VectorArray<T>,
-  >(this: T, primitive: U | MsgpackBuffer): InstanceType<T> {
-    if (Array.isArray(primitive))
-      return this.fromArray(primitive as VectorArray<T>);
+  static fromObject<T extends VectorType, U extends InferVector<T> | VectorArray<T>>(
+    this: T,
+    primitive: U | MsgpackBuffer,
+  ): InstanceType<T> {
+    if (Array.isArray(primitive)) return this.fromArray(primitive as VectorArray<T>);
 
     if ("buffer" in primitive) return this.fromBuffer(primitive);
 
@@ -481,10 +392,7 @@ abstract class Vector {
    * Creates an array of vectors from an array of number arrays
    * @param primitives A multi-dimensional array of number arrays
    */
-  public static fromArrays<T extends VectorType, U extends VectorArray<T>[]>(
-    this: T,
-    primitives: U,
-  ) {
+  public static fromArrays<T extends VectorType, U extends VectorArray<T>[]>(this: T, primitives: U) {
     return primitives.map(this.fromArray) as InstanceType<T>[];
   }
 
@@ -493,10 +401,7 @@ abstract class Vector {
    * @param obj - The vector for which to calculate the length.
    * @returns The magnitude of the vector.
    */
-  public static Length<T extends VectorType, U extends VectorLike>(
-    this: T,
-    obj: U,
-  ): number {
+  public static Length<T extends VectorType, U extends VectorLike>(this: T, obj: U): number {
     let sum = 0;
 
     for (const key of ["x", "y", "z", "w"] as (keyof U)[]) {
@@ -527,9 +432,7 @@ abstract class Vector {
     for (let i = 0; i < arguments.length; i++) {
       if (typeof arguments[i] !== "number") {
         throw new TypeError(
-          `${
-            this.constructor.name
-          } argument at index ${i} must be a number, but got ${typeof arguments[i]}`,
+          `${this.constructor.name} argument at index ${i} must be a number, but got ${typeof arguments[i]}`,
         );
       }
     }
@@ -697,13 +600,8 @@ abstract class Vector {
 
   public swizzle<T extends VectorSwizzle>(
     components: T,
-  ): T extends Vec2Swizzle
-    ? Vector2
-    : T extends Vec3Swizzle
-      ? Vector3
-      : Vector4 {
-    if (!/^[xyzw]+$/.test(components))
-      throw new Error(`Invalid key in swizzle components (${components}).`);
+  ): T extends Vec2Swizzle ? Vector2 : T extends Vec3Swizzle ? Vector3 : Vector4 {
+    if (!/^[xyzw]+$/.test(components)) throw new Error(`Invalid key in swizzle components (${components}).`);
 
     const arr = components.split("").map((char) => (this as any)[char] ?? 0);
 

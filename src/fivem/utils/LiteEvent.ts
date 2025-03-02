@@ -1,11 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unsafe-declaration-merging */
-
-export interface LiteEvent {
-  on(handler: (...args: unknown[]) => any): void;
-  off(handler: (...args: unknown[]) => any): void;
-}
-
 export class LiteEvent implements LiteEvent {
   private handlers: ((...args: unknown[]) => any)[] = [];
 

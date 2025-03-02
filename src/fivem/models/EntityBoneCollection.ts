@@ -15,9 +15,7 @@ export class EntityBoneCollection {
   public getBone(boneIndex?: number, boneName?: string): EntityBone {
     return new EntityBone(
       this.owner,
-      boneIndex
-        ? boneIndex
-        : GetEntityBoneIndexByName(this.owner.Handle, boneName ?? ""),
+      boneIndex ? boneIndex : GetEntityBoneIndexByName(this.owner.Handle, boneName ?? ""),
     );
   }
 

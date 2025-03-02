@@ -6,10 +6,7 @@ import { Wait } from "..";
  * @param waitTime how long to wait for the dictionary to load
  * @returns {boolean} if the animation successfully loaded
  */
-export const LoadAnimDict = async (
-  animDict: string,
-  waitTime = 1000,
-): Promise<boolean> => {
+export const LoadAnimDict = async (animDict: string, waitTime = 1000): Promise<boolean> => {
   const start = GetGameTimer();
 
   if (!HasAnimDictLoaded(animDict)) {
@@ -30,10 +27,7 @@ export const LoadAnimDict = async (
  * @param waitTime how long to wait for the dictionary to load
  * @returns if the animation successfully loaded, if the animation failed to load it will return an array of animations that failed to load
  */
-export const LoadAnimDictArray = async (
-  animDict: string[],
-  waitTime = 1000,
-): Promise<[boolean, string[] | null]> => {
+export const LoadAnimDictArray = async (animDict: string[], waitTime = 1000): Promise<[boolean, string[] | null]> => {
   const start = GetGameTimer();
 
   for (const dict of animDict) {
@@ -50,8 +44,7 @@ export const LoadAnimDictArray = async (
       }
     }
 
-    if (GetGameTimer() - start >= waitTime)
-      return [false, animDict.filter((dict) => !animsLoaded.has(dict))];
+    if (GetGameTimer() - start >= waitTime) return [false, animDict.filter((dict) => !animsLoaded.has(dict))];
     await Wait(0);
   }
 

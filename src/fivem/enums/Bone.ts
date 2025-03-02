@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/naming-convention */
 export enum Bone {
   INVALID = -1,
   SKEL_ROOT,

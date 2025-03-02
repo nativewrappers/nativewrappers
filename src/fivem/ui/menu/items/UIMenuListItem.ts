@@ -1,6 +1,6 @@
 import { Menu, Sprite, Text } from "../../";
 import { Alignment, Font } from "../../../enums";
-import { Color, LiteEvent, Point, Size, String } from "../../../utils";
+import { Color, LiteEvent, Point, Size, _String } from "../../../utils";
 import type { ListItem } from "../modules/";
 import { UIMenuItem } from "./";
 
@@ -20,34 +20,11 @@ export class UIMenuListItem extends UIMenuItem {
   private _items: ListItem[] = [];
   private _textWidth = 0;
 
-  constructor(
-    text: string,
-    items: ListItem[],
-    startIndex = 0,
-    description?: string,
-    arrowOnlyOnSelected = true,
-  ) {
+  constructor(text: string, items: ListItem[], startIndex = 0, description?: string, arrowOnlyOnSelected = true) {
     super(text, description);
-    this._leftArrow = new Sprite(
-      "commonmenu",
-      "arrowleft",
-      new Point(),
-      new Size(30, 30),
-    );
-    this._rightArrow = new Sprite(
-      "commonmenu",
-      "arrowright",
-      new Point(),
-      new Size(30, 30),
-    );
-    this._itemText = new Text(
-      "",
-      new Point(),
-      0.35,
-      Color.White,
-      Font.ChaletLondon,
-      Alignment.Right,
-    );
+    this._leftArrow = new Sprite("commonmenu", "arrowleft", new Point(), new Size(30, 30));
+    this._rightArrow = new Sprite("commonmenu", "arrowright", new Point(), new Size(30, 30));
+    this._itemText = new Text("", new Point(), 0.35, Color.White, Font.ChaletLondon, Alignment.Right);
     this.ArrowOnlyOnSelected = arrowOnlyOnSelected;
     this.Items = items;
     this.Index = startIndex;
@@ -88,12 +65,7 @@ export class UIMenuListItem extends UIMenuItem {
     if (!this._items.length) {
       return;
     }
-    value =
-      value < 0
-        ? this._items.length - 1
-        : value > this._items.length - 1
-          ? 0
-          : value;
+    value = value < 0 ? this._items.length - 1 : value > this._items.length - 1 ? 0 : value;
     this._index = value;
     this._textWidth = 0;
   }
@@ -107,15 +79,11 @@ export class UIMenuListItem extends UIMenuItem {
   }
 
   public get IsMouseInBoundsOfLeftArrow(): boolean {
-    return this.parent
-      ? this.parent.isMouseInBounds(this._leftArrow.pos, this._leftArrow.size)
-      : false;
+    return this.parent ? this.parent.isMouseInBounds(this._leftArrow.pos, this._leftArrow.size) : false;
   }
 
   public get IsMouseInBoundsOfRightArrow(): boolean {
-    return this.parent
-      ? this.parent.isMouseInBounds(this._rightArrow.pos, this._rightArrow.size)
-      : false;
+    return this.parent ? this.parent.isMouseInBounds(this._rightArrow.pos, this._rightArrow.size) : false;
   }
 
   public setVerticalPosition(y: number): void {
@@ -131,16 +99,10 @@ export class UIMenuListItem extends UIMenuItem {
     if (this._textWidth === undefined) {
       const caption = this._getSelectedItemCaption();
       this._itemText.caption = caption;
-      this._textWidth = String.measureString(
-        caption,
-        this._itemText.font,
-        this._itemText.scale,
-        Menu.screenWidth,
-      );
+      this._textWidth = _String.measureString(caption, this._itemText.font, this._itemText.scale, Menu.screenWidth);
     }
 
-    this._rightArrow.pos.X =
-      this.offset.X + (this.parent ? this.parent.WidthOffset : 0) + 400;
+    this._rightArrow.pos.X = this.offset.X + (this.parent ? this.parent.WidthOffset : 0) + 400;
     this._itemText.pos.X = this._rightArrow.pos.X + 5;
 
     this._itemText.color = this.enabled
@@ -155,8 +117,7 @@ export class UIMenuListItem extends UIMenuItem {
       this._leftArrow.color = this._itemText.color;
       this._rightArrow.color = this._itemText.color;
 
-      this._leftArrow.pos.X =
-        this._itemText.pos.X - this._textWidth - this._leftArrow.size.width + 5;
+      this._leftArrow.pos.X = this._itemText.pos.X - this._textWidth - this._leftArrow.size.width + 5;
 
       this._leftArrow.draw(Menu.screenResolution);
       this._rightArrow.draw(Menu.screenResolution);

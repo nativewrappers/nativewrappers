@@ -17,21 +17,21 @@ export abstract class Game {
       return 0;
     }
 
-    if (!this.useHashCache) {
+    if (!Game.useHashCache) {
       return GetHashKey(input);
     }
 
-    const _hash = this.hashCache.get(input);
-    if (_hash) return _hash;
-    const hash = GetHashKey(input);
-    this.hashCache.set(input, hash);
+    let hash = Game.hashCache.get(input);
+
+    if (!hash) {
+      hash = GetHashKey(input);
+      Game.hashCache.set(input, hash);
+    }
+
     return hash;
   }
 
-  public static setLocalPlayerGhosted(
-    isGhosted: boolean,
-    inverseGhost: boolean,
-  ) {
+  public static setLocalPlayerGhosted(isGhosted: boolean, inverseGhost: boolean) {
     // @ts-ignore
     SetLocalPlayerAsGhost(isGhosted, inverseGhost);
   }
@@ -83,7 +83,7 @@ export abstract class Game {
    * Gets the current frame rate per second
    */
   public static get FPS(): number {
-    return 1 / this.LastFrameTime;
+    return 1 / Game.LastFrameTime;
   }
 
   /**
@@ -98,14 +98,11 @@ export abstract class Game {
    */
   public static get Player(): Player {
     const handle = PlayerId();
-    if (
-      this.cachedPlayer === undefined ||
-      handle !== this.cachedPlayer.Handle
-    ) {
-      this.cachedPlayer = new Player(handle);
+    if (Game.cachedPlayer === undefined || handle !== Game.cachedPlayer.Handle) {
+      Game.cachedPlayer = new Player(handle);
     }
 
-    return this.cachedPlayer;
+    return Game.cachedPlayer;
   }
 
   /**
@@ -113,17 +110,15 @@ export abstract class Game {
    * @returns A local player's character.
    */
   public static get PlayerPed(): Ped {
-    return this.Player.Character;
+    return Game.Player.Character;
   }
 
   /**
    * Get an iterable list of players currently on server.
    * @returns Iterable list of Player objects.
    */
-  public static *playerList(
-    excludeLocalPlayer = false,
-  ): IterableIterator<Player> {
-    const localPlayer = this.Player;
+  public static *playerList(excludeLocalPlayer = false): IterableIterator<Player> {
+    const localPlayer = Game.Player;
     for (const id of GetActivePlayers() as number[]) {
       if (excludeLocalPlayer && localPlayer.Handle === id) {
         continue;
@@ -137,14 +132,14 @@ export abstract class Game {
    * @returns True if enabled.
    */
   public static get PlayerVersusPlayer(): boolean {
-    return this.Player.PvPEnabled;
+    return Game.Player.PvPEnabled;
   }
 
   /**
    * Set whether PvP is enabled.
    */
   public static set PlayerVersusPlayer(value: boolean) {
-    this.Player.PvPEnabled = value;
+    Game.Player.PvPEnabled = value;
   }
 
   /**
@@ -291,10 +286,7 @@ export abstract class Game {
    * @param control Control
    * @returns True or False.
    */
-  public static isControlPressed(
-    inputMode: InputMode,
-    control: Control,
-  ): boolean {
+  public static isControlPressed(inputMode: InputMode, control: Control): boolean {
     return IsControlPressed(inputMode, Number(control));
   }
 
@@ -305,10 +297,7 @@ export abstract class Game {
    * @param control Control
    * @returns True or False.
    */
-  public static isDisabledControlPressed(
-    inputMode: InputMode,
-    control: Control,
-  ): boolean {
+  public static isDisabledControlPressed(inputMode: InputMode, control: Control): boolean {
     return IsDisabledControlPressed(inputMode, Number(control));
   }
 
@@ -319,10 +308,7 @@ export abstract class Game {
    * @param control Control
    * @returns True or False.
    */
-  public static isControlJustPressed(
-    inputMode: InputMode,
-    control: Control,
-  ): boolean {
+  public static isControlJustPressed(inputMode: InputMode, control: Control): boolean {
     return IsControlJustPressed(inputMode, Number(control));
   }
 
@@ -333,10 +319,7 @@ export abstract class Game {
    * @param control Control
    * @returns True or False.
    */
-  public static isDisabledControlJustPressed(
-    inputMode: InputMode,
-    control: Control,
-  ): boolean {
+  public static isDisabledControlJustPressed(inputMode: InputMode, control: Control): boolean {
     return IsDisabledControlJustPressed(inputMode, Number(control));
   }
 
@@ -347,10 +330,7 @@ export abstract class Game {
    * @param control Control
    * @returns True or False.
    */
-  public static isControlReleased(
-    inputMode: InputMode,
-    control: Control,
-  ): boolean {
+  public static isControlReleased(inputMode: InputMode, control: Control): boolean {
     return IsControlReleased(inputMode, Number(control));
   }
 
@@ -361,10 +341,7 @@ export abstract class Game {
    * @param control Control
    * @returns True or False.
    */
-  public static isDisabledControlReleased(
-    inputMode: InputMode,
-    control: Control,
-  ): boolean {
+  public static isDisabledControlReleased(inputMode: InputMode, control: Control): boolean {
     return IsDisabledControlReleased(inputMode, Number(control));
   }
 
@@ -375,10 +352,7 @@ export abstract class Game {
    * @param control Control
    * @returns True or False.
    */
-  public static isControlJustReleased(
-    inputMode: InputMode,
-    control: Control,
-  ): boolean {
+  public static isControlJustReleased(inputMode: InputMode, control: Control): boolean {
     return IsControlJustReleased(inputMode, Number(control));
   }
 
@@ -389,10 +363,7 @@ export abstract class Game {
    * @param control Control
    * @returns True or False.
    */
-  public static isDisabledControlJustReleased(
-    inputMode: InputMode,
-    control: Control,
-  ): boolean {
+  public static isDisabledControlJustReleased(inputMode: InputMode, control: Control): boolean {
     return IsDisabledControlJustReleased(inputMode, Number(control));
   }
 
@@ -403,10 +374,7 @@ export abstract class Game {
    * @param control Control
    * @returns True or False.
    */
-  public static isControlEnabled(
-    inputMode: InputMode,
-    control: Control,
-  ): boolean {
+  public static isControlEnabled(inputMode: InputMode, control: Control): boolean {
     return IsControlEnabled(inputMode, Number(control));
   }
 
@@ -416,10 +384,7 @@ export abstract class Game {
    * @param inputMode InputMode
    * @param control Control
    */
-  public static enableControlThisFrame(
-    inputMode: InputMode,
-    control: Control,
-  ): void {
+  public static enableControlThisFrame(inputMode: InputMode, control: Control): void {
     EnableControlAction(inputMode, Number(control), true);
   }
 
@@ -429,10 +394,7 @@ export abstract class Game {
    * @param inputMode InputMode
    * @param control Control
    */
-  public static disableControlThisFrame(
-    inputMode: InputMode,
-    control: Control,
-  ): void {
+  public static disableControlThisFrame(inputMode: InputMode, control: Control): void {
     DisableControlAction(inputMode, Number(control), true);
   }
 
@@ -510,9 +472,9 @@ export abstract class Game {
   public static doesGXTEntryExist(entry: number | string): boolean {
     if (typeof entry === "number") {
       return DoesTextLabelExist(entry.toString());
-    } else {
-      return DoesTextLabelExist(entry);
     }
+
+    return DoesTextLabelExist(entry);
   }
 
   /**
@@ -559,14 +521,14 @@ export abstract class Game {
   }
 
   public static get WaypointPosition(): Vector3 {
-    const waypointBlip = this.getWaypointBlip();
+    const waypointBlip = Game.getWaypointBlip();
 
     if (waypointBlip == null) {
       return Vector3.Zero;
     }
 
     const position = waypointBlip.Position;
-    position.z = this.getGroundHeight(position);
+    position.z = Game.getGroundHeight(position);
 
     return position;
   }

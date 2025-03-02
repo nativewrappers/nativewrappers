@@ -1,6 +1,7 @@
 {
   "files": {
-    "include": ["./src/**/*.ts"]
+    "include": ["./src/**/*.ts"],
+    "ignore": ["**/*.d.ts"]
   },
   "linter": {
     "enabled": true,
@@ -9,7 +10,9 @@
         "noConfusingLabels": "off",
         "noAssignInExpressions": "off",
         "noExplicitAny": "off",
-        "noFallthroughSwitchClause": "off"
+        "noFallthroughSwitchClause": "off",
+        "noGlobalIsNan": "off",
+        "noControlCharactersInRegex": "off"
       },
       "correctness": {
         "noUnusedLabels": "off",
@@ -18,7 +21,20 @@
       "style": {
         "useEnumInitializers": "off",
         "noNonNullAssertion": "off",
-        "noParameterAssign": "off"
+        "noParameterAssign": "off",
+        "noArguments": "off",
+        "noUnusedTemplateLiteral": {
+          "fix": "safe"
+        }
+      },
+      "performance": {
+        "noDelete": "off"
+      },
+      "complexity": {
+        "noForEach": "off",
+        "noUselessConstructor": "off",
+        "noStaticOnlyClass": "off",
+        "noThisInStatic": "off"
       }
     }
   },
@@ -29,7 +45,7 @@
     "attributePosition": "auto",
     "indentStyle": "space",
     "indentWidth": 2,
-    "lineWidth": 80,
+    "lineWidth": 120,
     "lineEnding": "lf"
   },
   "javascript": {
