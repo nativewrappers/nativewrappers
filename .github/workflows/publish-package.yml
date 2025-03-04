@@ -35,7 +35,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         run: |
-          packages=(fivem redm server)
+          packages=(fivem redm server common)
           for package in "${packages[@]}"; do
             if [ -f "./lib/$package/package.json" ]; then
               pnpm publish --no-git-checks --access public "./lib/$package"
