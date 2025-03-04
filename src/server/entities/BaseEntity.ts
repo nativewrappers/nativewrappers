@@ -5,6 +5,7 @@ import type { PopulationType } from "../enum/PopulationType";
 import type { Hash } from "../type/Hash";
 import { Vector4 } from "../utils";
 import { Vector3 } from "../utils";
+import { OrphanMode } from "server/enum";
 
 export class BaseEntity {
   protected type = ClassTypes.Entity;
@@ -147,6 +148,14 @@ export class BaseEntity {
 
   public get IsNoLongerNeeded(): boolean {
     return HasEntityBeenMarkedAsNoLongerNeeded(this.handle);
+  }
+
+  public get OrphanMode() {
+    return GetEntityOrphanMode(this.Handle);
+  }
+
+  public set OrphanMode(orphanMode: OrphanMode) {
+    SetEntityOrphanMode(this.Handle, orphanMode);
   }
 
   public delete() {
