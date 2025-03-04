@@ -114,5 +114,6 @@ createBuilder([
   {
     name: "common",
     title: "Common Utilities",
+    options: {}
   },
 ]);
