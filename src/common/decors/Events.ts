@@ -82,7 +82,6 @@ export function NetEvent(eventName: string, remoteOnly = true) {
       throw new Error("NetEvent does not work on private methods, please mark the method as public");
     }
     context.addInitializer(function () {
-      const t = this;
       onNet(eventName, (...args: any[]) => {
         const src = source;
         try {
@@ -91,7 +90,7 @@ export function NetEvent(eventName: string, remoteOnly = true) {
               return;
             }
           }
-          return originalMethod.call(t, ...args);
+          return originalMethod.call(this, ...args);
         } catch (e) {
           REMOVE_NET_EVENT_LOG: {
             if (!GlobalData.EnablePrettyPrint) return;
