@@ -109,4 +109,8 @@ createBuilder([
       dropLabels: ["$SERVER"],
     },
   },
+  {
+    name: "common",
+    title: "Common Utilities",
+  },
 ]);
