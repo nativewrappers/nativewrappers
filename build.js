@@ -51,7 +51,7 @@ async function createBuilder(environments) {
             },
           },
         ],
-        dropLabels: [...(options.dropLabels || [])],
+        dropLabels: [...(options.dropLabels ?? [])],
       };
 
       if (watch) {
@@ -68,7 +68,9 @@ async function createBuilder(environments) {
 
   for (const { name, title } of environments) {
     await copyFile("README.md", `./lib/${name}/README.md`);
-    await copyDir("./lib/common/", `./lib/${name}/common`);
+    if (name !== "common") {
+      await copyDir("./lib/common/", `./lib/${name}/common`);
+    }
     await replaceTscAliasPaths({ outDir: `./lib/${name}/` });
     await writeFile(
       `./lib/${name}/package.json`,
@@ -112,8 +114,5 @@ createBuilder([
   {
     name: "common",
     title: "Common Utilities",
-    options: {
-      dropLabels: []
-    }
   },
 ]);
