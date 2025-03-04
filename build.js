@@ -112,5 +112,8 @@ createBuilder([
   {
     name: "common",
     title: "Common Utilities",
+    options: {
+      dropLabels: []
+    }
   },
 ]);
