@@ -9,7 +9,7 @@
   "private": true,
   "license": "MIT",
   "type": "module",
-  "version": "0.0.78",
+  "version": "0.0.79",
   "publishConfig": {
     "directory": "lib"
   },
