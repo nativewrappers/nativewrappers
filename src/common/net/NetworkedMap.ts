@@ -66,7 +66,8 @@ class NetworkedMapEventManager {
   }
 }
 
-const netManager = new NetworkedMapEventManager();
+// esbuild will remove this if NetworkedMap isn't used
+const netManager /* @__PURE__ */ = new NetworkedMapEventManager();
 
 /**
  * not ready to be used just thoughts right now
