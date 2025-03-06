@@ -13,4 +13,6 @@ export * from "./GameConstants";
 export * from "./RelationshipGroup";
 export * from "./Attribute";
 
+export * from "./Model";
+
 export * from "@common/index";
