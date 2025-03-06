@@ -1,5 +1,3 @@
-import { GlobalData } from "./GlobalData";
-
 type Restricted = boolean | string | string[];
 
 interface ParameterTypes {
