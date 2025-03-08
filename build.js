@@ -20,7 +20,7 @@ const packageTemplate = {
 
 /**
  * Creates a build process using esbuild.
- * @param {{ name: string; title: string, options: esbuild.BuildOptions }[]} environments
+ * @param {{ name: string; title: string, options?: esbuild.BuildOptions }[]} environments
  */
 async function createBuilder(environments) {
   const watch = process.argv.includes("--watch");
@@ -51,7 +51,7 @@ async function createBuilder(environments) {
             },
           },
         ],
-        dropLabels: [...(options.dropLabels ?? [])],
+        dropLabels: [...(options?.dropLabels ?? [])],
       };
 
       if (watch) {
@@ -67,21 +67,29 @@ async function createBuilder(environments) {
   );
 
   for (const { name, title } of environments) {
-    await copyFile("README.md", `./lib/${name}/README.md`);
-    await copyDir("./lib/common/", `./lib/${name}/common`);
-    await replaceTscAliasPaths({ outDir: `./lib/${name}/` });
-    await writeFile(
-      `./lib/${name}/package.json`,
-      JSON.stringify(
-        {
-          name: `@nativewrappers/${name}`,
-          description: `Native wrappers and utilities for use with ${title}.`,
-          ...packageTemplate,
+    if (name !== "common")
+      await copyDir("./lib/common/", `./lib/${name}/common`, {
+        filter: async (src) => {
+          return src.endsWith("/") || src.endsWith(".d.ts");
         },
-        null,
-        2,
+      });
+
+    await replaceTscAliasPaths({ outDir: `./lib/${name}/` });
+    await Promise.all([
+      copyFile("README.md", `./lib/${name}/README.md`),
+      writeFile(
+        `./lib/${name}/package.json`,
+        JSON.stringify(
+          {
+            name: `@nativewrappers/${name}`,
+            description: `Native wrappers and utilities for use with ${title}.`,
+            ...packageTemplate,
+          },
+          null,
+          2,
+        ),
       ),
-    );
+    ]);
   }
 
   if (!watch) process.exit(0);
@@ -108,5 +116,9 @@ createBuilder([
     options: {
       dropLabels: ["$SERVER"],
     },
+  },
+  {
+    name: "common",
+    title: "Cfx scripting runtimes",
   },
 ]);

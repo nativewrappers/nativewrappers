@@ -1,6 +1,6 @@
 {
   "files": {
-    "include": ["./src/**/*.ts"],
+    "include": ["./src/**/*.ts", "./build.js"],
     "ignore": ["**/*.d.ts"]
   },
   "linter": {
