@@ -16,7 +16,10 @@ const packageTemplate = {
   homepage: repoPackage.homepage,
   keywords: repoPackage.keywords,
   files: repoPackage.files,
-  exports: { "./*": "./*" },
+  exports: {
+    ".": "./index.js",
+    "./*": "./*",
+  },
 };
 
 async function generateIndex(dir) {
