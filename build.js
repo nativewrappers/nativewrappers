@@ -29,9 +29,10 @@ async function generateIndex(dir) {
 
   const exports = files
     .filter((file) => file !== "index.js" && extname(file) === ".js")
-    .map((file) => `export * from "./${file.replace(/\\/g, "/")}";`);
+    .map((file) => `export * from "./${file.replace(/\\/g, "/").slice(0, -3)}";`)
+    .join("\n");
 
-  return writeFile(`${dir}/index.js`, exports.join("\n"));
+  return [writeFile(`${dir}/index.js`, exports), writeFile(`${dir}/index.d.ts`, exports)];
 }
 
 /**
@@ -97,8 +98,8 @@ async function createBuilder(environments) {
 
     await replaceTscAliasPaths({ outDir });
     await Promise.all([
+      ...(await generateIndex(outDir)),
       copyFile("README.md", `./lib/${name}/README.md`),
-      generateIndex(outDir),
       writeFile(
         `./lib/${name}/package.json`,
         JSON.stringify(

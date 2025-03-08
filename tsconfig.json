@@ -15,7 +15,10 @@
     "skipLibCheck": true,
     "types": ["@types/node"],
     "paths": {
-      "@common/*": ["./common/*"]
+      "@common/*": ["./common/*"],
+      "@fivem/*": ["./fivem/*"],
+      "@redm/*": ["./redm/*"],
+      "@server/*": ["./server/*"],
     }
   },
   "include": ["src/**/*"],
