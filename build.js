@@ -31,7 +31,7 @@ async function createBuilder(environments) {
         entryPoints: [`./src/${name}/**/*.ts`],
         keepNames: true,
         legalComments: "inline",
-        bundle: true,
+        // bundle: true,
         treeShaking: true,
         format: "esm",
         outdir: `./lib/${name}`,
@@ -68,11 +68,14 @@ async function createBuilder(environments) {
 
   for (const { name, title } of environments) {
     if (name !== "common")
-      await copyDir("./lib/common/", `./lib/${name}/common`, {
+      await copyDir(
+        "./lib/common/",
+        `./lib/${name}/common` /*{
         filter: async (src) => {
           return src.endsWith("/") || src.endsWith(".d.ts");
         },
-      });
+      }*/,
+      );
 
     await replaceTscAliasPaths({ outDir: `./lib/${name}/` });
     await Promise.all([
