@@ -1,4 +1,4 @@
-import type { Vector3 } from "@common/utils";
+import type { Vector3 } from "@common/utils/Vector";
 import { Prop } from "redm/entities/Prop";
 import type { Model } from "redm/Model";
 

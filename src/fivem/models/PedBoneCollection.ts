@@ -1,4 +1,6 @@
-import { EntityBoneCollection, type Ped, PedBone } from "./";
+import { EntityBoneCollection } from "./EntityBoneCollection";
+import type { Ped } from "./Ped";
+import { PedBone } from "./PedBone";
 
 export class PedBoneCollection extends EntityBoneCollection {
   constructor(owner: Ped) {

@@ -1,5 +1,5 @@
+import type { VehicleModType } from "fivem/enums/Vehicle";
 import type { Vehicle } from "./Vehicle";
-import type { VehicleModType } from "../enums";
 
 export class VehicleMod {
   private _owner: Vehicle;

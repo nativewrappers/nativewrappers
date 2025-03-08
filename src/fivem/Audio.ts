@@ -1,6 +1,6 @@
-import type { AudioFlag } from "./enums";
+import type { Vector3 } from "@common/utils/Vector";
+import type { AudioFlag } from "./enums/AudioFlag";
 import type { BaseEntity } from "./models/BaseEntity";
-import type { Vector3 } from "./utils";
 
 export abstract class Audio {
   public static playSoundAt(position: Vector3, sound: string, set?: string, generateSoundId = true): number {

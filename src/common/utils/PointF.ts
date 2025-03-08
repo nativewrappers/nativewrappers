@@ -1,4 +1,4 @@
-export class PointF implements PointF {
+export class PointF {
   public static empty(): PointF {
     return new PointF(0, 0, 0);
   }

@@ -1,7 +1,11 @@
-import { Menu, Sprite } from "../../";
-import { Color, LiteEvent, Point, Size } from "../../../utils";
-import { UIMenuItem } from "./";
-import { CheckboxStyle } from "../../../enums";
+import { Color } from "@common/utils/Color";
+import { CheckboxStyle } from "fivem/enums/CheckboxStyle";
+import { Sprite } from "fivem/ui/Sprite";
+import { LiteEvent } from "fivem/utils/LiteEvent";
+import { Point } from "fivem/utils/Point";
+import { Size } from "fivem/utils/Size";
+import { Menu } from "../Menu";
+import { UIMenuItem } from "./UIMenuItem";
 
 export class UIMenuCheckboxItem extends UIMenuItem {
   public readonly checkboxChanged = new LiteEvent();

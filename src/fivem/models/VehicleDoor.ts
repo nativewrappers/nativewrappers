@@ -1,5 +1,5 @@
+import type { VehicleDoorIndex } from "fivem/enums/Vehicle";
 import type { Vehicle } from "./Vehicle";
-import type { VehicleDoorIndex } from "../enums";
 
 export class VehicleDoor {
   private _owner: Vehicle;

@@ -1,4 +1,4 @@
-import { Player } from "./entities";
+import { Player } from "./entities/Player";
 
 // Constants that will never change throughout the lifetime of the player
 export class GameConstants {

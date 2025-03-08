@@ -1,17 +1,21 @@
-import { Ped, VehicleDoorCollection, VehicleModCollection, VehicleWheelCollection, VehicleWindowCollection } from "./";
+import { Vector3 } from "@common/utils/Vector";
+import type { RadioStation } from "fivem/enums/RadioStation";
 import {
-  type RadioStation,
   type VehicleClass,
   type VehicleLandingGearState,
-  type VehicleLockStatus,
   VehicleRoofState,
+  type VehicleLockStatus,
   VehicleSeat,
-} from "../enums";
-import type { Model } from "../Model";
-import { Game } from "../Game";
-import { Vector3 } from "../utils";
+} from "fivem/enums/Vehicle";
+import { Game } from "fivem/Game";
+import type { Model } from "fivem/Model";
 import { ClassTypes } from "../../common/utils/ClassTypes";
 import { BaseEntity } from "./BaseEntity";
+import { Ped } from "./Ped";
+import { VehicleDoorCollection } from "./VehicleDoorCollection";
+import { VehicleModCollection } from "./VehicleModCollection";
+import { VehicleWheelCollection } from "./VehicleWheelCollection";
+import { VehicleWindowCollection } from "./VehicleWindowCollection";
 
 export class Vehicle extends BaseEntity {
   public static getModelDisplayName(vehicleModel: Model): string {

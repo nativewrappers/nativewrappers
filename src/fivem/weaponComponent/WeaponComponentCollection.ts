@@ -1,11 +1,11 @@
-import type { Ped } from "../models";
-import type { Weapon } from "../weapon";
 import type { WeaponComponentHash } from "./WeaponComponentHash";
 import { WeaponComponent } from "./WeaponComponent";
 import { InvalidWeaponComponent } from "./InvalidWeaponComponent";
 import { WeaponComponentHashesByWeaponHash } from "./WeaponComponentHashesByWeaponHash";
 import { ComponentAttachmentPoint } from "./ComponentAttachmentPoint";
 import { ComponentAttachmentPointByHash } from "./ComponentAttachmentPointByHash";
+import type { Ped } from "fivem/models/Ped";
+import type { Weapon } from "fivem/weapon/Weapon";
 
 /**
  * ped weapon components on weapon

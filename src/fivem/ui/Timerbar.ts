@@ -1,5 +1,7 @@
-import { HudComponent } from "../enums";
-import { Color, Point, Size } from "../utils";
+import { Color } from "@common/utils/Color";
+import { HudComponent } from "fivem/enums/HudComponent";
+import { Point } from "fivem/utils/Point";
+import { Size } from "fivem/utils/Size";
 import { Hud } from "./Hud";
 import { LoadingPrompt } from "./LoadingPrompt";
 import { Screen } from "./Screen";

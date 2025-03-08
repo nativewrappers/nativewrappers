@@ -1,8 +1,16 @@
-import { Color, Point, Size } from "../../../../utils";
-import { AbstractUIMenuPanel } from "./";
-import { Menu, Rectangle, Sprite, Text } from "../../../";
-import { Alignment, Control, Font } from "../../../../enums";
-import { Game, Wait } from "../../../../";
+import { Color } from "@common/utils/Color";
+import { Alignment } from "fivem/enums/Alignment";
+import { Control } from "fivem/enums/Control";
+import { Font } from "fivem/enums/Font";
+import { Game } from "fivem/Game";
+import { Rectangle } from "fivem/ui/Rectangle";
+import { Sprite } from "fivem/ui/Sprite";
+import { Text } from "fivem/ui/Text";
+import { Point } from "fivem/utils/Point";
+import { Size } from "fivem/utils/Size";
+import { Menu } from "../../Menu";
+import { AbstractUIMenuPanel } from "./AbstractUIMenuPanel";
+import { Delay } from "@common/utils/Delay";
 
 export class UIMenuPercentagePanel extends AbstractUIMenuPanel {
   protected readonly background: Sprite;
@@ -124,7 +132,7 @@ export class UIMenuPercentagePanel extends AbstractUIMenuPanel {
       this._pressed = true;
       (async () => {
         while (Game.isDisabledControlPressed(0, Control.Attack)) {
-          await Wait(0);
+          await Delay(0);
           this._activeBar.size.width = this._getProgress();
         }
         this.updateParentItem();

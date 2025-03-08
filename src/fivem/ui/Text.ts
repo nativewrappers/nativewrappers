@@ -1,6 +1,10 @@
-import { Alignment, Font } from "../enums";
-import { Color, Point, Size } from "../utils";
-import { type IDrawable, Screen } from "./";
+import { Color } from "@common/utils/Color";
+import { Alignment } from "fivem/enums/Alignment";
+import { Font } from "fivem/enums/Font";
+import { Point } from "fivem/utils/Point";
+import { Size } from "fivem/utils/Size";
+import type { IDrawable } from "./interfaces/IDrawable";
+import { Screen } from "./Screen";
 
 export class Text implements IDrawable {
   public static draw(

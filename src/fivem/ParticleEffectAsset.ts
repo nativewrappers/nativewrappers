@@ -1,6 +1,6 @@
-import { type InvertAxis, InvertAxisFlags } from "./enums";
+import { Vector3 } from "@common/utils/Vector";
+import { type InvertAxis, InvertAxisFlags } from "./enums/InvertAxis";
 import type { BaseEntity } from "./models/BaseEntity";
-import { Vector3 } from "./utils";
 
 /**
  * UNFINISHED! Class that represents a particle effect asset.

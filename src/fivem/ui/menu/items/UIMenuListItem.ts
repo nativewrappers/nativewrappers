@@ -1,8 +1,15 @@
-import { Menu, Sprite, Text } from "../../";
-import { Alignment, Font } from "../../../enums";
-import { Color, LiteEvent, Point, Size, _String } from "../../../utils";
-import type { ListItem } from "../modules/";
-import { UIMenuItem } from "./";
+import { Color } from "@common/utils/Color";
+import { Alignment } from "fivem/enums/Alignment";
+import { Font } from "fivem/enums/Font";
+import { Sprite } from "fivem/ui/Sprite";
+import { Text } from "fivem/ui/Text";
+import { LiteEvent } from "fivem/utils/LiteEvent";
+import { Point } from "fivem/utils/Point";
+import { Size } from "fivem/utils/Size";
+import { _String } from "fivem/utils/String";
+import { Menu } from "../Menu";
+import type { ListItem } from "../modules/ListItem";
+import { UIMenuItem } from "./UIMenuItem";
 
 export class UIMenuListItem extends UIMenuItem {
   public readonly listChanged = new LiteEvent();

@@ -1,24 +1,25 @@
-import { Model, Prop } from "./";
+import type { Color } from "@common/utils/Color";
 import { Blip } from "./Blip";
 import { Camera } from "./Camera";
-import {
-  CameraTypes,
-  CloudHat,
-  IntersectFlags,
-  type MarkerType,
-  type PickupType,
-  type RopeType,
-  SHAPE_TEST_DEFAULT,
-  Weather,
-} from "./enums";
+import { CameraTypes } from "./enums/CameraTypes";
+import { CloudHat } from "./enums/CloudHat";
+import type { MarkerType } from "./enums/MarkerType";
+import type { PickupType } from "./enums/PickupType";
+import { IntersectFlags, SHAPE_TEST_DEFAULT } from "./enums/RaycastEnums";
+import type { RopeType } from "./enums/RopeType";
+import { Weather } from "./enums/Weather";
 import { GameplayCamera } from "./GameplayCamera";
-import { VehicleHash } from "./hashes";
-import { Ped, Vehicle } from "./models";
+import { VehicleHash } from "./hashes/VehicleHash";
+import { Model } from "./Model";
 import type { BaseEntity } from "./models/BaseEntity";
+import { Ped } from "./models/Ped";
+import { Prop } from "./models/Prop";
+import { Vehicle } from "./models/Vehicle";
 import { Pickup } from "./Pickup";
 import { AsynchronousRaycastResult, SynchronousRaycastResult } from "./Raycast";
 import { Rope } from "./Rope";
-import { type Color, Maths, Vector3, Wait } from "./utils";
+import { Maths } from "./utils/Maths";
+import { Vector3 } from "@common/utils/Vector";
 
 /**
  * Class with common world manipulations.

@@ -1,4 +1,4 @@
-import { Wait } from "..";
+import { Delay } from "@common/utils/Delay";
 
 /**
  * A utility to load an animation dictionary, anything that loads an animation should RemoveAnimDict after its finish being used.
@@ -15,7 +15,7 @@ export const LoadAnimDict = async (animDict: string, waitTime = 1000): Promise<b
 
   while (!HasAnimDictLoaded(animDict)) {
     if (GetGameTimer() - start >= waitTime) return false;
-    await Wait(0);
+    await Delay(0);
   }
 
   return true;
@@ -45,7 +45,7 @@ export const LoadAnimDictArray = async (animDict: string[], waitTime = 1000): Pr
     }
 
     if (GetGameTimer() - start >= waitTime) return [false, animDict.filter((dict) => !animsLoaded.has(dict))];
-    await Wait(0);
+    await Delay(0);
   }
 
   return [true, null];

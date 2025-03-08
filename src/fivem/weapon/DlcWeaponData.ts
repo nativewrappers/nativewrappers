@@ -1,6 +1,6 @@
-import type { WeaponHash } from "../hashes";
-import { getUInt32FromUint8Array } from "../utils";
-import { getStringFromUInt8Array } from "../utils";
+import { getStringFromUInt8Array } from "@common/utils/getStringFromUInt8Array";
+import { getUInt32FromUint8Array } from "@common/utils/getUInt32FromUint8Array";
+import type { WeaponHash } from "fivem/hashes/WeaponHash";
 
 /**
  * DlcWeaponData

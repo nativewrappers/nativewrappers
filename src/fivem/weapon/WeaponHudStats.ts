@@ -1,6 +1,6 @@
-import { enumValues } from "../utils";
-import { WeaponHash } from "../hashes";
-import { getUInt32FromUint8Array } from "../utils";
+import { enumValues } from "@common/utils/enumValues";
+import { getUInt32FromUint8Array } from "@common/utils/getUInt32FromUint8Array";
+import { WeaponHash } from "fivem/hashes/WeaponHash";
 
 /***
  * WeaponHudStats

@@ -1,5 +1,5 @@
+import { Vector3 } from "@common/utils/Vector";
 import type { BaseEntity } from "./models/BaseEntity";
-import { Vector3 } from "./utils";
 
 /**
  * Class to manage invisible ropes between entities.

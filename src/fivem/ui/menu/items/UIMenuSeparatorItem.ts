@@ -1,6 +1,6 @@
-import { UIMenuItem } from "./";
-import { Alignment } from "../../../enums";
-import { Menu } from "../";
+import { Alignment } from "fivem/enums/Alignment";
+import { Menu } from "../Menu";
+import { UIMenuItem } from "./UIMenuItem";
 
 export class UIMenuSeparatorItem extends UIMenuItem {
   protected supportsDescription = false;

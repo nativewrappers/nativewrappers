@@ -1,4 +1,4 @@
-import type { ScreenEffect } from "../enums";
+import type { ScreenEffect } from "fivem/enums/ScreenEffect";
 
 export abstract class Effects {
   public static start(effectName: ScreenEffect, duration = 0, looped = false): void {

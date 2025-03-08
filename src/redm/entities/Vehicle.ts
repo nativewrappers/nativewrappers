@@ -1,6 +1,6 @@
-import type { VehicleSeat } from "redm/enums";
+import type { VehicleSeat } from "redm/enums/VehicleSeat";
+import { _N } from "redm/utils/Native";
 import { BaseEntity } from "./BaseEntity";
-import { _N } from "redm/utils";
 
 export class Vehicle extends BaseEntity {
   constructor(handle: number) {

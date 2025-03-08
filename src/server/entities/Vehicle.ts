@@ -1,9 +1,9 @@
-import { ClassTypes } from "../../common/utils/ClassTypes";
+import { Color } from "@common/utils/Color";
 import type { VehicleLockStatus } from "../enum/VehicleLockStatus";
 import type { VehicleType } from "../enum/VehicleType";
 import type { Hash } from "../type/Hash";
-import { Color } from "../utils";
 import { BaseEntity } from "./BaseEntity";
+import { ClassTypes } from "@common/utils/ClassTypes";
 
 export class Vehicle extends BaseEntity {
   protected type = ClassTypes.Vehicle;

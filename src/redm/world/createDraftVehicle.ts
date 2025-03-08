@@ -1,7 +1,7 @@
-import type { Vector3 } from "@common/utils";
-import { Vehicle } from "redm/entities";
+import type { Vector3 } from "@common/utils/Vector";
+import { Vehicle } from "redm/entities/Vehicle";
 import type { Model } from "redm/Model";
-import { _N } from "redm/utils";
+import { _N } from "redm/utils/Native";
 
 /**
  * Creates a vehicle at the specified {@param spawnPos}, you don't need to request the model before this.

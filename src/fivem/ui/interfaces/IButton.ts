@@ -1,4 +1,4 @@
-import type { Control } from "../../enums";
+import type { Control } from "fivem/enums/Control";
 
 export interface IButton {
   controls: Control[];

@@ -1,7 +1,14 @@
-import { Blip, Vector3 } from ".";
+import { Vector3 } from "@common/utils/Vector";
 import { Audio } from "./Audio";
-import { type Control, InputMode, type Language, RadioStation } from "./enums";
-import { Ped, Player, Prop, Vehicle } from "./models";
+import { Blip } from "./Blip";
+import type { Control } from "./enums/Control";
+import { InputMode } from "./enums/InputMode";
+import type { Language } from "./enums/Language";
+import { RadioStation } from "./enums/RadioStation";
+import { Ped } from "./models/Ped";
+import { Prop } from "./models/Prop";
+import { Vehicle } from "./models/Vehicle";
+import { Player } from "./models/Player";
 
 export abstract class Game {
   public static useHashCache = true;

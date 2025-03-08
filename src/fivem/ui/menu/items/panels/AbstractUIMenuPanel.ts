@@ -1,7 +1,8 @@
-import type { UIMenuItem } from "../";
-import { Crypto } from "../../../../utils";
-import { type Rectangle, Sprite } from "../../../";
-import { Menu } from "../../";
+import type { Rectangle } from "fivem/ui/Rectangle";
+import { Sprite } from "fivem/ui/Sprite";
+import { Crypto } from "fivem/utils/Crypto";
+import { Menu } from "../../Menu";
+import type { UIMenuItem } from "../UIMenuItem";
 
 export abstract class AbstractUIMenuPanel {
   public readonly id: string = Crypto.uuidv4();

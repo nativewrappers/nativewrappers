@@ -1,6 +1,7 @@
-import type { ParticleEffectAsset } from "./";
-import { type InvertAxis, InvertAxisFlags } from "./enums";
-import { Color, Vector3 } from "./utils";
+import { Color } from "@common/utils/Color";
+import { Vector3 } from "@common/utils/Vector";
+import { type InvertAxis, InvertAxisFlags } from "./enums/InvertAxis";
+import type { ParticleEffectAsset } from "./ParticleEffectAsset";
 
 // TODO: Lots of Matrix stuff through memory access
 /**

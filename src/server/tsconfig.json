@@ -4,6 +4,6 @@
     "composite": true,
     "types": ["@citizenfx/server"]
   },
-  "include": ["./"],
+  "include": ["./", "../common/"],
   "references": [{ "path": "../common" }]
 }

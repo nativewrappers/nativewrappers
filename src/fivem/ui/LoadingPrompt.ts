@@ -1,4 +1,4 @@
-import { LoadingSpinnerType } from "../enums";
+import { LoadingSpinnerType } from "fivem/enums/LoadingSpinnerType";
 
 /**
  * Show and hide loading prompt on the bottom right of the screen.

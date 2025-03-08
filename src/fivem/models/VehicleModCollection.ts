@@ -1,17 +1,17 @@
-import type { Vehicle } from "./Vehicle";
+import { Color } from "@common/utils/Color";
 import {
-  type VehicleColor,
   VehicleModType,
-  VehicleNeonLight,
-  type VehiclePaintType,
   type VehicleToggleModType,
   type VehicleWheelType,
   type VehicleWindowTint,
+  type VehicleColor,
+  type VehiclePaintType,
+  VehicleNeonLight,
   type LicensePlateStyle,
   type LicensePlateType,
-} from "../enums";
+} from "fivem/enums/Vehicle";
+import type { Vehicle } from "./Vehicle";
 import { VehicleMod } from "./VehicleMod";
-import { Color } from "../utils";
 import { VehicleToggleMod } from "./VehicleToggleMod";
 
 export class VehicleModCollection {

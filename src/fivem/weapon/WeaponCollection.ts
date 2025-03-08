@@ -1,6 +1,7 @@
+import type { WeaponHash } from "fivem/hashes/WeaponHash";
+import type { Ped } from "fivem/models/Ped";
+import { Prop } from "fivem/models/Prop";
 import { Weapon } from "./Weapon";
-import { type Ped, Prop } from "../models";
-import type { WeaponHash } from "../hashes";
 
 /**
  * ped weapons

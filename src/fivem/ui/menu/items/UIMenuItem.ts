@@ -1,7 +1,17 @@
-import { type AbstractUIMenuPanel, Menu } from "../";
-import { Rectangle, Sprite, Text } from "../../";
-import { Alignment, BadgeStyle, Font } from "../../../enums";
-import { Color, Crypto, LiteEvent, Point, Size, _String } from "../../../utils";
+import { Color } from "@common/utils/Color";
+import { Alignment } from "fivem/enums/Alignment";
+import { BadgeStyle } from "fivem/enums/BadgeStyle";
+import { Font } from "fivem/enums/Font";
+import { Rectangle } from "fivem/ui/Rectangle";
+import { Sprite } from "fivem/ui/Sprite";
+import { Text } from "fivem/ui/Text";
+import { Crypto } from "fivem/utils/Crypto";
+import { LiteEvent } from "fivem/utils/LiteEvent";
+import { Point } from "fivem/utils/Point";
+import { Size } from "fivem/utils/Size";
+import { _String } from "fivem/utils/String";
+import { Menu } from "../Menu";
+import type { AbstractUIMenuPanel } from "./panels/AbstractUIMenuPanel";
 
 export class UIMenuItem {
   public static badgeToTextureDict(badge: BadgeStyle): string {

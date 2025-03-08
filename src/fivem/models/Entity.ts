@@ -1,6 +1,6 @@
-import { Ped, Prop, Vehicle } from "./";
-import { ClassTypes } from "../../common/utils/ClassTypes";
-import { BaseEntity } from "./BaseEntity";
+// import { Ped, Prop, Vehicle } from "./";
+// import { ClassTypes } from "../../common/utils/ClassTypes";
+// import { BaseEntity } from "./BaseEntity";
 
 // export class Entity extends BaseEntity {
 // 	public static fromHandle(handle: number): Ped | Vehicle | Prop | null {

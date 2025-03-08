@@ -1,5 +1,5 @@
-import { EntityBone } from "./";
 import type { BaseEntity } from "./BaseEntity";
+import { EntityBone } from "./EntityBone";
 
 export class EntityBoneCollection {
   protected readonly owner: BaseEntity;

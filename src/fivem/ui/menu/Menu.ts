@@ -1,8 +1,30 @@
-import { Container, Hud, MenuControls, MenuSettings, Rectangle, Screen, Sprite, Text, UIMenuSeparatorItem } from "../";
-import { Audio, CursorSprite, Game, GameplayCamera, InputMode, Wait } from "../../";
-import { Alignment, Control, Font, MenuAlignment } from "../../enums";
-import { Color, Crypto, LiteEvent, Point, Size } from "../../utils";
-import { UIMenuCheckboxItem, UIMenuItem, UIMenuListItem, UIMenuSliderItem } from "./items";
+import { Color } from "@common/utils/Color";
+import { Audio } from "fivem/Audio";
+import { Alignment } from "fivem/enums/Alignment";
+import { Control } from "fivem/enums/Control";
+import { CursorSprite } from "fivem/enums/CursorSprite";
+import { Font } from "fivem/enums/Font";
+import { InputMode } from "fivem/enums/InputMode";
+import { MenuAlignment } from "fivem/enums/MenuAlignment";
+import { Game } from "fivem/Game";
+import { GameplayCamera } from "fivem/GameplayCamera";
+import { Crypto } from "fivem/utils/Crypto";
+import { LiteEvent } from "fivem/utils/LiteEvent";
+import { Point } from "fivem/utils/Point";
+import { Size } from "fivem/utils/Size";
+import { Container } from "../Container";
+import { Hud } from "../Hud";
+import { Rectangle } from "../Rectangle";
+import { Screen } from "../Screen";
+import { Sprite } from "../Sprite";
+import { Text } from "../Text";
+import { UIMenuCheckboxItem } from "./items/UIMenuCheckboxItem";
+import { UIMenuItem } from "./items/UIMenuItem";
+import { UIMenuListItem } from "./items/UIMenuListItem";
+import { UIMenuSeparatorItem } from "./items/UIMenuSeparatorItem";
+import { UIMenuSliderItem } from "./items/UIMenuSliderItem";
+import { MenuControls } from "./MenuControls";
+import { MenuSettings } from "./MenuSettings";
 
 export class Menu {
   public static screenAspectRatio = IsDuplicityVersion() ? 0 : Screen.AspectRatio;

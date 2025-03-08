@@ -1,10 +1,11 @@
 import { Attributes } from "../Attribute";
 import type { eDamageCleanliness, KnockOffVehicle, TamingState } from "../enums/Ped";
 import type { VehicleSeat } from "../enums/VehicleSeat";
-import { _N, type Vector3 } from "../utils";
 import { BaseEntity } from "./BaseEntity";
 import { Vehicle } from "./Vehicle";
 import type { Player } from "./Player";
+import type { Vector3 } from "@common/utils/Vector";
+import { _N } from "redm/utils/Native";
 
 export class Ped extends BaseEntity {
   private attributes: Attributes | undefined;

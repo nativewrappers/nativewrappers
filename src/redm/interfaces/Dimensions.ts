@@ -1,4 +1,4 @@
-import type { Vector3 } from "@common/utils/Vector3";
+import type { Vector3 } from "@common/utils/Vector";
 
 export interface Dimensions {
   min: Vector3;

@@ -1,7 +1,7 @@
+import { Vector3 } from "@common/utils/Vector";
 import { Game } from "./Game";
-import { VehicleHash } from "./hashes";
+import { VehicleHash } from "./hashes/VehicleHash";
 import type { Dimensions } from "./interfaces/Dimensions";
-import { Vector3, Wait } from "./utils";
 
 /**
  * Class to create and manage entity models.

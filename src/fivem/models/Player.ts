@@ -1,7 +1,9 @@
-import { Model, Color } from "..";
 import cfx, { type StateBagChangeHandler } from "../cfx";
 import { ClassTypes } from "../../common/utils/ClassTypes";
-import { BaseEntity, Ped } from "./";
+import { Color } from "@common/utils/Color";
+import { Model } from "fivem/Model";
+import { BaseEntity } from "./BaseEntity";
+import { Ped } from "./Ped";
 
 export class Player {
   private handle: number;

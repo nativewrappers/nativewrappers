@@ -28,7 +28,8 @@
         }
       },
       "performance": {
-        "noDelete": "off"
+        "noDelete": "off",
+        "noBarrelFile": "error"
       },
       "complexity": {
         "noForEach": "off",

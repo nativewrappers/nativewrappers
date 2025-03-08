@@ -1,4 +1,4 @@
-import { ClassTypes } from "../../common/utils/ClassTypes";
+import { ClassTypes } from "@common/utils/ClassTypes";
 import type { Hash } from "../type/Hash";
 import { BaseEntity } from "./BaseEntity";
 import { Vehicle } from "./Vehicle";

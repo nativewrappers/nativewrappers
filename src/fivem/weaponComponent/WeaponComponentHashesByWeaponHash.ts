@@ -1,6 +1,6 @@
-import { WeaponHash } from "../hashes";
+import { WeaponHash } from "fivem/hashes/WeaponHash";
 import { WeaponComponentHash } from "./WeaponComponentHash";
-import { getUInt32FromUint8Array } from "../utils";
+import { getUInt32FromUint8Array } from "@common/utils/getUInt32FromUint8Array";
 
 /**
  * Mapping of WeaponHash -> WeaponComponentHashes

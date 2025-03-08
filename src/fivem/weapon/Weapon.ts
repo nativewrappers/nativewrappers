@@ -1,18 +1,18 @@
-import { WeaponComponentCollection } from "../weaponComponent/WeaponComponentCollection";
-import type { Ped } from "../models";
-import { type AmmoType, WeaponHash } from "../hashes";
+import { enumValues } from "@common/utils/enumValues";
+import { Game } from "fivem/Game";
+import { WeaponHash, type AmmoType } from "fivem/hashes/WeaponHash";
+import { Model } from "fivem/Model";
+import type { Ped } from "fivem/models/Ped";
+import { WeaponComponentCollection } from "fivem/weaponComponent/WeaponComponentCollection";
+import type { WeaponComponentHash } from "fivem/weaponComponent/WeaponComponentHash";
+import { WeaponComponentHashesByWeaponHash } from "fivem/weaponComponent/WeaponComponentHashesByWeaponHash";
+import { Mk2WeaponHash } from "./Mk2WeaponHash";
 import { WeaponDisplayNameByHash } from "./WeaponDisplayNameByHash";
-import { Game } from "../Game";
-import { Model } from "../Model";
-import type { WeaponTint } from "./WeaponTint";
 import type { WeaponGroup } from "./WeaponGroup";
+import { WeaponHudStats } from "./WeaponHudStats";
 import type { WeaponLivery } from "./WeaponLivery";
 import type { WeaponLiveryColor } from "./WeaponLiveryColor";
-import { WeaponHudStats } from "./WeaponHudStats";
-import { enumValues } from "../utils";
-import { Mk2WeaponHash } from "./Mk2WeaponHash";
-import type { WeaponComponentHash } from "../weaponComponent";
-import { WeaponComponentHashesByWeaponHash } from "../weaponComponent/WeaponComponentHashesByWeaponHash";
+import type { WeaponTint } from "./WeaponTint";
 
 /**
  * ped weapon

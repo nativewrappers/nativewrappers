@@ -1,6 +1,6 @@
+import { enumValues } from "@common/utils/enumValues";
+import { getUInt32FromUint8Array } from "@common/utils/getUInt32FromUint8Array";
 import { WeaponComponentHash } from "./WeaponComponentHash";
-import { enumValues } from "../utils";
-import { getUInt32FromUint8Array } from "../utils";
 
 /***
  * WeaponComponentHudStats

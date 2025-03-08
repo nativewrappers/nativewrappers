@@ -4,6 +4,6 @@
     "composite": true,
     "types": []
   },
-  "include": ["./"],
+  "include": ["./", "../common/"],
   "references": [{ "path": "../common" }]
 }

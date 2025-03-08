@@ -1,6 +1,7 @@
+import type { Vector3 } from "@common/utils/Vector";
+import { _N } from "redm/utils/Native";
 import { type BoneIndex, EntityType, ForceType } from "../enums/Entity";
 import type { Throwable } from "../types/Throwable";
-import { type Vector3, _N } from "../utils";
 import { BaseEntity } from "./BaseEntity";
 
 export class Entity extends BaseEntity {

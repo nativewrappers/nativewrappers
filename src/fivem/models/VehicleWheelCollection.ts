@@ -1,6 +1,6 @@
+import { VehicleWheelIndex } from "fivem/enums/Vehicle";
 import type { Vehicle } from "./Vehicle";
 import { VehicleWheel } from "./VehicleWheel";
-import { VehicleWheelIndex } from "../enums";
 
 export class VehicleWheelCollection {
   private _owner: Vehicle;

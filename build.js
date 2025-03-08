@@ -15,7 +15,7 @@ const packageTemplate = {
   homepage: repoPackage.homepage,
   keywords: repoPackage.keywords,
   files: repoPackage.files,
-  exports: { ".": "./index.js" },
+  exports: { "./*": "./*" },
 };
 
 /**
@@ -28,7 +28,7 @@ async function createBuilder(environments) {
   await Promise.all(
     environments.map(async ({ name, options }) => {
       options = {
-        entryPoints: [`./src/${name}/index.ts`],
+        entryPoints: [`./src/${name}/**/*.ts`],
         keepNames: true,
         legalComments: "inline",
         bundle: true,

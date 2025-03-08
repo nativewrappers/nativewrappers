@@ -1,6 +1,6 @@
+import { Vector3 } from "@common/utils/Vector";
 import { Camera } from "./Camera";
-import type { CameraShake } from "./enums";
-import { Vector3 } from "./utils";
+import type { CameraShake } from "./enums/CameraShake";
 
 /**
  * The current rendering gameplay camera

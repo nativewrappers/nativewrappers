@@ -1,5 +1,6 @@
-import { CursorSprite, type HudComponent } from "../enums";
-import type { Point } from "../utils";
+import { CursorSprite } from "fivem/enums/CursorSprite";
+import type { HudComponent } from "fivem/enums/HudComponent";
+import type { Point } from "fivem/utils/Point";
 
 export abstract class Hud {
   public static isComponentActive(component: HudComponent): boolean {

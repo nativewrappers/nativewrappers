@@ -1,4 +1,4 @@
-import { Vector3 } from "./utils";
+import { Vector3 } from "@common/utils/Vector";
 
 export class Pickup {
   private handle: number;

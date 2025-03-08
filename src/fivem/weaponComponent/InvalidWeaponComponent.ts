@@ -1,8 +1,8 @@
 import { WeaponComponent } from "./WeaponComponent";
 import { WeaponComponentHash } from "./WeaponComponentHash";
-import type { WeaponHash } from "../hashes";
 import { ComponentAttachmentPoint } from "./ComponentAttachmentPoint";
 import { Game } from "../Game";
+import type { WeaponHash } from "fivem/hashes/WeaponHash";
 
 export class InvalidWeaponComponent extends WeaponComponent {
   constructor() {

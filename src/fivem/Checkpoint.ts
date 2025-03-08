@@ -1,5 +1,5 @@
-import { CheckpointIcon } from "./enums";
-import { Vector3 } from "./utils";
+import { Vector3 } from "@common/utils/Vector";
+import { CheckpointIcon } from "./enums/Checkpoint";
 
 export class Checkpoint {
   private handle: number;

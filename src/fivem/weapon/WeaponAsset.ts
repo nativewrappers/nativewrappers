@@ -1,7 +1,6 @@
-import type { WeaponHash } from "../hashes";
+import { Game } from "fivem/Game";
+import type { WeaponHash } from "fivem/hashes/WeaponHash";
 import { Weapon } from "./Weapon";
-import { Game } from "../Game";
-import { Wait } from "../utils";
 
 /**
  * weapon asset

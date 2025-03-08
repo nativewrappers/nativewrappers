@@ -1,8 +1,8 @@
 import cfx from "../cfx";
 import { ClassTypes } from "../../common/utils/ClassTypes";
-import { cleanPlayerName } from "../utils";
-import { Vector3 } from "../utils";
 import { Ped } from "./Ped";
+import { cleanPlayerName } from "@common/utils/cleanPlayerName";
+import { Vector3 } from "@common/utils/Vector";
 
 export class Player {
   protected type = ClassTypes.Player;

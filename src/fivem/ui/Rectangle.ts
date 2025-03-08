@@ -1,5 +1,8 @@
-import { type Color, Point, Size } from "../utils";
-import { type IDrawable, Screen } from "./";
+import type { Color } from "@common/utils/Color";
+import { Point } from "fivem/utils/Point";
+import { Size } from "fivem/utils/Size";
+import type { IDrawable } from "./interfaces/IDrawable";
+import { Screen } from "./Screen";
 
 export class Rectangle implements IDrawable {
   public pos: Point;

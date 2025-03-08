@@ -1,4 +1,6 @@
-import { Font, Screen, Text } from "..";
+import { Font } from "fivem/enums/Font";
+import { Screen } from "fivem/ui/Screen";
+import { Text } from "fivem/ui/Text";
 import { Maths } from "./Maths";
 
 // todo: rename?

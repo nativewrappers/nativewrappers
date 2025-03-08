@@ -1,5 +1,7 @@
-import { Color, Point, Size } from "../utils";
-import { Screen } from "./";
+import { Color } from "@common/utils/Color";
+import { Point } from "fivem/utils/Point";
+import { Size } from "fivem/utils/Size";
+import { Screen } from "./Screen";
 
 export class Sprite {
   public textureName: string;

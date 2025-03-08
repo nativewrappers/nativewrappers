@@ -1,5 +1,5 @@
+import { WeaponHash } from "fivem/hashes/WeaponHash";
 import { DlcWeaponData } from "./DlcWeaponData";
-import { WeaponHash } from "../hashes";
 
 /***
  * Mapping of WeaponHash -> DisplayName(Label)

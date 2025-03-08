@@ -1,5 +1,5 @@
+import { VehicleDoorIndex } from "fivem/enums/Vehicle";
 import type { Vehicle } from "./Vehicle";
-import { VehicleDoorIndex } from "../enums";
 import { VehicleDoor } from "./VehicleDoor";
 
 export class VehicleDoorCollection {

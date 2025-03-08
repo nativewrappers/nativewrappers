@@ -1,4 +1,6 @@
-import type { Color, Point, Size } from "../../utils/";
+import type { Color } from "@common/utils/Color";
+import type { Point } from "fivem/utils/Point";
+import type { Size } from "fivem/utils/Size";
 
 export interface IDrawable {
   pos: Point;

@@ -1,4 +1,4 @@
-import { Ped, Player } from "./entities";
+import { Ped } from "./entities/Ped";
 import { GameConstants } from "./GameConstants";
 
 export class Game {

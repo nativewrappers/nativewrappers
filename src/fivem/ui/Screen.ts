@@ -1,7 +1,11 @@
+import { Color } from "@common/utils/Color";
+import type { Vector3 } from "@common/utils/Vector";
+import { HudColor } from "fivem/enums/HudColor";
+import { NotificationType } from "fivem/enums/NotificationType";
+import { Size } from "fivem/utils/Size";
+import { _String } from "fivem/utils/String";
 import { Audio } from "../Audio";
-import { HudColor, NotificationType } from "../enums";
-import { Color, Size, _String, type Vector3 } from "../utils";
-import { Notification } from "./";
+import { Notification } from "./Notification";
 
 export abstract class Screen {
   public static get Resolution(): Size {

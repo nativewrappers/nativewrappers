@@ -1,13 +1,13 @@
-import type { Ped } from "../models";
-import type { Weapon } from "../weapon";
-import { WeaponComponentHash } from "./WeaponComponentHash";
-import type { WeaponHash } from "../hashes";
 import { ComponentAttachmentPoint } from "./ComponentAttachmentPoint";
 import { Game } from "../Game";
 import { ComponentDisplayNameByHash } from "./ComponentDisplayNameByHash";
 import { WeaponComponentHashesByWeaponHash } from "./WeaponComponentHashesByWeaponHash";
 import { ComponentAttachmentPointByHash } from "./ComponentAttachmentPointByHash";
 import { WeaponComponentHudStats } from "./WeaponComponentHudStats";
+import type { WeaponHash } from "fivem/hashes/WeaponHash";
+import type { Ped } from "fivem/models/Ped";
+import type { Weapon } from "fivem/weapon/Weapon";
+import { WeaponComponentHash } from "./WeaponComponentHash";
 
 /**
  * ped weapon component on weapon

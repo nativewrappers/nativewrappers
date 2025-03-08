@@ -1,12 +1,14 @@
-import { Blip } from "../Blip";
-import { ForceType } from "../enums";
-import type { MaterialHash, WeaponHash } from "../hashes";
-import { Model } from "../Model";
-import { Quaternion, Vector3 } from "../utils";
-import { EntityBoneCollection } from "./";
+import { ClassTypes } from "@common/utils/ClassTypes";
+import { Vector3 } from "@common/utils/Vector";
+import { ForceType } from "fivem/enums/ForceType";
+import type { MaterialHash } from "fivem/hashes/MaterialHash";
+import type { WeaponHash } from "fivem/hashes/WeaponHash";
+import { Model } from "fivem/Model";
 import type { EntityBone } from "./EntityBone";
-import cfx, { type StateBagChangeHandler } from "../cfx";
-import { ClassTypes } from "../../common/utils/ClassTypes";
+import { Blip } from "../Blip";
+import { EntityBoneCollection } from "./EntityBoneCollection";
+import cfx, { type StateBagChangeHandler } from "fivem/cfx";
+import { Quaternion } from "@common/utils/Quaternion";
 
 export class BaseEntity {
   public static fromNetworkId(networkId: number): BaseEntity | null {

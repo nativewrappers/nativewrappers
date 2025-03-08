@@ -3,9 +3,8 @@ import { ClassTypes } from "../../common/utils/ClassTypes";
 import type { eEntityType } from "../enum/eEntityType";
 import type { PopulationType } from "../enum/PopulationType";
 import type { Hash } from "../type/Hash";
-import { Vector4 } from "../utils";
-import { Vector3 } from "../utils";
-import type { OrphanMode } from "server/enum";
+import type { OrphanMode } from "server/enum/OrphanMode";
+import { Vector3, Vector4 } from "@common/utils/Vector";
 
 export class BaseEntity {
   protected type = ClassTypes.Entity;

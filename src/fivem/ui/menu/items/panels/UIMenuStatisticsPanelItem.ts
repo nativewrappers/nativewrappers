@@ -1,6 +1,11 @@
-import { Color, Crypto, Point, Size } from "../../../../utils";
-import { Rectangle, Text } from "../../../";
-import { Alignment, Font } from "../../../../enums";
+import { Color } from "@common/utils/Color";
+import { Alignment } from "fivem/enums/Alignment";
+import { Font } from "fivem/enums/Font";
+import { Rectangle } from "fivem/ui/Rectangle";
+import { Text } from "fivem/ui/Text";
+import { Crypto } from "fivem/utils/Crypto";
+import { Point } from "fivem/utils/Point";
+import { Size } from "fivem/utils/Size";
 
 export class UIMenuStatisticsPanelItem {
   public readonly id: string = Crypto.uuidv4();

@@ -1,8 +1,13 @@
-import { type AnimationFlags, DrivingStyle, FiringPattern, type LeaveVehicleFlags, VehicleSeat } from "./enums";
-import { Ped, type Vehicle } from "./models";
+import { Vector3 } from "@common/utils/Vector";
+import type { AnimationFlags } from "./enums/AnimationFlags";
+import { DrivingStyle } from "./enums/Driving";
+import { FiringPattern } from "./enums/FiringPattern";
+import { VehicleSeat } from "./enums/Vehicle";
+import type { LeaveVehicleFlags } from "./enums/LeaveVehicleFlags";
 import { BaseEntity } from "./models/BaseEntity";
+import { Ped } from "./models/Ped";
+import type { Vehicle } from "./models/Vehicle";
 import type { TaskSequence } from "./TaskSequence";
-import { Vector3 } from "./utils";
 import { LoadAnimDict } from "./utils/Animations";
 
 export class Tasks {

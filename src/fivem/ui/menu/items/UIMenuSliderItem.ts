@@ -1,7 +1,12 @@
-import { Menu, Rectangle, Sprite } from "../../";
-import { UIMenuItem } from "./";
-import { Color, LiteEvent, Point, Size } from "../../../utils";
-import { BadgeStyle } from "../../../enums";
+import { Color } from "@common/utils/Color";
+import { BadgeStyle } from "fivem/enums/BadgeStyle";
+import { Rectangle } from "fivem/ui/Rectangle";
+import { Sprite } from "fivem/ui/Sprite";
+import { LiteEvent } from "fivem/utils/LiteEvent";
+import { Point } from "fivem/utils/Point";
+import { Size } from "fivem/utils/Size";
+import { Menu } from "../Menu";
+import { UIMenuItem } from "./UIMenuItem";
 
 export class UIMenuSliderItem extends UIMenuItem {
   public readonly sliderChanged = new LiteEvent();

@@ -1,3 +1,3 @@
-export { StateBagChangeHandler } from "./StateBagChangeHandler";
+export type { StateBagChangeHandler } from "./StateBagChangeHandler";
 
 export default { Entity, Player };

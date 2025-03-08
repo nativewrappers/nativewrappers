@@ -1,6 +1,10 @@
-import { Color, Point, Size } from "../../../../utils";
-import { AbstractUIMenuPanel, type UIMenuStatisticsPanelItem } from "./";
-import { Menu, Rectangle } from "../../../";
+import { Color } from "@common/utils/Color";
+import { Rectangle } from "fivem/ui/Rectangle";
+import { Point } from "fivem/utils/Point";
+import { Size } from "fivem/utils/Size";
+import { Menu } from "../../Menu";
+import { AbstractUIMenuPanel } from "./AbstractUIMenuPanel";
+import type { UIMenuStatisticsPanelItem } from "./UIMenuStatisticsPanelItem";
 
 export class UIMenuStatisticsPanel extends AbstractUIMenuPanel {
   protected readonly background: Rectangle;

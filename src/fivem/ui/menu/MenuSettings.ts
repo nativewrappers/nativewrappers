@@ -1,5 +1,5 @@
-import { InputMode } from "../../index";
-import { Control } from "../../enums";
+import { Control } from "fivem/enums/Control";
+import { InputMode } from "fivem/enums/InputMode";
 
 export class MenuSettings {
   public scaleWithSafezone = true;

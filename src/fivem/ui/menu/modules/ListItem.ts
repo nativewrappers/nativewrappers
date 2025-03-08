@@ -1,4 +1,4 @@
-import { Crypto } from "../../../utils";
+import { Crypto } from "fivem/utils/Crypto";
 
 export class ListItem {
   public readonly id: string = Crypto.uuidv4();

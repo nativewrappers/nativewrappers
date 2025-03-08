@@ -1,8 +1,8 @@
-import type { CameraShake } from "./enums";
+import { Vector3 } from "@common/utils/Vector";
+import type { CameraShake } from "./enums/CameraShake";
 import { GameplayCamera } from "./GameplayCamera";
-import { PedBone } from "./models";
 import { BaseEntity } from "./models/BaseEntity";
-import { Vector3 } from "./utils";
+import { PedBone } from "./models/PedBone";
 import { LoadAnimDict } from "./utils/Animations";
 
 export class Camera {

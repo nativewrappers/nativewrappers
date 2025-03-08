@@ -1,19 +1,19 @@
-import { Player, Vector3 } from "../";
-import {
-  type DrivingStyle,
-  type FiringPattern,
-  Gender,
-  type HelmetType,
-  RagdollType,
-  SpeechModifier,
-  VehicleSeat,
-} from "../enums";
-import type { WeaponHash } from "../hashes";
-import { Tasks } from "../Tasks";
-import { PedBoneCollection, Vehicle } from "./";
 import { WeaponCollection } from "../weapon/WeaponCollection";
 import { ClassTypes } from "../../common/utils/ClassTypes";
 import { BaseEntity } from "./BaseEntity";
+import { Vector3 } from "@common/utils/Vector";
+import type { DrivingStyle } from "fivem/enums/Driving";
+import type { FiringPattern } from "fivem/enums/FiringPattern";
+import { Gender } from "fivem/enums/Gender";
+import type { HelmetType } from "fivem/enums/HelmetType";
+import { RagdollType } from "fivem/enums/RagdollType";
+import { SpeechModifier } from "fivem/enums/SpeechModifier";
+import { VehicleSeat } from "fivem/enums/Vehicle";
+import type { WeaponHash } from "fivem/hashes/WeaponHash";
+import { Tasks } from "fivem/Tasks";
+import { PedBoneCollection } from "./PedBoneCollection";
+import { Vehicle } from "./Vehicle";
+import { Player } from "./Player";
 
 export class Ped extends BaseEntity {
   public static exists(ped: Ped): boolean {

@@ -1,8 +1,15 @@
-import { Color, Point, Size } from "../../../../utils";
-import { AbstractUIMenuPanel } from "./";
-import { Rectangle, Sprite, Text } from "../../../";
-import { Alignment, Control, Font } from "../../../../enums";
-import { Game, Menu } from "../../../../";
+import { Color } from "@common/utils/Color";
+import { Alignment } from "fivem/enums/Alignment";
+import { Control } from "fivem/enums/Control";
+import { Font } from "fivem/enums/Font";
+import { Game } from "fivem/Game";
+import { Rectangle } from "fivem/ui/Rectangle";
+import { Sprite } from "fivem/ui/Sprite";
+import { Text } from "fivem/ui/Text";
+import { Point } from "fivem/utils/Point";
+import { Size } from "fivem/utils/Size";
+import { Menu } from "../../Menu";
+import { AbstractUIMenuPanel } from "./AbstractUIMenuPanel";
 
 export class UIMenuColorPanel extends AbstractUIMenuPanel {
   protected readonly background: Sprite;
