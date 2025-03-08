@@ -1,5 +1,6 @@
 import esbuild from "esbuild";
-import { writeFile, copyFile } from "node:fs/promises";
+import { writeFile, copyFile, readdir } from "node:fs/promises";
+import { extname } from "node:path";
 import { copy as copyDir } from "fs-extra";
 import repoPackage from "./package.json" with { type: "json" };
 import { replaceTscAliasPaths } from "tsc-alias";
@@ -17,6 +18,18 @@ const packageTemplate = {
   files: repoPackage.files,
   exports: { "./*": "./*" },
 };
+
+async function generateIndex(dir) {
+  const files = await readdir(dir, {
+    recursive: true,
+  });
+
+  const exports = files
+    .filter((file) => file !== "index.js" && extname(file) === ".js")
+    .map((file) => `export * from "./${file.replace(/\\/g, "/")}";`);
+
+  return writeFile(`${dir}/index.js`, exports.join("\n"));
+}
 
 /**
  * Creates a build process using esbuild.
@@ -67,6 +80,8 @@ async function createBuilder(environments) {
   );
 
   for (const { name, title } of environments) {
+    const outDir = `./lib/${name}/`;
+
     if (name !== "common")
       await copyDir(
         "./lib/common/",
@@ -77,9 +92,10 @@ async function createBuilder(environments) {
       }*/,
       );
 
-    await replaceTscAliasPaths({ outDir: `./lib/${name}/` });
+    await replaceTscAliasPaths({ outDir });
     await Promise.all([
       copyFile("README.md", `./lib/${name}/README.md`),
+      generateIndex(outDir),
       writeFile(
         `./lib/${name}/package.json`,
         JSON.stringify(
