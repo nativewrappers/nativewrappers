@@ -16,6 +16,7 @@ const packageTemplate = {
   homepage: repoPackage.homepage,
   keywords: repoPackage.keywords,
   files: repoPackage.files,
+  sideEffects: false,
   exports: {
     ".": "./index.js",
     "./*": "./*",

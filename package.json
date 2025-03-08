@@ -6,7 +6,6 @@
     "Dillon Skaggs <AvarianKnight>",
     "Linden <thelindat>"
   ],
-  "private": true,
   "license": "MIT",
   "type": "module",
   "version": "0.0.85",
@@ -21,7 +20,6 @@
     "url": "https://github.com/nativewrappers/nativewrappers/issues"
   },
   "homepage": "https://fivemjs.avarian.dev/",
-  "sideEffects": false,
   "keywords": [
     "fivem",
     "wrapper",
