@@ -21,6 +21,7 @@
     "url": "https://github.com/nativewrappers/nativewrappers/issues"
   },
   "homepage": "https://fivemjs.avarian.dev/",
+  "sideEffects": false,
   "keywords": [
     "fivem",
     "wrapper",
