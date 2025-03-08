@@ -1,5 +1,5 @@
 import cfx, { type StateBagChangeHandler } from "../cfx";
-import { ClassTypes } from "../../common/utils/ClassTypes";
+import { ClassTypes } from "@common/utils/ClassTypes";
 import { Color } from "@common/utils/Color";
 import { Model } from "fivem/Model";
 import { BaseEntity } from "./BaseEntity";

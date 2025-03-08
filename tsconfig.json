@@ -16,9 +16,9 @@
     "types": ["@types/node"],
     "paths": {
       "@common/*": ["./common/*"],
-      "@fivem/*": ["./fivem/*"],
-      "@redm/*": ["./redm/*"],
-      "@server/*": ["./server/*"],
+      "fivem/*": ["./fivem/*"],
+      "redm/*": ["./redm/*"],
+      "server/*": ["./server/*"],
     }
   },
   "include": ["src/**/*"],

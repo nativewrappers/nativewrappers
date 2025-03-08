@@ -1,5 +1,5 @@
 import cfx from "../cfx";
-import { ClassTypes } from "../../common/utils/ClassTypes";
+import { ClassTypes } from "@common/utils/ClassTypes";
 import type { eEntityType } from "../enum/eEntityType";
 import type { PopulationType } from "../enum/PopulationType";
 import type { Hash } from "../type/Hash";

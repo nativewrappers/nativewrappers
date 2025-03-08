@@ -1,5 +1,5 @@
 import { Vector2, Vector3, Vector4 } from "@common/utils/Vector";
-import { ClassTypes } from "../common/utils/ClassTypes";
+import { ClassTypes } from "@common/utils/ClassTypes";
 import { BaseEntity } from "./models/BaseEntity";
 import { Ped } from "./models/Ped";
 import { Player } from "./models/Player";

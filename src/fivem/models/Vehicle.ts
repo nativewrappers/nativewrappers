@@ -9,7 +9,7 @@ import {
 } from "fivem/enums/Vehicle";
 import { Game } from "fivem/Game";
 import type { Model } from "fivem/Model";
-import { ClassTypes } from "../../common/utils/ClassTypes";
+import { ClassTypes } from "@common/utils/ClassTypes";
 import { BaseEntity } from "./BaseEntity";
 import { Ped } from "./Ped";
 import { VehicleDoorCollection } from "./VehicleDoorCollection";

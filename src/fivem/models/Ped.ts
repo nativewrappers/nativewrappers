@@ -1,5 +1,5 @@
 import { WeaponCollection } from "../weapon/WeaponCollection";
-import { ClassTypes } from "../../common/utils/ClassTypes";
+import { ClassTypes } from "@common/utils/ClassTypes";
 import { BaseEntity } from "./BaseEntity";
 import { Vector3 } from "@common/utils/Vector";
 import type { DrivingStyle } from "fivem/enums/Driving";

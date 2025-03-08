@@ -1,5 +1,5 @@
 import cfx from "../cfx";
-import { ClassTypes } from "../../common/utils/ClassTypes";
+import { ClassTypes } from "@common/utils/ClassTypes";
 import { Ped } from "./Ped";
 import { cleanPlayerName } from "@common/utils/cleanPlayerName";
 import { Vector3 } from "@common/utils/Vector";
