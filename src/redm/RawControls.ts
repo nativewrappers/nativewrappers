@@ -53,5 +53,4 @@ export class RawControls {
   public static WasJustReleased(rawKey: RawKeys, canBeDisabled = true): boolean {
     return canBeDisabled ? IsRawKeyUp(rawKey) : IsDisabledRawKeyUp(rawKey);
   }
-
 }
