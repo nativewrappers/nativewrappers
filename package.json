@@ -48,7 +48,7 @@
     "buffer": "^6.0.3",
     "esbuild": "^0.25.0",
     "fs-extra": "^11.3.0",
-    "husky": "^9.1.7",
+    "lefthook": "^1.11.3",
     "tsc-alias": "^1.8.11",
     "typedoc": "^0.27.9",
     "typedoc-fivemjs-theme": "^0.2.7",
