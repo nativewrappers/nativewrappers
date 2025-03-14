@@ -14,6 +14,7 @@ type ResultAsLong = {};
 type ResultAsObject = {};
 
 type InputArgument =
+  | null
   | string
   | number
   | IntPtrInitialized
@@ -71,6 +72,7 @@ interface CitizenInterface {
   resultAsVector(): ResultAsVector;
   resultAsLong(): ResultAsLong;
   resultAsObject(): ResultAsObject;
+  resultAsObject2(): ResultAsObject;
 
   makeRefFunction(refFunction: Function): string;
 }
@@ -86,6 +88,9 @@ interface CitizenTimer {
 type CitizenImmediate = Omit<CitizenTimer, "refresh">;
 
 declare let Citizen: CitizenInterface;
+declare function msgpack_pack(
+  data: any
+): [string, number]
 
 declare function addRawEventListener(
   eventName: string,
