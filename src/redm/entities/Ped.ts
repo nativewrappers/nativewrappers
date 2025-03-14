@@ -1,14 +1,16 @@
+import type { Vector3 } from "@common/utils/Vector";
+import { Tasks } from "redm/Task";
+import { _N } from "redm/utils/Native";
 import { Attributes } from "../Attribute";
-import type { eDamageCleanliness, KnockOffVehicle, TamingState } from "../enums/Ped";
+import type { KnockOffVehicle, TamingState, eDamageCleanliness } from "../enums/Ped";
 import type { VehicleSeat } from "../enums/VehicleSeat";
 import { BaseEntity } from "./BaseEntity";
-import { Vehicle } from "./Vehicle";
 import type { Player } from "./Player";
-import type { Vector3 } from "@common/utils/Vector";
-import { _N } from "redm/utils/Native";
+import { Vehicle } from "./Vehicle";
 
 export class Ped extends BaseEntity {
   private attributes: Attributes | undefined;
+  private tasks: Tasks | undefined;
 
   constructor(handle: number) {
     super(handle);
@@ -41,6 +43,14 @@ export class Ped extends BaseEntity {
    */
   static removeScenarioBlock(scenarioId: number): void {
     RemoveScenarioBlockingArea(scenarioId, false);
+  }
+
+  get Tasks(): Tasks {
+    if (this.tasks) {
+      return this.tasks;
+    }
+    this.tasks = new Tasks(this);
+    return this.tasks;
   }
 
   /**
