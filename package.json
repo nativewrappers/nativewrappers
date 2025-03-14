@@ -37,8 +37,7 @@
     "watch": "tsc --watch",
     "check": "pnpm biome format",
     "format": "pnpm biome format --write",
-    "lint": "pnpm biome lint --write",
-    "prepare": "husky"
+    "lint": "pnpm biome lint --write"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
