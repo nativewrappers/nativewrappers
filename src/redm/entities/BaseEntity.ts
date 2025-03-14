@@ -54,6 +54,13 @@ export class BaseEntity {
   }
 
   /**
+   * @returns Returns true if the entity is dead
+   */
+  get IsDead(): boolean {
+    return IsEntityDead(this.handle);
+  }
+
+  /**
    * @returns The entitys current handle.
    */
   get Handle(): number {

@@ -3,4 +3,8 @@ export class Pickup {
   constructor(handle: number) {
     this.handle = handle;
   }
+
+  get Handle(): number {
+    return this.handle;
+  }
 }
