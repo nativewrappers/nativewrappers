@@ -1,7 +1,7 @@
 import { Vector3 } from "@common/utils/Vector";
-import type { CameraShake } from "./enums/CameraShake";
 import { GameplayCamera } from "./GameplayCamera";
-import { BaseEntity } from "./models/BaseEntity";
+import type { CameraShake } from "./enums/CameraShake";
+import type { BaseEntity } from "./models/BaseEntity";
 import { PedBone } from "./models/PedBone";
 import { LoadAnimDict } from "./utils/Animations";
 
@@ -183,12 +183,12 @@ export class Camera {
   }
 
   public pointAt(target: BaseEntity | PedBone | Vector3, offset: Vector3 = new Vector3(0, 0, 0)): void {
-    if (target instanceof BaseEntity) {
-      PointCamAtEntity(this.handle, target.Handle, offset.x, offset.y, offset.z, true);
+    if (target instanceof Vector3) {
+      PointCamAtCoord(this.handle, target.x, target.y, target.z);
     } else if (target instanceof PedBone) {
       PointCamAtPedBone(this.handle, target.Owner.Handle, target.Index, offset.x, offset.y, offset.z, true);
     } else {
-      PointCamAtCoord(this.handle, target.x, target.y, target.z);
+      PointCamAtEntity(this.handle, target.Handle, offset.x, offset.y, offset.z, true);
     }
   }
 
@@ -205,10 +205,10 @@ export class Camera {
   }
 
   public attachTo(object: BaseEntity | PedBone, offset: Vector3): void {
-    if (object instanceof BaseEntity) {
-      AttachCamToEntity(this.handle, object.Handle, offset.x, offset.y, offset.z, true);
-    } else if (object instanceof PedBone) {
+    if (object instanceof PedBone) {
       AttachCamToPedBone(this.handle, object.Owner.Handle, object.Index, offset.x, offset.y, offset.z, true);
+    } else {
+      AttachCamToEntity(this.handle, object.Handle, offset.x, offset.y, offset.z, true);
     }
   }
 

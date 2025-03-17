@@ -1,5 +1,4 @@
 import { Vector3 } from "@common/utils/Vector";
-import { Game } from "./Game";
 import { VehicleHash } from "./hashes/VehicleHash";
 import type { Dimensions } from "./interfaces/Dimensions";
 
@@ -20,7 +19,7 @@ export class Model implements Disposable {
    */
   constructor(hash: number | string) {
     if (typeof hash === "string") {
-      this.hash = Game.generateHash(hash);
+      this.hash = GetHashKey(hash);
     } else {
       this.hash = hash;
     }

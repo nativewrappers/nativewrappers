@@ -1,6 +1,12 @@
 import type { Color } from "@common/utils/Color";
+import { Vector3 } from "@common/utils/Vector";
 import { Blip } from "./Blip";
 import { Camera } from "./Camera";
+import { GameplayCamera } from "./GameplayCamera";
+import { Model } from "./Model";
+import { Pickup } from "./Pickup";
+import { AsynchronousRaycastResult, SynchronousRaycastResult } from "./Raycast";
+import { Rope } from "./Rope";
 import { CameraTypes } from "./enums/CameraTypes";
 import { CloudHat } from "./enums/CloudHat";
 import type { MarkerType } from "./enums/MarkerType";
@@ -8,18 +14,12 @@ import type { PickupType } from "./enums/PickupType";
 import { IntersectFlags, SHAPE_TEST_DEFAULT } from "./enums/RaycastEnums";
 import type { RopeType } from "./enums/RopeType";
 import { Weather } from "./enums/Weather";
-import { GameplayCamera } from "./GameplayCamera";
 import { VehicleHash } from "./hashes/VehicleHash";
-import { Model } from "./Model";
 import type { BaseEntity } from "./models/BaseEntity";
 import { Ped } from "./models/Ped";
 import { Prop } from "./models/Prop";
 import { Vehicle } from "./models/Vehicle";
-import { Pickup } from "./Pickup";
-import { AsynchronousRaycastResult, SynchronousRaycastResult } from "./Raycast";
-import { Rope } from "./Rope";
 import { Maths } from "./utils/Maths";
-import { Vector3 } from "@common/utils/Vector";
 
 /**
  * Class with common world manipulations.
@@ -389,11 +389,7 @@ export abstract class World {
 
     model.markAsNoLongerNeeded();
 
-    if (ped === 0) {
-      return null;
-    }
-
-    return new Ped(ped);
+    return Ped.fromHandle(ped);
   }
 
   /**

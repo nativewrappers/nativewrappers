@@ -1,19 +1,21 @@
-import { WeaponCollection } from "../weapon/WeaponCollection";
 import { ClassTypes } from "@common/utils/ClassTypes";
-import { BaseEntity } from "./BaseEntity";
 import { Vector3 } from "@common/utils/Vector";
+import { Tasks } from "fivem/Tasks";
 import type { DrivingStyle } from "fivem/enums/Driving";
 import type { FiringPattern } from "fivem/enums/FiringPattern";
 import { Gender } from "fivem/enums/Gender";
 import type { HelmetType } from "fivem/enums/HelmetType";
 import { RagdollType } from "fivem/enums/RagdollType";
 import { SpeechModifier } from "fivem/enums/SpeechModifier";
-import { VehicleSeat } from "fivem/enums/Vehicle";
+import type { VehicleSeat } from "fivem/enums/Vehicle";
 import type { WeaponHash } from "fivem/hashes/WeaponHash";
-import { Tasks } from "fivem/Tasks";
+import { GetEntityClassFromId } from "fivem/utils/GetEntityFromEntityIds";
+import { WeaponCollection } from "../weapon/WeaponCollection";
+import { BaseEntity } from "./BaseEntity";
+import type { Entity } from "./Entity";
 import { PedBoneCollection } from "./PedBoneCollection";
-import { Vehicle } from "./Vehicle";
 import { Player } from "./Player";
+import { Vehicle } from "./Vehicle";
 
 export class Ped extends BaseEntity {
   public static exists(ped: Ped): boolean {
@@ -21,6 +23,9 @@ export class Ped extends BaseEntity {
   }
 
   public static fromHandle(handle: number): Ped | null {
+    if (handle === 0 || !DoesEntityExist(handle)) {
+      return null;
+    }
     return new Ped(handle);
   }
 
@@ -33,7 +38,7 @@ export class Ped extends BaseEntity {
   }
 
   protected type = ClassTypes.Ped;
-  private pedBones?: PedBoneCollection;
+  protected bones?: PedBoneCollection;
   private weapons?: WeaponCollection;
 
   private static readonly speechModifierNames: string[] = [
@@ -161,32 +166,32 @@ export class Ped extends BaseEntity {
     return WasPedKilledByTakedown(this.handle);
   }
 
-  public get SeatIndex(): VehicleSeat {
-    if (!this.CurrentVehicle) return VehicleSeat.None;
-
-    const numberOfSeats = GetVehicleModelNumberOfSeats(this.CurrentVehicle.Model.Hash);
-    for (let seat = -1; seat < numberOfSeats; seat++) {
-      if (this.CurrentVehicle.getPedOnSeat(seat).Handle === this.handle) {
-        return seat;
-      }
-    }
-
-    return VehicleSeat.None;
-  }
+  // public get SeatIndex(): VehicleSeat {
+  //   if (!this.CurrentVehicle) return VehicleSeat.None;
+  //
+  //   const numberOfSeats = GetVehicleModelNumberOfSeats(this.CurrentVehicle.Model.Hash);
+  //   for (let seat = -1; seat < numberOfSeats; seat++) {
+  //     if (this.CurrentVehicle.getPedOnSeat(seat)?.Handle === this.handle) {
+  //       return seat;
+  //     }
+  //   }
+  //
+  //   return VehicleSeat.None;
+  // }
 
   public get CurrentVehicle(): Vehicle | null {
-    const veh = new Vehicle(GetVehiclePedIsIn(this.handle, false));
-    return veh.exists() ? veh : null;
+    const veh = Vehicle.fromHandle(GetVehiclePedIsIn(this.handle, false));
+    return veh?.exists() ? veh : null;
   }
 
   public get LastVehicle(): Vehicle | null {
-    const veh = new Vehicle(GetVehiclePedIsIn(this.handle, true));
-    return veh.exists() ? veh : null;
+    const veh = Vehicle.fromHandle(GetVehiclePedIsIn(this.handle, true));
+    return veh?.exists() ? veh : null;
   }
 
   public get VehicleTryingToEnter(): Vehicle | null {
-    const veh = new Vehicle(GetVehiclePedIsTryingToEnter(this.handle));
-    return veh.exists() ? veh : null;
+    const veh = Vehicle.fromHandle(GetVehiclePedIsTryingToEnter(this.handle));
+    return veh?.exists() ? veh : null;
   }
 
   public get IsJumpingOutOfVehicle(): boolean {
@@ -534,8 +539,8 @@ export class Ped extends BaseEntity {
     return new Ped(GetMeleeTargetForPed(this.handle));
   }
 
-  public getKiller(): BaseEntity | null {
-    return Ped.fromHandle(GetPedSourceOfDeath(this.handle));
+  public getKiller(): Entity | null {
+    return GetEntityClassFromId(GetPedSourceOfDeath(this.handle));
   }
 
   public kill(): void {
@@ -618,11 +623,11 @@ export class Ped extends BaseEntity {
   }
 
   public get Bones(): PedBoneCollection {
-    if (!this.pedBones) {
-      this.pedBones = new PedBoneCollection(this);
+    if (!this.bones) {
+      this.bones = new PedBoneCollection(this);
     }
 
-    return this.pedBones;
+    return this.bones;
   }
 
   /**
@@ -922,5 +927,9 @@ export class Ped extends BaseEntity {
 
   public hasHeadBlendFinished(): boolean {
     return HasPedHeadBlendFinished(this.handle);
+  }
+
+  public getEntityAttachedTo(): Entity {
+    return GetEntityClassFromId(this.handle);
   }
 }

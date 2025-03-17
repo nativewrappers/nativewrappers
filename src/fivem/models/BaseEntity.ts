@@ -1,31 +1,21 @@
-import { ClassTypes } from "@common/utils/ClassTypes";
+import type { ClassTypes } from "@common/utils/ClassTypes";
+import { Quaternion } from "@common/utils/Quaternion";
 import { Vector3 } from "@common/utils/Vector";
+import { Model } from "fivem/Model";
+import cfx, { type StateBagChangeHandler } from "fivem/cfx";
 import { ForceType } from "fivem/enums/ForceType";
 import type { MaterialHash } from "fivem/hashes/MaterialHash";
 import type { WeaponHash } from "fivem/hashes/WeaponHash";
-import { Model } from "fivem/Model";
-import type { EntityBone } from "./EntityBone";
 import { Blip } from "../Blip";
-import { EntityBoneCollection } from "./EntityBoneCollection";
-import cfx, { type StateBagChangeHandler } from "fivem/cfx";
-import { Quaternion } from "@common/utils/Quaternion";
+import type { BaseEntityBone } from "./BaseEntityBone";
+import type { BaseEntityBoneCollection } from "./BaseEntityBoneCollection";
 
-export class BaseEntity {
-  public static fromNetworkId(networkId: number): BaseEntity | null {
-    return new BaseEntity(NetworkGetEntityFromNetworkId(networkId));
-  }
-
-  public static fromStateBagName(stateBagName: string): BaseEntity | null {
-    const entity = GetEntityFromStateBagName(stateBagName);
-    if (entity === 0) return null;
-    return new BaseEntity(entity);
-  }
-
+export abstract class BaseEntity {
   protected handle: number;
-  protected bones: EntityBoneCollection | undefined;
   protected stateBagCookies: number[] = [];
   protected netId: number | null = null;
-  protected type = ClassTypes.Entity;
+  protected abstract type: ClassTypes;
+  protected abstract bones?: BaseEntityBoneCollection;
 
   constructor(handle: number) {
     this.handle = handle;
@@ -387,12 +377,7 @@ export class BaseEntity {
     SetEntityRecordsCollisions(this.handle, value);
   }
 
-  public get Bones(): EntityBoneCollection {
-    if (!this.bones) {
-      this.bones = new EntityBoneCollection(this);
-    }
-    return this.bones;
-  }
+  public abstract get Bones(): BaseEntityBoneCollection;
 
   public get AttachedBlip(): Blip | null {
     const handle: number = GetBlipFromEntity(this.handle);
@@ -579,7 +564,7 @@ export class BaseEntity {
    * ```
    */
   public attachToBone(
-    entityBone: EntityBone,
+    entityBone: BaseEntityBone,
     position: Vector3,
     rotation: Vector3,
     collisions = false,
@@ -621,9 +606,7 @@ export class BaseEntity {
     return IsEntityAttachedToEntity(this.handle, entity.Handle);
   }
 
-  public getEntityAttachedTo(): BaseEntity {
-    return new BaseEntity(GetEntityAttachedTo(this.handle));
-  }
+  public abstract getEntityAttachedTo(): BaseEntity | null;
 
   public applyForce(direction: Vector3, rotation: Vector3, forceType: ForceType = ForceType.MaxForceRot2): void {
     ApplyForceToEntity(

@@ -1,15 +1,10 @@
 import type { BaseEntity } from "./BaseEntity";
+import { BaseEntityBoneCollection } from "./BaseEntityBoneCollection";
 import { EntityBone } from "./EntityBone";
 
-export class EntityBoneCollection {
-  protected readonly owner: BaseEntity;
-
+export class EntityBoneCollection extends BaseEntityBoneCollection {
   constructor(owner: BaseEntity) {
-    this.owner = owner;
-  }
-
-  public hasBone(name: string): boolean {
-    return GetEntityBoneIndexByName(this.owner.Handle, name) !== -1;
+    super(owner);
   }
 
   public getBone(boneIndex?: number, boneName?: string): EntityBone {

@@ -1,16 +1,19 @@
+import { ClassTypes } from "@common/utils/ClassTypes";
 import { Vector3 } from "@common/utils/Vector";
+import { GameConstants } from "fivem/GameConstants";
+import type { Model } from "fivem/Model";
 import type { RadioStation } from "fivem/enums/RadioStation";
 import {
   type VehicleClass,
   type VehicleLandingGearState,
-  VehicleRoofState,
   type VehicleLockStatus,
+  VehicleRoofState,
   VehicleSeat,
 } from "fivem/enums/Vehicle";
-import { Game } from "fivem/Game";
-import type { Model } from "fivem/Model";
-import { ClassTypes } from "@common/utils/ClassTypes";
+import { GetEntityClassFromId } from "fivem/utils/GetEntityFromEntityIds";
 import { BaseEntity } from "./BaseEntity";
+import type { Entity } from "./Entity";
+import { EntityBoneCollection } from "./EntityBoneCollection";
 import { Ped } from "./Ped";
 import { VehicleDoorCollection } from "./VehicleDoorCollection";
 import { VehicleModCollection } from "./VehicleModCollection";
@@ -35,7 +38,9 @@ export class Vehicle extends BaseEntity {
   }
 
   public static fromHandle(handle: number): Vehicle | null {
-    if (!DoesEntityExist(handle)) return null;
+    if (handle === 0 || !DoesEntityExist(handle)) {
+      return null;
+    }
     return new Vehicle(handle);
   }
 
@@ -51,9 +56,18 @@ export class Vehicle extends BaseEntity {
   private _wheels?: VehicleWheelCollection;
   private _windows?: VehicleWindowCollection;
   protected type = ClassTypes.Vehicle;
+  protected bones?: EntityBoneCollection;
 
   constructor(handle: number) {
     super(handle);
+  }
+
+  public get Bones(): EntityBoneCollection {
+    if (!this.bones) {
+      this.bones = new EntityBoneCollection(this);
+    }
+
+    return this.bones;
   }
 
   public exists(): boolean {
@@ -148,7 +162,7 @@ export class Vehicle extends BaseEntity {
   }
 
   public get IsRadioEnabled(): boolean {
-    if (Game.Player.Character.isInVehicle(this)) {
+    if (GameConstants.Player.Character.isInVehicle(this)) {
       return IsPlayerVehicleRadioEnabled();
     }
     return false;
@@ -256,7 +270,7 @@ export class Vehicle extends BaseEntity {
     SetVehicleHasMutedSirens(this.handle, value);
   }
 
-  public soundHorn(duration: number, mode = Game.generateHash("HELDDOWN")): void {
+  public soundHorn(duration: number, mode = GetHashKey("HELDDOWN")): void {
     StartVehicleHorn(this.handle, duration, mode, false);
   }
 
@@ -508,7 +522,7 @@ export class Vehicle extends BaseEntity {
     return IsVehicleInBurnout(this.handle);
   }
 
-  public get Driver(): Ped {
+  public get Driver(): Ped | null {
     return this.getPedOnSeat(VehicleSeat.Driver);
   }
 
@@ -541,17 +555,17 @@ export class Vehicle extends BaseEntity {
     ResetGhostedEntityAlpha();
   }
 
-  public get Occupants(): Ped[] {
+  public get Occupants(): (Ped | null)[] {
     const driver = this.Driver;
 
-    if (!Ped.exists(driver)) {
+    if (driver === null) {
       return this.Passengers;
     }
 
     return [driver, ...this.Passengers];
   }
 
-  public get Passengers(): Ped[] {
+  public get Passengers(): (Ped | null)[] {
     const passengerCount = this.PassengerCount;
     if (passengerCount === 0) {
       return [];
@@ -613,8 +627,8 @@ export class Vehicle extends BaseEntity {
     }
   }
 
-  public getPedOnSeat(seat: VehicleSeat): Ped {
-    return new Ped(GetPedInVehicleSeat(this.handle, seat));
+  public getPedOnSeat(seat: VehicleSeat): Ped | null {
+    return Ped.fromHandle(GetPedInVehicleSeat(this.handle, seat));
   }
 
   public isSeatFree(seat: VehicleSeat): boolean {
@@ -744,5 +758,9 @@ export class Vehicle extends BaseEntity {
 
   public getHandlingVector(fieldName: string): Vector3 {
     return Vector3.fromArray(GetVehicleHandlingVector(this.handle, "CHandlingData", fieldName));
+  }
+
+  public getEntityAttachedTo(): Entity {
+    return GetEntityClassFromId(this.handle);
   }
 }

@@ -1,20 +1,20 @@
 import { Vector3 } from "@common/utils/Vector";
+import type { TaskSequence } from "./TaskSequence";
 import type { AnimationFlags } from "./enums/AnimationFlags";
 import { DrivingStyle } from "./enums/Driving";
 import { FiringPattern } from "./enums/FiringPattern";
-import { VehicleSeat } from "./enums/Vehicle";
 import type { LeaveVehicleFlags } from "./enums/LeaveVehicleFlags";
-import { BaseEntity } from "./models/BaseEntity";
-import { Ped } from "./models/Ped";
+import { VehicleSeat } from "./enums/Vehicle";
+import type { BaseEntity } from "./models/BaseEntity";
+import type { Ped } from "./models/Ped";
 import type { Vehicle } from "./models/Vehicle";
-import type { TaskSequence } from "./TaskSequence";
 import { LoadAnimDict } from "./utils/Animations";
 
 export class Tasks {
   private ped: Ped;
 
   // we take null because sequences have a null ped, if you pass null to this
-  // you betterk now what you're doing.
+  // you better now what you're doing.
   constructor(ped: Ped | null) {
     const actualPed = ped ?? { handle: null };
     // @ts-ignore
@@ -30,8 +30,11 @@ export class Tasks {
   }
 
   public aimAt(target: BaseEntity | Vector3, duration: number): void {
-    if (target instanceof BaseEntity) TaskAimGunAtEntity(this.ped.Handle, target.Handle, duration, false);
-    else TaskAimGunAtCoord(this.ped.Handle, target.x, target.y, target.z, duration, false, false);
+    if (target instanceof Vector3) {
+      TaskAimGunAtCoord(this.ped.Handle, target.x, target.y, target.z, duration, false, false);
+    } else {
+      TaskAimGunAtEntity(this.ped.Handle, target.Handle, duration, false);
+    }
   }
 
   public arrest(ped: Ped): void {
@@ -118,9 +121,7 @@ export class Tasks {
   }
 
   public fleeFrom(pedOrPosition: Ped | Vector3, duration = -1): void {
-    if (pedOrPosition instanceof Ped) {
-      TaskSmartFleePed(this.ped.Handle, pedOrPosition.Handle, 100, duration, false, false);
-    } else {
+    if (pedOrPosition instanceof Vector3) {
       TaskSmartFleeCoord(
         this.ped.Handle,
         pedOrPosition.x,
@@ -131,6 +132,8 @@ export class Tasks {
         false,
         false,
       );
+    } else {
+      TaskSmartFleePed(this.ped.Handle, pedOrPosition.Handle, 100, duration, false, false);
     }
   }
 
@@ -245,9 +248,11 @@ export class Tasks {
   }
 
   public lookAt(targetOrPosition: BaseEntity | Vector3, duration = -1): void {
-    if (targetOrPosition instanceof BaseEntity)
+    if (targetOrPosition instanceof Vector3) {
+      TaskLookAtCoord(this.ped.Handle, targetOrPosition.x, targetOrPosition.y, targetOrPosition.z, duration, 0, 2);
+    } else {
       TaskLookAtEntity(this.ped.Handle, targetOrPosition.Handle, duration, 0, 2);
-    else TaskLookAtCoord(this.ped.Handle, targetOrPosition.x, targetOrPosition.y, targetOrPosition.z, duration, 0, 2);
+    }
   }
 
   public parachuteTo(position: Vector3): void {
@@ -316,9 +321,11 @@ export class Tasks {
   }
 
   public shootAt(targetOrPosition: Ped | Vector3, duration = -1, pattern = FiringPattern.Default): void {
-    if (targetOrPosition instanceof Ped) TaskShootAtEntity(this.ped.Handle, targetOrPosition.Handle, duration, pattern);
-    else
+    if (targetOrPosition instanceof Vector3) {
       TaskShootAtCoord(this.ped.Handle, targetOrPosition.x, targetOrPosition.y, targetOrPosition.z, duration, pattern);
+    } else {
+      TaskShootAtEntity(this.ped.Handle, targetOrPosition.Handle, duration, pattern);
+    }
   }
 
   public shuffleToNextVehicleSeat(vehicle: Vehicle): void {
@@ -363,9 +370,11 @@ export class Tasks {
   }
 
   public turnTo(targetOrPosition: BaseEntity | Vector3, duration = -1): void {
-    if (targetOrPosition instanceof BaseEntity)
+    if (targetOrPosition instanceof Vector3) {
+      TaskTurnPedToFaceCoord(this.ped.Handle, targetOrPosition.x, targetOrPosition.y, targetOrPosition.z, duration);
+    } else {
       TaskTurnPedToFaceEntity(this.ped.Handle, targetOrPosition.Handle, duration);
-    else TaskTurnPedToFaceCoord(this.ped.Handle, targetOrPosition.x, targetOrPosition.y, targetOrPosition.z, duration);
+    }
   }
 
   public useParachute(): void {

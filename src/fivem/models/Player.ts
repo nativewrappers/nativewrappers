@@ -1,8 +1,9 @@
-import cfx, { type StateBagChangeHandler } from "../cfx";
 import { ClassTypes } from "@common/utils/ClassTypes";
 import { Color } from "@common/utils/Color";
 import { Model } from "fivem/Model";
-import { BaseEntity } from "./BaseEntity";
+import { GetEntityClassFromId } from "fivem/utils/GetEntityFromEntityIds";
+import cfx, { type StateBagChangeHandler } from "../cfx";
+import type { Entity } from "./Entity";
 import { Ped } from "./Ped";
 
 export class Player {
@@ -126,10 +127,10 @@ export class Player {
     }
   }
 
-  public get EntityPlayerIsAimingAt(): BaseEntity | null {
+  public get EntityPlayerIsAimingAt(): Entity | null {
     const [entityHit, entity] = GetEntityPlayerIsFreeAimingAt(this.handle);
     if (entityHit) {
-      return new BaseEntity(entity);
+      return GetEntityClassFromId(entity);
     }
     return null;
   }
@@ -205,10 +206,10 @@ export class Player {
   /**
    * The players melee target?
    */
-  public get TargetEntity(): BaseEntity | null {
+  public get TargetEntity(): Entity | null {
     const [entityHit, entity] = GetPlayerTargetEntity(this.handle);
     if (entityHit) {
-      return new BaseEntity(entity);
+      return GetEntityClassFromId(entity);
     }
 
     return null;

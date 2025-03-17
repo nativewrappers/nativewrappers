@@ -1,5 +1,8 @@
 import { ClassTypes } from "@common/utils/ClassTypes";
+import { GetEntityClassFromId } from "fivem/utils/GetEntityFromEntityIds";
 import { BaseEntity } from "./BaseEntity";
+import type { Entity } from "./Entity";
+import { EntityBoneCollection } from "./EntityBoneCollection";
 
 export class Prop extends BaseEntity {
   public static exists(prop: Prop): boolean {
@@ -18,6 +21,7 @@ export class Prop extends BaseEntity {
     return new Prop(NetworkGetEntityFromNetworkId(networkId));
   }
   protected type = ClassTypes.Prop;
+  protected bones?: EntityBoneCollection | undefined;
 
   constructor(handle: number) {
     super(handle);
@@ -29,5 +33,17 @@ export class Prop extends BaseEntity {
 
   public placeOnGround(): void {
     PlaceObjectOnGroundProperly(this.handle);
+  }
+
+  public getEntityAttachedTo(): Entity {
+    return GetEntityClassFromId(this.handle);
+  }
+
+  public get Bones(): EntityBoneCollection {
+    if (!this.bones) {
+      this.bones = new EntityBoneCollection(this);
+    }
+
+    return this.bones;
   }
 }
