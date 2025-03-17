@@ -1,3 +1,5 @@
+import { GlobalData } from "./GlobalData";
+
 type Restricted = boolean | string | string[];
 
 interface ParameterTypes {
@@ -29,7 +31,7 @@ type CommandHandler<T extends Parameter[]> = (args: MappedParameters<T>) => void
 function registerCommand(
   name: string | string[],
   commandHandler: (source: number, args: string[], raw: string) => void,
-  restricted?: Restricted,
+  restricted: Restricted = true,
 ) {
   if (Array.isArray(name)) {
     for (const command of name) {
@@ -39,7 +41,7 @@ function registerCommand(
     return;
   }
 
-  RegisterCommand(name, commandHandler, !!restricted);
+  RegisterCommand(name, commandHandler, GlobalData.IS_CLIENT ? false : !!restricted);
 
   $SERVER: {
     const ace = `command.${name}`;
@@ -61,6 +63,18 @@ function registerCommand(
 export class Command<T extends Parameter[] = Parameter[]> {
   #handler: CommandHandler<T>;
 
+  /**
+   * Registers a new executable command with optional parameter validation and permission restrictions.
+   * @param name The unique identifier(s) for the command, either as a single string or an array of strings.
+   * @param help A description of the command, displayed as a chat suggestion.
+   * @param handler The function to execute when the command is executed.
+   * @param params An optional array of parameter definitions specifying the command's expected arguments,
+   *               including their names, types, and descriptive help text for chat suggestions.
+   * @param restricted Determines the command's access permissions:
+   *                   - Defaults to `true`, restricting usage to users with the "command.commandName" ACE permission.
+   *                   - A string such as `"group.admin"` grants the command permission to the specified principal.
+   *                   - An array of strings grants permission to multiple principals.
+   */
   constructor(
     readonly name: string | string[],
     readonly help: string,
@@ -93,6 +107,13 @@ export class Command<T extends Parameter[] = Parameter[]> {
     }
   }
 
+  /**
+   * Maps the arguments received from a command call to the defined parameters while validating the argument types.
+   * @param source The client that executed the command, or -1 if executed by the server.
+   * @param args The arguments passed to the command.
+   * @param raw The raw input string passed to the command.
+   * @returns A mapped object containing parsed parameters.
+   */
   private mapArguments(source: number, args: string[], raw: string): MappedParameters<T> | null {
     const mapped = {
       source,
@@ -147,6 +168,12 @@ export class Command<T extends Parameter[] = Parameter[]> {
     return result ? mapped : null;
   }
 
+  /**
+   * Executes the command with the given arguments and source, validating and mapping the arguments before calling the handler.
+   * @param source The client that executed the command.
+   * @param args The arguments passed to the command.
+   * @param raw The raw input string passed to the command.
+   */
   public async call(source: number, args: string[], raw: string = args.join(" ")) {
     const parsed = this.mapArguments(source, args, raw);
 
@@ -159,3 +186,5 @@ export class Command<T extends Parameter[] = Parameter[]> {
     }
   }
 }
+
+const cmd = new Command();
