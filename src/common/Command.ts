@@ -186,5 +186,3 @@ export class Command<T extends Parameter[] = Parameter[]> {
     }
   }
 }
-
-const cmd = new Command();
