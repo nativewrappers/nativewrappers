@@ -7,7 +7,7 @@ import { Gender } from "fivem/enums/Gender";
 import type { HelmetType } from "fivem/enums/HelmetType";
 import { RagdollType } from "fivem/enums/RagdollType";
 import { SpeechModifier } from "fivem/enums/SpeechModifier";
-import type { VehicleSeat } from "fivem/enums/Vehicle";
+import { VehicleSeat } from "fivem/enums/Vehicle";
 import type { WeaponHash } from "fivem/hashes/WeaponHash";
 import { GetEntityClassFromId } from "fivem/utils/GetEntityFromEntityIds";
 import { WeaponCollection } from "../weapon/WeaponCollection";
@@ -166,18 +166,18 @@ export class Ped extends BaseEntity {
     return WasPedKilledByTakedown(this.handle);
   }
 
-  // public get SeatIndex(): VehicleSeat {
-  //   if (!this.CurrentVehicle) return VehicleSeat.None;
-  //
-  //   const numberOfSeats = GetVehicleModelNumberOfSeats(this.CurrentVehicle.Model.Hash);
-  //   for (let seat = -1; seat < numberOfSeats; seat++) {
-  //     if (this.CurrentVehicle.getPedOnSeat(seat)?.Handle === this.handle) {
-  //       return seat;
-  //     }
-  //   }
-  //
-  //   return VehicleSeat.None;
-  // }
+  public get SeatIndex(): VehicleSeat {
+    if (!this.CurrentVehicle) return VehicleSeat.None;
+
+    const numberOfSeats = GetVehicleModelNumberOfSeats(this.CurrentVehicle.Model.Hash);
+    for (let seat = -1; seat < numberOfSeats; seat++) {
+      if (this.CurrentVehicle.getPedOnSeat(seat)?.Handle === this.handle) {
+        return seat;
+      }
+    }
+
+    return VehicleSeat.None;
+  }
 
   public get CurrentVehicle(): Vehicle | null {
     const veh = Vehicle.fromHandle(GetVehiclePedIsIn(this.handle, false));
