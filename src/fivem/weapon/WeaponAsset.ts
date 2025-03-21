@@ -1,3 +1,4 @@
+import { Delay } from "@common/utils/Delay";
 import { Game } from "fivem/Game";
 import type { WeaponHash } from "fivem/hashes/WeaponHash";
 import { Weapon } from "./Weapon";
@@ -59,7 +60,7 @@ export class WeaponAsset {
     const start = GetGameTimer();
 
     while (!this.IsLoaded) {
-      await Wait(100);
+      await Delay(100);
 
       const now = GetGameTimer();
       if (now - start >= timeout) {

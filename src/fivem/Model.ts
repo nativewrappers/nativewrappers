@@ -1,3 +1,4 @@
+import { Delay } from "@common/utils/Delay";
 import { Vector3 } from "@common/utils/Vector";
 import { VehicleHash } from "./hashes/VehicleHash";
 import type { Dimensions } from "./interfaces/Dimensions";
@@ -219,7 +220,7 @@ export class Model implements Disposable {
     RequestModel(this.hash);
     const timeout = GetGameTimer() + timeoutMs;
     while (!this.IsLoaded && GetGameTimer() < timeout) {
-      await Wait(0);
+      await Delay(0);
     }
     this.requestedModel = true;
 

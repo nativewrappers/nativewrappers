@@ -1,4 +1,5 @@
 import type { Color } from "@common/utils/Color";
+import { Delay } from "@common/utils/Delay";
 import { Vector3 } from "@common/utils/Vector";
 import { Blip } from "./Blip";
 import { Camera } from "./Camera";
@@ -498,7 +499,7 @@ export abstract class World {
       }
 
       while (!RopeAreTexturesLoaded()) {
-        await Wait(0);
+        await Delay(0);
       }
     }
 

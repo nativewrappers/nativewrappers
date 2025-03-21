@@ -1,13 +1,14 @@
 import { Color } from "@common/utils/Color";
+import { Delay } from "@common/utils/Delay";
 import { Audio } from "fivem/Audio";
+import { Game } from "fivem/Game";
+import { GameplayCamera } from "fivem/GameplayCamera";
 import { Alignment } from "fivem/enums/Alignment";
 import { Control } from "fivem/enums/Control";
 import { CursorSprite } from "fivem/enums/CursorSprite";
 import { Font } from "fivem/enums/Font";
 import { InputMode } from "fivem/enums/InputMode";
 import { MenuAlignment } from "fivem/enums/MenuAlignment";
-import { Game } from "fivem/Game";
-import { GameplayCamera } from "fivem/GameplayCamera";
 import { Crypto } from "fivem/utils/Crypto";
 import { LiteEvent } from "fivem/utils/LiteEvent";
 import { Point } from "fivem/utils/Point";
@@ -18,13 +19,13 @@ import { Rectangle } from "../Rectangle";
 import { Screen } from "../Screen";
 import { Sprite } from "../Sprite";
 import { Text } from "../Text";
+import { MenuControls } from "./MenuControls";
+import { MenuSettings } from "./MenuSettings";
 import { UIMenuCheckboxItem } from "./items/UIMenuCheckboxItem";
 import { UIMenuItem } from "./items/UIMenuItem";
 import { UIMenuListItem } from "./items/UIMenuListItem";
 import { UIMenuSeparatorItem } from "./items/UIMenuSeparatorItem";
 import { UIMenuSliderItem } from "./items/UIMenuSliderItem";
-import { MenuControls } from "./MenuControls";
-import { MenuSettings } from "./MenuSettings";
 
 export class Menu {
   public static screenAspectRatio = IsDuplicityVersion() ? 0 : Screen.AspectRatio;
@@ -662,7 +663,7 @@ export class Menu {
           this.CurrentSelection = hoveredItemIndex;
           this.indexChange.emit(this.CurrentSelection);
         }
-        await Wait(this._navigationDelay);
+        await Delay(this._navigationDelay);
         while (Game.isDisabledControlPressed(0, Control.Attack) && hoveredItem.IsMouseInBounds) {
           if (hoveredItem.selected) {
             if (hoveredItem.enabled) {
@@ -681,7 +682,7 @@ export class Menu {
             this.CurrentSelection = hoveredItemIndex;
             this.indexChange.emit(this.CurrentSelection);
           }
-          await Wait(125);
+          await Delay(125);
         }
         this._mousePressed = false;
       })();
@@ -697,10 +698,10 @@ export class Menu {
         (async () => {
           this._mousePressed = true;
           this.goUp();
-          await Wait(this._navigationDelay);
+          await Delay(this._navigationDelay);
           while (Game.isDisabledControlPressed(0, Control.Attack)) {
             this.goUp();
-            await Wait(125);
+            await Delay(125);
           }
           this._mousePressed = false;
         })();
@@ -719,10 +720,10 @@ export class Menu {
         (async () => {
           this._mousePressed = true;
           this.goDown();
-          await Wait(this._navigationDelay);
+          await Delay(this._navigationDelay);
           while (Game.isDisabledControlPressed(0, Control.Attack)) {
             this.goDown();
-            await Wait(125);
+            await Delay(125);
           }
           this._mousePressed = false;
         })();
