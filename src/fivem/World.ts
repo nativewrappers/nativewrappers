@@ -14,6 +14,7 @@ import type { MarkerType } from "./enums/MarkerType";
 import type { PickupType } from "./enums/PickupType";
 import { IntersectFlags, SHAPE_TEST_DEFAULT } from "./enums/RaycastEnums";
 import type { RopeType } from "./enums/RopeType";
+import type { VehicleSeat } from "./enums/Vehicle";
 import { Weather } from "./enums/Weather";
 import { VehicleHash } from "./hashes/VehicleHash";
 import type { BaseEntity } from "./models/BaseEntity";
@@ -372,21 +373,49 @@ export abstract class World {
    * @param model Ped model to be spawned.
    * @param position World position (coordinates) of Ped spawn.
    * @param heading Heading of Ped when spawning.
-   * @param isNetwork
+   * @param shouldNetwork if the created ped should be networked to other clients
    * @returns Ped object.
    */
   public static async createPed(
     model: Model,
     position: Vector3,
     heading = 0,
-    isNetwork = true,
+    shouldNetwork = true,
     pinToScript = true,
   ): Promise<Ped | null> {
     if (!model.IsPed || !(await model.request(1000))) {
       return null;
     }
 
-    const ped = CreatePed(-1, model.Hash, position.x, position.y, position.z, heading, isNetwork, pinToScript);
+    const ped = CreatePed(-1, model.Hash, position.x, position.y, position.z, heading, shouldNetwork, pinToScript);
+
+    model.markAsNoLongerNeeded();
+
+    return Ped.fromHandle(ped);
+  }
+
+  /**
+   * Created a ped in the specified vehicle
+   *
+   * @param vehicle the vehicle to create the ped in
+   * @param model Ped model to be spawned.
+   * @param seat the seat to spawn the ped into
+   * @param heading Heading of Ped when spawning.
+   * @param shouldNetwork if the created ped should be networked
+   * @returns the ped that was created, or null if it doesn't exist.
+   */
+  public static async createPedInsideVehicle(
+    vehicle: Vehicle,
+    model: Model,
+    seat: VehicleSeat,
+    shouldNetwork = true,
+    pinToScript = true,
+  ): Promise<Ped | null> {
+    if (!model.IsPed || !(await model.request(1000))) {
+      return null;
+    }
+
+    const ped = CreatePedInsideVehicle(vehicle.Handle, -1, model.Hash, seat, shouldNetwork, pinToScript);
 
     model.markAsNoLongerNeeded();
 
@@ -436,9 +465,7 @@ export abstract class World {
 
     const vehicle = CreateVehicle(model.Hash, position.x, position.y, position.z, heading, isNetwork, pinToScript);
 
-    if (vehicle === 0) {
-      return null;
-    }
+    model.markAsNoLongerNeeded();
 
     return new Vehicle(vehicle);
   }
@@ -1016,10 +1043,7 @@ export abstract class World {
 
   public static getClosestObject(model: Model, coords: Vector3, radius = 25.0, isMission = false): Prop | null {
     const prop = GetClosestObjectOfType(coords.x, coords.y, coords.z, radius, model.Hash, isMission, false, false);
-    if (prop !== 0) {
-      return new Prop(prop);
-    }
-    return null;
+    return Prop.fromHandle(prop);
   }
 
   /**
@@ -1029,11 +1053,8 @@ export abstract class World {
    */
   public static getAllProps(): Prop[] {
     const handles: number[] = GetGamePool("CObject");
-    const props: Prop[] = [];
 
-    handles.forEach((handle) => props.push(new Prop(handle)));
-
-    return props;
+    return handles.map((handle) => new Prop(handle));
   }
 
   /**
@@ -1043,11 +1064,8 @@ export abstract class World {
    */
   public static getAllRopes(): Rope[] {
     const handles: number[] = GetAllRopes();
-    const props: Rope[] = [];
 
-    handles.forEach((handle) => props.push(new Rope(handle)));
-
-    return props;
+    return handles.map((handle) => new Rope(handle));
   }
 
   /**
@@ -1057,11 +1075,8 @@ export abstract class World {
    */
   public static getAllPeds(): Ped[] {
     const handles: number[] = GetGamePool("CPed");
-    const peds: Ped[] = [];
 
-    handles.forEach((handle) => peds.push(new Ped(handle)));
-
-    return peds;
+    return handles.map((handle) => new Ped(handle));
   }
 
   /**
@@ -1071,11 +1086,8 @@ export abstract class World {
    */
   public static getAllVehicles(): Vehicle[] {
     const handles: number[] = GetGamePool("CVehicle");
-    const vehicles: Vehicle[] = [];
 
-    handles.forEach((handle) => vehicles.push(new Vehicle(handle)));
-
-    return vehicles;
+    return handles.map((handle) => new Vehicle(handle));
   }
 
   /**
@@ -1108,11 +1120,8 @@ export abstract class World {
    */
   public static getAllPickups(): Pickup[] {
     const handles: number[] = GetGamePool("CPickup");
-    const pickups: Pickup[] = [];
 
-    handles.forEach((handle) => pickups.push(new Pickup(handle)));
-
-    return pickups;
+    return handles.map((handle) => new Pickup(handle));
   }
 
   private static currentCloudHat: CloudHat = CloudHat.Clear;
