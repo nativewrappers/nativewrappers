@@ -12,6 +12,36 @@ export class Ped extends BaseEntity {
   private attributes: Attributes | undefined;
   private tasks: Tasks | undefined;
 
+  /**
+   * Gets the entity from the handle given, if the entity doesn't exist it will return
+   * null.
+   */
+  static fromHandle(handle: number): Ped | null {
+    if (handle === 0 || !DoesEntityExist(handle)) {
+      return null;
+    }
+    return new Ped(handle);
+  }
+
+  /**
+   * Gets the ped from the current network id, this doesn't check that
+   * the entity is actually a ped
+   */
+  static fromNetworkId(netId: number): Ped | null {
+    if (netId === 0 || !NetworkDoesEntityExistWithNetworkId(netId)) {
+      return null;
+    }
+    return new Ped(NetToPed(netId));
+  }
+
+  static fromStateBagName(bagName: string): Ped | null {
+    const ent = GetEntityFromStateBagName(bagName);
+    if (ent === 0) {
+      return null;
+    }
+    return new Ped(ent);
+  }
+
   constructor(handle: number) {
     super(handle);
   }
@@ -57,14 +87,14 @@ export class Ped extends BaseEntity {
    * While this increases the peds max health, if used on a player it wont increase the max core value on the hud
    */
   set MaxHealth(amount: number) {
-    SetPedMaxHealth(this.Handle, amount);
+    SetPedMaxHealth(this.handle, amount);
   }
 
   /**
    * @returns the maximum health of the ped
    */
   get MaxHealth(): number {
-    return GetPedMaxHealth(this.Handle);
+    return GetPedMaxHealth(this.handle);
   }
 
   /**
@@ -77,55 +107,51 @@ export class Ped extends BaseEntity {
   }
 
   get InVehicle(): boolean {
-    return IsPedInAnyVehicle(this.Handle, true);
+    return IsPedInAnyVehicle(this.handle, true);
   }
 
   get IsInjured(): boolean {
-    return IsPedInjured(this.Handle);
+    return IsPedInjured(this.handle);
   }
 
   get IsFatallyInjured(): boolean {
-    return IsPedFatallyInjured(this.Handle);
+    return IsPedFatallyInjured(this.handle);
   }
 
   get IsPlayer(): boolean {
-    return IsPedAPlayer(this.Handle);
+    return IsPedAPlayer(this.handle);
   }
 
   get IsShooting(): boolean {
-    return IsPedShooting(this.Handle);
+    return IsPedShooting(this.handle);
   }
 
   get Accuracy(): number {
-    return GetPedAccuracy(this.Handle);
+    return GetPedAccuracy(this.handle);
   }
 
   set Accuracy(accuracy: number) {
-    SetPedAccuracy(this.Handle, accuracy);
+    SetPedAccuracy(this.handle, accuracy);
   }
 
   get CanBeKnockedOffVehicle(): boolean {
-    return CanKnockPedOffVehicle(this.Handle);
+    return CanKnockPedOffVehicle(this.handle);
   }
 
   get IsMale(): boolean {
-    return IsPedMale(this.Handle);
+    return IsPedMale(this.handle);
   }
 
   get IsHuman(): boolean {
-    return IsPedHuman(this.Handle);
+    return IsPedHuman(this.handle);
   }
 
   get IsOnTopOfVehicle(): boolean {
-    return IsPedOnVehicle(this.Handle, false as unknown as number);
+    return IsPedOnVehicle(this.handle, false as unknown as number);
   }
 
   get Vehicle(): Vehicle | null {
-    const vehicle = GetVehiclePedIsIn(this.Handle, false);
-    if (vehicle === 0) {
-      return null;
-    }
-    return new Vehicle(vehicle);
+    return Vehicle.fromHandle(GetVehiclePedIsIn(this.handle, false));
   }
 
   /**
@@ -133,8 +159,8 @@ export class Ped extends BaseEntity {
    */
   get Mount(): Ped | null {
     // GET_LAST_MOUNT
-    const pedId = _N<number>("0x4C8B59171957BCF7", this.Handle, Citizen.resultAsInteger());
-    return pedId ? new Ped(pedId) : null;
+    const pedId = _N<number>("0x4C8B59171957BCF7", this.handle, Citizen.resultAsInteger());
+    return Ped.fromHandle(pedId);
   }
 
   /**
@@ -142,8 +168,8 @@ export class Ped extends BaseEntity {
    */
   get LeadingHorse(): Ped | null {
     // GET_LAST_LED_MOUNT
-    const pedId = _N<number>("0x693126B5D0457D0D", this.Handle, Citizen.resultAsInteger());
-    return pedId ? new Ped(pedId) : null;
+    const pedId = _N<number>("0x693126B5D0457D0D", this.handle, Citizen.resultAsInteger());
+    return Ped.fromHandle(pedId);
   }
 
   /**
@@ -151,136 +177,136 @@ export class Ped extends BaseEntity {
    */
   get Owner(): Ped | null {
     // _GET_ACTIVE_ANIMAL_OWNER
-    const pedId = _N<number>("0xF103823FFE72BB49", this.Handle, Citizen.resultAsInteger());
-    return pedId ? new Ped(pedId) : null;
+    const pedId = _N<number>("0xF103823FFE72BB49", this.handle, Citizen.resultAsInteger());
+    return Ped.fromHandle(pedId);
   }
 
   get TamingState(): TamingState {
     // _GET_HORSE_TAMING_STATE
-    return _N<TamingState>("0x454AD4DA6C41B5BD", this.Handle, Citizen.resultAsInteger());
+    return _N<TamingState>("0x454AD4DA6C41B5BD", this.handle, Citizen.resultAsInteger());
   }
 
   get IsInteractingWithAnimal(): boolean {
     // _IS_ANIMAL_INTERACTION_RUNNING
-    return _N<boolean>("0x7FC84E85D98F063D", this.Handle, Citizen.resultAsInteger());
+    return _N<boolean>("0x7FC84E85D98F063D", this.handle, Citizen.resultAsInteger());
   }
 
   get IsSittingInAnyVehicle(): boolean {
-    return IsPedSittingInAnyVehicle(this.Handle);
+    return IsPedSittingInAnyVehicle(this.handle);
   }
 
   get IsPlantingBomb(): boolean {
-    return IsPedPlantingBomb(this.Handle);
+    return IsPedPlantingBomb(this.handle);
   }
 
   get IsInAnyBoat(): boolean {
-    return IsPedInAnyBoat(this.Handle);
+    return IsPedInAnyBoat(this.handle);
   }
 
   get IsInAnyHeli(): boolean {
-    return IsPedInAnyHeli(this.Handle);
+    return IsPedInAnyHeli(this.handle);
   }
 
   get IsInAnyPlane(): boolean {
-    return IsPedInAnyPlane(this.Handle);
+    return IsPedInAnyPlane(this.handle);
   }
 
   get IsInFlyingVehicle(): boolean {
-    return IsPedInFlyingVehicle(this.Handle);
+    return IsPedInFlyingVehicle(this.handle);
   }
 
   get IsFalling(): boolean {
-    return IsPedFalling(this.Handle);
+    return IsPedFalling(this.handle);
   }
 
   get IsSliding(): boolean {
     // _IS_PED_SLIDING
-    return _N<boolean>("0xD6740E14E4CEFC0B", this.Handle, Citizen.resultAsInteger());
+    return _N<boolean>("0xD6740E14E4CEFC0B", this.handle, Citizen.resultAsInteger());
   }
 
   get IsJumping(): boolean {
-    return IsPedJumping(this.Handle);
+    return IsPedJumping(this.handle);
   }
 
   get IsClimbing(): boolean {
-    return IsPedClimbing(this.Handle);
+    return IsPedClimbing(this.handle);
   }
 
   get IsClimbingLadder(): boolean {
     // _IS_PED_CLIMBING_LADDER
-    return _N<boolean>("0x59643424B68D52B5", this.Handle, Citizen.resultAsInteger());
+    return _N<boolean>("0x59643424B68D52B5", this.handle, Citizen.resultAsInteger());
   }
 
   get IsVaulting(): boolean {
-    return IsPedVaulting(this.Handle);
+    return IsPedVaulting(this.handle);
   }
 
   get IsDiving(): boolean {
-    return IsPedDiving(this.Handle);
+    return IsPedDiving(this.handle);
   }
 
   get IsOpeningADoor(): boolean {
-    return IsPedOpeningADoor(this.Handle);
+    return IsPedOpeningADoor(this.handle);
   }
 
   set SeeingRange(value: number) {
-    SetPedSeeingRange(this.Handle, value);
+    SetPedSeeingRange(this.handle, value);
   }
 
   set HearingRange(value: number) {
-    SetPedHearingRange(this.Handle, value);
+    SetPedHearingRange(this.handle, value);
   }
 
   get IsStealthed(): boolean {
-    return GetPedStealthMovement(this.Handle);
+    return GetPedStealthMovement(this.handle);
   }
 
   get IsJacking(): boolean {
-    return IsPedJacking(this.Handle);
+    return IsPedJacking(this.handle);
   }
 
   get IsStunned(): boolean {
-    return IsPedBeingStunned(this.Handle, 0);
+    return IsPedBeingStunned(this.handle, 0);
   }
 
   get IsBeingJacked(): boolean {
-    return IsPedBeingJacked(this.Handle);
+    return IsPedBeingJacked(this.handle);
   }
 
   get IsInCombatRoll(): boolean {
-    return _N<boolean>("0xC48A9EB0D499B3E5", this.Handle, Citizen.resultAsInteger());
+    return _N<boolean>("0xC48A9EB0D499B3E5", this.handle, Citizen.resultAsInteger());
   }
 
   get CrouchMovement(): boolean {
-    return _N<boolean>("0xD5FE956C70FF370B", this.Handle, Citizen.resultAsInteger());
+    return _N<boolean>("0xD5FE956C70FF370B", this.handle, Citizen.resultAsInteger());
   }
 
   /**
    * returns true if {@link DamageCleanliness} was ever lower than {@link eDamageCleanliness.Good}
    */
   get IsDamaged(): boolean {
-    return _N<boolean>("0x6CFC373008A1EDAF", this.Handle, Citizen.resultAsInteger());
+    return _N<boolean>("0x6CFC373008A1EDAF", this.handle, Citizen.resultAsInteger());
   }
 
   set IsDamaged(damaged: boolean) {
     // _SET_PED_DAMAGED
-    _N("0xDACE03C65C6666DB", this.Handle, damaged);
+    _N("0xDACE03C65C6666DB", this.handle, damaged);
   }
 
   get DamageCleanliness(): eDamageCleanliness {
-    return _N<eDamageCleanliness>("0x88EFFED5FE8B0B4A", this.Handle, Citizen.resultAsInteger());
+    return _N<eDamageCleanliness>("0x88EFFED5FE8B0B4A", this.handle, Citizen.resultAsInteger());
   }
 
   set DamageCleanliness(cleanliness: eDamageCleanliness) {
-    _N("0x7528720101A807A5", this.Handle, cleanliness);
+    _N("0x7528720101A807A5", this.handle, cleanliness);
   }
 
   set DefenseModifier(amount: number) {
-    _N("0x9B6808EC46BE849B", this.Handle, amount);
+    _N("0x9B6808EC46BE849B", this.handle, amount);
   }
 
   set CanBeTargeted(toggle: boolean) {
-    SetPedCanBeTargetted(this.Handle, toggle);
+    SetPedCanBeTargetted(this.handle, toggle);
   }
 
   // TODO: Team class wrapper
@@ -291,43 +317,43 @@ export class Ped extends BaseEntity {
    * returns the ped who jacked this ped
    */
   getJacker(): Ped {
-    return new Ped(GetPedsJacker(this.Handle));
+    return new Ped(GetPedsJacker(this.handle));
   }
 
   setCrouchMovement(state: boolean, immediately = false): void {
     // SET_PED_CROUCH_MOVEMENT
-    _N("0x7DE9692C6F64CFE8", this.Handle, state, 0, immediately);
+    _N("0x7DE9692C6F64CFE8", this.handle, state, 0, immediately);
   }
 
   canBeTargetedByPlayer(player: Player, toggle: boolean): void {
-    SetPedCanBeTargettedByPlayer(this.Handle, player.Handle, toggle);
+    SetPedCanBeTargettedByPlayer(this.handle, player.Handle, toggle);
   }
 
   clearLastBoneDamage(): void {
-    ClearPedLastDamageBone(this.Handle);
+    ClearPedLastDamageBone(this.handle);
   }
 
   set OwnsAnimal(animal: Ped) {
     // SET_PED_OWNS_ANIMAL
-    _N("0x931B241409216C1F", this.Handle, animal.Handle, false);
+    _N("0x931B241409216C1F", this.handle, animal.Handle, false);
   }
 
   isInteractionPossible(animal: Ped): boolean {
     // IS_ANIMAL_INTERACTION_POSSIBLE
-    return _N<boolean>("0xD543D3A8FDE4F185", this.Handle, animal.Handle, Citizen.resultAsInteger());
+    return _N<boolean>("0xD543D3A8FDE4F185", this.handle, animal.Handle, Citizen.resultAsInteger());
   }
 
   isOnVehicle(vehicle: Vehicle): boolean {
-    return IsPedOnSpecificVehicle(this.Handle, vehicle.Handle);
+    return IsPedOnSpecificVehicle(this.handle, vehicle.Handle);
   }
 
   isSittingInVehicle(vehicle: Vehicle): boolean {
-    return IsPedSittingInVehicle(this.Handle, vehicle.Handle);
+    return IsPedSittingInVehicle(this.handle, vehicle.Handle);
   }
 
   warpOutOfVehicle(): void {
     // _WARP_PED_OUT_OF_VEHICLE
-    _N("0xE0B61ED8BB37712F", this.Handle);
+    _N("0xE0B61ED8BB37712F", this.handle);
   }
 
   /**
@@ -337,12 +363,12 @@ export class Ped extends BaseEntity {
    */
   setOntoMount(targetPed: Ped, seatIndex: VehicleSeat): void {
     // SET_PED_ONTO_MOUNT
-    _N("0x028F76B6E78246EB", this.Handle, targetPed.Handle, seatIndex, true);
+    _N("0x028F76B6E78246EB", this.handle, targetPed.Handle, seatIndex, true);
   }
 
   removeFromMount(): void {
     // REMOVE_PED_FROM_MOUNT
-    _N("0x5337B721C51883A9", this.Handle, true, true);
+    _N("0x5337B721C51883A9", this.handle, true, true);
   }
 
   /**
@@ -351,7 +377,7 @@ export class Ped extends BaseEntity {
    * @param seatIndex the seat index to put the ped into
    */
   setIntoVehicle(vehicle: Vehicle, seatIndex: VehicleSeat): void {
-    SetPedIntoVehicle(this.Handle, vehicle.Handle, seatIndex);
+    SetPedIntoVehicle(this.handle, vehicle.Handle, seatIndex);
   }
 
   /**
@@ -359,11 +385,11 @@ export class Ped extends BaseEntity {
    * @param killer the entity that killed the ped
    */
   killPed(killer?: BaseEntity): void {
-    SetEntityHealth(this.Handle, 0, killer ? killer.Handle : 0);
+    SetEntityHealth(this.handle, 0, killer ? killer.Handle : 0);
   }
 
   damage(amount: number, boneId = 0, killer?: Ped): void {
-    ApplyDamageToPed(this.Handle, amount, 0, boneId, killer ? killer.Handle : 0);
+    ApplyDamageToPed(this.handle, amount, 0, boneId, killer ? killer.Handle : 0);
   }
 
   /**
@@ -371,15 +397,15 @@ export class Ped extends BaseEntity {
    * @param state how hard it will be to knock a ped off their vehicle
    */
   setCanBeKnockedOffVehicle(state: KnockOffVehicle): void {
-    SetPedCanBeKnockedOffVehicle(this.Handle, state);
+    SetPedCanBeKnockedOffVehicle(this.handle, state);
   }
 
   /**
    * Removes the specified ped if its not a player entity
    */
   delete(): void {
-    SetEntityAsMissionEntity(this.Handle, true, true);
-    DeletePed(this.Handle);
+    SetEntityAsMissionEntity(this.handle, true, true);
+    DeletePed(this.handle);
   }
 
   /**
@@ -390,7 +416,7 @@ export class Ped extends BaseEntity {
    * @returns the cloned ped
    */
   clone(network: boolean, bScriptHostPed: boolean, copyHeadBlend: boolean): Ped {
-    return new Ped(ClonePed(this.Handle, network, bScriptHostPed, copyHeadBlend));
+    return new Ped(ClonePed(this.handle, network, bScriptHostPed, copyHeadBlend));
   }
 
   /**
@@ -398,18 +424,18 @@ export class Ped extends BaseEntity {
    * @param targetPed the ped to clone onto
    */
   cloneTo(targetPed: Ped): void {
-    ClonePedToTarget(this.Handle, targetPed.Handle);
+    ClonePedToTarget(this.handle, targetPed.Handle);
   }
 
   /**
    * @param amount - the amount of armour to add to the ped
    */
   addArmour(amount: number): void {
-    AddArmourToPed(this.Handle, amount);
+    AddArmourToPed(this.handle, amount);
   }
 
   applyDamage(damageAmount: number, boneId = 0, pedKiller: Ped | null = null): void {
-    ApplyDamageToPed(this.Handle, damageAmount, 0, boneId, pedKiller ? pedKiller.Handle : 0);
+    ApplyDamageToPed(this.handle, damageAmount, 0, boneId, pedKiller ? pedKiller.Handle : 0);
   }
 
   /**
@@ -418,11 +444,11 @@ export class Ped extends BaseEntity {
    * @param mult - the multiplier?
    */
   applyDamagePack(damagePack: string, damage: number, mult: number): void {
-    ApplyPedDamagePack(this.Handle, damagePack, damage, mult);
+    ApplyPedDamagePack(this.handle, damagePack, damage, mult);
   }
 
   get CurrentVehicle(): Vehicle | null {
-    const veh = GetVehiclePedIsIn(this.Handle, false);
+    const veh = GetVehiclePedIsIn(this.handle, false);
     if (veh === 0) return null;
     return new Vehicle(veh);
   }
@@ -431,4 +457,38 @@ export class Ped extends BaseEntity {
   // applyBloodSpecific() {
   // 	ApplyPedBloodSpecific
   // }
+
+  giveHashCommand(commandHash: number, activationDuration: number) {
+    Citizen.invokeNative("0xD65FDC686A031C83", this.handle, commandHash, activationDuration);
+  }
+
+  /**
+   * Adds or removes the ped stamina, depending on of the amount is positive or negative.
+   * @param amount the amount of stamina to add/remove
+   */
+  changeStamina(amount: number) {
+    _N("0xC3D4B754C0E86B9E", this.handle, amount);
+  }
+
+  get MaxStamina(): number {
+    return _N<number>("0xCB42AFE2B613EE55", this.handle);
+  }
+
+  /**
+   * Returns the amount of stamina the ped has
+   */
+  get Stamina() {
+    return _N<number>("0x775A1CA7893AA8B5", this.handle);
+  }
+
+  /**
+   * returns the normalized stamina for the player, taking into account their unlocked stamina
+   */
+  get StaminaNormalized() {
+    return _N<number>("0x22F2A386D43048A9", this.handle);
+  }
+
+  resetStamina() {
+    _N("0x36513AFFC703C60D", this.handle);
+  }
 }
