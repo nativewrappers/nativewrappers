@@ -1,5 +1,8 @@
 /* eslint-disable */
 
+declare function NetworkDoesEntityExistWithNetworkId(netId: number): boolean;
+declare function GetEntityFromStateBagName(bagName: string): number;
+
 declare function AbortAnimScene(animScene: number, p1: boolean): void;
 
 declare function Absf(value: number): number;

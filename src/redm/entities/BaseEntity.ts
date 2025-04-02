@@ -3,7 +3,7 @@ import { Vector3 } from "@common/utils/Vector";
 import type { Ped } from "./Ped";
 
 export class BaseEntity {
-  private handle: number;
+  protected handle: number;
   constructor(entHandle: number) {
     this.handle = entHandle;
   }
@@ -33,24 +33,24 @@ export class BaseEntity {
   }
 
   /**
-   * @returns the network for the specified entity, this doesn't check if the entity is networked, you should use {@link BaseEntity.IsNetworked}
+   * @returns the network for the specified entity, this doesn't check if the entity is networked, you should use {@link IsNetworked}
    */
   get NetworkId(): number {
-    return NetworkGetNetworkIdFromEntity(this.Handle);
+    return NetworkGetNetworkIdFromEntity(this.handle);
   }
 
   /**
    * @returns `true` if the current entity is networked, false otherwise
    */
   get IsNetworked(): boolean {
-    return NetworkGetEntityIsNetworked(this.Handle);
+    return NetworkGetEntityIsNetworked(this.handle);
   }
 
   /**
    * @returns Returns true if the entity handle is not 0 and exists in the game engine
    */
   get Exists(): boolean {
-    return this.handle !== 0 && DoesEntityExist(this.Handle);
+    return this.handle !== 0 && DoesEntityExist(this.handle);
   }
 
   /**
@@ -71,28 +71,28 @@ export class BaseEntity {
    * @param amount the health to set the health to, setting to `0` will kill the entity, if using on a {@link Ped} you should check the MaxHealth before setting.
    */
   set Health(amount: number) {
-    SetEntityHealth(this.Handle, amount, 0);
+    SetEntityHealth(this.handle, amount, 0);
   }
 
   /**
    * @returns the amount of health the current {@link BaseEntity} has
    */
   get Health(): number {
-    return GetEntityHealth(this.Handle);
+    return GetEntityHealth(this.handle);
   }
 
   /**
    * @returns the heading of the current {@link BaseEntity}
    */
   get Heading(): number {
-    return GetEntityHeading(this.Handle);
+    return GetEntityHeading(this.handle);
   }
 
   /**
    * @param heading sets the entitys heading to the specified heading, this can be in the range of 0..360
    */
   set Heading(heading: number) {
-    SetEntityHeading(this.Handle, heading);
+    SetEntityHeading(this.handle, heading);
   }
 
   /**
