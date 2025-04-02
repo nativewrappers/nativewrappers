@@ -165,6 +165,7 @@ export function ConVar<T>(name: string, is_floating_point?: boolean, deserialize
       const t = this as any;
 
       const default_value = Reflect.get(t, context.name);
+      console.log(name, default_value);
       const default_type = typeof default_value;
       let con_var_type: ConVarType | null = null;
       if (default_type === "number") {
@@ -175,7 +176,7 @@ export function ConVar<T>(name: string, is_floating_point?: boolean, deserialize
         }
       } else if (default_type === "boolean") {
         con_var_type = ConVarType.Boolean;
-      } else if (default_value === "string") {
+      } else if (default_type === "string") {
         con_var_type = ConVarType.String;
       }
 
@@ -183,7 +184,9 @@ export function ConVar<T>(name: string, is_floating_point?: boolean, deserialize
       // undefined (which we should just get rid of) or an object, and the
       // caller should send a deserialize function to work with.
       if (!deserialize && con_var_type === null) {
-        throw new Error("You should provide a deserialize function if you want to convert this to an object type");
+        throw new Error(
+          `Failed to determine what to use to deserialize '${name}' was for var had type '${default_type}' which can't be deserialized without providing your own deserialize function.`,
+        );
       }
 
       // if we got past our previous check then we're going to take the data as
