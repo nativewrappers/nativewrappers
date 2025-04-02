@@ -165,7 +165,6 @@ export function ConVar<T>(name: string, is_floating_point?: boolean, deserialize
       const t = this as any;
 
       const default_value = Reflect.get(t, context.name);
-      console.log(name, default_value);
       const default_type = typeof default_value;
       let con_var_type: ConVarType | null = null;
       if (default_type === "number") {
