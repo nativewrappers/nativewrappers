@@ -6,22 +6,37 @@ class HorsePeltEntry {
   #offset: number;
   constructor(view: DataView, index: number) {
     this.#view = view;
-    this.#offset = index + 1 + index * 4; // skip first byte, index 1 & 2 are offset by 4
+    // offset by 1 byte, as the amount of pelt skins we have will be the first byte
+    // offset indexs by 4 to account for padding
+    this.#offset = index + 1 + index * 4;
   }
 
+  /*
+   * This will be the itemHash if the pelt when using `SetPeltForHorseByInventoryItem`.
+   */
   get ItemHash() {
     return this.#view.getInt32(this.#offset * 8, true);
   }
 
+  /*
+   * The albedo hash provided to `SetPeltForHorseByInventoryItem`
+   */
   get AlbedoHash() {
     return this.#view.getInt32((this.#offset + 1) * 8, true);
   }
 
-  get Unk3ProbablyNormalHash() {
+  /*
+   * The Normal hash provided to `SetPeltForHorseByInventoryItem`
+   */
+  get NormalHash() {
     return this.#view.getInt32((this.#offset + 2) * 8, true);
   }
 }
 
+/*
+ * NOTE: The ped pelts won't be added if the player is joining, even though the pelt will
+ * be on its back, you should manually sync the pelts if you want them to be added back.
+ */
 export class HorsePeltEntries extends BufferedClass {
   constructor(horse: Ped) {
     // 128 bytes, 8 bytes for the amount + 24 per element + 40 * 3 of padding
