@@ -6,7 +6,7 @@ class HorsePeltEntry {
   #offset: number;
   constructor(view: DataView, index: number) {
     this.#view = view;
-    this.#offset = index + 1 + index * 40; // skip first byte, index 1 & 2 are offset by 40
+    this.#offset = index + 1 + index * 4; // skip first byte, index 1 & 2 are offset by 4
   }
 
   get ItemHash() {
@@ -25,7 +25,7 @@ class HorsePeltEntry {
 export class HorsePeltEntries extends BufferedClass {
   constructor(horse: Ped) {
     // 128 bytes, 8 bytes for the amount + 24 per element + 40 * 3 of padding
-    super(0x78 * 8);
+    super(0x78);
 
     // the native takes in the first 8 bytes of the struct to tell how many pelts we want to search for, we just set it to 3 (max)
     this.view.setInt8(0, 3);
