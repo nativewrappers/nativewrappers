@@ -1,6 +1,6 @@
+import { Delay } from "@common/utils/Delay";
 import { Vector3 } from "@common/utils/Vector";
 import type { Dimensions } from "./interfaces/Dimensions";
-import { Delay } from "@common/utils/Delay";
 
 /**
  * Class to create and manage entity models.
@@ -64,6 +64,10 @@ export class Model implements Disposable {
    * @returns Whether this model is loaded.
    */
   public get IsLoaded(): boolean {
+    if (this.IsWeapon) {
+      // _HAS_WEAPON_ASSET_LOADED
+      return Citizen.invokeNative("0xFF07CF465F48B830", this.hash);
+    }
     return HasModelLoaded(this.hash);
   }
 
@@ -100,7 +104,7 @@ export class Model implements Disposable {
    * @returns Whether this model is a prop.
    */
   public get IsProp(): boolean {
-    return this.IsValid && !this.IsPed && !this.IsVehicle && !IsWeaponValid(this.hash);
+    return this.IsValid && !this.IsPed && !this.IsVehicle && !this.IsWeapon;
   }
 
   /**
@@ -121,6 +125,10 @@ export class Model implements Disposable {
     return IsModelAVehicle(this.hash);
   }
 
+  public get IsWeapon(): boolean {
+    return IsWeaponValid(this.hash);
+  }
+
   /**
    * Gets the model dimensions.
    *
@@ -133,6 +141,16 @@ export class Model implements Disposable {
     return { min, max };
   }
 
+  // TODO: Metaped stuff too at some point
+  public requestModel() {
+    if (this.IsWeapon) {
+      // REQUEST_WEAPON_ASSET
+      Citizen.invokeNative("0x72D4CB5DB927009C", this.hash, 0, true);
+    } else {
+      RequestModel(this.hash, false);
+    }
+  }
+
   /**
    * Request and load the model with a specified timeout. Default timeout is 1000 (recommended).
    * This function will not automatically set the model as no longer needed when
@@ -141,14 +159,14 @@ export class Model implements Disposable {
    * @param timeoutMs Maximum allowed time for model to load.
    */
   public async request(timeoutMs = 1000): Promise<boolean> {
-    if (!this.IsInCdImage && !this.IsValid && !IsWeaponValid(this.hash)) {
+    if (!this.IsInCdImage && !this.IsValid && !this.IsWeapon) {
       return false;
     }
     // pre-check so if its already loaded we don't add another ref
     if (this.IsLoaded) {
       return true;
     }
-    RequestModel(this.hash, false);
+    this.requestModel();
     const timeout = GetGameTimer() + timeoutMs;
     while (!this.IsLoaded && GetGameTimer() < timeout) {
       await Delay(0);

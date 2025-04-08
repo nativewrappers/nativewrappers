@@ -491,4 +491,10 @@ export class Ped extends BaseEntity {
   resetStamina() {
     _N("0x36513AFFC703C60D", this.handle);
   }
+
+  setOwnsAnimal(ped: Ped, p2 = 0) {
+    _N("0x931B241409216C1F", this.handle, ped.Handle, p2);
+  }
+
+  // WEAPON NAMESPACE
 }

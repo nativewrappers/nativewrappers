@@ -52,6 +52,7 @@ export class HorsePeltEntries extends BufferedClass {
   *GetAllPelts() {
     for (let i = 0; i < 3; i++) {
       const entry = this.getPeltEntry(i);
+      // if the entry doesn't exist the ItemHash will be 0, so we ignore these
       if (entry.ItemHash === 0) {
         continue;
       }

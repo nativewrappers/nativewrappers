@@ -1,6 +1,8 @@
 import { GameConstants } from "redm/GameConstants";
 import { _N } from "../utils/Native";
+import type { Ped } from "./Ped";
 
+// TODO: Use the inventory stuff
 const handleUpgrade = (name: string, amount: number): void => {
   const b1 = new ArrayBuffer(8 * 24);
   const a2 = new DataView(b1);
@@ -57,5 +59,9 @@ export class Player {
 
   addDeadeyeUpgrade(amount: number): void {
     handleUpgrade("UPGRADE_DEADEYE_TANK_1", amount);
+  }
+
+  setOwnsMount(mount: Ped) {
+    _N("0xE6D4E435B56D5BD0", this.handle, mount.Handle);
   }
 }
