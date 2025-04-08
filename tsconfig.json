@@ -13,6 +13,7 @@
     "strict": true,
     "strictNullChecks": true,
     "skipLibCheck": true,
+	"verbatimModuleSyntax": true,
     "types": ["@types/node"],
     "paths": {
       "@common/*": ["./common/*"],

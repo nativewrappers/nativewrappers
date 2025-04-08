@@ -51,7 +51,7 @@ export enum InventoryItemSlots {}
 
 export enum InventoryCategory {}
 
-export enum AddReason {
+export enum ItemAddReason {
   Default = 752097756,
   Incentive = -1965281643,
   Syncing = -1924444172,

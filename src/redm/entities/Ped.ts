@@ -1,5 +1,9 @@
 import type { Vector3 } from "@common/utils/Vector";
+import type { Model } from "redm/Model";
 import { Tasks } from "redm/Task";
+import { ItemAddReason } from "redm/inventory/InventoryTypes";
+import type { AmmoModel } from "redm/models/AmmoModel";
+import type { WeaponModel } from "redm/models/WeaponModel";
 import { _N } from "redm/utils/Native";
 import { Attributes } from "../Attribute";
 import type { KnockOffVehicle, TamingState, eDamageCleanliness } from "../enums/Ped";
@@ -497,4 +501,34 @@ export class Ped extends BaseEntity {
   }
 
   // WEAPON NAMESPACE
+
+  addAmmo(weapon: WeaponModel, amount: number, addReason = ItemAddReason.Default) {
+    // _ADD_AMMO_TO_PED
+    Citizen.invokeNative("0xB190BCA3F4042F95", this.handle, weapon.Hash, amount, addReason);
+  }
+
+  clearLastDamage() {
+    // _CLEAR_PED_LAST_WEAPON_DAMAGE
+    Citizen.invokeNative("0x087D8F4BC65F68E4", this.handle);
+  }
+
+  disableAmmoType(ammo: AmmoModel) {
+    // _DISABLE_AMMO_TYPE_FOR_PED
+    Citizen.invokeNative("0xAA5A52204E077883", this.handle, ammo.Hash);
+  }
+
+  disableAmmoForWeapon(weapon: WeaponModel, ammo: AmmoModel) {
+    // _DISABLE_AMMO_TYPE_FOR_PED_WEAPON
+    Citizen.invokeNative("0xF0D728EEA3C99775", this.handle, weapon.Hash, ammo.Hash);
+  }
+
+  get HasPistol(): boolean {
+    // _DOES_PED_HAVE_PISTOL
+    return Citizen.invokeNative<boolean>("0xBFCA7AFABF9D7967", this.handle);
+  }
+
+  get HasRepeater(): boolean {
+    // _DOES_PED_HAVE_REPEATER
+    return Citizen.invokeNative<boolean>("0x495A04CAEC263AF8", this.handle);
+  }
 }

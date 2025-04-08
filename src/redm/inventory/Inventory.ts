@@ -1,6 +1,6 @@
 import type { Model } from "redm/Model";
 import { RDRInventoryGUID } from "./InventoryGUID";
-import { AddReason, InventoryIndex } from "./InventoryTypes";
+import { InventoryIndex, ItemAddReason } from "./InventoryTypes";
 
 enum FailReason {
   Success,
@@ -42,7 +42,7 @@ export class RDRInventory {
     amount: number,
     slotHash: number,
     inventoryGuid: RDRInventoryGUID,
-    addReason: AddReason = AddReason.Default,
+    addReason: ItemAddReason = ItemAddReason.Default,
   ): RDRInventoryGUID | null {
     const itemData = new RDRInventoryGUID();
     const wasAdded = Citizen.invokeNative<boolean>(
