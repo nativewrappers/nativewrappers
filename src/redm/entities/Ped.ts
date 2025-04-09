@@ -51,6 +51,23 @@ export class Ped extends BaseEntity {
   }
 
   /**
+   * @returns the current horse or vehicle the ped is on, or null if they're not on either
+   */
+  get MountedEntity(): BaseEntity | null {
+    const veh = this.CurrentVehicle;
+    if (veh !== null) {
+      return veh;
+    }
+
+    const horse = this.Mount;
+    if (horse !== null) {
+      return horse;
+    }
+
+    return null;
+  }
+
+  /**
    * Blocks scenarios inbetween the specified vectors
    * @todo Move to Game
    * @param vec1
@@ -161,10 +178,17 @@ export class Ped extends BaseEntity {
   /**
    * @returns the last mount that this ped was on, or null if it doesn't exist
    */
-  get Mount(): Ped | null {
+  get LastMount(): Ped | null {
     // GET_LAST_MOUNT
     const pedId = _N<number>("0x4C8B59171957BCF7", this.handle, Citizen.resultAsInteger());
     return Ped.fromHandle(pedId);
+  }
+
+  /**
+   * @returns the the current mount that the ped is on, or null if there isn't one
+   */
+  get Mount(): Ped | null {
+    return Ped.fromHandle(GetMount(this.handle));
   }
 
   /**
