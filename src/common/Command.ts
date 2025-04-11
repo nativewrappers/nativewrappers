@@ -66,8 +66,8 @@ export class Command<T extends Parameter[] = Parameter[]> {
   /**
    * Registers a new executable command with optional parameter validation and permission restrictions.
    * @param name The unique identifier(s) for the command, either as a single string or an array of strings.
-   * @param help A description of the command, displayed as a chat suggestion.
    * @param handler The function to execute when the command is executed.
+   * @param help A description of the command, displayed as a chat suggestion.
    * @param params An optional array of parameter definitions specifying the command's expected arguments,
    *               including their names, types, and descriptive help text for chat suggestions.
    * @param restricted Determines the command's access permissions:
@@ -77,13 +77,12 @@ export class Command<T extends Parameter[] = Parameter[]> {
    */
   constructor(
     readonly name: string | string[],
-    readonly help: string,
     handler: CommandHandler<T>,
+    readonly help?: string,
     readonly params?: T,
     restricted: Restricted = true,
   ) {
     this.#handler = handler;
-    this.name = `/${name}`;
 
     registerCommand(name, (source: number, args: string[], raw: string) => this.call(source, args, raw), restricted);
 
@@ -93,18 +92,22 @@ export class Command<T extends Parameter[] = Parameter[]> {
           parameter.help = parameter.help ? `${parameter.help} (type: ${parameter.type})` : `(type: ${parameter.type})`;
         }
       }
+    }
 
-      setTimeout(() => {
+    setTimeout(() => {
+      const names = Array.isArray(name) ? name : [name];
+      for (const name of names) {
+        const commandObj = { ...this, name: `/${name}` };
         $SERVER: {
-          commands.push(this);
-          emitNet("chat:addSuggestions", -1, this);
+          commands.push(commandObj);
+          emitNet("chat:addSuggestions", -1, commandObj);
         }
 
         $CLIENT: {
-          emit("chat:addSuggestion", this);
+          emit("chat:addSuggestion", commandObj);
         }
-      }, 100);
-    }
+      }
+    }, 100);
   }
 
   /**
