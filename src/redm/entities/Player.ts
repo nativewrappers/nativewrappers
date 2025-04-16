@@ -48,15 +48,15 @@ export class Player {
    * @param [fromPlayer=GameConstants.Player] the player to get the distance from
    * @returns the closest player from {@param fromPlayer} and the distance the player was
    */
-  public static getClosestPlayerPedWithDistance(minimumDistance = Number.MAX_VALUE, fromPlayer = GameConstants.Player) {
+  public static getClosestPlayerWithDistance(minimumDistance = Number.MAX_VALUE, fromPlayer = GameConstants.Player) {
     const ped = fromPlayer.Ped;
     const pos = ped.Position;
-    const data: [Ped | null, number] = [null as Ped | null, Number.MAX_VALUE];
+    const data: [Player | null, number] = [null, Number.MAX_VALUE];
     for (const ply of Player.AllPlayers(true)) {
       const tgtPed = ply.Ped;
       const dist = pos.distance(tgtPed.Position);
       if (dist < data[1] && dist < minimumDistance) {
-        data[0] = tgtPed;
+        data[0] = ply;
         data[1] = dist;
       }
     }
@@ -69,8 +69,8 @@ export class Player {
    * @param [fromPlayer=GameConstants.Player] the player to get the distance from
    * @returns the closest player from {@param fromPlayer} and the distance the player was
    */
-  public static getClosestPlayerPed(minimumDistance = Number.MAX_VALUE, fromPlayer = GameConstants.Player) {
-    const data = this.getClosestPlayerPedWithDistance(minimumDistance, fromPlayer);
+  public static getClosestPlayer(minimumDistance = Number.MAX_VALUE, fromPlayer = GameConstants.Player): Player | null {
+    const data = this.getClosestPlayerWithDistance(minimumDistance, fromPlayer);
     return data[0];
   }
 
@@ -87,6 +87,10 @@ export class Player {
 
   get Ped(): Ped {
     return new Ped(GetPlayerPed(this.handle));
+  }
+
+  get ServerId(): number {
+    return GetPlayerServerId(this.handle);
   }
 
   /**

@@ -9,7 +9,7 @@ import { Attributes } from "../Attribute";
 import type { KnockOffVehicle, TamingState, eDamageCleanliness } from "../enums/Ped";
 import type { VehicleSeat } from "../enums/VehicleSeat";
 import { BaseEntity } from "./BaseEntity";
-import type { Player } from "./Player";
+import { Player } from "./Player";
 import { Vehicle } from "./Vehicle";
 
 export class Ped extends BaseEntity {
@@ -48,6 +48,14 @@ export class Ped extends BaseEntity {
 
   constructor(handle: number) {
     super(handle);
+  }
+
+  public get Player(): Player | null {
+    const playerId = NetworkGetPlayerIndexFromPed(this.handle);
+    if (playerId !== 255) {
+      return new Player(playerId);
+    }
+    return null;
   }
 
   /**
