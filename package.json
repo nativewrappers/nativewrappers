@@ -8,7 +8,7 @@
   ],
   "license": "MIT",
   "type": "module",
-  "version": "0.0.95",
+  "version": "0.0.96",
   "publishConfig": {
     "directory": "lib"
   },
