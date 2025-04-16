@@ -1,5 +1,6 @@
 import { ClassTypes } from "@common/utils/ClassTypes";
 import { Color } from "@common/utils/Color";
+import { GameConstants } from "fivem/GameConstants";
 import { Model } from "fivem/Model";
 import { GetEntityClassFromId } from "fivem/utils/GetEntityFromEntityIds";
 import cfx, { type StateBagChangeHandler } from "../cfx";
@@ -14,12 +15,52 @@ export class Player {
   private source: number;
   private type = ClassTypes.Player;
 
+  public static *AllPlayers(excludeLocalPlayer = true): IterableIterator<Player> {
+    for (const ply of GetActivePlayers() as number[]) {
+      if (excludeLocalPlayer && ply === GameConstants.PlayerId) {
+        continue;
+      }
+      yield new Player(ply);
+    }
+  }
+
   public static fromPedHandle(handle: number): Player {
     return new Player(NetworkGetPlayerIndexFromPed(handle));
   }
 
   public static fromServerId(serverId: number): Player {
     return new Player(GetPlayerFromServerId(serverId));
+  }
+
+  /**
+   * @param [minimumDistance=Number.MAX_VALUE] the minimum distance this should check
+   * @param [fromPlayer=GameConstants.Player] the player to get the distance from
+   * @returns the closest player from {@param fromPlayer} and the distance the player was
+   */
+  public static getClosestPlayerPedWithDistance(minimumDistance = Number.MAX_VALUE, fromPlayer = GameConstants.Player) {
+    const ped = fromPlayer.Ped;
+    const pos = ped.Position;
+    const data: [Ped | null, number] = [null as Ped | null, Number.MAX_VALUE];
+    for (const ply of Player.AllPlayers(true)) {
+      const tgtPed = ply.Ped;
+      const dist = pos.distance(tgtPed.Position);
+      if (dist < data[1] && dist < minimumDistance) {
+        data[0] = tgtPed;
+        data[1] = dist;
+      }
+    }
+
+    return data;
+  }
+
+  /**
+   * @param [minimumDistance=Number.MAX_VALUE] the minimum distance this should check
+   * @param [fromPlayer=GameConstants.Player] the player to get the distance from
+   * @returns the closest player from {@param fromPlayer} and the distance the player was
+   */
+  public static getClosestPlayerPed(minimumDistance = Number.MAX_VALUE, fromPlayer = GameConstants.Player) {
+    const data = this.getClosestPlayerPedWithDistance(minimumDistance, fromPlayer);
+    return data[0];
   }
 
   /**
