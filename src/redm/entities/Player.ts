@@ -1,6 +1,6 @@
 import { GameConstants } from "redm/GameConstants";
 import { _N } from "../utils/Native";
-import type { Ped } from "./Ped";
+import { Ped } from "./Ped";
 
 // TODO: Use the inventory stuff
 const handleUpgrade = (name: string, amount: number): void => {
@@ -15,6 +15,15 @@ const handleUpgrade = (name: string, amount: number): void => {
 
 export class Player {
   private handle: number;
+
+  public static *AllPlayers(excludeLocalPlayer = true): IterableIterator<Player> {
+    for (const ply of GetActivePlayers() as number[]) {
+      if (excludeLocalPlayer && ply === GameConstants.PlayerId) {
+        continue;
+      }
+      yield new Player(ply);
+    }
+  }
 
   public static fromPedHandle(handle: number): Player {
     return new Player(NetworkGetPlayerIndexFromPed(handle));
@@ -35,6 +44,37 @@ export class Player {
   }
 
   /**
+   * @param [minimumDistance=Number.MAX_VALUE] the minimum distance this should check
+   * @param [fromPlayer=GameConstants.Player] the player to get the distance from
+   * @returns the closest player from {@param fromPlayer} and the distance the player was
+   */
+  public static getClosestPlayerPedWithDistance(minimumDistance = Number.MAX_VALUE, fromPlayer = GameConstants.Player) {
+    const ped = fromPlayer.Ped;
+    const pos = ped.Position;
+    const data: [Ped | null, number] = [null as Ped | null, Number.MAX_VALUE];
+    for (const ply of Player.AllPlayers(true)) {
+      const tgtPed = ply.Ped;
+      const dist = pos.distance(tgtPed.Position);
+      if (dist < data[1] && dist < minimumDistance) {
+        data[0] = tgtPed;
+        data[1] = dist;
+      }
+    }
+
+    return data;
+  }
+
+  /**
+   * @param [minimumDistance=Number.MAX_VALUE] the minimum distance this should check
+   * @param [fromPlayer=GameConstants.Player] the player to get the distance from
+   * @returns the closest player from {@param fromPlayer} and the distance the player was
+   */
+  public static getClosestPlayerPed(minimumDistance = Number.MAX_VALUE, fromPlayer = GameConstants.Player) {
+    const data = this.getClosestPlayerPedWithDistance(minimumDistance, fromPlayer);
+    return data[0];
+  }
+
+  /**
    * @param handle the player handle
    */
   constructor(handle: number) {
@@ -43,6 +83,10 @@ export class Player {
 
   get Handle(): number {
     return this.handle;
+  }
+
+  get Ped(): Ped {
+    return new Ped(GetPlayerPed(this.handle));
   }
 
   /**
