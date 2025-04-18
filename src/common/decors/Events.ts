@@ -25,9 +25,9 @@ export function Exports(exportName: string) {
     }
 
     context.addInitializer(function () {
-      exports(exportName, (...args: any[]) => {
+      exports(exportName, async (...args: any[]) => {
         try {
-          return originalMethod.call(this, ...args);
+          return await originalMethod.call(this, ...args);
         } catch (err) {
           REMOVE_EVENT_LOG: {
             if (!GlobalData.EnablePrettyPrint) return;
@@ -37,6 +37,7 @@ export function Exports(exportName: string) {
             console.error(`Error: ${err}`);
             console.error("------- END EXPORT ERROR --------");
           }
+          throw err;
         }
       });
     });
@@ -58,9 +59,9 @@ export function Event(eventName: string) {
       throw new Error("Event does not work on private methods, please mark the method as public");
     }
     context.addInitializer(function () {
-      on(eventName, (...args: any[]) => {
+      on(eventName, async (...args: any[]) => {
         try {
-          return originalMethod.call(this, ...args);
+          return await originalMethod.call(this, ...args);
         } catch (e) {
           REMOVE_EVENT_LOG: {
             if (!GlobalData.EnablePrettyPrint) return;
@@ -93,7 +94,7 @@ export function NetEvent(eventName: string, remoteOnly = true) {
       throw new Error("NetEvent does not work on private methods, please mark the method as public");
     }
     context.addInitializer(function () {
-      onNet(eventName, (...args: any[]) => {
+      onNet(eventName, async (...args: any[]) => {
         const src = source;
         try {
           $CLIENT: {
@@ -101,7 +102,7 @@ export function NetEvent(eventName: string, remoteOnly = true) {
               return;
             }
           }
-          return originalMethod.call(this, ...args);
+          return await originalMethod.call(this, ...args);
         } catch (e) {
           REMOVE_NET_EVENT_LOG: {
             if (!GlobalData.EnablePrettyPrint) return;
