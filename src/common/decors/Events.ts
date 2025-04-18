@@ -15,6 +15,8 @@ export const DisablePrettyPrint = () => (GlobalData.EnablePrettyPrint = false);
 // TODO: Have a way to clean all of this up (maybe hook Symbol.disposable
 // somehow?)
 
+const AsyncFunction: any = (async () => {}).constructor;
+
 /*
  * Registers the export call for {exportName} to this method
  */
@@ -25,21 +27,41 @@ export function Exports(exportName: string) {
     }
 
     context.addInitializer(function () {
-      exports(exportName, async (...args: any[]) => {
-        try {
-          return await originalMethod.call(this, ...args);
-        } catch (err) {
-          REMOVE_EVENT_LOG: {
-            if (!GlobalData.EnablePrettyPrint) return;
-            console.error("------- EXPORT ERROR --------");
-            console.error(`Call to ${exportName} errored`);
-            console.error(`Data: ${JSON.stringify(args)}`);
-            console.error(`Error: ${err}`);
-            console.error("------- END EXPORT ERROR --------");
+      let exportCb: any;
+      if (originalMethod instanceof AsyncFunction) {
+        exportCb = async (...args: any[]) => {
+          try {
+            return await originalMethod.call(this, ...args);
+          } catch (err) {
+            REMOVE_EVENT_LOG: {
+              if (!GlobalData.EnablePrettyPrint) return;
+              console.error("------- EXPORT ERROR --------");
+              console.error(`Call to ${exportName} errored`);
+              console.error(`Data: ${JSON.stringify(args)}`);
+              console.error(`Error: ${err}`);
+              console.error("------- END EXPORT ERROR --------");
+            }
+            throw err;
           }
-          throw err;
-        }
-      });
+        };
+      } else {
+        exportCb = (...args: any[]) => {
+          try {
+            return originalMethod.call(this, ...args);
+          } catch (err) {
+            REMOVE_EVENT_LOG: {
+              if (!GlobalData.EnablePrettyPrint) return;
+              console.error("------- EXPORT ERROR --------");
+              console.error(`Call to ${exportName} errored`);
+              console.error(`Data: ${JSON.stringify(args)}`);
+              console.error(`Error: ${err}`);
+              console.error("------- END EXPORT ERROR --------");
+            }
+            throw err;
+          }
+        };
+      }
+      exports(exportName, exportCb);
     });
   };
 }
