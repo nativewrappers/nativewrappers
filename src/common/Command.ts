@@ -12,6 +12,7 @@ interface ParameterTypes {
 interface Parameter {
   name: string;
   type: keyof ParameterTypes;
+  defaultValue?: any;
   help?: string;
   optional?: boolean;
 }
@@ -60,6 +61,27 @@ function registerCommand(
   }
 }
 
+/**
+ * ```typescript
+ * new Command(["do", "deleteobjects"], async ({source, radius}) => {
+ *   const entities = Prop.AllProps();
+ *   const ply = new Player(source);
+ *   const pos = ply.Ped.Position
+ *   for (const ent of entities) {
+ *     // if they're outside of the range of our specified radius just continue to next
+ *     if (ent.Position.distance(pos) > radius) continue;
+ *     ent.delete();
+ *   }
+ * }, "Deletes all objects in the specified range", [
+ *   {
+ *      name: "radius",
+ *      type: "number",
+ *      help: "The radius to delete the entities in",
+ *      defaultValue: 5.0
+ *   }
+ * ] as const, "group.moderator")
+ *  ```
+ */
 export class Command<T extends Parameter[] = Parameter[]> {
   #handler: CommandHandler<T>;
 
@@ -89,7 +111,9 @@ export class Command<T extends Parameter[] = Parameter[]> {
     if (params) {
       for (const parameter of params) {
         if (parameter.type) {
-          parameter.help = parameter.help ? `${parameter.help} (type: ${parameter.type})` : `(type: ${parameter.type})`;
+          const defaultString = parameter.defaultValue !== undefined ? `[default: ${parameter.defaultValue}]` : "";
+          const typeString = `[type: ${parameter.type}] ${defaultString}`;
+          parameter.help = parameter.help ? `${parameter.help} ${typeString}` : `${typeString}`;
         }
       }
     }
@@ -129,30 +153,41 @@ export class Command<T extends Parameter[] = Parameter[]> {
       const arg = args[index];
       let value: unknown = arg;
 
-      switch (param.type) {
-        case "number":
-          value = +arg;
-          break;
-        case "string":
-          value = !Number(arg) ? arg : false;
-          break;
-        case "playerId":
-          $SERVER: {
-            value = arg === "me" ? source : +arg;
+      const hasDefaultValue = param.defaultValue !== undefined;
+      const hasArg = typeof arg === "string";
 
-            if (!value || !DoesPlayerExist(value.toString())) value = undefined;
-          }
+      if (!hasArg && hasDefaultValue) {
+        value = param.defaultValue;
+      } else {
+        switch (param.type) {
+          case "number":
+            if (hasDefaultValue && !hasArg) {
+              value = param.defaultValue;
+            } else {
+              value = +arg;
+            }
+            break;
+          case "string":
+            value = !Number(arg) ? arg : false;
+            break;
+          case "playerId":
+            $SERVER: {
+              value = arg === "me" ? source : +arg;
 
-          $CLIENT: {
-            value = arg === "me" ? GetPlayerServerId(PlayerId()) : +arg;
+              if (!value || !DoesPlayerExist(value.toString())) value = undefined;
+            }
 
-            if (!value || GetPlayerFromServerId(value as number) === -1) value = undefined;
-          }
+            $CLIENT: {
+              value = arg === "me" ? GetPlayerServerId(PlayerId()) : +arg;
 
-          break;
-        case "longString":
-          value = raw.substring(raw.indexOf(arg));
-          break;
+              if (!value || GetPlayerFromServerId(value as number) === -1) value = undefined;
+            }
+
+            break;
+          case "longString":
+            value = raw.substring(raw.indexOf(arg));
+            break;
+        }
       }
 
       if (value === undefined && (!param.optional || (param.optional && arg))) {

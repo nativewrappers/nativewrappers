@@ -26,7 +26,18 @@ export function Exports(exportName: string) {
 
     context.addInitializer(function () {
       exports(exportName, (...args: any[]) => {
-        return originalMethod.call(this, ...args);
+        try {
+          return originalMethod.call(this, ...args);
+        } catch (err) {
+          REMOVE_EVENT_LOG: {
+            if (!GlobalData.EnablePrettyPrint) return;
+            console.error("------- EXPORT ERROR --------");
+            console.error(`Call to ${exportName} errored`);
+            console.error(`Data: ${JSON.stringify(args)}`);
+            console.error(`Error: ${err}`);
+            console.error("------- END EXPORT ERROR --------");
+          }
+        }
       });
     });
   };

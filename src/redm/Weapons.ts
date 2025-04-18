@@ -1,5 +1,6 @@
 import { WeaponModel } from "./models/WeaponModel";
 
+export const WEAPON_UNARMED = new WeaponModel("WEAPON_UNARMED");
 export const WEAPON_MELEE_HATCHET_MELEEONLY = new WeaponModel("WEAPON_MELEE_HATCHET_MELEEONLY");
 export const WEAPON_MELEE_KNIFE_MINER = new WeaponModel("WEAPON_MELEE_KNIFE_MINER");
 export const WEAPON_MELEE_KNIFE_JAWBONE = new WeaponModel("WEAPON_MELEE_KNIFE_JAWBONE");
@@ -149,6 +150,7 @@ export const WEAPON_MELEE_KNIFE_RUSTIC = new WeaponModel("WEAPON_MELEE_KNIFE_RUS
 export const WEAPON_MELEE_LANTERN_HALLOWEEN = new WeaponModel("WEAPON_MELEE_LANTERN_HALLOWEEN");
 
 export const WEAPONS_MAP = new Map<string, WeaponModel>([
+  ["weapon_unarmed", WEAPON_UNARMED],
   ["weapon_melee_hatchet_meleeonly", WEAPON_MELEE_HATCHET_MELEEONLY],
   ["weapon_melee_knife_miner", WEAPON_MELEE_KNIFE_MINER],
   ["weapon_melee_knife_jawbone", WEAPON_MELEE_KNIFE_JAWBONE],

@@ -9,8 +9,15 @@ export class Model implements Disposable {
   /**
    * Hash of this model.
    */
-  private hash: number;
-  private requestedModel = false;
+  protected hash: number;
+  protected requestCount = 0;
+
+  /**
+   * Returns the amount of times this model has been requested from the client, useful for finding situations where the client fails to release the ref
+   */
+  get RequestCount() {
+    return this.requestCount;
+  }
 
   /**
    * Creates a model object based on the hash key or model string.
@@ -26,7 +33,7 @@ export class Model implements Disposable {
   }
 
   [Symbol.dispose](): void {
-    if (this.requestedModel) {
+    if (this.requestCount > 0) {
       this.markAsNoLongerNeeded();
     }
   }
@@ -143,12 +150,8 @@ export class Model implements Disposable {
 
   // TODO: Metaped stuff too at some point
   public requestModel() {
-    if (this.IsWeapon) {
-      // REQUEST_WEAPON_ASSET
-      Citizen.invokeNative("0x72D4CB5DB927009C", this.hash, 0, true);
-    } else {
-      RequestModel(this.hash, false);
-    }
+    RequestModel(this.hash, false);
+    this.requestCount++;
   }
 
   /**
@@ -162,16 +165,23 @@ export class Model implements Disposable {
     if (!this.IsInCdImage && !this.IsValid && !this.IsWeapon) {
       return false;
     }
+
     // pre-check so if its already loaded we don't add another ref
     if (this.IsLoaded) {
       return true;
     }
+
     this.requestModel();
+
     const timeout = GetGameTimer() + timeoutMs;
     while (!this.IsLoaded && GetGameTimer() < timeout) {
       await Delay(0);
     }
-    this.requestedModel = true;
+
+    // if we didn't load then remove the request, should correct our ref count too
+    if (!this.IsLoaded) {
+      this.markAsNoLongerNeeded();
+    }
 
     return this.IsLoaded;
   }

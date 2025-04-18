@@ -1,9 +1,10 @@
 import type { Vector3 } from "@common/utils/Vector";
 import type { Model } from "redm/Model";
 import { Tasks } from "redm/Task";
+import { WeaponAttachPoints } from "redm/enums/WeaponAttachPoints";
 import { ItemAddReason } from "redm/inventory/InventoryTypes";
 import type { AmmoModel } from "redm/models/AmmoModel";
-import type { WeaponModel } from "redm/models/WeaponModel";
+import { WeaponModel } from "redm/models/WeaponModel";
 import { _N } from "redm/utils/Native";
 import { Attributes } from "../Attribute";
 import type { KnockOffVehicle, TamingState, eDamageCleanliness } from "../enums/Ped";
@@ -562,5 +563,62 @@ export class Ped extends BaseEntity {
   get HasRepeater(): boolean {
     // _DOES_PED_HAVE_REPEATER
     return Citizen.invokeNative<boolean>("0x495A04CAEC263AF8", this.handle);
+  }
+
+  get CurrentWeapon(): WeaponModel {
+    // _GET_PED_CURRENT_HELD_WEAPON
+    const weapon = Citizen.invokeNative<number>("0x8425C5F057012DAB", this.handle);
+    return new WeaponModel(weapon);
+  }
+
+  async giveWeapon(
+    weapon: WeaponModel,
+    ammoCount: number,
+    forceInHand = true,
+    forceInHolster = false,
+    attachPoint: WeaponAttachPoints | undefined = undefined,
+    allowMultipleCopies = false,
+    p7 = 0.5,
+    p8 = 1.0,
+    addReason = ItemAddReason.Default,
+    ignoreUnlocks = true,
+    permanentDegradation = 0.5,
+    p12 = false,
+  ) {
+    await weapon.request();
+    attachPoint = attachPoint ?? weapon.DefaultAttachPoint;
+    // GIVE_WEAPON_TO_PED
+    Citizen.invokeNative(
+      "0x5E3BDDBCB83F3D84",
+      this.handle,
+      weapon.Hash,
+      ammoCount,
+      forceInHand,
+      forceInHolster,
+      attachPoint,
+      allowMultipleCopies,
+      p7,
+      p8,
+      addReason,
+      ignoreUnlocks,
+      permanentDegradation,
+      p12,
+    );
+  }
+
+  setCurrentWeapon(
+    weapon: WeaponModel,
+    equipNow = true,
+    attachPoint = WeaponAttachPoints.HandPrimary,
+    p4 = false,
+    p5 = false,
+  ) {
+    // SET_CURRENT_PED_WEAPON
+    Citizen.invokeNative("0xADF692B254977C0C", this.handle, weapon.Hash, equipNow, attachPoint, p4, p5);
+  }
+
+  holsterWeapon() {
+    // _HOLSTER_PED_WEAPONS
+    Citizen.invokeNative("0x94A3C1B804D291EC", this.handle, true, true, true, true);
   }
 }
