@@ -621,4 +621,8 @@ export class Ped extends BaseEntity {
     // _HOLSTER_PED_WEAPONS
     Citizen.invokeNative("0x94A3C1B804D291EC", this.handle, true, true, true, true);
   }
+
+  setWeaponOnBack(disableAnim = false) {
+    Citizen.invokeNative("0x4820A6939D7CEF28", this.handle, disableAnim);
+  }
 }
