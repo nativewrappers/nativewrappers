@@ -623,6 +623,12 @@ export class Ped extends BaseEntity {
   }
 
   setWeaponOnBack(disableAnim = false) {
+    // _SET_PED_WEAPON_ON_BACK
     Citizen.invokeNative("0x4820A6939D7CEF28", this.handle, disableAnim);
+  }
+
+  isHoldingWeapon(weapon: WeaponModel) {
+    // _IS_PED_HOLDING_WEAPON
+    return Citizen.invokeNative<boolean>("0x07E1C35F0078C3F9", this.handle, weapon.Hash);
   }
 }
