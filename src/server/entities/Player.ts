@@ -6,7 +6,15 @@ import { Ped } from "./Ped";
 
 export class Player {
   protected type = ClassTypes.Player;
-  constructor(private readonly source: number) {}
+  constructor(private readonly source: any) {}
+
+  fromServerId(serverId: number): Player | null {
+    if (!DoesPlayerExist(serverId as any)) {
+      return null;
+    }
+
+    return new Player(serverId);
+  }
 
   /**
    * Get an interable list of players currently on the server
@@ -20,10 +28,18 @@ export class Player {
   }
 
   public get Exists(): boolean {
-    return this.source !== 0 && DoesPlayerExist(this.source as any);
+    return this.source !== 0 && DoesPlayerExist(this.source);
   }
 
   public get Source(): number {
+    return this.source;
+  }
+
+  /**
+   * @returns the handle of the current player, this will be a number type, but we return 'any'
+   * so we don't have to deal with annoying type differences between native calls
+   */
+  public get Handle(): any {
     return this.source;
   }
 
@@ -39,7 +55,8 @@ export class Player {
   }
 
   public get Ped(): Ped {
-    return new Ped(GetPlayerPed(this.Src));
+    const ped = GetPlayerPed(this.source);
+    return new Ped(GetPlayerPed(this.source));
   }
 
   public get Tokens(): string[] {
@@ -51,10 +68,10 @@ export class Player {
   }
 
   public get Endpoint(): string {
-    return GetPlayerEndpoint(this.Src);
+    return GetPlayerEndpoint(this.source);
   }
 
-  public get CamerRotation(): Vector3 {
+  public get CameraRotation(): Vector3 {
     return Vector3.fromArray(GetPlayerCameraRotation(this.Src));
   }
 
