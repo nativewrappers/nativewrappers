@@ -8,7 +8,7 @@ export class Player {
   protected type = ClassTypes.Player;
   constructor(private readonly source: any) {}
 
-  fromServerId(serverId: number): Player | null {
+  static fromServerId(serverId: number): Player | null {
     if (!DoesPlayerExist(serverId as any)) {
       return null;
     }
