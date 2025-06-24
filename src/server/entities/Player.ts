@@ -1,8 +1,8 @@
-import cfx from "../cfx";
 import { ClassTypes } from "@common/utils/ClassTypes";
-import { Ped } from "./Ped";
-import { cleanPlayerName } from "@common/utils/cleanPlayerName";
 import { Vector3 } from "@common/utils/Vector";
+import { cleanPlayerName } from "@common/utils/cleanPlayerName";
+import cfx from "../cfx";
+import { Ped } from "./Ped";
 
 export class Player {
   protected type = ClassTypes.Player;
@@ -20,7 +20,7 @@ export class Player {
   }
 
   public get Exists(): boolean {
-    return this.source !== 0;
+    return this.source !== 0 && DoesPlayerExist(this.source as any);
   }
 
   public get Source(): number {
