@@ -13,14 +13,13 @@ function getVolumeFunctionFromType(volumeType: VolumeType, hasCustomName: boolea
       case VolumeType.Box:
         return CreateVolumeBoxWithCustomName;
     }
-  } else {
-    switch (volumeType) {
-      case VolumeType.Cylinder:
-        return CreateVolumeCylinder;
+  }
+  switch (volumeType) {
+    case VolumeType.Cylinder:
+      return CreateVolumeCylinder;
 
-      case VolumeType.Box:
-        return CreateVolumeBox;
-    }
+    case VolumeType.Box:
+      return CreateVolumeBox;
   }
 }
 

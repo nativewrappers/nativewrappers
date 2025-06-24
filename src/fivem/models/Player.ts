@@ -24,12 +24,28 @@ export class Player {
     }
   }
 
-  public static fromPedHandle(handle: number): Player {
-    return new Player(NetworkGetPlayerIndexFromPed(handle));
+  /**
+   * @param handle the handoe of the ped to get the player of
+   * @returns the player, or null if the player doesn't exist
+   */
+  public static fromPedHandle(handle: number): Player | null {
+    const playerHandle = NetworkGetPlayerIndexFromPed(handle);
+    if (!handle) {
+      return null;
+    }
+    return new Player(playerHandle);
   }
 
-  public static fromServerId(serverId: number): Player {
-    return new Player(GetPlayerFromServerId(serverId));
+  /**
+   * @param serverId the server id to get the player of
+   * @returns the player, or null if the player doesn't exist
+   */
+  public static fromServerId(serverId: number): Player | null {
+    const player = GetPlayerFromServerId(serverId);
+    if (player === -1) {
+      return null;
+    }
+    return new Player(player);
   }
 
   /**
