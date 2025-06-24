@@ -682,4 +682,26 @@ export abstract class BaseEntity {
   public markAsNoLongerNeeded(): void {
     SetEntityAsNoLongerNeeded(this.Handle);
   }
+
+  /**
+   * @returns the current interior id that the entity is in, or 0 if they're outside
+   */
+  get Interior(): number {
+    return GetInteriorFromEntity(this.handle);
+  }
+
+  /**
+   * @returns the room key hash that the entity is in, or 0 if they're outside
+   */
+  get RoomKey(): number {
+    return GetRoomKeyFromEntity(this.handle);
+  }
+
+  clearInterior() {
+    ClearInteriorForEntity(this.handle);
+  }
+
+  forceRoom(interiorId: number, roomKey: number) {
+    ForceRoomForEntity(this.handle, interiorId, roomKey);
+  }
 }
