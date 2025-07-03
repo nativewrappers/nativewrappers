@@ -87,8 +87,12 @@ export class Ped extends BaseEntity {
     super(handle);
   }
 
-  public get Player(): Player {
-    return new Player(NetworkGetPlayerIndexFromPed(this.handle));
+  public get Player(): Player | null {
+    const playerIndex = NetworkGetPlayerIndexFromPed(this.handle);
+    if (playerIndex === -1) {
+      return null;
+    }
+    return new Player(playerIndex);
   }
 
   public get Money(): number {

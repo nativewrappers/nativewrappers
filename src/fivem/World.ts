@@ -1094,10 +1094,10 @@ export abstract class World {
    * Gets the cloest [[`Vehicle`]] to the current coords, or null if none are found
    * @returns the closest vehicle or null
    */
-  public static getClosestVehicle(coords: Vector3): Vehicle | null {
+  public static getClosestVehicle(coords: Vector3, startingDistance = 9999.0): Vehicle | null {
     const vehicles = this.getAllVehicles();
     let currentVeh: Vehicle | null = null;
-    let lastDistance = 9999.0;
+    let lastDistance = startingDistance;
     for (const vehicle of vehicles) {
       if (!currentVeh) {
         currentVeh = vehicle;
