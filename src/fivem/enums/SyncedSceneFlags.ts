@@ -17,5 +17,5 @@ export enum SyncedSceneFlags {
   ProcessAttachmentOnStart = 1 << 14,
   NetOnEarlyNoPedStopReturnToStart = 1 << 15,
   SetPedOutOfVehicleAtStart = 1 << 16,
-  NetDisregardAttachmentChecks = 1 << 17
+  NetDisregardAttachmentChecks = 1 << 17,
 }

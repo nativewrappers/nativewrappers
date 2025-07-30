@@ -8,10 +8,10 @@ export class NetworkedScene {
   private scene;
 
   /*
-    * Allows the current client to receive removed synced scene requests
-    * WARNING: This is unsecure, you shouldn't leave this set to true,
-    * you should disable this as fast as soon as possible to mitigate any possible exploits.
-  */
+   * Allows the current client to receive removed synced scene requests
+   * WARNING: This is unsecure, you shouldn't leave this set to true,
+   * you should disable this as fast as soon as possible to mitigate any possible exploits.
+   */
   static set AllowRemoveSyncedScenes(allow: boolean) {
     Citizen.invokeNative("0x144DA052257AE7D8", allow);
   }
@@ -75,7 +75,15 @@ export class NetworkedScene {
     blendOutSpeed = -8.0,
     syncedSceneFlags: SyncedSceneFlags = SyncedSceneFlags.None,
   ): void {
-    NetworkAddEntityToSynchronisedScene(entity.Handle, this.scene, animDict, animName, blendInSpeed, blendOutSpeed, syncedSceneFlags);
+    NetworkAddEntityToSynchronisedScene(
+      entity.Handle,
+      this.scene,
+      animDict,
+      animName,
+      blendInSpeed,
+      blendOutSpeed,
+      syncedSceneFlags,
+    );
   }
 
   forceLocalUseOfSyncedSceneCamera() {
