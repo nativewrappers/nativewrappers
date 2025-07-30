@@ -2,8 +2,8 @@ import type { Vector3 } from "@common/utils/Vector";
 import type { BaseEntity } from "./models/BaseEntity";
 import type { Ped } from "./models/Ped";
 import { SyncedSceneFlags } from "./enums/SyncedSceneFlags";
-import type { Entity } from "./models/Entity";
 import type { EntityBone } from "./models/EntityBone";
+
 export class NetworkedScene {
   private scene;
 
