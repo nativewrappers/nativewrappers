@@ -5,7 +5,7 @@ import { SyncedSceneFlags } from "./enums/SyncedSceneFlags";
 import type { EntityBone } from "./models/EntityBone";
 
 export class NetworkedScene {
-  private scene;
+  private networked_scene_id;
 
   /*
    * Allows the current client to receive removed synced scene requests
@@ -26,7 +26,7 @@ export class NetworkedScene {
     phaseToStartScene = 0.0,
     animSpeed = 1.0,
   ) {
-    this.scene = NetworkCreateSynchronisedScene(
+    this.networked_scene_id = NetworkCreateSynchronisedScene(
       pos.x,
       pos.y,
       pos.z,
@@ -55,7 +55,7 @@ export class NetworkedScene {
   ): void {
     NetworkAddPedToSynchronisedScene(
       ped.Handle,
-      this.scene,
+      this.networked_scene_id,
       animDict,
       animName,
       blendInSpeed,
@@ -77,7 +77,7 @@ export class NetworkedScene {
   ): void {
     NetworkAddEntityToSynchronisedScene(
       entity.Handle,
-      this.scene,
+      this.networked_scene_id,
       animDict,
       animName,
       blendInSpeed,
@@ -87,22 +87,26 @@ export class NetworkedScene {
   }
 
   forceLocalUseOfSyncedSceneCamera() {
-    NetworkForceLocalUseOfSyncedSceneCamera(this.scene);
+    NetworkForceLocalUseOfSyncedSceneCamera(this.networked_scene_id);
   }
 
   attachSceneToEntityBone(entity: BaseEntity, bone: EntityBone) {
-    NetworkAttachSynchronisedSceneToEntity(this.scene, entity.Handle, bone.Index);
+    NetworkAttachSynchronisedSceneToEntity(this.networked_scene_id, entity.Handle, bone.Index);
   }
 
-  get LocalScene() {
-    return NetworkGetLocalSceneFromNetworkId(this.scene);
+  get LocalSceneId() {
+    return NetworkGetLocalSceneFromNetworkId(this.networked_scene_id);
+  }
+
+  get NetworkSceneId() {
+    return this.networked_scene_id;
   }
 
   start(): void {
-    NetworkStartSynchronisedScene(this.scene);
+    NetworkStartSynchronisedScene(this.networked_scene_id);
   }
 
   stop(): void {
-    NetworkStopSynchronisedScene(this.scene);
+    NetworkStopSynchronisedScene(this.networked_scene_id);
   }
 }
