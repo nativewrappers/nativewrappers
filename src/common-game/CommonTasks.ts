@@ -43,7 +43,7 @@ export class CommonTasks {
     TaskClimb(this.ped.Handle, true);
   }
 
-  public cruiseWithVehicle(vehicle: CommonVehicle, speed: number, drivingStyle: number = 0): void {
+  public cruiseWithVehicle(vehicle: CommonVehicle, speed: number, drivingStyle = 0): void {
     TaskVehicleDriveWander(this.ped.Handle, vehicle.Handle, speed, drivingStyle);
   }
 
@@ -214,7 +214,7 @@ export class CommonTasks {
   public shootAt(
     targetOrPosition: CommonPed | Vector3,
     duration = -1,
-    pattern: number = 0,
+    pattern = 0,
     affectCockedState = false,
   ): void {
     if (targetOrPosition instanceof CommonPed) {

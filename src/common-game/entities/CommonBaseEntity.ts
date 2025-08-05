@@ -1,5 +1,5 @@
 import type { ClassTypes } from "@common/utils/ClassTypes";
-import { Quaternion } from "@common/utils/Quaternion";
+import type { Quaternion } from "@common/utils/Quaternion";
 import { Vector3 } from "@common/utils/Vector";
 import type { CommonBaseEntityBoneCollection } from "./CommonBaseEntityBoneCollection";
 import type { StateBagChangeHandler } from "common-game/cfx/StateBagChangeHandler";
