@@ -801,7 +801,7 @@ function initializeOnce() {
   let isInitialized = false;
 
   return () => {
-    if (isInitialized || IsDuplicityVersion()) {
+    if (isInitialized || GetGameName() !== "fivem") {
       return;
     }
 

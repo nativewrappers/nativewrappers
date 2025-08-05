@@ -1,26 +1,25 @@
+import type { StateBagChangeHandler } from "common-game/cfx/StateBagChangeHandler";
+import { CommonPed } from "./CommonPed";
 import { ClassTypes } from "@common/utils/ClassTypes";
-import { Color } from "@common/utils/Color";
-import { GameConstants } from "fivem/GameConstants";
-import { Model } from "fivem/Model";
-import { GetEntityClassFromId } from "fivem/utils/GetEntityFromEntityIds";
-import cfx, { type StateBagChangeHandler } from "../cfx";
-import type { Entity } from "./Entity";
-import { Ped } from "./Ped";
+import { GameConstants } from "common-game/CommonGameConstants";
+import cfx from "common-game/cfx/cfx";
+import type { CommonEntity } from "./CommonEntityType";
+import { GetEntityClassFromHandle } from "./GetEntityClassIdFromHandle";
 
-export class Player {
+export class CommonPlayer {
   private handle: number;
-  private ped?: Ped;
+  private ped?: CommonPed;
   private pvp = false;
   private stateBagCookies: number[] = [];
   private source: number;
   private type = ClassTypes.Player;
 
-  public static *AllPlayers(excludeLocalPlayer = true): IterableIterator<Player> {
+  public static *AllPlayers(excludeLocalPlayer = true): IterableIterator<CommonPlayer> {
     for (const ply of GetActivePlayers() as number[]) {
       if (excludeLocalPlayer && ply === GameConstants.PlayerId) {
         continue;
       }
-      yield new Player(ply);
+      yield new CommonPlayer(ply);
     }
   }
 
@@ -28,24 +27,24 @@ export class Player {
    * @param handle the handoe of the ped to get the player of
    * @returns the player, or null if the player doesn't exist
    */
-  public static fromPedHandle(handle: number): Player | null {
+  public static fromPedHandle(handle: number): CommonPlayer | null {
     const playerHandle = NetworkGetPlayerIndexFromPed(handle);
     if (!handle) {
       return null;
     }
-    return new Player(playerHandle);
+    return new CommonPlayer(playerHandle);
   }
 
   /**
    * @param serverId the server id to get the player of
    * @returns the player, or null if the player doesn't exist
    */
-  public static fromServerId(serverId: number): Player | null {
+  public static fromServerId(serverId: number): CommonPlayer | null {
     const player = GetPlayerFromServerId(serverId);
     if (player === -1) {
       return null;
     }
-    return new Player(player);
+    return new CommonPlayer(player);
   }
 
   /**
@@ -56,8 +55,8 @@ export class Player {
   public static getClosestPlayerPedWithDistance(minimumDistance = Number.MAX_VALUE, fromPlayer = GameConstants.Player) {
     const ped = fromPlayer.Ped;
     const pos = ped.Position;
-    const data: [Ped | null, number] = [null as Ped | null, Number.MAX_VALUE];
-    for (const ply of Player.AllPlayers(true)) {
+    const data: [CommonPed | null, number] = [null as CommonPed | null, Number.MAX_VALUE];
+    for (const ply of CommonPlayer.AllPlayers(true)) {
       const tgtPed = ply.Ped;
       const dist = pos.distance(tgtPed.Position);
       if (dist < data[1] && dist < minimumDistance) {
@@ -94,15 +93,15 @@ export class Player {
   /**
    * This is here for compatibility with older versions.
    */
-  public get Character(): Ped {
+  public get Character(): CommonPed {
     return this.Ped;
   }
 
-  public get Ped(): Ped {
+  public get Ped(): CommonPed {
     const handle = GetPlayerPed(this.handle);
 
     if (typeof this.ped === "undefined" || handle !== this.ped.Handle) {
-      this.ped = new Ped(handle);
+      this.ped = new CommonPed(handle);
     }
 
     return this.ped;
@@ -119,7 +118,7 @@ export class Player {
     return cfx.Player(this.ServerId).state;
   }
 
-  public AddStateBagChangeHandler(keyFilter: string | null, handler: StateBagChangeHandler): number {
+  public AddStateBagChangeHandler(keyFilter: string | null, handler: StateBagChangeHandler<unknown>): number {
     const cookie = AddStateBagChangeHandler(keyFilter as any, `player:${this.ServerId}`, handler);
     this.stateBagCookies.push(cookie);
     return cookie;
@@ -131,7 +130,7 @@ export class Player {
    * @param handler the function to handle the change
    * @returns a cookie to be used in RemoveStateBagChangeHandler
    */
-  public listenForStateChange(keyFilter: string | null, handler: StateBagChangeHandler): number {
+  public listenForStateChange(keyFilter: string | null, handler: StateBagChangeHandler<unknown>): number {
     return this.AddStateBagChangeHandler(keyFilter, handler);
   }
 
@@ -153,28 +152,6 @@ export class Player {
     return GetPlayerName(this.handle);
   }
 
-  public get PvPEnabled(): boolean {
-    return this.pvp;
-  }
-
-  public set PvPEnabled(value: boolean) {
-    NetworkSetFriendlyFireOption(value);
-    SetCanAttackFriendly(this.Character.Handle, value, value);
-    this.pvp = value;
-  }
-
-
-  public set Ghosted(isGhosted: boolean) {
-    // if we're the local player then use the local version of the native
-    if (this.Handle === 128) {
-      SetLocalPlayerAsGhost(isGhosted);
-    } else {
-      // actual name is SET_REMOTE_PLAYER_AS_GHOST
-      SetRelationshipToPlayer(this.handle, isGhosted);
-    }
-  }
-
-
   public get IsDead(): boolean {
     return IsPlayerDead(this.handle);
   }
@@ -183,10 +160,10 @@ export class Player {
     DisablePlayerFiring(this.handle, value);
   }
 
-  public get EntityPlayerIsAimingAt(): Entity | null {
+  public get EntityPlayerIsAimingAt(): CommonEntity | null {
     const [entityHit, entity] = GetEntityPlayerIsFreeAimingAt(this.handle);
     if (entityHit) {
-      return GetEntityClassFromId(entity);
+      return GetEntityClassFromHandle(entity);
     }
     return null;
   }
@@ -194,86 +171,6 @@ export class Player {
   public get StealthNoise(): number {
     return GetPlayerCurrentStealthNoise(this.handle);
   }
-
-  public get FakeWantedLevel(): number {
-    return GetPlayerFakeWantedLevel(this.handle);
-  }
-
-  public get PlayerGroup(): number {
-    return GetPlayerGroup(this.handle);
-  }
-
-  public get HasReserveParachute(): boolean {
-    return GetPlayerHasReserveParachute(this.handle);
-  }
-
-  public get HealthRechargeLimit(): number {
-    return GetPlayerHealthRechargeLimit(this.handle);
-  }
-
-  public get IsInvincible(): boolean {
-    return GetPlayerInvincible_2(this.handle);
-  }
-
-  public get MaxArmor(): number {
-    return GetPlayerMaxArmour(this.handle);
-  }
-
-  public get ParachuteModelOverride(): Model {
-    return new Model(GetPlayerParachuteModelOverride(this.handle));
-  }
-
-  public get ParachutePackTintIndex(): number {
-    return GetPlayerParachutePackTintIndex(this.handle);
-  }
-
-  public get ParachuteTintIndex(): number {
-    return GetPlayerParachuteTintIndex(this.handle);
-  }
-
-  public get ParachuteColorTrailColor(): Color {
-    return Color.fromArray(GetPlayerParachuteSmokeTrailColor(this.handle));
-  }
-
-  public get ReserveParachuteModelOverride(): Model {
-    return new Model(GetPlayerReserveParachuteModelOverride(this.handle));
-  }
-
-  public get ReserveParachuteTintIndex(): number {
-    return GetPlayerReserveParachuteTintIndex(this.handle);
-  }
-
-  public get PlayerRgbColour(): Color {
-    return Color.fromArray(GetPlayerRgbColour(this.handle));
-  }
-
-  public get Stamina(): number {
-    return GetPlayerSprintStaminaRemaining(this.handle);
-  }
-
-  public get SprintTimeRemaining(): number {
-    return GetPlayerSprintStaminaRemaining(this.handle);
-  }
-
-  /**
-   * The players melee target?
-   */
-  public get TargetEntity(): Entity | null {
-    const [entityHit, entity] = GetPlayerTargetEntity(this.handle);
-    if (entityHit) {
-      return GetEntityClassFromId(entity);
-    }
-
-    return null;
-  }
-
-  public get Team(): number {
-    return GetPlayerTeam(this.handle);
-  }
-
-  // GetPlayerUnderwaterTimeRemaining
-
-  public CanPedHearPlayer(ped: Ped): boolean {
-    return CanPedHearPlayer(this.handle, ped.Handle);
-  }
+  
+  
 }

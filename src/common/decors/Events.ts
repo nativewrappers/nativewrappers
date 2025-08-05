@@ -100,6 +100,18 @@ export function Event(eventName: string) {
 }
 
 /**
+ * Registers the Event call for {@link eventName} to this method.
+ *
+ * This has internal pretty-printing to make errors easier to track, if
+ * you want to disable this you will need to call {@link DisablePrettyPrint}, or if you're
+ * using esbuild you can add `REMOVE_EVENT_LOG` to your drop label {@link https://esbuild.github.io/api/#drop-labels}
+ *
+ * This is the same thing as just using `Event` but this disambiguates the call from DOM 
+ * @param eventName the event to bind to
+ */
+export const CfxEvent = Event;
+
+/**
  * Registers the Net Event call for {@link eventName} to this method
  *
  *

@@ -1,19 +1,17 @@
 import { Vector3 } from "@common/utils/Vector";
-import { BaseEntity } from "./entities/BaseEntity";
-import { Ped } from "./entities/Ped";
-import type { Vehicle } from "./entities/Vehicle";
-import type { AnimationFlags, IkControlFlags } from "./enums/AnimationFlags";
-import { DrivingStyle } from "./enums/Driving";
-import { FiringPatterns } from "./enums/FiringPatterns";
+import { CommonBaseEntity } from "./entities/CommonBaseEntity";
+import { CommonPed } from "./entities/CommonPed";
+import type { CommonVehicle } from "./entities/CommonVehicle";
 import { VehicleSeat } from "./enums/VehicleSeat";
 import { LoadAnimDict } from "./utils/Animations";
+import { GlobalData } from "@common/GlobalData";
 
-export class Tasks {
-  private ped: Ped;
+export class CommonTasks {
+  private ped: CommonPed;
 
   // we take null because sequences have a null ped, if you pass null to this
-  // you betterk now what you're doing.
-  constructor(ped: Ped | null) {
+  // you better now what you're doing.
+  constructor(ped: CommonPed | null) {
     const actualPed = ped ?? { handle: null };
     // @ts-ignore
     this.ped = actualPed;
@@ -27,13 +25,13 @@ export class Tasks {
     TaskSetBlockingOfNonTemporaryEvents(this.ped.Handle, block);
   }
 
-  public aimAt(target: BaseEntity | Vector3, duration: number): void {
-    if (target instanceof BaseEntity)
+  public aimAt(target: CommonBaseEntity | Vector3, duration: number): void {
+    if (target instanceof CommonBaseEntity)
       TaskAimGunAtEntity(this.ped.Handle, target.Handle, duration, false as any, false as any);
     else TaskAimGunAtCoord(this.ped.Handle, target.x, target.y, target.z, duration, false, false);
   }
 
-  public arrest(ped: Ped): void {
+  public arrest(ped: CommonPed): void {
     TaskArrestPed(this.ped.Handle, ped.Handle);
   }
 
@@ -45,48 +43,19 @@ export class Tasks {
     TaskClimb(this.ped.Handle, true);
   }
 
-  // TODO: test and verify
-  // public climbLadder(): void {
-  //   TaskClimbLadder(this.ped.Handle, 0.0 1);
-  // }
-  //
-  // public cower(duration: number): void {
-  //   TaskCower(this.ped.Handle, duration);
-  // }
-
-  public cruiseWithVehicle(vehicle: Vehicle, speed: number, drivingStyle = DrivingStyle.None): void {
+  public cruiseWithVehicle(vehicle: CommonVehicle, speed: number, drivingStyle: number = 0): void {
     TaskVehicleDriveWander(this.ped.Handle, vehicle.Handle, speed, drivingStyle);
   }
-
-  // public driveTo(
-  //   vehicle: Vehicle,
-  //   target: Vector3,
-  //   radius: number,
-  //   speed: number,
-  //   drivingstyle = DrivingStyle.None,
-  // ): void {
-  //   // Swap to TaskVehicleDriveToCoord
-  //   TaskVehicleDriveToCoordLongrange(
-  //     this.ped.Handle,
-  //     vehicle.Handle,
-  //     target.x,
-  //     target.y,
-  //     target.z,
-  //     speed,
-  //     drivingstyle,
-  //     radius,
-  //   );
-  // }
 
   public enterAnyVehicle(seat = VehicleSeat.AnyPassenger, timeout = -1, speed = 0, flag = 0): void {
     TaskEnterVehicle(this.ped.Handle, 0, timeout, seat, speed, flag, 0);
   }
 
-  public static everyoneLeaveVehicle(vehicle: Vehicle): void {
+  public static everyoneLeaveVehicle(vehicle: CommonVehicle): void {
     TaskEveryoneLeaveVehicle(vehicle.Handle, 0);
   }
 
-  public fightAgainst(target: Ped, duration?: number): void {
+  public fightAgainst(target: CommonPed, duration?: number): void {
     if (duration) {
       TaskCombatPedTimed(this.ped.Handle, target.Handle, duration, 0);
     } else {
@@ -103,14 +72,14 @@ export class Tasks {
   }
 
   public fleeFrom(
-    pedOrPosition: Ped | Vector3,
+    pedOrPosition: CommonPed | Vector3,
     distance = 100.0,
     duration = -1,
     fleeType = 0,
     fleeSpeed = 3.0,
-    fleeFrom?: Ped,
+    fleeFrom?: CommonPed,
   ): void {
-    if (pedOrPosition instanceof Ped) {
+    if (pedOrPosition instanceof CommonPed) {
       TaskSmartFleePed(
         this.ped.Handle,
         pedOrPosition.Handle,
@@ -170,11 +139,7 @@ export class Tasks {
     }
   }
 
-  public goToEntity(target: BaseEntity, offset: Vector3 | null = null, timeout = -1): void {
-    if (offset === null) {
-      offset = new Vector3(0, 0, 0);
-    }
-
+  public goToEntity(target: CommonBaseEntity, offset = new Vector3(0), timeout = -1): void {
     TaskGotoEntityOffsetXy(this.ped.Handle, target.Handle, timeout, offset.x, offset.y, offset.z, 1, true);
   }
 
@@ -186,8 +151,8 @@ export class Tasks {
     TaskHandsUp(this.ped.Handle, duration, 0, -1, false);
   }
 
-  public lookAt(targetOrPosition: BaseEntity | Vector3, duration = -1): void {
-    if (targetOrPosition instanceof BaseEntity) {
+  public lookAt(targetOrPosition: CommonBaseEntity | Vector3, duration = -1): void {
+    if (targetOrPosition instanceof CommonBaseEntity) {
       TaskLookAtEntity(this.ped.Handle, targetOrPosition.Handle, duration, 2048, 31, 0);
     } else {
       TaskLookAtCoord(this.ped.Handle, targetOrPosition.x, targetOrPosition.y, targetOrPosition.z, duration, 0, 51, 0);
@@ -201,26 +166,43 @@ export class Tasks {
     blendOutSpeed: number,
     duration: number,
     playbackRate: number,
-    animFlags: AnimationFlags,
-    ikFlags: IkControlFlags,
+    animFlags: number,
+    ikFlags?: number,
   ): Promise<void> {
     await LoadAnimDict(animDict);
 
-    TaskPlayAnim(
-      this.ped.Handle,
-      animDict as any,
-      animName as any,
-      blendInSpeed,
-      blendOutSpeed,
-      duration,
-      animFlags,
-      playbackRate,
-      false as any,
-      ikFlags,
-      false as any,
-      0,
-      false as any,
-    );
+    if (GlobalData.GameName === "redm") {
+      TaskPlayAnim(
+        this.ped.Handle,
+        animDict as any,
+        animName as any,
+        blendInSpeed,
+        blendOutSpeed,
+        duration,
+        animFlags,
+        playbackRate,
+        false as any,
+        ikFlags!,
+        false as any,
+        0,
+        false as any,
+      );
+    } else {
+      // @ts-ignore: This is for FiveM only, but we specifically only build against redm.d.ts to ensure everything works properly.
+      TaskPlayAnim(
+            this.ped.Handle,
+            animDict,
+            animName,
+            blendInSpeed,
+            blendOutSpeed,
+            duration,
+            animFlags,
+            playbackRate,
+            false,
+            false,
+            false,
+        );      
+    }
 
     RemoveAnimDict(animDict);
   }
@@ -230,12 +212,12 @@ export class Tasks {
   }
 
   public shootAt(
-    targetOrPosition: Ped | Vector3,
+    targetOrPosition: CommonPed | Vector3,
     duration = -1,
-    pattern = FiringPatterns.None,
+    pattern: number = 0,
     affectCockedState = false,
   ): void {
-    if (targetOrPosition instanceof Ped) {
+    if (targetOrPosition instanceof CommonPed) {
       TaskShootAtEntity(this.ped.Handle, targetOrPosition.Handle, duration, pattern, affectCockedState as any);
     } else {
       TaskShootAtCoord(
@@ -250,7 +232,7 @@ export class Tasks {
     }
   }
 
-  public shuffleToNextVehicleSeat(vehicle: Vehicle): void {
+  public shuffleToNextVehicleSeat(vehicle: CommonVehicle): void {
     TaskShuffleToNextVehicleSeat(this.ped.Handle, vehicle.Handle);
   }
 
@@ -262,7 +244,7 @@ export class Tasks {
     TaskStandStill(this.ped.Handle, duration);
   }
 
-  public vehicleShootAtPed(target: Ped): void {
+  public vehicleShootAtPed(target: CommonPed): void {
     TaskVehicleShootAtPed(this.ped.Handle, target.Handle, 20);
   }
 
@@ -278,11 +260,11 @@ export class Tasks {
     }
   }
 
-  public warpIntoVehicle(vehicle: Vehicle, seat: VehicleSeat): void {
+  public warpIntoVehicle(vehicle: CommonVehicle, seat: VehicleSeat): void {
     TaskWarpPedIntoVehicle(this.ped.Handle, vehicle.Handle, seat);
   }
 
-  public warpOutOfVehicle(vehicle: Vehicle, flags: EnterExitVehicleFlags): void {
+  public warpOutOfVehicle(vehicle: CommonVehicle, flags: number): void {
     TaskLeaveVehicle(this.ped.Handle, vehicle.Handle, flags, 0);
   }
 

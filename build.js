@@ -142,6 +142,13 @@ createBuilder([
     },
   },
   {
+    name: "common-game",
+    title: "Common Game",
+    options: {
+      dropLabels: ["$SERVER"],
+    },
+  },
+  {
     name: "common",
     title: "Cfx scripting runtimes",
   },

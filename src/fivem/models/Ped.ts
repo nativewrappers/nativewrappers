@@ -26,7 +26,7 @@ export class Ped extends BaseEntity {
     if (handle === 0 || !DoesEntityExist(handle)) {
       return null;
     }
-    return new Ped(handle);
+    return new this(handle);
   }
 
   public static fromNetworkId(networkId: number): Ped | null {
