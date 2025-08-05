@@ -9,7 +9,6 @@ export class CommonPed extends CommonBaseEntity {
   protected type = ClassTypes.Ped;
   protected bones?: CommonPedBoneCollection;
 
-
   public static exists(ped: CommonPed): boolean {
     return typeof ped !== "undefined" && ped.exists();
   }
@@ -56,5 +55,4 @@ export class CommonPed extends CommonBaseEntity {
 
     return this.bones;
   }
-  
 }

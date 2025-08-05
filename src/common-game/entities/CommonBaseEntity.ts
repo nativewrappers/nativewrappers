@@ -7,7 +7,6 @@ import cfx from "common-game/cfx/cfx";
 import { CommonModel } from "common-game/CommonModel";
 import { GlobalData } from "@common/GlobalData";
 
-
 export abstract class CommonBaseEntity {
   protected handle: number;
   protected stateBagCookies: number[] = [];
@@ -38,7 +37,7 @@ export abstract class CommonBaseEntity {
       NetworkRegisterEntityAsNetworked(this.handle);
     } else {
       if (GlobalData.GameName === "redm") {
-        Citizen.invokeNative("0xE31A04513237DC89", this.handle)
+        Citizen.invokeNative("0xE31A04513237DC89", this.handle);
       } else {
         // @ts-ignore: proper name on fivem
         NetworkUnregisterNetworkedEntity(this.handle);
@@ -215,5 +214,4 @@ export abstract class CommonBaseEntity {
       RemoveStateBagChangeHandler(cookie);
     }
   }
-  
 }

@@ -163,7 +163,6 @@ export class Player {
     this.pvp = value;
   }
 
-
   public set Ghosted(isGhosted: boolean) {
     // if we're the local player then use the local version of the native
     if (this.Handle === 128) {
@@ -173,7 +172,6 @@ export class Player {
       SetRelationshipToPlayer(this.handle, isGhosted);
     }
   }
-
 
   public get IsDead(): boolean {
     return IsPlayerDead(this.handle);

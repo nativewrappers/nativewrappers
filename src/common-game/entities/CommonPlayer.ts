@@ -171,6 +171,4 @@ export class CommonPlayer {
   public get StealthNoise(): number {
     return GetPlayerCurrentStealthNoise(this.handle);
   }
-  
-  
 }

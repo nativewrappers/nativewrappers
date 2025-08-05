@@ -9,7 +9,7 @@ export class CommonEntityBoneCollection extends CommonBaseEntityBoneCollection {
 
   public getBone(boneIndex: number): CommonEntityBone;
   public getBone(boneName: string): CommonEntityBone;
-  public getBone(bone: number | string ): CommonEntityBone {
+  public getBone(bone: number | string): CommonEntityBone {
     return new CommonEntityBone(
       this.owner,
       typeof bone === "number" ? bone : GetEntityBoneIndexByName(this.owner.Handle, bone ?? ""),

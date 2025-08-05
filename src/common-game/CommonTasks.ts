@@ -190,18 +190,18 @@ export class CommonTasks {
     } else {
       // @ts-ignore: This is for FiveM only, but we specifically only build against redm.d.ts to ensure everything works properly.
       TaskPlayAnim(
-            this.ped.Handle,
-            animDict,
-            animName,
-            blendInSpeed,
-            blendOutSpeed,
-            duration,
-            animFlags,
-            playbackRate,
-            false,
-            false,
-            false,
-        );      
+        this.ped.Handle,
+        animDict,
+        animName,
+        blendInSpeed,
+        blendOutSpeed,
+        duration,
+        animFlags,
+        playbackRate,
+        false,
+        false,
+        false,
+      );
     }
 
     RemoveAnimDict(animDict);
@@ -211,12 +211,7 @@ export class CommonTasks {
     TaskReloadWeapon(this.ped.Handle, true);
   }
 
-  public shootAt(
-    targetOrPosition: CommonPed | Vector3,
-    duration = -1,
-    pattern = 0,
-    affectCockedState = false,
-  ): void {
+  public shootAt(targetOrPosition: CommonPed | Vector3, duration = -1, pattern = 0, affectCockedState = false): void {
     if (targetOrPosition instanceof CommonPed) {
       TaskShootAtEntity(this.ped.Handle, targetOrPosition.Handle, duration, pattern, affectCockedState as any);
     } else {

@@ -1,6 +1,6 @@
-import { Delay } from "@common/utils/Delay"
-import { Vector3 } from "@common/utils/Vector"
-import type { Dimensions } from "./interfaces/Dimension"
+import { Delay } from "@common/utils/Delay";
+import { Vector3 } from "@common/utils/Vector";
+import type { Dimensions } from "./interfaces/Dimension";
 
 /*
  * Class to create and manage entity models.

@@ -59,4 +59,4 @@ export const RemoveAnimDictArray = (animDict: string[]): void => {
   for (const dict of animDict) {
     RemoveAnimDict(dict);
   }
-}
+};
