@@ -19,6 +19,7 @@
       "@common/*": ["./common/*"],
       "fivem/*": ["./fivem/*"],
       "redm/*": ["./redm/*"],
+      "@common-game/*": ["./common-game/*"],
       "server/*": ["./server/*"],
     }
   },
@@ -27,6 +28,7 @@
   "references": [
     { "path": "./src/server" },
     { "path": "./src/fivem" },
+    { "path": "./src/common-game" },
     { "path": "./src/redm" }
   ]
 }
