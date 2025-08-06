@@ -2,9 +2,9 @@ import type { ClassTypes } from "@common/utils/ClassTypes";
 import type { Quaternion } from "@common/utils/Quaternion";
 import { Vector3 } from "@common/utils/Vector";
 import type { CommonBaseEntityBoneCollection } from "./CommonBaseEntityBoneCollection";
-import type { StateBagChangeHandler } from "common-game/cfx/StateBagChangeHandler";
-import cfx from "common-game/cfx/cfx";
-import { CommonModel } from "common-game/CommonModel";
+import type { StateBagChangeHandler } from "@common-game/cfx/StateBagChangeHandler";
+import cfx from "@common-game/cfx/cfx";
+import { CommonModel } from "@common-game/CommonModel";
 import { GlobalData } from "@common/GlobalData";
 
 export abstract class CommonBaseEntity {

@@ -1,10 +1,10 @@
-import type { StateBagChangeHandler } from "common-game/cfx/StateBagChangeHandler";
+import type { StateBagChangeHandler } from "@common-game/cfx/StateBagChangeHandler";
 import { CommonPed } from "./CommonPed";
 import { ClassTypes } from "@common/utils/ClassTypes";
-import { GameConstants } from "common-game/CommonGameConstants";
-import cfx from "common-game/cfx/cfx";
 import type { CommonEntity } from "./CommonEntityType";
 import { GetEntityClassFromHandle } from "./GetEntityClassIdFromHandle";
+import cfx from "@common-game/cfx/cfx";
+import { GameConstants } from "@common-game/CommonGameConstants";
 
 export class CommonPlayer {
   private handle: number;

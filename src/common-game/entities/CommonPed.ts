@@ -1,8 +1,8 @@
-import { CommonTasks } from "common-game/CommonTasks";
 import { CommonBaseEntity } from "./CommonBaseEntity";
 import { CommonPlayer } from "./CommonPlayer";
 import { ClassTypes } from "@common/utils/ClassTypes";
 import { CommonPedBoneCollection } from "./CommonPedBoneCollection";
+import { CommonTasks } from "@common-game/CommonTasks";
 
 export class CommonPed extends CommonBaseEntity {
   private tasks: CommonTasks | undefined;
