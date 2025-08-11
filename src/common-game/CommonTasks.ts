@@ -5,13 +5,14 @@ import type { CommonVehicle } from "./entities/CommonVehicle";
 import { VehicleSeat } from "./enums/VehicleSeat";
 import { LoadAnimDict } from "./utils/Animations";
 import { GlobalData } from "@common/GlobalData";
+import { IHandle } from "./entities/IHandle";
 
 export class CommonTasks {
-  private ped: CommonPed;
+  protected ped: IHandle;
 
   // we take null because sequences have a null ped, if you pass null to this
   // you better now what you're doing.
-  constructor(ped: CommonPed | null) {
+  constructor(ped: IHandle | null) {
     const actualPed = ped ?? { handle: null };
     // @ts-ignore
     this.ped = actualPed;
@@ -77,7 +78,7 @@ export class CommonTasks {
     duration = -1,
     fleeType = 0,
     fleeSpeed = 3.0,
-    fleeFrom?: CommonPed,
+    fleeFrom?: IHandle,
   ): void {
     if (pedOrPosition instanceof CommonPed) {
       TaskSmartFleePed(
@@ -211,8 +212,8 @@ export class CommonTasks {
     TaskReloadWeapon(this.ped.Handle, true);
   }
 
-  public shootAt(targetOrPosition: CommonPed | Vector3, duration = -1, pattern = 0, affectCockedState = false): void {
-    if (targetOrPosition instanceof CommonPed) {
+  public shootAt(targetOrPosition: IHandle | Vector3, duration = -1, pattern = 0, affectCockedState = false): void {
+    if (targetOrPosition instanceof IHandle) {
       TaskShootAtEntity(this.ped.Handle, targetOrPosition.Handle, duration, pattern, affectCockedState as any);
     } else {
       TaskShootAtCoord(

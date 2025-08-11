@@ -7,6 +7,7 @@ import { DrivingStyle } from "./enums/Driving";
 import { FiringPatterns } from "./enums/FiringPatterns";
 import { VehicleSeat } from "./enums/VehicleSeat";
 import { LoadAnimDict } from "./utils/Animations";
+import { CommonTasks } from "@common-game/CommonTasks";
 
 export class Tasks {
   private ped: Ped;
@@ -16,7 +17,7 @@ export class Tasks {
   constructor(ped: Ped | null) {
     const actualPed = ped ?? { handle: null };
     // @ts-ignore
-    this.ped = actualPed;
+    this.ped = ped;
   }
 
   public achieveHeading(heading: number, timeout = 0): void {

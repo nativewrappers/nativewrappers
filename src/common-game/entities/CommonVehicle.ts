@@ -3,10 +3,6 @@ import { CommonBaseEntity } from "./CommonBaseEntity";
 import { CommonEntityBoneCollection } from "./CommonEntityBoneCollection";
 
 export class CommonVehicle extends CommonBaseEntity {
-  public static exists(vehicle: CommonVehicle): boolean {
-    return typeof vehicle !== "undefined" && vehicle.exists();
-  }
-
   public static fromHandle(handle: number): CommonVehicle | null {
     if (handle === 0 || !DoesEntityExist(handle)) {
       return null;

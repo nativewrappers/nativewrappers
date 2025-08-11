@@ -5,10 +5,6 @@ import type { CommonEntity } from "./CommonEntityType";
 import { GetEntityClassFromHandle } from "./GetEntityClassIdFromHandle";
 
 export class CommonProp extends CommonBaseEntity {
-  public static exists(prop: CommonProp): boolean {
-    return typeof prop !== "undefined" && prop.exists();
-  }
-
   public static fromHandle(handle: number): CommonProp | null {
     return new this(handle);
   }

@@ -3,8 +3,13 @@ import { _N } from "redm/utils/Native";
 import { type BoneIndex, EntityType, ForceType } from "../enums/Entity";
 import type { Throwable } from "../types/Throwable";
 import { BaseEntity } from "./BaseEntity";
+import type { CommonBaseEntityBoneCollection } from "@common-game/entities/CommonBaseEntityBoneCollection";
+import { ClassTypes } from "@common/utils/ClassTypes";
 
+// is this used?
 export class Entity extends BaseEntity {
+  protected type = ClassTypes.Entity;
+  protected bones?: CommonBaseEntityBoneCollection | undefined;
   // NOTE: There is nothing stopping you from using creating an invalid entity, you should do your own due-diligence
   constructor(handle: number) {
     super(handle);
@@ -85,6 +90,7 @@ export class Entity extends BaseEntity {
    * @throws Error if tgtEntity and {@Entity} are the same entity
    */
   attachTo(
+    // is this used?
     tgtEntity: Entity,
     pos: Vector3,
     rot: Vector3,

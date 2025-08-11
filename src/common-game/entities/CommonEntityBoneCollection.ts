@@ -1,9 +1,10 @@
 import type { CommonBaseEntity } from "./CommonBaseEntity";
 import { CommonBaseEntityBoneCollection } from "./CommonBaseEntityBoneCollection";
 import { CommonEntityBone } from "./CommonEntityBone";
+import type { IHandle } from "./IHandle";
 
 export class CommonEntityBoneCollection extends CommonBaseEntityBoneCollection {
-  constructor(owner: CommonBaseEntity) {
+  constructor(owner: IHandle) {
     super(owner);
   }
 
