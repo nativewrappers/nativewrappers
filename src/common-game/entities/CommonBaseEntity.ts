@@ -7,29 +7,70 @@ import cfx from "@common-game/cfx/cfx";
 import { CommonModel } from "@common-game/CommonModel";
 import { GlobalData } from "@common/GlobalData";
 import type { CommonBaseEntityBone } from "./CommonBaseEntityBone";
+import { IHandle } from "./IHandle";
 
-export abstract class CommonBaseEntity {
-  protected handle: number;
+
+export abstract class CommonBaseEntity extends IHandle {
   protected stateBagCookies: number[] = [];
   protected netId: number | null = null;
   protected abstract type: ClassTypes;
   protected abstract bones?: CommonBaseEntityBoneCollection;
 
   constructor(handle: number) {
-    this.handle = handle;
-    if (this.IsNetworked) {
-      this.netId = this.NetworkId;
-    }
+    super(handle)
   }
 
+  /**
+    * Replaces the current handle for the entity used on, this should be used sparringly, mainly
+    * in situations where you're going to reuse an entity over and over and don't want to make a
+    * new entity every time.
+    *
+    *  **WARNING**: This does no checks, if you provide it an invalid entity it will use it
+    *
+    * ```ts
+    * const REUSABLE_ENTITY = new Entity(entityHandle);
+    *
+    * onNet("entityHandler", (entNetId: number) => {
+    *  // if no net entity we should ignore
+    *  if (!NetworkDoesEntityExistWithNetworkId(entNetId)) return;
+    *
+    *  // Reuse our entity so we don't have to initialize a new one
+    *  REUSABLE_ENTITY.replaceHandle(NetworkGetEntityFromNetworkId(entNetId));
+    *  // Do something with REUSABLE_ENTITY entity
+    * })
+    ```
+    */
+  replaceHandle(newHandle: number) {
+    this.handle = newHandle;
+  }
+
+  /*
+  * @returns `true` if the entity exists, `false` otherwise.
+  */
+  get Exists(): boolean {
+    return DoesEntityExist(this.handle);
+  }
+  
+
+  /*
+  * @returns the handle of the specified entity
+  */
   public get Handle(): number {
     return this.handle;
   }
 
   /**
-   * @returns if the entity is a networked entity or local entity
+    * This will return a warning if the the entity is not networked, you should always use {@link IsNetworked} prior to calling thisl
+   * @returns the network for the specified entity
    */
-  public get IsNetworked(): boolean {
+  get NetworkId(): number {
+    return NetworkGetNetworkIdFromEntity(this.handle);
+  }
+
+  /**
+   * @returns `true` if the current entity is networked, false otherwise
+   */
+  get IsNetworked(): boolean {
     return NetworkGetEntityIsNetworked(this.handle);
   }
 
@@ -37,20 +78,13 @@ export abstract class CommonBaseEntity {
     if (networked) {
       NetworkRegisterEntityAsNetworked(this.handle);
     } else {
-      if (GlobalData.GameName === "redm") {
+      if (GlobalData.IS_REDM) {
         Citizen.invokeNative("0xE31A04513237DC89", this.handle);
       } else {
         // @ts-ignore: proper name on fivem
         NetworkUnregisterNetworkedEntity(this.handle);
       }
     }
-  }
-
-  public get NetworkId(): number {
-    if (this.netId) {
-      return this.netId;
-    }
-    return NetworkGetNetworkIdFromEntity(this.handle);
   }
 
   public get State(): StateBagInterface {
@@ -102,14 +136,6 @@ export abstract class CommonBaseEntity {
     return Vector3.fromArrays(GetEntityMatrix(this.handle));
   }
 
-  public get Health(): number {
-    return GetEntityHealth(this.handle);
-  }
-
-  public set Health(amount: number) {
-    SetEntityHealth(this.handle, amount);
-  }
-
   public get MaxHealth(): number {
     return GetEntityMaxHealth(this.handle);
   }
@@ -126,7 +152,10 @@ export abstract class CommonBaseEntity {
     }
   }
 
-  public get IsDead(): boolean {
+  /**
+   * @returns Returns true if the entity is dead
+   */
+  get IsDead(): boolean {
     return IsEntityDead(this.handle);
   }
 
@@ -156,14 +185,6 @@ export abstract class CommonBaseEntity {
     }
   }
 
-  public get Position(): Vector3 {
-    return Vector3.fromArray(GetEntityCoords(this.handle, false));
-  }
-
-  public set Position(position: Vector3) {
-    SetEntityCoords(this.handle, position.x, position.y, position.z, false, false, false, true);
-  }
-
   public set PositionNoOffset(position: Vector3) {
     SetEntityCoordsNoOffset(this.handle, position.x, position.y, position.z, true, true, true);
   }
@@ -178,14 +199,6 @@ export abstract class CommonBaseEntity {
 
   public set Quaternion(quaternion: Quaternion) {
     SetEntityQuaternion(this.handle, quaternion.x, quaternion.y, quaternion.z, quaternion.w);
-  }
-
-  public get Heading(): number {
-    return GetEntityHeading(this.handle);
-  }
-
-  public set Heading(heading: number) {
-    SetEntityHeading(this.handle, heading);
   }
 
   public get IsPositionFrozen(): boolean {
@@ -204,9 +217,54 @@ export abstract class CommonBaseEntity {
     SetEntityVelocity(this.handle, velocity.x, velocity.y, velocity.z);
   }
 
-  public exists(): boolean {
-    return DoesEntityExist(this.handle);
+  public get IsVisible(): boolean {
+    return IsEntityVisible(this.handle)
   }
+
+
+  /**
+   * @param amount the health to set the health to, setting to `0` will kill the entity, if using on a {@link Ped} you should check the MaxHealth before setting.
+   */
+  set Health(amount: number) {
+    SetEntityHealth(this.handle, amount, 0);
+  }
+
+  /**
+   * @returns the amount of health the current {@link BaseEntity} has
+   */
+  get Health(): number {
+    return GetEntityHealth(this.handle);
+  }
+
+  /**
+   * @returns the heading of the current {@link BaseEntity}
+   */
+  get Heading(): number {
+    return GetEntityHeading(this.handle);
+  }
+
+  /**
+   * @param heading sets the entitys heading to the specified heading, this can be in the range of 0..360
+   */
+  set Heading(heading: number) {
+    SetEntityHeading(this.handle, heading);
+  }
+
+  /**
+   * @returns the position of the current Entity
+   */
+  get Position(): Vector3 {
+    return Vector3.fromArray(GetEntityCoords(this.handle, true, true));
+  }
+
+  /**
+   * You should always try to load the collisions before setting the entitys position if going a long distance.
+   * @param pos sets the position for the current ped
+   */
+  set Position(pos: Vector3) {
+    SetEntityCoords(this.handle, pos.x, pos.y, pos.z, false, false, false, false);
+  }
+  
 
   public delete(): void {
     this.IsMissionEntity = true;

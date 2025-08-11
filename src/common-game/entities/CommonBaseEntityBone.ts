@@ -1,12 +1,20 @@
 import { Vector3 } from "@common/utils/Vector";
 import type { CommonBaseEntity } from "./CommonBaseEntity";
+import type { IHandle } from "./IHandle";
 
 export abstract class CommonBaseEntityBone {
+  protected readonly owner: IHandle;
+  protected readonly index: number;
+
+  constructor(owner: IHandle, boneIndex?: number, boneName?: string) {
+    this.owner = owner;
+    this.index = boneIndex ? boneIndex : GetEntityBoneIndexByName(this.owner.Handle, boneName ?? "");
+  }
   public get Index(): number {
     return this.index;
   }
 
-  public get Owner(): CommonBaseEntity {
+  public get Owner(): IHandle {
     return this.owner;
   }
 
@@ -22,11 +30,4 @@ export abstract class CommonBaseEntityBone {
     return this.owner.exists() && this.index !== -1;
   }
 
-  protected readonly owner: CommonBaseEntity;
-  protected readonly index: number;
-
-  constructor(owner: CommonBaseEntity, boneIndex?: number, boneName?: string) {
-    this.owner = owner;
-    this.index = boneIndex ? boneIndex : GetEntityBoneIndexByName(this.owner.Handle, boneName ?? "");
-  }
 }

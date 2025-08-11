@@ -4,6 +4,6 @@
     "composite": true,
     "types": []
   },
-  "include": ["./", "../common/"],
-  "references": [{ "path": "../common" }]
+  "include": ["./", "../common/", "../common-game"],
+  "references": [{ "path": "../common" }, { "path": "../common-game" }]
 }

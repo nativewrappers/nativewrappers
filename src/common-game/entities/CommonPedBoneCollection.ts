@@ -1,9 +1,10 @@
 import { CommonBaseEntityBoneCollection } from "./CommonBaseEntityBoneCollection";
 import type { CommonPed } from "./CommonPed";
 import { CommonPedBone } from "./CommonPedBone";
+import type { IHandle } from "./IHandle";
 
 export class CommonPedBoneCollection extends CommonBaseEntityBoneCollection {
-  constructor(owner: CommonPed) {
+  constructor(owner: IHandle) {
     super(owner);
   }
 
@@ -22,7 +23,7 @@ export class CommonPedBoneCollection extends CommonBaseEntityBoneCollection {
 
   public getBone(boneIndex?: number, boneName?: string): CommonPedBone {
     return new CommonPedBone(
-      this.owner as CommonPed,
+      this.owner,
       boneIndex ? boneIndex : GetEntityBoneIndexByName(this.owner.Handle, boneName ?? ""),
     );
   }

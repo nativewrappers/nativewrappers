@@ -12,8 +12,15 @@ import type { VehicleSeat } from "../enums/VehicleSeat";
 import { BaseEntity } from "./BaseEntity";
 import { Player } from "./Player";
 import { Vehicle } from "./Vehicle";
+import { CommonPed } from "@common-game/entities/CommonPed";
+import type { CommonBaseEntityBoneCollection } from "@common-game/entities/CommonBaseEntityBoneCollection";
+import { ClassTypes } from "@common/utils/ClassTypes";
+import { CommonPedBoneCollection } from "@common-game/entities/CommonPedBoneCollection";
+
 
 export class Ped extends BaseEntity {
+  protected type = ClassTypes.Ped;
+  protected bones?: CommonPedBoneCollection | undefined;
   private attributes: Attributes | undefined;
   private tasks: Tasks | undefined;
 
@@ -69,11 +76,7 @@ export class Ped extends BaseEntity {
     }
 
     const horse = this.Mount;
-    if (horse !== null) {
-      return horse;
-    }
-
-    return null;
+    return horse;
   }
 
   /**
@@ -111,6 +114,11 @@ export class Ped extends BaseEntity {
     }
     this.tasks = new Tasks(this);
     return this.tasks;
+  }
+
+  get Bones(): CommonPedBoneCollection {
+    this.bones = this.bones ?? new CommonPedBoneCollection(this);
+    return this.bones;
   }
 
   /**
@@ -212,7 +220,7 @@ export class Ped extends BaseEntity {
   /**
    * returns the owner of the current animal
    */
-  get Owner(): Ped | null {
+  get AnimalOwner(): Ped | null {
     // _GET_ACTIVE_ANIMAL_OWNER
     const pedId = _N<number>("0xF103823FFE72BB49", this.handle, Citizen.resultAsInteger());
     return Ped.fromHandle(pedId);

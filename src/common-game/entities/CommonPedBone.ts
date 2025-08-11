@@ -1,8 +1,9 @@
 import { CommonBaseEntityBone } from "./CommonBaseEntityBone";
 import type { CommonPed } from "./CommonPed";
+import type { IHandle } from "./IHandle";
 
 export class CommonPedBone extends CommonBaseEntityBone {
-  constructor(owner: CommonPed, boneId: number) {
+  constructor(owner: IHandle, boneId: number) {
     super(owner, GetPedBoneIndex(owner.Handle, Number(boneId)));
   }
 

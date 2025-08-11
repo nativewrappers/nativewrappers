@@ -87,7 +87,8 @@ async function createBuilder(environments) {
   for (const { name, title } of environments) {
     const outDir = `./lib/${name}/`;
 
-    if (name !== "common")
+    if (name !== "common" && name !== "common-game")
+    {
       await copyDir(
         "./lib/common/",
         `./lib/${name}/common` /*{
@@ -96,6 +97,17 @@ async function createBuilder(environments) {
         },
       }*/,
       );
+
+      await copyDir(
+        "./lib/common-game/",
+        `./lib/${name}/common-game` /*{
+        filter: async (src) => {
+          return src.endsWith("/") || src.endsWith(".d.ts");
+        },
+      }*/,
+      );
+      
+    }
 
     await replaceTscAliasPaths({ outDir });
     await Promise.all([

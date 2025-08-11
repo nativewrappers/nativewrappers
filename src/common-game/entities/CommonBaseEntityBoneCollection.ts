@@ -1,10 +1,11 @@
 import type { CommonBaseEntity } from "./CommonBaseEntity";
 import type { CommonBaseEntityBone } from "./CommonBaseEntityBone";
+import type { IHandle } from "./IHandle";
 
 export abstract class CommonBaseEntityBoneCollection {
-  protected readonly owner: CommonBaseEntity;
+  protected readonly owner: IHandle;
 
-  constructor(owner: CommonBaseEntity) {
+  constructor(owner: IHandle) {
     this.owner = owner;
   }
 

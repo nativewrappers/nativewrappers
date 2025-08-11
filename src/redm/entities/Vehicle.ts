@@ -1,8 +1,13 @@
 import type { VehicleSeat } from "redm/enums/VehicleSeat";
 import { _N } from "redm/utils/Native";
 import { BaseEntity } from "./BaseEntity";
+import type { CommonBaseEntityBoneCollection } from "@common-game/entities/CommonBaseEntityBoneCollection";
+import { ClassTypes } from "@common/utils/ClassTypes";
+import { CommonEntityBoneCollection } from "@common-game/entities/CommonEntityBoneCollection";
+import { CommonVehicle } from "@common-game/entities/CommonVehicle";
 
-export class Vehicle extends BaseEntity {
+export class Vehicle extends CommonVehicle {
+  protected type = ClassTypes.Vehicle;
   constructor(handle: number) {
     super(handle);
   }

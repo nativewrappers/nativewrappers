@@ -9,10 +9,6 @@ export class CommonPed extends CommonBaseEntity {
   protected type = ClassTypes.Ped;
   protected bones?: CommonPedBoneCollection;
 
-  public static exists(ped: CommonPed): boolean {
-    return typeof ped !== "undefined" && ped.exists();
-  }
-
   public static fromHandle(handle: number): CommonPed | null {
     if (handle === 0 || !DoesEntityExist(handle)) {
       return null;
