@@ -6,6 +6,7 @@ import type { StateBagChangeHandler } from "@common-game/cfx/StateBagChangeHandl
 import cfx from "@common-game/cfx/cfx";
 import { CommonModel } from "@common-game/CommonModel";
 import { GlobalData } from "@common/GlobalData";
+import type { CommonBaseEntityBone } from "./CommonBaseEntityBone";
 
 export abstract class CommonBaseEntity {
   protected handle: number;
@@ -213,5 +214,49 @@ export abstract class CommonBaseEntity {
     for (const cookie of this.stateBagCookies) {
       RemoveStateBagChangeHandler(cookie);
     }
+  }
+
+  /*
+   * Attaches an entity to another entity via a bone
+   * @example
+   * ```typescript
+   * const ply = Game.PlayerPed;
+   * const bag = await World.createProp(new Model('ba_prop_battle_bag_01b'), ply.Position, true, true, true);
+   * bag.attachToBone(
+   *     ply.Bones.getBone(64113),
+   *     new Vector3(0.12, -0.25, 0.0),
+   *     new Vector3(105.0, 50.0, 190.0)
+   * )
+   * ```
+   */
+  public attachToBone(
+    entityBone: CommonBaseEntityBone,
+    position: Vector3,
+    rotation: Vector3,
+    collisions = false,
+    unk9 = true,
+    useSoftPinning = true,
+    rotationOrder = 1,
+  ): void {
+    if (this.handle === entityBone.Owner.Handle) {
+      throw new Error("You cannot attach an entity to the same entity this will result in a crash!");
+    }
+    AttachEntityToEntity(
+      this.handle,
+      entityBone.Owner.Handle,
+      entityBone.Index,
+      position.x,
+      position.y,
+      position.z,
+      rotation.x,
+      rotation.y,
+      rotation.z,
+      unk9,
+      useSoftPinning,
+      collisions,
+      IsEntityAPed(entityBone.Owner.Handle),
+      rotationOrder,
+      true,
+    );
   }
 }
