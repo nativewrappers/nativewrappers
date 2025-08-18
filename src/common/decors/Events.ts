@@ -142,9 +142,9 @@ export function NuiEvent(eventName: string, dontErrorWhenCbIsntInvoked = false) 
         let wasInvoked = false;
 
         // wrap the callback so if it gets called we don't try and invoke again if they return something too.
-        const cbWrapper = (...args: unknown[]) => {
+        const cbWrapper = (args: string) => {
           wasInvoked = true;
-          cb(...args);
+          cb(args);
         };
 
         const retData = await originalMethod.call(this, data, cbWrapper);

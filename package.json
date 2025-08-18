@@ -49,9 +49,9 @@
     "fs-extra": "^11.3.0",
     "lefthook": "^1.11.3",
     "tsc-alias": "^1.8.11",
-    "typedoc": "^0.27.9",
+    "typedoc": "^0.28.10",
     "typedoc-fivemjs-theme": "^0.2.7",
-    "typedoc-plugin-markdown": "^4.4.2",
-    "typescript": "^5.8.2"
+    "typedoc-plugin-markdown": "^4.8.1",
+    "typescript": "^5.9.2"
   }
 }
