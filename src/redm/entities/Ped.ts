@@ -17,7 +17,6 @@ import type { CommonBaseEntityBoneCollection } from "@common-game/entities/Commo
 import { ClassTypes } from "@common/utils/ClassTypes";
 import { CommonPedBoneCollection } from "@common-game/entities/CommonPedBoneCollection";
 
-
 export class Ped extends BaseEntity {
   protected type = ClassTypes.Ped;
   protected bones?: CommonPedBoneCollection | undefined;

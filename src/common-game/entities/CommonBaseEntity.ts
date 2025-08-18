@@ -9,7 +9,6 @@ import { GlobalData } from "@common/GlobalData";
 import type { CommonBaseEntityBone } from "./CommonBaseEntityBone";
 import { IHandle } from "./IHandle";
 
-
 export abstract class CommonBaseEntity extends IHandle {
   protected stateBagCookies: number[] = [];
   protected netId: number | null = null;
@@ -17,7 +16,7 @@ export abstract class CommonBaseEntity extends IHandle {
   protected abstract bones?: CommonBaseEntityBoneCollection;
 
   constructor(handle: number) {
-    super(handle)
+    super(handle);
   }
 
   /**
@@ -45,22 +44,21 @@ export abstract class CommonBaseEntity extends IHandle {
   }
 
   /*
-  * @returns `true` if the entity exists, `false` otherwise.
-  */
+   * @returns `true` if the entity exists, `false` otherwise.
+   */
   get Exists(): boolean {
     return DoesEntityExist(this.handle);
   }
-  
 
   /*
-  * @returns the handle of the specified entity
-  */
+   * @returns the handle of the specified entity
+   */
   public get Handle(): number {
     return this.handle;
   }
 
   /**
-    * This will return a warning if the the entity is not networked, you should always use {@link IsNetworked} prior to calling thisl
+   * This will return a warning if the the entity is not networked, you should always use {@link IsNetworked} prior to calling thisl
    * @returns the network for the specified entity
    */
   get NetworkId(): number {
@@ -218,9 +216,8 @@ export abstract class CommonBaseEntity extends IHandle {
   }
 
   public get IsVisible(): boolean {
-    return IsEntityVisible(this.handle)
+    return IsEntityVisible(this.handle);
   }
-
 
   /**
    * @param amount the health to set the health to, setting to `0` will kill the entity, if using on a {@link Ped} you should check the MaxHealth before setting.
@@ -264,7 +261,6 @@ export abstract class CommonBaseEntity extends IHandle {
   set Position(pos: Vector3) {
     SetEntityCoords(this.handle, pos.x, pos.y, pos.z, false, false, false, false);
   }
-  
 
   public delete(): void {
     this.IsMissionEntity = true;

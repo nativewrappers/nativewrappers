@@ -3,5 +3,4 @@ import { Vector3 } from "@common/utils/Vector";
 import type { Ped } from "./Ped";
 import { CommonBaseEntity } from "@common-game/entities/CommonBaseEntity";
 
-export abstract class BaseEntity extends CommonBaseEntity {
-}
+export abstract class BaseEntity extends CommonBaseEntity {}

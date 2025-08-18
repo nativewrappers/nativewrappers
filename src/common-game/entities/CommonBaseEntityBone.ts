@@ -29,5 +29,4 @@ export abstract class CommonBaseEntityBone {
   public get IsValid(): boolean {
     return this.owner.exists() && this.index !== -1;
   }
-
 }
