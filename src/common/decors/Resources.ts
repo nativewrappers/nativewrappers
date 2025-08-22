@@ -94,7 +94,7 @@ export function OnResourceStart(resource = GetCurrentResourceName()) {
 /**
  * Called whenever the specified resource is stopped.
  */
-export function OnResoureStop(resource = GetCurrentResourceName()) {
+export function OnResourceStop(resource = GetCurrentResourceName()) {
   return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
     if (context.private) {
       throw new Error("OnResourceStop does not work on private types, please mark the field as public");
