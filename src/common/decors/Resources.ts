@@ -66,6 +66,13 @@ if (!(globalThis as GlobalThis).RESOURCE_WRAPPER) {
 
 const RESOURCE_WRAPPER = (globalThis as GlobalThis).RESOURCE_WRAPPER!;
 
+const onResourceStart = (resource: ResourceName, originalMethod: any) => {
+  if (GetResourceState(resource) === "started") {
+    setImmediate(() => originalMethod.call());
+  }
+  RESOURCE_WRAPPER.add_to_resource_start(resource, originalMethod);
+};
+
 /**
  * Called whenever the specified resource is started, this will be called once on once on resource start if the resource is started.
  */
@@ -74,12 +81,13 @@ export function OnResourceStart(resource = GetCurrentResourceName()) {
     if (context.private) {
       throw new Error("OnResourceStart does not work on private types, please mark the field as public");
     }
-    context.addInitializer(() => {
-      if (GetResourceState(resource) === "started") {
-        setImmediate(() => originalMethod.call());
-      }
-      RESOURCE_WRAPPER.add_to_resource_start(resource, originalMethod);
-    });
+    if (context.static) {
+      onResourceStart(resource, originalMethod);
+    } else {
+      context.addInitializer(function () {
+        onResourceStart(resource, originalMethod.bind(this));
+      });
+    }
   };
 }
 
@@ -91,8 +99,12 @@ export function OnResoureStop(resource = GetCurrentResourceName()) {
     if (context.private) {
       throw new Error("OnResourceStop does not work on private types, please mark the field as public");
     }
-    context.addInitializer(() => {
+    if (context.static) {
       RESOURCE_WRAPPER.add_to_resource_stop(resource, originalMethod);
-    });
+    } else {
+      context.addInitializer(function () {
+        RESOURCE_WRAPPER.add_to_resource_stop(resource, originalMethod.bind(this));
+      });
+    }
   };
 }
