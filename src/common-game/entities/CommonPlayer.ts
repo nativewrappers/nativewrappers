@@ -4,7 +4,7 @@ import { ClassTypes } from "@common/utils/ClassTypes";
 import type { CommonEntity } from "./CommonEntityType";
 import { GetEntityClassFromHandle } from "./GetEntityClassIdFromHandle";
 import cfx from "@common-game/cfx/cfx";
-import { GameConstants } from "@common-game/CommonGameConstants";
+import { CommonGameConstants } from "@common-game/CommonGameConstants";
 
 export class CommonPlayer {
   private handle: number;
@@ -16,7 +16,7 @@ export class CommonPlayer {
 
   public static *AllPlayers(excludeLocalPlayer = true): IterableIterator<CommonPlayer> {
     for (const ply of GetActivePlayers() as number[]) {
-      if (excludeLocalPlayer && ply === GameConstants.PlayerId) {
+      if (excludeLocalPlayer && ply === CommonGameConstants.PlayerId) {
         continue;
       }
       yield new CommonPlayer(ply);
@@ -52,7 +52,7 @@ export class CommonPlayer {
    * @param [fromPlayer=GameConstants.Player] the player to get the distance from
    * @returns the closest player from {@param fromPlayer} and the distance the player was
    */
-  public static getClosestPlayerPedWithDistance(minimumDistance = Number.MAX_VALUE, fromPlayer = GameConstants.Player) {
+  public static getClosestPlayerPedWithDistance(minimumDistance = Number.MAX_VALUE, fromPlayer = CommonGameConstants.Player) {
     const ped = fromPlayer.Ped;
     const pos = ped.Position;
     const data: [CommonPed | null, number] = [null as CommonPed | null, Number.MAX_VALUE];
@@ -73,7 +73,7 @@ export class CommonPlayer {
    * @param [fromPlayer=GameConstants.Player] the player to get the distance from
    * @returns the closest player from {@param fromPlayer} and the distance the player was
    */
-  public static getClosestPlayerPed(minimumDistance = Number.MAX_VALUE, fromPlayer = GameConstants.Player) {
+  public static getClosestPlayerPed(minimumDistance = Number.MAX_VALUE, fromPlayer = CommonGameConstants.Player) {
     const data = this.getClosestPlayerPedWithDistance(minimumDistance, fromPlayer);
     return data[0];
   }
