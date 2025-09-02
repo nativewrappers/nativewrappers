@@ -20,10 +20,12 @@ export class PedBoneCollection extends BaseEntityBoneCollection {
     ClearPedLastDamageBone(this.owner.Handle);
   }
 
-  public getBone(boneIndex?: number, boneName?: string): PedBone {
+  public getBone(bone: number): PedBone;
+  public getBone(bone: string): PedBone;
+  public getBone(bone: string | number): PedBone {
     return new PedBone(
       this.owner as Ped,
-      boneIndex ? boneIndex : GetEntityBoneIndexByName(this.owner.Handle, boneName ?? ""),
+      typeof bone === "number" ? bone : GetEntityBoneIndexByName(this.owner.Handle, bone ?? ""),
     );
   }
 }
