@@ -79,6 +79,13 @@ export class BaseEntity {
     return Vector3.fromArray(GetEntityCoords(this.handle));
   }
 
+  /**
+   * This is an RPC native, meaning that it can fail to work.
+   */
+  public set Position(pos: Vector3) {
+    SetEntityCoords(this.handle, pos.x, pos.y, pos.z, false, false, false, false);
+  }
+
   public get Heading(): number {
     return GetEntityHeading(this.handle);
   }
