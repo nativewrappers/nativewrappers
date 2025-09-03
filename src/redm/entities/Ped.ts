@@ -592,7 +592,9 @@ export class Ped extends BaseEntity {
     permanentDegradation = 0.5,
     p12 = false,
   ) {
-    await weapon.request();
+    if (!(await weapon.request())) {
+      return false;
+    }
     attachPoint = attachPoint ?? weapon.DefaultAttachPoint;
     // GIVE_WEAPON_TO_PED
     Citizen.invokeNative(
@@ -611,6 +613,8 @@ export class Ped extends BaseEntity {
       permanentDegradation,
       p12,
     );
+
+    return true;
   }
 
   setCurrentWeapon(
