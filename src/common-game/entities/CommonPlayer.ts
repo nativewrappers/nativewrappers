@@ -52,7 +52,10 @@ export class CommonPlayer {
    * @param [fromPlayer=GameConstants.Player] the player to get the distance from
    * @returns the closest player from {@param fromPlayer} and the distance the player was
    */
-  public static getClosestPlayerPedWithDistance(minimumDistance = Number.MAX_VALUE, fromPlayer = CommonGameConstants.Player) {
+  public static getClosestPlayerPedWithDistance(
+    minimumDistance = Number.MAX_VALUE,
+    fromPlayer = CommonGameConstants.Player,
+  ) {
     const ped = fromPlayer.Ped;
     const pos = ped.Position;
     const data: [CommonPed | null, number] = [null as CommonPed | null, Number.MAX_VALUE];
