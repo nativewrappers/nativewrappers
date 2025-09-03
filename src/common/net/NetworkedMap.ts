@@ -40,8 +40,8 @@ class NetworkedMapEventManager {
       RegisterResourceAsEventHandler(`${GlobalData.CurrentResource}:syncChanges`);
       addRawEventListener(`${GlobalData.CurrentResource}:syncChanges`, (msgpack_data: any) => {
         const data = msgpack_unpack(msgpack_data);
-        const syncName = data[0];
-        const syncData = data[1];
+        const syncName: string = data[0];
+        const syncData: MapChanges<any, any> = data[1];
 
         const map = this.#syncedCalls.get(syncName);
 
@@ -49,15 +49,13 @@ class NetworkedMapEventManager {
           throw new Error(`Tried to sync changes for a networked map but ${syncName} does't exist.`);
         }
 
-        // @ts-ignore
+        // @ts-ignore: we're abusing private here since its still publically accessible, we don't want the end user using this.
         map.handleSync(syncData);
       });
     }
   }
 
   addNetworkedMap<K, V>(map: NetworkedMap<K, V>) {
-    // abuse typescript, we don't want the end user to use these calls but we still want it to be accessible internally.
-    // @ts-ignore
     this.#syncedCalls.set(map.SyncName, map);
   }
 
@@ -109,10 +107,12 @@ export class NetworkedMap<K, V> extends Map<K, V> {
 
   /*
    * Resyncs the entire map to the client, useful for if there's a mismatch in the clients map (when multiple players change things, in cases like inventories)
-   *
-   * NOTE: This doesn't check that the player is already subscribed to the map, you should do your own due-diligence to only call this for players already subscribed
    */
   resync(source: number) {
+    if (!this.#subscribers.has(source)) {
+      console.error(`[NetworkedMap:resync] Tried to call resync on a source that wasn't already subscribed`);
+      return;
+    }
     const packed_data = msgpack_pack([this.#syncName, [[MapChangeType.Init, this.size === 0 ? [] : Array.from(this)]]]);
     TriggerClientEventInternal(
       `${GlobalData.CurrentResource}:syncChanges`,
@@ -123,7 +123,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   }
 
   /*
-   * Adds a new subscriber to the map
+   * Adds a new subscriber to the map, this will automatically call resync on the client.
    */
   addSubscriber(source: number) {
     this.#subscribers.add(source);
@@ -205,6 +205,41 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     }
   }
 
+  /*
+   * Adds {@param value} to the map under {@param key}, {@param value} will automatically be turned into a proxy
+   * object and the NetworkedMap will automatically send events on SubValue changes.
+   * ```ts
+   *
+   *  const map = new NetworkedMap<number, { name:string , quantity: number, obj: { nested_obj_description: string }}>("someUniqueName");
+   *
+   *  const item = {
+   *    name: "magic_item",
+   *    quantity: 1,
+   *    obj: {
+   *      something_description: "Will never be updated after init"
+   *    }
+   *  }
+   *
+   *  // automatically converts `item` into a proxy object
+   *  map.set(1, item)
+   *
+   *  // if you immediately change the value this will not be recognized, you have to get the object again from the map
+   *  item.quantity = 2;
+   *
+   *  // reactive object
+   *  const proxy_object = map.get(1)!;
+   *
+   *  // sub value change will be sent to the client on the next network tick.
+   *  proxy_object.quantity = 2;
+   *
+   *  // NOTE: this doesn't work on deeply nested objects, it will only work on anything assigned to the first object
+   *  // This update will never be sent to the client, similar to how state bags work.
+   *  proxy_object.obj.nested_obj_description = "Some new value"
+   * ```
+   * i.e. if you have { name: "magic_item", quantity: 1}
+   * if you change the item.quantity field this will automatically be sync'd to the client, is only one depth deep
+   * so if you have { obj: { some_quantity: 1 } } setting item.obj.some_quantity will not update the client.
+   */
   set(key: K, value: V): this {
     let v = value;
 
@@ -212,7 +247,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     if (value instanceof Object) {
       // define `this` so we can use it in the internal scope without breaking
       // any rules
-      const curMap = this;
+      const curThis = this;
 
       // apply a proxy around any changes so if the fields
       const objectChangeHandler: ProxyHandler<any> = {
@@ -222,10 +257,10 @@ export class NetworkedMap<K, V> extends Map<K, V> {
         set(target, p, newValue, receiver) {
           const success = Reflect.set(target, p, newValue, receiver);
           if (success) {
-            curMap.#pushChangeForListener(key, target);
+            curThis.#pushChangeForListener(key, target);
 
             $SERVER: {
-              curMap.#queuedChanges.push([MapChangeType.SubValueChanged, key, p as string, newValue]);
+              curThis.#queuedChanges.push([MapChangeType.SubValueChanged, key, p as string, newValue]);
             }
           }
           return success;
