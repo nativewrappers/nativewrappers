@@ -572,7 +572,7 @@ export abstract class World {
     model: Model,
     position: Vector3,
     placeOnGround: boolean,
-    isNetwork = true,
+    isNetwork = false,
     pinToScript = true,
     forceToBeObject = false,
   ): Promise<Prop | null> {
