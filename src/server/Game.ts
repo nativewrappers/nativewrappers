@@ -1,3 +1,4 @@
+import { Delay } from "@common/utils/Delay";
 import { Player } from "./entities/Player";
 
 export abstract class Game {
@@ -35,33 +36,8 @@ export abstract class Game {
     return GetGameName();
   }
 
-  public static registerCommand(
-    name: string,
-    handler: (player: Player, args: any[]) => void,
-    restricted = false,
-  ): void {
-    RegisterCommand(
-      name,
-      (source: string, args: any[]) => {
-        const player = new Player(Number.parseInt(source));
-
-        handler(player, args);
-      },
-      restricted,
-    );
-  }
-
   public static get RegisteredCommands(): [{ name: string }] {
     return GetRegisteredCommands() as unknown as [{ name: string }];
   }
 
-  /**
-   * Get an iterable list of players currently on the server.
-   * @returns Iterable list of Player objects.
-   */
-  public static *PlayerList(): IterableIterator<Player> {
-    for (const id of getPlayers() as unknown as number[]) {
-      yield new Player(id);
-    }
-  }
 }
