@@ -87,6 +87,7 @@ async function createBuilder(environments) {
   for (const { name, title } of environments) {
     const outDir = `./lib/${name}/`;
 
+    // we don't want to include common in common
     if (name !== "common") {
       await copyDir(
         "./lib/common/",
@@ -98,7 +99,8 @@ async function createBuilder(environments) {
       );
     }
 
-    if (name !== "common-game") {
+    // nor do we want to include common-game into common
+    if (name !== "common-game" && title !== "common") {
       await copyDir(
         "./lib/common-game/",
         `./lib/${name}/common-game` /*{
