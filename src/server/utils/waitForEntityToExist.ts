@@ -6,7 +6,7 @@ import { Delay } from "@common/utils/Delay";
 * @param netId the network id of the entity to wait to exist
 * @param [timeoutMs=1000] the amount of time to wait for the entity to exist before giving up
 */
-async function waitForEntityToExist(netId: number, timeoutMs = 1000): Promise<number | null> {
+export async function waitForEntityToExist(netId: number, timeoutMs = 1000): Promise<number | null> {
   const startTime = GetGameTimer();
   const timeout = startTime + timeoutMs;
 
