@@ -100,7 +100,7 @@ async function createBuilder(environments) {
     }
 
     // nor do we want to include common-game into common
-    if (name !== "common-game" && title !== "common") {
+    if (name !== "common-game" && name !== "common") {
       await copyDir(
         "./lib/common-game/",
         `./lib/${name}/common-game` /*{
