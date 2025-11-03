@@ -43,7 +43,9 @@ export function OnEvent(eventName: string) {
   };
 }
 
-// @deprecated use OnEvent instead, this will be removed upon 2.0
+/*
+ * @deprecated use OnEvent instead, this will be removed upon 2.0
+ */
 export const Event = OnEvent;
 
 /**
@@ -111,7 +113,9 @@ export function OnNetEvent(eventName: string, remoteOnly = true) {
   };
 }
 
-// @deprecated Use `OnNetEvent` instead this will be removed upon 2.0
+/*
+ * @deprecated Use `OnNetEvent` instead this will be removed upon 2.0
+ */
 export const NetEvent = OnNetEvent;
 
 export type NuiCallback = (data: string) => void;
@@ -158,5 +162,7 @@ export function OnNuiEvent(eventName: string, dontErrorWhenCbIsntInvoked = false
   };
 }
 
-// @deprecated use OnNuiEvent instead, this will be removed upon 2.0
+/*
+ * @deprecated use OnNuiEvent instead, this will be removed upon 2.0
+ */
 export const NuiEvent = OnNuiEvent;
