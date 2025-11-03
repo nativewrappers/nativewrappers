@@ -1,3 +1,7 @@
+import type { CommonBaseEntityBoneCollection } from "@common-game/entities/CommonBaseEntityBoneCollection";
+import { CommonPed } from "@common-game/entities/CommonPed";
+import { CommonPedBoneCollection } from "@common-game/entities/CommonPedBoneCollection";
+import { ClassTypes } from "@common/utils/ClassTypes";
 import type { Vector3 } from "@common/utils/Vector";
 import type { Model } from "redm/Model";
 import { Tasks } from "redm/Task";
@@ -12,10 +16,6 @@ import type { VehicleSeat } from "../enums/VehicleSeat";
 import { BaseEntity } from "./BaseEntity";
 import { Player } from "./Player";
 import { Vehicle } from "./Vehicle";
-import { CommonPed } from "@common-game/entities/CommonPed";
-import type { CommonBaseEntityBoneCollection } from "@common-game/entities/CommonBaseEntityBoneCollection";
-import { ClassTypes } from "@common/utils/ClassTypes";
-import { CommonPedBoneCollection } from "@common-game/entities/CommonPedBoneCollection";
 
 export class Ped extends BaseEntity {
   protected type = ClassTypes.Ped;
@@ -641,5 +641,9 @@ export class Ped extends BaseEntity {
   isHoldingWeapon(weapon: WeaponModel) {
     // _IS_PED_HOLDING_WEAPON
     return Citizen.invokeNative<boolean>("0x07E1C35F0078C3F9", this.handle, weapon.Hash);
+  }
+
+  isHolsterStateChanging() {
+    return Citizen.invokeNative<boolean>("0x2387D6E9C6B478AA", this.handle);
   }
 }
