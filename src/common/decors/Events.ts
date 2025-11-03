@@ -10,84 +10,6 @@ export const DisablePrettyPrint = () => (GlobalData.EnablePrettyPrint = false);
 
 const AsyncFunction: any = (async () => {}).constructor;
 
-export enum Binding {
-  /**
-   * No one can call this
-   */
-  None = 0x0,
-
-  /**
-   * Server only accepts server calls, client only client calls
-   */
-  Local = 0x1,
-
-  /**
-   * Server only accepts client calls, client only server calls
-   */
-  Remote = 0x2,
-
-  /**
-   * Accept all incoming calls
-   * Server only accepts client calls, client only server calls
-   */
-  All = Local | Remote,
-}
-
-/**
- * Registers the Event call for {@link eventName} to this method.
- *
- * This has internal pretty-printing to make errors easier to track, if
- * you want to disable this you will need to call {@link DisablePrettyPrint}, or if you're
- * using esbuild you can add `REMOVE_EVENT_LOG` to your drop label {@link https://esbuild.github.io/api/#drop-labels}
- * @param eventName the event to bind to
- */
-export function CfxEvent(eventName: string, binding = Binding.Local) {
-  return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
-    if (context.private) {
-      throw new Error("Event does not work on private methods, please mark the method as public");
-    }
-    context.addInitializer(function () {
-      const fn = (binding & Binding.Remote) !== 0 ? onNet : on;
-      const _t = this as { __permissionMap?: Map<string | symbol, Set<string>> };
-      fn(eventName, async (...args: any[]) => {
-        const src = source;
-        // if the method has a permission map then try and see if our current context as a permisssion assigned to it
-        if (_t.__permissionMap && binding & Binding.Remote) {
-          const permissions = _t.__permissionMap.get(context.name);
-          if (permissions) {
-            // we only need one permission to pass
-            let hasPermission = false;
-            for (const perm of permissions) {
-              if (IsPlayerAceAllowed(src as any, perm)) {
-                // we have that permission! woo!
-                hasPermission = true;
-                break;
-              }
-            }
-
-            if (!hasPermission) {
-              emit("@nativewrappers:no_permission", { eventName, method: context.name });
-              return;
-            }
-          }
-        }
-        try {
-          return await originalMethod.call(this, ...args);
-        } catch (e) {
-          REMOVE_EVENT_LOG: {
-            if (!GlobalData.EnablePrettyPrint) return;
-            console.error("------- EVENT ERROR --------");
-            console.error(`Call to ${eventName} errored`);
-            console.error(`Data: ${JSON.stringify(args)}`);
-            console.error(`Error: ${e}`);
-            console.error("------- END EVENT ERROR --------");
-          }
-        }
-      });
-    });
-  };
-}
-
 /**
  * Registers the Event call for {@link eventName} to this method.
  *
@@ -97,7 +19,7 @@ export function CfxEvent(eventName: string, binding = Binding.Local) {
  *
  * @param eventName the event to bind to
  */
-export function Event(eventName: string) {
+export function OnEvent(eventName: string) {
   return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
     if (context.private) {
       throw new Error("Event does not work on private methods, please mark the method as public");
@@ -121,6 +43,9 @@ export function Event(eventName: string) {
   };
 }
 
+// @deprecated use OnEvent instead, this will be removed upon 2.0
+export const Event = OnEvent;
+
 /**
  * Registers the Net Event call for {@link eventName} to this method
  *
@@ -132,7 +57,7 @@ export function Event(eventName: string) {
  * @param eventName the event to bind this net event to
  * @param remoteOnly if the event should only accept remote calls, if set to true it will ignore any local call via `emit`, defaults to true
  */
-export function NetEvent(eventName: string, remoteOnly = true) {
+export function OnNetEvent(eventName: string, remoteOnly = true) {
   return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
     if (context.private) {
       throw new Error("NetEvent does not work on private methods, please mark the method as public");
@@ -186,6 +111,9 @@ export function NetEvent(eventName: string, remoteOnly = true) {
   };
 }
 
+// @deprecated Use `OnNetEvent` instead this will be removed upon 2.0
+export const NetEvent = OnNetEvent;
+
 export type NuiCallback = (data: string) => void;
 
 /**
@@ -198,7 +126,7 @@ export type NuiCallback = (data: string) => void;
  * @param eventName the event this will listen for
  * @param dontErrorWhenCbIsntInvoked this will just block the event fro merroring when the callback is never invoked.
  */
-export function NuiEvent(eventName: string, dontErrorWhenCbIsntInvoked = false) {
+export function OnNuiEvent(eventName: string, dontErrorWhenCbIsntInvoked = false) {
   return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
     if (context.private) {
       throw new Error("NuiEvent does not work on private methods, please mark the method as public");
@@ -229,3 +157,6 @@ export function NuiEvent(eventName: string, dontErrorWhenCbIsntInvoked = false) 
     });
   };
 }
+
+// @deprecated use OnNuiEvent instead, this will be removed upon 2.0
+export const NuiEvent = OnNuiEvent;

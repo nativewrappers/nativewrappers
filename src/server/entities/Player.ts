@@ -56,7 +56,7 @@ export class Player {
 
   public get Ped(): Ped {
     const ped = GetPlayerPed(this.source);
-    return new Ped(GetPlayerPed(this.source));
+    return new Ped(ped);
   }
 
   public get Tokens(): string[] {

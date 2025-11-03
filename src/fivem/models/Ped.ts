@@ -503,6 +503,10 @@ export class Ped extends BaseEntity {
     SetBlockingOfNonTemporaryEvents(this.handle, block);
   }
 
+  /*
+   * NOTE: You should generally just use {@link ped.CurrentVehicle} if you plan on using the vehicle after
+   * as then you don't have to do an extra native call.
+   */
   public isInAnyVehicle(): boolean {
     return IsPedInAnyVehicle(this.handle, false);
   }

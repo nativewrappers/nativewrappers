@@ -502,7 +502,10 @@ export abstract class World {
    * const rope = await World.createRope(position, rotation, 15.0, RopeType.ThickRope, 3.0, 0.5);
    * ```
    *
-   * You should manually call `RopeUnloadTextures()` after you finish using **all** ropes, unlike models requesting rope models is instantaneous
+   * You should manually call `RopeUnloadTextures()` after you finish using **all** ropes, unlike models
+   * requesting to unload rope models will instantly unload *all* rope textures, so if you have other scripts
+   * using ropes, those ropes will go inivisible.
+   *
    * If called with collisionOn you will have to LoadRopeData after
    */
   public static async createRope(
