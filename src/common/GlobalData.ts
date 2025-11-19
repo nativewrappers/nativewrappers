@@ -1,3 +1,12 @@
+export enum ErrorType {
+  Event,
+  NetEvent,
+  Export,
+  Nui,
+  Tick,
+  Immediate,
+}
+
 export class GlobalData {
   static CurrentResource = GetCurrentResourceName();
   static GameName = GetGameName();
@@ -9,4 +18,8 @@ export class GlobalData {
   static NetworkTick: number | null = null;
   static NetworkedTicks: any[] = [];
   static EnablePrettyPrint = true;
+  /*
+   * Called when one of the decors errors
+   */
+  static OnError = (type: ErrorType, err: Error) => {};
 }

@@ -1,4 +1,4 @@
-import { GlobalData } from "@common/GlobalData";
+import { ErrorType, GlobalData } from "@common/GlobalData";
 
 /**
  * Disables pretty printing in error messages
@@ -29,6 +29,7 @@ export function OnEvent(eventName: string) {
         try {
           return await originalMethod.call(this, ...args);
         } catch (e) {
+          GlobalData.OnError(ErrorType.Event, e as Error);
           REMOVE_EVENT_LOG: {
             if (!GlobalData.EnablePrettyPrint) return;
             console.error("------- EVENT ERROR --------");
@@ -98,6 +99,7 @@ export function OnNetEvent(eventName: string, remoteOnly = true) {
           }
           return await originalMethod.call(this, ...args);
         } catch (e) {
+          GlobalData.OnError(ErrorType.NetEvent, e as Error);
           REMOVE_NET_EVENT_LOG: {
             if (!GlobalData.EnablePrettyPrint) return;
             console.error("------- NET EVENT ERROR --------");
@@ -145,7 +147,14 @@ export function OnNuiEvent(eventName: string, dontErrorWhenCbIsntInvoked = false
           cb(args);
         };
 
-        const retData = await originalMethod.call(this, data, cbWrapper);
+        let retData: string;
+
+        try {
+          retData = await originalMethod.call(this, data, cbWrapper);
+        } catch (e) {
+          GlobalData.OnError(ErrorType.Nui, e as Error);
+          return;
+        }
 
         if (!wasInvoked && !retData) {
           if (dontErrorWhenCbIsntInvoked) return;

@@ -1,3 +1,5 @@
+import { ErrorType, GlobalData } from "@common/GlobalData";
+
 /**
  * Gets called per server/client tick, this is asyncronous though, if you await
  * in it, it will not be called until whatever was being awaited resolves.
@@ -9,7 +11,11 @@ export function SetTick() {
     }
     context.addInitializer(function () {
       setTick(async () => {
-        await originalMethod.call(this);
+        try {
+          await originalMethod.call(this);
+        } catch (e) {
+          GlobalData.OnError(ErrorType.Tick, e as Error);
+        }
       });
     });
   };
@@ -25,7 +31,11 @@ export function SetImmediate() {
     }
     context.addInitializer(function () {
       setImmediate(async () => {
-        await originalMethod.call(this);
+        try {
+          await originalMethod.call(this);
+        } catch (e) {
+          GlobalData.OnError(ErrorType.Immediate, e as Error);
+        }
       });
     });
   };

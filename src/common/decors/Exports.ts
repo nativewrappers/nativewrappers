@@ -1,4 +1,4 @@
-import { GlobalData } from "@common/GlobalData";
+import { ErrorType, GlobalData } from "@common/GlobalData";
 
 const AsyncFunction: any = (async () => {}).constructor;
 
@@ -23,6 +23,7 @@ export function Exports(exportName: string) {
           try {
             return await originalMethod.call(this, ...args);
           } catch (err) {
+            GlobalData.OnError(ErrorType.Export, err as any);
             REMOVE_EVENT_LOG: {
               if (!GlobalData.EnablePrettyPrint) return;
               console.error("------- EXPORT ERROR --------");
@@ -39,6 +40,7 @@ export function Exports(exportName: string) {
           try {
             return originalMethod.call(this, ...args);
           } catch (err) {
+            GlobalData.OnError(ErrorType.Export, err as any);
             REMOVE_EVENT_LOG: {
               if (!GlobalData.EnablePrettyPrint) return;
               console.error("------- EXPORT ERROR --------");
