@@ -39,5 +39,4 @@ export abstract class Game {
   public static get RegisteredCommands(): [{ name: string }] {
     return GetRegisteredCommands() as unknown as [{ name: string }];
   }
-
 }
