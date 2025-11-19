@@ -1,6 +1,6 @@
 import type { Color } from "@common/utils/Color";
 import { Delay } from "@common/utils/Delay";
-import { Vector3 } from "@common/utils/Vector";
+import { Vector3, Vector4 } from "@common/utils/Vector";
 import { Blip } from "./Blip";
 import { Camera } from "./Camera";
 import { GameplayCamera } from "./GameplayCamera";
@@ -365,29 +365,83 @@ export abstract class World {
    * Create a ped at a desired location.
    *
    * ```typescript
-   * const position = new Vector3(-802.311, 175.056, 72.8446);
+   * const position = new Vector3(-802.31, 175.06, 72.84);
    * const model = new Model("a_f_m_beach_01");
    * const myPed = await World.createPed(model, position);
    * ```
    *
    * @param model Ped model to be spawned.
    * @param position World position (coordinates) of Ped spawn.
-   * @param heading Heading of Ped when spawning.
-   * @param shouldNetwork if the created ped should be networked to other clients
+   * @param [heading=0] Heading of Ped when spawning.
+   * @param [shouldNetwork=false] if the created ped should be networked to other clients
+   * @param [pinToScript=true] if the ped should be pinned to the script.
    * @returns Ped object.
    */
   public static async createPed(
     model: Model,
     position: Vector3,
-    heading = 0,
-    shouldNetwork = true,
-    pinToScript = true,
+    heading?: number,
+    shouldNetwork?: boolean,
+    pinToScript?: boolean,
+  ): Promise<Ped | null>;
+
+  /**
+   * Create a ped at a desired location.
+   *
+   * ```typescript
+   * const position = new Vector4(-802.31, 175.05, 72.84, 122.75);
+   * const model = new Model("a_f_m_beach_01");
+   * const myPed = await World.createPed(model, position);
+   * ```
+   *
+   * @param model Ped model to be spawned.
+   * @param position World position (coordinates) of Ped spawn, note that the `w` section of Vector4 is used for heading.
+   * @param [shouldNetwork=false] if the created ped should be networked to other clients
+   * @param [pinToScript=true] if the ped should be pinned to the script.
+   * @returns Ped object.
+   */
+  public static async createPed(
+    model: Model,
+    position: Vector4,
+    shouldNetwork?: boolean,
+    pinToScript?: boolean,
+  ): Promise<Ped | null>;
+
+  public static async createPed(
+    model: Model,
+    position: Vector3 | Vector4,
+    headingOrNetwork?: number | boolean,
+    shouldNetworkOrPin?: boolean,
+    pinToScript?: boolean,
   ): Promise<Ped | null> {
     if (!model.IsPed || !(await model.request(1000))) {
       return null;
     }
 
-    const ped = CreatePed(-1, model.Hash, position.x, position.y, position.z, heading, shouldNetwork, pinToScript);
+    if (position instanceof Vector4) {
+      const shouldNetwork = (headingOrNetwork as boolean) ?? false;
+      const pinToScriptValue = shouldNetworkOrPin ?? true;
+      const ped = CreatePed(
+        -1,
+        model.Hash,
+        position.x,
+        position.y,
+        position.z,
+        position.w,
+        shouldNetwork,
+        pinToScriptValue,
+      );
+
+      model.markAsNoLongerNeeded();
+
+      return Ped.fromHandle(ped);
+    }
+
+    const heading = (headingOrNetwork as number) ?? 0.0;
+    const shouldNetwork = shouldNetworkOrPin ?? false;
+    const pinToScriptValue = pinToScript ?? true;
+
+    const ped = CreatePed(-1, model.Hash, position.x, position.y, position.z, heading, shouldNetwork, pinToScriptValue);
 
     model.markAsNoLongerNeeded();
 

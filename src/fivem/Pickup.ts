@@ -7,6 +7,13 @@ export class Pickup {
     this.handle = handle;
   }
 
+  /**
+   * @returns `true` if the current entity is networked, false otherwise
+   */
+  get IsNetworked(): boolean {
+    return NetworkGetEntityIsNetworked(this.handle);
+  }
+
   public get Position(): Vector3 {
     return Vector3.fromArray(GetPickupCoords(this.handle));
   }
