@@ -1,0 +1,41 @@
+[@nativewrappers/fivem](../../../../README.md) / [redm/definitions/redm](../README.md) / SetPedModelIsSuppressed
+
+# Function: SetPedModelIsSuppressed()
+
+## Call Signature
+
+```ts
+function SetPedModelIsSuppressed(ped, toggle): void;
+```
+
+Defined in: [src/common-game/definitions/redm.d.ts:22971](https://github.com/nativewrappers/nativewrappers/blob/686d3e4293666c68edfc1e42776f4b1c55b0605b/src/common-game/definitions/redm.d.ts#L22971)
+
+### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `ped` | `number` |
+| `toggle` | `boolean` |
+
+### Returns
+
+`void`
+
+## Call Signature
+
+```ts
+function SetPedModelIsSuppressed(ped, toggle): void;
+```
+
+Defined in: [src/redm/definitions/redm.d.ts:22971](https://github.com/nativewrappers/nativewrappers/blob/686d3e4293666c68edfc1e42776f4b1c55b0605b/src/redm/definitions/redm.d.ts#L22971)
+
+### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `ped` | `number` |
+| `toggle` | `boolean` |
+
+### Returns
+
+`void`

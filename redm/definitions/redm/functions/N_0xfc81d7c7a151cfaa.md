@@ -1,0 +1,49 @@
+[@nativewrappers/fivem](../../../../README.md) / [redm/definitions/redm](../README.md) / N\_0xfc81d7c7a151cfaa
+
+# Function: N\_0xfc81d7c7a151cfaa()
+
+## Call Signature
+
+```ts
+function N_0xfc81d7c7a151cfaa(
+   p0, 
+   p1, 
+   p2): number;
+```
+
+Defined in: [src/common-game/definitions/redm.d.ts:19516](https://github.com/nativewrappers/nativewrappers/blob/686d3e4293666c68edfc1e42776f4b1c55b0605b/src/common-game/definitions/redm.d.ts#L19516)
+
+### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `p0` | `number` |
+| `p1` | `number` |
+| `p2` | `number` |
+
+### Returns
+
+`number`
+
+## Call Signature
+
+```ts
+function N_0xfc81d7c7a151cfaa(
+   p0, 
+   p1, 
+   p2): number;
+```
+
+Defined in: [src/redm/definitions/redm.d.ts:19516](https://github.com/nativewrappers/nativewrappers/blob/686d3e4293666c68edfc1e42776f4b1c55b0605b/src/redm/definitions/redm.d.ts#L19516)
+
+### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `p0` | `number` |
+| `p1` | `number` |
+| `p2` | `number` |
+
+### Returns
+
+`number`

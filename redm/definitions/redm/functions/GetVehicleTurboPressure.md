@@ -1,0 +1,75 @@
+[@nativewrappers/fivem](../../../../README.md) / [redm/definitions/redm](../README.md) / GetVehicleTurboPressure
+
+# Function: GetVehicleTurboPressure()
+
+## Call Signature
+
+```ts
+function GetVehicleTurboPressure(vehicle): number;
+```
+
+Defined in: [src/common-game/definitions/redm.d.ts:4449](https://github.com/nativewrappers/nativewrappers/blob/686d3e4293666c68edfc1e42776f4b1c55b0605b/src/common-game/definitions/redm.d.ts#L4449)
+
+### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `vehicle` | `number` |
+
+### Returns
+
+`number`
+
+## Call Signature
+
+```ts
+function GetVehicleTurboPressure(vehicle): number;
+```
+
+Defined in: [src/common-game/definitions/redm.d.ts:4451](https://github.com/nativewrappers/nativewrappers/blob/686d3e4293666c68edfc1e42776f4b1c55b0605b/src/common-game/definitions/redm.d.ts#L4451)
+
+### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `vehicle` | `number` |
+
+### Returns
+
+`number`
+
+## Call Signature
+
+```ts
+function GetVehicleTurboPressure(vehicle): number;
+```
+
+Defined in: [src/redm/definitions/redm.d.ts:4449](https://github.com/nativewrappers/nativewrappers/blob/686d3e4293666c68edfc1e42776f4b1c55b0605b/src/redm/definitions/redm.d.ts#L4449)
+
+### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `vehicle` | `number` |
+
+### Returns
+
+`number`
+
+## Call Signature
+
+```ts
+function GetVehicleTurboPressure(vehicle): number;
+```
+
+Defined in: [src/redm/definitions/redm.d.ts:4451](https://github.com/nativewrappers/nativewrappers/blob/686d3e4293666c68edfc1e42776f4b1c55b0605b/src/redm/definitions/redm.d.ts#L4451)
+
+### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `vehicle` | `number` |
+
+### Returns
+
+`number`

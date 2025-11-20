@@ -1,0 +1,53 @@
+[@nativewrappers/fivem](../../../../README.md) / [redm/definitions/redm](../README.md) / DisableVehicleWeapon
+
+# Function: DisableVehicleWeapon()
+
+## Call Signature
+
+```ts
+function DisableVehicleWeapon(
+   disabled, 
+   weaponHash, 
+   vehicle, 
+   owner): void;
+```
+
+Defined in: [src/common-game/definitions/redm.d.ts:2005](https://github.com/nativewrappers/nativewrappers/blob/686d3e4293666c68edfc1e42776f4b1c55b0605b/src/common-game/definitions/redm.d.ts#L2005)
+
+### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `disabled` | `boolean` |
+| `weaponHash` | `string` \| `number` |
+| `vehicle` | `number` |
+| `owner` | `number` |
+
+### Returns
+
+`void`
+
+## Call Signature
+
+```ts
+function DisableVehicleWeapon(
+   disabled, 
+   weaponHash, 
+   vehicle, 
+   owner): void;
+```
+
+Defined in: [src/redm/definitions/redm.d.ts:2005](https://github.com/nativewrappers/nativewrappers/blob/686d3e4293666c68edfc1e42776f4b1c55b0605b/src/redm/definitions/redm.d.ts#L2005)
+
+### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `disabled` | `boolean` |
+| `weaponHash` | `string` \| `number` |
+| `vehicle` | `number` |
+| `owner` | `number` |
+
+### Returns
+
+`void`
