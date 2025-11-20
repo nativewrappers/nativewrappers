@@ -3,8 +3,8 @@ import type { CommonPed } from "./CommonPed";
 import type { IHandle } from "./IHandle";
 
 export class CommonPedBone extends CommonBaseEntityBone {
-  constructor(owner: IHandle, boneId: number) {
-    super(owner, GetPedBoneIndex(owner.Handle, Number(boneId)));
+  constructor(owner: IHandle, boneIndex: number) {
+    super(owner, boneIndex);
   }
 
   public get IsValid(): boolean {

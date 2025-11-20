@@ -16,10 +16,11 @@ import type { VehicleSeat } from "../enums/VehicleSeat";
 import { BaseEntity } from "./BaseEntity";
 import { Player } from "./Player";
 import { Vehicle } from "./Vehicle";
+import { PedBoneCollection } from "./bones/PedBoneCollection";
 
 export class Ped extends BaseEntity {
   protected type = ClassTypes.Ped;
-  protected bones?: CommonPedBoneCollection | undefined;
+  protected bones?: PedBoneCollection | undefined;
   private attributes: Attributes | undefined;
   private tasks: Tasks | undefined;
 
@@ -115,8 +116,8 @@ export class Ped extends BaseEntity {
     return this.tasks;
   }
 
-  get Bones(): CommonPedBoneCollection {
-    this.bones = this.bones ?? new CommonPedBoneCollection(this);
+  get Bones(): PedBoneCollection {
+    this.bones = this.bones ?? new PedBoneCollection(this);
     return this.bones;
   }
 

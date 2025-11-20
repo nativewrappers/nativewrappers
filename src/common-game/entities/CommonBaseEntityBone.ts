@@ -1,17 +1,21 @@
 import { Vector3 } from "@common/utils/Vector";
-import type { CommonBaseEntity } from "./CommonBaseEntity";
-import type { IHandle } from "./IHandle";
+import { IHandle } from "./IHandle";
 
-export abstract class CommonBaseEntityBone {
+export abstract class CommonBaseEntityBone extends IHandle {
   protected readonly owner: IHandle;
-  protected readonly index: number;
 
-  constructor(owner: IHandle, boneIndex?: number, boneName?: string) {
+  constructor(owner: IHandle, boneInfo: number | string) {
+    super(typeof boneInfo === "number" ? boneInfo : GetEntityBoneIndexByName(owner.Handle, boneInfo));
     this.owner = owner;
-    this.index = boneIndex ? boneIndex : GetEntityBoneIndexByName(this.owner.Handle, boneName ?? "");
   }
+
+  // overwrite the `IHandle` exists function call
+  public override exists(): boolean {
+    return this.handle !== -1;
+  }
+
   public get Index(): number {
-    return this.index;
+    return this.handle;
   }
 
   public get Owner(): IHandle {
@@ -19,7 +23,7 @@ export abstract class CommonBaseEntityBone {
   }
 
   public get Position(): Vector3 {
-    return Vector3.fromArray(GetWorldPositionOfEntityBone(this.owner.Handle, this.index));
+    return Vector3.fromArray(GetWorldPositionOfEntityBone(this.owner.Handle, this.handle));
   }
 
   // public get Rotation(): Vector3 {
@@ -27,6 +31,6 @@ export abstract class CommonBaseEntityBone {
   // }
 
   public get IsValid(): boolean {
-    return this.owner.exists() && this.index !== -1;
+    return this.owner.exists() && this.handle !== -1;
   }
 }
