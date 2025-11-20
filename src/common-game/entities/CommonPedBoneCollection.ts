@@ -21,10 +21,20 @@ export class CommonPedBoneCollection extends CommonBaseEntityBoneCollection {
     ClearPedLastDamageBone(this.owner.Handle);
   }
 
-  public getBone(boneIndex?: number, boneName?: string): CommonPedBone {
+  public getBoneFromId(boneId: number): CommonPedBone {
+    return new CommonPedBone(this.owner, GetPedBoneIndex(this.owner.Handle, boneId));
+  }
+
+  public getBoneFromName(boneName: string): CommonPedBone {
+    return new CommonPedBone(this.owner, GetEntityBoneIndexByName(this.owner.Handle, boneName));
+  }
+
+  public getBone(boneIndex: number): CommonPedBone;
+  public getBone(boneName: string): CommonPedBone;
+  public getBone(bone: number | string): CommonPedBone {
     return new CommonPedBone(
       this.owner,
-      boneIndex ? boneIndex : GetEntityBoneIndexByName(this.owner.Handle, boneName ?? ""),
+      typeof bone === "number" ? bone : GetEntityBoneIndexByName(this.owner.Handle, bone ?? ""),
     );
   }
 }

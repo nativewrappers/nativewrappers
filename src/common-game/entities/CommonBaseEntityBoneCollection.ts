@@ -14,6 +14,7 @@ export abstract class CommonBaseEntityBoneCollection {
   }
 
   public abstract getBone(boneIndex?: number, boneName?: string): CommonBaseEntityBone;
+  public abstract getBoneFromName(boneName: string): CommonBaseEntityBone;
 
   public abstract get Core(): CommonBaseEntityBone;
 }
