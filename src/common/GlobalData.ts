@@ -7,6 +7,11 @@ export enum ErrorType {
   Immediate,
 }
 
+export type NativeWrapperErrorType = (type: ErrorType, err: Error) => void;
+
+// @ts-ignore
+globalThis.OnError = (type: ErrorType, err: Error) => {};
+
 export class GlobalData {
   static CurrentResource = GetCurrentResourceName();
   static GameName = GetGameName();
@@ -21,5 +26,8 @@ export class GlobalData {
   /*
    * Called when one of the decors errors
    */
-  static OnError = (type: ErrorType, err: Error) => {};
+  static OnError = (type: ErrorType, err: Error) => {
+    // @ts-ignore
+    globalThis.OnError(type, err);
+  };
 }

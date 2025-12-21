@@ -45,6 +45,9 @@ function registerCommand(
   RegisterCommand(name, commandHandler, GlobalData.IS_CLIENT ? false : !!restricted);
 
   $SERVER: {
+    $CLIENT: {
+      if (GlobalData.IS_CLIENT) return;
+    }
     const ace = `command.${name}`;
 
     if (typeof restricted === "string") {
@@ -122,13 +125,12 @@ export class Command<T extends Parameter[] = Parameter[]> {
       const names = Array.isArray(name) ? name : [name];
       for (const name of names) {
         const commandObj = { ...this, name: `/${name}` };
-        $SERVER: {
+
+        if (GlobalData.IS_CLIENT) {
+          emit("chat:addSuggestion", commandObj);
+        } else {
           commands.push(commandObj);
           emitNet("chat:addSuggestions", -1, commandObj);
-        }
-
-        $CLIENT: {
-          emit("chat:addSuggestion", commandObj);
         }
       }
     }, 100);

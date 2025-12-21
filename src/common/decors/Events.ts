@@ -35,7 +35,8 @@ export function OnEvent(eventName: string) {
             console.error("------- EVENT ERROR --------");
             console.error(`Call to ${eventName} errored`);
             console.error(`Data: ${JSON.stringify(args)}`);
-            console.error(`Error: ${e}`);
+            // @ts-ignore
+            globalThis.printError("event", e);
             console.error("------- END EVENT ERROR --------");
           }
         }
@@ -106,7 +107,8 @@ export function OnNetEvent(eventName: string, remoteOnly = true) {
             console.error(`Call to ${eventName} errored`);
             console.error(`Caller: ${src}`);
             console.error(`Data: ${JSON.stringify(args)}`);
-            console.error(`Error: ${e}`);
+            // @ts-ignore
+            globalThis.printError("net event", e);
             console.error("------- END NET EVENT ERROR --------");
           }
         }

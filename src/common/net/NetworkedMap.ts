@@ -1,5 +1,5 @@
-import { GlobalData } from "@common/GlobalData";
 import type { Buffer } from "buffer";
+import { GlobalData } from "@common/GlobalData";
 
 enum MapChangeType {
   // whenever a value inside of the object changed
@@ -12,6 +12,8 @@ enum MapChangeType {
   Reset,
   // Whenever they're subscribed initially and get the initial load of data
   Init,
+  // Called whenever the client gets forced to resync
+  Resync,
 }
 
 type MapChanges<K, V> = [MapChangeType, K?, V?] | [MapChangeType.SubValueChanged, K, string, any];
@@ -19,7 +21,7 @@ type MapChanges<K, V> = [MapChangeType, K?, V?] | [MapChangeType.SubValueChanged
 declare function msgpack_pack(data: any): Buffer;
 declare function msgpack_unpack(data: Buffer): any;
 
-type ChangeListener<V> = (value: V) => void;
+type ChangeListener<V> = (value: V | undefined) => void;
 
 // Used to not make a bunch of on/raw events, we just reuse the same one and look up the data in the map
 class NetworkedMapEventManager {
@@ -113,7 +115,10 @@ export class NetworkedMap<K, V> extends Map<K, V> {
       console.error(`[NetworkedMap:resync] Tried to call resync on a source that wasn't already subscribed`);
       return;
     }
-    const packed_data = msgpack_pack([this.#syncName, [[MapChangeType.Init, this.size === 0 ? [] : Array.from(this)]]]);
+    const packed_data = msgpack_pack([
+      this.#syncName,
+      [[MapChangeType.Resync, this.size === 0 ? [] : Array.from(this)]],
+    ]);
     TriggerClientEventInternal(
       `${GlobalData.CurrentResource}:syncChanges`,
       source as any,
@@ -157,6 +162,16 @@ export class NetworkedMap<K, V> extends Map<K, V> {
           super.clear();
           continue;
         }
+        case MapChangeType.Resync: {
+          // re-run all of our already defined changed values since we'll be re-initing
+          // everything anyways.
+          for (const [, v] of this.#changeListeners) {
+            for (const fn of v) {
+              fn(undefined);
+            }
+          }
+          // intentionally fall through to `Init`, we have the same data as `Init`
+        }
         case MapChangeType.Init: {
           // We also use this for whenever we want to resync a table
           super.clear();
@@ -179,8 +194,10 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   /*
    * Listens for the change on the specified key, it will get the resulting
    * value on the change
+   * NOTE: When the server calls `resync` this will get ran with `undefined` for
+   * every change listener.
    */
-  listenForChange(key: K, fn: ChangeListener<V>) {
+  listenForChange(key: K, fn: ChangeListener<V | undefined>) {
     const listener = this.#changeListeners.get(key);
     listener ? listener.push(fn) : this.#changeListeners.set(key, [fn]);
   }
