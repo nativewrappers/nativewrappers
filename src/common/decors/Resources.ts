@@ -4,13 +4,20 @@ type GlobalThis = { RESOURCE_WRAPPER?: ResourceWrapper };
 
 type ResourceName = string;
 
-type FunctionCall = () => void;
+type ResourceOrGlobal = ResourceName | "global";
+
+type FunctionCall = (resource_name?: string) => void;
 
 type ResourceFunctionMap = Map<ResourceName, Array<FunctionCall>>;
 
 class ResourceWrapper {
   #on_resource_start: ResourceFunctionMap = new Map();
   #on_resource_stop: ResourceFunctionMap = new Map();
+
+  // used for global resource/start/stops, callers have to define their listener
+  // as "global"
+  #global_on_resource_start: FunctionCall[] = [];
+  #global_on_resource_stop: FunctionCall[] = [];
 
   #add_or_init(resource_fn_map: ResourceFunctionMap, resource_name: ResourceName, fn: FunctionCall) {
     const fn_array = resource_fn_map.get(resource_name);
@@ -26,8 +33,12 @@ class ResourceWrapper {
    * @param resource_name The resource name to add to the start listener.
    * @param fn The function to call
    */
-  add_to_resource_start(resource_name: ResourceName, fn: FunctionCall) {
-    this.#add_or_init(this.#on_resource_start, resource_name, fn);
+  add_to_resource_start(resource_name: ResourceOrGlobal, fn: FunctionCall) {
+    if (resource_name === "global") {
+      this.#global_on_resource_start.push(fn);
+    } else {
+      this.#add_or_init(this.#on_resource_start, resource_name, fn);
+    }
   }
 
   /**
@@ -35,39 +46,58 @@ class ResourceWrapper {
    * @param resource_name The resource name to add to the stop listener.
    * @param fn The function to call
    */
-  add_to_resource_stop(resource_name: ResourceName, fn: FunctionCall) {
-    this.#add_or_init(this.#on_resource_stop, resource_name, fn);
+  add_to_resource_stop(resource_name: ResourceOrGlobal, fn: FunctionCall) {
+    if (resource_name === "global") {
+      this.#global_on_resource_stop.push(fn);
+    } else {
+      this.#add_or_init(this.#on_resource_stop, resource_name, fn);
+    }
   }
 
-  #call_for_resource(resource_fn_map: ResourceFunctionMap, resource_name: ResourceName) {
+  #call_for_resource(resource_fn_map: ResourceFunctionMap, global_array: FunctionCall[], resource_name: ResourceName) {
     const functions = resource_fn_map.get(resource_name);
     if (functions) {
       for (const fn of functions) {
-        fn();
+        try {
+          fn(resource_name);
+        } catch (e) {}
       }
+    }
+
+    for (const fn of global_array) {
+      try {
+        fn(resource_name);
+      } catch (e) {}
     }
   }
 
   @Event("onResourceStart")
   on_resource_start(resource_name: ResourceName) {
-    this.#call_for_resource(this.#on_resource_start, resource_name);
+    this.#call_for_resource(this.#on_resource_start, this.#global_on_resource_start, resource_name);
   }
 
   @Event("onResourceStop")
   on_resource_stop(resource_name: ResourceName) {
-    this.#call_for_resource(this.#on_resource_stop, resource_name);
+    this.#call_for_resource(this.#on_resource_stop, this.#global_on_resource_stop, resource_name);
   }
 }
 
-// hacky way so we don't double initialize this across common/fivem/redm
-if (!(globalThis as GlobalThis).RESOURCE_WRAPPER) {
-  (globalThis as GlobalThis).RESOURCE_WRAPPER = new ResourceWrapper();
-}
+/*
+ * Makes sure the resource wrapper is initialized before calling
+ */
+export const EnsureResourceWrapperInit = () => {
+  // hacky way so we don't double initialize this across common/fivem/redm
+  if (!(globalThis as GlobalThis).RESOURCE_WRAPPER) {
+    (globalThis as GlobalThis).RESOURCE_WRAPPER = new ResourceWrapper();
+  }
+};
+
+EnsureResourceWrapperInit();
 
 const RESOURCE_WRAPPER = (globalThis as GlobalThis).RESOURCE_WRAPPER!;
 
-const onResourceStart = (resource: ResourceName, originalMethod: any) => {
-  if (GetResourceState(resource) === "started") {
+const onResourceStart = (resource: ResourceOrGlobal, originalMethod: any) => {
+  if (resource !== "global" && GetResourceState(resource) === "started") {
     setImmediate(() => originalMethod.call());
   }
   RESOURCE_WRAPPER.add_to_resource_start(resource, originalMethod);
@@ -75,8 +105,10 @@ const onResourceStart = (resource: ResourceName, originalMethod: any) => {
 
 /**
  * Called whenever the specified resource is started, this will be called once on once on resource start if the resource is started.
+ * NOTE: If you want to listen to *all* resource start/stop events you should send
+ * {@link resource} as "global"
  */
-export function OnResourceStart(resource = GetCurrentResourceName()) {
+export function OnResourceStart(resource: ResourceOrGlobal = GetCurrentResourceName()) {
   return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
     if (context.private) {
       throw new Error("OnResourceStart does not work on private types, please mark the field as public");
@@ -93,8 +125,10 @@ export function OnResourceStart(resource = GetCurrentResourceName()) {
 
 /**
  * Called whenever the specified resource is stopped.
+ * NOTE: If you want to listen to *all* resource start/stop events you should send
+ * {@link resource} as "global"
  */
-export function OnResourceStop(resource = GetCurrentResourceName()) {
+export function OnResourceStop(resource: ResourceOrGlobal = GetCurrentResourceName()) {
   return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
     if (context.private) {
       throw new Error("OnResourceStop does not work on private types, please mark the field as public");
