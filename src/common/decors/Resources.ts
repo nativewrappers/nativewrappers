@@ -29,7 +29,8 @@ class ResourceWrapper {
   }
 
   /**
-   * Adds a function to get called whenever a resource is started
+   * Adds a function to get called whenever a resource is started, if the current
+   * {@link resource_name} is started then it will immediately call the function.
    * @param resource_name The resource name to add to the start listener.
    * @param fn The function to call
    */
@@ -37,6 +38,10 @@ class ResourceWrapper {
     if (resource_name === "global") {
       this.#global_on_resource_start.push(fn);
     } else {
+      // if the current resource is started we should instantly call the function.
+      if (GetResourceState(resource_name) === "started") {
+        setImmediate(() => fn(resource_name));
+      }
       this.#add_or_init(this.#on_resource_start, resource_name, fn);
     }
   }
@@ -107,13 +112,6 @@ EnsureResourceWrapperInit();
 
 const RESOURCE_WRAPPER = (globalThis as GlobalThis).RESOURCE_WRAPPER!;
 
-const onResourceStart = (resource: ResourceOrGlobal, originalMethod: any) => {
-  if (resource !== "global" && GetResourceState(resource) === "started") {
-    setImmediate(() => originalMethod.call());
-  }
-  RESOURCE_WRAPPER.add_to_resource_start(resource, originalMethod);
-};
-
 /**
  * Called whenever the specified resource is started, this will be called once on once on resource start if the resource is started.
  * NOTE: If you want to listen to *all* resource start/stop events you should send
@@ -125,10 +123,10 @@ export function OnResourceStart(resource: ResourceOrGlobal = GetCurrentResourceN
       throw new Error("OnResourceStart does not work on private types, please mark the field as public");
     }
     if (context.static) {
-      onResourceStart(resource, originalMethod);
+      RESOURCE_WRAPPER.add_to_resource_start(resource, originalMethod);
     } else {
       context.addInitializer(function () {
-        onResourceStart(resource, originalMethod.bind(this));
+        RESOURCE_WRAPPER.add_to_resource_start(resource, originalMethod.bind(this));
       });
     }
   };
