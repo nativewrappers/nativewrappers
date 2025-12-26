@@ -72,12 +72,12 @@ class ResourceWrapper {
   }
 
   @Event("onResourceStart")
-  on_resource_start(resource_name: ResourceName) {
+  private on_resource_start(resource_name: ResourceName) {
     this.#call_for_resource(this.#on_resource_start, this.#global_on_resource_start, resource_name);
   }
 
   @Event("onResourceStop")
-  on_resource_stop(resource_name: ResourceName) {
+  private on_resource_stop(resource_name: ResourceName) {
     this.#call_for_resource(this.#on_resource_stop, this.#global_on_resource_stop, resource_name);
   }
 }
@@ -90,6 +90,17 @@ export const EnsureResourceWrapperInit = () => {
   if (!(globalThis as GlobalThis).RESOURCE_WRAPPER) {
     (globalThis as GlobalThis).RESOURCE_WRAPPER = new ResourceWrapper();
   }
+};
+
+/*
+ * Gets the global resource wrapper
+ * NOTE: There is NO guarantee about the stability of this API, this is mainly
+ * provided out of convience, when using this you should make sure that *all* of
+ * your nativewrappers are up to date.
+ */
+export const GetResourceWrapper = (): ResourceWrapper => {
+  EnsureResourceWrapperInit();
+  return (globalThis as GlobalThis).RESOURCE_WRAPPER!;
 };
 
 EnsureResourceWrapperInit();
