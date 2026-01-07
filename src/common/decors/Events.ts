@@ -1,23 +1,19 @@
 import { ErrorType, GlobalData } from "@common/GlobalData";
 
-/**
- * Disables pretty printing in error messages
- */
-export const DisablePrettyPrint = () => (GlobalData.EnablePrettyPrint = false);
-
-// TODO: Have a way to clean all of this up (maybe hook Symbol.disposable
-// somehow?)
+// TODO: setup a BaseClass and make sure all non-static methods error, whenever
+// we add this we should get rid of the deprecated functions.
 
 const AsyncFunction: any = (async () => {}).constructor;
 
 /**
  * Registers the Event call for {@link eventName} to this method.
  *
- * This has internal pretty-printing to make errors easier to track, if
- * you want to disable this you will need to call {@link DisablePrettyPrint}, or if you're
- * using esbuild you can add `REMOVE_EVENT_LOG` to your drop label {@link https://esbuild.github.io/api/#drop-labels}
+ * All errors that happen inside of the event will automatically be caught, these will still
+ * output a FiveM stack trace.
  *
- * @param eventName the event to bind to
+ * @note With all decors you can overwrite `globalThis.OnError` in order to hook into these errors to get more information or log them out to an external service, or to just disable the pretty printing.
+ *
+ * @param eventName - the event to bind to
  */
 export function OnEvent(eventName: string) {
   return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
@@ -29,23 +25,17 @@ export function OnEvent(eventName: string) {
         try {
           return await originalMethod.call(this, ...args);
         } catch (e) {
-          GlobalData.OnError(ErrorType.Event, e as Error);
-          REMOVE_EVENT_LOG: {
-            if (!GlobalData.EnablePrettyPrint) return;
-            console.error("------- EVENT ERROR --------");
-            console.error(`Call to ${eventName} errored`);
-            console.error(`Data: ${JSON.stringify(args)}`);
-            // @ts-ignore
-            globalThis.printError("event", e);
-            console.error("------- END EVENT ERROR --------");
-          }
+          GlobalData.OnError(ErrorType.Event, e as Error, {
+            name: eventName,
+            args
+          });
         }
       });
     });
   };
 }
 
-/*
+/**
  * @deprecated use OnEvent instead, this will be removed upon 2.0
  */
 export const Event = OnEvent;
@@ -53,11 +43,10 @@ export const Event = OnEvent;
 /**
  * Registers the Net Event call for {@link eventName} to this method
  *
+ * All errors that happen inside of the event will automatically be caught, these will still
+ * output a FiveM stack trace.
  *
- * This has internal pretty-printing to make errors easier to track, if
- * you want to disable this you will need to call {@link DisablePrettyPrint}, or if you're
- * using esbuild you can add `REMOVE_EVENT_LOG` to your drop label {@link https://esbuild.github.io/api/#drop-labels}
- *
+ * @note With all decors you can overwrite `globalThis.OnError` in order to hook into these errors to get more information or log them out to an external service, or to just disable the pretty printing.
  * @param eventName the event to bind this net event to
  * @param remoteOnly if the event should only accept remote calls, if set to true it will ignore any local call via `emit`, defaults to true
  */
@@ -100,24 +89,18 @@ export function OnNetEvent(eventName: string, remoteOnly = true) {
           }
           return await originalMethod.call(this, ...args);
         } catch (e) {
-          GlobalData.OnError(ErrorType.NetEvent, e as Error);
-          REMOVE_NET_EVENT_LOG: {
-            if (!GlobalData.EnablePrettyPrint) return;
-            console.error("------- NET EVENT ERROR --------");
-            console.error(`Call to ${eventName} errored`);
-            console.error(`Caller: ${src}`);
-            console.error(`Data: ${JSON.stringify(args)}`);
-            // @ts-ignore
-            globalThis.printError("net event", e);
-            console.error("------- END NET EVENT ERROR --------");
-          }
+          GlobalData.OnError(ErrorType.NetEvent, e as Error, {
+            name: eventName,
+            source: src,
+            args
+          });
         }
       });
     });
   };
 }
 
-/*
+/**
  * @deprecated Use `OnNetEvent` instead this will be removed upon 2.0
  */
 export const NetEvent = OnNetEvent;
@@ -125,14 +108,32 @@ export const NetEvent = OnNetEvent;
 export type NuiCallback = (data: string) => void;
 
 /**
- * Registers the NUI Event call for {eventName} to this method, the function signature
- * will always be (data: unknown, cb: (data?: any) => void) => void
+ * Registers the NUI Event call for {@link eventName} to this method, the function signature
+ * will always be `(data: unknown, cb: (data?: any) => void) => void`
  *
- * There's two valid ways to return data into a callback, returning in the method
- * you're currently using will automatically call the callback, or you can manually call the callback yourself
+ * There's two valid ways to return data into a callback
+ * 1. Returning in the method you're currently using will automatically call the callback
+ * 2. You can manually call the callback yourself
  *
+ * @note With all decors you can overwrite `globalThis.OnError` in order to hook into these errors to get more information or log them out to an external service, or to just disable the pretty printing.
  * @param eventName the event this will listen for
  * @param dontErrorWhenCbIsntInvoked this will just block the event fro merroring when the callback is never invoked.
+ * @throws This will throw if you don't call `cb` or return data in the method.
+ * If you move this call across task bounds and call the cb, this will still throw (say doing `setImmediate(() => cb("ok"));`)
+ * You can disable this by setting {@link dontErrorWhenCbIsntInvoked} to `true`
+ * @example
+ * ```typescript
+ * class NuiEventManager {
+ *   #is_ui_ready = false;
+ *   \@OnNuiEvent("ui_ready")
+ *   on_ui_ready(data: unknown, cb: NuiCallback) {
+ *     this.#is_ui_ready = true;
+ *     // will invoke the callback itself
+ *     return "ok";
+ *     // cb("ok"); // you can use this too
+ *   }
+ * }
+ * ```
  */
 export function OnNuiEvent(eventName: string, dontErrorWhenCbIsntInvoked = false) {
   return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
@@ -154,7 +155,7 @@ export function OnNuiEvent(eventName: string, dontErrorWhenCbIsntInvoked = false
         try {
           retData = await originalMethod.call(this, data, cbWrapper);
         } catch (e) {
-          GlobalData.OnError(ErrorType.Nui, e as Error);
+          GlobalData.OnError(ErrorType.Nui, e as Error, { name: eventName });
           return;
         }
 
@@ -173,7 +174,7 @@ export function OnNuiEvent(eventName: string, dontErrorWhenCbIsntInvoked = false
   };
 }
 
-/*
- * @deprecated use OnNuiEvent instead, this will be removed upon 2.0
+/**
+ * @deprecated use OnNuiEvent instead
  */
 export const NuiEvent = OnNuiEvent;

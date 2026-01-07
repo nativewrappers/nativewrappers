@@ -24,6 +24,7 @@
     }
   },
   "include": ["src/**/*"],
+  "files": ["./src/global.d.ts"],
   "exclude": ["node_modules", "lib", "**/examples/"],
   "references": [
     { "path": "./src/server" },

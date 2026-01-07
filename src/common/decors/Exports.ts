@@ -2,8 +2,8 @@ import { ErrorType, GlobalData } from "@common/GlobalData";
 
 const AsyncFunction: any = (async () => {}).constructor;
 
-/*
- * Registers the export call for {exportName} to this method
+/**
+ * Registers the export call for {@link exportName} to this method
  */
 export function Exports(exportName: string) {
   return function actualDecorator(originalMethod: any, context: ClassMethodDecoratorContext) {
@@ -17,21 +17,13 @@ export function Exports(exportName: string) {
 
       // we want to make sure we only make this an async function if the original constructor was async
       // otherwise we'll be implicitly converting their function from sync -> async which could cause
-      // unexpected behavior.
+      // the caller unintentionally getting a promise they have to await.
       if (originalMethod instanceof AsyncFunction) {
         exportCb = async (...args: any[]) => {
           try {
             return await originalMethod.call(this, ...args);
           } catch (err) {
-            GlobalData.OnError(ErrorType.Export, err as any);
-            REMOVE_EVENT_LOG: {
-              if (!GlobalData.EnablePrettyPrint) return;
-              console.error("------- EXPORT ERROR --------");
-              console.error(`Call to ${exportName} errored`);
-              console.error(`Data: ${JSON.stringify(args)}`);
-              console.error(`Error: ${err}`);
-              console.error("------- END EXPORT ERROR --------");
-            }
+            GlobalData.OnError(ErrorType.Export, err as any, { name: exportName });
             throw err;
           }
         };
@@ -40,15 +32,7 @@ export function Exports(exportName: string) {
           try {
             return originalMethod.call(this, ...args);
           } catch (err) {
-            GlobalData.OnError(ErrorType.Export, err as any);
-            REMOVE_EVENT_LOG: {
-              if (!GlobalData.EnablePrettyPrint) return;
-              console.error("------- EXPORT ERROR --------");
-              console.error(`Call to ${exportName} errored`);
-              console.error(`Data: ${JSON.stringify(args)}`);
-              console.error(`Error: ${err}`);
-              console.error("------- END EXPORT ERROR --------");
-            }
+            GlobalData.OnError(ErrorType.Export, err as any, { name: exportName });
             throw err;
           }
         };

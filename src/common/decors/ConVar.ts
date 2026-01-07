@@ -1,3 +1,5 @@
+import { ErrorType, GlobalData } from "@common/GlobalData";
+
 export enum ConVarType {
   String,
   Integer,
@@ -7,7 +9,7 @@ export enum ConVarType {
 
 type ConVarFunction = (convarName: string, defaultValue: any) => any;
 
-const get_convar_fn = (con_var_type: ConVarType): ConVarFunction => {
+const getConvarFunction = (con_var_type: ConVarType): ConVarFunction => {
   switch (con_var_type) {
     case ConVarType.String:
       return GetConvar;
@@ -25,64 +27,101 @@ const get_convar_fn = (con_var_type: ConVarType): ConVarFunction => {
   throw new Error("Got invalid ConVarType");
 };
 
-type DeserializeFn<T> = (data: T) => unknown;
+export type DeserializeFn = (data: unknown) => unknown;
 
 /**
- * Gets the specified `ConVar`s value, this will bind to the param.
- * @param name the convar name
- * @param is_floating_point if the convar is floating point, this should be explicitly set to true if your convar will be a float
+ * Gets the specified `ConVar`s value, this will bind to the parameter of the current class
+ * updating it whenever the ConVar value changes.
+ *
+ * Whatever the initial data value is will be the default value
+ *
+ * @param name - the convar name that we will read from
+ * @param convarType - the type of the convar
+ * @param deserialize - when using a string we can use this to automatically convert the value to a different structure,
+   this can also be used to know when a value gets changed, just make sure the value returns itself.
+ * @example
+ * ```typescript
+ * type Vec3 = [number, number, number];
+ * const deserializeToVec3Array = (data: string) => {
+ *   // convert a semicolon separate listed into a vector 3 array
+ *   const dataArray = data.split(";");
+ *   if (dataArray.length !== 3) {
+ *     throw new Error("ConVars data didn't have three numbers!");
+ *   }
+ * 
+ *   return dataArray.map((v, i) => {
+ *     const converted = parseFloat(v.trim());
+ *     if (Number.isNaN(converted)) {
+ *       throw new Error(`Value at index ${i} was not an actual float!`);
+ *     }
+ * 
+ *     return converted;
+ *   }) as Vec3;
+ * };
+ * class ConVar {
+ *   \@ConVar("nativeWrappers", ConVarType.Boolean)
+ *   private nativeWrappers = false; // false will be the default value
+ * 
+ *   \@ConVar("engineDamageModifier", ConVarType.Float)
+ *   private engineDamageModifier = 1.0;
+ * 
+ *   // If we `setr spawnPos "155.23;154.44;25.88"` this will convert the string into
+ *   // the specified type
+ *   \@ConVar("spawnPos", ConVarType.String, deserializeToVec3Array)
+ *   private vectorPos: Vec3 = [123.12, 123.22, 55];
+ * }
+ * ```
  */
-export function ConVar<T>(name: string, is_floating_point?: boolean, deserialize?: DeserializeFn<T>) {
-  // the implementation shows that this will be _initialValue, but it doesn't
-  // seem to actually be???
+export function ConVar(name: string, convarType: ConVarType, deserialize?: DeserializeFn) {
   return function actualDecorator(_initialValue: any, context: ClassFieldDecoratorContext, ..._args: any[]) {
     if (context.private) {
       throw new Error("ConVar does not work on private types, please mark the field as public");
     }
     context.addInitializer(function () {
       const t = this as any;
+      const defaultValue = Reflect.get(t, context.name);
+      const conVarFunction = getConvarFunction(convarType);
 
-      const default_value = Reflect.get(t, context.name);
-      const default_type = typeof default_value;
-      let con_var_type: ConVarType | null = null;
-      if (default_type === "number") {
-        if (is_floating_point || !Number.isInteger(default_value)) {
-          con_var_type = ConVarType.Float;
-        } else {
-          con_var_type = ConVarType.Integer;
+      const defaultType = typeof defaultValue;
+
+      // only allow primitive types to be default
+      if (defaultType !== "number" && defaultType !== "boolean" && defaultType !== "string") {
+        // we should never allow a function to be used as the default value.
+        if (defaultType === "function") {
+          const error = new Error(`${name} has a type of function, which isn't allowed for a ConVar. If you need to know when the data changes you can define a pass a deserializer.`);
+
+          GlobalData.OnError(ErrorType.ConVar, error, { name });
+          return;
         }
-      } else if (default_type === "boolean") {
-        con_var_type = ConVarType.Boolean;
-      } else if (default_type === "string") {
-        con_var_type = ConVarType.String;
+        if (!deserialize) {
+          const error = new Error(`${name} has a type of ${defaultType} which isn't allowed unless you define a deserializer.`);
+
+          GlobalData.OnError(ErrorType.ConVar, error, { name });
+          return;
+        }
       }
 
-      // if we're not set that means our default value was not valid, and likely
-      // undefined (which we should just get rid of) or an object, and the
-      // caller should send a deserialize function to work with.
-      if (!deserialize && con_var_type === null) {
-        throw new Error(
-          `Failed to determine what to use to deserialize '${name}' was for var had type '${default_type}' which can't be deserialized without providing your own deserialize function.`,
-        );
-      }
-
-      // if we got past our previous check then we're going to take the data as
-      // a string and pass it to the deserialize function
-      if (con_var_type === null) {
-        con_var_type = ConVarType.String;
-      }
-
-      const con_var_fn = get_convar_fn(con_var_type!);
-
-      // nice and easy wrapper
-      const get_convar_value = (): unknown => {
-        const data = con_var_fn(name, default_value);
-        return deserialize ? deserialize(data) : data;
+      /**
+      * Converts the current ConVar value to the deserialized type
+      */
+      const getConvarValue = (): unknown => {
+        const value = conVarFunction(name, defaultValue);
+        // since we can error here with a user defined functions we should always
+        // catch it and at least hit our global error handler.
+        try {
+          const returnData = deserialize ? deserialize(value) : value;
+          return returnData;
+        } catch (e) {
+          GlobalData.OnError(ErrorType.ConVar, e as Error, { name: `${name}:DeserializeFn` });
+          // rethrow because we don't want whatevers calling this to be set to
+          // an undefined value.
+          throw e;
+        }
       };
 
-      Reflect.set(t, context.name, get_convar_value());
+      Reflect.set(t, context.name, getConvarValue());
       AddConvarChangeListener(name, () => {
-        Reflect.set(t, context.name, get_convar_value());
+        Reflect.set(t, context.name, getConvarValue());
       });
     });
   };
