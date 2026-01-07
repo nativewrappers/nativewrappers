@@ -22,6 +22,8 @@ function convertErrorTypeToName(errorType: ErrorType) {
       return "Tick";
     case ErrorType.Immediate:
       return "Immediate";
+    case ErrorType.ConVar:
+      return "ConVar";
   }
 }
 

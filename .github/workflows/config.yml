@@ -21,4 +21,5 @@ jobs:
         with:
           version: 8
       - run: pnpm install
+      - run: pnpm build
       - run: pnpm check
