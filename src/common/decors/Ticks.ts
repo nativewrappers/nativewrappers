@@ -23,8 +23,8 @@ export function OnTick(contextName: string) {
 }
 
 /**
-* @see OnTick
-*/
+ * @see OnTick
+ */
 export const SetTick = OnTick;
 
 /**

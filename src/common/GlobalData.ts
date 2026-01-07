@@ -5,7 +5,7 @@ export enum ErrorType {
   Nui,
   Tick,
   Immediate,
-  ConVar
+  ConVar,
 }
 
 function convertErrorTypeToName(errorType: ErrorType) {
@@ -54,22 +54,21 @@ globalThis.FormatError = (errorType: ErrorType, err: Error, errorData: ErrorData
       jsonData = JSON.stringify(args);
     } catch {
       jsonData = "Failed to convert args to JSON";
-      }
+    }
     console.error(`Data: ${jsonData}`);
   }
-  
+
   globalThis.printError(errorName, err);
   console.error(`------- END ${errorName} EVENT ERROR --------`);
-}
+};
 
 globalThis.OnError = (type: ErrorType, err: Error, errorData: ErrorData) => {
   globalThis.FormatError(type, err, errorData);
 };
 
-
 /**
-* A static class containing useful
-*/
+ * A static class containing useful
+ */
 export class GlobalData {
   static CurrentResource = GetCurrentResourceName();
   static GameName = GetGameName();

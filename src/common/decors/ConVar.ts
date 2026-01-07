@@ -88,13 +88,17 @@ export function ConVar(name: string, convarType: ConVarType, deserialize?: Deser
       if (defaultType !== "number" && defaultType !== "boolean" && defaultType !== "string") {
         // we should never allow a function to be used as the default value.
         if (defaultType === "function") {
-          const error = new Error(`${name} has a type of function, which isn't allowed for a ConVar. If you need to know when the data changes you can define a pass a deserializer.`);
+          const error = new Error(
+            `${name} has a type of function, which isn't allowed for a ConVar. If you need to know when the data changes you can define a pass a deserializer.`,
+          );
 
           GlobalData.OnError(ErrorType.ConVar, error, { name });
           return;
         }
         if (!deserialize) {
-          const error = new Error(`${name} has a type of ${defaultType} which isn't allowed unless you define a deserializer.`);
+          const error = new Error(
+            `${name} has a type of ${defaultType} which isn't allowed unless you define a deserializer.`,
+          );
 
           GlobalData.OnError(ErrorType.ConVar, error, { name });
           return;
@@ -102,8 +106,8 @@ export function ConVar(name: string, convarType: ConVarType, deserialize?: Deser
       }
 
       /**
-      * Converts the current ConVar value to the deserialized type
-      */
+       * Converts the current ConVar value to the deserialized type
+       */
       const getConvarValue = (): unknown => {
         const value = conVarFunction(name, defaultValue);
         // since we can error here with a user defined functions we should always

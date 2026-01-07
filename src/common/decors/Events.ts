@@ -27,7 +27,7 @@ export function OnEvent(eventName: string) {
         } catch (e) {
           GlobalData.OnError(ErrorType.Event, e as Error, {
             name: eventName,
-            args
+            args,
           });
         }
       });
@@ -92,7 +92,7 @@ export function OnNetEvent(eventName: string, remoteOnly = true) {
           GlobalData.OnError(ErrorType.NetEvent, e as Error, {
             name: eventName,
             source: src,
-            args
+            args,
           });
         }
       });
