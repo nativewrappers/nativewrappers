@@ -40,7 +40,7 @@
     "lint": "pnpm biome lint --write"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
+    "@biomejs/biome": "^2.3.11",
     "@citizenfx/client": "2.0.13079-1",
     "@citizenfx/server": "2.0.13079-1",
     "@types/node": "^22.13.7",

@@ -1,7 +1,7 @@
 {
+  "$schema": "https://biomejs.dev/schemas/2.3.4/schema.json",
   "files": {
-    "include": ["./src/**/*.ts", "./build.js"],
-    "ignore": ["**/*.d.ts"]
+    "includes": ["./src/**/*.ts", "./build.js", "!**/*.d.ts"]
   },
   "linter": {
     "enabled": true,
@@ -22,7 +22,6 @@
         "useEnumInitializers": "off",
         "noNonNullAssertion": "off",
         "noParameterAssign": "off",
-        "noArguments": "off",
         "noUnusedTemplateLiteral": {
           "fix": "safe"
         }
@@ -42,7 +41,6 @@
   "formatter": {
     "enabled": true,
     "formatWithErrors": false,
-    "ignore": [],
     "attributePosition": "auto",
     "indentStyle": "space",
     "indentWidth": 2,
