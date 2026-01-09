@@ -1,5 +1,8 @@
 import { ErrorType, GlobalData } from "@common/GlobalData";
 
+/**
+ * The convar type that will be used for the specified decor
+ */
 export enum ConVarType {
   String,
   Integer,
@@ -24,10 +27,20 @@ const getConvarFunction = (con_var_type: ConVarType): ConVarFunction => {
   }
 
   // never guess people wont manage to hit this
-  throw new Error("Got invalid ConVarType");
+  throw new Error(`Got conVarType: ${con_var_type} but it was not a valid ConVar type, please refer to "ConVarType"`);
 };
 
-export type DeserializeFn = (data: unknown) => unknown;
+export type DeserializeFn<T extends ConVarType> = (data: InferType<T>) => any;
+
+type InferType<T extends ConVarType> = T extends ConVarType.String
+  ? string
+  : T extends ConVarType.Integer
+    ? number
+    : T extends ConVarType.Float
+      ? number
+      : T extends ConVarType.Boolean
+        ? boolean
+        : never;
 
 /**
  * Gets the specified `ConVar`s value, this will bind to the parameter of the current class
@@ -72,7 +85,7 @@ export type DeserializeFn = (data: unknown) => unknown;
  * }
  * ```
  */
-export function ConVar(name: string, convarType: ConVarType, deserialize?: DeserializeFn) {
+export function ConVar<T extends ConVarType>(name: string, convarType: T, deserialize?: DeserializeFn<T>) {
   return function actualDecorator(_initialValue: any, context: ClassFieldDecoratorContext, ..._args: any[]) {
     if (context.private) {
       throw new Error("ConVar does not work on private types, please mark the field as public");
