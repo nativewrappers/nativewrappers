@@ -1,0 +1,39 @@
+[@nativewrappers/fivem](../../../../README.md) / [redm/definitions/redm](../README.md) / GetEntityUprightValue
+
+# Function: GetEntityUprightValue()
+
+## Call Signature
+
+```ts
+function GetEntityUprightValue(entity): number;
+```
+
+Defined in: [src/common-game/definitions/redm.d.ts:2944](https://github.com/nativewrappers/nativewrappers/blob/5084b61ea79d43bdf84faea5c688d0b87ec5e48b/src/common-game/definitions/redm.d.ts#L2944)
+
+### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `entity` | `number` |
+
+### Returns
+
+`number`
+
+## Call Signature
+
+```ts
+function GetEntityUprightValue(entity): number;
+```
+
+Defined in: [src/redm/definitions/redm.d.ts:2944](https://github.com/nativewrappers/nativewrappers/blob/5084b61ea79d43bdf84faea5c688d0b87ec5e48b/src/redm/definitions/redm.d.ts#L2944)
+
+### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `entity` | `number` |
+
+### Returns
+
+`number`
