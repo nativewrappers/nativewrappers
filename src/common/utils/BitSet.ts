@@ -1,8 +1,12 @@
 /**
  * A basic bitset wrapper to make some bitset code reusable
  */
-export class BitSet {
-  private value = 0;
+export class BitSet<T extends number> {
+  private value: number | T;
+
+  constructor(default_value?: T) {
+    this.value = default_value ?? 0;
+  }
 
   /**
    * Sets the bit at {@param position} to `1`
