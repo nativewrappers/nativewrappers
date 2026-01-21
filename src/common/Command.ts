@@ -285,7 +285,6 @@ export class Command<T extends Parameter[] = Parameter[]> {
         }
 
         defaultContextObject.defaultValue = param.defaultValue;
-
       }
 
       if (value === undefined && (!param.optional || (param.optional && arg))) {
