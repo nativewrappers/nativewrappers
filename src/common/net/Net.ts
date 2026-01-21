@@ -1,3 +1,5 @@
+import type { MessageTypeEncoder } from "@common/decors/Proto";
+
 type EventCallback = (...args: any[]) => void;
 type RawEventCallback = (data: Uint8Array, source: `internal-net:${number}` | `net:${number}`) => void;
 
@@ -31,6 +33,12 @@ export class NetServer extends Net {
   static emitNet(eventName: string, source: number, ...args: any[]) {
     emitNet(eventName, source, ...args);
   }
+
+  static emitProto<T>(source: number, message: MessageTypeEncoder<T>) {
+    const encoded = message.encode(message as T);
+    NetServer.emitRawNet(message.name, source, encoded);
+  }
+
   static emitRawNet(eventName: string, source: number, data: Uint8Array) {
     // @ts-expect-error: Uint8Array is handled properly for TriggerClientEventInternal, so this is safe.
     TriggerClientEventInternal(eventName, source, data, data.byteLength);
@@ -41,8 +49,12 @@ export class NetClient extends Net {
   static emitNet(eventName: string, source: number, ...args: any[]) {
     emitNet(eventName, source, ...args);
   }
-  static emitRawNet(eventName: string, source: number, data: Uint8Array) {
+  static emitProto<T>(message: MessageTypeEncoder<T>) {
+    const encoded = message.encode(message as T);
+    NetClient.emitRawNet(message.name, encoded);
+  }
+  static emitRawNet(eventName: string, data: Uint8Array) {
     // @ts-expect-error: Uint8Array is handled properly for TriggerClientEventInternal, so this is safe.
-    TriggerClientEventInternal(eventName, source, data, data.byteLength);
+    TriggerServerEventInternal(eventName, data, data.byteLength);
   }
 }
