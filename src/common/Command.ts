@@ -2,7 +2,7 @@ import { GlobalData } from "./GlobalData";
 
 type Restricted = boolean | string | string[];
 
-interface ParameterTypes {
+export interface ParameterTypes {
   number: number;
   playerId: number;
   string: string;
@@ -20,7 +20,10 @@ interface Parameter {
 const commands: Partial<Command>[] = [];
 
 $SERVER: {
-  on("playerJoining", () => emitNet("chat:addSuggestions", source, commands));
+  (() => {
+    $CLIENT: if (GlobalData.IS_CLIENT) return;
+    on("playerJoining", () => emitNet("chat:addSuggestions", source, commands));
+  })();
 }
 
 type MappedParameters<T extends Parameter[]> = {
@@ -63,6 +66,107 @@ function registerCommand(
     }
   }
 }
+
+type CommandContextObject<T> = {
+  source: number;
+  raw: string;
+  defaultValue?: T;
+};
+
+type CommandTypeParser<T> = (arg: string, context: CommandContextObject<T>) => T | undefined;
+
+const commandTypeParserRegistry = new Map<string, CommandTypeParser<any>>();
+
+/**
+ * Defines a parser for {@link Command} so that you can dynamically add new parsers,
+ * or overwrite existing parsers to your needs.
+ *
+ *
+ * You will need to declare a module to extend the parameter types, like so:
+ *  declare module "@nativewrappers/{client|common|server}" {
+ *   interface ParameterTypes {
+ *     playerId: MyFrameworkPlayer; // your custom player return type here
+ *   }
+ * }
+ *
+ * @param name - the name of the parser to register
+ * @param parser - the parser that will be ran for the specified type, the parser cannot be async, if validation
+ * fails you can throw an error, this error will be printed to the console. It should
+ * be noted that if there wasn't an argument for an index the parser will never get called.
+ * @example
+ * ```ts
+ * registerParameterType("number", (arg) => {
+ *   const num = parseInt(arg, 10);
+ *   if (Number.isNaN(num)) {
+ *     throw new TypeError(`could not parse argument into a valid number`);
+ *   }
+ *   return num;
+ * });
+ * ```
+ */
+export function registerParameterType<K extends keyof ParameterTypes>(
+  name: K,
+  parser: CommandTypeParser<ParameterTypes[K]>,
+): void {
+  commandTypeParserRegistry.set(name, parser);
+}
+
+registerParameterType("number", (arg) => {
+  const num = parseInt(arg, 10);
+  if (Number.isNaN(num)) {
+    throw new TypeError(`could not parse argument into a valid number`);
+  }
+  return num;
+});
+
+registerParameterType("string", (arg) => {
+  return arg;
+});
+
+(() => {
+  $CLIENT: if (GlobalData.IS_CLIENT) {
+    registerParameterType("playerId", (arg) => {
+      const isMe = arg === "me";
+      const target = isMe ? GetPlayerServerId(PlayerId()) : parseInt(arg, 10);
+      if (Number.isNaN(target)) {
+        throw new TypeError(`could not parse argument into a valid playerId`);
+      }
+
+      // if we set the target to "me" then we want to early return, since the
+      // GetPlayerFromServerId check will fail since our local client will be -1
+      if (isMe) {
+        return target;
+      }
+
+      if (GetPlayerFromServerId(target) === -1) {
+        throw new Error(`player with server id $${target} didn't exist`);
+      }
+
+      return target;
+    });
+
+    return;
+  }
+
+  $SERVER: {
+    registerParameterType("playerId", (arg, { source }) => {
+      const target = arg === "me" ? source : parseInt(arg, 10);
+      if (Number.isNaN(target)) {
+        throw new TypeError(`could not parse argument into a valid playerId`);
+      }
+
+      if (!DoesPlayerExist(target as unknown as string)) {
+        throw new Error(`player at ${source} didn't exist`);
+      }
+
+      return target;
+    });
+  }
+})();
+
+registerParameterType("longString", (arg, { raw }) => {
+  return raw.substring(raw.indexOf(arg));
+});
 
 /**
  * ```typescript
@@ -151,45 +255,37 @@ export class Command<T extends Parameter[] = Parameter[]> {
 
     if (!this.params) return mapped;
 
+    const defaultContextObject: CommandContextObject<any> = {
+      source,
+      raw,
+    };
+
     const result = this.params.every((param, index) => {
       const arg = args[index];
       let value: unknown = arg;
 
-      const hasDefaultValue = param.defaultValue !== undefined;
       const hasArg = typeof arg === "string";
 
-      if (!hasArg && hasDefaultValue) {
+      if (!hasArg) {
         value = param.defaultValue;
       } else {
-        switch (param.type) {
-          case "number":
-            if (hasDefaultValue && !hasArg) {
-              value = param.defaultValue;
-            } else {
-              value = +arg;
-            }
-            break;
-          case "string":
-            value = !Number(arg) ? arg : false;
-            break;
-          case "playerId":
-            $SERVER: {
-              value = arg === "me" ? source : +arg;
-
-              if (!value || !DoesPlayerExist(value.toString())) value = undefined;
-            }
-
-            $CLIENT: {
-              value = arg === "me" ? GetPlayerServerId(PlayerId()) : +arg;
-
-              if (!value || GetPlayerFromServerId(value as number) === -1) value = undefined;
-            }
-
-            break;
-          case "longString":
-            value = raw.substring(raw.indexOf(arg));
-            break;
+        const parser = commandTypeParserRegistry.get(param.type);
+        if (!parser) {
+          console.error(
+            `${param.type} didn't have a valid parser, did you forget to register it with 'registerParameterType'?`,
+          );
+          return false;
         }
+
+        try {
+          value = parser(arg, defaultContextObject);
+        } catch (e) {
+          globalThis.printError("command parsing", e as Error);
+          return false;
+        }
+
+        defaultContextObject.defaultValue = param.defaultValue;
+
       }
 
       if (value === undefined && (!param.optional || (param.optional && arg))) {
