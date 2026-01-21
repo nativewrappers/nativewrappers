@@ -181,4 +181,9 @@ export class Player {
   public emit(eventName: string, ...args: any[]): void {
     TriggerClientEvent(eventName, this.source, ...args);
   }
+
+  public emitRaw(eventName: string, data: Uint8Array): void {
+    // @ts-expect-error: Uint8Array will be internally handled as a string so this is save
+    TriggerClientEventInternal(eventName, this.source, data, data.byteLength);
+  }
 }

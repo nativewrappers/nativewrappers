@@ -1,5 +1,6 @@
-import type { Buffer } from "buffer";
 import { GlobalData } from "@common/GlobalData";
+import { Net } from "@common/net/Net";
+import type { Buffer } from "buffer";
 
 enum MapChangeType {
   // whenever a value inside of the object changed
@@ -39,8 +40,9 @@ class NetworkedMapEventManager {
       return;
     }
     $CLIENT: {
-      RegisterResourceAsEventHandler(`${GlobalData.CurrentResource}:syncChanges`);
-      addRawEventListener(`${GlobalData.CurrentResource}:syncChanges`, (msgpack_data: any) => {
+      if (GlobalState.IS_SERVER) return;
+
+      Net.onRaw(`${GlobalData.CurrentResource}:syncChanges`, (msgpack_data: any) => {
         const data = msgpack_unpack(msgpack_data);
         const syncName: string = data[0];
         const syncData: MapChanges<any, any> = data[1];
@@ -51,7 +53,7 @@ class NetworkedMapEventManager {
           throw new Error(`Tried to sync changes for a networked map but ${syncName} does't exist.`);
         }
 
-        // @ts-ignore: we're abusing private here since its still publically accessible, we don't want the end user using this.
+        // @ts-expect-error: we're abusing private here since its still publically accessible, we don't want the end user using this.
         map.handleSync(syncData);
       });
     }
@@ -66,6 +68,7 @@ class NetworkedMapEventManager {
   }
 }
 
+// TODO: Set this to be global instead
 // esbuild will remove this if NetworkedMap isn't used
 const netManager /* @__PURE__ */ = new NetworkedMapEventManager();
 
@@ -78,8 +81,8 @@ export class NetworkedMap<K, V> extends Map<K, V> {
   #changeListeners: Map<K, ChangeListener<V>[]> = new Map();
   #subscribers: Set<number> = new Set();
 
-  constructor(syncName: string, initialValue?: [K, V][]) {
-    super(initialValue);
+  constructor(syncName: string) {
+    super();
     this.#syncName = syncName;
 
     GlobalData.NetworkedTicks.push(this);
@@ -95,6 +98,12 @@ export class NetworkedMap<K, V> extends Map<K, V> {
           }
         });
       }
+    }
+  }
+
+  initialize(initialValue: [K, V][]) {
+    for (const [k, v] of initialValue) {
+      this.set(k, v);
     }
   }
 
@@ -147,7 +156,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     return this.#subscribers.size;
   }
 
-  private handleSync(data: MapChanges<K, V>[]) {
+  protected handleSync(data: MapChanges<K, V>[]) {
     for (const [change_type, key, value, possibly_undefined_subvalue] of data) {
       switch (change_type) {
         case MapChangeType.Add: {
@@ -183,7 +192,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
         }
         case MapChangeType.SubValueChanged: {
           const data = this.get(key!)!;
-          // @ts-ignore
+          // @ts-expect-error: we *have* tha ve a value if it sends a `SubValueChanged`
           data[value] = possibly_undefined_subvalue;
           continue;
         }
