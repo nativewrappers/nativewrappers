@@ -15,8 +15,8 @@ export type MessageTypeEncoder<T> = {
   name: string;
 };
 
-type ProtoCallback<Message> = (message: Message) => Promise<void>;
-type NetProtoCallback<Message> = (source: number, message: Message) => Promise<void>;
+type ProtoCallback<Message> = (message: Message) => Promise<void> | void;
+type NetProtoCallback<Message> = (source: number, message: Message) => Promise<void> | void;
 
 /**
  * PMA uses ts-proto to define our types, you can see that here: https://github.com/stephenh/ts-proto
@@ -29,7 +29,7 @@ type NetProtoCallback<Message> = (source: number, message: Message) => Promise<v
  *
  */
 export function OnProto<T>(messageType: MessageTypeDecoder<T>, eventName?: string) {
-  const event = eventName ?? `pb:${messageType.name}`;
+  const event = eventName ?? `${messageType.name}`;
 
   return function actualDecorator(originalMethod: ProtoCallback<T>, context: ClassMethodDecoratorContext) {
     if (context.private) {
@@ -53,7 +53,7 @@ export function OnProto<T>(messageType: MessageTypeDecoder<T>, eventName?: strin
  * This makes it very nice to handle events since we only have to give it the Protobuf Object
  */
 export function OnProtoNet<T>(messageType: MessageTypeDecoder<T>, eventName?: string) {
-  const event = eventName ?? `pb:${messageType.name}`;
+  const event = eventName ?? `${messageType.name}`;
 
   return function actualDecorator(originalMethod: NetProtoCallback<T>, context: ClassMethodDecoratorContext) {
     if (context.private) {

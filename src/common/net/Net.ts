@@ -24,8 +24,8 @@ export class Net {
   }
 
   static onRawNet(eventName: string, cb: RawEventCallback) {
-    RegisterNetEvent(eventName);
     Net.onRaw(eventName, cb);
+    RegisterNetEvent(eventName);
   }
 }
 
