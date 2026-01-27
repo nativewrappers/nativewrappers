@@ -16,17 +16,13 @@ export type MessageTypeEncoder<T> = {
 };
 
 type ProtoCallback<Message> = (message: Message) => Promise<void> | void;
-type NetProtoCallback<Message> = (source: number, message: Message) => Promise<void> | void;
+type NetProtoCallback<Message> = (message: Message, source: number ) => Promise<void> | void;
 
 /**
  * PMA uses ts-proto to define our types, you can see that here: https://github.com/stephenh/ts-proto
  * You will have to modify the generator to add `name` or just use {@param eventName}
  *
- * We use this:
- * content = content.replace(/export const (\w+)[^=]*= \{/g, 'export const $1 = {\n  name: "$1" as const,');
- *
  * This makes it very nice to handle events since we only have to give it the Protobuf Object
- *
  */
 export function OnProto<T>(messageType: MessageTypeDecoder<T>, eventName?: string) {
   const event = eventName ?? `${messageType.name}`;
@@ -64,7 +60,7 @@ export function OnProtoNet<T>(messageType: MessageTypeDecoder<T>, eventName?: st
       Net.onRawNet(event, async (data: Uint8Array, source) => {
         try {
           const message = messageType.decode(data);
-          return await originalMethod.call(this, parseSource(source), message);
+          return await originalMethod.call(this, message, parseSource(source));
         } catch (e) {
           globalThis.printError?.("proto event", e as Error);
         }
