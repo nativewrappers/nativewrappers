@@ -1,0 +1,27 @@
+[@nativewrappers/fivem](../../../../README.md) / [redm/definitions/redm](../README.md) / N\_0x4f2d5fa23db992de
+
+# Function: N\_0x4f2d5fa23db992de()
+
+## Call Signature
+
+```ts
+function N_0x4f2d5fa23db992de(): void;
+```
+
+Defined in: [src/common-game/definitions/redm.d.ts:10488](https://github.com/nativewrappers/nativewrappers/blob/696dfbbc9d1d7665dd81166c0f1b4bee71d2b3f4/src/common-game/definitions/redm.d.ts#L10488)
+
+### Returns
+
+`void`
+
+## Call Signature
+
+```ts
+function N_0x4f2d5fa23db992de(): void;
+```
+
+Defined in: [src/redm/definitions/redm.d.ts:10488](https://github.com/nativewrappers/nativewrappers/blob/696dfbbc9d1d7665dd81166c0f1b4bee71d2b3f4/src/redm/definitions/redm.d.ts#L10488)
+
+### Returns
+
+`void`
