@@ -7,4 +7,9 @@ export class Pickup {
   get Handle(): number {
     return this.handle;
   }
+
+  get IsNetworked(): boolean {
+    // TODO: figure out how to check this for redm
+    return false
+  }
 }
