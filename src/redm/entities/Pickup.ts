@@ -10,6 +10,6 @@ export class Pickup {
 
   get IsNetworked(): boolean {
     // TODO: figure out how to check this for redm
-    return false
+    return false;
   }
 }
