@@ -34,8 +34,6 @@ jobs:
           pnpm build
 
       - name: Publish packages
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         run: |
           packages=(fivem redm server common common-game)
           for package in "${packages[@]}"; do
