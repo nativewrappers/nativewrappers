@@ -38,7 +38,7 @@ jobs:
           packages=(fivem redm server common common-game)
           for package in "${packages[@]}"; do
             if [ -f "./lib/$package/package.json" ]; then
-              pnpm publish --no-git-checks --access public "./lib/$package"
+              pnpm publish --no-git-checks --provenance --access public "./lib/$package"
             fi
           done
         env:
