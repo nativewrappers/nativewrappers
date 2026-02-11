@@ -16,7 +16,7 @@ export type MessageTypeEncoder<T> = {
 };
 
 type ProtoCallback<Message> = (message: Message) => Promise<void> | void;
-type NetProtoCallback<Message> = (message: Message, source: number ) => Promise<void> | void;
+type NetProtoCallback<Message> = (message: Message, source: number) => Promise<void> | void;
 
 /**
  * PMA uses ts-proto to define our types, you can see that here: https://github.com/stephenh/ts-proto
