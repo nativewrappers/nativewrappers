@@ -3,8 +3,6 @@ on:
   push:
     tags:
       - "*.*.*"
-permissions:
-  id-token: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -41,7 +39,8 @@ jobs:
               pnpm publish --no-git-checks --access public "./lib/$package"
             fi
           done
-        
+        env:
+          NPM_CONFIG_PROVENANCE: true
 
       - name: Push new commits
         run: |
