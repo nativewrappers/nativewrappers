@@ -1,25 +1,25 @@
-import { ClassTypes } from "@common/utils/ClassTypes";
-import { Vector3 } from "@common/utils/Vector";
-import { Tasks } from "fivem/Tasks";
-import type { DrivingStyle } from "fivem/enums/Driving";
-import type { FiringPattern } from "fivem/enums/FiringPattern";
-import { Gender } from "fivem/enums/Gender";
-import type { HelmetType } from "fivem/enums/HelmetType";
-import { RagdollType } from "fivem/enums/RagdollType";
-import { SpeechModifier } from "fivem/enums/SpeechModifier";
-import { VehicleSeat } from "fivem/enums/Vehicle";
-import type { WeaponHash } from "fivem/hashes/WeaponHash";
-import { GetEntityClassFromId } from "fivem/utils/GetEntityFromEntityIds";
-import { WeaponCollection } from "../weapon/WeaponCollection";
-import { BaseEntity } from "./BaseEntity";
-import type { Entity } from "./Entity";
-import { PedBoneCollection } from "./PedBoneCollection";
-import { Player } from "./Player";
-import { Vehicle } from "./Vehicle";
+import { ClassTypes } from '@common/utils/ClassTypes';
+import { Vector3 } from '@common/utils/Vector';
+import { Tasks } from 'fivem/Tasks';
+import type { DrivingStyle } from 'fivem/enums/Driving';
+import type { FiringPattern } from 'fivem/enums/FiringPattern';
+import { Gender } from 'fivem/enums/Gender';
+import type { HelmetType } from 'fivem/enums/HelmetType';
+import { RagdollType } from 'fivem/enums/RagdollType';
+import { SpeechModifier } from 'fivem/enums/SpeechModifier';
+import { VehicleSeat } from 'fivem/enums/Vehicle';
+import type { WeaponHash } from 'fivem/hashes/WeaponHash';
+import { GetEntityClassFromId } from 'fivem/utils/GetEntityFromEntityIds';
+import { WeaponCollection } from '../weapon/WeaponCollection';
+import { BaseEntity } from './BaseEntity';
+import type { Entity } from './Entity';
+import { PedBoneCollection } from './PedBoneCollection';
+import { Player } from './Player';
+import { Vehicle } from './Vehicle';
 
 export class Ped extends BaseEntity {
   public static exists(ped: Ped): boolean {
-    return typeof ped !== "undefined" && ped.exists();
+    return typeof ped !== 'undefined' && ped.exists();
   }
 
   public static fromHandle(handle: number): Ped | null {
@@ -37,48 +37,52 @@ export class Ped extends BaseEntity {
     return new Ped(NetworkGetEntityFromNetworkId(networkId));
   }
 
+  public static local(): Ped {
+    return new Ped(PlayerPedId());
+  }
+
   protected type = ClassTypes.Ped;
   protected bones?: PedBoneCollection;
   private weapons?: WeaponCollection;
 
   private static readonly speechModifierNames: string[] = [
-    "SPEECH_PARAMS_STANDARD",
-    "SPEECH_PARAMS_ALLOW_REPEAT",
-    "SPEECH_PARAMS_BEAT",
-    "SPEECH_PARAMS_FORCE",
-    "SPEECH_PARAMS_FORCE_FRONTEND",
-    "SPEECH_PARAMS_FORCE_NO_REPEAT_FRONTEND",
-    "SPEECH_PARAMS_FORCE_NORMAL",
-    "SPEECH_PARAMS_FORCE_NORMAL_CLEAR",
-    "SPEECH_PARAMS_FORCE_NORMAL_CRITICAL",
-    "SPEECH_PARAMS_FORCE_SHOUTED",
-    "SPEECH_PARAMS_FORCE_SHOUTED_CLEAR",
-    "SPEECH_PARAMS_FORCE_SHOUTED_CRITICAL",
-    "SPEECH_PARAMS_FORCE_PRELOAD_ONLY",
-    "SPEECH_PARAMS_MEGAPHONE",
-    "SPEECH_PARAMS_HELI",
-    "SPEECH_PARAMS_FORCE_MEGAPHONE",
-    "SPEECH_PARAMS_FORCE_HELI",
-    "SPEECH_PARAMS_INTERRUPT",
-    "SPEECH_PARAMS_INTERRUPT_SHOUTED",
-    "SPEECH_PARAMS_INTERRUPT_SHOUTED_CLEAR",
-    "SPEECH_PARAMS_INTERRUPT_SHOUTED_CRITICAL",
-    "SPEECH_PARAMS_INTERRUPT_NO_FORCE",
-    "SPEECH_PARAMS_INTERRUPT_FRONTEND",
-    "SPEECH_PARAMS_INTERRUPT_NO_FORCE_FRONTEND",
-    "SPEECH_PARAMS_ADD_BLIP",
-    "SPEECH_PARAMS_ADD_BLIP_ALLOW_REPEAT",
-    "SPEECH_PARAMS_ADD_BLIP_FORCE",
-    "SPEECH_PARAMS_ADD_BLIP_SHOUTED",
-    "SPEECH_PARAMS_ADD_BLIP_SHOUTED_FORCE",
-    "SPEECH_PARAMS_ADD_BLIP_INTERRUPT",
-    "SPEECH_PARAMS_ADD_BLIP_INTERRUPT_FORCE",
-    "SPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED",
-    "SPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CLEAR",
-    "SPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CRITICAL",
-    "SPEECH_PARAMS_SHOUTED",
-    "SPEECH_PARAMS_SHOUTED_CLEAR",
-    "SPEECH_PARAMS_SHOUTED_CRITICAL",
+    'SPEECH_PARAMS_STANDARD',
+    'SPEECH_PARAMS_ALLOW_REPEAT',
+    'SPEECH_PARAMS_BEAT',
+    'SPEECH_PARAMS_FORCE',
+    'SPEECH_PARAMS_FORCE_FRONTEND',
+    'SPEECH_PARAMS_FORCE_NO_REPEAT_FRONTEND',
+    'SPEECH_PARAMS_FORCE_NORMAL',
+    'SPEECH_PARAMS_FORCE_NORMAL_CLEAR',
+    'SPEECH_PARAMS_FORCE_NORMAL_CRITICAL',
+    'SPEECH_PARAMS_FORCE_SHOUTED',
+    'SPEECH_PARAMS_FORCE_SHOUTED_CLEAR',
+    'SPEECH_PARAMS_FORCE_SHOUTED_CRITICAL',
+    'SPEECH_PARAMS_FORCE_PRELOAD_ONLY',
+    'SPEECH_PARAMS_MEGAPHONE',
+    'SPEECH_PARAMS_HELI',
+    'SPEECH_PARAMS_FORCE_MEGAPHONE',
+    'SPEECH_PARAMS_FORCE_HELI',
+    'SPEECH_PARAMS_INTERRUPT',
+    'SPEECH_PARAMS_INTERRUPT_SHOUTED',
+    'SPEECH_PARAMS_INTERRUPT_SHOUTED_CLEAR',
+    'SPEECH_PARAMS_INTERRUPT_SHOUTED_CRITICAL',
+    'SPEECH_PARAMS_INTERRUPT_NO_FORCE',
+    'SPEECH_PARAMS_INTERRUPT_FRONTEND',
+    'SPEECH_PARAMS_INTERRUPT_NO_FORCE_FRONTEND',
+    'SPEECH_PARAMS_ADD_BLIP',
+    'SPEECH_PARAMS_ADD_BLIP_ALLOW_REPEAT',
+    'SPEECH_PARAMS_ADD_BLIP_FORCE',
+    'SPEECH_PARAMS_ADD_BLIP_SHOUTED',
+    'SPEECH_PARAMS_ADD_BLIP_SHOUTED_FORCE',
+    'SPEECH_PARAMS_ADD_BLIP_INTERRUPT',
+    'SPEECH_PARAMS_ADD_BLIP_INTERRUPT_FORCE',
+    'SPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED',
+    'SPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CLEAR',
+    'SPEECH_PARAMS_FORCE_PRELOAD_ONLY_SHOUTED_CRITICAL',
+    'SPEECH_PARAMS_SHOUTED',
+    'SPEECH_PARAMS_SHOUTED_CLEAR',
+    'SPEECH_PARAMS_SHOUTED_CRITICAL',
   ];
 
   private tasks: Tasks | undefined;
@@ -590,11 +594,11 @@ export class Ped extends BaseEntity {
 
   public playAmbientSpeed(
     speechName: string,
-    voiceName = "",
+    voiceName = '',
     modifier: SpeechModifier = SpeechModifier.Standard,
   ): void {
     if (Number(modifier) >= 0 && Number(modifier) < Ped.speechModifierNames.length) {
-      if (voiceName === "") {
+      if (voiceName === '') {
         PlayAmbientSpeech1(this.handle, speechName, Ped.speechModifierNames[Number(modifier)]);
       } else {
         PlayAmbientSpeechWithVoice(
@@ -606,7 +610,7 @@ export class Ped extends BaseEntity {
         );
       }
     } else {
-      throw new RangeError("modifier");
+      throw new RangeError('modifier');
     }
   }
 
@@ -899,7 +903,7 @@ export class Ped extends BaseEntity {
   public getHeadBlend(): [number, number, number, number, number, number, number, number, number, boolean] | null {
     const buffer = new ArrayBuffer(80);
 
-    if (!(Citizen.invokeNative("0x2746BD9D88C5C5D0", this.handle, new Float32Array(buffer)) as unknown)) {
+    if (!(Citizen.invokeNative('0x2746BD9D88C5C5D0', this.handle, new Float32Array(buffer)) as unknown)) {
       return null;
     }
 
