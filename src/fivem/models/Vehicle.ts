@@ -1,24 +1,24 @@
-import { ClassTypes } from "@common/utils/ClassTypes";
-import { Vector3 } from "@common/utils/Vector";
-import { GameConstants } from "fivem/GameConstants";
-import type { Model } from "fivem/Model";
-import type { RadioStation } from "fivem/enums/RadioStation";
+import { ClassTypes } from '@common/utils/ClassTypes';
+import { Vector3 } from '@common/utils/Vector';
+import { GameConstants } from 'fivem/GameConstants';
+import type { Model } from 'fivem/Model';
+import type { RadioStation } from 'fivem/enums/RadioStation';
 import {
   type VehicleClass,
   type VehicleLandingGearState,
   type VehicleLockStatus,
   VehicleRoofState,
   VehicleSeat,
-} from "fivem/enums/Vehicle";
-import { GetEntityClassFromId } from "fivem/utils/GetEntityFromEntityIds";
-import { BaseEntity } from "./BaseEntity";
-import type { Entity } from "./Entity";
-import { EntityBoneCollection } from "./EntityBoneCollection";
-import { Ped } from "./Ped";
-import { VehicleDoorCollection } from "./VehicleDoorCollection";
-import { VehicleModCollection } from "./VehicleModCollection";
-import { VehicleWheelCollection } from "./VehicleWheelCollection";
-import { VehicleWindowCollection } from "./VehicleWindowCollection";
+} from 'fivem/enums/Vehicle';
+import { GetEntityClassFromId } from 'fivem/utils/GetEntityFromEntityIds';
+import { BaseEntity } from './BaseEntity';
+import type { Entity } from './Entity';
+import { EntityBoneCollection } from './EntityBoneCollection';
+import { Ped } from './Ped';
+import { VehicleDoorCollection } from './VehicleDoorCollection';
+import { VehicleModCollection } from './VehicleModCollection';
+import { VehicleWheelCollection } from './VehicleWheelCollection';
+import { VehicleWindowCollection } from './VehicleWindowCollection';
 
 export class Vehicle extends BaseEntity {
   public static getModelDisplayName(vehicleModel: Model): string {
@@ -34,7 +34,7 @@ export class Vehicle extends BaseEntity {
   }
 
   public static exists(vehicle: Vehicle): boolean {
-    return typeof vehicle !== "undefined" && vehicle.exists();
+    return typeof vehicle !== 'undefined' && vehicle.exists();
   }
 
   public static fromHandle(handle: number): Vehicle | null {
@@ -270,7 +270,7 @@ export class Vehicle extends BaseEntity {
     SetVehicleHasMutedSirens(this.handle, value);
   }
 
-  public soundHorn(duration: number, mode = GetHashKey("HELDDOWN")): void {
+  public soundHorn(duration: number, mode = GetHashKey('HELDDOWN')): void {
     StartVehicleHorn(this.handle, duration, mode, false);
   }
 
@@ -613,6 +613,10 @@ export class Vehicle extends BaseEntity {
     return this._windows;
   }
 
+  public get Type(): string {
+    return GetVehicleType(this.handle);
+  }
+
   public extraExists(extra: number): boolean {
     return DoesExtraExist(this.handle, extra);
   }
@@ -680,7 +684,7 @@ export class Vehicle extends BaseEntity {
   }
 
   public get HasBombBay(): boolean {
-    return this.Bones ? this.Bones.hasBone("door_hatch_1") && this.Bones.hasBone("door_hatch_r") : false;
+    return this.Bones ? this.Bones.hasBone('door_hatch_1') && this.Bones.hasBone('door_hatch_r') : false;
   }
 
   public openBombBay(): void {
@@ -741,23 +745,23 @@ export class Vehicle extends BaseEntity {
   }
 
   public getHandlingFloat(fieldName: string): number {
-    return GetVehicleHandlingFloat(this.handle, "CHandlingData", fieldName);
+    return GetVehicleHandlingFloat(this.handle, 'CHandlingData', fieldName);
   }
 
   public setHandlingFloat(fieldName: string, value: number): void {
-    SetVehicleHandlingFloat(this.handle, "CHandlingData", fieldName, value);
+    SetVehicleHandlingFloat(this.handle, 'CHandlingData', fieldName, value);
   }
 
   public getHandlingInt(fieldName: string): number {
-    return GetVehicleHandlingInt(this.handle, "CHandlingData", fieldName);
+    return GetVehicleHandlingInt(this.handle, 'CHandlingData', fieldName);
   }
 
   public setHandlingInt(fieldName: string, value: number): void {
-    SetVehicleHandlingInt(this.handle, "CHandlingData", fieldName, Math.ceil(value));
+    SetVehicleHandlingInt(this.handle, 'CHandlingData', fieldName, Math.ceil(value));
   }
 
   public getHandlingVector(fieldName: string): Vector3 {
-    return Vector3.fromArray(GetVehicleHandlingVector(this.handle, "CHandlingData", fieldName));
+    return Vector3.fromArray(GetVehicleHandlingVector(this.handle, 'CHandlingData', fieldName));
   }
 
   public getEntityAttachedTo(): Entity {
