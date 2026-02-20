@@ -39,6 +39,13 @@ export class NetServer extends Net {
     NetServer.emitRawNet(message.name, source, encoded);
   }
 
+  static emitProtoToPlayers<T>(sources: number[], message: MessageTypeEncoder<T>) {
+    const encoded = message.encode(message as T);
+    for (const source of sources) {
+      NetServer.emitRawNet(message.name, source, encoded);
+    }
+  }
+
   static emitRawNet(eventName: string, source: number, data: Uint8Array) {
     // @ts-expect-error: Uint8Array is handled properly for TriggerClientEventInternal, so this is safe.
     TriggerClientEventInternal(eventName, source, data, data.byteLength);
