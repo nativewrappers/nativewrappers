@@ -1,0 +1,36 @@
+{
+  "name": "@nativewrappers/fivem",
+  "description": "Native wrappers and utilities for use with FiveM.",
+  "contributors": [
+    "Remco Troost <d0p3t>",
+    "Dillon Skaggs <AvarianKnight>",
+    "Linden <thelindat>"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "version": "0.0.158",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nativewrappers/nativewrappers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nativewrappers/nativewrappers/issues"
+  },
+  "homepage": "https://fivemjs.avarian.dev/",
+  "keywords": [
+    "fivem",
+    "wrapper",
+    "javascript",
+    "typescript",
+    "citizenfx"
+  ],
+  "files": [
+    "./**/*.js",
+    "./**/*.d.ts"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": "./index.js",
+    "./*": "./*"
+  }
+}

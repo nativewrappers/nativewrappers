@@ -1,45 +1,227 @@
-<h1 align="center">Monorepo for a FiveM server/client wrapper</h1>
+# @nativewrappers/fivem
 
-<p align="center">
-	<i>🔥 A Javascript/Typescript package for FiveM resource development 🎮</i>
-  <br>
-  <small>This project is in no way affiliated with FiveM or the Cfx.re Collective.</small>
-  </br></br>
-  <a href="https://github.com/nativewrappers/nativewrappers/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat" alt="License: MIT">
-  </a>
-  <a href="https://www.npmjs.com/package/@nativewrappers/fivem">
-    <img src="https://img.shields.io/npm/v/@nativewrappers/fivem?style=flat" alt="npm version">
-  </a>
-  <a href="https://www.npmjs.com/package/@nativewrappers/fivem">
-    <img src="https://img.shields.io/npm/dm/@nativewrappers/fivem?style=flat">
-  </a>
-  <a href="https://github.com/nativewrappers/nativewrappers/actions/workflows/config.yml">
-    <img src="https://github.com/nativewrappers/nativewrappers/actions/workflows/config.yml/badge.svg" alt="Workflow Status">
-  </a>
-  <a href="https://github.com/nativewrappers/nativewrappers/commits/master">
-    <img src="https://img.shields.io/github/last-commit/nativewrappers/fivem.svg?style=flat" alt="Last commit">
-  </a>
-</p>
+## Modules
 
-<h3 align="center">This project is currently iterating rapidly, there will be breaking changes.</h3>
-
-<p align="center">
-	<h2 align="center"><a href="https://github.com/nativewrappers/nativewrappers/tree/main/docs">Documentation</a></h2>
-	<!-- <a href="https://forum.fivem.net/t/fivem-js-v1-3-2-javascript-typescript-wrapper-now-with-menu-class-nativeui/268640">Forum</a> -->
-</p>
-
-## Features
-
-- No runtime dependencies
-- Entity management through class objects (i.e. `Vehicle` and `Ped` entities)
-- Server and Client side variants on wrapper
-
-
-## Download & Install
-```
-pnpm add @nativewrappers/redm # for redm,
-pnpm add @nativewrappers/fivem # for fivem
-pnpm add @nativewrappers/common # for any, should be game agnostic, provides Vector3, decors, kvps, helper functions, etc
-pnpm add @nativewrappers/server # for server
-```
+| Module | Description |
+| ------ | ------ |
+| [fivem/Audio](fivem/Audio/README.md) | - |
+| [fivem/Blip](fivem/Blip/README.md) | - |
+| [fivem/Camera](fivem/Camera/README.md) | - |
+| [fivem/cfx](fivem/cfx/README.md) | - |
+| [fivem/cfx/StateBagChangeHandler](fivem/cfx/StateBagChangeHandler/README.md) | - |
+| [fivem/Checkpoint](fivem/Checkpoint/README.md) | - |
+| [fivem/enums/Alignment](fivem/enums/Alignment/README.md) | - |
+| [fivem/enums/AnimationFlags](fivem/enums/AnimationFlags/README.md) | - |
+| [fivem/enums/AudioFlag](fivem/enums/AudioFlag/README.md) | - |
+| [fivem/enums/BadgeStyle](fivem/enums/BadgeStyle/README.md) | - |
+| [fivem/enums/Blip](fivem/enums/Blip/README.md) | - |
+| [fivem/enums/Bone](fivem/enums/Bone/README.md) | - |
+| [fivem/enums/CameraShake](fivem/enums/CameraShake/README.md) | - |
+| [fivem/enums/CameraTypes](fivem/enums/CameraTypes/README.md) | - |
+| [fivem/enums/CheckboxStyle](fivem/enums/CheckboxStyle/README.md) | - |
+| [fivem/enums/Checkpoint](fivem/enums/Checkpoint/README.md) | - |
+| [fivem/enums/CloudHat](fivem/enums/CloudHat/README.md) | - |
+| [fivem/enums/Control](fivem/enums/Control/README.md) | - |
+| [fivem/enums/CursorSprite](fivem/enums/CursorSprite/README.md) | - |
+| [fivem/enums/Driving](fivem/enums/Driving/README.md) | - |
+| [fivem/enums/ExplosionType](fivem/enums/ExplosionType/README.md) | - |
+| [fivem/enums/FiringPattern](fivem/enums/FiringPattern/README.md) | - |
+| [fivem/enums/Font](fivem/enums/Font/README.md) | - |
+| [fivem/enums/ForceType](fivem/enums/ForceType/README.md) | - |
+| [fivem/enums/Gender](fivem/enums/Gender/README.md) | - |
+| [fivem/enums/HelmetType](fivem/enums/HelmetType/README.md) | - |
+| [fivem/enums/HudColor](fivem/enums/HudColor/README.md) | - |
+| [fivem/enums/HudComponent](fivem/enums/HudComponent/README.md) | - |
+| [fivem/enums/InputMode](fivem/enums/InputMode/README.md) | - |
+| [fivem/enums/InvertAxis](fivem/enums/InvertAxis/README.md) | - |
+| [fivem/enums/Language](fivem/enums/Language/README.md) | - |
+| [fivem/enums/LeaveVehicleFlags](fivem/enums/LeaveVehicleFlags/README.md) | - |
+| [fivem/enums/LoadingSpinnerType](fivem/enums/LoadingSpinnerType/README.md) | - |
+| [fivem/enums/MarkerType](fivem/enums/MarkerType/README.md) | - |
+| [fivem/enums/MenuAlignment](fivem/enums/MenuAlignment/README.md) | - |
+| [fivem/enums/NotificationType](fivem/enums/NotificationType/README.md) | - |
+| [fivem/enums/Parachute](fivem/enums/Parachute/README.md) | - |
+| [fivem/enums/PickupType](fivem/enums/PickupType/README.md) | - |
+| [fivem/enums/RadioStation](fivem/enums/RadioStation/README.md) | - |
+| [fivem/enums/RagdollType](fivem/enums/RagdollType/README.md) | - |
+| [fivem/enums/RaycastEnums](fivem/enums/RaycastEnums/README.md) | - |
+| [fivem/enums/Relationship](fivem/enums/Relationship/README.md) | - |
+| [fivem/enums/RopeType](fivem/enums/RopeType/README.md) | - |
+| [fivem/enums/ScreenEffect](fivem/enums/ScreenEffect/README.md) | - |
+| [fivem/enums/SpeechModifier](fivem/enums/SpeechModifier/README.md) | - |
+| [fivem/enums/SyncedSceneFlags](fivem/enums/SyncedSceneFlags/README.md) | - |
+| [fivem/enums/Vehicle](fivem/enums/Vehicle/README.md) | - |
+| [fivem/enums/Weather](fivem/enums/Weather/README.md) | - |
+| [fivem/enums/ZoneID](fivem/enums/ZoneID/README.md) | - |
+| [fivem/Game](fivem/Game/README.md) | - |
+| [fivem/GameConstants](fivem/GameConstants/README.md) | - |
+| [fivem/GameplayCamera](fivem/GameplayCamera/README.md) | - |
+| [fivem/hashes/MaterialHash](fivem/hashes/MaterialHash/README.md) | - |
+| [fivem/hashes/PedHash](fivem/hashes/PedHash/README.md) | - |
+| [fivem/hashes/VehicleHash](fivem/hashes/VehicleHash/README.md) | - |
+| [fivem/hashes/WeaponHash](fivem/hashes/WeaponHash/README.md) | - |
+| [fivem/hashes/WeatherTypeHash](fivem/hashes/WeatherTypeHash/README.md) | - |
+| [fivem/interfaces/Dimensions](fivem/interfaces/Dimensions/README.md) | - |
+| [fivem/Model](fivem/Model/README.md) | - |
+| [fivem/models](fivem/models/README.md) | - |
+| [fivem/models/BaseEntity](fivem/models/BaseEntity/README.md) | - |
+| [fivem/models/BaseEntityBone](fivem/models/BaseEntityBone/README.md) | - |
+| [fivem/models/BaseEntityBoneCollection](fivem/models/BaseEntityBoneCollection/README.md) | - |
+| [fivem/models/Entity](fivem/models/Entity/README.md) | - |
+| [fivem/models/EntityBone](fivem/models/EntityBone/README.md) | - |
+| [fivem/models/EntityBoneCollection](fivem/models/EntityBoneCollection/README.md) | - |
+| [fivem/models/Ped](fivem/models/Ped/README.md) | - |
+| [fivem/models/PedBone](fivem/models/PedBone/README.md) | - |
+| [fivem/models/PedBoneCollection](fivem/models/PedBoneCollection/README.md) | - |
+| [fivem/models/Player](fivem/models/Player/README.md) | - |
+| [fivem/models/Prop](fivem/models/Prop/README.md) | - |
+| [fivem/models/Vehicle](fivem/models/Vehicle/README.md) | - |
+| [fivem/models/VehicleDoor](fivem/models/VehicleDoor/README.md) | - |
+| [fivem/models/VehicleDoorCollection](fivem/models/VehicleDoorCollection/README.md) | - |
+| [fivem/models/VehicleMod](fivem/models/VehicleMod/README.md) | - |
+| [fivem/models/VehicleModCollection](fivem/models/VehicleModCollection/README.md) | - |
+| [fivem/models/VehicleToggleMod](fivem/models/VehicleToggleMod/README.md) | - |
+| [fivem/models/VehicleWheel](fivem/models/VehicleWheel/README.md) | - |
+| [fivem/models/VehicleWheelCollection](fivem/models/VehicleWheelCollection/README.md) | - |
+| [fivem/models/VehicleWindow](fivem/models/VehicleWindow/README.md) | - |
+| [fivem/models/VehicleWindowCollection](fivem/models/VehicleWindowCollection/README.md) | - |
+| [fivem/NetworkedScene](fivem/NetworkedScene/README.md) | - |
+| [fivem/ParticleEffect](fivem/ParticleEffect/README.md) | - |
+| [fivem/ParticleEffectAsset](fivem/ParticleEffectAsset/README.md) | - |
+| [fivem/Pickup](fivem/Pickup/README.md) | - |
+| [fivem/Raycast](fivem/Raycast/README.md) | - |
+| [fivem/RelationshipGroup](fivem/RelationshipGroup/README.md) | - |
+| [fivem/Rope](fivem/Rope/README.md) | - |
+| [fivem/Tasks](fivem/Tasks/README.md) | - |
+| [fivem/TaskSequence](fivem/TaskSequence/README.md) | - |
+| [fivem/ui/Container](fivem/ui/Container/README.md) | - |
+| [fivem/ui/Effects](fivem/ui/Effects/README.md) | - |
+| [fivem/ui/Fading](fivem/ui/Fading/README.md) | - |
+| [fivem/ui/Hud](fivem/ui/Hud/README.md) | - |
+| [fivem/ui/InstructionalButtons](fivem/ui/InstructionalButtons/README.md) | - |
+| [fivem/ui/interfaces/IButton](fivem/ui/interfaces/IButton/README.md) | - |
+| [fivem/ui/interfaces/IDrawable](fivem/ui/interfaces/IDrawable/README.md) | - |
+| [fivem/ui/LoadingPrompt](fivem/ui/LoadingPrompt/README.md) | - |
+| [fivem/ui/menu/items/panels/AbstractUIMenuPanel](fivem/ui/menu/items/panels/AbstractUIMenuPanel/README.md) | - |
+| [fivem/ui/menu/items/panels/UIMenuColorPanel](fivem/ui/menu/items/panels/UIMenuColorPanel/README.md) | - |
+| [fivem/ui/menu/items/panels/UIMenuGridPanel](fivem/ui/menu/items/panels/UIMenuGridPanel/README.md) | - |
+| [fivem/ui/menu/items/panels/UIMenuPercentagePanel](fivem/ui/menu/items/panels/UIMenuPercentagePanel/README.md) | - |
+| [fivem/ui/menu/items/panels/UIMenuStatisticsPanel](fivem/ui/menu/items/panels/UIMenuStatisticsPanel/README.md) | - |
+| [fivem/ui/menu/items/panels/UIMenuStatisticsPanelItem](fivem/ui/menu/items/panels/UIMenuStatisticsPanelItem/README.md) | - |
+| [fivem/ui/menu/items/UIMenuCheckboxItem](fivem/ui/menu/items/UIMenuCheckboxItem/README.md) | - |
+| [fivem/ui/menu/items/UIMenuItem](fivem/ui/menu/items/UIMenuItem/README.md) | - |
+| [fivem/ui/menu/items/UIMenuListItem](fivem/ui/menu/items/UIMenuListItem/README.md) | - |
+| [fivem/ui/menu/items/UIMenuSeparatorItem](fivem/ui/menu/items/UIMenuSeparatorItem/README.md) | - |
+| [fivem/ui/menu/items/UIMenuSliderItem](fivem/ui/menu/items/UIMenuSliderItem/README.md) | - |
+| [fivem/ui/menu/Menu](fivem/ui/menu/Menu/README.md) | - |
+| [fivem/ui/menu/MenuControl](fivem/ui/menu/MenuControl/README.md) | - |
+| [fivem/ui/menu/MenuControls](fivem/ui/menu/MenuControls/README.md) | - |
+| [fivem/ui/menu/MenuSettings](fivem/ui/menu/MenuSettings/README.md) | - |
+| [fivem/ui/menu/modules/ListItem](fivem/ui/menu/modules/ListItem/README.md) | - |
+| [fivem/ui/Notification](fivem/ui/Notification/README.md) | - |
+| [fivem/ui/Rectangle](fivem/ui/Rectangle/README.md) | - |
+| [fivem/ui/Scaleform](fivem/ui/Scaleform/README.md) | - |
+| [fivem/ui/Screen](fivem/ui/Screen/README.md) | - |
+| [fivem/ui/Sprite](fivem/ui/Sprite/README.md) | - |
+| [fivem/ui/Text](fivem/ui/Text/README.md) | - |
+| [fivem/ui/Timerbar](fivem/ui/Timerbar/README.md) | - |
+| [fivem/utils/Animations](fivem/utils/Animations/README.md) | - |
+| [fivem/utils/Crypto](fivem/utils/Crypto/README.md) | - |
+| [fivem/utils/GetEntityFromEntityIds](fivem/utils/GetEntityFromEntityIds/README.md) | - |
+| [fivem/utils/LiteEvent](fivem/utils/LiteEvent/README.md) | - |
+| [fivem/utils/Maths](fivem/utils/Maths/README.md) | - |
+| [fivem/utils/Point](fivem/utils/Point/README.md) | - |
+| [fivem/utils/Size](fivem/utils/Size/README.md) | - |
+| [fivem/utils/String](fivem/utils/String/README.md) | - |
+| [fivem/weapon/DlcWeaponData](fivem/weapon/DlcWeaponData/README.md) | - |
+| [fivem/weapon/Mk2WeaponHash](fivem/weapon/Mk2WeaponHash/README.md) | - |
+| [fivem/weapon/Weapon](fivem/weapon/Weapon/README.md) | - |
+| [fivem/weapon/WeaponAsset](fivem/weapon/WeaponAsset/README.md) | - |
+| [fivem/weapon/WeaponCollection](fivem/weapon/WeaponCollection/README.md) | - |
+| [fivem/weapon/WeaponDisplayNameByHash](fivem/weapon/WeaponDisplayNameByHash/README.md) | - |
+| [fivem/weapon/WeaponGroup](fivem/weapon/WeaponGroup/README.md) | - |
+| [fivem/weapon/WeaponHudStats](fivem/weapon/WeaponHudStats/README.md) | - |
+| [fivem/weapon/WeaponLivery](fivem/weapon/WeaponLivery/README.md) | - |
+| [fivem/weapon/WeaponLiveryColor](fivem/weapon/WeaponLiveryColor/README.md) | - |
+| [fivem/weapon/WeaponTint](fivem/weapon/WeaponTint/README.md) | - |
+| [fivem/weaponComponent/ComponentAttachmentPoint](fivem/weaponComponent/ComponentAttachmentPoint/README.md) | - |
+| [fivem/weaponComponent/ComponentAttachmentPointByHash](fivem/weaponComponent/ComponentAttachmentPointByHash/README.md) | - |
+| [fivem/weaponComponent/ComponentDisplayNameByHash](fivem/weaponComponent/ComponentDisplayNameByHash/README.md) | - |
+| [fivem/weaponComponent/DlcWeaponComponentData](fivem/weaponComponent/DlcWeaponComponentData/README.md) | - |
+| [fivem/weaponComponent/InvalidWeaponComponent](fivem/weaponComponent/InvalidWeaponComponent/README.md) | - |
+| [fivem/weaponComponent/WeaponComponent](fivem/weaponComponent/WeaponComponent/README.md) | - |
+| [fivem/weaponComponent/WeaponComponentCollection](fivem/weaponComponent/WeaponComponentCollection/README.md) | - |
+| [fivem/weaponComponent/WeaponComponentHash](fivem/weaponComponent/WeaponComponentHash/README.md) | - |
+| [fivem/weaponComponent/WeaponComponentHashesByWeaponHash](fivem/weaponComponent/WeaponComponentHashesByWeaponHash/README.md) | - |
+| [fivem/weaponComponent/WeaponComponentHudStats](fivem/weaponComponent/WeaponComponentHudStats/README.md) | - |
+| [fivem/World](fivem/World/README.md) | - |
+| [fivem/world/getGamePool](fivem/world/getGamePool/README.md) | - |
+| [redm/Ammo](redm/Ammo/README.md) | - |
+| [redm/Attribute](redm/Attribute/README.md) | - |
+| [redm/BufferedClass](redm/BufferedClass/README.md) | - |
+| [redm/Controls](redm/Controls/README.md) | - |
+| [redm/definitions](redm/definitions/README.md) | - |
+| [redm/definitions/Citizen](redm/definitions/Citizen/README.md) | - |
+| [redm/definitions/redm](redm/definitions/redm/README.md) | - |
+| [redm/entities/BaseEntity](redm/entities/BaseEntity/README.md) | - |
+| [redm/entities/bones/PedBoneCollection](redm/entities/bones/PedBoneCollection/README.md) | - |
+| [redm/entities/Entity](redm/entities/Entity/README.md) | - |
+| [redm/entities/HorsePeltEntries](redm/entities/HorsePeltEntries/README.md) | - |
+| [redm/entities/Ped](redm/entities/Ped/README.md) | - |
+| [redm/entities/Pickup](redm/entities/Pickup/README.md) | - |
+| [redm/entities/Player](redm/entities/Player/README.md) | - |
+| [redm/entities/Prop](redm/entities/Prop/README.md) | - |
+| [redm/entities/Vehicle](redm/entities/Vehicle/README.md) | - |
+| [redm/enums/AnimationFlags](redm/enums/AnimationFlags/README.md) | - |
+| [redm/enums/Attributes](redm/enums/Attributes/README.md) | - |
+| [redm/enums/Driving](redm/enums/Driving/README.md) | - |
+| [redm/enums/EnterExitFlags](redm/enums/EnterExitFlags/README.md) | - |
+| [redm/enums/Entity](redm/enums/Entity/README.md) | - |
+| [redm/enums/FiringPatterns](redm/enums/FiringPatterns/README.md) | - |
+| [redm/enums/Keys](redm/enums/Keys/README.md) | - |
+| [redm/enums/Ped](redm/enums/Ped/README.md) | - |
+| [redm/enums/PedBones](redm/enums/PedBones/README.md) | - |
+| [redm/enums/RawKeys](redm/enums/RawKeys/README.md) | - |
+| [redm/enums/Relationship](redm/enums/Relationship/README.md) | - |
+| [redm/enums/VehicleSeat](redm/enums/VehicleSeat/README.md) | - |
+| [redm/enums/WeaponAttachPoints](redm/enums/WeaponAttachPoints/README.md) | - |
+| [redm/Game](redm/Game/README.md) | - |
+| [redm/GameConstants](redm/GameConstants/README.md) | - |
+| [redm/interfaces/Dimensions](redm/interfaces/Dimensions/README.md) | - |
+| [redm/inventory/Inventory](redm/inventory/Inventory/README.md) | - |
+| [redm/inventory/InventoryGUID](redm/inventory/InventoryGUID/README.md) | - |
+| [redm/inventory/InventoryTypes](redm/inventory/InventoryTypes/README.md) | - |
+| [redm/Model](redm/Model/README.md) | - |
+| [redm/models/AmmoModel](redm/models/AmmoModel/README.md) | - |
+| [redm/models/WeaponModel](redm/models/WeaponModel/README.md) | - |
+| [redm/RawControls](redm/RawControls/README.md) | - |
+| [redm/RawKeymaps](redm/RawKeymaps/README.md) | - |
+| [redm/RelationshipGroup](redm/RelationshipGroup/README.md) | - |
+| [redm/Task](redm/Task/README.md) | - |
+| [redm/utils/Animations](redm/utils/Animations/README.md) | - |
+| [redm/utils/Native](redm/utils/Native/README.md) | - |
+| [redm/Volume](redm/Volume/README.md) | - |
+| [redm/Weapons](redm/Weapons/README.md) | - |
+| [redm/world/createDraftVehicle](redm/world/createDraftVehicle/README.md) | - |
+| [redm/world/createPed](redm/world/createPed/README.md) | - |
+| [redm/world/createProp](redm/world/createProp/README.md) | - |
+| [redm/world/createVehicle](redm/world/createVehicle/README.md) | - |
+| [redm/world/getGamePool](redm/world/getGamePool/README.md) | - |
+| [server/cfx](server/cfx/README.md) | - |
+| [server/cfx/StateBagChangeHandler](server/cfx/StateBagChangeHandler/README.md) | - |
+| [server/entities/BaseEntity](server/entities/BaseEntity/README.md) | - |
+| [server/entities/Entity](server/entities/Entity/README.md) | - |
+| [server/entities/Ped](server/entities/Ped/README.md) | - |
+| [server/entities/Player](server/entities/Player/README.md) | - |
+| [server/entities/Prop](server/entities/Prop/README.md) | - |
+| [server/entities/Vehicle](server/entities/Vehicle/README.md) | - |
+| [server/enum/eEntityType](server/enum/eEntityType/README.md) | - |
+| [server/enum/OrphanMode](server/enum/OrphanMode/README.md) | - |
+| [server/enum/PopulationType](server/enum/PopulationType/README.md) | - |
+| [server/enum/VehicleLockStatus](server/enum/VehicleLockStatus/README.md) | - |
+| [server/enum/VehicleType](server/enum/VehicleType/README.md) | - |
+| [server/Game](server/Game/README.md) | - |
+| [server/type/Anticheat](server/type/Anticheat/README.md) | - |
+| [server/type/Hash](server/type/Hash/README.md) | - |
+| [server/utils/waitForEntityToExist](server/utils/waitForEntityToExist/README.md) | - |
+| [Used for showing when a function can throw an error if certain conditions are hit](Used-for-showing-when-a-function-can-throw-an-error-if-certain-conditions-are-hit/README.md) | - |
