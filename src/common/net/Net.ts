@@ -4,6 +4,7 @@ type EventCallback = (...args: any[]) => void;
 type RawEventCallback = (data: Uint8Array, source: `internal-net:${number}` | `net:${number}`) => void;
 
 declare function RegisterNetEvent(eventName: string): void;
+declare function msgpack_pack(...args : any[]): any; // actuall yreturns a "buffer line" Uint8Array.
 
 export class Net {
   static emit(eventName: string, ...args: any[]) {
@@ -39,10 +40,22 @@ export class NetServer extends Net {
     NetServer.emitRawNet(message.name, source, encoded);
   }
 
-  static emitProtoToPlayers<T>(sources: number[], message: MessageTypeEncoder<T>) {
+  static broadcastProto<T>(sources: Iterable<number>, message: MessageTypeEncoder<T>) {
     const encoded = message.encode(message as T);
+    NetServer.broadcastRaw(sources, message.name, encoded);
+  }
+
+  static broadcast(sources: Iterable<number>, eventName: string, ...args: any[]) {
+    const packed = msgpack_pack(...args);
+
     for (const source of sources) {
-      NetServer.emitRawNet(message.name, source, encoded);
+      TriggerClientEventInternal(eventName, source as any, packed, packed.length);
+    }
+  }
+
+  static broadcastRaw(sources: Iterable<number>, eventName: string, data: Uint8Array) {
+    for (const source of sources) {
+      NetServer.emitRawNet(eventName, source, data);
     }
   }
 
