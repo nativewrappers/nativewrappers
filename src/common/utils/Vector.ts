@@ -6,7 +6,6 @@ import { ClassTypes } from "./ClassTypes";
 const EXT_VECTOR2 = 20;
 const EXT_VECTOR3 = 21;
 const EXT_VECTOR4 = 22;
-const size = Symbol("size");
 
 /**
  * Represents a 2-dimensional vector.
@@ -415,7 +414,7 @@ abstract class Vector {
   }
 
   public type: unknown;
-  public [size] = 2;
+  public vec_size = 2;
   public x = 0;
   public y = 0;
   public z: number | undefined;
@@ -450,7 +449,7 @@ abstract class Vector {
   }
 
   get size() {
-    return this[size];
+    return this.vec_size;
   }
 
   public toString() {
@@ -617,7 +616,7 @@ export class Vector2 extends Vector {
   // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
   // TO EXIST, CHANGING IT WILL BREAK STUFF
   readonly type = ClassTypes.Vector2;
-  readonly [size]: number = 2;
+  readonly vec_size: number = 2;
 
   public static readonly Zero: Vector2 = new Vector2(0, 0);
 
@@ -650,7 +649,7 @@ export class Vector3 extends Vector implements Vec3 {
   // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
   // TO EXIST, CHANGING IT WILL BREAK STUFF
   readonly type = ClassTypes.Vector3;
-  readonly [size]: number = 3;
+  readonly vec_size: number = 3;
   public z = 0;
 
   public static readonly Zero: Vector3 = new Vector3(0, 0, 0);
@@ -733,7 +732,7 @@ export class Vector4 extends Vector {
   // DO NOT USE, ONLY EXPOSED BECAUSE TS IS TRASH, THIS TYPE IS NOT GUARANTEED
   // TO EXIST, CHANGING IT WILL BREAK STUFF
   readonly type = ClassTypes.Vector4;
-  readonly [size]: number = 4;
+  readonly vec_size: number = 4;
   public z = 0;
   public w = 0;
 
