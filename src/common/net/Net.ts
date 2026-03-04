@@ -4,7 +4,7 @@ type EventCallback = (...args: any[]) => void;
 type RawEventCallback = (data: Uint8Array, source: `internal-net:${number}` | `net:${number}`) => void;
 
 declare function RegisterNetEvent(eventName: string): void;
-declare function msgpack_pack(...args : any[]): any; // actuall yreturns a "buffer line" Uint8Array.
+declare function msgpack_pack(...args: any[]): any; // actuall yreturns a "buffer line" Uint8Array.
 
 export class Net {
   static emit(eventName: string, ...args: any[]) {

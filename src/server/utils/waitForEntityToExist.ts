@@ -25,5 +25,3 @@ export async function waitForEntityToExist(netId: number, timeoutMs = 1000): Pro
 
   return null;
 }
-
-
