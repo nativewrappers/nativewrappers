@@ -1,0 +1,36 @@
+import { Color } from "../../../../common/utils/Color";
+import { Sprite } from "../../../../ui/Sprite";
+import { AbstractUIMenuPanel } from "./AbstractUIMenuPanel";
+export declare class UIMenuColorPanel extends AbstractUIMenuPanel {
+    protected readonly background: Sprite;
+    private _title;
+    private _text;
+    private _colors;
+    private _bar;
+    private _lastColor;
+    private readonly _leftArrow;
+    private readonly _rightArrow;
+    private readonly _selectedRectangle;
+    private _min;
+    private _max;
+    private _total;
+    private _index;
+    constructor(title: string, colors: Color[]);
+    get Title(): string;
+    set Title(value: string);
+    get Colors(): Color[];
+    set Colors(value: Color[]);
+    get Color(): Color;
+    set Color(value: Color);
+    get Index(): number;
+    set Index(value: number);
+    updateParentItem(): void;
+    setVerticalPosition(y: number): void;
+    draw(): void;
+    private _refreshIndex;
+    private _updateSelection;
+    private _updateText;
+    private _goLeft;
+    private _goRight;
+    private _processControls;
+}
