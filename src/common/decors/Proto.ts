@@ -7,12 +7,12 @@ function parseSource(source: string): number {
 
 export type MessageTypeDecoder<T> = {
   decode: (input: Uint8Array) => T;
-  name: string;
+  __proto_name__: string;
 };
 
 export type MessageTypeEncoder<T> = {
   encode: (message: T) => any;
-  name: string;
+  __proto_name__: string;
 };
 
 type ProtoCallback<Message> = (message: Message) => Promise<void> | void;
@@ -25,7 +25,7 @@ type NetProtoCallback<Message> = (message: Message, source: number) => Promise<v
  * This makes it very nice to handle events since we only have to give it the Protobuf Object
  */
 export function OnProto<T>(messageType: MessageTypeDecoder<T>, eventName?: string) {
-  const event = eventName ?? `${messageType.name}`;
+  const event = eventName ?? `${messageType.__proto_name__}`;
 
   return function actualDecorator(originalMethod: ProtoCallback<T>, context: ClassMethodDecoratorContext) {
     if (context.private) {
@@ -49,7 +49,7 @@ export function OnProto<T>(messageType: MessageTypeDecoder<T>, eventName?: strin
  * This makes it very nice to handle events since we only have to give it the Protobuf Object
  */
 export function OnProtoNet<T>(messageType: MessageTypeDecoder<T>, eventName?: string) {
-  const event = eventName ?? `${messageType.name}`;
+  const event = eventName ?? `${messageType.__proto_name__}`;
 
   return function actualDecorator(originalMethod: NetProtoCallback<T>, context: ClassMethodDecoratorContext) {
     if (context.private) {

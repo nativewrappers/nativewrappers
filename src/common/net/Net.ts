@@ -37,12 +37,12 @@ export class NetServer extends Net {
 
   static emitProto<T>(source: number, message: MessageTypeEncoder<T>) {
     const encoded = message.encode(message as T);
-    NetServer.emitRawNet(message.name, source, encoded);
+    NetServer.emitRawNet(message.__proto_name__, source, encoded);
   }
 
   static broadcastProto<T>(sources: Iterable<number>, message: MessageTypeEncoder<T>) {
     const encoded = message.encode(message as T);
-    NetServer.broadcastRaw(sources, message.name, encoded);
+    NetServer.broadcastRaw(sources, message.__proto_name__, encoded);
   }
 
   static broadcast(sources: Iterable<number>, eventName: string, ...args: any[]) {
@@ -71,7 +71,7 @@ export class NetClient extends Net {
   }
   static emitProto<T>(message: MessageTypeEncoder<T>) {
     const encoded = message.encode(message as T);
-    NetClient.emitRawNet(message.name, encoded);
+    NetClient.emitRawNet(message.__proto_name__, encoded);
   }
   static emitRawNet(eventName: string, data: Uint8Array) {
     // @ts-expect-error: Uint8Array is handled properly for TriggerClientEventInternal, so this is safe.
