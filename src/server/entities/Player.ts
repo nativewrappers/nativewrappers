@@ -122,6 +122,15 @@ export class Player {
     return GetPlayerRoutingBucket(this.Src);
   }
 
+  /**
+   * Sets the players routing bucket to {@see routingBucket} and emits a `nw:updateRoutingBucket` event
+   * so other server scripts are able to react to it
+   */
+  public set RoutingBucket(routingBucket: number) {
+    SetPlayerRoutingBucket(this.Handle, routingBucket);
+    emit("nw:updateRoutingBucket", source, routingBucket);
+  }
+
   public get Team(): number {
     return GetPlayerTeam(this.Src);
   }
