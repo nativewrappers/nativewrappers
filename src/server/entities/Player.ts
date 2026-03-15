@@ -123,12 +123,12 @@ export class Player {
   }
 
   /**
-   * Sets the players routing bucket to {@see routingBucket} and emits a `nw:updateRoutingBucket` event
-   * so other server scripts are able to react to it
+   * Sets the players routing bucket to {@see routingBucket}
+   * You can use onPlayerBucketChange to listen for routing bucket changes
+   * {@link https://github.com/citizenfx/fivem/blob/cfed16afb4ba2d920cfd31adb0c27d758988aac3/code/components/citizen-server-impl/src/state/ServerGameState_Scripting.cpp#L1675C1-L1686C25}
    */
   public set RoutingBucket(routingBucket: number) {
     SetPlayerRoutingBucket(this.Handle, routingBucket);
-    emit("nw:updateRoutingBucket", source, routingBucket);
   }
 
   public get Team(): number {
