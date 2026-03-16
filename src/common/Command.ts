@@ -144,7 +144,7 @@ registerParameterType("string", (arg) => {
       }
 
       if (GetPlayerFromServerId(target) === -1) {
-        throw new Error(`player with server id ${target} didn't exist`);
+        return undefined;
       }
 
       return target;
@@ -164,7 +164,7 @@ registerParameterType("string", (arg) => {
       }
 
       if (!DoesPlayerExist(target as unknown as string)) {
-        throw new Error(`player at ${target} didn't exist`);
+        return undefined;
       }
 
       return target;
