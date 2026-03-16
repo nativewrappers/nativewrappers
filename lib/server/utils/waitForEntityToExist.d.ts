@@ -1,0 +1,12 @@
+/**
+ * Waits for the specified {@param netId} to exist on the server.
+ *
+ * This is needed due to the fact that when creating and instantly sending a
+ * net id on the client we can race the actual creation of the entity, making
+ *`NetworkGetEntityFromNetworkId` return `0`, this will resolve itself within the
+ * next game tick (approximately ever 8ms for the sync thread).
+ *
+ * @param netId the network id of the entity to wait to exist
+ * @param [timeoutMs=1000] the amount of time to wait for the entity to exist before giving up
+ */
+export declare function waitForEntityToExist(netId: number, timeoutMs?: number): Promise<number | null>;
