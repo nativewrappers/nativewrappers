@@ -61,7 +61,7 @@ function registerCommand(
 
     if (Array.isArray(restricted)) {
       for (const principal of restricted) {
-        if (!IsPrincipalAceAllowed(principal, ace)) ExecuteCommand(`add_ace ${restricted} ${ace} allow`);
+        if (!IsPrincipalAceAllowed(principal, ace)) ExecuteCommand(`add_ace ${principal} ${ace} allow`);
       }
     }
   }
@@ -137,7 +137,7 @@ registerParameterType("string", (arg) => {
       }
 
       if (GetPlayerFromServerId(target) === -1) {
-        throw new Error(`player with server id $${target} didn't exist`);
+        throw new Error(`player with server id ${target} didn't exist`);
       }
 
       return target;
@@ -157,7 +157,7 @@ registerParameterType("string", (arg) => {
       }
 
       if (!DoesPlayerExist(target as unknown as string)) {
-        throw new Error(`player at ${source} didn't exist`);
+        throw new Error(`player at ${target} didn't exist`);
       }
 
       return target;
