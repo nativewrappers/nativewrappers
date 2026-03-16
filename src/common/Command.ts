@@ -11,6 +11,7 @@ export interface ParameterTypeOverrides {}
 export interface ParameterTypes extends ParameterTypeOverrides {
   number: number;
   playerId: ParameterTypeOverrides extends { playerId: infer T } ? T : number;
+  serverSource: ParameterTypeOverrides extends { serverSource: infer T } ? T : number;
   string: string;
   longString: string;
 }
@@ -261,7 +262,11 @@ export class Command<T extends Parameter[] = Parameter[]> {
     };
 
     const parser = commandTypeParserRegistry.get("playerId");
-    const parsedSource = parser ? parser("me", defaultContextObject) : source;
+    const serverSourceParser = commandTypeParserRegistry.get("serverSource");
+    const parsedSource =
+      source > 0
+        ? parser?.("me", defaultContextObject) ?? source
+        : serverSourceParser?.(String(source), defaultContextObject) ?? source;
 
     const mapped = {
       source: parsedSource,
