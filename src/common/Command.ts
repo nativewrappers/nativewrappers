@@ -28,7 +28,7 @@ $SERVER: {
 
 type MappedParameters<T extends Parameter[]> = {
   [K in T[number] as K["name"]]: ParameterTypes[K["type"]];
-} & { source: number; raw: string };
+} & { source: ParameterTypes["playerId"]; raw: string };
 
 type CommandHandler<T extends Parameter[]> = (args: MappedParameters<T>) => void | Promise<void>;
 
@@ -127,15 +127,13 @@ registerParameterType("string", (arg) => {
   $CLIENT: if (GlobalData.IS_CLIENT) {
     registerParameterType("playerId", (arg) => {
       const isMe = arg === "me";
-      const target = isMe ? GetPlayerServerId(PlayerId()) : parseInt(arg, 10);
-      if (Number.isNaN(target)) {
-        throw new TypeError(`could not parse argument into a valid playerId`);
+      if (isMe) {
+        return GetPlayerServerId(PlayerId());
       }
 
-      // if we set the target to "me" then we want to early return, since the
-      // GetPlayerFromServerId check will fail since our local client will be -1
-      if (isMe) {
-        return target;
+      const target = parseInt(arg, 10);
+      if (Number.isNaN(target)) {
+        throw new TypeError(`could not parse argument into a valid playerId`);
       }
 
       if (GetPlayerFromServerId(target) === -1) {
@@ -150,7 +148,10 @@ registerParameterType("string", (arg) => {
 
   $SERVER: {
     registerParameterType("playerId", (arg, { source }) => {
-      const target = arg === "me" ? source : parseInt(arg, 10);
+      if (arg === "me") {
+        return source;
+      }
+      const target = parseInt(arg, 10);
       if (Number.isNaN(target)) {
         throw new TypeError(`could not parse argument into a valid playerId`);
       }
@@ -248,17 +249,20 @@ export class Command<T extends Parameter[] = Parameter[]> {
    * @returns A mapped object containing parsed parameters.
    */
   private mapArguments(source: number, args: string[], raw: string): MappedParameters<T> | null {
-    const mapped = {
-      source,
-      raw,
-    } as MappedParameters<T>;
-
-    if (!this.params) return mapped;
-
     const defaultContextObject: CommandContextObject<any> = {
       source,
       raw,
     };
+
+    const parser = commandTypeParserRegistry.get("playerId");
+    const parsedSource = parser ? parser("me", defaultContextObject) : source;
+
+    const mapped = {
+      source: parsedSource,
+      raw,
+    } as MappedParameters<T>;
+
+    if (!this.params) return mapped;
 
     const result = this.params.every((param, index) => {
       const arg = args[index];
