@@ -139,6 +139,13 @@ export class Player {
     return Vector3.fromArray(GetPlayerWantedCentrePosition(this.Src));
   }
 
+  /**
+   * Returns the position the player is currently focused on
+   */
+  public get Position(): Vector3 {
+    return Vector3.fromArray(GetPlayerFocusPos(this.Src));
+  }
+
   public get WantedLevel(): number {
     return GetPlayerWantedLevel(this.Src);
   }
