@@ -265,8 +265,8 @@ export class Command<T extends Parameter[] = Parameter[]> {
     const serverSourceParser = commandTypeParserRegistry.get("serverSource");
     const parsedSource =
       source > 0
-        ? parser?.("me", defaultContextObject) ?? source
-        : serverSourceParser?.(String(source), defaultContextObject) ?? source;
+        ? (parser?.("me", defaultContextObject) ?? source)
+        : (serverSourceParser?.(String(source), defaultContextObject) ?? source);
 
     const mapped = {
       source: parsedSource,
