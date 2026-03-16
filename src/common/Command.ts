@@ -2,9 +2,15 @@ import { GlobalData } from "./GlobalData";
 
 type Restricted = boolean | string | string[];
 
-export interface ParameterTypes {
+/*
+ * biome-ignore lint/suspicious/noEmptyInterface: This is meant to be overwritten by
+ * the client.
+ */
+export interface ParameterTypeOverrides {}
+
+export interface ParameterTypes extends ParameterTypeOverrides {
   number: number;
-  playerId: number;
+  playerId: ParameterTypeOverrides extends { playerId: infer T } ? T : number;
   string: string;
   longString: string;
 }
