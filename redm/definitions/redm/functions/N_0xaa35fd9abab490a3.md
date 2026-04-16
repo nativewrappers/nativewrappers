@@ -1,0 +1,39 @@
+[@nativewrappers/fivem](../../../../README.md) / [redm/definitions/redm](../README.md) / N\_0xaa35fd9abab490a3
+
+# Function: N\_0xaa35fd9abab490a3()
+
+## Call Signature
+
+```ts
+function N_0xaa35fd9abab490a3(p0): number;
+```
+
+Defined in: [src/common-game/definitions/redm.d.ts:15030](https://github.com/nativewrappers/nativewrappers/blob/dc9e2638d1087a48984d9b0f544b0f441166f8eb/src/common-game/definitions/redm.d.ts#L15030)
+
+### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `p0` | `number` |
+
+### Returns
+
+`number`
+
+## Call Signature
+
+```ts
+function N_0xaa35fd9abab490a3(p0): number;
+```
+
+Defined in: [src/redm/definitions/redm.d.ts:15030](https://github.com/nativewrappers/nativewrappers/blob/dc9e2638d1087a48984d9b0f544b0f441166f8eb/src/redm/definitions/redm.d.ts#L15030)
+
+### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `p0` | `number` |
+
+### Returns
+
+`number`
