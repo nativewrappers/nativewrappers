@@ -3,9 +3,11 @@ import { Vector3 } from "@common/utils/Vector";
 import { cleanPlayerName } from "@common/utils/cleanPlayerName";
 import cfx from "../cfx";
 import { Ped } from "./Ped";
+import type { Hash } from "server/type/Hash";
 
 export class Player {
   protected type = ClassTypes.Player;
+  protected ped: Ped | null = null;
   constructor(private readonly source: any) {}
 
   static fromServerId(serverId: number): Player | null {
@@ -18,6 +20,12 @@ export class Player {
 
   /**
    * Get an interable list of players currently on the server
+   *
+   * You should generally prefer to use {@see PlayerList} for this if you're
+   * frequently doing this call, since it has less overhead, as it doesn't have
+   * to iterate over the entire player list every time, and it doesn't have to
+   * create a new player object
+   *
    * @returns Iterable list of Players.
    */
   public static *AllPlayers(): IterableIterator<Player> {
@@ -54,9 +62,15 @@ export class Player {
     return this.source as unknown as string;
   }
 
+  /**
+   * Gets the players ped, this is only ever set once, so subsequent calls will be
+   * cached
+   */
   public get Ped(): Ped {
-    const ped = GetPlayerPed(this.source);
-    return new Ped(ped);
+    if (!this.ped) {
+      this.ped = new Ped(GetPlayerPed(this.source));
+    }
+    return this.ped;
   }
 
   public get Tokens(): string[] {
