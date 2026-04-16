@@ -3,7 +3,6 @@ import { Vector3 } from "@common/utils/Vector";
 import { cleanPlayerName } from "@common/utils/cleanPlayerName";
 import cfx from "../cfx";
 import { Ped } from "./Ped";
-import type { Hash } from "server/type/Hash";
 
 export class Player {
   protected type = ClassTypes.Player;
