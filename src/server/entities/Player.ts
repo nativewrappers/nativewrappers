@@ -62,20 +62,12 @@ export class Player {
   }
 
   /**
-   * Gets the players ped, this is only ever set once, so subsequent calls will be
-   * cached
-   *
-   * Due to the fact that the ped doesn't exist at `playerJoining` this can be
-   * `null`
+   * Gets the player ped
    */
   public get Ped(): Ped | null {
-    if (!this.ped) {
-      const ped = GetPlayerPed(this.source);
-      if (ped !== 0) {
-        this.ped = new Ped(GetPlayerPed(this.source));
-      }
-    }
-    return this.ped;
+    const ped = GetPlayerPed(this.source);
+    if (ped === 0) return null;
+    return new Ped(ped);
   }
 
   public get Tokens(): string[] {
