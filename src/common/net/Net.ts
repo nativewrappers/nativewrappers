@@ -46,7 +46,7 @@ export class NetServer extends Net {
   }
 
   static broadcast(sources: Iterable<number>, eventName: string, ...args: any[]) {
-    const packed = msgpack_pack(...args);
+    const packed = msgpack_pack(args);
 
     for (const source of sources) {
       TriggerClientEventInternal(eventName, source as any, packed, packed.length);
