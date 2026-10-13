@@ -223,7 +223,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     }
   }
 
-  #pushChangeForListener(key: K, value: V) {
+  #pushChangeForListener(key: K, value: V | undefined) {
     const listener = this.#changeListeners.get(key);
     if (!listener) return;
     for (const ln of listener) {
@@ -330,6 +330,8 @@ export class NetworkedMap<K, V> extends Map<K, V> {
 
       return true;
     });
+
+    this.#pushChangeForListener(key, undefined);
     return super.delete(key);
   }
 
