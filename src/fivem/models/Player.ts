@@ -139,7 +139,7 @@ export class Player {
     this.stateBagCookies = this.stateBagCookies.filter((cookie) => {
       const isCookie = cookie === tgtCookie;
       if (isCookie) RemoveStateBagChangeHandler(cookie);
-      return isCookie;
+      return !isCookie;
     });
   }
 

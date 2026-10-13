@@ -33,7 +33,7 @@ export class BitSet<T extends number> {
    * @returns `true` if the bit at {@param position} is set.
    */
   test(position: number) {
-    return this.value & position;
+    return (this.value & (1 << position)) !== 0;
   }
 
   /**

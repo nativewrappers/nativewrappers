@@ -133,7 +133,7 @@ export class Model implements Disposable {
   }
 
   public get IsAnyVehicle() {
-    return this.IsTrain || this.IsVehicle || this.IsBoat
+    return this.IsTrain || this.IsVehicle || this.IsBoat;
   }
 
   public get IsWeapon(): boolean {

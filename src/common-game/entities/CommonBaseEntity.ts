@@ -1,12 +1,12 @@
+import { GlobalData } from "@common/GlobalData";
 import type { ClassTypes } from "@common/utils/ClassTypes";
 import type { Quaternion } from "@common/utils/Quaternion";
 import { Vector3 } from "@common/utils/Vector";
-import type { CommonBaseEntityBoneCollection } from "./CommonBaseEntityBoneCollection";
-import type { StateBagChangeHandler } from "@common-game/cfx/StateBagChangeHandler";
-import cfx from "@common-game/cfx/cfx";
 import { CommonModel } from "@common-game/CommonModel";
-import { GlobalData } from "@common/GlobalData";
+import cfx from "@common-game/cfx/cfx";
+import type { StateBagChangeHandler } from "@common-game/cfx/StateBagChangeHandler";
 import type { CommonBaseEntityBone } from "./CommonBaseEntityBone";
+import type { CommonBaseEntityBoneCollection } from "./CommonBaseEntityBoneCollection";
 import { IHandle } from "./IHandle";
 
 export abstract class CommonBaseEntity extends IHandle {
@@ -79,7 +79,6 @@ export abstract class CommonBaseEntity extends IHandle {
       if (GlobalData.IS_REDM) {
         Citizen.invokeNative("0xE31A04513237DC89", this.handle);
       } else {
-        // @ts-ignore: proper name on fivem
         NetworkUnregisterNetworkedEntity(this.handle);
       }
     }
@@ -110,7 +109,7 @@ export abstract class CommonBaseEntity extends IHandle {
     this.stateBagCookies = this.stateBagCookies.filter((cookie) => {
       const isCookie = cookie === tgtCookie;
       if (isCookie) RemoveStateBagChangeHandler(cookie);
-      return isCookie;
+      return !isCookie;
     });
   }
 

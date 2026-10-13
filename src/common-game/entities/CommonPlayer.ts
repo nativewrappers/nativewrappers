@@ -1,10 +1,10 @@
-import type { StateBagChangeHandler } from "@common-game/cfx/StateBagChangeHandler";
-import { CommonPed } from "./CommonPed";
 import { ClassTypes } from "@common/utils/ClassTypes";
-import type { CommonEntity } from "./CommonEntityType";
-import { GetEntityClassFromHandle } from "./GetEntityClassIdFromHandle";
-import cfx from "@common-game/cfx/cfx";
 import { CommonGameConstants } from "@common-game/CommonGameConstants";
+import cfx from "@common-game/cfx/cfx";
+import type { StateBagChangeHandler } from "@common-game/cfx/StateBagChangeHandler";
+import type { CommonEntity } from "./CommonEntityType";
+import { CommonPed } from "./CommonPed";
+import { GetEntityClassFromHandle } from "./GetEntityClassIdFromHandle";
 
 export class CommonPlayer {
   private handle: number;
@@ -141,7 +141,7 @@ export class CommonPlayer {
     this.stateBagCookies = this.stateBagCookies.filter((cookie) => {
       const isCookie = cookie === tgtCookie;
       if (isCookie) RemoveStateBagChangeHandler(cookie);
-      return isCookie;
+      return !isCookie;
     });
   }
 

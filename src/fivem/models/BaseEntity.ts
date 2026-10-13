@@ -1,11 +1,11 @@
 import type { ClassTypes } from "@common/utils/ClassTypes";
 import { Quaternion } from "@common/utils/Quaternion";
 import { Vector3 } from "@common/utils/Vector";
-import { Model } from "fivem/Model";
 import cfx, { type StateBagChangeHandler } from "fivem/cfx";
 import { ForceType } from "fivem/enums/ForceType";
 import type { MaterialHash } from "fivem/hashes/MaterialHash";
 import type { WeaponHash } from "fivem/hashes/WeaponHash";
+import { Model } from "fivem/Model";
 import { Blip } from "../Blip";
 import type { BaseEntityBone } from "./BaseEntityBone";
 import type { BaseEntityBoneCollection } from "./BaseEntityBoneCollection";
@@ -83,7 +83,7 @@ export abstract class BaseEntity {
     this.stateBagCookies = this.stateBagCookies.filter((cookie) => {
       const isCookie = cookie === tgtCookie;
       if (isCookie) RemoveStateBagChangeHandler(cookie);
-      return isCookie;
+      return !isCookie;
     });
   }
 
