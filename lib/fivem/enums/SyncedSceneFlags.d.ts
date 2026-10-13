@@ -1,0 +1,21 @@
+export declare enum SyncedSceneFlags {
+    None = 0,
+    UsePhysics = 1,
+    TagSyncOut = 2,
+    DontInterrupt = 4,
+    OnAbortStopScene = 8,
+    AbortOnWeaponDamage = 16,
+    BlockMoverUpdate = 32,
+    LoopWithinScene = 64,
+    PreserveVelocity = 128,
+    ExpandPedCapsuleFromSkeleton = 256,
+    ActivateRagdollOnCollision = 512,
+    HideWeapon = 1024,
+    AbortOnDeath = 2048,
+    VehicleAbortOnLargeImppapct = 4096,
+    VehicleAllowPlayerEntry = 8192,
+    ProcessAttachmentOnStart = 16384,
+    NetOnEarlyNoPedStopReturnToStart = 32768,
+    SetPedOutOfVehicleAtStart = 65536,
+    NetDisregardAttachmentChecks = 131072
+}

@@ -1,6 +1,0 @@
-node_modules
-lib
-.idea
-tsconfig.tsbuildinfo
-.rollup.cache
-docs
