@@ -15,8 +15,8 @@ importers:
         specifier: 2.0.13079-1
         version: 2.0.13079-1
       '@citizenfx/server':
-        specifier: 2.0.13079-1
-        version: 2.0.13079-1
+        specifier: 2.0.37474-1
+        version: 2.0.37474-1
       '@types/node':
         specifier: ^22.13.7
         version: 22.13.7
@@ -73,24 +73,28 @@ packages:
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@biomejs/cli-linux-arm64@2.3.11':
     resolution: {integrity: sha512-l4xkGa9E7Uc0/05qU2lMYfN1H+fzzkHgaJoy98wO+b/7Gl78srbCRRgwYSW+BTLixTBrM6Ede5NSBwt7rd/i6g==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@biomejs/cli-linux-x64-musl@2.3.11':
     resolution: {integrity: sha512-vU7a8wLs5C9yJ4CB8a44r12aXYb8yYgBn+WeyzbMjaCMklzCv1oXr8x+VEyWodgJt9bDmhiaW/I0RHbn7rsNmw==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@biomejs/cli-linux-x64@2.3.11':
     resolution: {integrity: sha512-/1s9V/H3cSe0r0Mv/Z8JryF5x9ywRxywomqZVLHAoa/uN0eY7F8gEngWKNS5vbbN/BsfpCG5yeBT5ENh50Frxg==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@biomejs/cli-win32-arm64@2.3.11':
     resolution: {integrity: sha512-PZQ6ElCOnkYapSsysiTy0+fYX+agXPlWugh6+eQ6uPKI3vKAqNp6TnMhoM3oY2NltSB89hz59o8xIfOdyhi9Iw==}
@@ -107,8 +111,8 @@ packages:
   '@citizenfx/client@2.0.13079-1':
     resolution: {integrity: sha512-vqeJ3fZeF8pvnai4tNmPkBFt9lm0NkzHxOws8Ci27bKAn+17H+TrO/wlBIr4SJpmO5xMlhAn48zv3CQzquO90A==}
 
-  '@citizenfx/server@2.0.13079-1':
-    resolution: {integrity: sha512-1PyU5s93pfDalQ4NTq/eCTDnPOX0er7JSJfEe2nL5a9rKyVqDkZFfFO2J83gFDE0nsHsooBcRi8Rk5PaXhk8oQ==}
+  '@citizenfx/server@2.0.37474-1':
+    resolution: {integrity: sha512-F/JSoJBK9DHrO2xARMeOYr9OA/u6aPUBlj73HWR81mkd6nTv+5isTXLPbrGZNL3m92azMvTxPfto9plDfDzogA==}
 
   '@esbuild/aix-ppc64@0.25.0':
     resolution: {integrity: sha512-O7vun9Sf8DFjH2UtqK8Ku3LkquL9SZL8OLY1T5NZkA34+wG3OQF7cl4Ql8vdNzM6fzBbYfLaiRLIOZ+2FOCgBQ==}
@@ -619,7 +623,7 @@ snapshots:
 
   '@citizenfx/client@2.0.13079-1': {}
 
-  '@citizenfx/server@2.0.13079-1': {}
+  '@citizenfx/server@2.0.37474-1': {}
 
   '@esbuild/aix-ppc64@0.25.0':
     optional: true

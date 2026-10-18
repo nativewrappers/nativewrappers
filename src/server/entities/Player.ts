@@ -2,6 +2,7 @@ import { ClassTypes } from "@common/utils/ClassTypes";
 import { Vector3 } from "@common/utils/Vector";
 import { cleanPlayerName } from "@common/utils/cleanPlayerName";
 import cfx from "../cfx";
+import { ENET_PACKET_LOSS_SCALE, PeerStatistics } from "../enum/PeerStatistics";
 import { Ped } from "./Ped";
 
 export class Player {
@@ -124,6 +125,20 @@ export class Player {
    */
   public get Ping(): number {
     return GetPlayerPing(this.Src);
+  }
+
+  /**
+   * @returns the raw value of the specified ENet peer statistic for the player
+   */
+  public getPeerStatistic(statistic: PeerStatistics): number {
+    return GetPlayerPeerStatistics(this.Src, statistic);
+  }
+
+  /**
+   * @returns the players packet loss as a fraction (0.0 - 1.0), this only updates once every 10 seconds
+   */
+  public get PacketLoss(): number {
+    return this.getPeerStatistic(PeerStatistics.PacketLoss) / ENET_PACKET_LOSS_SCALE;
   }
 
   /**

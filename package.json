@@ -42,7 +42,7 @@
   "devDependencies": {
     "@biomejs/biome": "^2.3.11",
     "@citizenfx/client": "2.0.13079-1",
-    "@citizenfx/server": "2.0.13079-1",
+    "@citizenfx/server": "2.0.37474-1",
     "@types/node": "^22.13.7",
     "buffer": "^6.0.3",
     "esbuild": "^0.25.0",
