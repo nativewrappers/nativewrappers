@@ -156,6 +156,14 @@ export class NetworkedMap<K, V> extends Map<K, V> {
     return this.#subscribers.size;
   }
 
+  #resetListenersValues() {
+    for (const [, v] of this.#changeListeners) {
+      for (const fn of v) {
+        fn(undefined);
+      }
+    }
+  }
+
   protected handleSync(data: MapChanges<K, V>[]) {
     for (const [change_type, key, value, possibly_undefined_subvalue] of data) {
       switch (change_type) {
@@ -164,22 +172,21 @@ export class NetworkedMap<K, V> extends Map<K, V> {
           continue;
         }
         case MapChangeType.Remove: {
+          this.#pushChangeForListener(key!, undefined);
           super.delete(key!);
           continue;
         }
         case MapChangeType.Reset: {
+          this.#resetListenersValues();
           super.clear();
           continue;
         }
         case MapChangeType.Resync: {
+          // TODO: Is this necessary?
           // re-run all of our already defined changed values since we'll be re-initing
           // everything anyways.
-          for (const [, v] of this.#changeListeners) {
-            for (const fn of v) {
-              fn(undefined);
-            }
-          }
           // intentionally fall through to `Init`, we have the same data as `Init`
+          this.#resetListenersValues();
         }
         case MapChangeType.Init: {
           // We also use this for whenever we want to resync a table
@@ -192,7 +199,7 @@ export class NetworkedMap<K, V> extends Map<K, V> {
         }
         case MapChangeType.SubValueChanged: {
           const data = this.get(key!)!;
-          // @ts-expect-error: we *have* tha ve a value if it sends a `SubValueChanged`
+          // @ts-expect-error: we *have* to have a value if it sends a `SubValueChanged`
           data[value] = possibly_undefined_subvalue;
           continue;
         }
